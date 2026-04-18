@@ -36,6 +36,4 @@ Thumbs.db
 # Logs
 *.log
 
-# Evaluation outputs (keep structure, gitignore heavy result files)
-evaluation/results/*.json
-!evaluation/results/.gitkeep
+# Evaluation outputs — commit these for reproducibility and transparency

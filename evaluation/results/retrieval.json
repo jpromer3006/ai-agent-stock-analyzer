@@ -1,0 +1,568 @@
+{
+  "total_cases": 33,
+  "cases_matching_any": 10,
+  "mean_section_coverage": 0.34782608695652173,
+  "mean_relevance": 0.33092512361931087,
+  "cases": [
+    {
+      "question_id": "reit-001",
+      "ticker": "O",
+      "expected_sections": [
+        "Item 1A - Risk Factors",
+        "Item 1 - Business"
+      ],
+      "retrieved_sections": [
+        "Item 1A - Risk Factors",
+        "Item 1A - Risk Factors",
+        "Item 1A - Risk Factors",
+        "Item 7 - MD&A",
+        "Item 1A - Risk Factors"
+      ],
+      "section_coverage": 0.5,
+      "avg_relevance": 0.5926924109458923,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "reit-002",
+      "ticker": "O",
+      "expected_sections": [],
+      "retrieved_sections": [
+        "Item 7 - MD&A",
+        "Item 7 - MD&A",
+        "Item 1A - Risk Factors",
+        "Item 7 - MD&A",
+        "Item 1A - Risk Factors"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.4309321165084839,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "reit-003",
+      "ticker": "O",
+      "expected_sections": [],
+      "retrieved_sections": [
+        "Item 1A - Risk Factors",
+        "Item 1A - Risk Factors",
+        "Item 7 - MD&A",
+        "Item 7 - MD&A",
+        "Item 1A - Risk Factors"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.41643863916397095,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "reit-004",
+      "ticker": "O",
+      "expected_sections": [
+        "Item 1A - Risk Factors",
+        "Item 7 - MD&A"
+      ],
+      "retrieved_sections": [
+        "Item 7 - MD&A",
+        "Item 1A - Risk Factors",
+        "Item 1A - Risk Factors",
+        "Item 1A - Risk Factors",
+        "Item 1A - Risk Factors"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.4204994559288025,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "reit-005",
+      "ticker": "O",
+      "expected_sections": [
+        "Item 1 - Business",
+        "Item 7 - MD&A"
+      ],
+      "retrieved_sections": [
+        "Item 1A - Risk Factors",
+        "Item 1A - Risk Factors",
+        "Item 1A - Risk Factors",
+        "Item 1A - Risk Factors",
+        "Item 7 - MD&A"
+      ],
+      "section_coverage": 0.5,
+      "avg_relevance": 0.4759288191795349,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "infra-001",
+      "ticker": "PWR",
+      "expected_sections": [
+        "Item 7 - MD&A",
+        "Item 1 - Business"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 0.0,
+      "avg_relevance": 0.4116118550300598,
+      "any_expected_hit": false,
+      "error": null
+    },
+    {
+      "question_id": "infra-002",
+      "ticker": "PWR",
+      "expected_sections": [],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 7 - MD&A",
+        "Item 7A - Market Risk",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.342430317401886,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "infra-003",
+      "ticker": "PWR",
+      "expected_sections": [
+        "Item 1 - Business",
+        "Item 7 - MD&A"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 7 - MD&A",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 0.5,
+      "avg_relevance": 0.4662900924682617,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "infra-004",
+      "ticker": "PWR",
+      "expected_sections": [
+        "Item 1A - Risk Factors"
+      ],
+      "retrieved_sections": [
+        "Item 7A - Market Risk",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 0.0,
+      "avg_relevance": 0.4111983418464661,
+      "any_expected_hit": false,
+      "error": null
+    },
+    {
+      "question_id": "bank-001",
+      "ticker": "JPM",
+      "expected_sections": [
+        "Item 7 - MD&A"
+      ],
+      "retrieved_sections": [
+        "Item 1 - Business",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 7 - MD&A",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.30257630348205566,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "bank-002",
+      "ticker": "JPM",
+      "expected_sections": [
+        "Item 7 - MD&A",
+        "Item 1A - Risk Factors"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 1 - Business"
+      ],
+      "section_coverage": 0.0,
+      "avg_relevance": 0.40608992576599123,
+      "any_expected_hit": false,
+      "error": null
+    },
+    {
+      "question_id": "bank-003",
+      "ticker": "JPM",
+      "expected_sections": [
+        "Item 1 - Business",
+        "Item 7 - MD&A"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 1 - Business",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 0.5,
+      "avg_relevance": 0.4083444118499756,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "bank-004",
+      "ticker": "JPM",
+      "expected_sections": [
+        "Item 7 - MD&A"
+      ],
+      "retrieved_sections": [
+        "Item 1 - Business",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 7 - MD&A",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.2608980655670166,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "tech-001",
+      "ticker": "MSFT",
+      "expected_sections": [],
+      "retrieved_sections": [
+        "Item 7 - MD&A",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.33407236337661744,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "tech-002",
+      "ticker": "MSFT",
+      "expected_sections": [
+        "Item 7 - MD&A"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 7 - MD&A",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.33191981315612795,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "tech-003",
+      "ticker": "MSFT",
+      "expected_sections": [
+        "Item 7 - MD&A"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 7 - MD&A",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.30731632709503176,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "tech-004",
+      "ticker": "MSFT",
+      "expected_sections": [
+        "Item 1A - Risk Factors"
+      ],
+      "retrieved_sections": [
+        "Item 1A - Risk Factors",
+        "Item 7A - Market Risk",
+        "Item 8 - Financial",
+        "Item 7 - MD&A",
+        "Item 3 - Legal Proceedings"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.38984968662261965,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "energy-001",
+      "ticker": "XOM",
+      "expected_sections": [],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 7 - MD&A",
+        "Item 7A - Market Risk",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.25505868196487425,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "energy-002",
+      "ticker": "XOM",
+      "expected_sections": [],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.28031585216522215,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "energy-003",
+      "ticker": "XOM",
+      "expected_sections": [
+        "Item 1A - Risk Factors",
+        "Item 7 - MD&A"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 0.0,
+      "avg_relevance": 0.5063704133033753,
+      "any_expected_hit": false,
+      "error": null
+    },
+    {
+      "question_id": "energy-004",
+      "ticker": "XOM",
+      "expected_sections": [
+        "Item 1A - Risk Factors"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 0.0,
+      "avg_relevance": 0.4318373680114746,
+      "any_expected_hit": false,
+      "error": null
+    },
+    {
+      "question_id": "consumer-001",
+      "ticker": "WMT",
+      "expected_sections": [
+        "Item 7 - MD&A"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 0.0,
+      "avg_relevance": 0.4288619637489319,
+      "any_expected_hit": false,
+      "error": null
+    },
+    {
+      "question_id": "consumer-002",
+      "ticker": "WMT",
+      "expected_sections": [],
+      "retrieved_sections": [
+        "Item 7 - MD&A",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.3346562385559082,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "consumer-003",
+      "ticker": "WMT",
+      "expected_sections": [
+        "Item 1A - Risk Factors"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 7A - Market Risk",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 0.0,
+      "avg_relevance": 0.40529330968856814,
+      "any_expected_hit": false,
+      "error": null
+    },
+    {
+      "question_id": "consumer-004",
+      "ticker": "WMT",
+      "expected_sections": [],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 7 - MD&A",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.26365745067596436,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "health-001",
+      "ticker": "UNH",
+      "expected_sections": [
+        "Item 1 - Business",
+        "Item 7 - MD&A"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 0.0,
+      "avg_relevance": 0.36367675065994265,
+      "any_expected_hit": false,
+      "error": null
+    },
+    {
+      "question_id": "health-002",
+      "ticker": "UNH",
+      "expected_sections": [
+        "Item 1A - Risk Factors",
+        "Item 1 - Business"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 7A - Market Risk",
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 3 - Legal Proceedings"
+      ],
+      "section_coverage": 0.0,
+      "avg_relevance": 0.28591400384902954,
+      "any_expected_hit": false,
+      "error": null
+    },
+    {
+      "question_id": "health-003",
+      "ticker": "UNH",
+      "expected_sections": [
+        "Item 7 - MD&A"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 1 - Business",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 0.0,
+      "avg_relevance": 0.2746493697166443,
+      "any_expected_hit": false,
+      "error": null
+    },
+    {
+      "question_id": "health-004",
+      "ticker": "UNH",
+      "expected_sections": [
+        "Item 1A - Risk Factors"
+      ],
+      "retrieved_sections": [
+        "Item 8 - Financial",
+        "Item 8 - Financial",
+        "Item 7A - Market Risk",
+        "Item 8 - Financial",
+        "Item 8 - Financial"
+      ],
+      "section_coverage": 0.0,
+      "avg_relevance": 0.3811487317085266,
+      "any_expected_hit": false,
+      "error": null
+    },
+    {
+      "question_id": "generic-001",
+      "ticker": "BRK-B",
+      "expected_sections": [
+        "Item 7 - MD&A"
+      ],
+      "retrieved_sections": [],
+      "section_coverage": 0.0,
+      "avg_relevance": 0.0,
+      "any_expected_hit": false,
+      "error": null
+    },
+    {
+      "question_id": "generic-002",
+      "ticker": "BRK-B",
+      "expected_sections": [],
+      "retrieved_sections": [],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.0,
+      "any_expected_hit": true,
+      "error": null
+    },
+    {
+      "question_id": "generic-003",
+      "ticker": "BRK-B",
+      "expected_sections": [
+        "Item 1A - Risk Factors"
+      ],
+      "retrieved_sections": [],
+      "section_coverage": 0.0,
+      "avg_relevance": 0.0,
+      "any_expected_hit": false,
+      "error": null
+    },
+    {
+      "question_id": "generic-004",
+      "ticker": "BRK-B",
+      "expected_sections": [],
+      "retrieved_sections": [],
+      "section_coverage": 1.0,
+      "avg_relevance": 0.0,
+      "any_expected_hit": true,
+      "error": null
+    }
+  ]
+}

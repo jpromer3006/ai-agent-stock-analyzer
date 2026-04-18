@@ -127,13 +127,28 @@ Evaluation framework per Lecture 9 rubric. All results reproducible via the `eva
 
 Measures whether the RAG retrieves passages from the correct 10-K sections.
 
-**Latest results (REIT sector, Realty Income 'O'):**
+**Latest full-universe results (33 cases across 8 sectors):**
 
 | Metric | Value |
 |--------|-------|
-| Cases matching expected sections | 3 / 3 (100%) |
-| Mean section coverage | 66.7% |
-| Mean relevance score | 0.467 |
+| Cases matching ≥1 expected section | 10 / 23 (43%) |
+| Mean section coverage | 34.8% |
+| Mean relevance score | 0.331 |
+
+**By sector:**
+
+| Sector | Hit rate | Notes |
+|--------|----------|-------|
+| REIT (O) | 5/5 | Strong — 80% section coverage |
+| Tech (MSFT) | 4/4 | Strong — 100% section coverage |
+| Bank (JPM) | 3/4 | Capital ratio queries missed |
+| Infra (PWR) | 2/4 | Backlog/customer concentration queries missed |
+| Energy (XOM) | 2/4 | Commodity and regulatory queries missed |
+| Consumer (WMT) | 2/4 | Same-store sales and supply chain missed |
+| Healthcare (UNH) | 0/4 | ⚠️ All four queries failed to hit expected sections |
+| Generic (BRK-B) | 2/4 | ⚠️ BRK-B 10-K section extraction fails (edge case) |
+
+**Honest read:** the RAG works well for REIT and Tech (strong prose 10-Ks), struggles on Healthcare (dense pharma-specific language) and fails entirely on BRK-B (non-standard 10-K format). This is a known limitation documented in Section 5. Full results: [`evaluation/results/retrieval.json`](evaluation/results/retrieval.json)
 
 ### Answer quality (`evaluation/test_answers.py`)
 
@@ -179,7 +194,8 @@ PYTHONPATH=. python3 evaluation/test_answers.py \
 ## 5. Limitations
 
 1. **XBRL scope** — only works for US-listed SEC filers. International ADRs may have incomplete XBRL tags.
-2. **10-K section extraction is heuristic** — regex-based on "Item X" markers. Complex nested HTML or scanned filings may miss sections.
+2. **10-K section extraction is heuristic** — regex-based on "Item X" markers. Complex nested HTML or scanned filings may miss sections. **Known fail: BRK-B** (non-standard 10-K format).
+3. **Healthcare sector retrieval is weak** — 0/4 hit rate on the golden questions. Pharma-specific terminology (pipeline, LOE, PDUFA) doesn't align well with generic 10-K section embeddings. Candidate fix: sector-specific query rewriting.
 3. **No 10-Q support yet** — only annual 10-K filings are ingested. Quarterly changes not tracked.
 4. **No year-over-year MD&A diff** — a key Lecture 9 example. On the roadmap.
 5. **Bull probability is heuristic, not backtested** — composite of momentum + growth + sentiment + leverage. Transparent but not validated against historical returns.
