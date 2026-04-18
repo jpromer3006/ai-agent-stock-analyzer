@@ -1,0 +1,283 @@
+"""
+app.py — Streamlit UI for Ai-Agent Stock Analyzer.
+
+Shows classification, live agent trace, and adaptive research memo.
+"""
+
+from __future__ import annotations
+
+import sys
+from datetime import datetime
+from pathlib import Path
+
+_PROJECT_ROOT = Path(__file__).parent.parent
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
+
+import streamlit as st
+
+from agents.classifier import classify, explain_classification
+from agents.orchestrator import run_agent
+from data.tickers import UNIVERSE, StockCategory, tickers_by_category, category_counts
+
+
+# ---------------------------------------------------------------------------
+# Page config
+# ---------------------------------------------------------------------------
+st.set_page_config(
+    page_title="Ai-Agent Stock Analyzer",
+    page_icon="🤖",
+    layout="wide",
+)
+
+
+# ---------------------------------------------------------------------------
+# Session state
+# ---------------------------------------------------------------------------
+if "analyses" not in st.session_state:
+    st.session_state.analyses = {}
+if "selected_ticker" not in st.session_state:
+    st.session_state.selected_ticker = None
+
+
+# ---------------------------------------------------------------------------
+# Sidebar
+# ---------------------------------------------------------------------------
+with st.sidebar:
+    st.header("🤖 Ai-Agent Stock Analyzer")
+    st.caption(f"Universe: {len(UNIVERSE)} tickers across {len(category_counts())} specialists")
+
+    st.divider()
+    st.subheader("Browse Universe")
+
+    category_filter = st.selectbox(
+        "Filter by category",
+        options=["All"] + sorted([c.value for c in StockCategory if c.value in category_counts()]),
+        key="cat_filter",
+    )
+
+    st.caption("Click any ticker to analyze:")
+
+    if category_filter == "All":
+        tickers_to_show = list(UNIVERSE.keys())
+    else:
+        tickers_to_show = tickers_by_category(StockCategory[category_filter])
+
+    for ticker in sorted(tickers_to_show):
+        meta = UNIVERSE[ticker]
+        # Category emoji
+        emoji = {
+            "REIT": "🏢", "INFRASTRUCTURE_EPC": "🏗️", "BANK": "🏦",
+            "TECH": "💻", "ENERGY": "⚡", "CONSUMER": "🛒",
+            "HEALTHCARE": "🏥", "GENERIC": "📊",
+        }.get(meta.category.value, "📊")
+
+        label = f"{emoji} **{ticker}** — {meta.company_name[:22]}"
+        if st.button(label, key=f"wl_{ticker}", use_container_width=True):
+            st.session_state.selected_ticker = ticker
+            st.rerun()
+
+    st.divider()
+    if st.button("🗑️ Clear cached analyses", use_container_width=True):
+        st.session_state.analyses = {}
+        st.session_state.selected_ticker = None
+        st.rerun()
+
+
+# ---------------------------------------------------------------------------
+# Main area — Search bar
+# ---------------------------------------------------------------------------
+st.title("🤖 Ai-Agent Stock Analyzer")
+st.caption(
+    "Enter any ticker — the classifier routes to the right specialist agent, "
+    "which uses SEC EDGAR, semantic 10-K search, and Claude tool-use to generate a custom memo."
+)
+
+search_col, btn_col = st.columns([5, 1])
+with search_col:
+    search_input = st.text_input(
+        "Ticker",
+        value=st.session_state.selected_ticker or "",
+        placeholder="Enter any ticker symbol (e.g. O, PLD, JPM, MSFT, AAPL...)",
+        label_visibility="collapsed",
+    )
+with btn_col:
+    run_clicked = st.button("🔍 Analyze", type="primary", use_container_width=True)
+
+# Resolve ticker
+ticker = None
+if run_clicked and search_input.strip():
+    ticker = search_input.strip().upper()
+    st.session_state.selected_ticker = ticker
+elif st.session_state.selected_ticker:
+    ticker = st.session_state.selected_ticker
+
+
+# ---------------------------------------------------------------------------
+# Landing state
+# ---------------------------------------------------------------------------
+if not ticker:
+    st.info(
+        "👆 Type any ticker and click **Analyze** to start. "
+        "Or pick one from the sidebar watchlist."
+    )
+
+    col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        st.metric("Total Universe", f"{len(UNIVERSE)}")
+    with col2:
+        st.metric("Specialists", f"{len(category_counts())}")
+    with col3:
+        st.metric("Data Sources", "6")
+    with col4:
+        st.metric("Tool Functions", "12+")
+
+    st.markdown("### How it works")
+    st.markdown(
+        """
+        1. **Classify** — The ticker is routed to a specialist agent (REIT, Infra, Bank, Tech, Energy, Consumer, Healthcare, Generic)
+        2. **Pull SEC EDGAR data** — XBRL structured financials (income statement, balance sheet, cash flow)
+        3. **Semantic search 10-K** — ChromaDB + sentence-transformers retrieval over filing text
+        4. **Compute live bull probability** — price momentum + growth + sentiment + leverage
+        5. **Generate adaptive memo** — sections tailored to sector (REIT focuses on FFO/dividends, banks on NIM/capital, etc.)
+        """
+    )
+    st.stop()
+
+
+# ---------------------------------------------------------------------------
+# Pre-run: show classification
+# ---------------------------------------------------------------------------
+classification = explain_classification(ticker)
+col_a, col_b = st.columns([3, 1])
+with col_a:
+    st.markdown(f"## {ticker} — {classification.get('company_name', ticker)}")
+with col_b:
+    emoji = {
+        "REIT": "🏢", "INFRASTRUCTURE_EPC": "🏗️", "BANK": "🏦",
+        "TECH": "💻", "ENERGY": "⚡", "CONSUMER": "🛒",
+        "HEALTHCARE": "🏥", "GENERIC": "📊",
+    }.get(classification["category"], "📊")
+    st.markdown(
+        f"<div style='text-align:right;padding:8px 16px;"
+        f"background:#1a1a2e;color:white;border-radius:8px;font-weight:600'>"
+        f"{emoji} {classification['category']}</div>",
+        unsafe_allow_html=True,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Run or display cached
+# ---------------------------------------------------------------------------
+cache_key = ticker
+
+col_run1, col_run2 = st.columns([1, 5])
+with col_run1:
+    if st.button("▶️ Run Agent", type="primary"):
+        st.session_state.analyses.pop(cache_key, None)
+        st.rerun()
+with col_run2:
+    if cache_key in st.session_state.analyses:
+        st.caption(f"✓ Analysis cached. Click **Run Agent** to re-run.")
+
+# If not cached, run the agent with streaming trace
+if cache_key not in st.session_state.analyses:
+    trace_container = st.container()
+    memo_container = st.container()
+
+    with trace_container:
+        st.markdown("### 🔬 Agent Trace")
+        trace_expander = st.expander("Live tool calls", expanded=True)
+
+    tool_calls = []
+    memo_text = ""
+    error_msg = None
+
+    with trace_expander:
+        status_placeholder = st.empty()
+        step_idx = 0
+
+        try:
+            for event in run_agent(ticker):
+                etype = event.get("type")
+
+                if etype == "classified":
+                    status_placeholder.info(
+                        f"🎯 **Classified:** {event['category']} → {event['agent_name']}"
+                    )
+
+                elif etype == "tool_call":
+                    step_idx += 1
+                    tool_name = event["tool"]
+                    input_str = ", ".join(f"{k}={v!r}" for k, v in event["input"].items())
+                    st.markdown(
+                        f"**{step_idx}.** 🔧 `{tool_name}({input_str})`"
+                    )
+                    tool_calls.append({
+                        "tool": tool_name,
+                        "input": event["input"],
+                    })
+
+                elif etype == "tool_result":
+                    st.caption(f"    ← {event['result_length']} chars returned")
+
+                elif etype == "text_delta":
+                    memo_text += event["text"]
+
+                elif etype == "done":
+                    memo_text = event["memo"]
+                    status_placeholder.success(
+                        f"✅ **Done** in {event['steps']} steps. {len(tool_calls)} tools called."
+                    )
+
+                elif etype == "error":
+                    error_msg = event["message"]
+                    status_placeholder.error(f"❌ Error: {error_msg}")
+                    break
+        except Exception as exc:
+            error_msg = str(exc)
+            status_placeholder.error(f"❌ Exception: {exc}")
+
+    if memo_text and not error_msg:
+        st.session_state.analyses[cache_key] = {
+            "ticker": ticker,
+            "company": classification.get("company_name", ticker),
+            "category": classification["category"],
+            "memo": memo_text,
+            "tool_calls": tool_calls,
+            "generated_at": datetime.utcnow(),
+        }
+
+
+# ---------------------------------------------------------------------------
+# Display cached memo
+# ---------------------------------------------------------------------------
+if cache_key in st.session_state.analyses:
+    analysis = st.session_state.analyses[cache_key]
+
+    st.divider()
+    st.markdown("### 📄 Research Memo")
+    st.markdown(analysis["memo"])
+
+    st.divider()
+
+    # Tool calls summary
+    with st.expander(f"🔧 Tool Calls ({len(analysis['tool_calls'])})"):
+        for i, tc in enumerate(analysis["tool_calls"], 1):
+            st.markdown(f"**{i}. `{tc['tool']}`** — `{tc['input']}`")
+
+    # Export
+    col1, col2 = st.columns([1, 4])
+    with col1:
+        st.download_button(
+            "📥 Download Memo",
+            data=analysis["memo"],
+            file_name=f"{analysis['ticker']}_memo_{analysis['generated_at'].strftime('%Y%m%d_%H%M')}.md",
+            mime="text/markdown",
+            use_container_width=True,
+        )
+    with col2:
+        st.caption(
+            f"Generated: {analysis['generated_at'].strftime('%Y-%m-%d %H:%M UTC')} · "
+            f"Specialist: {analysis['category']}"
+        )

@@ -1,0 +1,41 @@
+# Secrets
+.env
+.env.local
+*.key
+*gee_service_account*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# ChromaDB + data caches (regenerable)
+data/chromadb/
+data/cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Evaluation outputs (keep structure, gitignore heavy result files)
+evaluation/results/*.json
+!evaluation/results/.gitkeep

@@ -1,0 +1,315 @@
+{
+  "_doc": "Golden question set for Lecture 9 Applied Finance Projects evaluation. 3-5 meaningful analyst questions per sector. Each question specifies expected tools, expected 10-K sections, and validation patterns.",
+  "_rubric": {
+    "retrieval": "Top-5 RAG results must include at least one passage from each expected_section",
+    "citation": "Every numerical claim in the answer must have an inline citation [Source: ...]",
+    "completeness": "Answer must contain all regex patterns in must_contain_regex",
+    "tools": "Agent must call every tool in expected_tools at least once"
+  },
+  "sectors": {
+    "REIT": {
+      "test_tickers": ["O", "PLD", "AMT"],
+      "questions": [
+        {
+          "id": "reit-001",
+          "question": "What percentage of portfolio annualized base rent comes from investment-grade tenants, and what is the top-client concentration risk?",
+          "expected_tools": ["search_10k", "get_risk_factors"],
+          "expected_sections": ["Item 1A - Risk Factors", "Item 1 - Business"],
+          "must_contain_regex": ["\\d+\\.?\\d*\\s*%", "(?i)investment.?grade|tenant"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "reit-002",
+          "question": "What is the operating cash flow and how well does it cover the dividend? Compute a dividend coverage ratio.",
+          "expected_tools": ["get_cash_flow"],
+          "expected_sections": [],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]", "(?i)dividend"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "reit-003",
+          "question": "What is the total debt to equity ratio and how has leverage evolved over the last 3 fiscal years?",
+          "expected_tools": ["get_balance_sheet"],
+          "expected_sections": [],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]", "(?i)debt|leverage|equity"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "reit-004",
+          "question": "What interest rate risks does the company disclose, and how does management plan to mitigate them?",
+          "expected_tools": ["search_10k", "get_risk_factors"],
+          "expected_sections": ["Item 1A - Risk Factors", "Item 7 - MD&A"],
+          "must_contain_regex": ["(?i)interest\\s+rate", "(?i)hedg|fixed|variable|risk"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "reit-005",
+          "question": "What is the portfolio composition by property type or geography, and which segment is growing fastest?",
+          "expected_tools": ["search_10k", "get_business_description"],
+          "expected_sections": ["Item 1 - Business", "Item 7 - MD&A"],
+          "must_contain_regex": ["\\d+\\.?\\d*\\s*%|\\d+[,\\d]*\\s+properties", "(?i)portfolio|property|segment"],
+          "required_citation_count": 1
+        }
+      ]
+    },
+    "INFRASTRUCTURE_EPC": {
+      "test_tickers": ["PWR", "EME", "FLR"],
+      "questions": [
+        {
+          "id": "infra-001",
+          "question": "What is the company's current backlog and book-to-bill ratio? Is the pipeline growing?",
+          "expected_tools": ["search_10k", "get_mda"],
+          "expected_sections": ["Item 7 - MD&A", "Item 1 - Business"],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]", "(?i)backlog"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "infra-002",
+          "question": "What are the operating margin trends over the last 3 years, and what explains any compression?",
+          "expected_tools": ["get_income_statement"],
+          "expected_sections": [],
+          "must_contain_regex": ["\\d+\\.?\\d*\\s*%", "(?i)margin|operat"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "infra-003",
+          "question": "What is the revenue by business segment, and which segment is the largest?",
+          "expected_tools": ["search_10k", "get_business_description"],
+          "expected_sections": ["Item 1 - Business", "Item 7 - MD&A"],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]|\\d+\\.?\\d*\\s*%", "(?i)segment|business"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "infra-004",
+          "question": "What customer concentration risks does the company face? Who are the top customers?",
+          "expected_tools": ["get_risk_factors"],
+          "expected_sections": ["Item 1A - Risk Factors"],
+          "must_contain_regex": ["(?i)customer|client|concentration", "\\d+\\.?\\d*\\s*%"],
+          "required_citation_count": 1
+        }
+      ]
+    },
+    "BANK": {
+      "test_tickers": ["JPM", "BAC", "WFC"],
+      "questions": [
+        {
+          "id": "bank-001",
+          "question": "What is the net interest income, and how has the net interest margin trended over the last 3 years?",
+          "expected_tools": ["get_income_statement", "search_10k"],
+          "expected_sections": ["Item 7 - MD&A"],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]|\\d+\\.?\\d*\\s*%", "(?i)interest"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "bank-002",
+          "question": "What is the CET1 capital ratio and how does it compare to the regulatory minimum?",
+          "expected_tools": ["search_10k"],
+          "expected_sections": ["Item 7 - MD&A", "Item 1A - Risk Factors"],
+          "must_contain_regex": ["\\d+\\.?\\d*\\s*%", "(?i)capital|CET1|tier"],
+          "required_citation_count": 1
+        },
+        {
+          "id": "bank-003",
+          "question": "What is the loan portfolio composition and the trend in non-performing loans?",
+          "expected_tools": ["search_10k", "get_balance_sheet"],
+          "expected_sections": ["Item 1 - Business", "Item 7 - MD&A"],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]|\\d+\\.?\\d*\\s*%", "(?i)loan"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "bank-004",
+          "question": "What percentage of revenue comes from fee income versus net interest income?",
+          "expected_tools": ["search_10k", "get_income_statement"],
+          "expected_sections": ["Item 7 - MD&A"],
+          "must_contain_regex": ["\\d+\\.?\\d*\\s*%", "(?i)fee|non.?interest"],
+          "required_citation_count": 2
+        }
+      ]
+    },
+    "TECH": {
+      "test_tickers": ["MSFT", "NVDA", "CRM"],
+      "questions": [
+        {
+          "id": "tech-001",
+          "question": "What is the revenue growth rate year over year, and is the company in Rule of 40 territory?",
+          "expected_tools": ["get_income_statement"],
+          "expected_sections": [],
+          "must_contain_regex": ["\\d+\\.?\\d*\\s*%", "(?i)revenue|growth"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "tech-002",
+          "question": "What is the gross margin, and how does it compare between product segments (if disclosed)?",
+          "expected_tools": ["get_income_statement", "search_10k"],
+          "expected_sections": ["Item 7 - MD&A"],
+          "must_contain_regex": ["\\d+\\.?\\d*\\s*%", "(?i)margin|gross"],
+          "required_citation_count": 1
+        },
+        {
+          "id": "tech-003",
+          "question": "What is the R&D as a percentage of revenue, and how has it trended?",
+          "expected_tools": ["get_income_statement", "search_10k"],
+          "expected_sections": ["Item 7 - MD&A"],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]|\\d+\\.?\\d*\\s*%", "(?i)R&D|research"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "tech-004",
+          "question": "What are the main competitive threats according to the risk factors section?",
+          "expected_tools": ["get_risk_factors"],
+          "expected_sections": ["Item 1A - Risk Factors"],
+          "must_contain_regex": ["(?i)compet", "(?i)risk|threat"],
+          "required_citation_count": 1
+        }
+      ]
+    },
+    "ENERGY": {
+      "test_tickers": ["XOM", "NEE", "DUK"],
+      "questions": [
+        {
+          "id": "energy-001",
+          "question": "What is the dividend yield and how safe is the dividend given current cash flows?",
+          "expected_tools": ["get_cash_flow", "get_key_stats"],
+          "expected_sections": [],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]|\\d+\\.?\\d*\\s*%", "(?i)dividend"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "energy-002",
+          "question": "What is the capex trend over the last 3 years, and how is it funded?",
+          "expected_tools": ["get_cash_flow"],
+          "expected_sections": [],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]", "(?i)capex|capital|expenditure"],
+          "required_citation_count": 1
+        },
+        {
+          "id": "energy-003",
+          "question": "What commodity price exposure does the company have, and how does it hedge?",
+          "expected_tools": ["search_10k", "get_risk_factors"],
+          "expected_sections": ["Item 1A - Risk Factors", "Item 7 - MD&A"],
+          "must_contain_regex": ["(?i)commodity|oil|gas|price|hedge"],
+          "required_citation_count": 1
+        },
+        {
+          "id": "energy-004",
+          "question": "What is the regulatory or carbon transition risk exposure, and what mitigants are in place?",
+          "expected_tools": ["get_risk_factors"],
+          "expected_sections": ["Item 1A - Risk Factors"],
+          "must_contain_regex": ["(?i)regulat|carbon|emission|transition|environmental"],
+          "required_citation_count": 1
+        }
+      ]
+    },
+    "CONSUMER": {
+      "test_tickers": ["WMT", "COST", "MCD"],
+      "questions": [
+        {
+          "id": "consumer-001",
+          "question": "What is the same-store or comparable sales growth rate, and what is driving it?",
+          "expected_tools": ["search_10k", "get_mda"],
+          "expected_sections": ["Item 7 - MD&A"],
+          "must_contain_regex": ["\\d+\\.?\\d*\\s*%", "(?i)comparable|same.store|comp"],
+          "required_citation_count": 1
+        },
+        {
+          "id": "consumer-002",
+          "question": "What is the gross margin and operating margin? How has operating leverage evolved?",
+          "expected_tools": ["get_income_statement"],
+          "expected_sections": [],
+          "must_contain_regex": ["\\d+\\.?\\d*\\s*%", "(?i)margin|operating"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "consumer-003",
+          "question": "What supply chain or inventory risks does the company flag?",
+          "expected_tools": ["get_risk_factors"],
+          "expected_sections": ["Item 1A - Risk Factors"],
+          "must_contain_regex": ["(?i)supply|inventory|logistic"],
+          "required_citation_count": 1
+        },
+        {
+          "id": "consumer-004",
+          "question": "What is the cash return to shareholders via dividends and buybacks?",
+          "expected_tools": ["get_cash_flow"],
+          "expected_sections": [],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]", "(?i)dividend|buyback|repurchase"],
+          "required_citation_count": 2
+        }
+      ]
+    },
+    "HEALTHCARE": {
+      "test_tickers": ["UNH", "LLY", "JNJ"],
+      "questions": [
+        {
+          "id": "health-001",
+          "question": "What is the product pipeline, and which drugs are approaching key FDA milestones?",
+          "expected_tools": ["search_10k", "get_business_description"],
+          "expected_sections": ["Item 1 - Business", "Item 7 - MD&A"],
+          "must_contain_regex": ["(?i)pipeline|clinical|phase|approval|FDA"],
+          "required_citation_count": 1
+        },
+        {
+          "id": "health-002",
+          "question": "What is the patent expiration / loss of exclusivity exposure over the next 5 years?",
+          "expected_tools": ["get_risk_factors", "search_10k"],
+          "expected_sections": ["Item 1A - Risk Factors", "Item 1 - Business"],
+          "must_contain_regex": ["(?i)patent|exclusivity|LOE|generic"],
+          "required_citation_count": 1
+        },
+        {
+          "id": "health-003",
+          "question": "What is the revenue growth, and how much comes from recurring vs new products?",
+          "expected_tools": ["get_income_statement", "search_10k"],
+          "expected_sections": ["Item 7 - MD&A"],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]|\\d+\\.?\\d*\\s*%", "(?i)revenue|growth"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "health-004",
+          "question": "What regulatory, litigation, or Medicare/Medicaid reimbursement risks are disclosed?",
+          "expected_tools": ["get_risk_factors"],
+          "expected_sections": ["Item 1A - Risk Factors"],
+          "must_contain_regex": ["(?i)regulat|litigation|medicare|medicaid|reimbursement"],
+          "required_citation_count": 1
+        }
+      ]
+    },
+    "GENERIC": {
+      "test_tickers": ["BRK-B", "BA", "CAT"],
+      "questions": [
+        {
+          "id": "generic-001",
+          "question": "What is the revenue trend over the last 3 fiscal years, and what is driving the growth?",
+          "expected_tools": ["get_income_statement", "get_mda"],
+          "expected_sections": ["Item 7 - MD&A"],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]|\\d+\\.?\\d*\\s*%", "(?i)revenue"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "generic-002",
+          "question": "What is the balance sheet strength: total debt, cash position, and debt-to-equity?",
+          "expected_tools": ["get_balance_sheet"],
+          "expected_sections": [],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]", "(?i)debt|cash|equity"],
+          "required_citation_count": 2
+        },
+        {
+          "id": "generic-003",
+          "question": "What are the top 3 risk factors disclosed in the most recent 10-K?",
+          "expected_tools": ["get_risk_factors"],
+          "expected_sections": ["Item 1A - Risk Factors"],
+          "must_contain_regex": ["(?i)risk"],
+          "required_citation_count": 1
+        },
+        {
+          "id": "generic-004",
+          "question": "What is the free cash flow generation, and how is it being deployed (capex, M&A, buybacks, dividends)?",
+          "expected_tools": ["get_cash_flow"],
+          "expected_sections": [],
+          "must_contain_regex": ["\\$[\\d,.]+\\s?[MB]", "(?i)cash.?flow|FCF|capital"],
+          "required_citation_count": 2
+        }
+      ]
+    }
+  }
+}
