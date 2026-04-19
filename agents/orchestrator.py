@@ -104,7 +104,7 @@ def _load_specialist(category: StockCategory) -> AgentProfile:
 def run_agent(
     ticker: str,
     user_query: Optional[str] = None,
-    max_steps: int = 15,
+    max_steps: int = 25,
     model: str = "claude-sonnet-4-20250514",
 ) -> Generator[dict, None, None]:
     """
@@ -137,6 +137,11 @@ def run_agent(
         f"Use your tools to pull SEC financial data, analyze the 10-K, "
         f"and assess the investment case. Structure your response with these sections:\n\n"
         + "\n".join(f"## {s}" for s in profile.memo_sections)
+        + "\n\nEFFICIENCY: Call MULTIPLE tools in parallel in the same response "
+        "whenever possible — e.g. get_market_regime, get_income_statement, "
+        "get_balance_sheet, get_cash_flow can all be requested together in one "
+        "round. This is much faster than calling them sequentially. Only serialize "
+        "when a later call genuinely depends on an earlier result."
     )
     raw_query = user_query or default_query
 
@@ -253,8 +258,53 @@ def run_agent(
         messages.append({"role": "assistant", "content": assistant_content})
         messages.append({"role": "user", "content": tool_results})
 
-    # Max steps reached
-    yield {"type": "done", "memo": "Max steps reached without completion.", "steps": max_steps}
+    # Max steps reached — graceful recovery: ask Claude to finalize with what it has
+    yield {
+        "type": "tool_call",
+        "tool": "finalize_memo",
+        "input": {"reason": "max_steps_reached"},
+    }
+    messages.append({
+        "role": "user",
+        "content": (
+            f"You've used all {max_steps} tool rounds. STOP calling tools and "
+            f"write the final memo NOW using the data you already have. It's "
+            f"better to deliver a memo that says 'data not available for section X' "
+            f"than to fail entirely. Structure it with the required sections and "
+            f"cite inline where you have data. If a section has no data, write: "
+            f"'Data not pulled within allotted tool calls — run the agent again "
+            f"to retrieve.'"
+        ),
+    })
+    try:
+        final = client.messages.create(
+            model=model,
+            max_tokens=3000,
+            system=profile.system_prompt,
+            messages=messages,  # no tools this time — force text response
+        )
+        memo = "\n".join(b.text for b in final.content if b.type == "text")
+        if not memo.strip():
+            memo = (
+                f"# {ticker} Research Memo — Incomplete\n\n"
+                f"The agent reached its tool-call budget ({max_steps} rounds) "
+                f"before the memo was written. This typically means {ticker}'s "
+                f"10-K is unusually long or the agent took many serial tool "
+                f"calls. Try **Run Agent** again — cached data from this run "
+                f"will make the second attempt complete faster."
+            )
+        yield {"type": "done", "memo": memo, "steps": max_steps}
+    except Exception as exc:
+        yield {
+            "type": "done",
+            "memo": (
+                f"# {ticker} Research Memo — Incomplete\n\n"
+                f"The agent reached its tool-call budget. Retry with **Run Agent** "
+                f"— cached data from this run will make the second attempt complete "
+                f"faster.\n\nError: {exc}"
+            ),
+            "steps": max_steps,
+        }
 
 
 # ---------------------------------------------------------------------------

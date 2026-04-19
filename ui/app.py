@@ -332,8 +332,8 @@ if cache_key in st.session_state.analyses:
         for i, tc in enumerate(analysis["tool_calls"], 1):
             st.markdown(f"**{i}. `{tc['tool']}`** — `{tc['input']}`")
 
-    # Export
-    col1, col2 = st.columns([1, 4])
+    # Export + send-to-Trader actions
+    col1, col2, col3 = st.columns([1, 1, 3])
     with col1:
         st.download_button(
             "📥 Download Memo",
@@ -343,6 +343,30 @@ if cache_key in st.session_state.analyses:
             use_container_width=True,
         )
     with col2:
+        # Add to Trader scan list (defaults to "Top Picks")
+        from data.watchlists import (
+            DEFAULT_NAME as _WL_DEFAULT,
+            add_ticker as _add_ticker,
+            load_watchlist as _load_wl,
+        )
+        already_in = analysis["ticker"] in _load_wl(_WL_DEFAULT)
+        if already_in:
+            st.caption(f"✓ Already in **{_WL_DEFAULT}**")
+        else:
+            if st.button(f"➕ Add {analysis['ticker']} to Top Picks",
+                         use_container_width=True, type="secondary"):
+                _add_ticker(_WL_DEFAULT, analysis["ticker"])
+                # Invalidate any cached scan so next Trader visit re-scans
+                for k in list(st.session_state.keys()):
+                    if k.startswith("scan_"):
+                        st.session_state.pop(k, None)
+                st.success(
+                    f"Added **{analysis['ticker']}** to your **{_WL_DEFAULT}** "
+                    f"scan list. Switch to 📈 Trader Mode and click Scan Now "
+                    f"to see its Weinstein stage."
+                )
+                st.rerun()
+    with col3:
         st.caption(
             f"Generated: {analysis['generated_at'].strftime('%Y-%m-%d %H:%M UTC')} · "
             f"Specialist: {analysis['category']}"
