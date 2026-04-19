@@ -39,39 +39,52 @@ STAGE_ICON = {1: "◯", 2: "✓", 3: "⚠", 4: "✗"}
 # ---------------------------------------------------------------------------
 
 def render_watchlist_sidebar():
-    """Watchlist picker + ticker add/remove in the sidebar. Returns selected tickers."""
+    """Scan-list picker + ticker add/remove in the sidebar. Returns selected tickers."""
     st.sidebar.markdown("### 📈 Trader Mode")
     st.sidebar.caption("Weinstein Stage Analysis · daily scan")
 
     watchlists = list_watchlists()
 
-    # Watchlist selector
+    # Scan list selector
     if "trader_watchlist" not in st.session_state:
         st.session_state.trader_watchlist = DEFAULT_NAME
     if st.session_state.trader_watchlist not in watchlists:
         st.session_state.trader_watchlist = watchlists[0] if watchlists else DEFAULT_NAME
 
     selected = st.sidebar.selectbox(
-        "Watchlist",
+        "📋 Scan list",
         options=watchlists,
         index=watchlists.index(st.session_state.trader_watchlist)
         if st.session_state.trader_watchlist in watchlists else 0,
         key="watchlist_selector",
+        help=(
+            "A **scan list** is the set of tickers Weinstein will analyze "
+            "when you click Scan Now. The included tickers are rated Stage 1–4. "
+            "The ones that come back as Stage 2 are your buy candidates."
+        ),
     )
     st.session_state.trader_watchlist = selected
 
     tickers = load_watchlist(selected)
-    st.sidebar.caption(f"{len(tickers)} tickers")
+    st.sidebar.caption(
+        f"📊 **{len(tickers)} tickers** in this scan list. "
+        f"Removing a ticker only affects this list — it doesn't sell anything."
+    )
 
-    # New watchlist creator
-    with st.sidebar.expander("➕ New watchlist"):
-        new_name = st.text_input("Name", key="new_wl_name")
+    # New scan list creator
+    with st.sidebar.expander("➕ New scan list"):
+        st.caption(
+            "Create your own curated list. Useful if you only follow certain "
+            "sectors or want to track a personal portfolio."
+        )
+        new_name = st.text_input("Name (e.g. 'My Semis')", key="new_wl_name")
         new_tickers_raw = st.text_area(
             "Tickers (one per line or comma-separated)",
-            placeholder="AAPL\nMSFT\nNVDA",
+            placeholder="NVDA\nAMD\nTSM\nMU",
             key="new_wl_tickers",
+            height=80,
         )
-        if st.button("Create", key="new_wl_btn"):
+        if st.button("Create scan list", key="new_wl_btn", use_container_width=True):
             if new_name and new_tickers_raw:
                 parsed = []
                 for chunk in new_tickers_raw.replace(",", "\n").split("\n"):
@@ -81,27 +94,51 @@ def render_watchlist_sidebar():
                 if parsed:
                     save_watchlist(new_name, parsed)
                     st.session_state.trader_watchlist = new_name
+                    st.success(f"Created '{new_name}' with {len(parsed)} tickers.")
                     st.rerun()
+            else:
+                st.warning("Give the scan list a name and at least one ticker.")
 
-    # Edit current watchlist
+    # Edit current scan list
     with st.sidebar.expander(f"✏️ Edit '{selected}'"):
-        add_t = st.text_input("Add ticker", key="add_ticker_input", placeholder="e.g. TSLA")
-        c1, c2 = st.columns(2)
-        if c1.button("Add", key="add_btn"):
+        st.caption(
+            "Add or remove tickers from this scan list. "
+            "Changes only affect *what gets scanned* — no stocks are bought or sold."
+        )
+        add_t = st.text_input("Add ticker", key="add_ticker_input",
+                               placeholder="e.g. TSLA")
+        if st.button("➕ Add to scan list", key="add_btn", use_container_width=True):
             if add_t:
-                _add_ticker(selected, add_t)
-                st.rerun()
-        if c2.button("🗑 Delete watchlist", key="del_wl",
-                     disabled=(selected == DEFAULT_NAME)):
-            if delete_watchlist(selected):
-                st.session_state.trader_watchlist = DEFAULT_NAME
+                updated = _add_ticker(selected, add_t)
+                st.success(f"Added {add_t.strip().upper()}. Now scanning {len(updated)} tickers.")
                 st.rerun()
 
         if tickers:
-            rm = st.selectbox("Remove ticker", options=tickers, key="rm_selector")
-            if st.button("Remove", key="rm_btn"):
-                _remove_ticker(selected, rm)
+            rm = st.selectbox("Remove ticker from this scan list",
+                              options=tickers, key="rm_selector")
+            if st.button(f"🗑 Remove {rm} from scan list",
+                         key="rm_btn", use_container_width=True):
+                updated = _remove_ticker(selected, rm)
+                st.warning(
+                    f"Removed **{rm}** from the **{selected}** scan list. "
+                    f"Now scanning {len(updated)} tickers. "
+                    f"This only affects what shows up on your leaderboard."
+                )
                 st.rerun()
+
+        # Delete whole list — only for custom lists
+        if selected != DEFAULT_NAME:
+            st.divider()
+            if st.button(f"🗑 Delete entire '{selected}' list",
+                         key="del_wl", use_container_width=True):
+                if delete_watchlist(selected):
+                    st.session_state.trader_watchlist = DEFAULT_NAME
+                    st.rerun()
+        else:
+            st.caption(
+                "💡 The **Top Picks** list can't be deleted — it's your default "
+                "starting universe. You can still add/remove individual tickers."
+            )
 
     return tickers
 

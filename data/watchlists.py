@@ -24,21 +24,34 @@ logger = logging.getLogger(__name__)
 _WATCHLIST_DIR = Path(__file__).parent / "watchlists"
 _WATCHLIST_DIR.mkdir(parents=True, exist_ok=True)
 
-DEFAULT_NAME = "default"
+DEFAULT_NAME = "Top Picks"
+_LEGACY_DEFAULT = "default"  # migrated on startup if present
 
 
 def _path(name: str) -> Path:
-    # Sanitize name — alphanumeric, underscore, dash
-    safe = "".join(c for c in name if c.isalnum() or c in "_-").strip()
+    # Sanitize name — alphanumeric, space, underscore, dash
+    safe = "".join(c for c in name if c.isalnum() or c in " _-").strip()
     if not safe:
         safe = "unnamed"
     return _WATCHLIST_DIR / f"{safe}.txt"
 
 
 def _ensure_default():
-    """Create default.txt from UNIVERSE if it doesn't exist."""
+    """Create 'Top Picks' from UNIVERSE (and migrate legacy 'default' if present)."""
     p = _path(DEFAULT_NAME)
+
+    # Migrate legacy default.txt → Top Picks.txt (one-time)
     if not p.exists():
+        legacy = _path(_LEGACY_DEFAULT)
+        if legacy.exists():
+            try:
+                p.write_text(legacy.read_text())
+                legacy.unlink()  # remove legacy file after migration
+                return
+            except Exception:
+                pass
+
+        # Fresh install: populate from UNIVERSE
         try:
             from data.tickers import UNIVERSE
             tickers = list(UNIVERSE.keys())
@@ -89,8 +102,8 @@ def save_watchlist(name: str, tickers: list[str]) -> Path:
 
 
 def delete_watchlist(name: str) -> bool:
-    """Delete a watchlist (the default can't be deleted)."""
-    if name == DEFAULT_NAME:
+    """Delete a scan list (the 'Top Picks' default can't be deleted)."""
+    if name == DEFAULT_NAME or name == _LEGACY_DEFAULT:
         return False
     p = _path(name)
     if p.exists():
