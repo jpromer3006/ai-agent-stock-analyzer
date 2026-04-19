@@ -69,6 +69,29 @@ STAGE4_MAX_SLOPE_PCT = -0.005
 # Data classes
 # ---------------------------------------------------------------------------
 @dataclass
+class TradeSetup:
+    """
+    Weinstein classic Stage 2 breakout trade setup.
+
+    - Buy-Stop: place a buy order just above the recent pivot high
+    - Stop-Loss: exit if price closes below 30-week MA (Weinstein's invalidator)
+    - Target:   prior swing high or measured move from base
+    - Risk/Reward: target distance / stop distance
+    """
+    applicable: bool = False                # True only when stage allows a clean setup
+    direction: str = "NONE"                 # "LONG" for Stage 2, "SHORT" for Stage 4
+    entry_type: str = "NONE"                # "Buy-Stop" or "Sell-Stop"
+    entry_price: float = 0.0                # Buy-stop trigger (above pivot high)
+    stop_loss: float = 0.0                  # Invalidation level (30-week MA)
+    target_1: float = 0.0                   # First target (prior resistance)
+    risk_per_share: float = 0.0             # |entry - stop|
+    reward_per_share: float = 0.0           # |target - entry|
+    risk_reward_ratio: float = 0.0          # reward / risk
+    pivot_high_50d: float = 0.0             # 50-day high (reference)
+    narrative: str = ""                     # human-readable setup explanation
+
+
+@dataclass
 class StageResult:
     ticker: str
     stage: int                              # 1, 2, 3, or 4
@@ -86,6 +109,15 @@ class StageResult:
     volume_surge: float = 1.0               # current vol / 50d avg
     pct_from_52w_high: float = 0.0          # <0 if below high
     pct_from_52w_low: float = 0.0           # >0 if above low
+
+    # Reference levels (from daily OHLCV)
+    high_52w: float = 0.0
+    low_52w: float = 0.0
+    high_50d: float = 0.0
+    low_50d: float = 0.0
+
+    # Weinstein trade setup (computed when stage allows)
+    trade_setup: Optional[TradeSetup] = None
 
     # Meta
     as_of_date: Optional[str] = None
@@ -139,10 +171,15 @@ def _compute_indicators(df: pd.DataFrame, bench_df: Optional[pd.DataFrame] = Non
     last_vol = float(volume.iloc[-1])
     volume_surge = last_vol / last_vol_avg if last_vol_avg > 0 else 1.0
 
-    # 52-week stats
+    # 52-week and 50-day stats
     last_252 = close.tail(252)
-    pct_from_52w_high = (last_close - float(last_252.max())) / float(last_252.max())
-    pct_from_52w_low = (last_close - float(last_252.min())) / float(last_252.min())
+    last_50 = close.tail(50)
+    high_52w = float(last_252.max())
+    low_52w = float(last_252.min())
+    high_50d = float(last_50.max())
+    low_50d = float(last_50.min())
+    pct_from_52w_high = (last_close - high_52w) / high_52w
+    pct_from_52w_low = (last_close - low_52w) / low_52w
 
     # Mansfield Relative Strength vs SPY
     # RS = (stock/bench) / SMA52(stock/bench) - 1, scaled
@@ -171,7 +208,103 @@ def _compute_indicators(df: pd.DataFrame, bench_df: Optional[pd.DataFrame] = Non
         "pct_from_52w_high": pct_from_52w_high,
         "pct_from_52w_low": pct_from_52w_low,
         "mansfield_rs": mansfield_rs,
+        "high_52w": high_52w,
+        "low_52w": low_52w,
+        "high_50d": high_50d,
+        "low_50d": low_50d,
     }
+
+
+# ---------------------------------------------------------------------------
+# Weinstein trade setup computation
+# ---------------------------------------------------------------------------
+
+def _compute_trade_setup(stage: int, ind: dict) -> TradeSetup:
+    """
+    Compute the Weinstein classic Stage 2 breakout trade setup.
+
+    Rules from "Secrets for Profiting in Bull and Bear Markets":
+      - Buy-Stop: place a buy order at (pivot high + 0.5% buffer) to avoid
+        chasing but catch a confirmed breakout
+      - Stop-Loss: 30-week MA is the invalidator. Close below it → exit.
+      - Target 1: prior 52-week high (first resistance) or measured move
+        from base (pivot high - 52-week low, projected up from entry)
+    Stage 4 mirror applies for short setups.
+    """
+    setup = TradeSetup()
+    last_close = ind["last_close"]
+    ma_30w = ind["ma_30w"]
+    high_50d = ind["high_50d"]
+    low_50d = ind["low_50d"]
+    high_52w = ind["high_52w"]
+    low_52w = ind["low_52w"]
+
+    if stage == 2:
+        setup.applicable = True
+        setup.direction = "LONG"
+        setup.entry_type = "Buy-Stop"
+        # Weinstein: enter just above the pivot high (0.5% buffer)
+        setup.entry_price = round(high_50d * 1.005, 2)
+        # If price has already broken out above pivot, use current close as entry
+        if last_close > high_50d:
+            setup.entry_price = round(last_close * 1.005, 2)
+        # Stop-loss at 30-week MA (Weinstein's invalidator)
+        setup.stop_loss = round(ma_30w, 2)
+        # Target: measured move from 52-week base, projected from entry
+        base_depth = high_52w - low_52w
+        setup.target_1 = round(setup.entry_price + base_depth * 0.5, 2)
+        setup.pivot_high_50d = round(high_50d, 2)
+
+    elif stage == 4:
+        setup.applicable = True
+        setup.direction = "SHORT"
+        setup.entry_type = "Sell-Stop"
+        # Mirror: enter just below the pivot low (-0.5% buffer)
+        setup.entry_price = round(low_50d * 0.995, 2)
+        if last_close < low_50d:
+            setup.entry_price = round(last_close * 0.995, 2)
+        # Stop-loss at 30-week MA (above current price in Stage 4)
+        setup.stop_loss = round(ma_30w, 2)
+        # Target: measured move down
+        base_depth = high_52w - low_52w
+        setup.target_1 = round(setup.entry_price - base_depth * 0.5, 2)
+        setup.pivot_high_50d = round(low_50d, 2)
+
+    else:
+        setup.applicable = False
+        setup.narrative = (
+            f"Stock is in Stage {stage} — no clean Weinstein setup right now. "
+            f"Wait for a Stage 2 breakout (BUY) or Stage 4 breakdown (SHORT) "
+            f"with a confirmed 30-week MA direction."
+        )
+        return setup
+
+    # Compute risk/reward
+    setup.risk_per_share = abs(setup.entry_price - setup.stop_loss)
+    setup.reward_per_share = abs(setup.target_1 - setup.entry_price)
+    if setup.risk_per_share > 0:
+        setup.risk_reward_ratio = round(setup.reward_per_share / setup.risk_per_share, 2)
+
+    # Narrative
+    if stage == 2:
+        setup.narrative = (
+            f"**Classic Weinstein Stage 2 Setup:** Place a Buy-Stop order at "
+            f"${setup.entry_price} (just above the 50-day pivot high of "
+            f"${setup.pivot_high_50d}). Set a protective Stop-Loss at "
+            f"${setup.stop_loss} (the 30-week moving average — Weinstein's "
+            f"invalidation line). First target is ${setup.target_1}, a "
+            f"measured move from the prior base. Risk/Reward: "
+            f"{setup.risk_reward_ratio:.2f}:1."
+        )
+    else:
+        setup.narrative = (
+            f"**Classic Weinstein Stage 4 Setup (Short):** Place a Sell-Stop "
+            f"order at ${setup.entry_price} (below recent pivot low). Cover "
+            f"if price reclaims ${setup.stop_loss} (the 30-week MA — breakdown "
+            f"invalidated). First target ${setup.target_1}. Risk/Reward: "
+            f"{setup.risk_reward_ratio:.2f}:1."
+        )
+    return setup
 
 
 # ---------------------------------------------------------------------------
@@ -350,6 +483,11 @@ def analyze_stage(ticker: str, df: Optional[pd.DataFrame] = None) -> StageResult
         result.volume_surge = ind["volume_surge"]
         result.pct_from_52w_high = ind["pct_from_52w_high"]
         result.pct_from_52w_low = ind["pct_from_52w_low"]
+        result.high_52w = ind["high_52w"]
+        result.low_52w = ind["low_52w"]
+        result.high_50d = ind["high_50d"]
+        result.low_50d = ind["low_50d"]
+        result.trade_setup = _compute_trade_setup(stage, ind)
         result.as_of_date = df.index[-1].strftime("%Y-%m-%d")
         result.explanation = explanation
     except Exception as exc:

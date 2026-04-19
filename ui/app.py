@@ -44,7 +44,7 @@ if "analyses" not in st.session_state:
 if "selected_ticker" not in st.session_state:
     st.session_state.selected_ticker = None
 if "app_mode" not in st.session_state:
-    st.session_state.app_mode = "research"
+    st.session_state.app_mode = "assistant"
 
 
 # ---------------------------------------------------------------------------
@@ -61,23 +61,39 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-mode_col1, mode_col2 = st.columns(2)
+mode_col0, mode_col1, mode_col2 = st.columns(3)
+with mode_col0:
+    assistant_active = st.session_state.app_mode == "assistant"
+    label = "💬 Assistant  ✓" if assistant_active else "💬 Assistant"
+    if st.button(label, key="mode_assistant", use_container_width=True,
+                 type="primary" if assistant_active else "secondary"):
+        st.session_state.app_mode = "assistant"
+        st.rerun()
 with mode_col1:
     research_active = st.session_state.app_mode == "research"
-    label = "🔬 Research Mode  ✓" if research_active else "🔬 Research Mode"
+    label = "🔬 Research  ✓" if research_active else "🔬 Research"
     if st.button(label, key="mode_research", use_container_width=True,
                  type="primary" if research_active else "secondary"):
         st.session_state.app_mode = "research"
         st.rerun()
 with mode_col2:
     trader_active = st.session_state.app_mode == "trader"
-    label = "📈 Trader Mode  ✓" if trader_active else "📈 Trader Mode"
+    label = "📈 Trader  ✓" if trader_active else "📈 Trader"
     if st.button(label, key="mode_trader", use_container_width=True,
                  type="primary" if trader_active else "secondary"):
         st.session_state.app_mode = "trader"
         st.rerun()
 
 st.markdown("")
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# ASSISTANT MODE (chatbot-first entry)
+# ═══════════════════════════════════════════════════════════════════════════
+if st.session_state.app_mode == "assistant":
+    from ui.components.assistant_mode import render_assistant_mode
+    render_assistant_mode()
+    st.stop()
 
 
 # ═══════════════════════════════════════════════════════════════════════════

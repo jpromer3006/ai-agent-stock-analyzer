@@ -360,12 +360,96 @@ def _render_single_detail(r: StageResult):
     for line in r.explanation:
         st.caption(f"  · {line}")
 
-    # Chart: price + 30-week MA
-    _render_price_chart(r.ticker)
+    # Trade Setup card (Weinstein classic)
+    _render_trade_setup_card(r)
+
+    # Chart: price + 30-week MA + trade levels
+    _render_price_chart(r)
 
 
-def _render_price_chart(ticker: str):
-    """Plot price + 30-week MA for a ticker."""
+def _render_trade_setup_card(r: StageResult):
+    """Weinstein trade setup card with Entry / Stop / Target."""
+    ts = r.trade_setup
+    if ts is None or not ts.applicable:
+        st.info(
+            f"📭 **No Weinstein setup right now.** "
+            f"{ts.narrative if ts else 'Wait for a Stage 2 breakout.'}"
+        )
+        return
+
+    st.markdown("---")
+    st.markdown("### 🎯 Weinstein Trade Setup")
+
+    # Color by direction
+    direction_color = STAGE_COLOR[2] if ts.direction == "LONG" else STAGE_COLOR[4]
+
+    # Three-card display: Entry / Stop / Target
+    c1, c2, c3, c4 = st.columns(4)
+    with c1:
+        st.markdown(
+            f"<div style='padding:16px;border:2px solid {direction_color};"
+            f"border-radius:8px;text-align:center;background:#0e1117'>"
+            f"<div style='font-size:11px;color:#8b949e;text-transform:uppercase'>"
+            f"{ts.entry_type}</div>"
+            f"<div style='font-size:26px;font-weight:700;color:{direction_color}'>"
+            f"${ts.entry_price:,.2f}</div>"
+            f"<div style='font-size:11px;color:#8b949e'>entry trigger</div>"
+            f"</div>",
+            unsafe_allow_html=True,
+        )
+    with c2:
+        st.markdown(
+            f"<div style='padding:16px;border:2px solid #ff1744;"
+            f"border-radius:8px;text-align:center;background:#0e1117'>"
+            f"<div style='font-size:11px;color:#8b949e;text-transform:uppercase'>"
+            f"Stop-Loss</div>"
+            f"<div style='font-size:26px;font-weight:700;color:#ff1744'>"
+            f"${ts.stop_loss:,.2f}</div>"
+            f"<div style='font-size:11px;color:#8b949e'>30-week MA invalidator</div>"
+            f"</div>",
+            unsafe_allow_html=True,
+        )
+    with c3:
+        st.markdown(
+            f"<div style='padding:16px;border:2px solid #00c853;"
+            f"border-radius:8px;text-align:center;background:#0e1117'>"
+            f"<div style='font-size:11px;color:#8b949e;text-transform:uppercase'>"
+            f"Target 1</div>"
+            f"<div style='font-size:26px;font-weight:700;color:#00c853'>"
+            f"${ts.target_1:,.2f}</div>"
+            f"<div style='font-size:11px;color:#8b949e'>measured move</div>"
+            f"</div>",
+            unsafe_allow_html=True,
+        )
+    with c4:
+        rr_color = "#00c853" if ts.risk_reward_ratio >= 2.0 else "#ffc107"
+        if ts.risk_reward_ratio < 1.0:
+            rr_color = "#ff9800"
+        st.markdown(
+            f"<div style='padding:16px;border:2px solid {rr_color};"
+            f"border-radius:8px;text-align:center;background:#0e1117'>"
+            f"<div style='font-size:11px;color:#8b949e;text-transform:uppercase'>"
+            f"Risk / Reward</div>"
+            f"<div style='font-size:26px;font-weight:700;color:{rr_color}'>"
+            f"{ts.risk_reward_ratio:.2f}:1</div>"
+            f"<div style='font-size:11px;color:#8b949e'>"
+            f"risk ${ts.risk_per_share:.2f} · reward ${ts.reward_per_share:.2f}</div>"
+            f"</div>",
+            unsafe_allow_html=True,
+        )
+
+    # Narrative
+    st.markdown("")
+    st.markdown(ts.narrative)
+    st.caption(
+        "⚠ This is a technical signal, not a prediction. Always size positions "
+        "to the stop-loss distance, not to the entry price."
+    )
+
+
+def _render_price_chart(r: StageResult):
+    """Plot price + 30-week MA + Weinstein trade levels for a ticker."""
+    ticker = r.ticker
     try:
         import yfinance as yf
         hist = yf.Ticker(ticker).history(period="2y", auto_adjust=True)
@@ -386,11 +470,38 @@ def _render_price_chart(ticker: str):
         x=hist.index, y=hist["MA30W"], mode="lines",
         name="30-week MA", line=dict(color="#ff9800", width=2, dash="dash"),
     ))
+
+    # Overlay Weinstein trade levels if applicable
+    ts = r.trade_setup
+    if ts and ts.applicable:
+        # Entry line (buy/sell stop)
+        fig.add_hline(
+            y=ts.entry_price, line_dash="solid", line_color="#00c853", line_width=2,
+            annotation_text=f"  {ts.entry_type} ${ts.entry_price:,.2f}",
+            annotation_position="right",
+            annotation=dict(font=dict(color="#00c853", size=12)),
+        )
+        # Stop-loss line (always red)
+        fig.add_hline(
+            y=ts.stop_loss, line_dash="dot", line_color="#ff1744", line_width=2,
+            annotation_text=f"  Stop ${ts.stop_loss:,.2f}",
+            annotation_position="right",
+            annotation=dict(font=dict(color="#ff1744", size=12)),
+        )
+        # Target line (green)
+        fig.add_hline(
+            y=ts.target_1, line_dash="dashdot", line_color="#00c853", line_width=1,
+            annotation_text=f"  Target ${ts.target_1:,.2f}",
+            annotation_position="right",
+            annotation=dict(font=dict(color="#00c853", size=12)),
+        )
+
+    title = f"{ticker} — Price, 30-week MA, Weinstein Trade Levels"
     fig.update_layout(
-        title=f"{ticker} — Price vs 30-week Moving Average (Weinstein's key indicator)",
+        title=title,
         xaxis_title=None,
         yaxis_title="Price ($)",
-        height=400,
+        height=450,
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
         font_color="#e6edf3",
@@ -399,6 +510,7 @@ def _render_price_chart(ticker: str):
         dragmode=False,
         hovermode="x unified",
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+        margin=dict(r=120),  # room for right-side annotations
     )
     st.plotly_chart(fig, use_container_width=True,
                     config={"scrollZoom": False, "displayModeBar": False})
