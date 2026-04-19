@@ -501,9 +501,10 @@ def _render_price_chart(r: StageResult):
     from ml.stage_analyzer import MA_WINDOW_DAYS
     from ui.components.chart_helpers import (
         add_trade_setup_lines,
-        add_transition_arrows,
+        add_transition_markers,
         add_you_are_here,
         detect_stage_transitions,
+        trade_setup_legend_html,
     )
     hist["MA30W"] = hist["Close"].rolling(MA_WINDOW_DAYS, min_periods=MA_WINDOW_DAYS).mean()
 
@@ -511,39 +512,53 @@ def _render_price_chart(r: StageResult):
     fig.add_trace(go.Scatter(
         x=hist.index, y=hist["Close"], mode="lines",
         name="Close", line=dict(color="#4a90e2", width=2),
+        hovertemplate="%{x|%b %d, %Y}<br>Price $%{y:,.2f}<extra></extra>",
     ))
     fig.add_trace(go.Scatter(
         x=hist.index, y=hist["MA30W"], mode="lines",
         name="30-week MA", line=dict(color="#ff9800", width=2, dash="dash"),
+        hovertemplate="%{x|%b %d, %Y}<br>30W MA $%{y:,.2f}<extra></extra>",
     ))
 
-    # Stage transition arrows (last 12 months)
-    add_transition_arrows(fig, detect_stage_transitions(hist))
-
-    # YOU ARE HERE marker at the current close
-    add_you_are_here(fig, hist, r.stage, r.stage_name)
-
-    # Trade setup horizontal lines
+    # Trade setup: horizontal lines only (no text annotations)
     add_trade_setup_lines(fig, r.trade_setup)
 
-    title = f"{ticker} — Weinstein view (Price · 30W MA · transitions · trade levels)"
+    # Stage transition markers — triangles, hover for details
+    add_transition_markers(fig, detect_stage_transitions(hist))
+
+    # YOU ARE HERE — single circle marker, hover for details
+    add_you_are_here(fig, hist, r.stage, r.stage_name)
+
+    title = f"{ticker} — Weinstein chart  ·  hover any marker for details"
     fig.update_layout(
         title=title,
         xaxis_title=None,
         yaxis_title="Price ($)",
-        height=480,
+        height=500,
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
         font_color="#e6edf3",
         xaxis=dict(showgrid=False, fixedrange=True),
         yaxis=dict(showgrid=True, gridcolor="#30363d", fixedrange=True),
         dragmode=False,
-        hovermode="x unified",
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        margin=dict(r=130, t=60),  # room for right-side annotations + YOU ARE HERE
+        hovermode="closest",  # was 'x unified' — closest is cleaner with markers
+        legend=dict(
+            orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1,
+            bgcolor="rgba(0,0,0,0)",
+        ),
+        margin=dict(r=30, t=60, b=20),
     )
     st.plotly_chart(fig, use_container_width=True,
                     config={"scrollZoom": False, "displayModeBar": False})
+
+    # Trade setup pill legend below the chart (clean, non-stacking)
+    legend_html = trade_setup_legend_html(r.trade_setup)
+    if legend_html:
+        st.markdown(legend_html, unsafe_allow_html=True)
+    st.caption(
+        "💡 Hover any triangle or circle on the chart for the full Weinstein "
+        "interpretation (date, price, meaning)."
+    )
 
 
 # ---------------------------------------------------------------------------
