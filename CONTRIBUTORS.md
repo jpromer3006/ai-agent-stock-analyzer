@@ -4,32 +4,50 @@ The **Ai-Agent Stock Analyzer** was built as the Applied Finance Project
 for AIGB 6317 — *Machine Learning and LLMs* — at Fordham's Gabelli School
 of Business, Spring 2026.
 
+This section is written to accurately reflect who did what, in the spirit
+of academic honesty and so that downstream users of this MIT-licensed code
+have a clear picture of authorship.
+
 ---
 
 ## Team
 
-### Project Lead
+### Sole Code Author & Project Architect
 
 **JP Romero** ([@jpromer3006](https://github.com/jpromer3006))
-- Overall architecture and engineering lead
-- Research Mode — SEC EDGAR integration, 8 specialist agents, citation
-  validator, RAG pipeline, evaluation harness
-- Trader Mode — Weinstein Stage Analysis engine, batch scanner, trade
-  setup computation, market regime (Ch. 8) indicator
-- Assistant / chat layer with ElevenLabs voice integration
-- Streamlit UI, Cloudflare tunnel deployment, launcher script
+Solo-built the entire codebase between the assignment of Lecture 9 and the
+project deadline, in collaboration with an AI pair programmer
+(Anthropic's Claude). Responsibilities included:
 
-### Team Member 2
+- Overall product architecture and system design
+- Research Mode: SEC EDGAR integration (XBRL + 10-K text), 8 specialist
+  agents, citation validator, semantic RAG pipeline, evaluation harness
+  (34-question golden set)
+- Trader Mode: Weinstein Stage Analysis engine, batch scanner, trade-setup
+  computation, Chapter-8 market regime (SPY stage + breadth + momentum)
+- Assistant / chat layer with plain-English reasoning and ElevenLabs
+  voice integration
+- Streamlit UI, Cloudflare tunnel deployment, `Launch.command` macOS
+  one-click launcher
+- Evaluation framework (retrieval precision, citation coverage,
+  end-to-end answer quality)
+- All git history, all commits, all documentation
 
-**[Teammate Name — please edit]**
-- *[Role / contribution summary — please edit]*
-- Examples: evaluation run, PowerPoint presentation lead, report editing,
-  demo testing, usability feedback, specific module contributed
+### Report Lead
 
-### Team Member 3
+**[Teammate Name — to fill in after tomorrow's team meeting]**
+- 2–3 page written report covering business problem, architecture,
+  dataset, evaluation results, limitations, and next steps
+  (per Lecture 9 rubric)
+- Source material: this repository's `README.md`, `evaluation/results/`,
+  and the working demo
 
-**[Teammate Name — please edit]**
-- *[Role / contribution summary — please edit]*
+### Presentation Lead
+
+**[Teammate Name — to fill in after tomorrow's team meeting]**
+- ~10-slide PowerPoint deck, ~10-minute talk
+- Demo screenshots, architecture diagrams, evaluation table
+- Source material: this repository and the live demo
 
 ---
 
@@ -44,21 +62,26 @@ Earnings Call Analyst), and the commercialization framing.
 
 ---
 
-## Intellectual Property
+## Intellectual Property and Licensing
 
 This project is released under the [MIT License](LICENSE) — permissive,
-commercial-use-friendly. Each contributor retains copyright on their own
-contributions and grants permission under MIT to all downstream users
-(including commercial derivatives).
+commercial-use-friendly.
 
-**For team members**: you are free to showcase this repository on your
-résumé, LinkedIn, and personal portfolio. You can fork it, modify it, and
-use any portion in future work. The MIT License does the legal heavy
-lifting — no separate agreement is required.
+- **Code authorship**: JP Romero is the sole author of all software in
+  this repository. Any commercial derivative work is operated solely by
+  **AdminAI LLC**.
+- **Project deliverables**: The final written report and presentation
+  are joint deliverables of the full three-person academic team. Their
+  authors retain full rights to showcase those deliverables on résumés,
+  portfolios, and LinkedIn.
+- **Team members can**: showcase participation in the Applied Finance
+  Project, link to this repository as a project they presented, share
+  the written report and deck they authored.
+- **Team members do not hold**: code copyright or equity in any
+  commercial release (consistent with their actual contribution scope).
 
-**For commercial derivatives**: the production SaaS version of this
-platform is operated by **AdminAI LLC**. Any commercial release preserves
-attribution to all contributors above in the product's "About" page.
+This division of labor is disclosed to Prof. Li per standard academic
+honesty expectations.
 
 ---
 
@@ -88,7 +111,8 @@ This project synthesizes, attributes, and extends the following sources:
 ### AI / ML Libraries
 
 - **Anthropic Claude** (claude-sonnet-4) — agent reasoning, tool use,
-  memo generation. Subject to Anthropic's API Terms of Service.
+  memo generation, and AI pair-programming assistance during the build.
+  Subject to Anthropic's API Terms of Service.
 - **ElevenLabs** — text-to-speech via `eleven_turbo_v2_5`, default voice
   "Adam". Subject to ElevenLabs commercial terms.
 - **sentence-transformers** (`all-MiniLM-L6-v2`) — embeddings for the
@@ -102,6 +126,26 @@ This project synthesizes, attributes, and extends the following sources:
 - **Plotly** — interactive charts. MIT.
 - **Cloudflare Tunnel** — quick public demo tunnel (free tier).
 - **GitHub CLI** — repo creation and management. MIT.
+
+---
+
+## Transparency Note on AI-Assisted Development
+
+The code in this repository was written by the author with significant
+assistance from an AI pair programmer (Anthropic's Claude, Sonnet 4 model).
+This is disclosed openly because:
+
+1. It reflects the educational spirit of AIGB 6317 — the course is
+   literally about applying LLMs to real-world problems.
+2. Every architectural decision, methodology choice, evaluation strategy,
+   and ethical guardrail was directed by the human author.
+3. All commits are reviewed and tested by the human author before being
+   merged.
+
+This is consistent with how professional engineering teams increasingly
+operate. It is not the AI's project; it is a human-led project that uses
+AI as a tool, the same way a team uses IDEs, search engines, and Stack
+Overflow.
 
 ---
 
