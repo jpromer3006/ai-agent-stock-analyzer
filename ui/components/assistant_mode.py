@@ -29,11 +29,12 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
+import plotly.graph_objects as go
 import streamlit as st
 
 from data.watchlists import DEFAULT_NAME, list_watchlists, load_watchlist
 from ml.batch_scanner import ScanReport, scan_universe
-from ml.stage_analyzer import StageResult, analyze_stage
+from ml.stage_analyzer import MA_WINDOW_DAYS, StageResult, analyze_stage
 
 _PROJECT_ROOT = Path(__file__).parent.parent.parent
 
@@ -253,48 +254,328 @@ def _handle_find_n(report: ScanReport, n: int, direction: str) -> str:
     return "\n".join(lines)
 
 
-def _handle_show_ticker(ticker: str) -> str:
-    """Analyze a single ticker and return a concise, honest summary."""
+def _generate_why(r: StageResult) -> list[str]:
+    """
+    Plain-English reasoning for the stage classification.
+    Three to four 'because' bullets a non-expert can follow.
+    """
+    reasons: list[str] = []
+    pct_above = r.pct_above_ma
+    slope = r.ma_slope_pct
+    rs = r.mansfield_rs
+
+    # Reason 1: price vs MA
+    if pct_above > 0.05:
+        reasons.append(
+            f"**Price is {pct_above:+.0%} above the 30-week moving average** "
+            f"— Weinstein's long-term trend line. When price is well above this "
+            f"line, the big-picture trend is up."
+        )
+    elif pct_above > 0:
+        reasons.append(
+            f"**Price is just {pct_above:+.1%} above the 30-week MA** — barely "
+            f"hanging onto the long-term trend. This is a neutral-to-cautious zone."
+        )
+    elif pct_above > -0.05:
+        reasons.append(
+            f"**Price is {abs(pct_above):.1%} below the 30-week MA** — the stock "
+            f"has lost its long-term uptrend. Weinstein calls this a warning sign."
+        )
+    else:
+        reasons.append(
+            f"**Price is {abs(pct_above):.0%} below the 30-week MA** — the long-term "
+            f"trend is firmly down. Weinstein's rule: never hold a stock this "
+            f"far below its 30-week line, no matter how good the fundamentals look."
+        )
+
+    # Reason 2: MA slope
+    if slope > 0.02:
+        reasons.append(
+            f"**The 30-week MA is rising steadily** ({slope:+.1%} over the last "
+            f"month). This is what Weinstein calls a healthy uptrend — the trend "
+            f"line itself is sloping up."
+        )
+    elif slope > 0:
+        reasons.append(
+            f"**The 30-week MA is rising very slowly** ({slope:+.1%}/month) — "
+            f"momentum is fading. Weinstein warns this often precedes a Stage 3 top."
+        )
+    elif slope > -0.02:
+        reasons.append(
+            f"**The 30-week MA has flattened** ({slope:+.1%}/month) — the trend "
+            f"has stalled. This is the transition zone where smart money exits."
+        )
+    else:
+        reasons.append(
+            f"**The 30-week MA is actively falling** ({slope:+.1%}/month) — the "
+            f"long-term trend line is now sloping down. This is a Stage 4 signature."
+        )
+
+    # Reason 3: Relative strength
+    if rs > 10:
+        reasons.append(
+            f"**Relative strength vs SPY is {rs:+.1f}** — the stock is strongly "
+            f"outperforming the S&P 500. Weinstein: always favor leaders, not laggards."
+        )
+    elif rs > 0:
+        reasons.append(
+            f"**Relative strength vs SPY is {rs:+.1f}** — slightly outperforming "
+            f"the market, but not a leader. Look for stocks with RS > +10."
+        )
+    elif rs > -10:
+        reasons.append(
+            f"**Relative strength vs SPY is {rs:+.1f}** — underperforming the "
+            f"market. Weinstein avoided these on the long side entirely."
+        )
+    else:
+        reasons.append(
+            f"**Relative strength vs SPY is {rs:+.1f}** — seriously lagging the "
+            f"market. In Weinstein's framework, this is a classic short candidate."
+        )
+
+    # Reason 4: volume (only if meaningful)
+    if r.volume_surge >= 1.5:
+        reasons.append(
+            f"**Volume is {r.volume_surge:.1f}× the 50-day average** — heavier "
+            f"volume confirms whatever direction the price is moving. High volume "
+            f"on a breakout = stronger signal."
+        )
+    elif r.volume_surge < 0.7:
+        reasons.append(
+            f"**Volume is only {r.volume_surge:.1f}× the 50-day average** — "
+            f"participation is light. Weinstein warns: breakouts on low volume "
+            f"often fail."
+        )
+
+    return reasons
+
+
+def _handle_show_ticker(ticker: str) -> tuple[str, Optional[StageResult]]:
+    """
+    Analyze a single ticker and return (narrative_text, StageResult).
+    The StageResult triggers inline chart rendering with arrow annotations.
+    """
     r = analyze_stage(ticker)
     if r.error:
         return (
             f"I can't pull data for **{ticker}** right now — "
             f"yfinance returned: _{r.error}_. Double-check the ticker symbol "
             f"or try again in a moment."
-        )
+        ), None
 
     icon = STAGE_ICON[r.stage]
     ts = r.trade_setup
 
+    # Stage-specific headline in plain English
+    stage_headline = {
+        1: (f"**{ticker} is quiet right now** — it's in Stage 1 (Basing). "
+            f"The stock isn't trending up or down in a meaningful way. "
+            f"Weinstein's advice: watch, don't trade."),
+        2: (f"**{ticker} is in an uptrend** — Stage 2 (Advancing). "
+            f"This is Weinstein's BUY zone: price is above a rising 30-week MA."),
+        3: (f"**{ticker} is getting tired** — Stage 3 (Topping). "
+            f"The stock was in a nice uptrend but the momentum is fading. "
+            f"Weinstein says trim here, don't add."),
+        4: (f"**{ticker} is in a downtrend** — Stage 4 (Declining). "
+            f"Weinstein's rule: never buy a Stage 4 stock, no matter how cheap "
+            f"it looks. The trend is your enemy."),
+    }
+
     lines = [
-        f"**{ticker}** — Stage {r.stage} {icon} {r.stage_name}  "
-        f"(confidence {r.confidence:.0%})",
+        stage_headline.get(r.stage, f"**{ticker}** — Stage {r.stage} {icon} {r.stage_name}"),
         "",
+        f"**The quick read (confidence {r.confidence:.0%}):**",
         f"- Last close: **${r.last_close:,.2f}** as of {r.as_of_date}",
-        f"- vs 30-week MA: **{r.pct_above_ma:+.1%}**  (MA slope {r.ma_slope_pct:+.1%})",
-        f"- Mansfield RS vs SPY: **{r.mansfield_rs:+.1f}**",
-        f"- Bull probability: **{r.bull_probability:.0%}** → **{r.action}**",
+        f"- Bull probability: **{r.bull_probability:.0%}** → recommended action: **{r.action}**",
+        "",
+        "**Why? Three things are driving this:**",
     ]
+
+    for reason in _generate_why(r)[:4]:  # cap at 4 reasons
+        lines.append(f"- {reason}")
 
     if ts and ts.applicable:
         lines.extend([
             "",
-            "🎯 **Weinstein Trade Setup:**",
-            f"- Entry ({ts.entry_type}): **${ts.entry_price:,.2f}**",
-            f"- Stop-Loss (30W MA): **${ts.stop_loss:,.2f}**",
-            f"- Target 1: **${ts.target_1:,.2f}**",
-            f"- Risk/Reward: **{ts.risk_reward_ratio:.2f}:1**",
+            "🎯 **If you want to trade this, here's the Weinstein setup:**",
+            f"- **Entry** ({ts.entry_type}): place order at **${ts.entry_price:,.2f}**",
+            f"- **Stop-Loss**: exit at **${ts.stop_loss:,.2f}** "
+            f"(the 30-week MA — if price closes below, the trade is invalidated)",
+            f"- **First Target**: **${ts.target_1:,.2f}** (measured move from base)",
+            f"- **Risk/Reward**: **{ts.risk_reward_ratio:.2f}:1**  — "
+            f"you'd risk ${ts.risk_per_share:.2f} per share to make ${ts.reward_per_share:.2f}",
             "",
-            "⚠ Technical signal, not a prediction. Size to the stop-loss distance.",
+            "See the chart below — I've drawn the entry line (green), stop-loss "
+            "(red), and target (green dashed) so you can visualize the trade.",
+            "",
+            "⚠ This is a technical signal, not a prediction. Size positions to the "
+            "stop-loss distance, not to the entry price.",
         ])
     else:
         lines.extend([
             "",
-            f"📭 No clean Weinstein setup right now — {r.stage_name} stage.",
-            "Wait for a clean Stage 2 breakout or Stage 4 breakdown.",
+            "📭 **No clean Weinstein setup right now.** The chart below shows "
+            "why — the stage isn't suitable for a mechanical entry. Wait for a "
+            "Stage 2 breakout (BUY) or Stage 4 breakdown (SHORT) with a confirmed "
+            "30-week MA direction.",
         ])
 
-    return "\n".join(lines)
+    return "\n".join(lines), r
+
+
+# ---------------------------------------------------------------------------
+# Inline chart with arrow annotations (the "one glance" visual)
+# ---------------------------------------------------------------------------
+
+def _detect_stage_transitions(hist: "pd.DataFrame") -> list[dict]:
+    """
+    Scan history and mark likely Stage transitions:
+      - Price crosses above MA (Stage 1→2)
+      - Price crosses below MA (Stage 2/3→4)
+      - MA slope flip (up→down)
+    Returns list of {date, price, label, color}.
+    """
+    import pandas as pd
+    transitions: list[dict] = []
+    close = hist["Close"]
+    ma = hist["MA30W"]
+    if ma.isna().all():
+        return transitions
+
+    # Price vs MA cross detection
+    above = (close > ma).astype(int)
+    cross = above.diff().fillna(0)
+    last_year_cutoff = hist.index[-min(252, len(hist))]
+
+    for dt, val in cross.items():
+        if dt < last_year_cutoff:
+            continue
+        if val == 1:
+            transitions.append({
+                "date": dt, "price": float(close.loc[dt]),
+                "label": "↑ Crossed above MA",
+                "color": "#00c853",
+            })
+        elif val == -1:
+            transitions.append({
+                "date": dt, "price": float(close.loc[dt]),
+                "label": "↓ Crossed below MA",
+                "color": "#ff1744",
+            })
+
+    # Dedupe close transitions (keep one per 2-week window)
+    deduped: list[dict] = []
+    for t in transitions:
+        if deduped and (t["date"] - deduped[-1]["date"]).days < 14:
+            continue
+        deduped.append(t)
+    return deduped[-4:]  # keep only the 4 most recent
+
+
+def _render_chat_chart(ticker: str, result: Optional[StageResult] = None):
+    """
+    Render an inline chart inside a chat message:
+      - Price + 30-week MA
+      - Stage transition arrows in the last 12 months
+      - Current price labeled "YOU ARE HERE — Stage X"
+      - Entry/Stop/Target lines if a trade setup is applicable
+    """
+    try:
+        import yfinance as yf
+        hist = yf.Ticker(ticker).history(period="2y", auto_adjust=True)
+        if hist is None or hist.empty:
+            st.caption("No chart data available for this ticker.")
+            return
+    except Exception as exc:
+        st.caption(f"Couldn't load chart: {exc}")
+        return
+
+    import pandas as pd
+    hist["MA30W"] = hist["Close"].rolling(MA_WINDOW_DAYS, min_periods=MA_WINDOW_DAYS).mean()
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=hist.index, y=hist["Close"], mode="lines",
+        name="Price", line=dict(color="#4a90e2", width=2),
+    ))
+    fig.add_trace(go.Scatter(
+        x=hist.index, y=hist["MA30W"], mode="lines",
+        name="30-week MA", line=dict(color="#ff9800", width=2, dash="dash"),
+    ))
+
+    # Stage transition arrows (last 12 months)
+    transitions = _detect_stage_transitions(hist)
+    for t in transitions:
+        fig.add_annotation(
+            x=t["date"], y=t["price"],
+            text=t["label"],
+            showarrow=True,
+            arrowhead=2, arrowsize=1.2, arrowwidth=2,
+            arrowcolor=t["color"],
+            ax=0, ay=-40,
+            font=dict(color=t["color"], size=11, family="Arial"),
+            bgcolor="rgba(14,17,23,0.8)",
+            bordercolor=t["color"],
+            borderwidth=1,
+            borderpad=4,
+        )
+
+    # "YOU ARE HERE" marker at the latest close
+    last_dt = hist.index[-1]
+    last_close = float(hist["Close"].iloc[-1])
+    here_label = "📍 YOU ARE HERE"
+    if result:
+        here_label = f"📍 Stage {result.stage} {STAGE_ICON[result.stage]} {result.stage_name}"
+    fig.add_annotation(
+        x=last_dt, y=last_close,
+        text=f"<b>{here_label}</b><br>${last_close:,.2f}",
+        showarrow=True,
+        arrowhead=2, arrowsize=1.5, arrowwidth=3,
+        arrowcolor=STAGE_COLOR[result.stage] if result else "#4a90e2",
+        ax=-80, ay=-60,
+        font=dict(color="#e6edf3", size=12),
+        bgcolor=STAGE_COLOR[result.stage] if result else "#4a90e2",
+        bordercolor="white", borderwidth=1, borderpad=6,
+    )
+
+    # Trade setup overlay lines (if applicable)
+    if result and result.trade_setup and result.trade_setup.applicable:
+        ts = result.trade_setup
+        fig.add_hline(
+            y=ts.entry_price, line_dash="solid", line_color="#00c853", line_width=2,
+            annotation_text=f"  Entry ${ts.entry_price:,.2f}",
+            annotation_position="right",
+            annotation=dict(font=dict(color="#00c853", size=11)),
+        )
+        fig.add_hline(
+            y=ts.stop_loss, line_dash="dot", line_color="#ff1744", line_width=2,
+            annotation_text=f"  Stop ${ts.stop_loss:,.2f}",
+            annotation_position="right",
+            annotation=dict(font=dict(color="#ff1744", size=11)),
+        )
+        fig.add_hline(
+            y=ts.target_1, line_dash="dashdot", line_color="#00c853", line_width=1,
+            annotation_text=f"  Target ${ts.target_1:,.2f}",
+            annotation_position="right",
+            annotation=dict(font=dict(color="#00c853", size=11)),
+        )
+
+    fig.update_layout(
+        title=f"{ticker} — Weinstein view (last 2 years)",
+        height=430,
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font_color="#e6edf3",
+        xaxis=dict(showgrid=False, fixedrange=True),
+        yaxis=dict(showgrid=True, gridcolor="#30363d", fixedrange=True,
+                   title="Price ($)"),
+        dragmode=False,
+        hovermode="x unified",
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+        margin=dict(r=130, t=60, b=40),
+    )
+    st.plotly_chart(fig, use_container_width=True,
+                    config={"scrollZoom": False, "displayModeBar": False})
 
 
 def _handle_explain_stage(stage: int) -> str:
@@ -471,6 +752,12 @@ def render_assistant_mode():
     for msg in st.session_state.assistant_messages:
         with st.chat_message(msg["role"]):
             st.markdown(msg["content"])
+            # Render inline chart if this message is attached to a ticker
+            if msg.get("chart_ticker"):
+                _render_chat_chart(
+                    msg["chart_ticker"],
+                    result=msg.get("stage_result"),
+                )
 
     # Chat input
     user_input = st.chat_input("e.g. 'find me 5 excellent stocks' or 'show NVDA'")
@@ -484,6 +771,9 @@ def render_assistant_mode():
         # Dispatch to intent handler
         intent, params = _detect_intent(user_input)
 
+        chart_ticker: Optional[str] = None
+        stage_result: Optional[StageResult] = None
+
         if intent == "greet":
             response = _handle_greet()
         elif intent == "market_status":
@@ -491,16 +781,19 @@ def render_assistant_mode():
         elif intent == "find_n":
             response = _handle_find_n(report, params["n"], params["direction"])
         elif intent == "show_ticker":
-            response = _handle_show_ticker(params["ticker"])
+            response, stage_result = _handle_show_ticker(params["ticker"])
+            if stage_result:
+                chart_ticker = params["ticker"]
         elif intent == "explain_stage":
             response = _handle_explain_stage(params["stage"])
         else:
             response = _handle_unknown_via_llm(user_input, report)
 
-        st.session_state.assistant_messages.append({
-            "role": "assistant",
-            "content": response,
-        })
+        msg_payload = {"role": "assistant", "content": response}
+        if chart_ticker:
+            msg_payload["chart_ticker"] = chart_ticker
+            msg_payload["stage_result"] = stage_result
+        st.session_state.assistant_messages.append(msg_payload)
         st.rerun()
 
     # Sidebar: reset + re-scan
