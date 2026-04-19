@@ -8,14 +8,25 @@ screening: "show me the Stage 2 breakouts and Stage 4 breakdowns."
 
 from __future__ import annotations
 
+import hashlib
+import json
 import logging
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
+from datetime import datetime
+from pathlib import Path
 from typing import Callable, Optional
 
-from ml.stage_analyzer import StageResult, analyze_stage
+from ml.stage_analyzer import StageResult, TradeSetup, analyze_stage
 
 logger = logging.getLogger(__name__)
+
+# Disk cache for batch scans (15-min TTL)
+_PROJECT_ROOT = Path(__file__).parent.parent
+_SCAN_CACHE_DIR = _PROJECT_ROOT / "data" / "cache" / "scans"
+_SCAN_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+_SCAN_CACHE_TTL = 15 * 60  # 15 minutes
 
 
 @dataclass
@@ -63,10 +74,73 @@ class ScanReport:
         )
 
 
+def _cache_key(tickers: list[str]) -> str:
+    """Stable hash for a ticker list (order-insensitive)."""
+    sig = ",".join(sorted(t.upper() for t in tickers))
+    return hashlib.sha1(sig.encode()).hexdigest()[:16]
+
+
+def _serialize_report(report: "ScanReport") -> dict:
+    return {
+        "as_of": report.as_of,
+        "total_tickers": report.total_tickers,
+        "successful": report.successful,
+        "failed": report.failed,
+        "results": [
+            {
+                **{k: v for k, v in asdict(r).items() if k != "trade_setup"},
+                "trade_setup": asdict(r.trade_setup) if r.trade_setup else None,
+            }
+            for r in report.results
+        ],
+    }
+
+
+def _deserialize_report(data: dict) -> "ScanReport":
+    results = []
+    for rd in data.get("results", []):
+        ts_dict = rd.pop("trade_setup", None)
+        ts = TradeSetup(**ts_dict) if ts_dict else None
+        r = StageResult(**rd)
+        r.trade_setup = ts
+        results.append(r)
+    return ScanReport(
+        as_of=data["as_of"],
+        total_tickers=data["total_tickers"],
+        successful=data["successful"],
+        failed=data["failed"],
+        results=results,
+    )
+
+
+def _load_cached(tickers: list[str]) -> Optional["ScanReport"]:
+    path = _SCAN_CACHE_DIR / f"{_cache_key(tickers)}.json"
+    if not path.exists():
+        return None
+    age = time.time() - path.stat().st_mtime
+    if age > _SCAN_CACHE_TTL:
+        return None
+    try:
+        with open(path) as f:
+            return _deserialize_report(json.load(f))
+    except Exception:
+        return None
+
+
+def _save_cache(tickers: list[str], report: "ScanReport"):
+    path = _SCAN_CACHE_DIR / f"{_cache_key(tickers)}.json"
+    try:
+        with open(path, "w") as f:
+            json.dump(_serialize_report(report), f)
+    except Exception as exc:
+        logger.warning(f"Could not cache scan: {exc}")
+
+
 def scan_universe(
     tickers: list[str],
     max_workers: int = 10,
     progress_callback: Optional[Callable[[int, int, str], None]] = None,
+    use_cache: bool = True,
 ) -> ScanReport:
     """
     Run stage analysis on every ticker in parallel.
@@ -76,12 +150,22 @@ def scan_universe(
     tickers : list of ticker symbols
     max_workers : parallel thread count (yfinance is I/O bound, 10 is safe)
     progress_callback : optional fn(completed, total, last_ticker)
+    use_cache : if True, return cached scan within TTL (default 15 min)
 
     Returns
     -------
     ScanReport
     """
-    from datetime import datetime
+    if use_cache:
+        cached = _load_cached(tickers)
+        if cached is not None:
+            if progress_callback:
+                try:
+                    progress_callback(len(tickers), len(tickers), "(from cache)")
+                except Exception:
+                    pass
+            return cached
+
     results: list[StageResult] = []
     completed = 0
     total = len(tickers)
@@ -108,13 +192,28 @@ def scan_universe(
                     pass
 
     ok = sum(1 for r in results if not r.error)
-    return ScanReport(
+    report = ScanReport(
         as_of=datetime.utcnow().isoformat() + "Z",
         total_tickers=total,
         successful=ok,
         failed=total - ok,
         results=results,
     )
+    if use_cache:
+        _save_cache(tickers, report)
+    return report
+
+
+def clear_scan_cache() -> int:
+    """Clear disk-cached scans. Returns count cleared."""
+    count = 0
+    for p in _SCAN_CACHE_DIR.glob("*.json"):
+        try:
+            p.unlink()
+            count += 1
+        except Exception:
+            pass
+    return count
 
 
 # ---------------------------------------------------------------------------

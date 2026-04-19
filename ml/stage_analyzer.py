@@ -425,6 +425,10 @@ def _action_label(stage: int, bull_prob: float) -> str:
 # Cache for the benchmark (fetched once per session)
 _benchmark_cache: Optional[pd.DataFrame] = None
 
+# In-memory TTL cache for analyze_stage results
+_stage_cache: dict[str, tuple[float, "StageResult"]] = {}
+_STAGE_CACHE_TTL = 15 * 60  # 15 minutes
+
 
 def _get_benchmark() -> Optional[pd.DataFrame]:
     global _benchmark_cache
@@ -433,7 +437,8 @@ def _get_benchmark() -> Optional[pd.DataFrame]:
     return _benchmark_cache
 
 
-def analyze_stage(ticker: str, df: Optional[pd.DataFrame] = None) -> StageResult:
+def analyze_stage(ticker: str, df: Optional[pd.DataFrame] = None,
+                   use_cache: bool = True) -> StageResult:
     """
     Run full Weinstein stage analysis on a ticker.
 
@@ -441,12 +446,23 @@ def analyze_stage(ticker: str, df: Optional[pd.DataFrame] = None) -> StageResult
     ----------
     ticker : str
     df : optional pre-loaded OHLCV dataframe (otherwise fetched from yfinance)
+    use_cache : if True, return cached result within TTL (~15 min)
 
     Returns
     -------
     StageResult
     """
+    import time
     ticker = ticker.upper()
+
+    # In-memory cache
+    if use_cache and df is None:
+        cached = _stage_cache.get(ticker)
+        if cached:
+            ts_cached, r_cached = cached
+            if time.time() - ts_cached < _STAGE_CACHE_TTL:
+                return r_cached
+
     result = StageResult(
         ticker=ticker,
         stage=0,
@@ -490,10 +506,22 @@ def analyze_stage(ticker: str, df: Optional[pd.DataFrame] = None) -> StageResult
         result.trade_setup = _compute_trade_setup(stage, ind)
         result.as_of_date = df.index[-1].strftime("%Y-%m-%d")
         result.explanation = explanation
+
+        # Cache successful results
+        if use_cache:
+            import time
+            _stage_cache[ticker] = (time.time(), result)
     except Exception as exc:
         result.error = str(exc)
 
     return result
+
+
+def clear_stage_cache() -> int:
+    """Manually clear the in-memory stage cache. Returns count cleared."""
+    count = len(_stage_cache)
+    _stage_cache.clear()
+    return count
 
 
 def format_result(r: StageResult) -> str:

@@ -32,6 +32,11 @@ from typing import Optional
 import plotly.graph_objects as go
 import streamlit as st
 
+from data.audio_client import (
+    cache_stats as audio_cache_stats,
+    generate_audio,
+    is_available as audio_is_available,
+)
 from data.watchlists import DEFAULT_NAME, list_watchlists, load_watchlist
 from ml.batch_scanner import ScanReport, scan_universe
 from ml.stage_analyzer import MA_WINDOW_DAYS, StageResult, analyze_stage
@@ -74,13 +79,13 @@ def _init_session():
 # Market brief (templated, always honest)
 # ---------------------------------------------------------------------------
 
-def _run_market_scan() -> ScanReport:
-    """Run a scan on the default watchlist. Cached in session."""
-    if st.session_state.assistant_scan is not None:
+def _run_market_scan(force_refresh: bool = False) -> ScanReport:
+    """Run a scan on the default watchlist. Uses disk cache (15min TTL) + session cache."""
+    if st.session_state.assistant_scan is not None and not force_refresh:
         return st.session_state.assistant_scan
 
     tickers = load_watchlist(DEFAULT_NAME)
-    report = scan_universe(tickers, max_workers=10)
+    report = scan_universe(tickers, max_workers=10, use_cache=not force_refresh)
     st.session_state.assistant_scan = report
     return report
 
@@ -749,15 +754,41 @@ def render_assistant_mode():
     st.markdown("---")
 
     # Render chat history
-    for msg in st.session_state.assistant_messages:
+    audio_enabled = audio_is_available()
+    for i, msg in enumerate(st.session_state.assistant_messages):
         with st.chat_message(msg["role"]):
             st.markdown(msg["content"])
+
             # Render inline chart if this message is attached to a ticker
             if msg.get("chart_ticker"):
                 _render_chat_chart(
                     msg["chart_ticker"],
                     result=msg.get("stage_result"),
                 )
+
+            # 🔊 Listen button (assistant messages only, if audio is enabled)
+            if msg["role"] == "assistant" and audio_enabled:
+                # Skip the very short greeting "How many excellent stocks..." —
+                # user can click "Play market brief" chip instead
+                if len(msg["content"]) > 80:
+                    audio_key = f"audio_{i}"
+                    play_key = f"play_{i}"
+                    # If audio already generated, show player. Otherwise show button.
+                    if msg.get("audio_path"):
+                        try:
+                            with open(msg["audio_path"], "rb") as f:
+                                st.audio(f.read(), format="audio/mpeg")
+                        except Exception:
+                            pass
+                    else:
+                        if st.button("🔊 Listen", key=play_key):
+                            with st.spinner("Generating audio..."):
+                                path = generate_audio(msg["content"])
+                            if path:
+                                msg["audio_path"] = str(path)
+                                st.rerun()
+                            else:
+                                st.caption("⚠ Audio generation failed — API quota or network issue.")
 
     # Chat input
     user_input = st.chat_input("e.g. 'find me 5 excellent stocks' or 'show NVDA'")
@@ -796,15 +827,39 @@ def render_assistant_mode():
         st.session_state.assistant_messages.append(msg_payload)
         st.rerun()
 
-    # Sidebar: reset + re-scan
+    # Sidebar: reset + re-scan + audio
     with st.sidebar:
         st.markdown("### 💬 Assistant Mode")
         st.caption("Weinstein chatbot · live scan")
         if st.button("🔄 Re-run market scan", use_container_width=True):
+            from ml.batch_scanner import clear_scan_cache
+            from ml.stage_analyzer import clear_stage_cache
             st.session_state.assistant_scan = None
+            clear_scan_cache()
+            clear_stage_cache()
             st.rerun()
         if st.button("🗑 Clear chat", use_container_width=True):
             st.session_state.assistant_messages = [
                 {"role": "assistant", "content": GREETING}
             ]
             st.rerun()
+
+        # Audio section
+        st.divider()
+        st.markdown("### 🔊 Audio")
+        if audio_is_available():
+            stats = audio_cache_stats()
+            st.caption(
+                f"ElevenLabs TTS · voice: Adam (warm male)  \n"
+                f"Cache: {stats['count']} clips ({stats['mb']} MB)"
+            )
+            if st.button("🗑 Clear audio cache", use_container_width=True):
+                from data.audio_client import clear_cache
+                n = clear_cache()
+                # Also clear audio paths in messages
+                for m in st.session_state.assistant_messages:
+                    m.pop("audio_path", None)
+                st.success(f"Cleared {n} cached audio clips.")
+                st.rerun()
+        else:
+            st.caption("⚠ ElevenLabs key not configured — audio disabled.")
