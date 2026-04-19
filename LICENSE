@@ -1,0 +1,34 @@
+MIT License
+
+Copyright (c) 2026 JP Romero and contributors
+(Fordham University — Applied Finance Project, AIGB 6317: Machine Learning and LLMs)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+INVESTMENT DISCLAIMER
+
+This software produces technical signals based on public financial data and
+the stage-analysis methodology of Stan Weinstein (1988). It does NOT provide
+financial, investment, legal, or tax advice. No representation is made that
+any account will or is likely to achieve profits or losses similar to those
+shown. Past performance is not indicative of future results. Users are solely
+responsible for their own investment decisions and should consult a licensed
+financial advisor before acting on any output of this software.
