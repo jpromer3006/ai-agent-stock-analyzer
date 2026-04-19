@@ -1,7 +1,12 @@
 """
 app.py — Streamlit UI for Ai-Agent Stock Analyzer.
 
-Shows classification, live agent trace, and adaptive research memo.
+Two modes:
+    🔬 Research Mode — deep agentic memo per ticker (~30-90s / ticker)
+                       SEC EDGAR + RAG + Claude tool-use + citation validator
+    📈 Trader Mode   — Weinstein Stage Analysis (~0.5s / ticker)
+                       30-week MA, RS vs SPY, volume, bull probability
+                       Scans the full watchlist for Stage 2/4 signals
 """
 
 from __future__ import annotations
@@ -38,13 +43,61 @@ if "analyses" not in st.session_state:
     st.session_state.analyses = {}
 if "selected_ticker" not in st.session_state:
     st.session_state.selected_ticker = None
+if "app_mode" not in st.session_state:
+    st.session_state.app_mode = "research"
 
+
+# ---------------------------------------------------------------------------
+# Top banner: Mode toggle
+# ---------------------------------------------------------------------------
+st.markdown(
+    "<div style='background:linear-gradient(90deg,#1a1a2e,#16213e);"
+    "padding:14px 20px;border-radius:8px;margin-bottom:12px'>"
+    "<div style='display:flex;justify-content:space-between;align-items:center'>"
+    "<div><span style='color:#e6edf3;font-size:22px;font-weight:700'>"
+    "🤖 Ai-Agent Stock Analyzer</span>"
+    "<span style='color:#8b949e;margin-left:12px;font-size:13px'>"
+    "Fordham Applied Finance Project · Lecture 9</span></div></div></div>",
+    unsafe_allow_html=True,
+)
+
+mode_col1, mode_col2 = st.columns(2)
+with mode_col1:
+    research_active = st.session_state.app_mode == "research"
+    label = "🔬 Research Mode  ✓" if research_active else "🔬 Research Mode"
+    if st.button(label, key="mode_research", use_container_width=True,
+                 type="primary" if research_active else "secondary"):
+        st.session_state.app_mode = "research"
+        st.rerun()
+with mode_col2:
+    trader_active = st.session_state.app_mode == "trader"
+    label = "📈 Trader Mode  ✓" if trader_active else "📈 Trader Mode"
+    if st.button(label, key="mode_trader", use_container_width=True,
+                 type="primary" if trader_active else "secondary"):
+        st.session_state.app_mode = "trader"
+        st.rerun()
+
+st.markdown("")
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# TRADER MODE
+# ═══════════════════════════════════════════════════════════════════════════
+if st.session_state.app_mode == "trader":
+    from ui.components.trader_mode import render_trader_mode
+    render_trader_mode()
+    st.stop()
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# RESEARCH MODE (existing flow — unchanged)
+# ═══════════════════════════════════════════════════════════════════════════
 
 # ---------------------------------------------------------------------------
 # Sidebar
 # ---------------------------------------------------------------------------
 with st.sidebar:
-    st.header("🤖 Ai-Agent Stock Analyzer")
+    st.header("🔬 Research Mode")
     st.caption(f"Universe: {len(UNIVERSE)} tickers across {len(category_counts())} specialists")
 
     st.divider()
@@ -65,7 +118,6 @@ with st.sidebar:
 
     for ticker in sorted(tickers_to_show):
         meta = UNIVERSE[ticker]
-        # Category emoji
         emoji = {
             "REIT": "🏢", "INFRASTRUCTURE_EPC": "🏗️", "BANK": "🏦",
             "TECH": "💻", "ENERGY": "⚡", "CONSUMER": "🛒",
@@ -87,7 +139,7 @@ with st.sidebar:
 # ---------------------------------------------------------------------------
 # Main area — Search bar
 # ---------------------------------------------------------------------------
-st.title("🤖 Ai-Agent Stock Analyzer")
+st.title("🔬 Research Mode — deep memo via Claude + SEC")
 st.caption(
     "Enter any ticker — the classifier routes to the right specialist agent, "
     "which uses SEC EDGAR, semantic 10-K search, and Claude tool-use to generate a custom memo."
@@ -119,7 +171,8 @@ elif st.session_state.selected_ticker:
 if not ticker:
     st.info(
         "👆 Type any ticker and click **Analyze** to start. "
-        "Or pick one from the sidebar watchlist."
+        "Or pick one from the sidebar watchlist. "
+        "Or switch to **📈 Trader Mode** above for instant Weinstein Stage Analysis on your whole universe."
     )
 
     col1, col2, col3, col4 = st.columns(4)
