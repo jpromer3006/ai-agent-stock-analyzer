@@ -44,7 +44,10 @@ if "analyses" not in st.session_state:
 if "selected_ticker" not in st.session_state:
     st.session_state.selected_ticker = None
 if "app_mode" not in st.session_state:
-    st.session_state.app_mode = "assistant"
+    st.session_state.app_mode = "research"
+# Migrate any old 'assistant' mode state to research
+if st.session_state.app_mode == "assistant":
+    st.session_state.app_mode = "research"
 
 
 # ---------------------------------------------------------------------------
@@ -61,14 +64,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-mode_col0, mode_col1, mode_col2 = st.columns(3)
-with mode_col0:
-    assistant_active = st.session_state.app_mode == "assistant"
-    label = "💬 Assistant  ✓" if assistant_active else "💬 Assistant"
-    if st.button(label, key="mode_assistant", use_container_width=True,
-                 type="primary" if assistant_active else "secondary"):
-        st.session_state.app_mode = "assistant"
-        st.rerun()
+mode_col1, mode_col2 = st.columns(2)
 with mode_col1:
     research_active = st.session_state.app_mode == "research"
     label = "🔬 Research  ✓" if research_active else "🔬 Research"
@@ -85,15 +81,6 @@ with mode_col2:
         st.rerun()
 
 st.markdown("")
-
-
-# ═══════════════════════════════════════════════════════════════════════════
-# ASSISTANT MODE (chatbot-first entry)
-# ═══════════════════════════════════════════════════════════════════════════
-if st.session_state.app_mode == "assistant":
-    from ui.components.assistant_mode import render_assistant_mode
-    render_assistant_mode()
-    st.stop()
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -186,9 +173,11 @@ elif st.session_state.selected_ticker:
 # ---------------------------------------------------------------------------
 if not ticker:
     st.info(
-        "👆 Type any ticker and click **Analyze** to start. "
-        "Or pick one from the sidebar watchlist. "
-        "Or switch to **📈 Trader Mode** above for instant Weinstein Stage Analysis on your whole universe."
+        "👆 Type any ticker and click **Analyze** for a deep memo with SEC "
+        "financials, 10-K analysis, and inline citations. The memo comes with "
+        "a **🔊 Listen** button and a **💬 Chat** panel below so you can ask "
+        "follow-ups. For fast Weinstein stage scans across your whole universe, "
+        "switch to **📈 Trader Mode** above."
     )
 
     col1, col2, col3, col4 = st.columns(4)
@@ -328,6 +317,14 @@ if cache_key in st.session_state.analyses:
     st.markdown("### 📄 Research Memo")
     st.markdown(analysis["memo"])
 
+    # 🔊 Listen to the memo (ElevenLabs)
+    from ui.components.chat_panel import render_audio_button, render_chat_panel
+    render_audio_button(
+        text=analysis["memo"],
+        key=f"memo_{analysis['ticker']}",
+        button_label="🔊 Listen to this memo",
+    )
+
     st.divider()
 
     # Tool calls summary
@@ -350,3 +347,19 @@ if cache_key in st.session_state.analyses:
             f"Generated: {analysis['generated_at'].strftime('%Y-%m-%d %H:%M UTC')} · "
             f"Specialist: {analysis['category']}"
         )
+
+    # 💬 Chat panel — context-aware (knows the memo + Trader scan)
+    st.divider()
+    render_chat_panel(
+        panel_id=f"research_{analysis['ticker']}",
+        title="💬 Ask follow-ups about this memo",
+        caption=(
+            "I know this memo inline, and I can pull Weinstein stage data for any "
+            "ticker on demand. Ask 'is this a good time to buy?' or 'what's the "
+            "trade setup?' or 'compare this to XYZ'. I'll answer with audio too."
+        ),
+        current_ticker=analysis["ticker"],
+        current_memo=analysis["memo"],
+        placeholder=f"e.g. 'is {analysis['ticker']} a buy right now?'",
+        enable_audio=True,
+    )
