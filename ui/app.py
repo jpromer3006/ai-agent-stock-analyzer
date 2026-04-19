@@ -157,13 +157,16 @@ with search_col:
         label_visibility="collapsed",
     )
 with btn_col:
-    run_clicked = st.button("🔍 Analyze", type="primary", use_container_width=True)
+    run_clicked = st.button("▶️ Run Agents", type="primary", use_container_width=True)
 
-# Resolve ticker
+# Resolve ticker AND force a re-run when the button is pressed
+# (so clicking Run Agents on an already-cached ticker actually regenerates)
 ticker = None
 if run_clicked and search_input.strip():
     ticker = search_input.strip().upper()
     st.session_state.selected_ticker = ticker
+    # If cached, clear it so the agents run fresh
+    st.session_state.analyses.pop(ticker, None)
 elif st.session_state.selected_ticker:
     ticker = st.session_state.selected_ticker
 
@@ -173,7 +176,7 @@ elif st.session_state.selected_ticker:
 # ---------------------------------------------------------------------------
 if not ticker:
     st.info(
-        "👆 Type any ticker and click **Analyze** for a deep memo with SEC "
+        "👆 Type any ticker and click **▶️ Run Agents** for a deep memo with SEC "
         "financials, 10-K analysis, and inline citations. The memo comes with "
         "a **🔊 Listen** button and a **💬 Chat** panel below so you can ask "
         "follow-ups. For fast Weinstein stage scans across your whole universe, "
@@ -229,14 +232,11 @@ with col_b:
 # ---------------------------------------------------------------------------
 cache_key = ticker
 
-col_run1, col_run2 = st.columns([1, 5])
-with col_run1:
-    if st.button("▶️ Run Agent", type="primary"):
-        st.session_state.analyses.pop(cache_key, None)
-        st.rerun()
-with col_run2:
-    if cache_key in st.session_state.analyses:
-        st.caption(f"✓ Analysis cached. Click **Run Agent** to re-run.")
+if cache_key in st.session_state.analyses:
+    st.caption(
+        f"✓ Analysis cached. Type the ticker again and click **▶️ Run Agents** "
+        f"at the top to regenerate."
+    )
 
 # If not cached, run the agent with streaming trace
 if cache_key not in st.session_state.analyses:
@@ -244,8 +244,9 @@ if cache_key not in st.session_state.analyses:
     memo_container = st.container()
 
     with trace_container:
-        st.markdown("### 🔬 Agent Trace")
-        trace_expander = st.expander("Live tool calls", expanded=True)
+        st.markdown("### 🤖 Agents Working")
+        trace_expander = st.expander("Live tool calls — watch the specialists collaborate",
+                                      expanded=True)
 
     tool_calls = []
     memo_text = ""
@@ -314,7 +315,7 @@ if cache_key in st.session_state.analyses:
     analysis = st.session_state.analyses[cache_key]
 
     st.divider()
-    st.markdown("### 📄 Research Memo")
+    st.markdown("### 📄 Research Memo and Analysis")
     st.markdown(analysis["memo"])
 
     # 🔊 Listen to the memo (ElevenLabs)
