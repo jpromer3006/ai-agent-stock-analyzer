@@ -163,6 +163,17 @@ def tool_compute_bull_prob(ticker: str, **_) -> str:
     return result.explanation
 
 
+def tool_get_market_regime(**_) -> str:
+    """
+    Weinstein Chapter 8 — market-wide stage analysis.
+    Returns SPY stage + momentum + breadth + playbook recommendation.
+    """
+    from ml.market_context import compute_market_regime, format_regime
+    # Try to use any recent scan from session state if available (heuristic)
+    regime = compute_market_regime()
+    return format_regime(regime)
+
+
 def tool_get_macro_context(**_) -> str:
     """Fetch current macro backdrop from FRED."""
     try:
@@ -333,6 +344,22 @@ BASE_TOOL_SCHEMAS: list[dict] = [
             "properties": {},
         },
     },
+    {
+        "name": "get_market_regime",
+        "description": (
+            "Weinstein Chapter 8 — market-wide stage analysis. "
+            "Returns the S&P 500's current stage (1-4), 30-week MA position, "
+            "50/200-day momentum, and breadth (if scan is available). "
+            "Call this FIRST before recommending any long or short position — "
+            "Weinstein's 'No Isolationism' rule says no stock is an island. "
+            "The output includes a playbook action (e.g., BULL: favor Stage 2 longs, "
+            "BEAR: cash is a position, BULL_FADING: trim, etc.)."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {},
+        },
+    },
 ]
 
 
@@ -352,4 +379,5 @@ BASE_TOOL_REGISTRY: dict[str, Callable[..., str]] = {
     "get_key_stats":            tool_get_key_stats,
     "compute_bull_prob":        tool_compute_bull_prob,
     "get_macro_context":        tool_get_macro_context,
+    "get_market_regime":        tool_get_market_regime,
 }

@@ -113,6 +113,32 @@ FORMAT RULES:
 """
 
 
+MARKET_REGIME_RULE = """
+═══════════════════════════════════════════════════════════════════════
+WEINSTEIN CHAPTER 8 — "NO ISOLATIONISM" RULE (MANDATORY)
+═══════════════════════════════════════════════════════════════════════
+
+Before you recommend ANY long or short position, you MUST call the
+`get_market_regime` tool FIRST. Stan Weinstein in Chapter 8 of "Secrets
+for Profiting in Bull and Bear Markets" establishes that ~75% of
+individual stocks follow the broad market. Therefore:
+
+  - If the market is in BULL or BULL_FADING, a Stage 2 stock is a
+    high-confidence long.
+  - If the market is in BEAR or BEAR_EARLY, even a Stage 2 stock
+    carries elevated risk — size smaller, tighten stops.
+  - If the market is Stage 4, avoid new longs entirely (Weinstein's
+    most emphatic rule).
+
+REQUIRED IN EVERY MEMO:
+  - Reference the market regime (e.g., "The market is in BULL_FADING,
+    SPY Stage 2 but losing momentum [Source: Weinstein Market Regime]")
+  - Adjust your recommendation accordingly — do not recommend an
+    aggressive long when the market regime is bearish.
+═══════════════════════════════════════════════════════════════════════
+"""
+
+
 def build_system_prompt(persona_intro: str, workflow: str, memo_sections: list[str]) -> str:
     """Assemble a complete specialist system prompt with shared rules."""
     sections_list = "\n".join(f"## {s}" for s in memo_sections)
@@ -126,6 +152,8 @@ REQUIRED MEMO STRUCTURE:
 Produce a memo with exactly these sections, in this order:
 
 {sections_list}
+
+{MARKET_REGIME_RULE}
 
 {CITATION_RULES}
 

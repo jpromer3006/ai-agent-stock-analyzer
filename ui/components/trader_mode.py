@@ -485,7 +485,10 @@ def _render_trade_setup_card(r: StageResult):
 
 
 def _render_price_chart(r: StageResult):
-    """Plot price + 30-week MA + Weinstein trade levels for a ticker."""
+    """
+    Plot price + 30-week MA + Weinstein trade levels + stage transition
+    arrows + YOU ARE HERE marker for a ticker.
+    """
     ticker = r.ticker
     try:
         import yfinance as yf
@@ -496,6 +499,12 @@ def _render_price_chart(r: StageResult):
         return
 
     from ml.stage_analyzer import MA_WINDOW_DAYS
+    from ui.components.chart_helpers import (
+        add_trade_setup_lines,
+        add_transition_arrows,
+        add_you_are_here,
+        detect_stage_transitions,
+    )
     hist["MA30W"] = hist["Close"].rolling(MA_WINDOW_DAYS, min_periods=MA_WINDOW_DAYS).mean()
 
     fig = go.Figure()
@@ -508,37 +517,21 @@ def _render_price_chart(r: StageResult):
         name="30-week MA", line=dict(color="#ff9800", width=2, dash="dash"),
     ))
 
-    # Overlay Weinstein trade levels if applicable
-    ts = r.trade_setup
-    if ts and ts.applicable:
-        # Entry line (buy/sell stop)
-        fig.add_hline(
-            y=ts.entry_price, line_dash="solid", line_color="#00c853", line_width=2,
-            annotation_text=f"  {ts.entry_type} ${ts.entry_price:,.2f}",
-            annotation_position="right",
-            annotation=dict(font=dict(color="#00c853", size=12)),
-        )
-        # Stop-loss line (always red)
-        fig.add_hline(
-            y=ts.stop_loss, line_dash="dot", line_color="#ff1744", line_width=2,
-            annotation_text=f"  Stop ${ts.stop_loss:,.2f}",
-            annotation_position="right",
-            annotation=dict(font=dict(color="#ff1744", size=12)),
-        )
-        # Target line (green)
-        fig.add_hline(
-            y=ts.target_1, line_dash="dashdot", line_color="#00c853", line_width=1,
-            annotation_text=f"  Target ${ts.target_1:,.2f}",
-            annotation_position="right",
-            annotation=dict(font=dict(color="#00c853", size=12)),
-        )
+    # Stage transition arrows (last 12 months)
+    add_transition_arrows(fig, detect_stage_transitions(hist))
 
-    title = f"{ticker} — Price, 30-week MA, Weinstein Trade Levels"
+    # YOU ARE HERE marker at the current close
+    add_you_are_here(fig, hist, r.stage, r.stage_name)
+
+    # Trade setup horizontal lines
+    add_trade_setup_lines(fig, r.trade_setup)
+
+    title = f"{ticker} — Weinstein view (Price · 30W MA · transitions · trade levels)"
     fig.update_layout(
         title=title,
         xaxis_title=None,
         yaxis_title="Price ($)",
-        height=450,
+        height=480,
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
         font_color="#e6edf3",
@@ -547,7 +540,7 @@ def _render_price_chart(r: StageResult):
         dragmode=False,
         hovermode="x unified",
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-        margin=dict(r=120),  # room for right-side annotations
+        margin=dict(r=130, t=60),  # room for right-side annotations + YOU ARE HERE
     )
     st.plotly_chart(fig, use_container_width=True,
                     config={"scrollZoom": False, "displayModeBar": False})
@@ -564,8 +557,67 @@ def render_trader_mode():
     st.markdown("## 📈 Trader Mode — Weinstein Stage Analysis")
     st.caption(
         "Pure methodology from Stan Weinstein's *Secrets for Profiting in Bull and Bear Markets*. "
-        "Scans your watchlist for Stage 2 breakouts (BUY) and Stage 4 breakdowns (SELL/SHORT). "
+        "Scans your scan list for Stage 2 breakouts (BUY) and Stage 4 breakdowns (SELL/SHORT). "
         "Runs in ~0.5s per ticker via yfinance. No LLM."
     )
 
+    # Market Regime banner — Weinstein Ch. 8 "No Isolationism" rule
+    _render_market_regime_banner()
+
     render_scan_panel(tickers)
+
+
+def _render_market_regime_banner():
+    """Show current market regime (SPY stage + momentum + breadth)."""
+    from ml.market_context import compute_market_regime
+
+    # Use the most recent scan for breadth if available
+    latest_scan = None
+    for k, v in st.session_state.items():
+        if k.startswith("scan_") and hasattr(v, "stage_buckets"):
+            latest_scan = v
+            break
+
+    with st.spinner("Reading market regime..."):
+        regime = compute_market_regime(latest_scan)
+
+    if regime.error:
+        st.caption(f"Market regime unavailable: {regime.error}")
+        return
+
+    # Banner
+    c1, c2 = st.columns([2, 5])
+    with c1:
+        st.markdown(
+            f"<div style='background:{regime.regime_color};color:white;"
+            f"padding:14px;border-radius:8px;text-align:center'>"
+            f"<div style='font-size:11px;opacity:0.9;letter-spacing:1px'>"
+            f"WEINSTEIN CH. 8 — MARKET REGIME</div>"
+            f"<div style='font-size:22px;font-weight:700;margin-top:4px'>"
+            f"{regime.regime_emoji} {regime.regime}</div>"
+            f"<div style='font-size:12px;opacity:0.9;margin-top:2px'>"
+            f"SPY Stage {regime.spy_stage} ({regime.spy_stage_name})</div>"
+            f"</div>",
+            unsafe_allow_html=True,
+        )
+    with c2:
+        momentum_note = (
+            "✓ momentum tailwind (SMA50 > SMA200, rising)"
+            if regime.momentum_tailwind else
+            "✗ no momentum tailwind"
+        )
+        breadth_note = ""
+        if regime.breadth_pct is not None:
+            breadth_note = (
+                f" · Breadth **{regime.breadth_pct:.0%}** "
+                f"({regime.breadth_stage2} Stage 2 / "
+                f"{regime.breadth_stage4} Stage 4)"
+            )
+        st.markdown(
+            f"**{regime.regime_headline}**  \n"
+            f"📏 SPY ${regime.spy_price:,.2f} vs 30W MA ${regime.spy_ma_30w:,.2f} "
+            f"({regime.spy_pct_above_ma:+.1%}, slope {regime.spy_ma_slope_pct:+.1%}/mo) · "
+            f"{momentum_note}{breadth_note}  \n"
+            f"💡 **Playbook:** {regime.regime_action}  \n"
+            f"_Weinstein Ch. 8: 'No stock is an island. Know the market's stage first.'_"
+        )
