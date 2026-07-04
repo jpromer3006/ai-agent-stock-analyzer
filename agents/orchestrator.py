@@ -23,6 +23,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 import subprocess
 from dataclasses import dataclass, field
 from datetime import datetime
@@ -41,29 +42,140 @@ _PROJECT_ROOT = Path(__file__).parent.parent
 # API key
 # ---------------------------------------------------------------------------
 def _get_anthropic_key() -> str:
-    # Keychain first
-    try:
-        r = subprocess.run(
-            ["security", "find-generic-password", "-s", "ANTHROPIC_API_KEY", "-w"],
-            capture_output=True, text=True, timeout=5,
-        )
-        if r.returncode == 0 and r.stdout.strip():
-            return r.stdout.strip()
-    except Exception:
-        pass
+    # Shared resolver: Keychain first, falls back to a working .env key.
+    from agents.anthropic_key import require_anthropic_key
+    return require_anthropic_key()
 
-    try:
-        from dotenv import load_dotenv
-        load_dotenv(_PROJECT_ROOT / ".env")
-    except Exception:
-        pass
 
-    key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
-    if not key:
-        raise RuntimeError(
-            "ANTHROPIC_API_KEY not set. Add to Keychain or .env."
+# ---------------------------------------------------------------------------
+# Citation formatting
+# ---------------------------------------------------------------------------
+_SOURCE_RE = re.compile(r"\[Source:\s*([^\]]+)\]", re.IGNORECASE)
+
+
+def _to_footnotes(memo: str) -> str:
+    """Convert inline ``[Source: X]`` citations into numbered footnote markers
+    plus a single ``## Sources`` list appended to the memo.
+
+    Stacked sources — one bracket holding several (``[Source: A; B]``) or
+    adjacent brackets — are each numbered once; a source that recurs reuses
+    its number, so the same filing is never listed twice. Idempotent: a memo
+    that already carries a ``## Sources`` section, or one with no inline
+    citations, is returned unchanged.
+    """
+    if not memo or "## Sources" in memo:
+        return memo
+    if not _SOURCE_RE.search(memo):
+        return memo
+
+    order: list[str] = []        # unique sources, first-seen order
+    index: dict[str, int] = {}   # normalized source -> 1-based number
+
+    def _register(src: str) -> int:
+        label = " ".join(src.split())  # collapse whitespace (matches legacy)
+        if label in index:
+            return index[label]
+        order.append(label)
+        index[label] = len(order)
+        return index[label]
+
+    def _replace(m: "re.Match[str]") -> str:
+        parts = [s.strip() for s in m.group(1).split(";") if s.strip()]
+        return "".join(f"[{_register(s)}]" for s in parts)
+
+    body = _SOURCE_RE.sub(_replace, memo).rstrip()
+    if not order:
+        return memo
+    src_lines = "\n".join(f"[{i}] {label}" for i, label in enumerate(order, 1))
+    return f"{body}\n\n---\n\n## Sources\n\n{src_lines}\n"
+
+
+def _append_disclaimer(memo: str) -> str:
+    """Footnote citations, then append the canonical educational disclaimer.
+
+    Restores the legacy finalize step the refactor dropped: every memo that
+    reaches the UI carries numbered Sources and the 'not financial advice'
+    disclaimer the project rules require. Idempotent on both the footnotes
+    (``## Sources`` guard) and the disclaimer (``Important Disclaimer`` guard).
+    """
+    if not memo:
+        return memo
+    memo = _to_footnotes(memo)
+    if "Important Disclaimer" in memo:
+        return memo
+    try:
+        from ui.components.disclaimer import DISCLAIMER_MARKDOWN
+    except Exception:
+        return memo  # never block a memo if the disclaimer module is unavailable
+    sep = "" if memo.endswith("\n") else "\n"
+    return f"{memo}{sep}\n{DISCLAIMER_MARKDOWN}"
+
+
+def _source_provenance(memo: str, ticker: str) -> str:
+    """Append a 'Source Provenance' block listing the reputable origin of every
+    data family the memo drew on, with auditable links. Makes the memo's
+    sourcing transparent and verifiable (SEC figures resolve to the company's
+    EDGAR filings page). Idempotent; only lists families actually cited.
+    """
+    if not memo or "### Source Provenance" in memo:
+        return memo
+
+    low = memo.lower()
+    lines: list[str] = []
+
+    if any(k in low for k in ("sec ", "xbrl", "10-k", "10k", "edgar", "md&a", "risk factor")):
+        edgar = None
+        try:
+            from data.sec_client import get_cik
+            cik = get_cik(ticker)
+            if cik:
+                edgar = (
+                    f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany"
+                    f"&CIK={cik}&type=10-K&dateb=&owner=include&count=40"
+                )
+        except Exception:
+            edgar = None
+        if not edgar:
+            edgar = (
+                f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany"
+                f"&company={ticker}&type=10-K&dateb=&owner=include&count=40"
+            )
+        lines.append(
+            f"- **SEC EDGAR** (primary): structured XBRL facts and 10-K text — "
+            f"official filings for {ticker.upper()} at {edgar}"
         )
-    return key
+    if any(k in low for k in ("fred", "macro", "federal reserve", "treasury", "cpi", "rate")):
+        lines.append(
+            "- **FRED, Federal Reserve Bank of St. Louis** (macro series): "
+            "https://fred.stlouisfed.org"
+        )
+    if any(k in low for k in ("yfinance", "live price", "market data", "sentiment", "headline")):
+        lines.append(
+            "- **Market data and news sentiment**: live quotes and headlines via "
+            "Yahoo Finance, VADER sentiment on recent headlines"
+        )
+    if any(k in low for k in ("weinstein", "stage analysis", "30-week")):
+        lines.append(
+            "- **Methodology**: Stan Weinstein, *Secrets for Profiting in Bull "
+            "and Bear Markets* (stage analysis framework)"
+        )
+
+    if not lines:
+        return memo
+    block = "### Source Provenance\n\n" + "\n".join(lines) + "\n"
+    sep = "" if memo.endswith("\n") else "\n"
+    return f"{memo}{sep}\n{block}"
+
+
+def _finalize_memo(memo: str, ticker: str) -> str:
+    """Single finalize step for every memo the agent emits: number the
+    citations, append reputable source provenance, then the disclaimer.
+    Produces the order body -> Sources -> Source Provenance -> Disclaimer.
+    """
+    memo = _to_footnotes(memo)
+    memo = _source_provenance(memo, ticker)
+    memo = _append_disclaimer(memo)  # _to_footnotes inside is idempotent
+    return memo
 
 
 # ---------------------------------------------------------------------------
@@ -82,20 +194,43 @@ class AgentProfile:
 
 def _load_specialist(category: StockCategory) -> AgentProfile:
     """Lazy-load the specialist agent module for a category."""
-    from agents.specialists import reit_agent, infra_agent, bank_agent, tech_agent
-    from agents.specialists import energy_agent, consumer_agent, healthcare_agent, generic_agent
+    from agents.specialists import (
+        reit_agent, infra_agent, bank_agent, tech_agent,
+        energy_agent, consumer_agent, healthcare_agent, generic_agent,
+        ai_compute_agent, semis_agent, software_agent,
+        biotech_agent, pharma_meddevice_agent,
+        utilities_agent, defense_agent, industrials_agent, insurance_agent,
+        fund_agent,
+    )
 
     mapping = {
+        # Original 8
         StockCategory.REIT:               reit_agent.PROFILE,
         StockCategory.INFRASTRUCTURE_EPC: infra_agent.PROFILE,
         StockCategory.BANK:               bank_agent.PROFILE,
-        StockCategory.TECH:               tech_agent.PROFILE,
+        StockCategory.TECH:               tech_agent.PROFILE,   # mega-platforms
         StockCategory.ENERGY:             energy_agent.PROFILE,
         StockCategory.CONSUMER:           consumer_agent.PROFILE,
         StockCategory.HEALTHCARE:         healthcare_agent.PROFILE,
         StockCategory.GENERIC:            generic_agent.PROFILE,
+        # Phase 3b additions (restored — the refactor had dropped these from
+        # the mapping, so AI_COMPUTE/SEMIS/etc. KeyError'd on classify)
+        StockCategory.AI_COMPUTE:         ai_compute_agent.PROFILE,
+        StockCategory.SEMICONDUCTORS:     semis_agent.PROFILE,
+        StockCategory.SOFTWARE_SAAS:      software_agent.PROFILE,
+        StockCategory.BIOTECH:            biotech_agent.PROFILE,
+        StockCategory.PHARMA_MEDDEVICE:   pharma_meddevice_agent.PROFILE,
+        StockCategory.UTILITIES:          utilities_agent.PROFILE,
+        StockCategory.DEFENSE:            defense_agent.PROFILE,
+        StockCategory.INDUSTRIALS:        industrials_agent.PROFILE,
+        StockCategory.INSURANCE:          insurance_agent.PROFILE,
+        # Funds (ETFs + mutual funds): price/stage/macro tools only — funds
+        # file N-PORT/N-CSR, not 10-Ks, so SEC tools are useless for them.
+        StockCategory.FUND:               fund_agent.PROFILE,
     }
-    return mapping[category]
+    # Fallback to the generic specialist so a new/unmapped category degrades
+    # to a working memo instead of crashing the whole research run.
+    return mapping.get(category, generic_agent.PROFILE)
 
 
 # ---------------------------------------------------------------------------
@@ -105,13 +240,16 @@ def run_agent(
     ticker: str,
     user_query: Optional[str] = None,
     max_steps: int = 25,
-    model: str = "claude-sonnet-4-20250514",
+    model: Optional[str] = None,
 ) -> Generator[dict, None, None]:
     """
     Run the full agentic research loop for a ticker.
     Yields trace events suitable for streaming to the UI.
     """
     ticker = ticker.upper()
+    if model is None:
+        from agents.anthropic_key import default_model
+        model = default_model()
 
     # 1. Classify
     category = classify(ticker)
@@ -202,7 +340,7 @@ def run_agent(
             memo = "\n".join(
                 b.text for b in response.content if b.type == "text"
             )
-            yield {"type": "done", "memo": memo, "steps": step + 1}
+            yield {"type": "done", "memo": _finalize_memo(memo, ticker), "steps": step + 1}
             return
 
         if response.stop_reason != "tool_use":
@@ -210,7 +348,7 @@ def run_agent(
             memo = "\n".join(
                 b.text for b in response.content if b.type == "text"
             )
-            yield {"type": "done", "memo": memo, "steps": step + 1}
+            yield {"type": "done", "memo": _finalize_memo(memo, ticker), "steps": step + 1}
             return
 
         # Execute tool calls
@@ -293,15 +431,16 @@ def run_agent(
                 f"calls. Try **Run Agent** again — cached data from this run "
                 f"will make the second attempt complete faster."
             )
-        yield {"type": "done", "memo": memo, "steps": max_steps}
+        yield {"type": "done", "memo": _finalize_memo(memo, ticker), "steps": max_steps}
     except Exception as exc:
         yield {
             "type": "done",
-            "memo": (
+            "memo": _finalize_memo(
                 f"# {ticker} Research Memo — Incomplete\n\n"
                 f"The agent reached its tool-call budget. Retry with **Run Agent** "
                 f"— cached data from this run will make the second attempt complete "
-                f"faster.\n\nError: {exc}"
+                f"faster.\n\nError: {exc}",
+                ticker,
             ),
             "steps": max_steps,
         }

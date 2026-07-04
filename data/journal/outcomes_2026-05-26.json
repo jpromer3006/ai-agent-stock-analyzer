@@ -1,0 +1,897 @@
+{
+  "snapshot_date": "2026-05-26",
+  "as_of_audit": "2026-05-26T20:49:58.359920Z",
+  "n_picks": 80,
+  "lookahead_trading_days": [
+    1,
+    5,
+    20
+  ],
+  "hit_thresholds": {
+    "1": 0.005,
+    "5": 0.02,
+    "20": 0.05
+  },
+  "outcomes": [
+    {
+      "ticker": "VICI",
+      "decision_date": "2026-05-26",
+      "decision_close": 28.62,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "AMT",
+      "decision_date": "2026-05-26",
+      "decision_close": 184.95,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "PLD",
+      "decision_date": "2026-05-26",
+      "decision_close": 146.94,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "EQIX",
+      "decision_date": "2026-05-26",
+      "decision_close": 1077.63,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "PSA",
+      "decision_date": "2026-05-26",
+      "decision_close": 304.47,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "O",
+      "decision_date": "2026-05-26",
+      "decision_close": 62.45,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "ARE",
+      "decision_date": "2026-05-26",
+      "decision_close": 48.47,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "DLR",
+      "decision_date": "2026-05-26",
+      "decision_close": 193.67,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "WELL",
+      "decision_date": "2026-05-26",
+      "decision_close": 218.13,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "PWR",
+      "decision_date": "2026-05-26",
+      "decision_close": 742.18,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "FLR",
+      "decision_date": "2026-05-26",
+      "decision_close": 46.86,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "EME",
+      "decision_date": "2026-05-26",
+      "decision_close": 861.41,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "KBR",
+      "decision_date": "2026-05-26",
+      "decision_close": 33.52,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "MTZ",
+      "decision_date": "2026-05-26",
+      "decision_close": 390.75,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "DY",
+      "decision_date": "2026-05-26",
+      "decision_close": 420.47,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "SPG",
+      "decision_date": "2026-05-26",
+      "decision_close": 206.94,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "APG",
+      "decision_date": "2026-05-26",
+      "decision_close": 42.31,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "PRIM",
+      "decision_date": "2026-05-26",
+      "decision_close": 129.36,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "AGX",
+      "decision_date": "2026-05-26",
+      "decision_close": 670.66,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "ORA",
+      "decision_date": "2026-05-26",
+      "decision_close": 139.08,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "BAC",
+      "decision_date": "2026-05-26",
+      "decision_close": 52.2,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "decision_date": "2026-05-26",
+      "decision_close": 416.03,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "META",
+      "decision_date": "2026-05-26",
+      "decision_close": 612.34,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "JPM",
+      "decision_date": "2026-05-26",
+      "decision_close": 306.74,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "CRM",
+      "decision_date": "2026-05-26",
+      "decision_close": 179.08,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "GOOGL",
+      "decision_date": "2026-05-26",
+      "decision_close": 388.88,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "GS",
+      "decision_date": "2026-05-26",
+      "decision_close": 994.52,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "WFC",
+      "decision_date": "2026-05-26",
+      "decision_close": 77.52,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "MS",
+      "decision_date": "2026-05-26",
+      "decision_close": 201.76,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "decision_date": "2026-05-26",
+      "decision_close": 214.86,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "NEE",
+      "decision_date": "2026-05-26",
+      "decision_close": 87.65,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "WMT",
+      "decision_date": "2026-05-26",
+      "decision_close": 118.57,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "OXY",
+      "decision_date": "2026-05-26",
+      "decision_close": 57.46,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "DUK",
+      "decision_date": "2026-05-26",
+      "decision_close": 124.97,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "PG",
+      "decision_date": "2026-05-26",
+      "decision_close": 142.96,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "XOM",
+      "decision_date": "2026-05-26",
+      "decision_close": 149.81,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "CVX",
+      "decision_date": "2026-05-26",
+      "decision_close": 184.71,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "KO",
+      "decision_date": "2026-05-26",
+      "decision_close": 80.46,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "BRK-B",
+      "decision_date": "2026-05-26",
+      "decision_close": 483.62,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "COST",
+      "decision_date": "2026-05-26",
+      "decision_close": 1002.93,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "PFE",
+      "decision_date": "2026-05-26",
+      "decision_close": 25.85,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "UNH",
+      "decision_date": "2026-05-26",
+      "decision_close": 376.86,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "MCD",
+      "decision_date": "2026-05-26",
+      "decision_close": 279.26,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "BA",
+      "decision_date": "2026-05-26",
+      "decision_close": 218.9,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "ABBV",
+      "decision_date": "2026-05-26",
+      "decision_close": 213.12,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "WMS",
+      "decision_date": "2026-05-26",
+      "decision_close": 138.09,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "LLY",
+      "decision_date": "2026-05-26",
+      "decision_close": 1064.74,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "CRSP",
+      "decision_date": "2026-05-26",
+      "decision_close": 51.59,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "JNJ",
+      "decision_date": "2026-05-26",
+      "decision_close": 230.18,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "TSLA",
+      "decision_date": "2026-05-26",
+      "decision_close": 433.59,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "BLK",
+      "decision_date": "2026-05-26",
+      "decision_close": 1077.4,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "decision_date": "2026-05-26",
+      "decision_close": 265.29,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "HOOD",
+      "decision_date": "2026-05-26",
+      "decision_close": 74.09,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "HD",
+      "decision_date": "2026-05-26",
+      "decision_close": 310.54,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "DIS",
+      "decision_date": "2026-05-26",
+      "decision_close": 103.28,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "CAT",
+      "decision_date": "2026-05-26",
+      "decision_close": 908.55,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "GE",
+      "decision_date": "2026-05-26",
+      "decision_close": 314.49,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "MTSI",
+      "decision_date": "2026-05-26",
+      "decision_close": 409.68,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "ARM",
+      "decision_date": "2026-05-26",
+      "decision_close": 321.22,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "ANET",
+      "decision_date": "2026-05-26",
+      "decision_close": 158.01,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "AAPL",
+      "decision_date": "2026-05-26",
+      "decision_close": 308.33,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "TSM",
+      "decision_date": "2026-05-26",
+      "decision_close": 412.32,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "AVGO",
+      "decision_date": "2026-05-26",
+      "decision_close": 422.01,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "CRDO",
+      "decision_date": "2026-05-26",
+      "decision_close": 221.64,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "MRVL",
+      "decision_date": "2026-05-26",
+      "decision_close": 208.26,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "ALAB",
+      "decision_date": "2026-05-26",
+      "decision_close": 318.72,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "SMCI",
+      "decision_date": "2026-05-26",
+      "decision_close": 37.1,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "VRT",
+      "decision_date": "2026-05-26",
+      "decision_close": 323.91,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "ASML",
+      "decision_date": "2026-05-26",
+      "decision_close": 1632.03,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "PLTR",
+      "decision_date": "2026-05-26",
+      "decision_close": 136.6,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "DDOG",
+      "decision_date": "2026-05-26",
+      "decision_close": 223.65,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "NET",
+      "decision_date": "2026-05-26",
+      "decision_close": 217.54,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "MDB",
+      "decision_date": "2026-05-26",
+      "decision_close": 307.35,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "AI",
+      "decision_date": "2026-05-26",
+      "decision_close": 9.59,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "ZS",
+      "decision_date": "2026-05-26",
+      "decision_close": 184.6,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "AMD",
+      "decision_date": "2026-05-26",
+      "decision_close": 503.89,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "ADBE",
+      "decision_date": "2026-05-26",
+      "decision_close": 240.49,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "CRWD",
+      "decision_date": "2026-05-26",
+      "decision_close": 671.55,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "NOW",
+      "decision_date": "2026-05-26",
+      "decision_close": 99.92,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "EBAY",
+      "decision_date": "2026-05-26",
+      "decision_close": 115.31,
+      "n_forward_rows_available": 0,
+      "outcomes": {
+        "1d": null,
+        "5d": null,
+        "20d": null
+      }
+    }
+  ]
+}

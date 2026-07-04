@@ -1,0 +1,196 @@
+{
+  "timestamp": "2026-06-25T23:19:48.019763Z",
+  "date": "2026-06-25",
+  "regime": "bull",
+  "mandate": "growth_hold",
+  "account": 20000.0,
+  "invested": 17662.01,
+  "cash": 2337.99,
+  "weights": {
+    "value": 0.054,
+    "ipo": 0.086,
+    "technical": 0.058,
+    "canslim": 0.261,
+    "weinstein": 0.13,
+    "sepa": 0.145,
+    "growth": 0.23,
+    "swing": 0.037
+  },
+  "note": "UI build \u00b7 growth_hold",
+  "holdings": [
+    {
+      "ticker": "LLY",
+      "sector": "Health Care",
+      "conviction": 0.5571,
+      "shares": 2,
+      "dollars": 2255.38,
+      "weight_pct": 11.28,
+      "entry": 1127.69,
+      "stop": 1024.53,
+      "led_by": "sepa",
+      "sentiment": 0.254,
+      "earnings_risk": false,
+      "outcome_return": 0.0713
+    },
+    {
+      "ticker": "ABNB",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.5401,
+      "shares": 16,
+      "dollars": 2270.08,
+      "weight_pct": 11.35,
+      "entry": 141.88,
+      "stop": 137.31,
+      "led_by": "sepa",
+      "sentiment": 0.065,
+      "earnings_risk": false,
+      "outcome_return": 0.0259
+    },
+    {
+      "ticker": "UNH",
+      "sector": "Financials",
+      "conviction": 0.5372,
+      "shares": 2,
+      "dollars": 831.06,
+      "weight_pct": 4.16,
+      "entry": 415.53,
+      "stop": 328.27,
+      "led_by": "weinstein",
+      "sentiment": 0.219,
+      "earnings_risk": false,
+      "outcome_return": 0.0297
+    },
+    {
+      "ticker": "DDOG",
+      "sector": "Information Technology",
+      "conviction": 0.4525,
+      "shares": 3,
+      "dollars": 662.82,
+      "weight_pct": 3.31,
+      "entry": 220.94,
+      "stop": 152.08,
+      "led_by": "weinstein",
+      "sentiment": 0.105,
+      "earnings_risk": false,
+      "outcome_return": 0.0852
+    },
+    {
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "conviction": 0.4291,
+      "shares": 12,
+      "dollars": 2348.88,
+      "weight_pct": 11.74,
+      "entry": 195.74,
+      "stop": 191.85,
+      "led_by": "weinstein",
+      "sentiment": 0.128,
+      "earnings_risk": false,
+      "outcome_return": -0.0164
+    },
+    {
+      "ticker": "GOOGL",
+      "sector": "Information Technology",
+      "conviction": 0.4007,
+      "shares": 6,
+      "dollars": 2062.26,
+      "weight_pct": 10.31,
+      "entry": 343.71,
+      "stop": 331.42,
+      "led_by": "weinstein",
+      "sentiment": 0.093,
+      "earnings_risk": false,
+      "outcome_return": -0.0184
+    },
+    {
+      "ticker": "VRTX",
+      "sector": "Health Care",
+      "conviction": 0.36,
+      "shares": 4,
+      "dollars": 1920.72,
+      "weight_pct": 9.6,
+      "entry": 480.18,
+      "stop": 440.53,
+      "led_by": "technical",
+      "sentiment": 0.321,
+      "earnings_risk": false,
+      "outcome_return": 0.0232
+    },
+    {
+      "ticker": "CRWD",
+      "sector": "Information Technology",
+      "conviction": 0.3447,
+      "shares": 1,
+      "dollars": 678.65,
+      "weight_pct": 3.39,
+      "entry": 678.65,
+      "stop": 492.19,
+      "led_by": "weinstein",
+      "sentiment": 0.169,
+      "earnings_risk": false,
+      "outcome_return": 0.0331
+    },
+    {
+      "ticker": "V",
+      "sector": "Financials",
+      "conviction": 0.3321,
+      "shares": 7,
+      "dollars": 2313.64,
+      "weight_pct": 11.57,
+      "entry": 330.52,
+      "stop": 322.47,
+      "led_by": "technical",
+      "sentiment": 0.105,
+      "earnings_risk": false,
+      "outcome_return": 0.0173
+    },
+    {
+      "ticker": "DHR",
+      "sector": "Health Care",
+      "conviction": 0.1948,
+      "shares": 12,
+      "dollars": 2318.52,
+      "weight_pct": 11.59,
+      "entry": 193.21,
+      "stop": 178.79,
+      "led_by": "technical",
+      "sentiment": 0.083,
+      "earnings_risk": false,
+      "outcome_return": 0.0175
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "30 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: growth 27%, canslim 23%, weinstein 12%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.46, canslim x1.31"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "10 holdings, 88% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 12%"
+    }
+  ],
+  "realized_avg_return": 0.0269,
+  "realized_hit_rate": 0.8
+}

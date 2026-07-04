@@ -5,6 +5,41 @@
 
 ---
 
+## ⚠️ Important Disclaimer
+
+**For Educational and Informational Purposes Only.** This platform was built
+as an academic project (Fordham Gabelli AIGB 6317 — Machine Learning and LLMs)
+and the analyses, memos, ratings, stage classifications, and signals generated
+by it are **not investment advice** and **not a recommendation to buy, sell,
+or hold any security**.
+
+**Methodology is one of many approaches.** The Weinstein Stage Analysis
+framework, specialist agent rubrics, and `bull_prob` composite score are
+heuristics — they are one lens among many used by professional investors and
+**do not guarantee any outcome**. Past stage classifications and historical
+patterns are not indicative of future results.
+
+**Known limitations and risks:**
+- **Model assumptions** — `bull_prob` weights (momentum, revenue growth, OCF
+  growth, sentiment, leverage delta) are fixed; classifier and specialist
+  outputs depend on a large language model that can hallucinate or err.
+- **Data quality** — SEC XBRL, FRED, yfinance, and FMP data can be delayed,
+  revised, or incorrect; live quotes may be 15+ minutes stale.
+- **Changing market conditions** — macro regime, interest rates, and sector
+  rotation shift faster than any static model can adapt.
+- **Coverage gaps** — limited ticker universe across a small number of sectors;
+  some sectors (e.g. healthcare, conglomerates) have known retrieval weaknesses.
+
+**Not personalized.** This tool does not consider your individual risk
+tolerance, liquidity needs, tax situation, time horizon, or overall portfolio
+construction. **Consult a licensed financial advisor before making any
+investment decision.**
+
+> The canonical source for this disclaimer is `ui/components/disclaimer.py` —
+> edit there and it propagates to the UI, every downloaded memo, and this README.
+
+---
+
 ## 1. Business Problem
 
 Sell-side research is expensive, narrow, and slow. A buy-side analyst covering a mid-cap stock typically needs to:
@@ -250,6 +285,34 @@ PYTHONPATH=. python3 agents/orchestrator.py O    # REIT — Realty Income
 PYTHONPATH=. python3 agents/orchestrator.py JPM  # Bank
 PYTHONPATH=. python3 agents/orchestrator.py NVDA # Tech
 ```
+
+## 🎤 Live demo (presentation mode)
+
+For in-person demos where you want the audience to follow along on their phones:
+
+**One-time setup:**
+
+```bash
+chmod +x scripts/launch_demo.command   # already done in this repo
+```
+
+Drag `scripts/launch_demo.command` to your **Desktop** or **Dock** for one-click access.
+
+**Day of the demo:**
+
+1. **Double-click** `launch_demo.command`. A Terminal window opens, prints a big banner with the demo URL, draws an ASCII QR code, and starts Streamlit on `0.0.0.0:8501`.
+   - macOS may prompt: *"Do you want the application python3 to accept incoming network connections?"* → click **Allow**.
+2. Your default browser opens the app at `http://localhost:8501`.
+3. In the sidebar, click **📲 Show Demo QR**. A large scannable QR code appears at the top of the page — point this at your projector.
+4. Audience steps:
+   - Connect their phone to the **same WiFi as your Mac**.
+   - Open the camera app, point at the QR code, tap the link.
+   - The full app loads on their phone.
+5. To stop the demo: close the Terminal window or press `Ctrl+C` in it.
+
+**Why two QR codes?** The terminal QR is your backup if the projector cable drops. The in-app QR is the showpiece — it lives inside the running app so attendees see exactly what you're seeing.
+
+> **Network requirement:** the audience must be on the **same WiFi network** as your Mac (no campus VPN, no enterprise WiFi isolation). For external audiences, fall back to a public tunnel: `cloudflared tunnel --url http://localhost:8501`.
 
 ## Deliverables (Lecture 9 checklist)
 

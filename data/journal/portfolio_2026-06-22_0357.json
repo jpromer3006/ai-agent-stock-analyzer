@@ -1,0 +1,251 @@
+{
+  "timestamp": "2026-06-22T03:57:00.916944Z",
+  "date": "2026-06-22",
+  "regime": "bull",
+  "mandate": "fast_momentum",
+  "account": 22000.0,
+  "invested": 20209.04,
+  "cash": 1790.96,
+  "weights": {
+    "technical": 0.104,
+    "swing": 0.111,
+    "weinstein": 0.082,
+    "ipo": 0.218,
+    "growth": 0.039,
+    "canslim": 0.209,
+    "sepa": 0.237
+  },
+  "note": "UI build \u00b7 fast_momentum",
+  "holdings": [
+    {
+      "ticker": "NVEC",
+      "sector": "Semiconductors",
+      "conviction": 0.7512,
+      "shares": 11,
+      "dollars": 1215.06,
+      "weight_pct": 5.52,
+      "entry": 110.46,
+      "stop": 91.44,
+      "led_by": "sepa",
+      "sentiment": 0.123,
+      "earnings_risk": false,
+      "outcome_return": -0.1764
+    },
+    {
+      "ticker": "CACC",
+      "sector": "Financials",
+      "conviction": 0.75,
+      "shares": 3,
+      "dollars": 1739.19,
+      "weight_pct": 7.91,
+      "entry": 579.73,
+      "stop": 533.75,
+      "led_by": "sepa",
+      "sentiment": 0.484,
+      "earnings_risk": false,
+      "outcome_return": 0.0889
+    },
+    {
+      "ticker": "FFBC",
+      "sector": "Financials",
+      "conviction": 0.7492,
+      "shares": 67,
+      "dollars": 2117.87,
+      "weight_pct": 9.63,
+      "entry": 31.61,
+      "stop": 30.21,
+      "led_by": "sepa",
+      "sentiment": 0.197,
+      "earnings_risk": false,
+      "outcome_return": 0.0307
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.7463,
+      "shares": 13,
+      "dollars": 2070.12,
+      "weight_pct": 9.41,
+      "entry": 159.24,
+      "stop": 149.41,
+      "led_by": "sepa",
+      "sentiment": 0.208,
+      "earnings_risk": false,
+      "outcome_return": 0.0179
+    },
+    {
+      "ticker": "FORM",
+      "sector": "Semiconductors",
+      "conviction": 0.7408,
+      "shares": 13,
+      "dollars": 1944.15,
+      "weight_pct": 8.84,
+      "entry": 149.55,
+      "stop": 133.4,
+      "led_by": "sepa",
+      "sentiment": 0.194,
+      "earnings_risk": false,
+      "outcome_return": -0.1655
+    },
+    {
+      "ticker": "NVMI",
+      "sector": "Health Care",
+      "conviction": 0.7383,
+      "shares": 3,
+      "dollars": 1725.93,
+      "weight_pct": 7.85,
+      "entry": 575.31,
+      "stop": 517.86,
+      "led_by": "sepa",
+      "sentiment": 0.186,
+      "earnings_risk": false,
+      "outcome_return": -0.1621
+    },
+    {
+      "ticker": "BTSG",
+      "sector": "Health Care",
+      "conviction": 0.7376,
+      "shares": 19,
+      "dollars": 1258.75,
+      "weight_pct": 5.72,
+      "entry": 66.25,
+      "stop": 54.9,
+      "led_by": "sepa",
+      "sentiment": 0.298,
+      "earnings_risk": false,
+      "outcome_return": 0.0265
+    },
+    {
+      "ticker": "LRCX",
+      "sector": "Industrials",
+      "conviction": 0.7358,
+      "shares": 2,
+      "dollars": 778.08,
+      "weight_pct": 3.54,
+      "entry": 389.04,
+      "stop": 297.96,
+      "led_by": "sepa",
+      "sentiment": 0.281,
+      "earnings_risk": false,
+      "outcome_return": -0.0744
+    },
+    {
+      "ticker": "LQDA",
+      "sector": "Health Care",
+      "conviction": 0.7336,
+      "shares": 11,
+      "dollars": 781.77,
+      "weight_pct": 3.55,
+      "entry": 71.07,
+      "stop": 51.99,
+      "led_by": "sepa",
+      "sentiment": 0.217,
+      "earnings_risk": false,
+      "outcome_return": 0.0355
+    },
+    {
+      "ticker": "MAR",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7236,
+      "shares": 4,
+      "dollars": 1584.8,
+      "weight_pct": 7.2,
+      "entry": 396.2,
+      "stop": 370.06,
+      "led_by": "sepa",
+      "sentiment": 0.25,
+      "earnings_risk": false,
+      "outcome_return": -0.0179
+    },
+    {
+      "ticker": "FTNT",
+      "sector": "Information Technology",
+      "conviction": 0.7235,
+      "shares": 6,
+      "dollars": 868.38,
+      "weight_pct": 3.95,
+      "entry": 144.73,
+      "stop": 114.05,
+      "led_by": "sepa",
+      "sentiment": 0.095,
+      "earnings_risk": false,
+      "outcome_return": 0.041
+    },
+    {
+      "ticker": "TGT",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7224,
+      "shares": 16,
+      "dollars": 2091.84,
+      "weight_pct": 9.51,
+      "entry": 130.74,
+      "stop": 125.87,
+      "led_by": "sepa",
+      "sentiment": 0.209,
+      "earnings_risk": false,
+      "outcome_return": 0.0822
+    },
+    {
+      "ticker": "ATRO",
+      "sector": "Industrials",
+      "conviction": 0.7077,
+      "shares": 13,
+      "dollars": 1047.28,
+      "weight_pct": 4.76,
+      "entry": 80.56,
+      "stop": 64.38,
+      "led_by": "sepa",
+      "sentiment": 0.24,
+      "earnings_risk": false,
+      "outcome_return": 0.0368
+    },
+    {
+      "ticker": "CAT",
+      "sector": "Industrials",
+      "conviction": 0.706,
+      "shares": 1,
+      "dollars": 985.82,
+      "weight_pct": 4.48,
+      "entry": 985.82,
+      "stop": 872.73,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0243
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "899 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 23%, ipo 22%, canslim 19%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "14 holdings, 92% invested, 7 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 8%"
+    }
+  ],
+  "realized_avg_return": -0.0186,
+  "realized_hit_rate": 0.571
+}

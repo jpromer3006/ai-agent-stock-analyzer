@@ -1,0 +1,224 @@
+{
+  "timestamp": "2026-07-04T08:10:12.252316Z",
+  "date": "2026-07-04",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 99413.57,
+  "cash": 586.43,
+  "weights": {
+    "weinstein": 0.154,
+    "canslim": 0.195,
+    "ipo": 0.114,
+    "swing": 0.093,
+    "growth": 0.065,
+    "sepa": 0.225,
+    "value": 0.023,
+    "technical": 0.131
+  },
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "ECPG",
+      "sector": "Financials",
+      "conviction": 0.8875,
+      "shares": 113,
+      "dollars": 10238.93,
+      "weight_pct": 10.24,
+      "entry": 90.61,
+      "stop": 83.15,
+      "led_by": "sepa",
+      "sentiment": 0.341,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "EZPW",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.8785,
+      "shares": 315,
+      "dollars": 10243.8,
+      "weight_pct": 10.24,
+      "entry": 32.52,
+      "stop": 32.15,
+      "led_by": "sepa",
+      "sentiment": 0.287,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "FCEL",
+      "sector": "Industrials",
+      "conviction": 0.8592,
+      "shares": 163,
+      "dollars": 3912.0,
+      "weight_pct": 3.91,
+      "entry": 24.0,
+      "stop": 17.47,
+      "led_by": "sepa",
+      "sentiment": 0.354,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CGNX",
+      "sector": "Health Care",
+      "conviction": 0.8312,
+      "shares": 150,
+      "dollars": 10170.0,
+      "weight_pct": 10.17,
+      "entry": 67.8,
+      "stop": 63.09,
+      "led_by": "sepa",
+      "sentiment": 0.33,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "DGII",
+      "sector": "Information Technology",
+      "conviction": 0.826,
+      "shares": 142,
+      "dollars": 10245.3,
+      "weight_pct": 10.25,
+      "entry": 72.15,
+      "stop": 64.86,
+      "led_by": "sepa",
+      "sentiment": 0.231,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MKSI",
+      "sector": "Health Care",
+      "conviction": 0.8222,
+      "shares": 15,
+      "dollars": 5829.15,
+      "weight_pct": 5.83,
+      "entry": 388.61,
+      "stop": 319.65,
+      "led_by": "sepa",
+      "sentiment": 0.068,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CATY",
+      "sector": "Financials",
+      "conviction": 0.8157,
+      "shares": 164,
+      "dollars": 10218.84,
+      "weight_pct": 10.22,
+      "entry": 62.31,
+      "stop": 57.87,
+      "led_by": "sepa",
+      "sentiment": 0.227,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "NESR",
+      "sector": "Energy",
+      "conviction": 0.812,
+      "shares": 326,
+      "dollars": 9206.24,
+      "weight_pct": 9.21,
+      "entry": 28.24,
+      "stop": 24.96,
+      "led_by": "sepa",
+      "sentiment": 0.416,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MYRG",
+      "sector": "Industrials",
+      "conviction": 0.7964,
+      "shares": 21,
+      "dollars": 10036.95,
+      "weight_pct": 10.04,
+      "entry": 477.95,
+      "stop": 428.2,
+      "led_by": "sepa",
+      "sentiment": 0.054,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ATEX",
+      "sector": "Communication Services",
+      "conviction": 0.7957,
+      "shares": 26,
+      "dollars": 2733.64,
+      "weight_pct": 2.73,
+      "entry": 105.14,
+      "stop": 65.9,
+      "led_by": "sepa",
+      "sentiment": 0.255,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "FFBC",
+      "sector": "Financials",
+      "conviction": 0.7956,
+      "shares": 303,
+      "dollars": 10235.34,
+      "weight_pct": 10.24,
+      "entry": 33.78,
+      "stop": 30.59,
+      "led_by": "sepa",
+      "sentiment": 0.173,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "EWTX",
+      "sector": "Health Care",
+      "conviction": 0.7888,
+      "shares": 153,
+      "dollars": 6343.38,
+      "weight_pct": 6.34,
+      "entry": 41.46,
+      "stop": 34.48,
+      "led_by": "sepa",
+      "sentiment": 0.246,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "799 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 99% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 1%"
+    }
+  ],
+  "realized_avg_return": null,
+  "realized_hit_rate": null
+}

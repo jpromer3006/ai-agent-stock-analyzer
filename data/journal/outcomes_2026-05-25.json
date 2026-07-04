@@ -1,0 +1,102 @@
+{
+  "snapshot_date": "2026-05-25",
+  "as_of_audit": "2026-05-26T20:49:58.363166Z",
+  "n_picks": 5,
+  "lookahead_trading_days": [
+    1,
+    5,
+    20
+  ],
+  "hit_thresholds": {
+    "1": 0.005,
+    "5": 0.02,
+    "20": 0.05
+  },
+  "outcomes": [
+    {
+      "ticker": "MTZ",
+      "decision_date": "2026-05-25",
+      "decision_close": 382.11,
+      "n_forward_rows_available": 1,
+      "outcomes": {
+        "1d": {
+          "actual_date": "2026-05-26",
+          "close": 390.75,
+          "return_pct": 0.022611,
+          "hit": true,
+          "threshold": 0.005
+        },
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "PWR",
+      "decision_date": "2026-05-25",
+      "decision_close": 723.44,
+      "n_forward_rows_available": 1,
+      "outcomes": {
+        "1d": {
+          "actual_date": "2026-05-26",
+          "close": 742.18,
+          "return_pct": 0.025904,
+          "hit": true,
+          "threshold": 0.005
+        },
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "ORA",
+      "decision_date": "2026-05-25",
+      "decision_close": 133.46,
+      "n_forward_rows_available": 1,
+      "outcomes": {
+        "1d": {
+          "actual_date": "2026-05-26",
+          "close": 139.08,
+          "return_pct": 0.04211,
+          "hit": true,
+          "threshold": 0.005
+        },
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "GS",
+      "decision_date": "2026-05-25",
+      "decision_close": 996.73,
+      "n_forward_rows_available": 1,
+      "outcomes": {
+        "1d": {
+          "actual_date": "2026-05-26",
+          "close": 994.52,
+          "return_pct": -0.002217,
+          "hit": false,
+          "threshold": 0.005
+        },
+        "5d": null,
+        "20d": null
+      }
+    },
+    {
+      "ticker": "WELL",
+      "decision_date": "2026-05-25",
+      "decision_close": 216.17,
+      "n_forward_rows_available": 1,
+      "outcomes": {
+        "1d": {
+          "actual_date": "2026-05-26",
+          "close": 218.13,
+          "return_pct": 0.009067,
+          "hit": true,
+          "threshold": 0.005
+        },
+        "5d": null,
+        "20d": null
+      }
+    }
+  ]
+}

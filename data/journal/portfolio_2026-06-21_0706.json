@@ -1,0 +1,168 @@
+{
+  "timestamp": "2026-06-21T07:06:02.026895Z",
+  "date": "2026-06-21",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 38583.94,
+  "cash": 61416.06,
+  "weights": {
+    "canslim": 0.195,
+    "value": 0.023,
+    "sepa": 0.225,
+    "ipo": 0.114,
+    "growth": 0.065,
+    "weinstein": 0.154,
+    "swing": 0.093,
+    "technical": 0.131
+  },
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "MU",
+      "sector": "Semiconductors",
+      "conviction": 0.8152,
+      "shares": 3,
+      "dollars": 3401.97,
+      "weight_pct": 3.4,
+      "entry": 1133.99,
+      "stop": 732.8,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "NBIS",
+      "sector": "Information Technology",
+      "conviction": 0.7772,
+      "shares": 13,
+      "dollars": 3726.97,
+      "weight_pct": 3.73,
+      "entry": 286.69,
+      "stop": 197.19,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ARM",
+      "sector": "Semiconductors",
+      "conviction": 0.764,
+      "shares": 7,
+      "dollars": 3076.22,
+      "weight_pct": 3.08,
+      "entry": 439.46,
+      "stop": 264.53,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LRCX",
+      "sector": "Industrials",
+      "conviction": 0.762,
+      "shares": 13,
+      "dollars": 5057.52,
+      "weight_pct": 5.06,
+      "entry": 389.04,
+      "stop": 297.96,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "INTC",
+      "sector": "Semiconductors",
+      "conviction": 0.7535,
+      "shares": 38,
+      "dollars": 5091.62,
+      "weight_pct": 5.09,
+      "entry": 133.99,
+      "stop": 101.43,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ASML",
+      "sector": "Industrials",
+      "conviction": 0.7035,
+      "shares": 3,
+      "dollars": 5789.04,
+      "weight_pct": 5.79,
+      "entry": 1929.68,
+      "stop": 1579.23,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MUU",
+      "sector": "Other",
+      "conviction": 0.7035,
+      "shares": 2,
+      "dollars": 2160.16,
+      "weight_pct": 2.16,
+      "entry": 1080.08,
+      "stop": 542.57,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CSCO",
+      "sector": "Information Technology",
+      "conviction": 0.6488,
+      "shares": 86,
+      "dollars": 10280.44,
+      "weight_pct": 10.28,
+      "entry": 119.54,
+      "stop": 105.04,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "29 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "8 holdings, 39% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 61%"
+    }
+  ],
+  "realized_avg_return": null,
+  "realized_hit_rate": null
+}

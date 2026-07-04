@@ -78,6 +78,70 @@ _EMOJI_RE = re.compile(
 )
 
 
+# ---------------------------------------------------------------------------
+# Audio-focused memo extraction
+# ---------------------------------------------------------------------------
+
+_AUDIO_SECTIONS_PRIORITY = (
+    "Executive Summary",
+    "Technical Setup (Weinstein)",
+    "Analyst Take",
+)
+
+
+def extract_audio_summary(memo: str) -> str:
+    """
+    Pull only the Executive Summary + Technical Setup + Analyst Take
+    sections out of a full research memo for TTS narration.
+
+    Why: full memos are ~2000 words with stacked numerical citations and
+    long financial breakdowns that don't make good audio. The 3 sections
+    here are the actionable layer — what the stock IS, what the chart
+    SAYS, and what the analyst RECOMMENDS. Cuts TTS cost ~80%.
+
+    Returns the extracted prose (still markdown — `_clean_text_for_tts`
+    handles the final stripping). If the memo doesn't have these section
+    markers, falls back to the full memo so audio is never empty.
+    """
+    if not memo:
+        return ""
+
+    # Split memo into (header, body) chunks at every "## " heading
+    pattern = re.compile(r"^##\s+(.+?)\s*$", flags=re.MULTILINE)
+    matches = list(pattern.finditer(memo))
+    if not matches:
+        return memo
+
+    sections: dict[str, str] = {}
+    for i, m in enumerate(matches):
+        title = m.group(1).strip()
+        body_start = m.end()
+        body_end = matches[i + 1].start() if i + 1 < len(matches) else len(memo)
+        sections[title] = memo[body_start:body_end].strip()
+
+    # Cherry-pick the 3 audio-priority sections
+    out_parts: list[str] = []
+    for wanted in _AUDIO_SECTIONS_PRIORITY:
+        body = sections.get(wanted)
+        if body is None:
+            # Tolerant starts-with match so "Analyst Take" picks up
+            # "Analyst Take and Recommendation" etc.
+            for k, v in sections.items():
+                if k.lower().startswith(wanted.lower()):
+                    body = v
+                    break
+        if body:
+            out_parts.append(f"## {wanted}\n{body}")
+
+    if not out_parts:
+        return memo
+
+    # Lead with the # title if present (e.g., "# AXR Research Memo")
+    title_match = re.search(r"^#\s+(.+?)\s*$", memo, flags=re.MULTILINE)
+    intro = f"# {title_match.group(1)}\n\n" if title_match else ""
+    return intro + "\n\n".join(out_parts)
+
+
 def _clean_text_for_tts(text: str) -> str:
     """
     Turn markdown-rich analysis into clean spoken English.
@@ -100,6 +164,12 @@ def _clean_text_for_tts(text: str) -> str:
     # Bullets
     t = re.sub(r"^[\s]*[-•·*]\s+", "", t, flags=re.MULTILINE)
 
+    # Footnote references: "[1]", "[12]", "[3][4]" → drop entirely.
+    # Without this, ElevenLabs reads them as "one", "twelve" mid-sentence.
+    # We keep [Source: ...] brackets because the TTS cleaner is also used
+    # on text that may not have been footnoted yet.
+    t = re.sub(r"\[\d+\]", "", t)
+
     # Money: "$5,749M" → "5.75 billion"; "$1.2B" → "1.2 billion"
     def _money(match):
         amt = match.group(1).replace(",", "")
@@ -120,7 +190,10 @@ def _clean_text_for_tts(text: str) -> str:
         # Plain dollars
         return f"{val:,.2f} dollars"
 
-    t = re.sub(r"\$\s?([\d,]+\.?\d*)\s?([BMK])?\b", _money, t)
+    # \s? before [BMK] is now grouped so it only consumes whitespace
+    # when a B/M/K suffix is actually present. Prevents "$28.53 stop"
+    # from collapsing to "28.53 dollarsstop".
+    t = re.sub(r"\$\s?([\d,]+\.?\d*)(?:\s?([BMK]))?\b", _money, t)
 
     # Percentages: "+9.1%" → "up 9.1 percent"; "-3%" → "down 3 percent"
     def _pct(match):
@@ -137,6 +210,15 @@ def _clean_text_for_tts(text: str) -> str:
 
     # Ratios: "1.5x" → "1.5 times"
     t = re.sub(r"(\d+\.\d+)\s?x\b", r"\1 times", t)
+
+    # Cleanup duplicates introduced when LLM wrote "up +5%" or "down -5%":
+    # the percent regex turned "+" / "-" into "up "/"down ", giving "up up 5..."
+    t = re.sub(r"\bup up\b", "up", t, flags=re.IGNORECASE)
+    t = re.sub(r"\bdown down\b", "down", t, flags=re.IGNORECASE)
+
+    # Strip horizontal-rule separators (markdown `---`) that bleed in from
+    # extracted sections — the TTS reads them as "dash dash dash".
+    t = re.sub(r"^[-—–]{2,}\s*$", "", t, flags=re.MULTILINE)
 
     # Collapse whitespace
     t = re.sub(r"\s+", " ", t).strip()

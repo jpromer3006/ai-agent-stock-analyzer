@@ -1,0 +1,182 @@
+{
+  "timestamp": "2026-06-29T17:57:04.598230Z",
+  "date": "2026-06-29",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 72411.89,
+  "cash": 27588.11,
+  "weights": {
+    "sepa": 0.225,
+    "swing": 0.093,
+    "canslim": 0.195,
+    "weinstein": 0.154,
+    "value": 0.023,
+    "growth": 0.065,
+    "ipo": 0.114,
+    "technical": 0.131
+  },
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "MU",
+      "sector": "Semiconductors",
+      "conviction": 0.8493,
+      "shares": 1,
+      "dollars": 1132.33,
+      "weight_pct": 1.13,
+      "entry": 1132.33,
+      "stop": 802.14,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": true,
+      "outcome_return": -0.1482
+    },
+    {
+      "ticker": "CAT",
+      "sector": "Industrials",
+      "conviction": 0.794,
+      "shares": 12,
+      "dollars": 11969.64,
+      "weight_pct": 11.97,
+      "entry": 997.47,
+      "stop": 895.31,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0674
+    },
+    {
+      "ticker": "AMAT",
+      "sector": "Semiconductors",
+      "conviction": 0.7668,
+      "shares": 7,
+      "dollars": 4387.88,
+      "weight_pct": 4.39,
+      "entry": 626.84,
+      "stop": 467.95,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.1319
+    },
+    {
+      "ticker": "AMD",
+      "sector": "Semiconductors",
+      "conviction": 0.7247,
+      "shares": 15,
+      "dollars": 7823.7,
+      "weight_pct": 7.82,
+      "entry": 521.58,
+      "stop": 439.12,
+      "led_by": "sepa",
+      "sentiment": 0.168,
+      "earnings_risk": false,
+      "outcome_return": -0.0402
+    },
+    {
+      "ticker": "LLY",
+      "sector": "Health Care",
+      "conviction": 0.7235,
+      "shares": 7,
+      "dollars": 8456.84,
+      "weight_pct": 8.46,
+      "entry": 1208.12,
+      "stop": 1030.62,
+      "led_by": "sepa",
+      "sentiment": 0.227,
+      "earnings_risk": false,
+      "outcome_return": -0.013
+    },
+    {
+      "ticker": "LRCX",
+      "sector": "Industrials",
+      "conviction": 0.7169,
+      "shares": 18,
+      "dollars": 6823.62,
+      "weight_pct": 6.82,
+      "entry": 379.09,
+      "stop": 310.16,
+      "led_by": "sepa",
+      "sentiment": -0.002,
+      "earnings_risk": false,
+      "outcome_return": -0.1448
+    },
+    {
+      "ticker": "ASML",
+      "sector": "Industrials",
+      "conviction": 0.6426,
+      "shares": 6,
+      "dollars": 10767.72,
+      "weight_pct": 10.77,
+      "entry": 1794.62,
+      "stop": 1613.13,
+      "led_by": "sepa",
+      "sentiment": 0.083,
+      "earnings_risk": false,
+      "outcome_return": -0.0604
+    },
+    {
+      "ticker": "NBIS",
+      "sector": "Information Technology",
+      "conviction": 0.5742,
+      "shares": 38,
+      "dollars": 9131.4,
+      "weight_pct": 9.13,
+      "entry": 240.3,
+      "stop": 208.21,
+      "led_by": "sepa",
+      "sentiment": 0.118,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.4695,
+      "shares": 42,
+      "dollars": 11918.76,
+      "weight_pct": 11.92,
+      "entry": 283.78,
+      "stop": 273.27,
+      "led_by": "weinstein",
+      "sentiment": 0.05,
+      "earnings_risk": false,
+      "outcome_return": 0.0954
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "29 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "9 holdings, 72% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 28%"
+    }
+  ],
+  "realized_avg_return": -0.0638,
+  "realized_hit_rate": 0.125
+}

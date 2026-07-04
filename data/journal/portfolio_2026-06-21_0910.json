@@ -1,0 +1,195 @@
+{
+  "timestamp": "2026-06-21T09:10:43.520946Z",
+  "date": "2026-06-21",
+  "regime": "bull",
+  "mandate": "fast_momentum",
+  "account": 100000.0,
+  "invested": 93199.31,
+  "cash": 6800.69,
+  "weights": {
+    "technical": 0.104,
+    "swing": 0.111,
+    "growth": 0.039,
+    "ipo": 0.218,
+    "weinstein": 0.082,
+    "canslim": 0.209,
+    "sepa": 0.237
+  },
+  "note": "UI build \u00b7 fast_momentum",
+  "holdings": [
+    {
+      "ticker": "NBN",
+      "sector": "Financial Services",
+      "conviction": 0.7522,
+      "shares": 94,
+      "dollars": 11890.06,
+      "weight_pct": 11.89,
+      "entry": 126.49,
+      "stop": 123.36,
+      "led_by": "sepa",
+      "sentiment": 0.295,
+      "earnings_risk": false,
+      "outcome_return": 0.0157
+    },
+    {
+      "ticker": "NVEC",
+      "sector": "Semiconductors",
+      "conviction": 0.7512,
+      "shares": 65,
+      "dollars": 7179.9,
+      "weight_pct": 7.18,
+      "entry": 110.46,
+      "stop": 91.44,
+      "led_by": "sepa",
+      "sentiment": 0.123,
+      "earnings_risk": false,
+      "outcome_return": -0.1746
+    },
+    {
+      "ticker": "FFBC",
+      "sector": "Financials",
+      "conviction": 0.7492,
+      "shares": 379,
+      "dollars": 11980.19,
+      "weight_pct": 11.98,
+      "entry": 31.61,
+      "stop": 30.21,
+      "led_by": "sepa",
+      "sentiment": 0.197,
+      "earnings_risk": false,
+      "outcome_return": 0.0414
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.7463,
+      "shares": 75,
+      "dollars": 11943.0,
+      "weight_pct": 11.94,
+      "entry": 159.24,
+      "stop": 149.41,
+      "led_by": "sepa",
+      "sentiment": 0.208,
+      "earnings_risk": false,
+      "outcome_return": 0.0403
+    },
+    {
+      "ticker": "FORM",
+      "sector": "Semiconductors",
+      "conviction": 0.7408,
+      "shares": 77,
+      "dollars": 11515.35,
+      "weight_pct": 11.52,
+      "entry": 149.55,
+      "stop": 133.4,
+      "led_by": "sepa",
+      "sentiment": 0.194,
+      "earnings_risk": false,
+      "outcome_return": -0.1258
+    },
+    {
+      "ticker": "NTRS",
+      "sector": "Financials",
+      "conviction": 0.7386,
+      "shares": 69,
+      "dollars": 11875.59,
+      "weight_pct": 11.88,
+      "entry": 172.11,
+      "stop": 164.68,
+      "led_by": "sepa",
+      "sentiment": 0.354,
+      "earnings_risk": false,
+      "outcome_return": 0.0102
+    },
+    {
+      "ticker": "NVMI",
+      "sector": "Health Care",
+      "conviction": 0.7383,
+      "shares": 20,
+      "dollars": 11506.2,
+      "weight_pct": 11.51,
+      "entry": 575.31,
+      "stop": 517.86,
+      "led_by": "sepa",
+      "sentiment": 0.186,
+      "earnings_risk": false,
+      "outcome_return": -0.1508
+    },
+    {
+      "ticker": "MU",
+      "sector": "Semiconductors",
+      "conviction": 0.7379,
+      "shares": 3,
+      "dollars": 3401.97,
+      "weight_pct": 3.4,
+      "entry": 1133.99,
+      "stop": 732.8,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0015
+    },
+    {
+      "ticker": "BTSG",
+      "sector": "Health Care",
+      "conviction": 0.7376,
+      "shares": 110,
+      "dollars": 7287.5,
+      "weight_pct": 7.29,
+      "entry": 66.25,
+      "stop": 54.9,
+      "led_by": "sepa",
+      "sentiment": 0.298,
+      "earnings_risk": false,
+      "outcome_return": 0.0412
+    },
+    {
+      "ticker": "LQDA",
+      "sector": "Health Care",
+      "conviction": 0.7336,
+      "shares": 65,
+      "dollars": 4619.55,
+      "weight_pct": 4.62,
+      "entry": 71.07,
+      "stop": 51.99,
+      "led_by": "sepa",
+      "sentiment": 0.217,
+      "earnings_risk": false,
+      "outcome_return": 0.0999
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "899 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 23%, ipo 22%, canslim 19%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "10 holdings, 93% invested, 7 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "sector concentration Financials 36%; cash 7%"
+    }
+  ],
+  "realized_avg_return": -0.0204,
+  "realized_hit_rate": 0.6
+}

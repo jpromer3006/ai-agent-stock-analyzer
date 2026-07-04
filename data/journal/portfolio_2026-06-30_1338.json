@@ -1,0 +1,224 @@
+{
+  "timestamp": "2026-06-30T13:38:33.139086Z",
+  "date": "2026-06-30",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 98829.0,
+  "cash": 1171.0,
+  "weights": {
+    "swing": 0.093,
+    "growth": 0.065,
+    "sepa": 0.225,
+    "technical": 0.131,
+    "canslim": 0.195,
+    "ipo": 0.114,
+    "value": 0.023,
+    "weinstein": 0.154
+  },
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "EZPW",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.8785,
+      "shares": 326,
+      "dollars": 10601.52,
+      "weight_pct": 10.6,
+      "entry": 32.52,
+      "stop": 32.15,
+      "led_by": "sepa",
+      "sentiment": 0.287,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "FCEL",
+      "sector": "Industrials",
+      "conviction": 0.8636,
+      "shares": 169,
+      "dollars": 4056.0,
+      "weight_pct": 4.06,
+      "entry": 24.0,
+      "stop": 17.47,
+      "led_by": "sepa",
+      "sentiment": 0.39,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CVS",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.84,
+      "shares": 101,
+      "dollars": 10409.06,
+      "weight_pct": 10.41,
+      "entry": 103.06,
+      "stop": 92.25,
+      "led_by": "sepa",
+      "sentiment": 0.228,
+      "earnings_risk": false,
+      "outcome_return": 0.0123
+    },
+    {
+      "ticker": "MKSI",
+      "sector": "Health Care",
+      "conviction": 0.8267,
+      "shares": 15,
+      "dollars": 5829.15,
+      "weight_pct": 5.83,
+      "entry": 388.61,
+      "stop": 319.65,
+      "led_by": "sepa",
+      "sentiment": 0.105,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MYRG",
+      "sector": "Industrials",
+      "conviction": 0.804,
+      "shares": 22,
+      "dollars": 10514.9,
+      "weight_pct": 10.51,
+      "entry": 477.95,
+      "stop": 428.2,
+      "led_by": "sepa",
+      "sentiment": 0.118,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "FFBC",
+      "sector": "Financials",
+      "conviction": 0.7939,
+      "shares": 314,
+      "dollars": 10606.92,
+      "weight_pct": 10.61,
+      "entry": 33.78,
+      "stop": 30.59,
+      "led_by": "sepa",
+      "sentiment": 0.153,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.793,
+      "shares": 63,
+      "dollars": 10360.35,
+      "weight_pct": 10.36,
+      "entry": 164.45,
+      "stop": 152.25,
+      "led_by": "sepa",
+      "sentiment": 0.306,
+      "earnings_risk": false,
+      "outcome_return": 0.0188
+    },
+    {
+      "ticker": "ALNT",
+      "sector": "Health Care",
+      "conviction": 0.7889,
+      "shares": 51,
+      "dollars": 5147.94,
+      "weight_pct": 5.15,
+      "entry": 100.94,
+      "stop": 79.5,
+      "led_by": "sepa",
+      "sentiment": 0.233,
+      "earnings_risk": false,
+      "outcome_return": -0.1558
+    },
+    {
+      "ticker": "NESR",
+      "sector": "Energy",
+      "conviction": 0.7888,
+      "shares": 337,
+      "dollars": 9516.88,
+      "weight_pct": 9.52,
+      "entry": 28.24,
+      "stop": 24.96,
+      "led_by": "sepa",
+      "sentiment": 0.214,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "EWTX",
+      "sector": "Health Care",
+      "conviction": 0.7888,
+      "shares": 158,
+      "dollars": 6550.68,
+      "weight_pct": 6.55,
+      "entry": 41.46,
+      "stop": 34.48,
+      "led_by": "sepa",
+      "sentiment": 0.246,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ICHR",
+      "sector": "Semiconductors",
+      "conviction": 0.7884,
+      "shares": 55,
+      "dollars": 5170.0,
+      "weight_pct": 5.17,
+      "entry": 94.0,
+      "stop": 74.16,
+      "led_by": "sepa",
+      "sentiment": 0.181,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MTZ",
+      "sector": "Industrials",
+      "conviction": 0.7856,
+      "shares": 24,
+      "dollars": 10065.6,
+      "weight_pct": 10.07,
+      "entry": 419.4,
+      "stop": 389.35,
+      "led_by": "sepa",
+      "sentiment": 0.157,
+      "earnings_risk": false,
+      "outcome_return": -0.1025
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "799 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 99% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 1%"
+    }
+  ],
+  "realized_avg_return": -0.0568,
+  "realized_hit_rate": 0.5
+}

@@ -1,0 +1,140 @@
+{
+  "timestamp": "2026-06-24T05:37:54.289114Z",
+  "date": "2026-06-24",
+  "regime": "bull",
+  "mandate": "value_hold",
+  "account": 100000.0,
+  "invested": 70822.42,
+  "cash": 29177.58,
+  "weights": {
+    "growth": 0.225,
+    "swing": 0.019,
+    "ipo": 0.057,
+    "sepa": 0.076,
+    "value": 0.358,
+    "weinstein": 0.124,
+    "canslim": 0.096,
+    "technical": 0.046
+  },
+  "note": "UI build \u00b7 value_hold",
+  "holdings": [
+    {
+      "ticker": "C",
+      "sector": "Financials",
+      "conviction": 0.6258,
+      "shares": 82,
+      "dollars": 11887.54,
+      "weight_pct": 11.89,
+      "entry": 144.97,
+      "stop": 130.23,
+      "led_by": "sepa",
+      "sentiment": 0.04,
+      "earnings_risk": false,
+      "outcome_return": -0.0127
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.5964,
+      "shares": 207,
+      "dollars": 11987.37,
+      "weight_pct": 11.99,
+      "entry": 57.91,
+      "stop": 52.85,
+      "led_by": "sepa",
+      "sentiment": 0.106,
+      "earnings_risk": false,
+      "outcome_return": 0.0026
+    },
+    {
+      "ticker": "USB",
+      "sector": "Financials",
+      "conviction": 0.5153,
+      "shares": 199,
+      "dollars": 11949.95,
+      "weight_pct": 11.95,
+      "entry": 60.05,
+      "stop": 55.8,
+      "led_by": "sepa",
+      "sentiment": 0.252,
+      "earnings_risk": false,
+      "outcome_return": 0.0133
+    },
+    {
+      "ticker": "ABBV",
+      "sector": "Health Care",
+      "conviction": 0.3108,
+      "shares": 51,
+      "dollars": 11972.76,
+      "weight_pct": 11.97,
+      "entry": 234.76,
+      "stop": 212.59,
+      "led_by": "technical",
+      "sentiment": 0.15,
+      "earnings_risk": false,
+      "outcome_return": 0.0786
+    },
+    {
+      "ticker": "JNJ",
+      "sector": "Health Care",
+      "conviction": 0.3088,
+      "shares": 50,
+      "dollars": 11954.0,
+      "weight_pct": 11.95,
+      "entry": 239.08,
+      "stop": 229.39,
+      "led_by": "sepa",
+      "sentiment": 0.112,
+      "earnings_risk": false,
+      "outcome_return": 0.0567
+    },
+    {
+      "ticker": "LLY",
+      "sector": "Health Care",
+      "conviction": 0.2992,
+      "shares": 10,
+      "dollars": 11070.8,
+      "weight_pct": 11.07,
+      "entry": 1107.08,
+      "stop": 1017.14,
+      "led_by": "weinstein",
+      "sentiment": 0.021,
+      "earnings_risk": false,
+      "outcome_return": 0.0813
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "30 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: value 38%, growth 24%, weinstein 10%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.42, weinstein x1.38"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "6 holdings, 71% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "sector concentration Financials 36%; cash 29%"
+    }
+  ],
+  "realized_avg_return": 0.0366,
+  "realized_hit_rate": 0.833
+}

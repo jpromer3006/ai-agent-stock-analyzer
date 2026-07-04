@@ -1,0 +1,139 @@
+{
+  "timestamp": "2026-06-28T08:22:51.105565Z",
+  "date": "2026-06-28",
+  "regime": "bull",
+  "mandate": "fast_momentum",
+  "account": 100000.0,
+  "invested": 56926.18,
+  "cash": 43073.82,
+  "weights": {
+    "technical": 0.104,
+    "growth": 0.039,
+    "canslim": 0.209,
+    "sepa": 0.237,
+    "ipo": 0.218,
+    "swing": 0.111,
+    "weinstein": 0.082
+  },
+  "note": "UI build \u00b7 fast_momentum",
+  "holdings": [
+    {
+      "ticker": "MNST",
+      "sector": "Consumer Staples",
+      "conviction": 0.6941,
+      "shares": 114,
+      "dollars": 10987.32,
+      "weight_pct": 10.99,
+      "entry": 96.38,
+      "stop": 85.45,
+      "led_by": "sepa",
+      "sentiment": 0.246,
+      "earnings_risk": false,
+      "outcome_return": 0.0131
+    },
+    {
+      "ticker": "HUT",
+      "sector": "Financials",
+      "conviction": 0.5932,
+      "shares": 64,
+      "dollars": 7873.28,
+      "weight_pct": 7.87,
+      "entry": 123.02,
+      "stop": 103.51,
+      "led_by": "sepa",
+      "sentiment": 0.005,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MARA",
+      "sector": "Financials",
+      "conviction": 0.4438,
+      "shares": 825,
+      "dollars": 11995.5,
+      "weight_pct": 12.0,
+      "entry": 14.54,
+      "stop": 13.88,
+      "led_by": "swing",
+      "sentiment": 0.072,
+      "earnings_risk": false,
+      "outcome_return": -0.0351
+    },
+    {
+      "ticker": "CLSK",
+      "sector": "Financials",
+      "conviction": 0.3758,
+      "shares": 317,
+      "dollars": 5176.61,
+      "weight_pct": 5.18,
+      "entry": 16.33,
+      "stop": 12.39,
+      "led_by": "weinstein",
+      "sentiment": 0.185,
+      "earnings_risk": false,
+      "outcome_return": -0.1603
+    },
+    {
+      "ticker": "ENPH",
+      "sector": "Semiconductors",
+      "conviction": 0.3192,
+      "shares": 189,
+      "dollars": 8992.62,
+      "weight_pct": 8.99,
+      "entry": 47.58,
+      "stop": 41.0,
+      "led_by": "weinstein",
+      "sentiment": 0.265,
+      "earnings_risk": false,
+      "outcome_return": -0.0269
+    },
+    {
+      "ticker": "DASH",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.2514,
+      "shares": 65,
+      "dollars": 11900.85,
+      "weight_pct": 11.9,
+      "entry": 183.09,
+      "stop": 165.78,
+      "led_by": "technical",
+      "sentiment": 0.221,
+      "earnings_risk": false,
+      "outcome_return": 0.0363
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "15 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 23%, ipo 22%, canslim 19%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "6 holdings, 57% invested, 7 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 43%"
+    }
+  ],
+  "realized_avg_return": -0.0346,
+  "realized_hit_rate": 0.4
+}

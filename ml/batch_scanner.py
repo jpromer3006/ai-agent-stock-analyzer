@@ -38,6 +38,20 @@ class ScanReport:
     results: list[StageResult] = field(default_factory=list)
 
     @property
+    def excluded(self) -> list[StageResult]:
+        """Tickers dropped from the leaderboards because analysis errored
+        (delisted, illiquid, or sparse data). Computed from results so it
+        survives the disk-cache round-trip without an extra stored field."""
+        return [r for r in self.results if getattr(r, "error", None)]
+
+    @property
+    def crashed(self) -> list[StageResult]:
+        """Reserved for genuine code-fault tickers. The scanner currently
+        folds all errors into `excluded`, so this stays empty unless a
+        future version tags exceptions separately."""
+        return []
+
+    @property
     def stage_buckets(self) -> dict[int, list[StageResult]]:
         buckets: dict[int, list[StageResult]] = {1: [], 2: [], 3: [], 4: []}
         for r in self.results:
@@ -72,6 +86,59 @@ class ScanReport:
             [r for r in self.results if r.stage == 4],
             key=lambda r: r.bull_probability,
         )
+
+    # ----- Weinstein leaderboards (used by the Trader scan panel) -----
+    # Computed from the per-ticker gate flags, so they work on fresh scans
+    # and on cached reports (asdict serializes every field).
+
+    @property
+    def confirmed_buys(self) -> list[StageResult]:
+        """Stage 2 names that cleared BOTH Weinstein gates (volume + RS) and
+        are NOT extended. Extended names (run far above the 30-week MA) belong
+        only in the Late Stage 2 panel, not in actionable BUYs — otherwise the
+        same name shows in both lists with a contradictory AVOID badge."""
+        ok = [r for r in self.results
+              if not r.error and r.stage == 2
+              and getattr(r, "weinstein_buy_confirmed", False)
+              and getattr(r, "setup_type", "") != "extended"]
+        return sorted(ok, key=lambda r: r.bull_probability, reverse=True)
+
+    @property
+    def watching_stage2(self) -> list[StageResult]:
+        """Stage 2 setups still forming: gates not yet both passing and not
+        extended/late. These are watch-list, not buy-now."""
+        ok = [r for r in self.results
+              if not r.error and r.stage == 2
+              and not getattr(r, "weinstein_buy_confirmed", False)
+              and getattr(r, "setup_type", "") != "extended"]
+        return sorted(ok, key=lambda r: r.bull_probability, reverse=True)
+
+    @property
+    def late_stage_2(self) -> list[StageResult]:
+        """Late / extended Stage 2: technically still Stage 2 but stretched
+        far above the 30-week MA (Chapter 5 caution)."""
+        ok = [r for r in self.results
+              if not r.error and r.stage == 2
+              and getattr(r, "setup_type", "") == "extended"]
+        return sorted(ok, key=lambda r: r.bull_probability, reverse=True)
+
+    @property
+    def stage3_topping(self) -> list[StageResult]:
+        """Stage 3 (Topping) names, sorted by bull_probability descending."""
+        ok = [r for r in self.results if not r.error and r.stage == 3]
+        return sorted(ok, key=lambda r: r.bull_probability, reverse=True)
+
+    @property
+    def stage1_transitions(self) -> list[StageResult]:
+        """Stage 4 names that are repairing — the early-recovery transition
+        watch flag is firing (rally off the 90-day low, price above the 50-day
+        MA, expanding volume, positive 4-week momentum). Surfaced before the
+        lagging 30-week MA officially promotes them to Stage 2. Sorted by how
+        many of the four transition signals have passed."""
+        ok = [r for r in self.results
+              if not r.error and getattr(r, "transition_watch_flag", False)]
+        return sorted(ok, key=lambda r: getattr(r, "transition_signals_passed", 0),
+                      reverse=True)
 
 
 def _cache_key(tickers: list[str]) -> str:

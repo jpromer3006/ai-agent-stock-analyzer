@@ -112,6 +112,14 @@ if ! curl -s -o /dev/null -w "%{http_code}" http://localhost:8501 | grep -q "200
 fi
 echo -e "      ${GREEN}✓ Running at http://localhost:8501 (PID $STREAMLIT_PID)${RESET}"
 
+# Open the app in Chrome (fall back to the default browser if Chrome is absent)
+if open -a "Google Chrome" "http://localhost:8501" 2>/dev/null; then
+    echo -e "      ${GREEN}✓ Opening in Google Chrome...${RESET}"
+else
+    open "http://localhost:8501" 2>/dev/null
+    echo -e "      ${YELLOW}⚠ Chrome not found — opened in your default browser${RESET}"
+fi
+
 # ─── Step 5: Start Cloudflare tunnel ───────────────────────────────────
 echo -e "${BOLD}[5/5]${RESET} Starting Cloudflare tunnel (this gives your team a shareable URL)..."
 TUNNEL_LOG="/tmp/adminai_tunnel.log"

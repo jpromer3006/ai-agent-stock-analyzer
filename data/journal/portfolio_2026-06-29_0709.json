@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-06-29T07:09:29.852985Z",
+  "date": "2026-06-29",
+  "regime": "bull",
+  "mandate": "value_hold",
+  "account": 1000.0,
+  "invested": 0,
+  "cash": 1000.0,
+  "weights": {
+    "swing": 0.02,
+    "weinstein": 0.09,
+    "canslim": 0.097,
+    "growth": 0.237,
+    "technical": 0.058,
+    "ipo": 0.06,
+    "sepa": 0.06,
+    "value": 0.378
+  },
+  "note": "UI build \u00b7 value_hold",
+  "holdings": [],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "399 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: value 38%, growth 24%, weinstein 10%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "0 holdings, 0% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "no holdings to check"
+    }
+  ],
+  "realized_avg_return": null,
+  "realized_hit_rate": null
+}

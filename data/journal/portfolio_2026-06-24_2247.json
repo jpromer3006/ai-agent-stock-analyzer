@@ -1,0 +1,252 @@
+{
+  "timestamp": "2026-06-24T22:47:29.491495Z",
+  "date": "2026-06-24",
+  "regime": "bull",
+  "mandate": "value_hold",
+  "account": 20000.0,
+  "invested": 17746.18,
+  "cash": 2253.82,
+  "weights": {
+    "value": 0.358,
+    "ipo": 0.057,
+    "technical": 0.046,
+    "canslim": 0.096,
+    "weinstein": 0.124,
+    "sepa": 0.076,
+    "growth": 0.225,
+    "swing": 0.019
+  },
+  "note": "UI build \u00b7 value_hold",
+  "holdings": [
+    {
+      "ticker": "BRK-B",
+      "sector": "Financials",
+      "conviction": 0.493,
+      "shares": 2,
+      "dollars": 989.62,
+      "weight_pct": 4.95,
+      "entry": 494.81,
+      "stop": 479.77,
+      "led_by": "value",
+      "sentiment": 0.051,
+      "earnings_risk": false,
+      "outcome_return": 0.0078
+    },
+    {
+      "ticker": "INTC",
+      "sector": "Semiconductors",
+      "conviction": 0.4007,
+      "shares": 6,
+      "dollars": 789.9,
+      "weight_pct": 3.95,
+      "entry": 131.65,
+      "stop": 105.74,
+      "led_by": "sepa",
+      "sentiment": 0.052,
+      "earnings_risk": false,
+      "outcome_return": -0.0253
+    },
+    {
+      "ticker": "CSCO",
+      "sector": "Information Technology",
+      "conviction": 0.3442,
+      "shares": 13,
+      "dollars": 1556.49,
+      "weight_pct": 7.78,
+      "entry": 119.73,
+      "stop": 107.33,
+      "led_by": "sepa",
+      "sentiment": 0.196,
+      "earnings_risk": false,
+      "outcome_return": -0.0498
+    },
+    {
+      "ticker": "CAT",
+      "sector": "Industrials",
+      "conviction": 0.344,
+      "shares": 1,
+      "dollars": 994.45,
+      "weight_pct": 4.97,
+      "entry": 994.45,
+      "stop": 885.45,
+      "led_by": "sepa",
+      "sentiment": 0.047,
+      "earnings_risk": false,
+      "outcome_return": 0.003
+    },
+    {
+      "ticker": "DE",
+      "sector": "Industrials",
+      "conviction": 0.3232,
+      "shares": 2,
+      "dollars": 1201.5,
+      "weight_pct": 6.01,
+      "entry": 600.75,
+      "stop": 573.48,
+      "led_by": "sepa",
+      "sentiment": -0.007,
+      "earnings_risk": false,
+      "outcome_return": 0.0208
+    },
+    {
+      "ticker": "ABBV",
+      "sector": "Health Care",
+      "conviction": 0.3102,
+      "shares": 6,
+      "dollars": 1409.34,
+      "weight_pct": 7.05,
+      "entry": 234.89,
+      "stop": 213.19,
+      "led_by": "technical",
+      "sentiment": 0.145,
+      "earnings_risk": false,
+      "outcome_return": 0.0786
+    },
+    {
+      "ticker": "GE",
+      "sector": "Industrials",
+      "conviction": 0.296,
+      "shares": 2,
+      "dollars": 731.76,
+      "weight_pct": 3.66,
+      "entry": 365.88,
+      "stop": 310.62,
+      "led_by": "sepa",
+      "sentiment": 0.23,
+      "earnings_risk": false,
+      "outcome_return": 0.0085
+    },
+    {
+      "ticker": "JNJ",
+      "sector": "Health Care",
+      "conviction": 0.2764,
+      "shares": 6,
+      "dollars": 1446.0,
+      "weight_pct": 7.23,
+      "entry": 241.0,
+      "stop": 229.48,
+      "led_by": "sepa",
+      "sentiment": 0.221,
+      "earnings_risk": false,
+      "outcome_return": 0.0567
+    },
+    {
+      "ticker": "MRK",
+      "sector": "Health Care",
+      "conviction": 0.2745,
+      "shares": 12,
+      "dollars": 1447.2,
+      "weight_pct": 7.24,
+      "entry": 120.6,
+      "stop": 114.81,
+      "led_by": "sepa",
+      "sentiment": 0.175,
+      "earnings_risk": false,
+      "outcome_return": 0.0668
+    },
+    {
+      "ticker": "KO",
+      "sector": "Consumer Staples",
+      "conviction": 0.2726,
+      "shares": 19,
+      "dollars": 1531.4,
+      "weight_pct": 7.66,
+      "entry": 80.6,
+      "stop": 78.65,
+      "led_by": "sepa",
+      "sentiment": 0.196,
+      "earnings_risk": false,
+      "outcome_return": 0.0252
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.2577,
+      "shares": 5,
+      "dollars": 1465.4,
+      "weight_pct": 7.33,
+      "entry": 293.08,
+      "stop": 290.73,
+      "led_by": "sepa",
+      "sentiment": 0.059,
+      "earnings_risk": false,
+      "outcome_return": -0.0317
+    },
+    {
+      "ticker": "V",
+      "sector": "Financials",
+      "conviction": 0.1974,
+      "shares": 4,
+      "dollars": 1328.92,
+      "weight_pct": 6.64,
+      "entry": 332.23,
+      "stop": 322.08,
+      "led_by": "technical",
+      "sentiment": 0.097,
+      "earnings_risk": false,
+      "outcome_return": 0.012
+    },
+    {
+      "ticker": "JPM",
+      "sector": "Financials",
+      "conviction": 0.1837,
+      "shares": 4,
+      "dollars": 1333.8,
+      "weight_pct": 6.67,
+      "entry": 333.45,
+      "stop": 310.17,
+      "led_by": "sepa",
+      "sentiment": -0.157,
+      "earnings_risk": false,
+      "outcome_return": -0.0132
+    },
+    {
+      "ticker": "PG",
+      "sector": "Materials",
+      "conviction": 0.1313,
+      "shares": 10,
+      "dollars": 1520.4,
+      "weight_pct": 7.6,
+      "entry": 152.04,
+      "stop": 145.43,
+      "led_by": "technical",
+      "sentiment": 0.348,
+      "earnings_risk": false,
+      "outcome_return": -0.0199
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "28 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: value 38%, growth 24%, weinstein 10%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.42, weinstein x1.38"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "14 holdings, 89% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 11%"
+    }
+  ],
+  "realized_avg_return": 0.01,
+  "realized_hit_rate": 0.643
+}

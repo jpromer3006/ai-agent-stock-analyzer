@@ -1,0 +1,238 @@
+{
+  "timestamp": "2026-06-29T06:11:39.328658Z",
+  "date": "2026-06-29",
+  "regime": "bull",
+  "mandate": "value_hold",
+  "account": 10000.0,
+  "invested": 7848.52,
+  "cash": 2151.48,
+  "weights": {
+    "swing": 0.02,
+    "weinstein": 0.09,
+    "canslim": 0.097,
+    "growth": 0.237,
+    "technical": 0.058,
+    "ipo": 0.06,
+    "sepa": 0.06,
+    "value": 0.378
+  },
+  "note": "UI build \u00b7 value_hold",
+  "holdings": [
+    {
+      "ticker": "FCEL",
+      "sector": "Industrials",
+      "conviction": 0.3256,
+      "shares": 13,
+      "dollars": 312.0,
+      "weight_pct": 3.12,
+      "entry": 24.0,
+      "stop": 17.47,
+      "led_by": "sepa",
+      "sentiment": 0.396,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ALGM",
+      "sector": "Semiconductors",
+      "conviction": 0.3185,
+      "shares": 8,
+      "dollars": 463.12,
+      "weight_pct": 4.63,
+      "entry": 57.89,
+      "stop": 48.18,
+      "led_by": "sepa",
+      "sentiment": 0.222,
+      "earnings_risk": false,
+      "outcome_return": -0.164
+    },
+    {
+      "ticker": "CGNX",
+      "sector": "Health Care",
+      "conviction": 0.3139,
+      "shares": 12,
+      "dollars": 798.72,
+      "weight_pct": 7.99,
+      "entry": 66.56,
+      "stop": 61.88,
+      "led_by": "sepa",
+      "sentiment": 0.167,
+      "earnings_risk": false,
+      "outcome_return": -0.0082
+    },
+    {
+      "ticker": "MTZ",
+      "sector": "Industrials",
+      "conviction": 0.3134,
+      "shares": 2,
+      "dollars": 792.5,
+      "weight_pct": 7.92,
+      "entry": 396.25,
+      "stop": 386.96,
+      "led_by": "sepa",
+      "sentiment": 0.157,
+      "earnings_risk": false,
+      "outcome_return": -0.1297
+    },
+    {
+      "ticker": "KYMR",
+      "sector": "Health Care",
+      "conviction": 0.3089,
+      "shares": 3,
+      "dollars": 324.36,
+      "weight_pct": 3.24,
+      "entry": 108.12,
+      "stop": 84.71,
+      "led_by": "sepa",
+      "sentiment": 0.257,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LAMR",
+      "sector": "Real Estate",
+      "conviction": 0.3004,
+      "shares": 5,
+      "dollars": 780.5,
+      "weight_pct": 7.8,
+      "entry": 156.1,
+      "stop": 145.56,
+      "led_by": "sepa",
+      "sentiment": 0.222,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MO",
+      "sector": "Consumer Staples",
+      "conviction": 0.2975,
+      "shares": 11,
+      "dollars": 811.69,
+      "weight_pct": 8.12,
+      "entry": 73.79,
+      "stop": 69.53,
+      "led_by": "sepa",
+      "sentiment": 0.108,
+      "earnings_risk": false,
+      "outcome_return": -0.0181
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.2975,
+      "shares": 5,
+      "dollars": 828.95,
+      "weight_pct": 8.29,
+      "entry": 165.79,
+      "stop": 151.46,
+      "led_by": "sepa",
+      "sentiment": 0.306,
+      "earnings_risk": false,
+      "outcome_return": 0.0146
+    },
+    {
+      "ticker": "BELFB",
+      "sector": "Information Technology",
+      "conviction": 0.2924,
+      "shares": 2,
+      "dollars": 621.28,
+      "weight_pct": 6.21,
+      "entry": 310.64,
+      "stop": 277.35,
+      "led_by": "sepa",
+      "sentiment": 0.064,
+      "earnings_risk": false,
+      "outcome_return": -0.1543
+    },
+    {
+      "ticker": "FTNT",
+      "sector": "Information Technology",
+      "conviction": 0.2906,
+      "shares": 2,
+      "dollars": 302.7,
+      "weight_pct": 3.03,
+      "entry": 151.35,
+      "stop": 120.96,
+      "led_by": "sepa",
+      "sentiment": 0.114,
+      "earnings_risk": false,
+      "outcome_return": 0.0053
+    },
+    {
+      "ticker": "CROX",
+      "sector": "Other",
+      "conviction": 0.289,
+      "shares": 5,
+      "dollars": 638.8,
+      "weight_pct": 6.39,
+      "entry": 127.76,
+      "stop": 111.59,
+      "led_by": "sepa",
+      "sentiment": 0.078,
+      "earnings_risk": false,
+      "outcome_return": -0.0004
+    },
+    {
+      "ticker": "DLR",
+      "sector": "Real Estate",
+      "conviction": 0.287,
+      "shares": 4,
+      "dollars": 772.0,
+      "weight_pct": 7.72,
+      "entry": 193.0,
+      "stop": 191.58,
+      "led_by": "sepa",
+      "sentiment": 0.252,
+      "earnings_risk": false,
+      "outcome_return": -0.0907
+    },
+    {
+      "ticker": "CAKE",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.2796,
+      "shares": 5,
+      "dollars": 401.9,
+      "weight_pct": 4.02,
+      "entry": 80.38,
+      "stop": 65.42,
+      "led_by": "sepa",
+      "sentiment": 0.128,
+      "earnings_risk": false,
+      "outcome_return": -0.0023
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "1099 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: value 38%, growth 24%, weinstein 10%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "13 holdings, 78% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 22%"
+    }
+  ],
+  "realized_avg_return": -0.0548,
+  "realized_hit_rate": 0.2
+}

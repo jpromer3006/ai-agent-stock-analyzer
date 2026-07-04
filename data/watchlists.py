@@ -17,7 +17,9 @@ Functions:
 from __future__ import annotations
 
 import logging
+from datetime import datetime
 from pathlib import Path
+from typing import Optional
 
 logger = logging.getLogger(__name__)
 
@@ -26,6 +28,7 @@ _WATCHLIST_DIR.mkdir(parents=True, exist_ok=True)
 
 DEFAULT_NAME = "Top Picks"
 _LEGACY_DEFAULT = "default"  # migrated on startup if present
+_UPDATED_PREFIX = "# updated:"  # header line stamped on save; skipped by load
 
 
 def _path(name: str) -> Path:
@@ -88,7 +91,12 @@ def load_watchlist(name: str) -> list[str]:
 
 
 def save_watchlist(name: str, tickers: list[str]) -> Path:
-    """Save a list of tickers to a watchlist file."""
+    """Save a list of tickers to a watchlist file.
+
+    Stamps a '# updated: <ISO>' header so the UI can show when the list was
+    chosen. load_watchlist() skips comment lines, so the header never leaks
+    into the ticker set.
+    """
     p = _path(name)
     cleaned = []
     seen: set[str] = set()
@@ -97,8 +105,39 @@ def save_watchlist(name: str, tickers: list[str]) -> Path:
         if t and t not in seen:
             seen.add(t)
             cleaned.append(t)
-    p.write_text("\n".join(cleaned) + "\n" if cleaned else "")
+    if cleaned:
+        header = f"{_UPDATED_PREFIX} {datetime.now().astimezone().isoformat(timespec='seconds')}"
+        p.write_text(header + "\n" + "\n".join(cleaned) + "\n")
+    else:
+        p.write_text("")
     return p
+
+
+def watchlist_updated_at(name: str) -> Optional[datetime]:
+    """When this watchlist was last chosen/written.
+
+    Prefers an explicit '# updated: <ISO>' header (written by save_watchlist,
+    survives file copies and git checkouts); falls back to the file's
+    last-modified time for older or externally generated lists. Returns None
+    if the file does not exist.
+    """
+    p = _path(name)
+    if not p.exists():
+        return None
+    try:
+        for line in p.read_text().splitlines():
+            s = line.strip()
+            if s.startswith(_UPDATED_PREFIX):
+                try:
+                    return datetime.fromisoformat(s[len(_UPDATED_PREFIX):].strip())
+                except ValueError:
+                    break  # malformed header — fall through to mtime
+    except Exception:
+        pass
+    try:
+        return datetime.fromtimestamp(p.stat().st_mtime)
+    except Exception:
+        return None
 
 
 def delete_watchlist(name: str) -> bool:

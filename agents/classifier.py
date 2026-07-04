@@ -97,10 +97,14 @@ def _get_yf_info(ticker: str) -> dict:
             "industry": info.get("industry", "") or "",
             "longBusinessSummary": (info.get("longBusinessSummary", "") or "")[:500],
             "longName": info.get("longName", "") or ticker,
+            # quoteType distinguishes funds from operating companies:
+            # EQUITY / ETF / MUTUALFUND / INDEX / ...
+            "quoteType": (info.get("quoteType", "") or "").upper(),
         }
     except Exception as exc:
         logger.warning(f"yfinance info fetch failed for {ticker}: {exc}")
-        return {"sector": "", "industry": "", "longBusinessSummary": "", "longName": ticker}
+        return {"sector": "", "industry": "", "longBusinessSummary": "",
+                "longName": ticker, "quoteType": ""}
 
 
 def _classify_by_rules(sector: str, industry: str) -> Optional[StockCategory]:
@@ -174,29 +178,10 @@ def _classify_by_llm(sector: str, industry: str, description: str, name: str) ->
 
 
 def _get_anthropic_key() -> Optional[str]:
-    """Load ANTHROPIC_API_KEY from Keychain, env, or .env."""
-    import os
-    import subprocess
-
-    # Try Keychain
-    try:
-        r = subprocess.run(
-            ["security", "find-generic-password", "-s", "ANTHROPIC_API_KEY", "-w"],
-            capture_output=True, text=True, timeout=5,
-        )
-        if r.returncode == 0 and r.stdout.strip():
-            return r.stdout.strip()
-    except Exception:
-        pass
-
-    # Try env / .env
-    try:
-        from dotenv import load_dotenv
-        load_dotenv(_PROJECT_ROOT / ".env")
-    except Exception:
-        pass
-
-    return os.environ.get("ANTHROPIC_API_KEY", "").strip() or None
+    """Load ANTHROPIC_API_KEY (Keychain first, falls back to a working
+    .env key via the shared resolver)."""
+    from agents.anthropic_key import resolve_anthropic_key
+    return resolve_anthropic_key()
 
 
 # ---------------------------------------------------------------------------
@@ -233,6 +218,15 @@ def classify(ticker: str, use_llm: bool = True) -> StockCategory:
     info = _get_yf_info(ticker)
     sector = info["sector"]
     industry = info["industry"]
+
+    # Funds first: quoteType is deterministic and beats sector keywords.
+    # An ETF like XLE would otherwise keyword-match ENERGY and be sent to an
+    # operating-company specialist whose SEC/10-K tools return nothing.
+    if info.get("quoteType") in ("ETF", "MUTUALFUND"):
+        category = StockCategory.FUND
+        cache[ticker] = category.value
+        _save_cache(cache)
+        return category
 
     category = _classify_by_rules(sector, industry)
 
@@ -273,6 +267,7 @@ def explain_classification(ticker: str) -> dict:
         "company_name": info["longName"],
         "sector": info["sector"],
         "industry": info["industry"],
+        "quote_type": info.get("quoteType", ""),
     }
 
 

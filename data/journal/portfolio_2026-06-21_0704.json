@@ -1,0 +1,140 @@
+{
+  "timestamp": "2026-06-21T07:04:01.665721Z",
+  "date": "2026-06-21",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000,
+  "invested": 56690.29,
+  "cash": 43309.71,
+  "weights": {
+    "canslim": 0.175,
+    "value": 0.02,
+    "sepa": 0.298,
+    "technical": 0.113,
+    "swing": 0.077,
+    "growth": 0.055,
+    "ipo": 0.097,
+    "weinstein": 0.165
+  },
+  "note": "All 8 strategies live and blended per regime (value/growth from fundamentals). Weinstein is one peer, not the base.",
+  "holdings": [
+    {
+      "ticker": "AMAT",
+      "sector": "Semiconductors",
+      "conviction": 0.7767,
+      "shares": 7,
+      "dollars": 4319.77,
+      "weight_pct": 4.32,
+      "entry": 617.11,
+      "stop": 445.37,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AMD",
+      "sector": "Semiconductors",
+      "conviction": 0.7235,
+      "shares": 9,
+      "dollars": 4836.33,
+      "weight_pct": 4.84,
+      "entry": 537.37,
+      "stop": 411.05,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ANET",
+      "sector": "Information Technology",
+      "conviction": 0.6421,
+      "shares": 70,
+      "dollars": 11876.9,
+      "weight_pct": 11.88,
+      "entry": 169.67,
+      "stop": 158.53,
+      "led_by": "technical",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "conviction": 0.6366,
+      "shares": 56,
+      "dollars": 11798.64,
+      "weight_pct": 11.8,
+      "entry": 210.69,
+      "stop": 209.12,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.6355,
+      "shares": 40,
+      "dollars": 11920.4,
+      "weight_pct": 11.92,
+      "entry": 298.01,
+      "stop": 288.63,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "PWR",
+      "sector": "Industrials",
+      "conviction": 0.6332,
+      "shares": 17,
+      "dollars": 11938.25,
+      "weight_pct": 11.94,
+      "entry": 702.25,
+      "stop": 691.73,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "10 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.67, technical x1.25"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "6 holdings, 57% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 43%"
+    }
+  ],
+  "realized_avg_return": null,
+  "realized_hit_rate": null
+}

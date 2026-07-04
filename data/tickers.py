@@ -1,5 +1,5 @@
 """
-tickers.py — Expanded 50-ticker universe across 7 sector categories.
+tickers.py — 80-ticker universe across 15 sector categories.
 
 Each ticker is assigned a StockCategory that determines which
 specialist agent handles it. The classifier can override this
@@ -20,11 +20,24 @@ class StockCategory(str, Enum):
     REIT = "REIT"
     INFRASTRUCTURE_EPC = "INFRASTRUCTURE_EPC"
     BANK = "BANK"
-    TECH = "TECH"
+    TECH = "TECH"                        # mega-platform megacaps (AAPL, MSFT, GOOGL, META, AMZN)
     ENERGY = "ENERGY"
     CONSUMER = "CONSUMER"
     HEALTHCARE = "HEALTHCARE"
     GENERIC = "GENERIC"
+    # Phase 3b additions — sector splits and new specialists
+    AI_COMPUTE = "AI_COMPUTE"             # NVDA, AVGO, SMCI, ANET, VRT, ARM, CRDO, ALAB, PLTR, AI
+    SEMICONDUCTORS = "SEMICONDUCTORS"     # TSM, ASML, MRVL, MTSI, AMD (chip + fab supply chain)
+    SOFTWARE_SAAS = "SOFTWARE_SAAS"       # CRM, DDOG (recurring revenue SaaS)
+    BIOTECH = "BIOTECH"                   # clinical-stage and emerging biotech
+    PHARMA_MEDDEVICE = "PHARMA_MEDDEVICE" # large pharma + med devices
+    UTILITIES = "UTILITIES"               # regulated utilities (rate base, ROE)
+    DEFENSE = "DEFENSE"                   # aerospace and defense primes
+    INDUSTRIALS = "INDUSTRIALS"           # cyclicals, machinery, building
+    INSURANCE = "INSURANCE"               # P&C, life, reinsurance
+    # Funds — ETFs and mutual funds (SPY, QQQ, VTSAX). Not operating companies:
+    # no 10-K/XBRL, mutual funds have no volume. Routed to the fund specialist.
+    FUND = "FUND"
 
 
 # ---------------------------------------------------------------------------
@@ -46,7 +59,7 @@ class TickerMeta:
 
 
 # ---------------------------------------------------------------------------
-# Universe — 50 tickers across 7 categories
+# Universe — 80 tickers across 15 categories
 # ---------------------------------------------------------------------------
 UNIVERSE: dict[str, TickerMeta] = {
 
@@ -88,13 +101,44 @@ UNIVERSE: dict[str, TickerMeta] = {
     "MS":  TickerMeta("MS",  "Morgan Stanley",           StockCategory.BANK, "Investment Bank"),
 
     # ═══════════════════════════════════════════════════════════════
-    # Tech (5)
+    # Tech / AI / Semis / SaaS (22) — broad 2026 AI cohort coverage
+    #
+    # All currently tagged TECH; Phase 3 splits this into separate
+    # AI/Compute, Semiconductors, and Software/SaaS specialists with
+    # their own system prompts and tool schemas. Sub_sector field hints
+    # at the eventual routing so we can migrate in place.
     # ═══════════════════════════════════════════════════════════════
-    "MSFT":  TickerMeta("MSFT",  "Microsoft",            StockCategory.TECH, "Software/Cloud"),
-    "GOOGL": TickerMeta("GOOGL", "Alphabet",             StockCategory.TECH, "Ads/Cloud"),
-    "META":  TickerMeta("META",  "Meta Platforms",       StockCategory.TECH, "Social/Ads"),
-    "CRM":   TickerMeta("CRM",   "Salesforce",           StockCategory.TECH, "SaaS"),
-    "NVDA":  TickerMeta("NVDA",  "NVIDIA",               StockCategory.TECH, "Semiconductors"),
+    # Mega-cap platforms (route by dominant segment in Phase 3)
+    "MSFT":  TickerMeta("MSFT",  "Microsoft",            StockCategory.TECH, "AI/Cloud"),
+    "GOOGL": TickerMeta("GOOGL", "Alphabet",             StockCategory.TECH, "AI/Ads"),
+    "META":  TickerMeta("META",  "Meta Platforms",       StockCategory.TECH, "AI/Social"),
+    "AMZN":  TickerMeta("AMZN",  "Amazon",               StockCategory.TECH, "AI/Cloud/Retail"),
+    "AAPL":  TickerMeta("AAPL",  "Apple",                StockCategory.TECH, "Consumer Hardware"),
+
+    # AI / Compute (silicon plus AI-thesis hardware)  — Phase 3b: AI_COMPUTE
+    "NVDA":  TickerMeta("NVDA",  "NVIDIA",               StockCategory.AI_COMPUTE, "AI Accelerators"),
+    "AVGO":  TickerMeta("AVGO",  "Broadcom",             StockCategory.AI_COMPUTE, "AI Networking/Silicon"),
+    "ARM":   TickerMeta("ARM",   "Arm Holdings",         StockCategory.AI_COMPUTE, "Chip IP"),
+    "SMCI":  TickerMeta("SMCI",  "Super Micro Computer", StockCategory.AI_COMPUTE, "AI Servers"),
+    "ANET":  TickerMeta("ANET",  "Arista Networks",      StockCategory.AI_COMPUTE, "Datacenter Networking"),
+    "VRT":   TickerMeta("VRT",   "Vertiv Holdings",      StockCategory.AI_COMPUTE, "Datacenter Power/Cooling"),
+    "CRDO":  TickerMeta("CRDO",  "Credo Technology",     StockCategory.AI_COMPUTE, "Datacenter Connectivity"),
+    "ALAB":  TickerMeta("ALAB",  "Astera Labs",          StockCategory.AI_COMPUTE, "AI Connectivity Silicon"),
+    "PLTR":  TickerMeta("PLTR",  "Palantir",             StockCategory.AI_COMPUTE, "AI Software/Government"),
+    "AI":    TickerMeta("AI",    "C3.ai",                StockCategory.AI_COMPUTE, "AI Software"),
+
+    # Semiconductors (foundry and equipment) — Phase 3b: SEMICONDUCTORS
+    "TSM":   TickerMeta("TSM",   "Taiwan Semiconductor", StockCategory.SEMICONDUCTORS, "Foundry"),
+    "ASML":  TickerMeta("ASML",  "ASML Holding",         StockCategory.SEMICONDUCTORS, "Lithography Equipment"),
+    "MRVL":  TickerMeta("MRVL",  "Marvell Technology",   StockCategory.SEMICONDUCTORS, "Datacenter Silicon"),
+    "MTSI":  TickerMeta("MTSI",  "MACOM Technology",     StockCategory.SEMICONDUCTORS, "Specialty Connectivity"),
+    "AMD":   TickerMeta("AMD",   "Advanced Micro Devices", StockCategory.SEMICONDUCTORS, "CPU/GPU"),
+
+    # Software / SaaS (traditional recurring revenue) — Phase 3b: SOFTWARE_SAAS
+    "CRM":   TickerMeta("CRM",   "Salesforce",           StockCategory.SOFTWARE_SAAS, "CRM/Cloud"),
+    "DDOG":  TickerMeta("DDOG",  "Datadog",              StockCategory.SOFTWARE_SAAS, "Observability"),
+    "NOW":   TickerMeta("NOW",   "ServiceNow",           StockCategory.SOFTWARE_SAAS, "Enterprise Workflow"),
+    "SNOW":  TickerMeta("SNOW",  "Snowflake",            StockCategory.SOFTWARE_SAAS, "Data Cloud"),
 
     # ═══════════════════════════════════════════════════════════════
     # Energy (5)
@@ -102,8 +146,10 @@ UNIVERSE: dict[str, TickerMeta] = {
     "XOM":  TickerMeta("XOM", "ExxonMobil",              StockCategory.ENERGY, "Integrated Oil"),
     "CVX":  TickerMeta("CVX", "Chevron",                 StockCategory.ENERGY, "Integrated Oil"),
     "OXY":  TickerMeta("OXY", "Occidental Petroleum",    StockCategory.ENERGY, "E&P"),
-    "NEE":  TickerMeta("NEE", "NextEra Energy",          StockCategory.ENERGY, "Renewable Utility"),
-    "DUK":  TickerMeta("DUK", "Duke Energy",             StockCategory.ENERGY, "Electric Utility"),
+    # NEE and DUK reclassified to UTILITIES (Phase 3b) — Weinstein lens is
+    # rate base growth and allowed ROE, not oil cycle.
+    "NEE":  TickerMeta("NEE", "NextEra Energy",          StockCategory.UTILITIES, "Renewable Utility"),
+    "DUK":  TickerMeta("DUK", "Duke Energy",             StockCategory.UTILITIES, "Electric Utility"),
 
     # ═══════════════════════════════════════════════════════════════
     # Consumer (5)
@@ -115,22 +161,53 @@ UNIVERSE: dict[str, TickerMeta] = {
     "COST": TickerMeta("COST", "Costco",                 StockCategory.CONSUMER, "Retail"),
 
     # ═══════════════════════════════════════════════════════════════
-    # Healthcare (5)
+    # Healthcare — Managed Care (1)
     # ═══════════════════════════════════════════════════════════════
-    "UNH":  TickerMeta("UNH",  "UnitedHealth",           StockCategory.HEALTHCARE, "Insurance"),
-    "JNJ":  TickerMeta("JNJ",  "Johnson & Johnson",      StockCategory.HEALTHCARE, "Pharma"),
-    "LLY":  TickerMeta("LLY",  "Eli Lilly",              StockCategory.HEALTHCARE, "Pharma"),
-    "PFE":  TickerMeta("PFE",  "Pfizer",                 StockCategory.HEALTHCARE, "Pharma"),
-    "ABBV": TickerMeta("ABBV", "AbbVie",                 StockCategory.HEALTHCARE, "Pharma"),
+    "UNH":  TickerMeta("UNH",  "UnitedHealth",           StockCategory.HEALTHCARE, "Managed Care"),
 
     # ═══════════════════════════════════════════════════════════════
-    # Generic / Diversified (5)
+    # Pharma / MedDevice (5) — reclassified from HEALTHCARE
     # ═══════════════════════════════════════════════════════════════
-    "BRK-B": TickerMeta("BRK-B", "Berkshire Hathaway",   StockCategory.GENERIC, "Conglomerate"),
+    "JNJ":  TickerMeta("JNJ",  "Johnson & Johnson",      StockCategory.PHARMA_MEDDEVICE, "Diversified Pharma"),
+    "LLY":  TickerMeta("LLY",  "Eli Lilly",              StockCategory.PHARMA_MEDDEVICE, "Pharma"),
+    "PFE":  TickerMeta("PFE",  "Pfizer",                 StockCategory.PHARMA_MEDDEVICE, "Pharma"),
+    "ABBV": TickerMeta("ABBV", "AbbVie",                 StockCategory.PHARMA_MEDDEVICE, "Pharma"),
+    "TMO":  TickerMeta("TMO",  "Thermo Fisher Scientific", StockCategory.PHARMA_MEDDEVICE, "Life Science Tools"),
+
+    # ═══════════════════════════════════════════════════════════════
+    # Biotech (3)
+    # ═══════════════════════════════════════════════════════════════
+    "MRNA": TickerMeta("MRNA", "Moderna",                StockCategory.BIOTECH, "mRNA Therapeutics"),
+    "REGN": TickerMeta("REGN", "Regeneron",              StockCategory.BIOTECH, "Biologics"),
+    "VRTX": TickerMeta("VRTX", "Vertex Pharmaceuticals", StockCategory.BIOTECH, "Gene Therapy"),
+
+    # ═══════════════════════════════════════════════════════════════
+    # Defense / Aerospace (4) — BA reclassified from GENERIC
+    # ═══════════════════════════════════════════════════════════════
+    "BA":   TickerMeta("BA",   "Boeing",                 StockCategory.DEFENSE, "Aerospace"),
+    "LMT":  TickerMeta("LMT",  "Lockheed Martin",       StockCategory.DEFENSE, "Defense Prime"),
+    "RTX":  TickerMeta("RTX",  "RTX Corporation",        StockCategory.DEFENSE, "Defense/Aerospace"),
+    "NOC":  TickerMeta("NOC",  "Northrop Grumman",       StockCategory.DEFENSE, "Defense Prime"),
+    "GD":   TickerMeta("GD",   "General Dynamics",       StockCategory.DEFENSE, "Defense/Marine"),
+
+    # ═══════════════════════════════════════════════════════════════
+    # Industrials (3) — CAT, GE reclassified from GENERIC
+    # ═══════════════════════════════════════════════════════════════
+    "CAT":  TickerMeta("CAT",  "Caterpillar",            StockCategory.INDUSTRIALS, "Machinery"),
+    "GE":   TickerMeta("GE",   "GE Aerospace",           StockCategory.INDUSTRIALS, "Aerospace/Power"),
+    "DE":   TickerMeta("DE",   "Deere & Company",        StockCategory.INDUSTRIALS, "Machinery"),
+
+    # ═══════════════════════════════════════════════════════════════
+    # Insurance (3) — BRK-B reclassified from GENERIC
+    # ═══════════════════════════════════════════════════════════════
+    "BRK-B": TickerMeta("BRK-B", "Berkshire Hathaway",   StockCategory.INSURANCE, "Conglomerate/P&C"),
+    "ALL":   TickerMeta("ALL",   "Allstate",             StockCategory.INSURANCE, "P&C Insurance"),
+    "PGR":   TickerMeta("PGR",   "Progressive",          StockCategory.INSURANCE, "Auto Insurance"),
+
+    # ═══════════════════════════════════════════════════════════════
+    # Generic / Diversified (1)
+    # ═══════════════════════════════════════════════════════════════
     "DIS":   TickerMeta("DIS",   "Walt Disney",          StockCategory.GENERIC, "Media"),
-    "BA":    TickerMeta("BA",    "Boeing",               StockCategory.GENERIC, "Aerospace"),
-    "CAT":   TickerMeta("CAT",   "Caterpillar",          StockCategory.GENERIC, "Industrial"),
-    "GE":    TickerMeta("GE",    "General Electric",     StockCategory.GENERIC, "Industrial"),
 }
 
 

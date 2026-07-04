@@ -23,6 +23,8 @@ import streamlit as st
 
 from agents.classifier import classify, explain_classification
 from agents.orchestrator import run_agent
+from ui.components.disclaimer import render_disclaimer
+from ui.components.demo_qr import render_demo_qr_sidebar, render_demo_qr_panel
 from data.tickers import UNIVERSE, StockCategory, tickers_by_category, category_counts
 
 
@@ -64,13 +66,13 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-mode_col1, mode_col2 = st.columns(2)
+mode_col1, mode_col2, mode_col3 = st.columns(3)
 with mode_col1:
-    research_active = st.session_state.app_mode == "research"
-    label = "🔬 Research  ✓" if research_active else "🔬 Research"
-    if st.button(label, key="mode_research", use_container_width=True,
-                 type="primary" if research_active else "secondary"):
-        st.session_state.app_mode = "research"
+    portfolio_active = st.session_state.app_mode == "portfolio"
+    label = "💼 Portfolio  ✓" if portfolio_active else "💼 Portfolio"
+    if st.button(label, key="mode_portfolio", use_container_width=True,
+                 type="primary" if portfolio_active else "secondary"):
+        st.session_state.app_mode = "portfolio"
         st.rerun()
 with mode_col2:
     trader_active = st.session_state.app_mode == "trader"
@@ -79,8 +81,20 @@ with mode_col2:
                  type="primary" if trader_active else "secondary"):
         st.session_state.app_mode = "trader"
         st.rerun()
+with mode_col3:
+    research_active = st.session_state.app_mode == "research"
+    label = "🔬 Research  ✓" if research_active else "🔬 Research"
+    if st.button(label, key="mode_research", use_container_width=True,
+                 type="primary" if research_active else "secondary"):
+        st.session_state.app_mode = "research"
+        st.rerun()
 
 st.markdown("")
+
+# One-time launch prompt: offer to enable the morning-run schedule if it is
+# not already loaded. Managed thereafter in Portfolio → Morning run & automation.
+from ui.components.cron_control import maybe_prompt_cron_on_launch
+maybe_prompt_cron_on_launch()
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -93,7 +107,98 @@ if st.session_state.app_mode == "trader":
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# RESEARCH MODE (existing flow — unchanged)
+# PORTFOLIO MODE — one regime-aware, multi-strategy constructed portfolio
+# ═══════════════════════════════════════════════════════════════════════════
+if st.session_state.app_mode == "portfolio":
+    from ui.components.portfolio_mode import render_portfolio_mode
+    render_portfolio_mode()
+    st.stop()
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# COMPARE MODE removed — multi-mandate comparison now lives inside Portfolio
+# (check several mandates and build them together). Any old 'compare' state
+# falls through to Portfolio.
+# ═══════════════════════════════════════════════════════════════════════════
+if st.session_state.app_mode == "compare":
+    st.session_state.app_mode = "portfolio"
+    from ui.components.portfolio_mode import render_portfolio_mode
+    render_portfolio_mode()
+    st.stop()
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# RESEARCH DOSSIER (Phase 2 — five-section Weinstein decision view)
+#
+# When the user clicks "Open Research dossier" from the Trader tab, the
+# button sets st.session_state.research_open_pending = True. We pick
+# that up here and flip the active view to the dossier. The user can
+# still toggle back to the classic memo flow with the radio above.
+# ═══════════════════════════════════════════════════════════════════════════
+if st.session_state.get("research_open_pending"):
+    st.session_state.research_view = "dossier"
+    st.session_state.research_open_pending = False
+    # Sync the dossier ticker into the legacy selected_ticker so the
+    # text box pre-populates if the user toggles back to classic.
+    if st.session_state.get("research_ticker"):
+        st.session_state.selected_ticker = st.session_state.research_ticker
+
+if "research_view" not in st.session_state:
+    st.session_state.research_view = "dossier"   # Phase 2 default
+
+# Research is now a SINGLE unified view. The dossier hosts the sector
+# specialist memo inline (Section 4a) with audio + numbered sources, so
+# the separate "classic memo" tab/toggle was removed — no extra tab.
+st.session_state.research_view = "dossier"
+
+if st.session_state.research_view == "dossier":
+    from ui.components.research_dossier import render_research_dossier
+
+    # Header + small ticker input above the dossier
+    st.markdown("## 🔬 Research — Weinstein Decision Dossier")
+    st.caption(
+        "Five-section dossier: stage header, Chapter 4 resistance, "
+        "Chapter 3 calendar, two voices (sector specialist + Chartist "
+        "Strategist), decision panel with Setup Confidence Score."
+    )
+
+    dc1, dc2 = st.columns([5, 1])
+    with dc1:
+        dossier_ticker_input = st.text_input(
+            "Ticker for dossier",
+            value=(st.session_state.get("research_ticker")
+                   or st.session_state.get("selected_ticker") or ""),
+            placeholder="Enter a ticker (e.g. ORA, NVDA, AAPL)",
+            label_visibility="collapsed",
+            key="dossier_ticker_input",
+        )
+    with dc2:
+        if st.button("📖 Open dossier", type="primary",
+                     use_container_width=True, key="dossier_open_btn"):
+            if dossier_ticker_input.strip():
+                st.session_state.research_ticker = dossier_ticker_input.strip().upper()
+                st.session_state.selected_ticker = st.session_state.research_ticker
+                st.rerun()
+
+    active_ticker = st.session_state.get("research_ticker") or dossier_ticker_input.strip()
+    if active_ticker:
+        render_research_dossier(active_ticker)
+    else:
+        st.info(
+            "Enter a ticker above and click Open dossier, or click an "
+            "Open Research dossier button from the Trader tab to land "
+            "here pre-populated."
+        )
+
+    # Bottom disclaimer
+    from ui.components.disclaimer import render_disclaimer
+    st.divider()
+    render_disclaimer(compact=True)
+    st.stop()
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# RESEARCH MODE (legacy memo flow — kept for users who toggle back)
 # ═══════════════════════════════════════════════════════════════════════════
 
 # ---------------------------------------------------------------------------
@@ -103,6 +208,14 @@ with st.sidebar:
     st.header("🔬 Research Mode")
     st.caption(f"Universe: {len(UNIVERSE)} tickers across {len(category_counts())} specialists")
 
+
+# Sidebar: Live demo QR toggle — placed BEFORE the ticker browser so the
+# host doesn't have to scroll past 50 ticker buttons to find it. Auto-
+# enables itself if a Cloudflare tunnel URL was written by Launch.command.
+render_demo_qr_sidebar(port=8501)
+
+
+with st.sidebar:
     st.divider()
     st.subheader("Browse Universe")
 
@@ -142,6 +255,9 @@ with st.sidebar:
 # ---------------------------------------------------------------------------
 # Main area — Search bar
 # ---------------------------------------------------------------------------
+# Demo QR banner — appears at very top of page when toggle is on
+render_demo_qr_panel(port=8501)
+
 st.title("🔬 Research Mode — deep memo via Claude + SEC")
 st.caption(
     "Enter any ticker — the classifier routes to the right specialist agent, "
@@ -318,12 +434,15 @@ if cache_key in st.session_state.analyses:
     st.markdown("### 📄 Research Memo and Analysis")
     st.markdown(analysis["memo"])
 
-    # 🔊 Listen to the memo (ElevenLabs)
+    # 🔊 Listen to the memo (ElevenLabs) — pulls only the actionable
+    # sections (Exec Summary + Technical Setup + Analyst Take) for a
+    # tight ~60-90s spoken brief instead of the full ~2000-word memo.
     from ui.components.chat_panel import render_audio_button, render_chat_panel
+    from data.audio_client import extract_audio_summary
     render_audio_button(
-        text=analysis["memo"],
+        text=extract_audio_summary(analysis["memo"]),
         key=f"memo_{analysis['ticker']}",
-        button_label="🔊 Listen to this memo",
+        button_label="🔊 Listen to summary (Setup + Take)",
     )
 
     st.divider()
@@ -388,3 +507,13 @@ if cache_key in st.session_state.analyses:
         placeholder=f"e.g. 'is {analysis['ticker']} a buy right now?'",
         enable_audio=True,
     )
+
+    # ⚠️ Full disclaimer — collapsible, immediately under the memo
+    st.divider()
+    render_disclaimer(compact=False)
+
+
+# ---------------------------------------------------------------------------
+# Global compact disclaimer footer — always visible, even before any analysis
+# ---------------------------------------------------------------------------
+render_disclaimer(compact=True)

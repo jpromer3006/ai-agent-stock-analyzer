@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.oros.morningrun</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/jpromero/Ai-Agent Oros/scripts/oros_cron.sh</string>
+    </array>
+
+    <!-- 9:35 AM, Monday(1) through Friday(5). Uses the Mac's local timezone. -->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Weekday</key><integer>1</integer>
+            <key>Hour</key><integer>9</integer>
+            <key>Minute</key><integer>35</integer>
+        </dict>
+        <dict>
+            <key>Weekday</key><integer>2</integer>
+            <key>Hour</key><integer>9</integer>
+            <key>Minute</key><integer>35</integer>
+        </dict>
+        <dict>
+            <key>Weekday</key><integer>3</integer>
+            <key>Hour</key><integer>9</integer>
+            <key>Minute</key><integer>35</integer>
+        </dict>
+        <dict>
+            <key>Weekday</key><integer>4</integer>
+            <key>Hour</key><integer>9</integer>
+            <key>Minute</key><integer>35</integer>
+        </dict>
+        <dict>
+            <key>Weekday</key><integer>5</integer>
+            <key>Hour</key><integer>9</integer>
+            <key>Minute</key><integer>35</integer>
+        </dict>
+    </array>
+
+    <!-- Do not fire the moment the job is loaded; wait for the schedule. -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/jpromero/Ai-Agent Oros/data/journal/launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/jpromero/Ai-Agent Oros/data/journal/launchd.err.log</string>
+</dict>
+</plist>

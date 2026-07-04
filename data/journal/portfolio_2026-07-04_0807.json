@@ -1,0 +1,182 @@
+{
+  "timestamp": "2026-07-04T08:07:53.531039Z",
+  "date": "2026-07-04",
+  "regime": "bull",
+  "mandate": "value_hold",
+  "account": 10000.0,
+  "invested": 8194.16,
+  "cash": 1805.84,
+  "weights": {
+    "growth": 0.225,
+    "ipo": 0.057,
+    "value": 0.358,
+    "weinstein": 0.124,
+    "swing": 0.019,
+    "technical": 0.046,
+    "sepa": 0.076,
+    "canslim": 0.096
+  },
+  "note": "UI build \u00b7 value_hold",
+  "holdings": [
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.5917,
+      "shares": 19,
+      "dollars": 1115.87,
+      "weight_pct": 11.16,
+      "entry": 58.73,
+      "stop": 53.48,
+      "led_by": "sepa",
+      "sentiment": 0.168,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BRK-B",
+      "sector": "Financials",
+      "conviction": 0.5125,
+      "shares": 1,
+      "dollars": 507.78,
+      "weight_pct": 5.08,
+      "entry": 507.78,
+      "stop": 482.74,
+      "led_by": "technical",
+      "sentiment": 0.174,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "WFC",
+      "sector": "Financials",
+      "conviction": 0.3769,
+      "shares": 13,
+      "dollars": 1111.63,
+      "weight_pct": 11.12,
+      "entry": 85.51,
+      "stop": 79.86,
+      "led_by": "technical",
+      "sentiment": 0.32,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "KO",
+      "sector": "Consumer Staples",
+      "conviction": 0.3107,
+      "shares": 13,
+      "dollars": 1093.82,
+      "weight_pct": 10.94,
+      "entry": 84.14,
+      "stop": 79.51,
+      "led_by": "sepa",
+      "sentiment": 0.296,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "JNJ",
+      "sector": "Health Care",
+      "conviction": 0.3083,
+      "shares": 3,
+      "dollars": 789.12,
+      "weight_pct": 7.89,
+      "entry": 263.04,
+      "stop": 232.14,
+      "led_by": "sepa",
+      "sentiment": 0.242,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "TGT",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.2806,
+      "shares": 8,
+      "dollars": 1041.68,
+      "weight_pct": 10.42,
+      "entry": 130.21,
+      "stop": 127.87,
+      "led_by": "sepa",
+      "sentiment": 0.195,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LOW",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.1469,
+      "shares": 4,
+      "dollars": 910.0,
+      "weight_pct": 9.1,
+      "entry": 227.5,
+      "stop": 222.44,
+      "led_by": "technical",
+      "sentiment": 0.084,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "PG",
+      "sector": "Materials",
+      "conviction": 0.1256,
+      "shares": 6,
+      "dollars": 908.46,
+      "weight_pct": 9.08,
+      "entry": 151.41,
+      "stop": 146.64,
+      "led_by": "technical",
+      "sentiment": 0.214,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "HD",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.0798,
+      "shares": 2,
+      "dollars": 715.8,
+      "weight_pct": 7.16,
+      "entry": 357.9,
+      "stop": 321.88,
+      "led_by": "technical",
+      "sentiment": 0.008,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "25 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: value 38%, growth 24%, weinstein 10%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.42, weinstein x1.38"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "9 holdings, 82% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 18%"
+    }
+  ],
+  "realized_avg_return": null,
+  "realized_hit_rate": null
+}

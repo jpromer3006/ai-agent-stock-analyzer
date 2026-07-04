@@ -1,0 +1,182 @@
+{
+  "timestamp": "2026-06-24T04:53:07.161818Z",
+  "date": "2026-06-24",
+  "regime": "bull",
+  "mandate": "value_hold",
+  "account": 10000.0,
+  "invested": 5473.37,
+  "cash": 4526.63,
+  "weights": {
+    "swing": 0.02,
+    "canslim": 0.097,
+    "sepa": 0.06,
+    "value": 0.378,
+    "growth": 0.237,
+    "technical": 0.058,
+    "ipo": 0.06,
+    "weinstein": 0.09
+  },
+  "note": "UI build \u00b7 value_hold",
+  "holdings": [
+    {
+      "ticker": "KLAC",
+      "sector": "Health Care",
+      "conviction": 0.3202,
+      "shares": 1,
+      "dollars": 244.49,
+      "weight_pct": 2.44,
+      "entry": 244.49,
+      "stop": 196.96,
+      "led_by": "sepa",
+      "sentiment": 0.279,
+      "earnings_risk": false,
+      "outcome_return": 0.0339
+    },
+    {
+      "ticker": "ALGM",
+      "sector": "Semiconductors",
+      "conviction": 0.3175,
+      "shares": 12,
+      "dollars": 666.24,
+      "weight_pct": 6.66,
+      "entry": 55.52,
+      "stop": 46.98,
+      "led_by": "sepa",
+      "sentiment": 0.222,
+      "earnings_risk": false,
+      "outcome_return": 0.0446
+    },
+    {
+      "ticker": "ENTG",
+      "sector": "Information Technology",
+      "conviction": 0.3111,
+      "shares": 4,
+      "dollars": 672.88,
+      "weight_pct": 6.73,
+      "entry": 168.22,
+      "stop": 144.26,
+      "led_by": "sepa",
+      "sentiment": 0.106,
+      "earnings_risk": false,
+      "outcome_return": -0.0585
+    },
+    {
+      "ticker": "ALNT",
+      "sector": "Health Care",
+      "conviction": 0.3052,
+      "shares": 5,
+      "dollars": 480.15,
+      "weight_pct": 4.8,
+      "entry": 96.03,
+      "stop": 76.67,
+      "led_by": "sepa",
+      "sentiment": 0.312,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "TSM",
+      "sector": "Semiconductors",
+      "conviction": 0.3019,
+      "shares": 1,
+      "dollars": 436.39,
+      "weight_pct": 4.36,
+      "entry": 436.39,
+      "stop": 408.18,
+      "led_by": "sepa",
+      "sentiment": -0.02,
+      "earnings_risk": false,
+      "outcome_return": -0.0192
+    },
+    {
+      "ticker": "FTXL",
+      "sector": "Other",
+      "conviction": 0.2998,
+      "shares": 2,
+      "dollars": 546.64,
+      "weight_pct": 5.47,
+      "entry": 273.32,
+      "stop": 236.58,
+      "led_by": "sepa",
+      "sentiment": 0.187,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BELFA",
+      "sector": "Information Technology",
+      "conviction": 0.2985,
+      "shares": 3,
+      "dollars": 758.01,
+      "weight_pct": 7.58,
+      "entry": 252.67,
+      "stop": 245.81,
+      "led_by": "sepa",
+      "sentiment": 0.158,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BATRK",
+      "sector": "Communication Services",
+      "conviction": 0.2963,
+      "shares": 21,
+      "dollars": 1083.81,
+      "weight_pct": 10.84,
+      "entry": 51.61,
+      "stop": 49.56,
+      "led_by": "sepa",
+      "sentiment": 0.349,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BJRI",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.2962,
+      "shares": 11,
+      "dollars": 584.76,
+      "weight_pct": 5.85,
+      "entry": 53.16,
+      "stop": 43.24,
+      "led_by": "sepa",
+      "sentiment": 0.02,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "799 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: value 38%, growth 24%, weinstein 10%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "9 holdings, 55% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 45%"
+    }
+  ],
+  "realized_avg_return": 0.0002,
+  "realized_hit_rate": 0.5
+}

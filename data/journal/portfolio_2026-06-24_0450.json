@@ -1,0 +1,209 @@
+{
+  "timestamp": "2026-06-24T04:50:30.420698Z",
+  "date": "2026-06-24",
+  "regime": "bull",
+  "mandate": "fast_momentum",
+  "account": 10000.0,
+  "invested": 7118.88,
+  "cash": 2881.12,
+  "weights": {
+    "swing": 0.111,
+    "canslim": 0.209,
+    "sepa": 0.237,
+    "growth": 0.039,
+    "technical": 0.104,
+    "ipo": 0.218,
+    "weinstein": 0.082
+  },
+  "note": "UI build \u00b7 fast_momentum",
+  "holdings": [
+    {
+      "ticker": "ENTG",
+      "sector": "Information Technology",
+      "conviction": 0.7512,
+      "shares": 4,
+      "dollars": 672.88,
+      "weight_pct": 6.73,
+      "entry": 168.22,
+      "stop": 144.26,
+      "led_by": "sepa",
+      "sentiment": 0.106,
+      "earnings_risk": false,
+      "outcome_return": -0.0585
+    },
+    {
+      "ticker": "AMKR",
+      "sector": "Semiconductors",
+      "conviction": 0.7509,
+      "shares": 7,
+      "dollars": 607.04,
+      "weight_pct": 6.07,
+      "entry": 86.72,
+      "stop": 72.94,
+      "led_by": "sepa",
+      "sentiment": 0.161,
+      "earnings_risk": false,
+      "outcome_return": -0.0488
+    },
+    {
+      "ticker": "TSM",
+      "sector": "Semiconductors",
+      "conviction": 0.7447,
+      "shares": 1,
+      "dollars": 436.39,
+      "weight_pct": 4.36,
+      "entry": 436.39,
+      "stop": 408.18,
+      "led_by": "sepa",
+      "sentiment": -0.02,
+      "earnings_risk": false,
+      "outcome_return": -0.0192
+    },
+    {
+      "ticker": "ALNT",
+      "sector": "Health Care",
+      "conviction": 0.7411,
+      "shares": 4,
+      "dollars": 384.12,
+      "weight_pct": 3.84,
+      "entry": 96.03,
+      "stop": 76.67,
+      "led_by": "sepa",
+      "sentiment": 0.312,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "KLAC",
+      "sector": "Health Care",
+      "conviction": 0.7387,
+      "shares": 1,
+      "dollars": 244.49,
+      "weight_pct": 2.44,
+      "entry": 244.49,
+      "stop": 196.96,
+      "led_by": "sepa",
+      "sentiment": 0.279,
+      "earnings_risk": false,
+      "outcome_return": 0.0339
+    },
+    {
+      "ticker": "FORM",
+      "sector": "Semiconductors",
+      "conviction": 0.7378,
+      "shares": 6,
+      "dollars": 856.74,
+      "weight_pct": 8.57,
+      "entry": 142.79,
+      "stop": 134.49,
+      "led_by": "sepa",
+      "sentiment": 0.166,
+      "earnings_risk": false,
+      "outcome_return": -0.0755
+    },
+    {
+      "ticker": "AEIS",
+      "sector": "Information Technology",
+      "conviction": 0.7352,
+      "shares": 2,
+      "dollars": 729.92,
+      "weight_pct": 7.3,
+      "entry": 364.96,
+      "stop": 348.32,
+      "led_by": "sepa",
+      "sentiment": 0.286,
+      "earnings_risk": false,
+      "outcome_return": -0.032
+    },
+    {
+      "ticker": "BK",
+      "sector": "Financials",
+      "conviction": 0.7324,
+      "shares": 6,
+      "dollars": 861.78,
+      "weight_pct": 8.62,
+      "entry": 143.63,
+      "stop": 136.74,
+      "led_by": "sepa",
+      "sentiment": 0.207,
+      "earnings_risk": false,
+      "outcome_return": 0.0
+    },
+    {
+      "ticker": "FCFS",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7312,
+      "shares": 4,
+      "dollars": 894.04,
+      "weight_pct": 8.94,
+      "entry": 223.51,
+      "stop": 220.01,
+      "led_by": "sepa",
+      "sentiment": 0.121,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "COCO",
+      "sector": "Consumer Staples",
+      "conviction": 0.7134,
+      "shares": 7,
+      "dollars": 579.18,
+      "weight_pct": 5.79,
+      "entry": 82.74,
+      "stop": 69.23,
+      "led_by": "sepa",
+      "sentiment": 0.255,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "IBKR",
+      "sector": "Financials",
+      "conviction": 0.7125,
+      "shares": 9,
+      "dollars": 852.3,
+      "weight_pct": 8.52,
+      "entry": 94.7,
+      "stop": 84.39,
+      "led_by": "sepa",
+      "sentiment": 0.049,
+      "earnings_risk": false,
+      "outcome_return": -0.032
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "799 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 23%, ipo 22%, canslim 19%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "11 holdings, 71% invested, 7 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 29%"
+    }
+  ],
+  "realized_avg_return": -0.029,
+  "realized_hit_rate": 0.125
+}

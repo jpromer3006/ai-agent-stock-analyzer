@@ -1,0 +1,196 @@
+{
+  "timestamp": "2026-06-24T22:46:41.298058Z",
+  "date": "2026-06-24",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 20000.0,
+  "invested": 14683.81,
+  "cash": 5316.19,
+  "weights": {
+    "value": 0.023,
+    "ipo": 0.114,
+    "technical": 0.131,
+    "canslim": 0.195,
+    "weinstein": 0.154,
+    "sepa": 0.225,
+    "growth": 0.065,
+    "swing": 0.093
+  },
+  "note": "UI build \u00b7 swing_momentum",
+  "holdings": [
+    {
+      "ticker": "LRCX",
+      "sector": "Industrials",
+      "conviction": 0.7865,
+      "shares": 3,
+      "dollars": 1124.4,
+      "weight_pct": 5.62,
+      "entry": 374.8,
+      "stop": 305.29,
+      "led_by": "sepa",
+      "sentiment": 0.211,
+      "earnings_risk": false,
+      "outcome_return": 0.0114
+    },
+    {
+      "ticker": "AMD",
+      "sector": "Semiconductors",
+      "conviction": 0.7658,
+      "shares": 2,
+      "dollars": 1039.48,
+      "weight_pct": 5.2,
+      "entry": 519.74,
+      "stop": 428.3,
+      "led_by": "sepa",
+      "sentiment": 0.143,
+      "earnings_risk": false,
+      "outcome_return": 0.0035
+    },
+    {
+      "ticker": "AMAT",
+      "sector": "Semiconductors",
+      "conviction": 0.7385,
+      "shares": 1,
+      "dollars": 588.97,
+      "weight_pct": 2.94,
+      "entry": 588.97,
+      "stop": 457.84,
+      "led_by": "sepa",
+      "sentiment": 0.123,
+      "earnings_risk": false,
+      "outcome_return": 0.0643
+    },
+    {
+      "ticker": "PANW",
+      "sector": "Information Technology",
+      "conviction": 0.6673,
+      "shares": 8,
+      "dollars": 2282.08,
+      "weight_pct": 11.41,
+      "entry": 285.26,
+      "stop": 263.22,
+      "led_by": "swing",
+      "sentiment": 0.257,
+      "earnings_risk": false,
+      "outcome_return": 0.0664
+    },
+    {
+      "ticker": "CRDO",
+      "sector": "Semiconductors",
+      "conviction": 0.6577,
+      "shares": 4,
+      "dollars": 1075.96,
+      "weight_pct": 5.38,
+      "entry": 268.99,
+      "stop": 206.96,
+      "led_by": "sepa",
+      "sentiment": 0.089,
+      "earnings_risk": false,
+      "outcome_return": -0.1152
+    },
+    {
+      "ticker": "FTNT",
+      "sector": "Information Technology",
+      "conviction": 0.6444,
+      "shares": 9,
+      "dollars": 1307.52,
+      "weight_pct": 6.54,
+      "entry": 145.28,
+      "stop": 118.1,
+      "led_by": "sepa",
+      "sentiment": -0.092,
+      "earnings_risk": false,
+      "outcome_return": 0.0418
+    },
+    {
+      "ticker": "KLAC",
+      "sector": "Health Care",
+      "conviction": 0.608,
+      "shares": 5,
+      "dollars": 1202.4,
+      "weight_pct": 6.01,
+      "entry": 240.48,
+      "stop": 198.23,
+      "led_by": "sepa",
+      "sentiment": 0.316,
+      "earnings_risk": false,
+      "outcome_return": 0.0339
+    },
+    {
+      "ticker": "ASML",
+      "sector": "Industrials",
+      "conviction": 0.577,
+      "shares": 1,
+      "dollars": 1762.77,
+      "weight_pct": 8.81,
+      "entry": 1762.77,
+      "stop": 1600.29,
+      "led_by": "sepa",
+      "sentiment": -0.008,
+      "earnings_risk": false,
+      "outcome_return": 0.0181
+    },
+    {
+      "ticker": "ANET",
+      "sector": "Information Technology",
+      "conviction": 0.5761,
+      "shares": 12,
+      "dollars": 1940.88,
+      "weight_pct": 9.7,
+      "entry": 161.74,
+      "stop": 141.36,
+      "led_by": "weinstein",
+      "sentiment": 0.18,
+      "earnings_risk": false,
+      "outcome_return": -0.0256
+    },
+    {
+      "ticker": "EXPE",
+      "sector": "Industrials",
+      "conviction": 0.4078,
+      "shares": 9,
+      "dollars": 2359.35,
+      "weight_pct": 11.8,
+      "entry": 262.15,
+      "stop": 236.66,
+      "led_by": "technical",
+      "sentiment": 0.007,
+      "earnings_risk": false,
+      "outcome_return": 0.0025
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "20 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "10 holdings, 73% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 27%"
+    }
+  ],
+  "realized_avg_return": 0.0101,
+  "realized_hit_rate": 0.8
+}

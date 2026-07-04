@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-06-27T09:08:31.130159Z",
+  "date": "2026-06-27",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 7268.04,
+  "cash": 92731.96,
+  "weights": {
+    "weinstein": 0.154,
+    "ipo": 0.114,
+    "technical": 0.131,
+    "value": 0.023,
+    "canslim": 0.195,
+    "sepa": 0.225,
+    "swing": 0.093,
+    "growth": 0.065
+  },
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "MU",
+      "sector": "Semiconductors",
+      "conviction": 0.7415,
+      "shares": 1,
+      "dollars": 1132.33,
+      "weight_pct": 1.13,
+      "entry": 1132.33,
+      "stop": 802.14,
+      "led_by": "sepa",
+      "sentiment": 0.034,
+      "earnings_risk": true,
+      "outcome_return": 0.0114
+    },
+    {
+      "ticker": "MRVL",
+      "sector": "Semiconductors",
+      "conviction": 0.4781,
+      "shares": 23,
+      "dollars": 6135.71,
+      "weight_pct": 6.14,
+      "entry": 266.77,
+      "stop": 213.21,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0412
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "4 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "2 holdings, 7% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 93%"
+    }
+  ],
+  "realized_avg_return": 0.0263,
+  "realized_hit_rate": 1.0
+}

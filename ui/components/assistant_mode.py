@@ -641,21 +641,14 @@ RESPONSE STYLE:
 
 
 def _get_anthropic_key() -> Optional[str]:
-    try:
-        r = subprocess.run(
-            ["security", "find-generic-password", "-s", "ANTHROPIC_API_KEY", "-w"],
-            capture_output=True, text=True, timeout=5,
-        )
-        if r.returncode == 0 and r.stdout.strip():
-            return r.stdout.strip()
-    except Exception:
-        pass
-    try:
-        from dotenv import load_dotenv
-        load_dotenv(_PROJECT_ROOT / ".env")
-    except Exception:
-        pass
-    return os.environ.get("ANTHROPIC_API_KEY", "").strip() or None
+    # Shared resolver: Keychain first, falls back to a working .env key.
+    from agents.anthropic_key import resolve_anthropic_key
+    return resolve_anthropic_key()
+
+
+def _default_model() -> str:
+    from agents.anthropic_key import default_model
+    return default_model()
 
 
 def _handle_unknown_via_llm(message: str, report: ScanReport) -> str:
@@ -693,7 +686,7 @@ def _handle_unknown_via_llm(message: str, report: ScanReport) -> str:
     client = anthropic.Anthropic(api_key=api_key)
     try:
         resp = client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model=_default_model(),
             max_tokens=300,
             system=_LLM_SYSTEM_PROMPT,
             messages=[{

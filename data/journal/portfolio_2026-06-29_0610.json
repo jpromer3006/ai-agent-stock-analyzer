@@ -1,0 +1,252 @@
+{
+  "timestamp": "2026-06-29T06:10:41.650772Z",
+  "date": "2026-06-29",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 10000.0,
+  "invested": 6619.63,
+  "cash": 3380.37,
+  "weights": {
+    "swing": 0.093,
+    "weinstein": 0.154,
+    "canslim": 0.195,
+    "growth": 0.065,
+    "technical": 0.131,
+    "ipo": 0.114,
+    "sepa": 0.225,
+    "value": 0.023
+  },
+  "note": "UI build \u00b7 swing_momentum",
+  "holdings": [
+    {
+      "ticker": "CGNX",
+      "sector": "Health Care",
+      "conviction": 0.8098,
+      "shares": 11,
+      "dollars": 732.16,
+      "weight_pct": 7.32,
+      "entry": 66.56,
+      "stop": 61.88,
+      "led_by": "sepa",
+      "sentiment": 0.167,
+      "earnings_risk": false,
+      "outcome_return": -0.0082
+    },
+    {
+      "ticker": "MTZ",
+      "sector": "Industrials",
+      "conviction": 0.8086,
+      "shares": 1,
+      "dollars": 396.25,
+      "weight_pct": 3.96,
+      "entry": 396.25,
+      "stop": 386.96,
+      "led_by": "sepa",
+      "sentiment": 0.157,
+      "earnings_risk": false,
+      "outcome_return": -0.1297
+    },
+    {
+      "ticker": "FCEL",
+      "sector": "Industrials",
+      "conviction": 0.808,
+      "shares": 12,
+      "dollars": 288.0,
+      "weight_pct": 2.88,
+      "entry": 24.0,
+      "stop": 17.47,
+      "led_by": "sepa",
+      "sentiment": 0.396,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ALGM",
+      "sector": "Semiconductors",
+      "conviction": 0.7895,
+      "shares": 7,
+      "dollars": 405.23,
+      "weight_pct": 4.05,
+      "entry": 57.89,
+      "stop": 48.18,
+      "led_by": "sepa",
+      "sentiment": 0.222,
+      "earnings_risk": false,
+      "outcome_return": -0.164
+    },
+    {
+      "ticker": "BTSG",
+      "sector": "Health Care",
+      "conviction": 0.7882,
+      "shares": 6,
+      "dollars": 413.88,
+      "weight_pct": 4.14,
+      "entry": 68.98,
+      "stop": 57.12,
+      "led_by": "sepa",
+      "sentiment": 0.213,
+      "earnings_risk": false,
+      "outcome_return": 0.0007
+    },
+    {
+      "ticker": "MO",
+      "sector": "Consumer Staples",
+      "conviction": 0.7618,
+      "shares": 10,
+      "dollars": 737.9,
+      "weight_pct": 7.38,
+      "entry": 73.79,
+      "stop": 69.53,
+      "led_by": "sepa",
+      "sentiment": 0.108,
+      "earnings_risk": false,
+      "outcome_return": -0.0181
+    },
+    {
+      "ticker": "DLR",
+      "sector": "Real Estate",
+      "conviction": 0.7528,
+      "shares": 3,
+      "dollars": 579.0,
+      "weight_pct": 5.79,
+      "entry": 193.0,
+      "stop": 191.58,
+      "led_by": "sepa",
+      "sentiment": 0.252,
+      "earnings_risk": false,
+      "outcome_return": -0.0907
+    },
+    {
+      "ticker": "MNST",
+      "sector": "Consumer Staples",
+      "conviction": 0.7437,
+      "shares": 6,
+      "dollars": 578.28,
+      "weight_pct": 5.78,
+      "entry": 96.38,
+      "stop": 85.45,
+      "led_by": "sepa",
+      "sentiment": 0.246,
+      "earnings_risk": false,
+      "outcome_return": -0.0004
+    },
+    {
+      "ticker": "PSA",
+      "sector": "Real Estate",
+      "conviction": 0.7436,
+      "shares": 1,
+      "dollars": 324.39,
+      "weight_pct": 3.24,
+      "entry": 324.39,
+      "stop": 306.3,
+      "led_by": "sepa",
+      "sentiment": 0.331,
+      "earnings_risk": false,
+      "outcome_return": 0.016
+    },
+    {
+      "ticker": "FTNT",
+      "sector": "Information Technology",
+      "conviction": 0.7417,
+      "shares": 2,
+      "dollars": 302.7,
+      "weight_pct": 3.03,
+      "entry": 151.35,
+      "stop": 120.96,
+      "led_by": "sepa",
+      "sentiment": 0.114,
+      "earnings_risk": false,
+      "outcome_return": 0.0053
+    },
+    {
+      "ticker": "SBUX",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7265,
+      "shares": 6,
+      "dollars": 627.6,
+      "weight_pct": 6.28,
+      "entry": 104.6,
+      "stop": 101.38,
+      "led_by": "sepa",
+      "sentiment": 0.171,
+      "earnings_risk": false,
+      "outcome_return": 0.002
+    },
+    {
+      "ticker": "CVS",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7224,
+      "shares": 5,
+      "dollars": 521.7,
+      "weight_pct": 5.22,
+      "entry": 104.34,
+      "stop": 91.18,
+      "led_by": "sepa",
+      "sentiment": 0.15,
+      "earnings_risk": false,
+      "outcome_return": 0.011
+    },
+    {
+      "ticker": "BELFB",
+      "sector": "Information Technology",
+      "conviction": 0.7152,
+      "shares": 1,
+      "dollars": 310.64,
+      "weight_pct": 3.11,
+      "entry": 310.64,
+      "stop": 277.35,
+      "led_by": "sepa",
+      "sentiment": 0.064,
+      "earnings_risk": false,
+      "outcome_return": -0.1543
+    },
+    {
+      "ticker": "CAKE",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.6847,
+      "shares": 5,
+      "dollars": 401.9,
+      "weight_pct": 4.02,
+      "entry": 80.38,
+      "stop": 65.42,
+      "led_by": "sepa",
+      "sentiment": 0.128,
+      "earnings_risk": false,
+      "outcome_return": -0.0023
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "1099 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "14 holdings, 66% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 34%"
+    }
+  ],
+  "realized_avg_return": -0.041,
+  "realized_hit_rate": 0.385
+}

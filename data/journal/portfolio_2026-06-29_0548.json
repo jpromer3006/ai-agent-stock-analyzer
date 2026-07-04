@@ -1,0 +1,195 @@
+{
+  "timestamp": "2026-06-29T05:48:12.047873Z",
+  "date": "2026-06-29",
+  "regime": "bull",
+  "mandate": "fast_momentum",
+  "account": 10000.0,
+  "invested": 8880.55,
+  "cash": 1119.45,
+  "weights": {
+    "swing": 0.111,
+    "weinstein": 0.082,
+    "canslim": 0.209,
+    "growth": 0.039,
+    "technical": 0.104,
+    "ipo": 0.218,
+    "sepa": 0.237
+  },
+  "note": "UI build \u00b7 fast_momentum",
+  "holdings": [
+    {
+      "ticker": "FCEL",
+      "sector": "Industrials",
+      "conviction": 0.7849,
+      "shares": 19,
+      "dollars": 456.0,
+      "weight_pct": 4.56,
+      "entry": 24.0,
+      "stop": 17.47,
+      "led_by": "sepa",
+      "sentiment": 0.396,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AGX",
+      "sector": "Industrials",
+      "conviction": 0.7709,
+      "shares": 1,
+      "dollars": 765.46,
+      "weight_pct": 7.65,
+      "entry": 765.46,
+      "stop": 675.01,
+      "led_by": "sepa",
+      "sentiment": 0.284,
+      "earnings_risk": false,
+      "outcome_return": -0.1079
+    },
+    {
+      "ticker": "MKSI",
+      "sector": "Health Care",
+      "conviction": 0.7655,
+      "shares": 1,
+      "dollars": 388.61,
+      "weight_pct": 3.89,
+      "entry": 388.61,
+      "stop": 319.65,
+      "led_by": "sepa",
+      "sentiment": 0.105,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MTZ",
+      "sector": "Industrials",
+      "conviction": 0.761,
+      "shares": 3,
+      "dollars": 1188.75,
+      "weight_pct": 11.89,
+      "entry": 396.25,
+      "stop": 386.96,
+      "led_by": "sepa",
+      "sentiment": 0.157,
+      "earnings_risk": false,
+      "outcome_return": -0.1
+    },
+    {
+      "ticker": "CGNX",
+      "sector": "Health Care",
+      "conviction": 0.7579,
+      "shares": 18,
+      "dollars": 1198.08,
+      "weight_pct": 11.98,
+      "entry": 66.56,
+      "stop": 61.88,
+      "led_by": "sepa",
+      "sentiment": 0.167,
+      "earnings_risk": false,
+      "outcome_return": -0.0082
+    },
+    {
+      "ticker": "BTSG",
+      "sector": "Health Care",
+      "conviction": 0.7415,
+      "shares": 10,
+      "dollars": 689.8,
+      "weight_pct": 6.9,
+      "entry": 68.98,
+      "stop": 57.12,
+      "led_by": "sepa",
+      "sentiment": 0.213,
+      "earnings_risk": false,
+      "outcome_return": 0.0007
+    },
+    {
+      "ticker": "ALGM",
+      "sector": "Semiconductors",
+      "conviction": 0.7334,
+      "shares": 12,
+      "dollars": 694.68,
+      "weight_pct": 6.95,
+      "entry": 57.89,
+      "stop": 48.18,
+      "led_by": "sepa",
+      "sentiment": 0.222,
+      "earnings_risk": false,
+      "outcome_return": -0.164
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.7254,
+      "shares": 7,
+      "dollars": 1160.53,
+      "weight_pct": 11.61,
+      "entry": 165.79,
+      "stop": 151.46,
+      "led_by": "sepa",
+      "sentiment": 0.306,
+      "earnings_risk": false,
+      "outcome_return": 0.0146
+    },
+    {
+      "ticker": "MO",
+      "sector": "Consumer Staples",
+      "conviction": 0.7169,
+      "shares": 16,
+      "dollars": 1180.64,
+      "weight_pct": 11.81,
+      "entry": 73.79,
+      "stop": 69.53,
+      "led_by": "sepa",
+      "sentiment": 0.108,
+      "earnings_risk": false,
+      "outcome_return": -0.0181
+    },
+    {
+      "ticker": "DLR",
+      "sector": "Real Estate",
+      "conviction": 0.7115,
+      "shares": 6,
+      "dollars": 1158.0,
+      "weight_pct": 11.58,
+      "entry": 193.0,
+      "stop": 191.58,
+      "led_by": "sepa",
+      "sentiment": 0.252,
+      "earnings_risk": false,
+      "outcome_return": -0.0907
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "999 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 23%, ipo 22%, canslim 19%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "10 holdings, 89% invested, 7 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 11%"
+    }
+  ],
+  "realized_avg_return": -0.0592,
+  "realized_hit_rate": 0.25
+}

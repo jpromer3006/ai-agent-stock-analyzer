@@ -54,6 +54,16 @@ class MarketRegime:
     sma_200: float = 0.0
     momentum_tailwind: bool = False     # 50 > 200 and both rising
 
+    # Near-term tape read. The 30-week MA and the 50/200 cross are slow,
+    # lagging signals — they stay bullish for weeks into a top. These two
+    # short-window returns let the Market Weather line show that the index
+    # is still technically Stage 2 WHILE flagging a sharp recent pullback,
+    # instead of asserting a "confirmed uptrend" the user can see is rolling
+    # over. near_term_pullback fires on a >2% drop over the last 5 sessions.
+    spy_ret_5d: float = 0.0
+    spy_ret_20d: float = 0.0
+    near_term_pullback: bool = False
+
     # Breadth (derived from scan if available)
     breadth_pct: Optional[float] = None  # 0-1, share of tickers in Stage 1-2
     breadth_total: int = 0
@@ -116,6 +126,13 @@ def compute_market_regime(scan_report: Optional[object] = None) -> MarketRegime:
             regime.sma_50 = sma50
             regime.sma_200 = sma200
             regime.momentum_tailwind = (sma50 > sma200) and bool(sma50_rising)
+
+            # Near-term tape read (short windows — these LEAD the slow MAs)
+            close = hist["Close"]
+            if len(close) >= 21:
+                regime.spy_ret_5d = float(close.iloc[-1] / close.iloc[-6] - 1.0)
+                regime.spy_ret_20d = float(close.iloc[-1] / close.iloc[-21] - 1.0)
+                regime.near_term_pullback = regime.spy_ret_5d <= -0.02
     except Exception as exc:
         logger.warning(f"SPY momentum calc failed: {exc}")
 
