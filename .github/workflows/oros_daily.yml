@@ -80,6 +80,37 @@ jobs:
         run: |
           PYTHONPATH=. python scripts/oros_run.py --mandate auto --cap 800
 
+      - name: Alert on failure (email)
+        if: failure()
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          OROS_REPORT_TO: ${{ secrets.OROS_REPORT_TO }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python3 - <<'EOF'
+          import os, smtplib
+          from email.message import EmailMessage
+          user = os.environ.get("GMAIL_ADDRESS", "")
+          pw = os.environ.get("GMAIL_APP_PASSWORD", "")
+          to = os.environ.get("OROS_REPORT_TO", "") or user
+          if not (user and pw and to):
+              raise SystemExit("alert email unconfigured")
+          msg = EmailMessage()
+          msg["Subject"] = "OROS ALERT: daily run FAILED"
+          msg["From"], msg["To"] = user, to
+          msg.set_content(
+              "The OROS cloud run FAILED before completing. No scan "
+              "confirmation or daily report was produced today.\n\n"
+              "Full log: " + os.environ.get("RUN_URL", "(unknown)") + "\n\n"
+              "Without this alert, the failure would have been silent - "
+              "a missing email that looks like a quiet day.")
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30) as s:
+              s.login(user, pw)
+              s.send_message(msg)
+          print("failure alert sent to", to)
+          EOF
+
       - name: Upload report PDF as artifact
         if: always()
         uses: actions/upload-artifact@v4
