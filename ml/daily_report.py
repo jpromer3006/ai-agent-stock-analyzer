@@ -139,16 +139,18 @@ def build_report_data(opps: dict | None = None, changes: dict | None = None) -> 
             opps = scan_opportunities(max_check=200)
         except Exception:
             opps = {"breakouts": [], "watch": []}
-    picks = []
+    picks, etf_picks = [], []
     try:
-        from ml.top_picks import weinstein_top_picks
-        picks = weinstein_top_picks(account=float((rec or {}).get("account") or 100_000.0))
+        from ml.top_picks import weinstein_top_picks, weinstein_etf_picks
+        acct = float((rec or {}).get("account") or 100_000.0)
+        picks = weinstein_top_picks(account=acct)
+        etf_picks = weinstein_etf_picks(account=acct)
     except Exception as e:  # noqa: BLE001
         logger.warning("top picks failed: %s", e)
     return {"date": f"{datetime.now():%A, %B %d, %Y}", "regime": regime, "vix": vix,
             "indexes": _index_snapshot(), "proposal": rec, "pnl": pnl,
             "scoreboard": scoreboard, "opps": opps, "changes": changes or {},
-            "top_picks": picks}
+            "top_picks": picks, "etf_picks": etf_picks}
 
 
 # ---------------------------------------------------------------------------
@@ -260,21 +262,23 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
                           "Positive means the book makes money.", {"size": 8, "dy": 0.022}))
         _text_page(pdf, lines, "OROS Daily Report")
 
-        # ---- Page 2: Weinstein Top Picks ----------------------------------
+        # ---- Page 2: Weinstein Top Picks (stocks + ETF track) -------------
         tp = data.get("top_picks") or []
-        if tp:
+        etp = data.get("etf_picks") or []
+        if tp or etp:
             fig, ax = plt.subplots(figsize=(8.5, 11))
             ax.axis("off")
-            ax.set_title("Weinstein Top Picks — fully gated Stage 2 setups",
+            ax.set_title("Weinstein Top Picks — stocks + ETF track",
                          fontsize=14, fontweight="bold", loc="left")
-            cells = [[p["ticker"], p["setup"], f"{p['last_close']:.2f}",
+            cells = [["Stock" if not p.get("is_etf") else "ETF",
+                      p["ticker"], p["setup"], f"{p['last_close']:.2f}",
                       f"{p['buy_stop']:.2f}", f"{p['stop_loss']:.2f}",
                       f"{p['target']:.2f}", f"{p['risk_reward']:.1f}",
                       f"{p['bull_prob']:.0%}", f"{p['pct_above_ma']:+.1f}%",
                       f"{p['shares_1pct']}", _esc(f"${p['risk_dollars']:,}")]
-                     for p in tp]
+                     for p in (tp + etp)]
             tbl = ax.table(cellText=cells, colLabels=[
-                "Ticker", "Setup", "Last", "Buy-stop", "Stop", "Target",
+                "Type", "Ticker", "Setup", "Last", "Buy-stop", "Stop", "Target",
                 "R/R", "Bull", "vs 30w MA", _esc("Sh @1%"), _esc("Risk $")],
                 loc="upper center", cellLoc="right")
             tbl.auto_set_font_size(False)
@@ -289,7 +293,12 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
                      "Trade plan discipline: enter ONLY if price takes out the buy-stop.\n"
                      "Exit on a weekly close below the stop (the 30-week MA invalidator).\n"
                      "Sizes shown risk 1% of the account per name — an illustration of\n"
-                     "disciplined sizing, not an instruction.",
+                     "disciplined sizing, not an instruction.\n\n"
+                     "ETF track: Weinstein's sector-first doctrine applied to plain\n"
+                     "sector/index/commodity funds — often the safer expression of the\n"
+                     "same signal (diversified, no single-company earnings gap).\n"
+                     "Leveraged and inverse products are excluded: daily-reset leverage\n"
+                     "makes their charts measure arithmetic, not accumulation.",
                      fontsize=9, family="monospace", va="top")
             fig.text(0.07, 0.05, "OROS proposes and journals only — it never trades. "
                      "Educational, not financial advice.", fontsize=7, color="#888888")
@@ -301,7 +310,7 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
         # Weinstein reads it: weekly price vs the 30-week MA with the anchored
         # breakout bar and the full trade plan drawn in, breakout volume, and
         # the Mansfield relative-strength line vs SPY.
-        for p in tp[:5]:
+        for p in (tp[:5] + etp[:3]):
             try:
                 _pick_chart_page(pdf, plt, p)
             except Exception as e:  # noqa: BLE001
@@ -507,6 +516,8 @@ def _summary_body(data: dict) -> str:
     try:
         from ml.top_picks import format_picks_text
         lines += ["", format_picks_text(data.get("top_picks") or [])]
+        lines += ["", format_picks_text(data.get("etf_picks") or [],
+                                        title="WEINSTEIN ETF PICKS (sector-first track)")]
     except Exception:
         pass
     lines += ["", "Full report attached (PDF).",

@@ -33,6 +33,22 @@ DEFAULT_MAX_SCAN = 400
 DEFAULT_RISK_PCT = 0.01          # 1% of account risked per pick (illustrative)
 _MIN_HISTORY = 160               # ~32 weeks of dailies for a real 30-week MA
 
+# Investable ETF universe (Weinstein's sector-first doctrine: group funds are
+# valid Stage 2 vehicles, often the safer expression of a theme — diversified,
+# no single-company earnings gap). Curated to PLAIN products only: leveraged
+# and inverse ETFs are excluded because daily-reset leverage makes their
+# charts measure arithmetic, not institutional accumulation.
+ETF_UNIVERSE = [
+    # Sector SPDRs
+    "XLK", "XLF", "XLE", "XLV", "XLI", "XLP", "XLY", "XLU", "XLB", "XLRE", "XLC",
+    # Industry / theme
+    "SMH", "SOXX", "IGV", "XBI", "IBB", "ITA", "XHB", "KRE", "XOP", "OIH",
+    "TAN", "URA", "GDX", "XME", "JETS", "IYT", "IHI", "FDN", "HACK", "BOTZ",
+    # Broad + international + commodity
+    "SPY", "QQQ", "IWM", "DIA", "MDY", "EFA", "EEM", "FXI", "EWJ", "INDA",
+    "VNQ", "GLD", "SLV", "DBC", "TLT",
+]
+
 
 def weinstein_top_picks(symbols: list[str] | None = None,
                         max_scan: int = DEFAULT_MAX_SCAN,
@@ -88,6 +104,16 @@ def weinstein_top_picks(symbols: list[str] | None = None,
             continue
         stop = float(ts.stop_loss or r.ma_30w)
         entry = float(ts.entry_price or r.last_close)
+        # Same item-2 risk gates as the portfolio engine: reject extended
+        # chases and setups whose nearest support is too far below entry,
+        # widen noise-tight stops. One discipline everywhere.
+        try:
+            from ml.portfolio_engine import entry_risk_gate
+            stop, _gate = entry_risk_gate(df, entry, stop)
+            if stop is None:
+                continue
+        except Exception:
+            pass
         risk_ps = entry - stop
         if risk_ps <= 0 or entry <= 0:
             continue
@@ -123,13 +149,38 @@ def weinstein_top_picks(symbols: list[str] | None = None,
     return top
 
 
-def format_picks_text(picks: list[dict], account: float | None = None) -> str:
+def weinstein_etf_picks(top_n: int = 3, account: float | None = None,
+                        risk_pct: float = DEFAULT_RISK_PCT) -> list[dict]:
+    """The ETF track: the same full Weinstein gauntlet over the curated
+    plain-ETF universe. A Stage 2 sector fund is shown as an investment
+    candidate in its own right, then compared to SPY like everything else."""
+    from data import price_cache
+    missing = []
+    for s in ETF_UNIVERSE:
+        df = price_cache.get_history(s)
+        if df is None or len(df) < _MIN_HISTORY:
+            missing.append(s)
+    if missing:
+        try:
+            price_cache.refresh_prices(missing)
+        except Exception:
+            pass
+    picks = weinstein_top_picks(symbols=list(ETF_UNIVERSE),
+                                max_scan=len(ETF_UNIVERSE), top_n=top_n,
+                                account=account, risk_pct=risk_pct)
+    for p in picks:
+        p["is_etf"] = True
+    return picks
+
+
+def format_picks_text(picks: list[dict], account: float | None = None,
+                      title: str = "WEINSTEIN TOP PICKS") -> str:
     """Plain-text block for the daily email body."""
     if not picks:
-        return ("WEINSTEIN TOP PICKS: none today. No name passed every gate "
+        return (f"{title}: none today. No name passed every gate "
                 "(Stage 2 + volume + relative strength + not extended). "
                 "In Weinstein's book, no setup means no trade.")
-    lines = ["WEINSTEIN TOP PICKS (fully gated Stage 2 setups — educational, not advice):"]
+    lines = [f"{title} (fully gated Stage 2 setups — educational, not advice):"]
     for i, p in enumerate(picks, 1):
         lines.append(
             f"{i}. {p['ticker']:<6} {p['setup']:<8} last {p['last_close']:>8.2f} | "
