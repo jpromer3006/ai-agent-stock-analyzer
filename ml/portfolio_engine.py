@@ -176,6 +176,67 @@ def _momentum_score(r) -> float:
 
 
 # ---------------------------------------------------------------------------
+# Entry-quality RISK gates (Item 2 — the ATEX/NVDA lessons from the honest
+# ruler). These are risk gates, not style gates: they apply to every book.
+#
+#   NVDA lesson: a stop 0.7% below entry is inside daily noise — a guaranteed
+#   whipsaw. Stops are widened to a volatility floor (the position is then
+#   risk-sized on the wider stop, so dollars at risk stay constant).
+#   ATEX/BE lesson: when the nearest valid structure is >15% below entry,
+#   the name has run too far from support — that is a chase, and the honest
+#   ruler showed those entries getting stopped for -15% to -23%. Rejected,
+#   not clamped: an artificial stop with no structure under it is how the
+#   old book bled.
+# ---------------------------------------------------------------------------
+STOP_MIN_PCT = 0.03          # noise floor: stop at least 3% away
+STOP_MAX_PCT = 0.15          # structure ceiling: stop further than 15% = chase
+EXTENSION_MAX = 0.25         # >25% above the ~30-week MA = extended, reject
+_ATR_MULT_FLOOR = 1.5        # ... and at least 1.5x ATR(20) away
+
+
+def _atr20_pct(df) -> float:
+    """ATR(20) as a fraction of the last close (true range when OHLC exists,
+    close-to-close otherwise). Cheap, cached-data only."""
+    try:
+        c = df["Close"].astype(float)
+        if {"High", "Low"}.issubset(df.columns):
+            h, low = df["High"].astype(float), df["Low"].astype(float)
+            pc = c.shift(1)
+            tr = (h - low).combine(abs(h - pc), max).combine(abs(low - pc), max)
+            atr = float(tr.tail(20).mean())
+        else:
+            atr = float(c.diff().abs().tail(20).mean())
+        last = float(c.iloc[-1])
+        return atr / last if last > 0 else 0.02
+    except Exception:
+        return 0.02
+
+
+def entry_risk_gate(df, entry: float, stop: float):
+    """Apply the risk gates. Returns (adjusted_stop, note), or (None, reason)
+    when the name should be rejected outright."""
+    # 1) Extension: too far above the ~30-week MA is a chase, whatever the book.
+    if df is not None and len(df) >= 150:
+        ma150 = float(df["Close"].tail(150).mean())
+        if ma150 > 0:
+            ext = entry / ma150 - 1.0
+            if ext > EXTENSION_MAX:
+                return None, f"extended {ext:+.0%} above 30w MA (max {EXTENSION_MAX:.0%})"
+    # 2) Noise floor: widen stops tighter than volatility can respect.
+    note = ""
+    floor_frac = max(STOP_MIN_PCT, _ATR_MULT_FLOOR * _atr20_pct(df))
+    dist_frac = (entry - stop) / entry if entry > 0 else 0.0
+    if dist_frac < floor_frac:
+        stop = round(entry * (1.0 - floor_frac), 2)
+        note = f"stop widened to {floor_frac:.1%} (noise floor)"
+        dist_frac = floor_frac
+    # 3) Structure ceiling: support too far below means the entry is late.
+    if dist_frac > STOP_MAX_PCT:
+        return None, f"nearest support {dist_frac:.0%} below entry (max {STOP_MAX_PCT:.0%})"
+    return stop, note
+
+
+# ---------------------------------------------------------------------------
 # Build
 # ---------------------------------------------------------------------------
 def _pinned_holding(sym: str, weights: dict, cfg: PortfolioConfig,
@@ -215,6 +276,14 @@ def _pinned_holding(sym: str, weights: dict, cfg: PortfolioConfig,
         pass
     if stop <= 0 or stop >= entry:
         stop = round(entry * 0.92, 2)            # 8% protective fallback
+    # Pins bypass selection gates by design, but stop SANITY still applies:
+    # clamp the distance into the [noise floor, structure ceiling] band.
+    floor_frac = max(STOP_MIN_PCT, _ATR_MULT_FLOOR * _atr20_pct(df))
+    dist = (entry - stop) / entry
+    if dist < floor_frac:
+        stop = round(entry * (1.0 - floor_frac), 2)
+    elif dist > STOP_MAX_PCT:
+        stop = round(entry * (1.0 - STOP_MAX_PCT), 2)
 
     wsum = sum(weights.values()) or 1.0
     composite = round(sum(weights.get(k, 0.0) * scores.get(k, 0.0) for k in scores) / wsum, 4)
@@ -291,6 +360,7 @@ def build_portfolio(symbols: list[str], config: Optional[PortfolioConfig] = None
 
     BENCHMARKS = {"SPY", "QQQ", "DIA", "IWM", "VOO", "VTI"}
     candidates: list[Holding] = []
+    gate_rejects, stops_widened = 0, 0
     for sym in symbols:
         if sym in BENCHMARKS:
             continue
@@ -316,6 +386,14 @@ def build_portfolio(symbols: list[str], config: Optional[PortfolioConfig] = None
         stop = float(best.stop) if best.stop else 0.0
         if entry <= 0 or stop <= 0 or stop >= entry:
             continue
+        # Item 2 risk gates: reject extended chases and structureless stops,
+        # widen noise-tight stops (the NVDA 0.7% / ATEX +37% lessons).
+        stop, _gate_note = entry_risk_gate(df, entry, stop)
+        if stop is None:
+            gate_rejects += 1
+            continue
+        if _gate_note:
+            stops_widened += 1
         candidates.append(Holding(
             ticker=sym, sector=_sector(sym), composite=round(composite, 4),
             strategy_scores={k: round(scores[k], 3) for k in PRICE_KEYS},
@@ -392,11 +470,18 @@ def build_portfolio(symbols: list[str], config: Optional[PortfolioConfig] = None
         h.risk_dollars = round(shares * per_share_risk, 2)
         return shares
 
+    # Earnings blackout (project rule: "avoid buying when earnings or major
+    # news risk is imminent"). Hard skip for short-horizon mandates, where one
+    # print dominates the whole holding period; longer books keep the existing
+    # half-size treatment instead.
+    _EARNINGS_BLACKOUT_MANDATES = {"fast_momentum", "swing_momentum"}
     selected: list[Holding] = []
     sector_count: dict[str, int] = {}
     for h in enriched:
         if len(selected) >= cfg.max_positions:
             break
+        if h.earnings_risk and cfg.mandate in _EARNINGS_BLACKOUT_MANDATES:
+            continue
         if h.sector not in ("UNKNOWN", "Other") and sector_count.get(h.sector, 0) >= cfg.max_per_sector:
             continue
         if _size(h) < 1:                                 # stop too far for budget — skip, don't waste a slot
@@ -464,7 +549,10 @@ def build_portfolio(symbols: list[str], config: Optional[PortfolioConfig] = None
         active_strategies=active, pending_strategies=[],
         holdings=selected, invested=round(invested, 2),
         cash=round(cfg.account_size - invested, 2),
-        note=(memory_note + "All 8 strategies live and blended per regime "
+        note=(memory_note
+              + (f"Risk gates: {gate_rejects} chase(s) rejected, "
+                 f"{stops_widened} noise stop(s) widened. " if (gate_rejects or stops_widened) else "")
+              + "All 8 strategies live and blended per regime "
               "(value/growth from fundamentals). Weinstein is one peer, not the base."),
     )
 
