@@ -29,7 +29,10 @@
       "led_by": "weinstein",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0325
+      "outcome_return": -0.0123,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "MKSI",
@@ -43,7 +46,10 @@
       "led_by": "sepa",
       "sentiment": 0.199,
       "earnings_risk": false,
-      "outcome_return": 0.0183
+      "outcome_return": -0.0014,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "AGX",
@@ -57,7 +63,10 @@
       "led_by": "sepa",
       "sentiment": 0.14,
       "earnings_risk": false,
-      "outcome_return": 0.0454
+      "outcome_return": 0.0377,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "ENTG",
@@ -71,7 +80,10 @@
       "led_by": "sepa",
       "sentiment": 0.106,
       "earnings_risk": false,
-      "outcome_return": -0.0585
+      "outcome_return": -0.0404,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "LRCX",
@@ -85,7 +97,10 @@
       "led_by": "sepa",
       "sentiment": 0.064,
       "earnings_risk": false,
-      "outcome_return": 0.0114
+      "outcome_return": 0.0537,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "KLAC",
@@ -99,7 +114,10 @@
       "led_by": "sepa",
       "sentiment": 0.279,
       "earnings_risk": false,
-      "outcome_return": 0.0339
+      "outcome_return": 0.0888,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "CAT",
@@ -113,7 +131,10 @@
       "led_by": "sepa",
       "sentiment": -0.039,
       "earnings_risk": false,
-      "outcome_return": 0.003
+      "outcome_return": 0.0073,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "AEIS",
@@ -127,7 +148,10 @@
       "led_by": "sepa",
       "sentiment": 0.286,
       "earnings_risk": false,
-      "outcome_return": -0.032
+      "outcome_return": -0.0462,
+      "outcome_exit": "stop",
+      "outcome_days": 2,
+      "outcome_final": true
     },
     {
       "ticker": "TSM",
@@ -141,7 +165,10 @@
       "led_by": "sepa",
       "sentiment": -0.02,
       "earnings_risk": false,
-      "outcome_return": -0.0192
+      "outcome_return": 0.018,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "ALGM",
@@ -155,7 +182,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": 0.0446
+      "outcome_return": 0.1383,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "BK",
@@ -169,7 +199,10 @@
       "led_by": "sepa",
       "sentiment": 0.207,
       "earnings_risk": false,
-      "outcome_return": 0.0
+      "outcome_return": -0.0005,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "IBKR",
@@ -183,7 +216,10 @@
       "led_by": "sepa",
       "sentiment": 0.049,
       "earnings_risk": false,
-      "outcome_return": -0.032
+      "outcome_return": -0.0515,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "ALNT",
@@ -197,7 +233,10 @@
       "led_by": "sepa",
       "sentiment": 0.312,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0271,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "FTXL",
@@ -211,7 +250,10 @@
       "led_by": "sepa",
       "sentiment": 0.187,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0287,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "GS",
@@ -225,7 +267,10 @@
       "led_by": "sepa",
       "sentiment": 0.006,
       "earnings_risk": false,
-      "outcome_return": -0.0532
+      "outcome_return": -0.0684,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -260,6 +305,9 @@
       "summary": "within limits; cash 7%"
     }
   ],
-  "realized_avg_return": -0.0054,
-  "realized_hit_rate": 0.462
+  "realized_avg_return": 0.0244,
+  "realized_hit_rate": 0.7,
+  "horizon_days": 5,
+  "realized_final_count": 10,
+  "realized_stop_exits": 1
 }

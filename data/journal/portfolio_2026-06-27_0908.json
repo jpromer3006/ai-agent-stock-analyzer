@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.034,
       "earnings_risk": true,
-      "outcome_return": 0.0114
+      "outcome_return": -0.1384,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "MRVL",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0412
+      "outcome_return": -0.0805,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -79,6 +85,9 @@
       "summary": "within limits; cash 93%"
     }
   ],
-  "realized_avg_return": 0.0263,
-  "realized_hit_rate": 1.0
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "horizon_days": 20,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
 }

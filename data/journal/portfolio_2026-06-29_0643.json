@@ -57,7 +57,10 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": -0.1293
+      "outcome_return": -0.11,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "ADAM",
@@ -71,7 +74,10 @@
       "led_by": "sepa",
       "sentiment": 0.54,
       "earnings_risk": false,
-      "outcome_return": -0.0318
+      "outcome_return": -0.0389,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "MTZ",
@@ -85,7 +91,10 @@
       "led_by": "sepa",
       "sentiment": 0.157,
       "earnings_risk": false,
-      "outcome_return": -0.1297
+      "outcome_return": -0.0576,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     },
     {
       "ticker": "CGNX",
@@ -99,7 +108,10 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0082
+      "outcome_return": 0.0186,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "CTRN",
@@ -113,7 +125,10 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": -0.0113
+      "outcome_return": -0.065,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "BTSG",
@@ -127,7 +142,10 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0007
+      "outcome_return": 0.0007,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "ALGM",
@@ -141,7 +159,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.164
+      "outcome_return": -0.0415,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "EWTX",
@@ -183,7 +204,10 @@
       "led_by": "sepa",
       "sentiment": 0.363,
       "earnings_risk": false,
-      "outcome_return": -0.0238
+      "outcome_return": -0.0001,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "KYIV",
@@ -211,7 +235,10 @@
       "led_by": "sepa",
       "sentiment": 0.361,
       "earnings_risk": false,
-      "outcome_return": -0.0057
+      "outcome_return": -0.014,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "BELFA",
@@ -225,7 +252,10 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.1556
+      "outcome_return": -0.1342,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     },
     {
       "ticker": "MRX",
@@ -253,7 +283,10 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.0181
+      "outcome_return": -0.0146,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "KYMR",
@@ -302,6 +335,9 @@
       "summary": "within limits; cash 52%"
     }
   ],
-  "realized_avg_return": -0.0615,
-  "realized_hit_rate": 0.091
+  "realized_avg_return": -0.0959,
+  "realized_hit_rate": 0.0,
+  "horizon_days": 5,
+  "realized_final_count": 2,
+  "realized_stop_exits": 2
 }

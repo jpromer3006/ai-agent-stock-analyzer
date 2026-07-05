@@ -46,20 +46,28 @@ def best_mandate(regime: str) -> tuple[str, str]:
     except Exception as e:  # noqa: BLE001
         logger.warning("scoreboard unavailable: %s", e)
         board = {}
+    def _metric(v: dict):
+        """Prefer expectancy (stop-aware, per-position) over the older
+        proposal-average when the new ruler has graded enough positions."""
+        if v.get("expectancy_pct") is not None and v.get("positions_scored", 0) >= 10:
+            return v["expectancy_pct"], "expectancy"
+        return v.get("avg_realized_pct"), "avg realized"
+
     scored = {m: v for m, v in board.items()
               if v.get("scored", 0) >= _MIN_SCORED
-              and v.get("avg_realized_pct") is not None
+              and _metric(v)[0] is not None
               and m != "?"}
     # Only follow the scoreboard when the leader has actually MADE money.
     # Picking the least-bad of several losing mandates would institutionalize
     # a losing strategy; a flat-or-negative board means hold the regime default.
-    winners = {m: v for m, v in scored.items() if v["avg_realized_pct"] > 0}
+    winners = {m: v for m, v in scored.items() if _metric(v)[0] > 0}
     if winners:
-        m = max(winners, key=lambda k: winners[k]["avg_realized_pct"])
+        m = max(winners, key=lambda k: _metric(winners[k])[0])
         v = winners[m]
-        return m, (f"scoreboard leader: {v['avg_realized_pct']:+.2f}% avg realized "
-                   f"over {v['scored']} scored proposals "
-                   f"(hit rate {v.get('avg_hit_rate_pct') or 0:.0f}%)")
+        val, kind = _metric(v)
+        return m, (f"scoreboard leader: {val:+.2f}% {kind} "
+                   f"over {v.get('positions_scored') or v['scored']} scored "
+                   f"(hit rate {v.get('hit_rate_pct') or v.get('avg_hit_rate_pct') or 0:.0f}%)")
     if scored:
         return _FALLBACK_MANDATE, ("no mandate is positive on the forward "
                                    "scoreboard yet; regime default until one earns it")

@@ -58,7 +58,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.164
+      "outcome_return": -0.0415,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "ALNT",
@@ -72,7 +75,10 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": -0.1293
+      "outcome_return": -0.11,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "EWTX",
@@ -100,7 +106,10 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0082
+      "outcome_return": 0.0186,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "MTZ",
@@ -114,7 +123,10 @@
       "led_by": "sepa",
       "sentiment": 0.157,
       "earnings_risk": false,
-      "outcome_return": -0.1297
+      "outcome_return": -0.0576,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     },
     {
       "ticker": "BELFA",
@@ -128,7 +140,10 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.1556
+      "outcome_return": -0.1342,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     },
     {
       "ticker": "KYMR",
@@ -156,7 +171,10 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": -0.0113
+      "outcome_return": -0.065,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "KLIC",
@@ -184,7 +202,10 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0007
+      "outcome_return": 0.0007,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "ICHR",
@@ -212,7 +233,10 @@
       "led_by": "sepa",
       "sentiment": 0.456,
       "earnings_risk": false,
-      "outcome_return": -0.0395
+      "outcome_return": -0.0274,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "KNSA",
@@ -240,7 +264,10 @@
       "led_by": "sepa",
       "sentiment": 0.194,
       "earnings_risk": false,
-      "outcome_return": 0.006
+      "outcome_return": 0.0564,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -275,6 +302,9 @@
       "summary": "within limits; cash 60%"
     }
   ],
-  "realized_avg_return": -0.0701,
-  "realized_hit_rate": 0.222
+  "realized_avg_return": -0.0959,
+  "realized_hit_rate": 0.0,
+  "horizon_days": 60,
+  "realized_final_count": 2,
+  "realized_stop_exits": 2
 }

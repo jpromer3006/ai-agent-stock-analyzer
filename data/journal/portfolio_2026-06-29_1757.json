@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": true,
-      "outcome_return": -0.1482
+      "outcome_return": -0.1384,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "CAT",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0674
+      "outcome_return": -0.034,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "AMAT",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.1319
+      "outcome_return": -0.038,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "AMD",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.168,
       "earnings_risk": false,
-      "outcome_return": -0.0402
+      "outcome_return": -0.0072,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "LLY",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.227,
       "earnings_risk": false,
-      "outcome_return": -0.013
+      "outcome_return": 0.0048,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "LRCX",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": -0.002,
       "earnings_risk": false,
-      "outcome_return": -0.1448
+      "outcome_return": -0.073,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "ASML",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.083,
       "earnings_risk": false,
-      "outcome_return": -0.0604
+      "outcome_return": -0.0141,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "NBIS",
@@ -142,7 +163,10 @@
       "led_by": "weinstein",
       "sentiment": 0.05,
       "earnings_risk": false,
-      "outcome_return": 0.0954
+      "outcome_return": 0.0876,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -177,6 +201,9 @@
       "summary": "within limits; cash 28%"
     }
   ],
-  "realized_avg_return": -0.0362,
-  "realized_hit_rate": 0.167
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "horizon_days": 20,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
 }

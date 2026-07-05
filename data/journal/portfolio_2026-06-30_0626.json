@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0307
+      "outcome_return": 0.0147,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "BRK-B",
@@ -44,7 +47,10 @@
       "led_by": "technical",
       "sentiment": 0.123,
       "earnings_risk": false,
-      "outcome_return": 0.0148
+      "outcome_return": 0.0237,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "USB",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.06,
       "earnings_risk": false,
-      "outcome_return": 0.022
+      "outcome_return": 0.0073,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "CSCO",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.172,
       "earnings_risk": false,
-      "outcome_return": -0.0406
+      "outcome_return": -0.0426,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "ABBV",
@@ -86,7 +98,10 @@
       "led_by": "technical",
       "sentiment": 0.175,
       "earnings_risk": false,
-      "outcome_return": 0.0375
+      "outcome_return": 0.0266,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "JNJ",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": 0.0357
+      "outcome_return": 0.0175,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "KO",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.147,
       "earnings_risk": false,
-      "outcome_return": 0.0353
+      "outcome_return": 0.018,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "GE",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.269,
       "earnings_risk": false,
-      "outcome_return": 0.0101
+      "outcome_return": 0.0102,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "MRK",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.325,
       "earnings_risk": false,
-      "outcome_return": 0.0082
+      "outcome_return": 0.0014,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -177,6 +204,9 @@
       "summary": "within limits; cash 8%"
     }
   ],
-  "realized_avg_return": 0.0174,
-  "realized_hit_rate": 0.875
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "horizon_days": 120,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
 }

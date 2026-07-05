@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": -0.02,
       "earnings_risk": false,
-      "outcome_return": -0.0192
+      "outcome_return": -0.0051,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "ASML",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.063,
       "earnings_risk": false,
-      "outcome_return": 0.0181
+      "outcome_return": -0.0051,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "NVDA",
@@ -58,7 +64,10 @@
       "led_by": "weinstein",
       "sentiment": 0.119,
       "earnings_risk": false,
-      "outcome_return": -0.0325
+      "outcome_return": -0.026,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "GOOGL",
@@ -72,7 +81,10 @@
       "led_by": "weinstein",
       "sentiment": 0.151,
       "earnings_risk": false,
-      "outcome_return": -0.0229
+      "outcome_return": 0.0398,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "GOOG",
@@ -86,7 +98,10 @@
       "led_by": "weinstein",
       "sentiment": 0.151,
       "earnings_risk": false,
-      "outcome_return": -0.03
+      "outcome_return": 0.0292,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -121,6 +136,9 @@
       "summary": "within limits; cash 42%"
     }
   ],
-  "realized_avg_return": -0.0173,
-  "realized_hit_rate": 0.2
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "horizon_days": 60,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
 }

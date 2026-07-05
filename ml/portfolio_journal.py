@@ -63,39 +63,95 @@ def load_proposal(path: Path) -> dict:
     return json.loads(Path(path).read_text())
 
 
-def update_outcomes(path: Path, horizon_days: int = 20) -> Optional[dict]:
-    """Fill realized forward returns for a past proposal using current prices.
+# Each mandate is graded at ITS OWN declared horizon (rag/strategy_router
+# ARCHETYPES), not one arbitrary window. Grading a 2-day trade at 20 days
+# measures the round trip; grading Graham value at 20 days measures noise.
+MANDATE_HORIZONS = {
+    "fast_momentum": 5,
+    "swing_momentum": 20,
+    "growth_hold": 60,
+    "value_hold": 120,
+}
+_DEFAULT_HORIZON = 20
 
-    Marks each holding's return from its entry to the close `horizon_days` after
-    the proposal date (or the latest available if the horizon has not elapsed).
+
+def update_outcomes(path: Path, horizon_days: Optional[int] = None) -> Optional[dict]:
+    """Fill realized forward returns for a past proposal, stop-aware and
+    horizon-aware (the honest ruler).
+
+    For each holding, walk forward daily closes from the proposal date:
+      - If a close breaches the journaled stop first, the position exits THERE
+        (at that day's close — conservative: gap-downs through the stop are
+        charged in full, as a real fill would suffer).
+      - Otherwise it exits at the mandate's horizon (fast 5d, swing 20d,
+        growth 60d, value 120d).
+      - If neither has happened yet, the return-so-far is recorded but flagged
+        non-final, and EXCLUDED from the scoreboard aggregates so partial
+        returns can't pollute the track record.
+
+    Stops are checked on completed daily closes, never intraday ticks —
+    consistent with the Weinstein close-based invalidation discipline.
+    Re-running re-grades old proposals, so the whole journal migrates to the
+    new ruler automatically each night.
     """
     from data import price_cache
     rec = load_proposal(path)
     prop_date = rec["date"]
-    rets = []
+    horizon = int(horizon_days or MANDATE_HORIZONS.get(rec.get("mandate", ""), _DEFAULT_HORIZON))
+    rec["horizon_days"] = horizon
+    finals, wins, losses, stop_exits = [], [], [], 0
     for h in rec["holdings"]:
         df = price_cache.get_history(h["ticker"])
-        if df is None:
+        if df is None or "Close" not in df.columns:
             continue
         sl = df.loc[:prop_date]
         if sl.empty:
             continue
         pos = len(sl) - 1
-        end = min(pos + horizon_days, len(df) - 1)
-        if end <= pos:
+        closes = df["Close"]
+        entry = float(h.get("entry") or closes.iloc[pos])
+        stop = float(h.get("stop") or 0.0)
+        if entry <= 0:
             continue
-        r = float(df["Close"].iloc[end] / df["Close"].iloc[pos] - 1.0)
+        end = min(pos + horizon, len(df) - 1)
+        exit_reason, exit_i = "open", end
+        for i in range(pos + 1, end + 1):
+            if stop > 0 and float(closes.iloc[i]) <= stop:
+                exit_reason, exit_i = "stop", i
+                break
+        else:
+            if pos + horizon <= len(df) - 1:
+                exit_reason = "horizon"
+        if exit_i <= pos:
+            continue
+        r = float(closes.iloc[exit_i] / entry - 1.0)
         h["outcome_return"] = round(r, 4)
-        rets.append(r)
-    rec["realized_avg_return"] = round(sum(rets) / len(rets), 4) if rets else None
-    rec["realized_hit_rate"] = round(sum(1 for r in rets if r > 0) / len(rets), 3) if rets else None
+        h["outcome_exit"] = exit_reason
+        h["outcome_days"] = exit_i - pos
+        h["outcome_final"] = exit_reason in ("stop", "horizon")
+        if h["outcome_final"]:
+            finals.append(r)
+            (wins if r > 0 else losses).append(r)
+            if exit_reason == "stop":
+                stop_exits += 1
+    n = len(finals)
+    rec["realized_avg_return"] = round(sum(finals) / n, 4) if n else None
+    rec["realized_hit_rate"] = round(len(wins) / n, 3) if n else None
+    rec["realized_final_count"] = n
+    rec["realized_stop_exits"] = stop_exits
     Path(path).write_text(json.dumps(rec, indent=2))
     return rec
 
 
 def compare_by_mandate() -> dict:
     """Group journaled proposals by mandate and report realized performance so far.
-    This is the swing vs fast (or any mandate) paper-trade scoreboard."""
+    This is the paper-trade scoreboard — FINAL outcomes only (stop hit or
+    horizon elapsed), so partial returns can't flatter or damn a mandate.
+
+    Adds expectancy, the number that actually decides whether a strategy makes
+    money: hit_rate * avg_win + (1 - hit_rate) * avg_loss. A 36% hit rate is
+    fine IF the winners are 3x the losers; a 55% hit rate still loses money if
+    they aren't."""
     from collections import defaultdict
     groups: dict[str, list] = defaultdict(list)
     for p in list_proposals():
@@ -106,6 +162,22 @@ def compare_by_mandate() -> dict:
         groups[rec.get("mandate", "?")].append(rec)
     out = {}
     for m, recs in groups.items():
+        # Position-level final outcomes across every proposal in the mandate.
+        finals, stop_exits = [], 0
+        for r in recs:
+            for h in r.get("holdings", []):
+                if h.get("outcome_final") and h.get("outcome_return") is not None:
+                    finals.append(float(h["outcome_return"]))
+                    if h.get("outcome_exit") == "stop":
+                        stop_exits += 1
+        wins = [x for x in finals if x > 0]
+        losses = [x for x in finals if x <= 0]
+        n = len(finals)
+        hit = len(wins) / n if n else None
+        avg_win = sum(wins) / len(wins) if wins else 0.0
+        avg_loss = sum(losses) / len(losses) if losses else 0.0
+        expectancy = (hit * avg_win + (1 - hit) * avg_loss) if n else None
+        # Proposal-level averages (backward compatible with old consumers).
         rets = [r["realized_avg_return"] for r in recs if r.get("realized_avg_return") is not None]
         hits = [r["realized_hit_rate"] for r in recs if r.get("realized_hit_rate") is not None]
         recs.sort(key=lambda r: r.get("timestamp", ""))
@@ -115,6 +187,12 @@ def compare_by_mandate() -> dict:
             "scored": len(rets),
             "avg_realized_pct": round(100 * sum(rets) / len(rets), 2) if rets else None,
             "avg_hit_rate_pct": round(100 * sum(hits) / len(hits), 1) if hits else None,
+            "positions_scored": n,
+            "hit_rate_pct": round(100 * hit, 1) if hit is not None else None,
+            "avg_win_pct": round(100 * avg_win, 2) if wins else None,
+            "avg_loss_pct": round(100 * avg_loss, 2) if losses else None,
+            "expectancy_pct": round(100 * expectancy, 2) if expectancy is not None else None,
+            "stop_exit_pct": round(100 * stop_exits / n, 1) if n else None,
             "latest_holdings": latest,
         }
     return out

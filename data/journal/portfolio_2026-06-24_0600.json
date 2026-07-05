@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.106,
       "earnings_risk": false,
-      "outcome_return": 0.0026
+      "outcome_return": 0.0142,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "BRK-B",
@@ -44,7 +47,10 @@
       "led_by": "value",
       "sentiment": 0.357,
       "earnings_risk": false,
-      "outcome_return": 0.0078
+      "outcome_return": 0.0304,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "WFC",
@@ -58,7 +64,10 @@
       "led_by": "technical",
       "sentiment": 0.313,
       "earnings_risk": false,
-      "outcome_return": -0.0052
+      "outcome_return": 0.0164,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "CAT",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": -0.039,
       "earnings_risk": false,
-      "outcome_return": 0.003
+      "outcome_return": -0.021,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "CSCO",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.245,
       "earnings_risk": false,
-      "outcome_return": -0.0498
+      "outcome_return": -0.0698,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "JNJ",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.112,
       "earnings_risk": false,
-      "outcome_return": 0.0567
+      "outcome_return": 0.1002,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "TJX",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.344,
       "earnings_risk": false,
-      "outcome_return": -0.059
+      "outcome_return": -0.0557,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "MRK",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": -0.051,
       "earnings_risk": false,
-      "outcome_return": 0.0668
+      "outcome_return": 0.0833,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "KO",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": -0.08,
       "earnings_risk": false,
-      "outcome_return": 0.0252
+      "outcome_return": 0.0477,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "DIS",
@@ -156,7 +183,10 @@
       "led_by": "technical",
       "sentiment": 0.228,
       "earnings_risk": false,
-      "outcome_return": -0.023
+      "outcome_return": -0.0601,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "ABT",
@@ -170,7 +200,10 @@
       "led_by": "technical",
       "sentiment": 0.248,
       "earnings_risk": false,
-      "outcome_return": 0.0401
+      "outcome_return": 0.0538,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "PG",
@@ -184,7 +217,10 @@
       "led_by": "technical",
       "sentiment": 0.2,
       "earnings_risk": false,
-      "outcome_return": -0.0199
+      "outcome_return": 0.0036,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "HD",
@@ -198,7 +234,10 @@
       "led_by": "technical",
       "sentiment": 0.288,
       "earnings_risk": false,
-      "outcome_return": 0.0175
+      "outcome_return": 0.1031,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -233,6 +272,9 @@
       "summary": "within limits; cash 8%"
     }
   ],
-  "realized_avg_return": 0.0048,
-  "realized_hit_rate": 0.615
+  "realized_avg_return": -0.0579,
+  "realized_hit_rate": 0.0,
+  "horizon_days": 120,
+  "realized_final_count": 2,
+  "realized_stop_exits": 2
 }

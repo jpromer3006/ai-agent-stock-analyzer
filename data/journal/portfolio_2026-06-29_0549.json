@@ -58,7 +58,10 @@
       "led_by": "sepa",
       "sentiment": 0.284,
       "earnings_risk": false,
-      "outcome_return": -0.1079
+      "outcome_return": -0.0775,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "MTZ",
@@ -72,7 +75,10 @@
       "led_by": "sepa",
       "sentiment": 0.157,
       "earnings_risk": false,
-      "outcome_return": -0.1297
+      "outcome_return": -0.0576,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     },
     {
       "ticker": "CGNX",
@@ -86,7 +92,10 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0082
+      "outcome_return": 0.0186,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "ALGM",
@@ -100,7 +109,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.164
+      "outcome_return": -0.0415,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "BTSG",
@@ -114,7 +126,10 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0007
+      "outcome_return": 0.0007,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "MO",
@@ -128,7 +143,10 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.0181
+      "outcome_return": -0.0146,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "DLR",
@@ -142,7 +160,10 @@
       "led_by": "sepa",
       "sentiment": 0.252,
       "earnings_risk": false,
-      "outcome_return": -0.0907
+      "outcome_return": -0.0695,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "CAKE",
@@ -156,7 +177,10 @@
       "led_by": "sepa",
       "sentiment": 0.128,
       "earnings_risk": false,
-      "outcome_return": -0.0023
+      "outcome_return": -0.0149,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -191,6 +215,9 @@
       "summary": "within limits; cash 16%"
     }
   ],
-  "realized_avg_return": -0.065,
-  "realized_hit_rate": 0.125
+  "realized_avg_return": -0.0636,
+  "realized_hit_rate": 0.0,
+  "horizon_days": 20,
+  "realized_final_count": 2,
+  "realized_stop_exits": 2
 }

@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.13,
       "earnings_risk": true,
-      "outcome_return": 0.0114
+      "outcome_return": -0.1384,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "FCEL",
@@ -72,7 +75,10 @@
       "led_by": "sepa",
       "sentiment": 0.284,
       "earnings_risk": false,
-      "outcome_return": -0.0071
+      "outcome_return": -0.0775,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "MTZ",
@@ -86,7 +92,10 @@
       "led_by": "sepa",
       "sentiment": 0.157,
       "earnings_risk": false,
-      "outcome_return": 0.0035
+      "outcome_return": -0.0576,
+      "outcome_exit": "stop",
+      "outcome_days": 4,
+      "outcome_final": true
     },
     {
       "ticker": "CGNX",
@@ -100,7 +109,10 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": 0.0413
+      "outcome_return": 0.0186,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "AMAT",
@@ -114,7 +126,10 @@
       "led_by": "sepa",
       "sentiment": 0.3,
       "earnings_risk": false,
-      "outcome_return": 0.0641
+      "outcome_return": -0.038,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "ALGM",
@@ -128,7 +143,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": 0.1365
+      "outcome_return": -0.0415,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "BTSG",
@@ -142,7 +160,10 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0
+      "outcome_return": 0.0007,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "EQIX",
@@ -156,7 +177,10 @@
       "led_by": "sepa",
       "sentiment": 0.326,
       "earnings_risk": false,
-      "outcome_return": -0.0496
+      "outcome_return": -0.0448,
+      "outcome_exit": "stop",
+      "outcome_days": 2,
+      "outcome_final": true
     },
     {
       "ticker": "DLR",
@@ -170,7 +194,10 @@
       "led_by": "sepa",
       "sentiment": 0.252,
       "earnings_risk": false,
-      "outcome_return": -0.0712
+      "outcome_return": -0.0125,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "MNST",
@@ -184,7 +211,10 @@
       "led_by": "sepa",
       "sentiment": 0.246,
       "earnings_risk": false,
-      "outcome_return": 0.0131
+      "outcome_return": 0.0127,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -219,6 +249,9 @@
       "summary": "within limits; cash 1%"
     }
   ],
-  "realized_avg_return": 0.0142,
-  "realized_hit_rate": 0.6
+  "realized_avg_return": -0.0383,
+  "realized_hit_rate": 0.0,
+  "horizon_days": 20,
+  "realized_final_count": 3,
+  "realized_stop_exits": 3
 }

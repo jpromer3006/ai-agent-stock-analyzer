@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.111,
       "earnings_risk": false,
-      "outcome_return": -0.0653
+      "outcome_return": -0.1397,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     },
     {
       "ticker": "LRCX",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.281,
       "earnings_risk": false,
-      "outcome_return": -0.0744
+      "outcome_return": -0.0967,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     },
     {
       "ticker": "TSM",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.109,
       "earnings_risk": false,
-      "outcome_return": -0.0755
+      "outcome_return": -0.0605,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     },
     {
       "ticker": "ARM",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.172,
       "earnings_risk": false,
-      "outcome_return": -0.1801
+      "outcome_return": -0.2826,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     },
     {
       "ticker": "NBIS",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.1527
+      "outcome_return": -0.1618,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "KLAC",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0762
+      "outcome_return": -0.0925,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     },
     {
       "ticker": "ASML",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0698
+      "outcome_return": -0.0831,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     },
     {
       "ticker": "MUU",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.1704
+      "outcome_return": -0.0556,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "BE",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.2713
+      "outcome_return": -0.2338,
+      "outcome_exit": "stop",
+      "outcome_days": 4,
+      "outcome_final": true
     },
     {
       "ticker": "CSCO",
@@ -156,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0639
+      "outcome_return": -0.0573,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -191,6 +221,9 @@
       "summary": "within limits; cash 46%"
     }
   ],
-  "realized_avg_return": -0.12,
-  "realized_hit_rate": 0.0
+  "realized_avg_return": -0.2338,
+  "realized_hit_rate": 0.0,
+  "horizon_days": 20,
+  "realized_final_count": 1,
+  "realized_stop_exits": 1
 }

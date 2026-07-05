@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.328,
       "earnings_risk": false,
-      "outcome_return": 0.028
+      "outcome_return": 0.0476,
+      "outcome_exit": "open",
+      "outcome_days": 9,
+      "outcome_final": false
     },
     {
       "ticker": "ECPG",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.285,
       "earnings_risk": false,
-      "outcome_return": 0.0484
+      "outcome_return": 0.091,
+      "outcome_exit": "open",
+      "outcome_days": 9,
+      "outcome_final": false
     },
     {
       "ticker": "MU",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.111,
       "earnings_risk": false,
-      "outcome_return": -0.0015
+      "outcome_return": -0.1397,
+      "outcome_exit": "open",
+      "outcome_days": 9,
+      "outcome_final": false
     },
     {
       "ticker": "FFBC",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.197,
       "earnings_risk": false,
-      "outcome_return": 0.0414
+      "outcome_return": 0.0686,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "NVEC",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.123,
       "earnings_risk": false,
-      "outcome_return": -0.1746
+      "outcome_return": -0.1746,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     },
     {
       "ticker": "NBN",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.295,
       "earnings_risk": false,
-      "outcome_return": 0.0157
+      "outcome_return": 0.0497,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "FORM",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.194,
       "earnings_risk": false,
-      "outcome_return": -0.1258
+      "outcome_return": -0.1258,
+      "outcome_exit": "stop",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "NVMI",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.186,
       "earnings_risk": false,
-      "outcome_return": -0.1508
+      "outcome_return": -0.1508,
+      "outcome_exit": "stop",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "BTSG",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.298,
       "earnings_risk": false,
-      "outcome_return": 0.0412
+      "outcome_return": 0.042,
+      "outcome_exit": "open",
+      "outcome_days": 9,
+      "outcome_final": false
     },
     {
       "ticker": "LRCX",
@@ -156,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.281,
       "earnings_risk": false,
-      "outcome_return": -0.0256
+      "outcome_return": -0.0967,
+      "outcome_exit": "open",
+      "outcome_days": 9,
+      "outcome_final": false
     },
     {
       "ticker": "LQDA",
@@ -170,7 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.217,
       "earnings_risk": false,
-      "outcome_return": 0.0999
+      "outcome_return": 0.0999,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "ATRO",
@@ -184,7 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.24,
       "earnings_risk": false,
-      "outcome_return": 0.0534
+      "outcome_return": -0.1208,
+      "outcome_exit": "open",
+      "outcome_days": 9,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -219,6 +255,9 @@
       "summary": "sector concentration Financials 36%; cash 1%"
     }
   ],
-  "realized_avg_return": -0.0125,
-  "realized_hit_rate": 0.583
+  "realized_avg_return": -0.1504,
+  "realized_hit_rate": 0.0,
+  "horizon_days": 20,
+  "realized_final_count": 3,
+  "realized_stop_exits": 3
 }

@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.211,
       "earnings_risk": false,
-      "outcome_return": 0.0114
+      "outcome_return": -0.0624,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "AMD",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.143,
       "earnings_risk": false,
-      "outcome_return": 0.0035
+      "outcome_return": -0.0037,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "AMAT",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.123,
       "earnings_risk": false,
-      "outcome_return": 0.0643
+      "outcome_return": 0.0239,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "PANW",
@@ -72,7 +81,10 @@
       "led_by": "swing",
       "sentiment": 0.257,
       "earnings_risk": false,
-      "outcome_return": 0.0664
+      "outcome_return": 0.2202,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "CRDO",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.089,
       "earnings_risk": false,
-      "outcome_return": -0.1152
+      "outcome_return": -0.1007,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "FTNT",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": -0.092,
       "earnings_risk": false,
-      "outcome_return": 0.0418
+      "outcome_return": 0.0755,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "KLAC",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.316,
       "earnings_risk": false,
-      "outcome_return": 0.0339
+      "outcome_return": -0.0205,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "ASML",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": -0.008,
       "earnings_risk": false,
-      "outcome_return": 0.0181
+      "outcome_return": 0.0037,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "ANET",
@@ -142,7 +166,10 @@
       "led_by": "weinstein",
       "sentiment": 0.18,
       "earnings_risk": false,
-      "outcome_return": -0.0256
+      "outcome_return": -0.0108,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "EXPE",
@@ -156,7 +183,10 @@
       "led_by": "technical",
       "sentiment": 0.007,
       "earnings_risk": false,
-      "outcome_return": 0.0025
+      "outcome_return": 0.0025,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -191,6 +221,9 @@
       "summary": "within limits; cash 27%"
     }
   ],
-  "realized_avg_return": 0.0101,
-  "realized_hit_rate": 0.8
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "horizon_days": 20,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
 }

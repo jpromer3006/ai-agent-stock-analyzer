@@ -44,7 +44,10 @@
       "led_by": "sepa",
       "sentiment": 0.157,
       "earnings_risk": false,
-      "outcome_return": -0.1297
+      "outcome_return": -0.0576,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     },
     {
       "ticker": "CGNX",
@@ -58,7 +61,10 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0082
+      "outcome_return": 0.0186,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "BPOP",
@@ -72,7 +78,10 @@
       "led_by": "sepa",
       "sentiment": 0.306,
       "earnings_risk": false,
-      "outcome_return": 0.0146
+      "outcome_return": 0.0089,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "ALGM",
@@ -86,7 +95,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.164
+      "outcome_return": -0.0415,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "BTSG",
@@ -100,7 +112,10 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0007
+      "outcome_return": 0.0007,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "CVS",
@@ -114,7 +129,10 @@
       "led_by": "sepa",
       "sentiment": 0.15,
       "earnings_risk": false,
-      "outcome_return": 0.011
+      "outcome_return": 0.0036,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "MO",
@@ -128,7 +146,10 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.0181
+      "outcome_return": -0.0146,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "DLR",
@@ -142,7 +163,10 @@
       "led_by": "sepa",
       "sentiment": 0.252,
       "earnings_risk": false,
-      "outcome_return": -0.0907
+      "outcome_return": -0.0695,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "SBUX",
@@ -156,7 +180,10 @@
       "led_by": "sepa",
       "sentiment": 0.171,
       "earnings_risk": false,
-      "outcome_return": 0.002
+      "outcome_return": -0.0032,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "MNST",
@@ -170,7 +197,10 @@
       "led_by": "sepa",
       "sentiment": 0.246,
       "earnings_risk": false,
-      "outcome_return": -0.0004
+      "outcome_return": 0.0127,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "PSA",
@@ -184,7 +214,10 @@
       "led_by": "sepa",
       "sentiment": 0.331,
       "earnings_risk": false,
-      "outcome_return": 0.016
+      "outcome_return": 0.0162,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "FTNT",
@@ -198,7 +231,10 @@
       "led_by": "sepa",
       "sentiment": 0.114,
       "earnings_risk": false,
-      "outcome_return": 0.0053
+      "outcome_return": 0.0324,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "CAKE",
@@ -212,7 +248,10 @@
       "led_by": "sepa",
       "sentiment": 0.128,
       "earnings_risk": false,
-      "outcome_return": -0.0023
+      "outcome_return": -0.0149,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "BELFB",
@@ -226,7 +265,10 @@
       "led_by": "sepa",
       "sentiment": 0.064,
       "earnings_risk": false,
-      "outcome_return": -0.1543
+      "outcome_return": -0.1407,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -261,6 +303,9 @@
       "summary": "within limits; cash 29%"
     }
   ],
-  "realized_avg_return": -0.0436,
-  "realized_hit_rate": 0.417
+  "realized_avg_return": -0.0893,
+  "realized_hit_rate": 0.0,
+  "horizon_days": 20,
+  "realized_final_count": 3,
+  "realized_stop_exits": 3
 }

@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.1,
       "earnings_risk": false,
-      "outcome_return": -0.0053
+      "outcome_return": 0.0093,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "BRK-B",
@@ -44,7 +47,10 @@
       "led_by": "technical",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": 0.0222
+      "outcome_return": 0.0409,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "BK",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.207,
       "earnings_risk": false,
-      "outcome_return": -0.0129
+      "outcome_return": -0.0005,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "ABBV",
@@ -72,7 +81,10 @@
       "led_by": "technical",
       "sentiment": 0.145,
       "earnings_risk": false,
-      "outcome_return": 0.042
+      "outcome_return": 0.0737,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "TGT",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.119,
       "earnings_risk": false,
-      "outcome_return": 0.0059
+      "outcome_return": -0.0671,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "MRK",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.243,
       "earnings_risk": false,
-      "outcome_return": 0.0256
+      "outcome_return": 0.0328,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "JNJ",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.113,
       "earnings_risk": false,
-      "outcome_return": 0.0399
+      "outcome_return": 0.0742,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "KO",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.11,
       "earnings_risk": false,
-      "outcome_return": 0.0275
+      "outcome_return": 0.0463,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "LOW",
@@ -142,7 +166,10 @@
       "led_by": "swing",
       "sentiment": 0.241,
       "earnings_risk": false,
-      "outcome_return": 0.0025
+      "outcome_return": 0.0251,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "HD",
@@ -156,7 +183,10 @@
       "led_by": "technical",
       "sentiment": 0.141,
       "earnings_risk": false,
-      "outcome_return": 0.0112
+      "outcome_return": 0.0374,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "PG",
@@ -170,7 +200,10 @@
       "led_by": "technical",
       "sentiment": 0.21,
       "earnings_risk": false,
-      "outcome_return": 0.0035
+      "outcome_return": 0.0196,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -205,6 +238,9 @@
       "summary": "within limits; cash 5%"
     }
   ],
-  "realized_avg_return": 0.0147,
-  "realized_hit_rate": 0.818
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "horizon_days": 120,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
 }

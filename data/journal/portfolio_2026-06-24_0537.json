@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.04,
       "earnings_risk": false,
-      "outcome_return": -0.0127
+      "outcome_return": -0.0345,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "BAC",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.106,
       "earnings_risk": false,
-      "outcome_return": 0.0026
+      "outcome_return": 0.0142,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "USB",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.252,
       "earnings_risk": false,
-      "outcome_return": 0.0133
+      "outcome_return": 0.028,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "ABBV",
@@ -72,7 +81,10 @@
       "led_by": "technical",
       "sentiment": 0.15,
       "earnings_risk": false,
-      "outcome_return": 0.0786
+      "outcome_return": 0.1121,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "JNJ",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.112,
       "earnings_risk": false,
-      "outcome_return": 0.0567
+      "outcome_return": 0.1002,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "LLY",
@@ -100,7 +115,10 @@
       "led_by": "weinstein",
       "sentiment": 0.021,
       "earnings_risk": false,
-      "outcome_return": 0.0813
+      "outcome_return": 0.0965,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -135,6 +153,9 @@
       "summary": "sector concentration Financials 36%; cash 29%"
     }
   ],
-  "realized_avg_return": 0.0366,
-  "realized_hit_rate": 0.833
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "horizon_days": 120,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
 }

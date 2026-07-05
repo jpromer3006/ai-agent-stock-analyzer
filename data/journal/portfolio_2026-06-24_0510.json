@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.106,
       "earnings_risk": false,
-      "outcome_return": 0.0026
+      "outcome_return": 0.0142,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "BRK-B",
@@ -44,7 +47,10 @@
       "led_by": "value",
       "sentiment": 0.357,
       "earnings_risk": false,
-      "outcome_return": 0.0078
+      "outcome_return": 0.0304,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "UNH",
@@ -58,7 +64,10 @@
       "led_by": "weinstein",
       "sentiment": 0.005,
       "earnings_risk": false,
-      "outcome_return": 0.0544
+      "outcome_return": 0.0394,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "JNJ",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.112,
       "earnings_risk": false,
-      "outcome_return": 0.0567
+      "outcome_return": 0.1002,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "LLY",
@@ -86,7 +98,10 @@
       "led_by": "weinstein",
       "sentiment": 0.021,
       "earnings_risk": false,
-      "outcome_return": 0.0813
+      "outcome_return": 0.0965,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "TJX",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.344,
       "earnings_risk": false,
-      "outcome_return": -0.059
+      "outcome_return": -0.0557,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "KO",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": -0.08,
       "earnings_risk": false,
-      "outcome_return": 0.0252
+      "outcome_return": 0.0477,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "ABT",
@@ -128,7 +149,10 @@
       "led_by": "technical",
       "sentiment": 0.248,
       "earnings_risk": false,
-      "outcome_return": 0.0401
+      "outcome_return": 0.0538,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "PG",
@@ -142,7 +166,10 @@
       "led_by": "technical",
       "sentiment": 0.2,
       "earnings_risk": false,
-      "outcome_return": -0.0199
+      "outcome_return": 0.0036,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -177,6 +204,9 @@
       "summary": "within limits; cash 2%"
     }
   ],
-  "realized_avg_return": 0.021,
-  "realized_hit_rate": 0.778
+  "realized_avg_return": -0.0557,
+  "realized_hit_rate": 0.0,
+  "horizon_days": 120,
+  "realized_final_count": 1,
+  "realized_stop_exits": 1
 }

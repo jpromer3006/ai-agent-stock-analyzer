@@ -139,9 +139,16 @@ def build_report_data(opps: dict | None = None, changes: dict | None = None) -> 
             opps = scan_opportunities(max_check=200)
         except Exception:
             opps = {"breakouts": [], "watch": []}
+    picks = []
+    try:
+        from ml.top_picks import weinstein_top_picks
+        picks = weinstein_top_picks(account=float((rec or {}).get("account") or 100_000.0))
+    except Exception as e:  # noqa: BLE001
+        logger.warning("top picks failed: %s", e)
     return {"date": f"{datetime.now():%A, %B %d, %Y}", "regime": regime, "vix": vix,
             "indexes": _index_snapshot(), "proposal": rec, "pnl": pnl,
-            "scoreboard": scoreboard, "opps": opps, "changes": changes or {}}
+            "scoreboard": scoreboard, "opps": opps, "changes": changes or {},
+            "top_picks": picks}
 
 
 # ---------------------------------------------------------------------------
@@ -234,17 +241,62 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
         lines.append((f"  Young names on watch: {len(opps.get('watch') or [])}",
                       {"dy": 0.024}))
         if data.get("scoreboard"):
-            lines.append(("PAPER-TRADE SCOREBOARD (forward, out-of-sample)",
+            lines.append(("PAPER-TRADE SCOREBOARD (forward, stop-aware, "
+                          "graded at each mandate's own horizon)",
                           {"weight": "bold", "dy": 0.024}))
+            lines.append((f"  {'mandate':<16}{'pos':>4}{'hit':>6}{'avg win':>9}"
+                          f"{'avg loss':>9}{'expect':>8}{'stopped':>8}", {"dy": 0.02}))
+            def _f(x):
+                return "—" if x is None else f"{x:+.2f}%"
             for m, v in data["scoreboard"].items():
-                ar = v.get("avg_realized_pct")
-                hr = v.get("avg_hit_rate_pct")
-                lines.append((f"  {m:<18} proposals {v.get('proposals', 0):>3}  "
-                              f"avg {'—' if ar is None else f'{ar:+.2f}%':>8}  "
-                              f"hit {'—' if hr is None else f'{hr:.0f}%':>5}", {"dy": 0.02}))
+                hr, st_ = v.get("hit_rate_pct"), v.get("stop_exit_pct")
+                lines.append((f"  {m:<16}{v.get('positions_scored') or 0:>4}"
+                              f"{'—' if hr is None else f'{hr:.0f}%':>6}"
+                              f"{_f(v.get('avg_win_pct')):>9}{_f(v.get('avg_loss_pct')):>9}"
+                              f"{_f(v.get('expectancy_pct')):>8}"
+                              f"{'—' if st_ is None else f'{st_:.0f}%':>8}",
+                              {"dy": 0.02}))
+            lines.append(("  Expectancy = hit*avg_win + (1-hit)*avg_loss per position. "
+                          "Positive means the book makes money.", {"size": 8, "dy": 0.022}))
         _text_page(pdf, lines, "OROS Daily Report")
 
-        # ---- Page 2: holdings gains/losses table -------------------------
+        # ---- Page 2: Weinstein Top Picks ----------------------------------
+        tp = data.get("top_picks") or []
+        if tp:
+            fig, ax = plt.subplots(figsize=(8.5, 11))
+            ax.axis("off")
+            ax.set_title("Weinstein Top Picks — fully gated Stage 2 setups",
+                         fontsize=14, fontweight="bold", loc="left")
+            cells = [[p["ticker"], p["setup"], f"{p['last_close']:.2f}",
+                      f"{p['buy_stop']:.2f}", f"{p['stop_loss']:.2f}",
+                      f"{p['target']:.2f}", f"{p['risk_reward']:.1f}",
+                      f"{p['bull_prob']:.0%}", f"{p['pct_above_ma']:+.1f}%",
+                      f"{p['shares_1pct']}", _esc(f"${p['risk_dollars']:,}")]
+                     for p in tp]
+            tbl = ax.table(cellText=cells, colLabels=[
+                "Ticker", "Setup", "Last", "Buy-stop", "Stop", "Target",
+                "R/R", "Bull", "vs 30w MA", _esc("Sh @1%"), _esc("Risk $")],
+                loc="upper center", cellLoc="right")
+            tbl.auto_set_font_size(False)
+            tbl.set_fontsize(8)
+            tbl.scale(1, 1.4)
+            fig.text(0.07, 0.60,
+                     "Every pick passed the complete Weinstein gauntlet:\n"
+                     "  1. Stage 2 (Advancing) — the only buying stage\n"
+                     "  2. No completed weekly close back below the 30-week MA\n"
+                     "  3. Breakout volume surge AND rising Mansfield RS vs SPY\n"
+                     "  4. Not extended above the rising 30-week MA\n\n"
+                     "Trade plan discipline: enter ONLY if price takes out the buy-stop.\n"
+                     "Exit on a weekly close below the stop (the 30-week MA invalidator).\n"
+                     "Sizes shown risk 1% of the account per name — an illustration of\n"
+                     "disciplined sizing, not an instruction.",
+                     fontsize=9, family="monospace", va="top")
+            fig.text(0.07, 0.05, "OROS proposes and journals only — it never trades. "
+                     "Educational, not financial advice.", fontsize=7, color="#888888")
+            pdf.savefig(fig)
+            plt.close(fig)
+
+        # ---- Page 3: holdings gains/losses table -------------------------
         rows = pnl.get("rows") or []
         if rows:
             fig, ax = plt.subplots(figsize=(8.5, 11))
@@ -339,6 +391,11 @@ def _summary_body(data: dict) -> str:
     bts = (data.get("opps") or {}).get("breakouts") or []
     if bts:
         lines.append("IPO breakouts: " + ", ".join(o["ticker"] for o in bts[:8]))
+    try:
+        from ml.top_picks import format_picks_text
+        lines += ["", format_picks_text(data.get("top_picks") or [])]
+    except Exception:
+        pass
     lines += ["", "Full report attached (PDF).",
               "OROS proposes and journals only — it never trades. "
               "Educational, not financial advice."]

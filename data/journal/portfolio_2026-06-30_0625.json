@@ -29,7 +29,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0407
+      "outcome_return": 0.012,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "BE",
@@ -43,7 +46,10 @@
       "led_by": "sepa",
       "sentiment": 0.196,
       "earnings_risk": false,
-      "outcome_return": -0.1051
+      "outcome_return": -0.015,
+      "outcome_exit": "stop",
+      "outcome_days": 2,
+      "outcome_final": true
     },
     {
       "ticker": "ENPH",
@@ -57,7 +63,10 @@
       "led_by": "sepa",
       "sentiment": 0.265,
       "earnings_risk": false,
-      "outcome_return": -0.1253
+      "outcome_return": -0.031,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "CLSK",
@@ -71,7 +80,10 @@
       "led_by": "weinstein",
       "sentiment": 0.185,
       "earnings_risk": false,
-      "outcome_return": -0.1326
+      "outcome_return": -0.1789,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "UBER",
@@ -85,7 +97,10 @@
       "led_by": "technical",
       "sentiment": 0.095,
       "earnings_risk": false,
-      "outcome_return": 0.0315
+      "outcome_return": -0.0376,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "DASH",
@@ -99,7 +114,10 @@
       "led_by": "technical",
       "sentiment": 0.282,
       "earnings_risk": false,
-      "outcome_return": 0.0405
+      "outcome_return": 0.0389,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -134,6 +152,9 @@
       "summary": "within limits; cash 37%"
     }
   ],
-  "realized_avg_return": -0.0417,
-  "realized_hit_rate": 0.5
+  "realized_avg_return": -0.0279,
+  "realized_hit_rate": 0.0,
+  "horizon_days": 5,
+  "realized_final_count": 3,
+  "realized_stop_exits": 3
 }

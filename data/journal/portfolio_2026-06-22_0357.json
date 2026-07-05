@@ -29,7 +29,10 @@
       "led_by": "sepa",
       "sentiment": 0.123,
       "earnings_risk": false,
-      "outcome_return": -0.1764
+      "outcome_return": -0.1746,
+      "outcome_exit": "stop",
+      "outcome_days": 2,
+      "outcome_final": true
     },
     {
       "ticker": "CACC",
@@ -43,7 +46,10 @@
       "led_by": "sepa",
       "sentiment": 0.484,
       "earnings_risk": false,
-      "outcome_return": 0.0889
+      "outcome_return": 0.1009,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "FFBC",
@@ -57,7 +63,10 @@
       "led_by": "sepa",
       "sentiment": 0.197,
       "earnings_risk": false,
-      "outcome_return": 0.0307
+      "outcome_return": 0.0686,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "BPOP",
@@ -71,7 +80,10 @@
       "led_by": "sepa",
       "sentiment": 0.208,
       "earnings_risk": false,
-      "outcome_return": 0.0179
+      "outcome_return": 0.0352,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "FORM",
@@ -85,7 +97,10 @@
       "led_by": "sepa",
       "sentiment": 0.194,
       "earnings_risk": false,
-      "outcome_return": -0.1655
+      "outcome_return": -0.1258,
+      "outcome_exit": "stop",
+      "outcome_days": 4,
+      "outcome_final": true
     },
     {
       "ticker": "NVMI",
@@ -99,7 +114,10 @@
       "led_by": "sepa",
       "sentiment": 0.186,
       "earnings_risk": false,
-      "outcome_return": -0.1621
+      "outcome_return": -0.1508,
+      "outcome_exit": "stop",
+      "outcome_days": 4,
+      "outcome_final": true
     },
     {
       "ticker": "BTSG",
@@ -113,7 +131,10 @@
       "led_by": "sepa",
       "sentiment": 0.298,
       "earnings_risk": false,
-      "outcome_return": 0.0265
+      "outcome_return": 0.0412,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "LRCX",
@@ -127,7 +148,10 @@
       "led_by": "sepa",
       "sentiment": 0.281,
       "earnings_risk": false,
-      "outcome_return": -0.0744
+      "outcome_return": 0.0562,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "LQDA",
@@ -141,7 +165,10 @@
       "led_by": "sepa",
       "sentiment": 0.217,
       "earnings_risk": false,
-      "outcome_return": 0.0355
+      "outcome_return": 0.0999,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "MAR",
@@ -155,7 +182,10 @@
       "led_by": "sepa",
       "sentiment": 0.25,
       "earnings_risk": false,
-      "outcome_return": -0.0179
+      "outcome_return": -0.0477,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "FTNT",
@@ -169,7 +199,10 @@
       "led_by": "sepa",
       "sentiment": 0.095,
       "earnings_risk": false,
-      "outcome_return": 0.041
+      "outcome_return": 0.0739,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "TGT",
@@ -183,7 +216,10 @@
       "led_by": "sepa",
       "sentiment": 0.209,
       "earnings_risk": false,
-      "outcome_return": 0.0822
+      "outcome_return": 0.0243,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "ATRO",
@@ -197,7 +233,10 @@
       "led_by": "sepa",
       "sentiment": 0.24,
       "earnings_risk": false,
-      "outcome_return": 0.0368
+      "outcome_return": 0.0633,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "CAT",
@@ -211,7 +250,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0243
+      "outcome_return": 0.0481,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -246,6 +288,9 @@
       "summary": "within limits; cash 8%"
     }
   ],
-  "realized_avg_return": -0.0186,
-  "realized_hit_rate": 0.571
+  "realized_avg_return": -0.0007,
+  "realized_hit_rate": 0.727,
+  "horizon_days": 5,
+  "realized_final_count": 11,
+  "realized_stop_exits": 3
 }

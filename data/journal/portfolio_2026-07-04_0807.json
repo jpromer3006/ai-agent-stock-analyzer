@@ -178,5 +178,8 @@
     }
   ],
   "realized_avg_return": null,
-  "realized_hit_rate": null
+  "realized_hit_rate": null,
+  "horizon_days": 120,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
 }

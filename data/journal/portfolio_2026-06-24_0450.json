@@ -29,7 +29,10 @@
       "led_by": "sepa",
       "sentiment": 0.106,
       "earnings_risk": false,
-      "outcome_return": -0.0585
+      "outcome_return": -0.0404,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "AMKR",
@@ -43,7 +46,10 @@
       "led_by": "sepa",
       "sentiment": 0.161,
       "earnings_risk": false,
-      "outcome_return": -0.0488
+      "outcome_return": -0.0776,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "TSM",
@@ -57,7 +63,10 @@
       "led_by": "sepa",
       "sentiment": -0.02,
       "earnings_risk": false,
-      "outcome_return": -0.0192
+      "outcome_return": 0.018,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "ALNT",
@@ -71,7 +80,10 @@
       "led_by": "sepa",
       "sentiment": 0.312,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0271,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "KLAC",
@@ -85,7 +97,10 @@
       "led_by": "sepa",
       "sentiment": 0.279,
       "earnings_risk": false,
-      "outcome_return": 0.0339
+      "outcome_return": 0.0888,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "FORM",
@@ -99,7 +114,10 @@
       "led_by": "sepa",
       "sentiment": 0.166,
       "earnings_risk": false,
-      "outcome_return": -0.0755
+      "outcome_return": -0.0844,
+      "outcome_exit": "stop",
+      "outcome_days": 2,
+      "outcome_final": true
     },
     {
       "ticker": "AEIS",
@@ -113,7 +131,10 @@
       "led_by": "sepa",
       "sentiment": 0.286,
       "earnings_risk": false,
-      "outcome_return": -0.032
+      "outcome_return": -0.0462,
+      "outcome_exit": "stop",
+      "outcome_days": 2,
+      "outcome_final": true
     },
     {
       "ticker": "BK",
@@ -127,7 +148,10 @@
       "led_by": "sepa",
       "sentiment": 0.207,
       "earnings_risk": false,
-      "outcome_return": 0.0
+      "outcome_return": -0.0005,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "FCFS",
@@ -141,7 +165,10 @@
       "led_by": "sepa",
       "sentiment": 0.121,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0281,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "COCO",
@@ -155,7 +182,10 @@
       "led_by": "sepa",
       "sentiment": 0.255,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.2006,
+      "outcome_exit": "stop",
+      "outcome_days": 4,
+      "outcome_final": true
     },
     {
       "ticker": "IBKR",
@@ -169,7 +199,10 @@
       "led_by": "sepa",
       "sentiment": 0.049,
       "earnings_risk": false,
-      "outcome_return": -0.032
+      "outcome_return": -0.0515,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -204,6 +237,9 @@
       "summary": "within limits; cash 29%"
     }
   ],
-  "realized_avg_return": -0.029,
-  "realized_hit_rate": 0.125
+  "realized_avg_return": -0.0379,
+  "realized_hit_rate": 0.375,
+  "horizon_days": 5,
+  "realized_final_count": 8,
+  "realized_stop_exits": 4
 }

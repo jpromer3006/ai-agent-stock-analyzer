@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.11,
       "earnings_risk": false,
-      "outcome_return": 0.0147
+      "outcome_return": 0.0147,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "BRK-B",
@@ -44,7 +47,10 @@
       "led_by": "technical",
       "sentiment": 0.116,
       "earnings_risk": false,
-      "outcome_return": -0.0053
+      "outcome_return": 0.0183,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "WFC",
@@ -58,7 +64,10 @@
       "led_by": "technical",
       "sentiment": 0.373,
       "earnings_risk": false,
-      "outcome_return": 0.0197
+      "outcome_return": 0.0197,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "DE",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.24,
       "earnings_risk": false,
-      "outcome_return": 0.0157
+      "outcome_return": 0.0131,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "CAT",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": -0.066,
       "earnings_risk": false,
-      "outcome_return": -0.034
+      "outcome_return": -0.034,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "HON",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.254,
       "earnings_risk": false,
-      "outcome_return": -0.0101
+      "outcome_return": -0.5095,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "MRK",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.224,
       "earnings_risk": false,
-      "outcome_return": 0.007
+      "outcome_return": 0.007,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "KO",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.139,
       "earnings_risk": false,
-      "outcome_return": 0.0183
+      "outcome_return": 0.0183,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "JNJ",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.175,
       "earnings_risk": false,
-      "outcome_return": 0.0329
+      "outcome_return": 0.0329,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "AEP",
@@ -156,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.176,
       "earnings_risk": false,
-      "outcome_return": -0.0013
+      "outcome_return": -0.0013,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "MMM",
@@ -170,7 +200,10 @@
       "led_by": "technical",
       "sentiment": 0.174,
       "earnings_risk": false,
-      "outcome_return": -0.0218
+      "outcome_return": -0.0218,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "LOW",
@@ -184,7 +217,10 @@
       "led_by": "swing",
       "sentiment": 0.25,
       "earnings_risk": false,
-      "outcome_return": 0.0226
+      "outcome_return": 0.0226,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -219,6 +255,9 @@
       "summary": "within limits; cash 3%"
     }
   ],
-  "realized_avg_return": 0.0049,
-  "realized_hit_rate": 0.583
+  "realized_avg_return": -0.5095,
+  "realized_hit_rate": 0.0,
+  "horizon_days": 120,
+  "realized_final_count": 1,
+  "realized_stop_exits": 1
 }

@@ -29,7 +29,10 @@
       "led_by": "sepa",
       "sentiment": 0.246,
       "earnings_risk": false,
-      "outcome_return": 0.0131
+      "outcome_return": 0.0127,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "HUT",
@@ -57,7 +60,10 @@
       "led_by": "swing",
       "sentiment": 0.072,
       "earnings_risk": false,
-      "outcome_return": -0.0351
+      "outcome_return": -0.0351,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CLSK",
@@ -71,7 +77,10 @@
       "led_by": "weinstein",
       "sentiment": 0.185,
       "earnings_risk": false,
-      "outcome_return": -0.1603
+      "outcome_return": -0.2272,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "ENPH",
@@ -85,7 +94,10 @@
       "led_by": "weinstein",
       "sentiment": 0.265,
       "earnings_risk": false,
-      "outcome_return": -0.0269
+      "outcome_return": -0.0948,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "DASH",
@@ -99,7 +111,10 @@
       "led_by": "technical",
       "sentiment": 0.221,
       "earnings_risk": false,
-      "outcome_return": 0.0363
+      "outcome_return": 0.0487,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -134,6 +149,9 @@
       "summary": "within limits; cash 43%"
     }
   ],
-  "realized_avg_return": -0.0346,
-  "realized_hit_rate": 0.4
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "horizon_days": 5,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
 }

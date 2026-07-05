@@ -44,7 +44,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.164
+      "outcome_return": -0.0415,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "CGNX",
@@ -58,7 +61,10 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0082
+      "outcome_return": 0.0186,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "MTZ",
@@ -72,7 +78,10 @@
       "led_by": "sepa",
       "sentiment": 0.157,
       "earnings_risk": false,
-      "outcome_return": -0.1297
+      "outcome_return": -0.0576,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     },
     {
       "ticker": "KYMR",
@@ -114,7 +123,10 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.0181
+      "outcome_return": -0.0146,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "BPOP",
@@ -128,7 +140,10 @@
       "led_by": "sepa",
       "sentiment": 0.306,
       "earnings_risk": false,
-      "outcome_return": 0.0146
+      "outcome_return": 0.0089,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "BELFB",
@@ -142,7 +157,10 @@
       "led_by": "sepa",
       "sentiment": 0.064,
       "earnings_risk": false,
-      "outcome_return": -0.1543
+      "outcome_return": -0.1407,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     },
     {
       "ticker": "FTNT",
@@ -156,7 +174,10 @@
       "led_by": "sepa",
       "sentiment": 0.114,
       "earnings_risk": false,
-      "outcome_return": 0.0053
+      "outcome_return": 0.0324,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "CROX",
@@ -170,7 +191,10 @@
       "led_by": "sepa",
       "sentiment": 0.078,
       "earnings_risk": false,
-      "outcome_return": -0.0004
+      "outcome_return": -0.0194,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     },
     {
       "ticker": "DLR",
@@ -184,7 +208,10 @@
       "led_by": "sepa",
       "sentiment": 0.252,
       "earnings_risk": false,
-      "outcome_return": -0.0907
+      "outcome_return": -0.0695,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "CAKE",
@@ -198,7 +225,10 @@
       "led_by": "sepa",
       "sentiment": 0.128,
       "earnings_risk": false,
-      "outcome_return": -0.0023
+      "outcome_return": -0.0149,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -233,6 +263,9 @@
       "summary": "within limits; cash 22%"
     }
   ],
-  "realized_avg_return": -0.0614,
-  "realized_hit_rate": 0.111
+  "realized_avg_return": -0.0893,
+  "realized_hit_rate": 0.0,
+  "horizon_days": 120,
+  "realized_final_count": 3,
+  "realized_stop_exits": 3
 }
