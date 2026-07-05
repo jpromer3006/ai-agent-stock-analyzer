@@ -109,6 +109,11 @@ def weinstein_top_picks(symbols: list[str] | None = None,
             "shares_1pct": shares,
             "risk_dollars": round(shares * risk_ps),
             "note": (ts.narrative or "").strip()[:140],
+            # Signal provenance for the chart page: the exact breakout bar the
+            # analyzer anchored this Stage 2 call to.
+            "breakout_date": r.stage2_entry_date,
+            "breakout_price": round(float(r.stage2_entry_price or 0.0), 2),
+            "weeks_held": int(r.weeks_held or 0),
         })
     picks.sort(key=lambda p: (p["setup"] != "fresh",       # fresh first
                               -p["bull_prob"], -p["risk_reward"]))

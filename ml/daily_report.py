@@ -296,6 +296,17 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
             pdf.savefig(fig)
             plt.close(fig)
 
+        # ---- Signal chart pages: one per Top Pick --------------------------
+        # "Where did this signal come from?" Each pick is shown the way
+        # Weinstein reads it: weekly price vs the 30-week MA with the anchored
+        # breakout bar and the full trade plan drawn in, breakout volume, and
+        # the Mansfield relative-strength line vs SPY.
+        for p in tp[:5]:
+            try:
+                _pick_chart_page(pdf, plt, p)
+            except Exception as e:  # noqa: BLE001
+                logger.warning("chart page failed for %s: %s", p.get("ticker"), e)
+
         # ---- Page 3: holdings gains/losses table -------------------------
         rows = pnl.get("rows") or []
         if rows:
@@ -369,6 +380,108 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
 
     logger.info("report written: %s", out)
     return out
+
+
+def _weekly(df):
+    """Daily OHLCV -> weekly bars (close = Friday/last, volume = weekly sum)."""
+    import pandas as pd
+    d = df.copy()
+    d.index = pd.to_datetime(d.index)
+    try:
+        d.index = d.index.tz_localize(None)
+    except TypeError:
+        pass
+    agg = {"Close": "last"}
+    if "Volume" in d.columns:
+        agg["Volume"] = "sum"
+    return d.resample("W-FRI").agg(agg).dropna(subset=["Close"])
+
+
+def _pick_chart_page(pdf, plt, p: dict) -> None:
+    """One full-page Weinstein view of a Top Pick: price + 30-week MA with the
+    trade plan, breakout volume, and Mansfield RS vs SPY."""
+    import pandas as pd
+    from data import price_cache
+
+    df = price_cache.get_history(p["ticker"])
+    if df is None or len(df) < 160:
+        return
+    wk = _weekly(df).tail(110)                       # ~2 years of weekly bars
+    ma30 = _weekly(df)["Close"].rolling(30).mean().reindex(wk.index)
+
+    fig, (ax1, ax2, ax3) = plt.subplots(
+        3, 1, figsize=(8.5, 11), sharex=True,
+        gridspec_kw={"height_ratios": [3.2, 1.0, 1.0]})
+    fig.suptitle(f"{p['ticker']} — Weinstein weekly view ({p['setup']} Stage 2 setup)",
+                 fontsize=14, fontweight="bold", x=0.07, ha="left")
+
+    # -- Panel 1: price, 30-week MA, breakout anchor, trade plan ----------
+    ax1.plot(wk.index, wk["Close"], color="#1f77b4", linewidth=1.6, label="Weekly close")
+    ax1.plot(ma30.index, ma30, color="#e0a800", linewidth=2.0, label="30-week MA")
+    if p.get("breakout_date"):
+        try:
+            bd = pd.to_datetime(p["breakout_date"])
+            ax1.scatter([bd], [p["breakout_price"]], marker="^", s=130,
+                        color="#1a7f37", zorder=5)
+            ax1.annotate(f"Stage 2 breakout\n{p['breakout_date']}"
+                         f" @ {p['breakout_price']:.2f}",
+                         xy=(bd, p["breakout_price"]),
+                         xytext=(10, -35), textcoords="offset points",
+                         fontsize=8, color="#1a7f37", fontweight="bold")
+        except Exception:
+            pass
+    for level, color, label in [
+            (p["buy_stop"], "#1a7f37", f"buy-stop {p['buy_stop']:.2f}"),
+            (p["stop_loss"], "#cf222e", f"stop {p['stop_loss']:.2f} (30w MA invalidator)"),
+            (p["target"], "#6f42c1", f"target {p['target']:.2f}")]:
+        if level and level > 0:
+            ax1.axhline(level, color=color, linestyle="--", linewidth=1.1)
+            ax1.text(0.99, level, label + " ", fontsize=7.5, color=color,
+                     va="bottom", ha="right", fontweight="bold",
+                     transform=ax1.get_yaxis_transform())
+    ax1.legend(loc="upper left", fontsize=8)
+    ax1.grid(alpha=0.2)
+    ax1.set_ylabel("Price")
+
+    # -- Panel 2: weekly volume with surge highlighted ---------------------
+    if "Volume" in wk.columns:
+        vavg = wk["Volume"].rolling(30).mean()
+        colors = ["#1a7f37" if v >= 1.5 * a else "#b0b7c0"
+                  for v, a in zip(wk["Volume"], vavg.fillna(wk["Volume"].mean()))]
+        ax2.bar(wk.index, wk["Volume"], width=5.0, color=colors)
+        ax2.plot(vavg.index, vavg, color="#e0a800", linewidth=1.2)
+        ax2.set_ylabel("Volume")
+        ax2.text(0.01, 0.85, f"green = >=1.5x 30w avg · latest surge {p['volume_surge']:.1f}x",
+                 transform=ax2.transAxes, fontsize=7.5, color="#57606a")
+        ax2.grid(alpha=0.15)
+
+    # -- Panel 3: Mansfield RS vs SPY --------------------------------------
+    spy = price_cache.get_history("SPY")
+    if spy is not None and "Close" in spy.columns:
+        sw = _weekly(spy)["Close"].reindex(wk.index).ffill()
+        ratio = (wk["Close"] / sw).dropna()
+        rma = ratio.rolling(52, min_periods=26).mean()
+        mans = ((ratio / rma) - 1.0) * 100
+        ax3.plot(mans.index, mans, color="#1f77b4", linewidth=1.4)
+        ax3.axhline(0, color="#57606a", linewidth=0.9)
+        ax3.fill_between(mans.index, mans, 0, where=(mans >= 0),
+                         color="#1a7f37", alpha=0.25)
+        ax3.fill_between(mans.index, mans, 0, where=(mans < 0),
+                         color="#cf222e", alpha=0.2)
+        ax3.set_ylabel("Mansfield RS")
+        ax3.text(0.01, 0.85, f"above zero = outperforming SPY · now {p['mansfield_rs']:+.1f}",
+                 transform=ax3.transAxes, fontsize=7.5, color="#57606a")
+        ax3.grid(alpha=0.15)
+
+    fig.text(0.07, 0.03,
+             _esc(f"Signals passed: Stage 2 · rising 30w MA · volume {p['volume_surge']:.1f}x · "
+                  f"RS {p['mansfield_rs']:+.1f} · {p['pct_above_ma']:+.1f}% vs MA (not extended) · "
+                  f"R/R {p['risk_reward']:.1f}. Enter only on breakout through the buy-stop; "
+                  f"exit on a weekly close below the stop. Educational, not financial advice."),
+             fontsize=7, color="#888888", wrap=True)
+    fig.subplots_adjust(top=0.94, bottom=0.09, left=0.09, right=0.97, hspace=0.12)
+    pdf.savefig(fig)
+    plt.close(fig)
 
 
 # ---------------------------------------------------------------------------
