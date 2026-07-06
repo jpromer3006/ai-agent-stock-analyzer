@@ -112,6 +112,45 @@ def _holdings_pnl(rec: dict) -> dict:
     }
 
 
+def _todays_actions(rec: dict | None) -> list[str]:
+    """The Weinstein exit workflow, pre-chewed into a morning checklist.
+    Stops only ratchet UP (under the rising 30-week MA); Stage 3 gets flagged
+    to sell into strength; invalidated names get an exit call. An empty list
+    means the honest answer is: nothing to do today."""
+    if not rec:
+        return []
+    from data import price_cache
+    from ml.stage_analyzer import analyze_stage
+    acts: list[str] = []
+    for h in rec.get("holdings", []):
+        t = h["ticker"]
+        df = price_cache.get_history(t)
+        if df is None or len(df) < 160 or "Close" not in df.columns:
+            continue
+        last = float(df["Close"].dropna().iloc[-1])
+        stop = float(h.get("stop") or 0.0)
+        if stop and last < stop:
+            acts.append(f"EXIT {t}: closed {last:.2f}, below the stop {stop:.2f}")
+            continue
+        try:
+            r = analyze_stage(t, df=df, use_cache=True)
+        except Exception:
+            continue
+        if getattr(r, "is_invalidated", False) or r.stage == 4:
+            acts.append(f"EXIT {t}: weekly close below the 30-week MA "
+                        f"(Stage {r.stage} — Weinstein invalidation)")
+            continue
+        if r.stage == 3:
+            acts.append(f"REVIEW {t}: entered Stage 3 (topping) — "
+                        "consider selling into strength, no new money")
+            continue
+        new_stop = round(float(getattr(r, "ma_30w", 0.0)), 2)
+        if r.stage == 2 and stop and new_stop > stop * 1.01 and new_stop < last:
+            acts.append(f"RAISE STOP {t}: {stop:.2f} -> {new_stop:.2f} "
+                        "(ratchet under the rising 30-week MA; never lower it)")
+    return acts
+
+
 def build_report_data(opps: dict | None = None, changes: dict | None = None) -> dict:
     """Everything the report needs, in one dict."""
     try:
@@ -150,7 +189,8 @@ def build_report_data(opps: dict | None = None, changes: dict | None = None) -> 
     return {"date": f"{datetime.now():%A, %B %d, %Y}", "regime": regime, "vix": vix,
             "indexes": _index_snapshot(), "proposal": rec, "pnl": pnl,
             "scoreboard": scoreboard, "opps": opps, "changes": changes or {},
-            "top_picks": picks, "etf_picks": etf_picks}
+            "top_picks": picks, "etf_picks": etf_picks,
+            "actions": _todays_actions(rec)}
 
 
 # ---------------------------------------------------------------------------
@@ -228,6 +268,19 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
             if pnl.get("stops_hit"):
                 lines.append(("⚠ BELOW STOP: " + ", ".join(pnl["stops_hit"]),
                               {"weight": "bold", "color": "#cf222e", "dy": 0.026}))
+        # ---- Today's Actions (the exit workflow, pre-chewed) --------------
+        acts = data.get("actions") or []
+        lines.append(("TODAY'S ACTIONS", {"weight": "bold", "dy": 0.024}))
+        if acts:
+            for a in acts[:10]:
+                color = "#cf222e" if a.startswith("EXIT") else \
+                        "#9a6700" if a.startswith("REVIEW") else "#1a7f37"
+                lines.append((f"  • {a}", {"dy": 0.021, "color": color, "size": 9}))
+        else:
+            lines.append(("  Nothing to do today. The book is behaving — "
+                          "let the winners run.", {"dy": 0.022, "color": "#1a7f37"}))
+        lines.append(("", {"dy": 0.006}))
+
         ch = data.get("changes") or {}
         if ch.get("added") or ch.get("removed"):
             lines.append(("CHANGES vs previous run:", {"weight": "bold", "dy": 0.024}))
@@ -510,6 +563,13 @@ def _summary_body(data: dict) -> str:
     ]
     if pnl.get("stops_hit"):
         lines.append("BELOW STOP: " + ", ".join(pnl["stops_hit"]))
+    acts = data.get("actions") or []
+    lines.append("")
+    lines.append("TODAY'S ACTIONS:")
+    if acts:
+        lines += [f"  - {a}" for a in acts[:10]]
+    else:
+        lines.append("  Nothing to do today. The book is behaving — let the winners run.")
     bts = (data.get("opps") or {}).get("breakouts") or []
     if bts:
         lines.append("IPO breakouts: " + ", ".join(o["ticker"] for o in bts[:8]))

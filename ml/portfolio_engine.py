@@ -58,6 +58,12 @@ class PortfolioConfig:
     use_memory: bool = True          # tilt strategy weights by what worked in similar past states
     min_price: float = 5.0           # liquidity gate: drop sub-$5 / penny names
     min_dollar_vol: float = 25_000_000.0  # min 20d avg dollar volume (real, liquid names)
+    # Account-level risk layer (JP, 2026-07-06): the risk WALLET and the
+    # cold-streak THROTTLE. Heat = total dollars lost if every stop hit at
+    # once; capped as a hard build constraint. The throttle scales risk per
+    # trade by the mandate's own trailing expectancy (graduated steps).
+    max_heat: float = 0.06           # risk wallet: max total open risk, 6% of account
+    use_throttle: bool = True        # graduated cold-streak throttle on/off
     # Manual override: tickers the user pins are ALWAYS placed in the book,
     # bypassing the liquidity / eligibility / composite gates, with a
     # protective fallback stop if no strategy supplies one. Flagged manual.
@@ -210,6 +216,35 @@ def _atr20_pct(df) -> float:
         return atr / last if last > 0 else 0.02
     except Exception:
         return 0.02
+
+
+def drawdown_throttle(mandate: str) -> tuple[float, str]:
+    """The cold-streak throttle (graduated). Scales risk per trade by the
+    mandate's own trailing expectancy on the honest scoreboard:
+
+        expectancy > +0.5%   -> 1.00 (winning: full size)
+        -0.5% .. +0.5%       -> 0.75 (flat: three-quarter size)
+        -3.0% .. -0.5%       -> 0.50 (losing: half size)
+        below -3.0%          -> 0.25 (severe streak: quarter size)
+
+    Full size must be earned back with wins. No throttle until at least 10
+    positions have been graded — a thin record is noise, not evidence."""
+    try:
+        from ml.portfolio_journal import compare_by_mandate
+        v = compare_by_mandate().get(mandate) or {}
+    except Exception:
+        return 1.0, ""
+    n = int(v.get("positions_scored") or 0)
+    exp = v.get("expectancy_pct")
+    if n < 10 or exp is None:
+        return 1.0, ""
+    if exp > 0.5:
+        return 1.0, f"throttle: full size (expectancy {exp:+.2f}% over {n} positions)"
+    if exp >= -0.5:
+        return 0.75, f"throttle: 3/4 size (flat expectancy {exp:+.2f}% over {n} positions)"
+    if exp >= -3.0:
+        return 0.50, f"throttle: HALF size (negative expectancy {exp:+.2f}% over {n} positions)"
+    return 0.25, f"throttle: QUARTER size (severe streak, expectancy {exp:+.2f}% over {n} positions)"
 
 
 def entry_risk_gate(df, entry: float, stop: float):
@@ -453,7 +488,11 @@ def build_portfolio(symbols: list[str], config: Optional[PortfolioConfig] = None
     # old "select 25, then size, then delete the zero-share ones with no backfill"
     # flow that left holdings short whenever the risk budget was small.
     enriched.sort(key=lambda h: h.composite, reverse=True)
-    risk_dollars = cfg.account_size * cfg.risk_per_trade
+    # Cold-streak throttle: the system responds to its own losing record the
+    # way its stops respond to a single stock's.
+    throttle, throttle_note = (drawdown_throttle(cfg.mandate)
+                               if cfg.use_throttle else (1.0, ""))
+    risk_dollars = cfg.account_size * cfg.risk_per_trade * throttle
     max_pos_dollars = cfg.account_size * cfg.max_position_pct
 
     def _size(h: "Holding") -> int:
@@ -477,6 +516,8 @@ def build_portfolio(symbols: list[str], config: Optional[PortfolioConfig] = None
     _EARNINGS_BLACKOUT_MANDATES = {"fast_momentum", "swing_momentum"}
     selected: list[Holding] = []
     sector_count: dict[str, int] = {}
+    heat_budget = cfg.max_heat * cfg.account_size
+    heat_used = 0.0
     for h in enriched:
         if len(selected) >= cfg.max_positions:
             break
@@ -486,6 +527,20 @@ def build_portfolio(symbols: list[str], config: Optional[PortfolioConfig] = None
             continue
         if _size(h) < 1:                                 # stop too far for budget — skip, don't waste a slot
             continue
+        # The risk WALLET (hard heat cap): total worst-case loss if every stop
+        # hit at once may never exceed max_heat of the account. When the
+        # wallet can only partly afford this name, shrink it to fit; when it
+        # can't afford a single share, the wallet is spent — stop adding,
+        # whatever the next signal looks like.
+        if heat_used + h.risk_dollars > heat_budget:
+            per_share_risk = h.entry - h.stop
+            fit = int((heat_budget - heat_used) / per_share_risk) if per_share_risk > 0 else 0
+            if fit < 1:
+                break
+            h.shares = min(h.shares, fit)
+            h.dollars = round(h.shares * h.entry, 2)
+            h.risk_dollars = round(h.shares * per_share_risk, 2)
+        heat_used += h.risk_dollars
         selected.append(h)
         sector_count[h.sector] = sector_count.get(h.sector, 0) + 1
 
@@ -552,6 +607,9 @@ def build_portfolio(symbols: list[str], config: Optional[PortfolioConfig] = None
         note=(memory_note
               + (f"Risk gates: {gate_rejects} chase(s) rejected, "
                  f"{stops_widened} noise stop(s) widened. " if (gate_rejects or stops_widened) else "")
+              + f"Risk wallet: {sum(h.risk_dollars for h in selected) / max(cfg.account_size, 1.0):.1%} "
+                f"heat used of {cfg.max_heat:.0%} cap. "
+              + (throttle_note + ". " if throttle_note else "")
               + "All 8 strategies live and blended per regime "
               "(value/growth from fundamentals). Weinstein is one peer, not the base."),
     )
