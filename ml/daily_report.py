@@ -315,7 +315,56 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
                           "Positive means the book makes money.", {"size": 8, "dy": 0.022}))
         _text_page(pdf, lines, "OROS Daily Report")
 
-        # ---- Page 2: Weinstein Top Picks (stocks + ETF track) -------------
+        # ---- Page 2: plain-language guide (JP: anyone must be able to read
+        # this report — jargon decoded here, sources at the bottom) ----------
+        g: list[tuple[str, dict]] = []
+        _H = {"weight": "bold", "dy": 0.024}
+        _B = {"dy": 0.0205, "size": 9}
+        g.append(("WHAT OROS IS", _H))
+        g.append(("  Software that studies the US stock market every day, proposes a", _B))
+        g.append(("  practice portfolio, and emails this report. It never trades and", _B))
+        g.append(("  never touches real money. Everything here is simulated practice.", _B))
+        g.append(("MARKET REGIME (page 1)", _H))
+        g.append(("  The overall health check. SPY is a fund that tracks the S&P 500,", _B))
+        g.append(("  the 500 largest US companies - we use it as 'the market'. If SPY", _B))
+        g.append(("  sits above its own 30-week average price and that average is rising,", _B))
+        g.append(("  conditions are healthy (BULL). VIX is the market's fear gauge - it", _B))
+        g.append(("  measures how much turbulence investors expect. When fear spikes,", _B))
+        g.append(("  OROS gets more cautious even inside a healthy trend.", _B))
+        g.append(("THE 30-WEEK MA (moving average)", _H))
+        g.append(("  The average price over the past 30 weeks - a slow trend line.", _B))
+        g.append(("  Above a rising line = uptrend. It also serves as the safety-net", _B))
+        g.append(("  level: a weekly close below it is the signal to get out.", _B))
+        g.append(("STOP", _H))
+        g.append(("  A pre-chosen exit price under every position. It caps how much any", _B))
+        g.append(("  single idea can lose. Stops only ever move UP, never down.", _B))
+        g.append(("RISK WALLET", _H))
+        g.append(("  The worst-case total loss if every position hit its exit at once.", _B))
+        g.append(("  Hard-capped at 6% of the account: once the wallet is spent, OROS", _B))
+        g.append(("  stops buying, no matter how good the next signal looks.", _B))
+        g.append(("THE THROTTLE", _H))
+        g.append(("  OROS checks its own recent report card before sizing new positions.", _B))
+        g.append(("  When its picks have been losing money, it automatically bets smaller", _B))
+        g.append(("  (three-quarter, half, then quarter size) and must win its way back", _B))
+        g.append(("  to full size. The system responds to its own cold streak.", _B))
+        g.append(("EXPECTANCY (the scoreboard)", _H))
+        g.append(("  The average money made or lost per position, counting wins AND", _B))
+        g.append(("  losses. Positive = the approach makes money over time. We publish", _B))
+        g.append(("  it even when it is negative - especially when it is negative.", _B))
+        g.append(("TOP PICKS", _H))
+        g.append(("  Names that passed every test today, each with a full plan: an entry", _B))
+        g.append(("  trigger, an exit price, and a target. The chart pages show the", _B))
+        g.append(("  evidence behind each signal - nothing is a black box.", _B))
+        g.append(("", {"dy": 0.012}))
+        g.append(("DATA SOURCES & METHOD", _H))
+        g.append(("  Prices: Yahoo Finance. Company filings: SEC EDGAR. Economic context", _B))
+        g.append(("  (interest-rate spreads, credit conditions): US Federal Reserve (FRED).", _B))
+        g.append(("  Method: trend/stage analysis after Stan Weinstein, blended with the", _B))
+        g.append(("  frameworks of Minervini, O'Neil, Graham and Lynch. Educational only;", _B))
+        g.append(("  not financial advice.", _B))
+        _text_page(pdf, g, "How to read this report")
+
+        # ---- Page 3: Weinstein Top Picks (stocks + ETF track) -------------
         tp = data.get("top_picks") or []
         etp = data.get("etf_picks") or []
         if tp or etp:
