@@ -193,7 +193,10 @@ def main() -> int:
             to=report_to)
         try:
             from ml.daily_report import send_daily_report
-            send_daily_report(to=report_to, opps=opps, changes=changes)
+            # Research Memo of the Day rides along only while the LLM budget
+            # cap has room (budget_ok above) — a few cents per weekday.
+            send_daily_report(to=report_to, opps=opps, changes=changes,
+                              research=llm_ok)
         except Exception as e:  # noqa: BLE001
             log.warning("daily report failed: %s", e)
 

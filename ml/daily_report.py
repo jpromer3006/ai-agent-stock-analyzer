@@ -600,6 +600,51 @@ def _pick_chart_page(pdf, plt, p: dict) -> None:
     plt.close(fig)
 
 
+def _research_memo_pdf(data: dict) -> tuple[Path | None, str]:
+    """Research Memo of the Day (Nathaniel's ask): run the multi-specialist
+    research agent on the single best pick and render its cited memo to PDF.
+
+    Subject = the #1 stock Top Pick, else the #1 ETF pick (funds route to the
+    fund specialist). Costs a few cents of LLM; skipped cleanly when disabled
+    (OROS_MEMO=0), when no pick passed the gates, or when no API key exists
+    in this environment. Returns (path or None, status line for the email)."""
+    if os.environ.get("OROS_MEMO", "1") == "0":
+        return None, "Research memo: disabled (OROS_MEMO=0)."
+    picks = (data.get("top_picks") or []) + (data.get("etf_picks") or [])
+    if not picks:
+        return None, ("Research memo: skipped — no pick passed the gates today "
+                      "(no setup means no trade, and nothing to research).")
+    t = picks[0]["ticker"]
+    try:
+        from agents.orchestrator import analyze
+        res = analyze(t)
+        memo = (res.memo or "").strip()
+        if not memo:
+            return None, f"Research memo: agent returned no memo for {t}."
+        out = _REPORT_DIR / f"research_{t}_{datetime.now():%Y-%m-%d}.pdf"
+        try:
+            from ui.components.memo_pdf import memo_to_pdf_bytes
+            pdf_bytes = memo_to_pdf_bytes(memo, t)
+        except Exception:
+            pdf_bytes = None
+        if pdf_bytes:
+            out.write_bytes(pdf_bytes)
+        else:                                   # fall back to markdown attachment
+            out = out.with_suffix(".md")
+            out.write_text(memo)
+        try:                                     # LLM spend into the budget ledger
+            from scripts.oros_run import record_cost
+            record_cost(0.10)
+        except Exception:
+            pass
+        logger.info("research memo written: %s (%s)", out.name, res.agent_name)
+        return out, (f"Research Memo of the Day attached: {t} — analyzed by the "
+                     f"{res.agent_name or 'research'} specialist with SEC-cited claims.")
+    except Exception as e:  # noqa: BLE001
+        logger.warning("research memo failed for %s: %s", t, e)
+        return None, f"Research memo: unavailable today ({type(e).__name__})."
+
+
 # ---------------------------------------------------------------------------
 # Email
 # ---------------------------------------------------------------------------
@@ -642,22 +687,30 @@ def _summary_body(data: dict) -> str:
 
 def send_daily_report(to: str | None = None, opps: dict | None = None,
                       changes: dict | None = None, force: bool = False,
-                      email: bool = True) -> Path:
-    """Build + render + email the daily report. Returns the PDF path.
+                      email: bool = True, research: bool = True) -> Path:
+    """Build + render + email the daily report (and, when possible, the
+    Research Memo of the Day as a second attachment). Returns the PDF path.
     A per-date marker prevents double-sends when both the local launchd job and
     the cloud runner fire on the same day (marker is per machine)."""
     to = to or os.environ.get("OROS_REPORT_TO", "").strip() or DEFAULT_RECIPIENT
     data = build_report_data(opps=opps, changes=changes)
     pdf = render_pdf(data)
+    memo_path, memo_note = (None, "")
+    if research:
+        memo_path, memo_note = _research_memo_pdf(data)
     marker = pdf.with_suffix(".sent")
     if email:
         if marker.exists() and not force:
             logger.info("report already sent today (%s); skipping email", marker.name)
         else:
             from ml.notifier import send_email
+            body = _summary_body(data)
+            if memo_note:
+                body += "\n\n" + memo_note
+            attachments = [pdf] + ([memo_path] if memo_path else [])
             ok = send_email(f"OROS Daily Report — {datetime.now():%b %d, %Y} — "
                             f"{data['regime'].upper()}",
-                            _summary_body(data), to=to, attachments=[pdf])
+                            body, to=to, attachments=attachments)
             if ok:
                 marker.write_text(datetime.utcnow().isoformat() + "Z")
     return pdf
