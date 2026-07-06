@@ -186,7 +186,12 @@ def build_report_data(opps: dict | None = None, changes: dict | None = None) -> 
         etf_picks = weinstein_etf_picks(account=acct)
     except Exception as e:  # noqa: BLE001
         logger.warning("top picks failed: %s", e)
-    return {"date": f"{datetime.now():%A, %B %d, %Y}", "regime": regime, "vix": vix,
+    try:
+        from zoneinfo import ZoneInfo
+        _now = datetime.now(ZoneInfo("America/New_York"))
+    except Exception:
+        _now = datetime.now()
+    return {"date": f"{_now:%A, %B %d, %Y}", "regime": regime, "vix": vix,
             "indexes": _index_snapshot(), "proposal": rec, "pnl": pnl,
             "scoreboard": scoreboard, "opps": opps, "changes": changes or {},
             "top_picks": picks, "etf_picks": etf_picks,

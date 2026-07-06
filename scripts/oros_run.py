@@ -173,8 +173,15 @@ def main() -> int:
         import os as _os
         report_to = (args.report_to or _os.environ.get("OROS_REPORT_TO", "").strip()
                      or "JPR20@fordham.edu")
+        # Timestamps in Eastern Time regardless of where the runner lives
+        # (GitHub's servers are UTC — "scan complete 14:56" confused JP).
+        try:
+            from zoneinfo import ZoneInfo
+            _now_et = datetime.now(ZoneInfo("America/New_York"))
+        except Exception:
+            _now_et = datetime.now()
         send_email(
-            f"OROS: scan complete — {datetime.now():%b %d, %Y %H:%M}",
+            f"OROS: scan complete — {_now_et:%b %d, %Y %H:%M %Z}",
             (f"The automated OROS scan ran.\n\n"
              f"Universe scanned: {len(symbols)} names\n"
              f"Regime: {plan.regime.upper()} | mandate: {mandate}\n"

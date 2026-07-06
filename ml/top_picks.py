@@ -78,6 +78,16 @@ def weinstein_top_picks(symbols: list[str] | None = None,
             symbols = []
         if not symbols:
             symbols = sorted(price_cache.cached_symbols())
+        # The STOCK track must not double-report funds: the liquid ranking
+        # contains ETFs (that's how MDY leaked into both lists on 2026-07-06).
+        # Funds have their own track (weinstein_etf_picks); exclude them here.
+        try:
+            from data.universe import get_universe
+            etfs = {s for s, e in get_universe(filtered=False).items()
+                    if getattr(e, "is_etf", False)}
+            symbols = [s for s in symbols if s not in etfs and s not in set(ETF_UNIVERSE)]
+        except Exception:
+            symbols = [s for s in symbols if s not in set(ETF_UNIVERSE)]
 
     picks: list[dict] = []
     checked = 0
