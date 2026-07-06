@@ -60,9 +60,9 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": 0.0186,
+      "outcome_return": 0.0748,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -77,9 +77,9 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0007,
+      "outcome_return": 0.0381,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -94,9 +94,9 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.0415,
+      "outcome_return": 0.0489,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -111,9 +111,9 @@
       "led_by": "sepa",
       "sentiment": 0.306,
       "earnings_risk": false,
-      "outcome_return": 0.0089,
+      "outcome_return": 0.0116,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -128,9 +128,9 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.0146,
+      "outcome_return": -0.0293,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -162,9 +162,9 @@
       "led_by": "sepa",
       "sentiment": 0.15,
       "earnings_risk": false,
-      "outcome_return": 0.0036,
+      "outcome_return": -0.0119,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -179,10 +179,10 @@
       "led_by": "sepa",
       "sentiment": 0.171,
       "earnings_risk": false,
-      "outcome_return": -0.0032,
-      "outcome_exit": "open",
-      "outcome_days": 3,
-      "outcome_final": false
+      "outcome_return": -0.0415,
+      "outcome_exit": "stop",
+      "outcome_days": 4,
+      "outcome_final": true
     },
     {
       "ticker": "MNST",
@@ -230,9 +230,9 @@
       "led_by": "sepa",
       "sentiment": 0.331,
       "earnings_risk": false,
-      "outcome_return": 0.0162,
+      "outcome_return": -0.0041,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -247,9 +247,9 @@
       "led_by": "sepa",
       "sentiment": 0.128,
       "earnings_risk": false,
-      "outcome_return": -0.0149,
+      "outcome_return": -0.0276,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -302,9 +302,9 @@
       "summary": "within limits; cash 30%"
     }
   ],
-  "realized_avg_return": -0.0893,
+  "realized_avg_return": -0.0773,
   "realized_hit_rate": 0.0,
   "horizon_days": 5,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3
+  "realized_final_count": 4,
+  "realized_stop_exits": 4
 }

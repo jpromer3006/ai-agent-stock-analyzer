@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.341,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0056,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "DGII",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.231,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0394,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CGNX",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.288,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0552,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CATY",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.227,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0006,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "ATEX",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.255,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0153,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BPOP",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.36,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0027,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CAKE",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.092,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0129,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CVS",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.263,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0155,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "ASTH",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.083,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0017,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "AAL",
@@ -156,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.239,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0008,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "ANAB",
@@ -170,7 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.036,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.002,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "LLY",
@@ -184,7 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.251,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0091,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
@@ -220,5 +256,8 @@
     }
   ],
   "realized_avg_return": null,
-  "realized_hit_rate": null
+  "realized_hit_rate": null,
+  "horizon_days": 20,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
 }
