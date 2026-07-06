@@ -81,7 +81,9 @@ jobs:
           PYTHONPATH=. python scripts/oros_run.py --mandate auto --cap 800
 
       - name: Alert on failure (email)
-        if: failure()
+        # failure() alone misses timeout kills (GitHub marks those "cancelled");
+        # both must alert — silence may never look like a quiet day.
+        if: ${{ failure() || cancelled() }}
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
