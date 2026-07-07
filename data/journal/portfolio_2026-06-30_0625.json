@@ -29,7 +29,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0072,
+      "outcome_return": 0.0033,
       "outcome_exit": "open",
       "outcome_days": 3,
       "outcome_final": false
@@ -80,7 +80,7 @@
       "led_by": "weinstein",
       "sentiment": 0.185,
       "earnings_risk": false,
-      "outcome_return": -0.1152,
+      "outcome_return": -0.121,
       "outcome_exit": "open",
       "outcome_days": 3,
       "outcome_final": false
@@ -114,7 +114,7 @@
       "led_by": "technical",
       "sentiment": 0.282,
       "earnings_risk": false,
-      "outcome_return": 0.0426,
+      "outcome_return": 0.0197,
       "outcome_exit": "open",
       "outcome_days": 3,
       "outcome_final": false

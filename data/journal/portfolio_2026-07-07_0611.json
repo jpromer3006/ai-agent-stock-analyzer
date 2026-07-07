@@ -1,0 +1,227 @@
+{
+  "timestamp": "2026-07-07T06:11:43.215117Z",
+  "date": "2026-07-07",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 58523.45,
+  "cash": 41476.55,
+  "weights": {
+    "value": 0.024,
+    "growth": 0.067,
+    "canslim": 0.175,
+    "ipo": 0.118,
+    "technical": 0.111,
+    "weinstein": 0.166,
+    "swing": 0.121,
+    "sepa": 0.218
+  },
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "CATY",
+      "sector": "Financials",
+      "conviction": 0.8086,
+      "shares": 69,
+      "dollars": 4315.95,
+      "weight_pct": 4.32,
+      "entry": 62.55,
+      "stop": 58.05,
+      "led_by": "sepa",
+      "sentiment": 0.227,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.7794,
+      "shares": 20,
+      "dollars": 3373.8,
+      "weight_pct": 3.37,
+      "entry": 168.69,
+      "stop": 153.48,
+      "led_by": "sepa",
+      "sentiment": 0.318,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BATRK",
+      "sector": "Communication Services",
+      "conviction": 0.7522,
+      "shares": 159,
+      "dollars": 8268.0,
+      "weight_pct": 8.27,
+      "entry": 52.0,
+      "stop": 50.04,
+      "led_by": "sepa",
+      "sentiment": 0.349,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.7499,
+      "shares": 40,
+      "dollars": 3618.4,
+      "weight_pct": 3.62,
+      "entry": 90.46,
+      "stop": 82.74,
+      "led_by": "sepa",
+      "sentiment": 0.226,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "EBAY",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7492,
+      "shares": 67,
+      "dollars": 7615.89,
+      "weight_pct": 7.62,
+      "entry": 113.67,
+      "stop": 109.06,
+      "led_by": "sepa",
+      "sentiment": 0.236,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "TSM",
+      "sector": "Semiconductors",
+      "conviction": 0.7444,
+      "shares": 9,
+      "dollars": 4066.11,
+      "weight_pct": 4.07,
+      "entry": 451.79,
+      "stop": 417.89,
+      "led_by": "sepa",
+      "sentiment": 0.015,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "PSA",
+      "sector": "Real Estate",
+      "conviction": 0.7395,
+      "shares": 19,
+      "dollars": 6156.0,
+      "weight_pct": 6.16,
+      "entry": 324.0,
+      "stop": 308.25,
+      "led_by": "sepa",
+      "sentiment": 0.296,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "SPG",
+      "sector": "Real Estate",
+      "conviction": 0.7331,
+      "shares": 18,
+      "dollars": 4050.0,
+      "weight_pct": 4.05,
+      "entry": 225.0,
+      "stop": 207.66,
+      "led_by": "sepa",
+      "sentiment": 0.261,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ALMS",
+      "sector": "Health Care",
+      "conviction": 0.7319,
+      "shares": 80,
+      "dollars": 2181.6,
+      "weight_pct": 2.18,
+      "entry": 27.27,
+      "stop": 23.37,
+      "led_by": "sepa",
+      "sentiment": 0.09,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AEP",
+      "sector": "Utilities",
+      "conviction": 0.7311,
+      "shares": 65,
+      "dollars": 8838.7,
+      "weight_pct": 8.84,
+      "entry": 135.98,
+      "stop": 131.19,
+      "led_by": "sepa",
+      "sentiment": 0.206,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ANET",
+      "sector": "Information Technology",
+      "conviction": 0.7304,
+      "shares": 21,
+      "dollars": 3638.88,
+      "weight_pct": 3.64,
+      "entry": 173.28,
+      "stop": 159.02,
+      "led_by": "sepa",
+      "sentiment": 0.206,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LLY",
+      "sector": "Health Care",
+      "conviction": 0.7266,
+      "shares": 2,
+      "dollars": 2400.12,
+      "weight_pct": 2.4,
+      "entry": 1200.06,
+      "stop": 1059.97,
+      "led_by": "sepa",
+      "sentiment": 0.041,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "647 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 59% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 41%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}
