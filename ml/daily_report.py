@@ -669,8 +669,9 @@ def _research_memo_pdf(data: dict) -> tuple[Path | None, str]:
         except Exception:
             pass
         logger.info("research memo written: %s (%s)", out.name, res.agent_name)
-        return out, (f"Research Memo of the Day attached: {t} — analyzed by the "
-                     f"{res.agent_name or 'research'} specialist with SEC-cited claims.")
+        return out, (f"Research Memo of the Day attached: {t} — analyzed by "
+                     f"{res.agent_name or 'the research specialist'} "
+                     "with SEC-cited claims.")
     except Exception as e:  # noqa: BLE001
         logger.warning("research memo failed for %s: %s", t, e)
         return None, f"Research memo: unavailable today ({type(e).__name__})."
