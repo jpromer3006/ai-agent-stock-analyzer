@@ -166,6 +166,20 @@ def build_report_data(opps: dict | None = None, changes: dict | None = None) -> 
         pass
     rec = _latest_proposal()
     pnl = _holdings_pnl(rec) if rec else {"rows": [], "stops_hit": []}
+    # Fallback: derive added/dropped from the last two proposals when the
+    # runner didn't hand us changes (standalone report runs).
+    if not changes and rec:
+        try:
+            import json as _json
+            from ml.portfolio_journal import list_proposals
+            props = list_proposals()
+            if len(props) >= 2:
+                prev = [h["ticker"] for h in
+                        _json.loads(props[-2].read_text()).get("holdings", [])]
+                from ml.notifier import detect_changes
+                changes = detect_changes([h["ticker"] for h in rec.get("holdings", [])], prev)
+        except Exception:
+            pass
     scoreboard = {}
     try:
         from ml.portfolio_journal import compare_by_mandate
@@ -241,6 +255,12 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
     with PdfPages(out) as pdf:
         # ---- Page 1: market state + portfolio summary -------------------
         lines: list[tuple[str, dict]] = []
+        lines.append(("Signal analysis and trend/timing reads for the coming weeks — "
+                      "every position with a defined exit —", {"size": 9, "dy": 0.018,
+                                                               "color": "#57606a"}))
+        lines.append(("graded by a self-reflection layer (OROS Agentic Intelligence) "
+                      "that analyzes its own decisions.", {"size": 9, "dy": 0.024,
+                                                           "color": "#57606a"}))
         lines.append((f"{data['date']}", {"size": 11, "dy": 0.03}))
         lines.append((f"MARKET REGIME: {data['regime'].upper()}",
                       {"size": 13, "weight": "bold", "dy": 0.03,
@@ -261,14 +281,30 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
 
         rec, pnl = data.get("proposal"), data["pnl"]
         if rec:
+            import textwrap as _tw
             acct = float(rec.get("account") or 0)
-            lines.append(("PORTFOLIO (paper, latest proposal "
-                          f"{rec.get('date', '?')} · mandate {rec.get('mandate', '?')})",
+            inv = float(rec.get("invested") or 0)
+            cash = float(rec.get("cash") or 0)
+            lines.append(("PORTFOLIO HOLDINGS — the refined OROS portfolio "
+                          f"(paper · {rec.get('date', '?')} · mandate {rec.get('mandate', '?')})",
                           {"weight": "bold", "dy": 0.026}))
-            lines.append((f"Positions: {len(pnl['rows'])}   "
-                          f"Invested: ${rec.get('invested', 0):,.0f}   "
-                          f"Cash: ${rec.get('cash', 0):,.0f}   "
-                          f"Account: ${acct:,.0f}", {"dy": 0.024}))
+            ch0 = data.get("changes") or {}
+            added = set(ch0.get("added") or [])
+            names = [h["ticker"] + ("*" if h["ticker"] in added else "")
+                     for h in rec.get("holdings", [])]
+            for ln in _tw.wrap(f"Positions ({len(names)}): " + ", ".join(names), 88)[:3]:
+                lines.append((ln, {"dy": 0.021}))
+            if added:
+                lines.append(("  * added today", {"size": 8.5, "dy": 0.02, "color": "#1a7f37"}))
+            if ch0.get("removed"):
+                lines.append(("Dropped today: " + ", ".join(ch0["removed"]),
+                              {"size": 9, "dy": 0.022, "color": "#cf222e"}))
+            lines.append((f"Account (total to work with): ${acct:,.0f}", {"dy": 0.021}))
+            lines.append((f"Deployed in positions: ${inv:,.0f} ({inv/max(acct,1):.0%})   "
+                          f"Held as cash: ${cash:,.0f} ({cash/max(acct,1):.0%})", {"dy": 0.022}))
+            lines.append(("The regime cap and risk gates decide the deploy/cash split — "
+                          "cash is a decision, not leftovers.", {"size": 8.5, "dy": 0.024,
+                                                                 "color": "#57606a"}))
             up = pnl.get("total_unreal_usd", 0.0)
             lines.append((f"UNREALIZED P&L: ${up:+,.0f} "
                           f"({pnl.get('total_unreal_pct', 0):+.2f}%)   "
@@ -309,31 +345,38 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
             lines.append(("PAPER-TRADE SCOREBOARD (forward, stop-aware, "
                           "graded at each mandate's own horizon)",
                           {"weight": "bold", "dy": 0.024}))
-            lines.append((f"  {'mandate':<16}{'pos':>4}{'hit':>6}{'avg win':>9}"
+            lines.append((f"  {'mandate':<16}{'graded':>7}{'hit':>6}{'avg win':>9}"
                           f"{'avg loss':>9}{'expect':>8}{'stopped':>8}", {"dy": 0.02}))
             def _f(x):
                 return "—" if x is None else f"{x:+.2f}%"
             for m, v in data["scoreboard"].items():
                 hr, st_ = v.get("hit_rate_pct"), v.get("stop_exit_pct")
-                lines.append((f"  {m:<16}{v.get('positions_scored') or 0:>4}"
+                lines.append((f"  {m:<16}{v.get('positions_scored') or 0:>7}"
                               f"{'—' if hr is None else f'{hr:.0f}%':>6}"
                               f"{_f(v.get('avg_win_pct')):>9}{_f(v.get('avg_loss_pct')):>9}"
                               f"{_f(v.get('expectancy_pct')):>8}"
                               f"{'—' if st_ is None else f'{st_:.0f}%':>8}",
                               {"dy": 0.02}))
-            lines.append(("  Expectancy = hit*avg_win + (1-hit)*avg_loss per position. "
-                          "Positive means the book makes money.", {"size": 8, "dy": 0.022}))
+            lines.append(("  graded = positions with a final outcome (a count, not dollars). "
+                          "stopped = share of those that", {"size": 8, "dy": 0.017}))
+            lines.append(("  exited via their stop rather than reaching the time horizon. "
+                          "Expectancy = hit*avg_win + (1-hit)*avg_loss;", {"size": 8, "dy": 0.017}))
+            lines.append(("  positive means the approach makes money per position.",
+                          {"size": 8, "dy": 0.022}))
         _text_page(pdf, lines, "OROS Daily Report")
 
-        # ---- Page 2: plain-language guide (JP: anyone must be able to read
-        # this report — jargon decoded here, sources at the bottom) ----------
+        # ---- Plain-language guide (BUILT here, RENDERED at the end — JP's
+        # readability pass: lead with signal, close with education) ----------
         g: list[tuple[str, dict]] = []
         _H = {"weight": "bold", "dy": 0.024}
         _B = {"dy": 0.0205, "size": 9}
         g.append(("WHAT OROS IS", _H))
         g.append(("  Software that studies the US stock market every day, proposes a", _B))
-        g.append(("  practice portfolio, and emails this report. It never trades and", _B))
-        g.append(("  never touches real money. Everything here is simulated practice.", _B))
+        g.append(("  practice portfolio, and emails this report. Its end goal: maximize", _B))
+        g.append(("  risk-adjusted gains through market analysis by a team of AI agents,", _B))
+        g.append(("  while publishing its honest numbers even when they argue against it.", _B))
+        g.append(("  It never trades and never touches real money. Everything here is", _B))
+        g.append(("  simulated practice.", _B))
         g.append(("MARKET REGIME (page 1)", _H))
         g.append(("  The overall health check. SPY is a fund that tracks the S&P 500,", _B))
         g.append(("  the 500 largest US companies - we use it as 'the market'. If SPY", _B))
@@ -352,11 +395,14 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
         g.append(("  The worst-case total loss if every position hit its exit at once.", _B))
         g.append(("  Hard-capped at 6% of the account: once the wallet is spent, OROS", _B))
         g.append(("  stops buying, no matter how good the next signal looks.", _B))
-        g.append(("THE THROTTLE", _H))
-        g.append(("  OROS checks its own recent report card before sizing new positions.", _B))
-        g.append(("  When its picks have been losing money, it automatically bets smaller", _B))
-        g.append(("  (three-quarter, half, then quarter size) and must win its way back", _B))
-        g.append(("  to full size. The system responds to its own cold streak.", _B))
+        g.append(("OROS AGENTIC INTELLIGENCE (the self-reflection layer)", _H))
+        g.append(("  OROS grades its own past decisions and changes its behavior based on", _B))
+        g.append(("  the result. It checks its recent report card before sizing new", _B))
+        g.append(("  positions: when its picks have been losing money, it automatically", _B))
+        g.append(("  bets smaller (three-quarter, half, then quarter size) and must win", _B))
+        g.append(("  its way back to full size. The same layer picks which strategy to", _B))
+        g.append(("  trust (only ones that have made money forward) and tilts strategy", _B))
+        g.append(("  weights toward what worked in similar past market conditions.", _B))
         g.append(("EXPECTANCY (the scoreboard)", _H))
         g.append(("  The average money made or lost per position, counting wins AND", _B))
         g.append(("  losses. Positive = the approach makes money over time. We publish", _B))
@@ -372,9 +418,9 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
         g.append(("  Method: trend/stage analysis after Stan Weinstein, blended with the", _B))
         g.append(("  frameworks of Minervini, O'Neil, Graham and Lynch. Educational only;", _B))
         g.append(("  not financial advice.", _B))
-        _text_page(pdf, g, "How to read this report")
+        # (guide renders at the end of the report)
 
-        # ---- Agent roles page: who did what (JP: show the agents' roles) ---
+        # ---- Agent roles page: who did what (built here, rendered at end) ---
         trace = (rec or {}).get("agent_trace") or []
         if trace:
             import textwrap
@@ -388,17 +434,26 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
                           {"weight": "bold", "dy": 0.022}))
                 for ln in textwrap.wrap(s.get("summary", ""), 84)[:3]:
                     a.append((f"  {ln}", _B))
+                if s.get("agent") == "RouterAgent":
+                    a.append(("  A retrieval (RAG) system over OROS's strategy library — the", _B))
+                    a.append(("  published methods of Stan Weinstein, Mark Minervini, William", _B))
+                    a.append(("  O'Neil, Benjamin Graham, and Peter Lynch — weighting each", _B))
+                    a.append(("  author's playbook for the current market regime.", _B))
                 a.append(("", {"dy": 0.006}))
             a.append(("", {"dy": 0.01}))
             a.append(("ResearchAgent — deep-dive on the #1 pick", {"weight": "bold", "dy": 0.022}))
-            a.append(("  A separate research specialist (REIT, Bank, Tech, Energy, Fund, ...)", _B))
-            a.append(("  is chosen by a classifier for the day's top pick. It reads the", _B))
-            a.append(("  company's SEC filings and writes the attached memo, with every", _B))
-            a.append(("  claim cited to its source.", _B))
+            a.append(("  A classifier routes the day's top pick to one of 18 industry", _B))
+            a.append(("  specialist agents (REIT, Bank, Biotech, Semiconductors, Software,", _B))
+            a.append(("  AI Compute, Energy, Utilities, Insurance, Defense, Industrials,", _B))
+            a.append(("  Pharma/MedDevice, Consumer, Healthcare, Infrastructure, Tech,", _B))
+            a.append(("  Fund, Generic), supported by a Chartist and a Sentiment Analyst.", _B))
+            a.append(("  Each specializes in abstracting what matters in its industry from", _B))
+            a.append(("  the company's SEC filings, and writes the attached memo with", _B))
+            a.append(("  every claim cited to its source.", _B))
             a.append(("", {"dy": 0.012}))
             a.append(("Guardrail: no agent can place a trade. The whole team proposes and", _B))
             a.append(("journals only.", _B))
-            _text_page(pdf, a, "The agents behind this report")
+            # (agents page renders near the end of the report)
 
         # ---- Page 3: Weinstein Top Picks (stocks + ETF track) -------------
         tp = data.get("top_picks") or []
@@ -431,12 +486,7 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
                      "Trade plan discipline: enter ONLY if price takes out the buy-stop.\n"
                      "Exit on a weekly close below the stop (the 30-week MA invalidator).\n"
                      "Sizes shown risk 1% of the account per name — an illustration of\n"
-                     "disciplined sizing, not an instruction.\n\n"
-                     "ETF track: Weinstein's sector-first doctrine applied to plain\n"
-                     "sector/index/commodity funds — often the safer expression of the\n"
-                     "same signal (diversified, no single-company earnings gap).\n"
-                     "Leveraged and inverse products are excluded: daily-reset leverage\n"
-                     "makes their charts measure arithmetic, not accumulation.",
+                     "disciplined sizing, not an instruction.",
                      fontsize=9, family="monospace", va="top")
             fig.text(0.07, 0.05, "OROS proposes and journals only — it never trades. "
                      "Educational, not financial advice.", fontsize=7, color="#888888")
@@ -459,7 +509,7 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
         if rows:
             fig, ax = plt.subplots(figsize=(8.5, 11))
             ax.axis("off")
-            ax.set_title("Holdings — gains & losses (paper)", fontsize=14,
+            ax.set_title("Portfolio Holdings — gains & losses (paper)", fontsize=14,
                          fontweight="bold", loc="left")
             cells = [[r["ticker"], f"{r['shares']:.0f}", f"{r['entry']:.2f}",
                       f"{r['last']:.2f}", f"{r['stop']:.2f}",
@@ -517,13 +567,23 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
                     tbl.auto_set_font_size(False)
                     tbl.set_fontsize(8)
                     tbl.scale(1, 1.4)
-                    fig.text(0.07, 0.02, res.note + "  A backtest of today's weights, "
+                    fig.text(0.07, 0.045, res.note + "  A backtest of today's weights, "
                              "not the forward record. If the index fund keeps winning, "
-                             "that itself is a finding.", fontsize=7, color="#888888")
+                             "that itself is a finding.\nETF track note: plain sector/index/"
+                             "commodity funds are valid picks in their own right (often the "
+                             "safer expression of a signal); leveraged and inverse products "
+                             "are excluded because daily-reset\nleverage makes their charts "
+                             "measure arithmetic, not accumulation.",
+                             fontsize=7, color="#888888")
                     pdf.savefig(fig)
                     plt.close(fig)
             except Exception as e:  # noqa: BLE001
                 logger.warning("benchmark page failed: %s", e)
+
+        # ---- Closing pages: the team, then the how-to guide ----------------
+        if trace:
+            _text_page(pdf, a, "The agents behind this report")
+        _text_page(pdf, g, "How to read this report")
 
     logger.info("report written: %s", out)
     return out
