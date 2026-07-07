@@ -192,6 +192,12 @@ def build_report_data(opps: dict | None = None, changes: dict | None = None) -> 
             opps = scan_opportunities(max_check=200)
         except Exception:
             opps = {"breakouts": [], "watch": []}
+    my_book = None
+    try:
+        from ml.my_portfolio import analyze_book
+        my_book = analyze_book()
+    except Exception as e:  # noqa: BLE001
+        logger.warning("my_portfolio analysis failed: %s", e)
     picks, etf_picks = [], []
     try:
         from ml.top_picks import weinstein_top_picks, weinstein_etf_picks
@@ -209,7 +215,7 @@ def build_report_data(opps: dict | None = None, changes: dict | None = None) -> 
             "indexes": _index_snapshot(), "proposal": rec, "pnl": pnl,
             "scoreboard": scoreboard, "opps": opps, "changes": changes or {},
             "top_picks": picks, "etf_picks": etf_picks,
-            "actions": _todays_actions(rec)}
+            "actions": _todays_actions(rec), "my_book": my_book}
 
 
 # ---------------------------------------------------------------------------
@@ -407,6 +413,12 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
         g.append(("  The average money made or lost per position, counting wins AND", _B))
         g.append(("  losses. Positive = the approach makes money over time. We publish", _B))
         g.append(("  it even when it is negative - especially when it is negative.", _B))
+        g.append(("MY HOLDINGS (your real book)", _H))
+        g.append(("  The owner can register their actual brokerage positions and OROS", _B))
+        g.append(("  watches them daily with the same discipline as its own paper book:", _B))
+        g.append(("  every position gets a stop, stops only ratchet up, and the actions", _B))
+        g.append(("  list covers the real holdings. Tracked only - OROS never trades or", _B))
+        g.append(("  touches the account, and its readings are not personalized advice.", _B))
         g.append(("TOP PICKS", _H))
         g.append(("  Names that passed every test today, each with a full plan: an entry", _B))
         g.append(("  trigger, an exit price, and a target. The chart pages show the", _B))
@@ -529,6 +541,67 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
                 tbl[j, 7].set_text_props(color=color)
                 if r["below_stop"]:
                     tbl[j, 0].set_text_props(color="#cf222e", fontweight="bold")
+            pdf.savefig(fig)
+            plt.close(fig)
+
+        # ---- Your real book (My Holdings, tracked only) --------------------
+        mb = data.get("my_book")
+        if mb and mb.get("rows"):
+            fig, ax = plt.subplots(figsize=(8.5, 11))
+            ax.axis("off")
+            ax.set_title(_esc(f"{mb['name']} — your real holdings (tracked only)"),
+                         fontsize=14, fontweight="bold", loc="left")
+            cells = [[r["ticker"], f"{r['shares']:.0f}", f"{r['basis']:.2f}",
+                      f"{r['last']:.2f}", f"{r['stop']:.2f}", f"{r['stage']}",
+                      f"{r['day_pct']:+.2f}%", _esc(f"${r['day_usd']:+,.0f}"),
+                      f"{r['pnl_pct']:+.1f}%", _esc(f"${r['pnl_usd']:+,.0f}")]
+                     for r in mb["rows"]]
+            tbl = ax.table(cellText=cells, colLabels=[
+                "Ticker", "Shares", "Basis", "Last", "Stop", "Stage",
+                "Day %", _esc("Day $"), _esc("P&L %"), _esc("P&L $")],
+                loc="upper center", cellLoc="right")
+            tbl.auto_set_font_size(False)
+            tbl.set_fontsize(8)
+            tbl.scale(1, 1.35)
+            for j, r in enumerate(mb["rows"], start=1):
+                color = "#1a7f37" if r["pnl_usd"] >= 0 else "#cf222e"
+                tbl[j, 9].set_text_props(color=color, fontweight="bold")
+                tbl[j, 8].set_text_props(color=color)
+                if r["below_stop"] or r["stage"] in (3, 4):
+                    tbl[j, 0].set_text_props(color="#cf222e", fontweight="bold")
+            lev = mb["leverage"]
+            y0 = 0.55
+            fig.text(0.07, y0, _esc(
+                f"Equity ${mb['equity']:,.0f}  =  positions ${mb['market_value']:,.0f} "
+                f"minus margin ${mb['margin_debt']:,.0f}   ·   leverage {lev:.2f}x"),
+                fontsize=10, fontweight="bold")
+            fig.text(0.07, y0 - 0.03, _esc(
+                f"Today {mb['day_usd']:+,.0f}   ·   vs cost basis "
+                f"{mb['total_pnl_usd']:+,.0f} ({mb['total_pnl_pct']:+.1f}%)   ·   "
+                f"if every stop were honored tomorrow: -${mb['loss_to_stops']:,.0f} "
+                f"({mb['loss_to_stops_pct_equity']:.1f}% of equity)"), fontsize=9)
+            if lev > 1.05:
+                fig.text(0.07, y0 - 0.06, _esc(
+                    f"Margin note: at {lev:.2f}x leverage a 10% market move swings equity "
+                    f"~{10*lev:.0f}%, both directions, plus daily interest."),
+                    fontsize=9, color="#cf222e")
+            ya = y0 - 0.10
+            fig.text(0.07, ya, "ACTIONS ON YOUR BOOK TODAY", fontsize=10, fontweight="bold")
+            acts = mb.get("actions") or []
+            if acts:
+                for i, aline in enumerate(acts[:8]):
+                    col = "#cf222e" if aline.startswith("EXIT") else \
+                          "#9a6700" if aline.startswith("REVIEW") else "#1a7f37"
+                    fig.text(0.07, ya - 0.025 * (i + 1), _esc("• " + aline),
+                             fontsize=9, color=col)
+            else:
+                fig.text(0.07, ya - 0.025, "• Nothing needs your hand today.",
+                         fontsize=9, color="#1a7f37")
+            fig.text(0.07, 0.05, "House rule: every position has a stop; stops ratchet up "
+                     "under the rising 30-week MA, never down. OROS tracks this book only — "
+                     "it never trades or touches the account. System readings, not "
+                     "personalized advice; the decisions stay yours.",
+                     fontsize=7, color="#888888")
             pdf.savefig(fig)
             plt.close(fig)
 
@@ -761,6 +834,18 @@ def _summary_body(data: dict) -> str:
         lines += [f"  - {a}" for a in acts[:10]]
     else:
         lines.append("  Nothing to do today. The book is behaving — let the winners run.")
+    mb = data.get("my_book")
+    if mb and mb.get("rows"):
+        lines.append("")
+        lines.append(f"YOUR REAL BOOK — {mb['name']} (tracked only):")
+        lines.append(f"  Equity ${mb['equity']:,.0f} (leverage {mb['leverage']:.2f}x) | "
+                     f"Today {mb['day_usd']:+,.0f} | vs basis {mb['total_pnl_usd']:+,.0f} "
+                     f"({mb['total_pnl_pct']:+.1f}%)")
+        macts = mb.get("actions") or []
+        if macts:
+            lines += [f"  - {a}" for a in macts[:8]]
+        else:
+            lines.append("  - Nothing needs your hand today.")
     bts = (data.get("opps") or {}).get("breakouts") or []
     if bts:
         lines.append("IPO breakouts: " + ", ".join(o["ticker"] for o in bts[:8]))

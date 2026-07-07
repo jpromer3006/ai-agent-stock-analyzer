@@ -1,0 +1,16 @@
+{
+  "name": "Chase Self-Directed (...8661)",
+  "note": "JP's real book - TRACKED ONLY. OROS never trades or touches the account. Stops are Weinstein 30-week-MA levels, ratcheted up daily, never down. Update holdings here (or tell Claude) whenever a real trade happens.",
+  "updated": "2026-07-06",
+  "margin_debt": 25215.87,
+  "holdings": [
+    {"ticker": "AAPL", "shares": 50, "cost_basis": 312.04, "stop": 274.14},
+    {"ticker": "AVGO", "shares": 40, "cost_basis": 428.16, "stop": 364.73},
+    {"ticker": "WELL", "shares": 20, "cost_basis": 209.49, "stop": 202.60},
+    {"ticker": "DY",   "shares": 10, "cost_basis": 542.68, "stop": 398.23},
+    {"ticker": "NVDA", "shares": 16, "cost_basis": 158.24, "stop": 192.63},
+    {"ticker": "TSLA", "shares": 6,  "cost_basis": 317.10, "stop": 413.57},
+    {"ticker": "HOOD", "shares": 10, "cost_basis": 84.36,  "stop": 92.40},
+    {"ticker": "CAT",  "shares": 1,  "cost_basis": 891.67, "stop": 756.89}
+  ]
+}

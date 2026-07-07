@@ -56,6 +56,16 @@ def build_broadcast_script(data: dict) -> str:
     else:
         lines.append("Nothing needs your attention today. The book is behaving.")
 
+    mb = data.get("my_book")
+    if mb and mb.get("rows"):
+        d = mb.get("day_usd", 0.0)
+        macts = mb.get("actions") or []
+        lines.append(f"Your real book is {'up' if d >= 0 else 'down'} "
+                     f"{abs(d):,.0f} dollars today"
+                     + (f", with {len(macts)} action item"
+                        f"{'s' if len(macts) != 1 else ''} in the report."
+                        if macts else ", and nothing needs your hand."))
+
     if picks:
         p = picks[0]
         kind = "fund" if p.get("is_etf") else "stock"
