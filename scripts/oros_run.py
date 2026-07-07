@@ -198,7 +198,15 @@ def main() -> int:
             send_daily_report(to=report_to, opps=opps, changes=changes,
                               research=llm_ok)
         except Exception as e:  # noqa: BLE001
+            # A missing report must never be a whisper in a log (the 07-07
+            # lesson). Alert loudly — SMTP itself clearly works if we got
+            # this far, since the scan-complete email just went out.
             log.warning("daily report failed: %s", e)
+            send_email("OROS ALERT: daily report FAILED to generate",
+                       f"The scan completed but the report step raised:\n\n"
+                       f"{type(e).__name__}: {e}\n\n"
+                       "The scan-complete email is unaffected. Check the run "
+                       "log for the traceback.", to=report_to)
 
     # 7. Collect the day's features into the training warehouse, and label old rows
     wh = {}

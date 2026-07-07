@@ -37,3 +37,6 @@ Thumbs.db
 *.log
 
 # Evaluation outputs — commit these for reproducibility and transparency
+
+# Email dedupe markers are per-machine, never shared state
+data/journal/reports/*.sent
