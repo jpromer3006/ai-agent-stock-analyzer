@@ -784,7 +784,9 @@ def _research_memo_pdf(data: dict) -> tuple[Path | None, str]:
         res = analyze(t)
         memo = (res.memo or "").strip()
         if not memo:
-            return None, f"Research memo: agent returned no memo for {t}."
+            return None, (f"Research memo: the research agent could not complete "
+                          f"{t} today (environment or API issue — the rest of the "
+                          "report is unaffected).")
         out = _REPORT_DIR / f"research_{t}_{datetime.now():%Y-%m-%d}.pdf"
         try:
             from ui.components.memo_pdf import memo_to_pdf_bytes
