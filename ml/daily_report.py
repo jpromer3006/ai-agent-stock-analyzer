@@ -231,7 +231,12 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
     import matplotlib.pyplot as plt
     from matplotlib.backends.backend_pdf import PdfPages
 
-    out = out_path or _REPORT_DIR / f"oros_report_{datetime.now():%Y-%m-%d}.pdf"
+    try:
+        from zoneinfo import ZoneInfo
+        _today = datetime.now(ZoneInfo("America/New_York"))
+    except Exception:
+        _today = datetime.now()
+    out = out_path or _REPORT_DIR / f"oros_report_{_today:%Y-%m-%d}.pdf"
     reg_color = {"bull": "#1a7f37", "neutral": "#9a6700", "bear": "#cf222e"}
     with PdfPages(out) as pdf:
         # ---- Page 1: market state + portfolio summary -------------------
@@ -368,6 +373,32 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
         g.append(("  frameworks of Minervini, O'Neil, Graham and Lynch. Educational only;", _B))
         g.append(("  not financial advice.", _B))
         _text_page(pdf, g, "How to read this report")
+
+        # ---- Agent roles page: who did what (JP: show the agents' roles) ---
+        trace = (rec or {}).get("agent_trace") or []
+        if trace:
+            import textwrap
+            a: list[tuple[str, dict]] = []
+            a.append(("OROS is a team of specialist agents, not one program. Each has", _B))
+            a.append(("one job and hands its output to the next - the same trace is", _B))
+            a.append(("journaled with every build, so each decision is auditable.", _B))
+            a.append(("", {"dy": 0.012}))
+            for s in trace:
+                a.append((f"{s.get('agent', '?')} — {s.get('role', '')}",
+                          {"weight": "bold", "dy": 0.022}))
+                for ln in textwrap.wrap(s.get("summary", ""), 84)[:3]:
+                    a.append((f"  {ln}", _B))
+                a.append(("", {"dy": 0.006}))
+            a.append(("", {"dy": 0.01}))
+            a.append(("ResearchAgent — deep-dive on the #1 pick", {"weight": "bold", "dy": 0.022}))
+            a.append(("  A separate research specialist (REIT, Bank, Tech, Energy, Fund, ...)", _B))
+            a.append(("  is chosen by a classifier for the day's top pick. It reads the", _B))
+            a.append(("  company's SEC filings and writes the attached memo, with every", _B))
+            a.append(("  claim cited to its source.", _B))
+            a.append(("", {"dy": 0.012}))
+            a.append(("Guardrail: no agent can place a trade. The whole team proposes and", _B))
+            a.append(("journals only.", _B))
+            _text_page(pdf, a, "The agents behind this report")
 
         # ---- Page 3: Weinstein Top Picks (stocks + ETF track) -------------
         tp = data.get("top_picks") or []
