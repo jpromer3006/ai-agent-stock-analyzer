@@ -729,6 +729,13 @@ def send_daily_report(to: str | None = None, opps: dict | None = None,
     memo_path, memo_note = (None, "")
     if research:
         memo_path, memo_note = _research_memo_pdf(data)
+    # The 60-second audio morning brief (ElevenLabs; skips cleanly without a key).
+    audio_path, audio_note = (None, "")
+    try:
+        from ml.daily_broadcast import generate_broadcast
+        audio_path, audio_note = generate_broadcast(data)
+    except Exception as e:  # noqa: BLE001
+        logger.warning("broadcast failed: %s", e)
     marker = pdf.with_suffix(".sent")
     if email:
         if marker.exists() and not force:
@@ -738,7 +745,10 @@ def send_daily_report(to: str | None = None, opps: dict | None = None,
             body = _summary_body(data)
             if memo_note:
                 body += "\n\n" + memo_note
-            attachments = [pdf] + ([memo_path] if memo_path else [])
+            if audio_note:
+                body += "\n" + audio_note
+            attachments = ([pdf] + ([memo_path] if memo_path else [])
+                           + ([audio_path] if audio_path else []))
             ok = send_email(f"OROS Daily Report — {datetime.now():%b %d, %Y} — "
                             f"{data['regime'].upper()}",
                             body, to=to, attachments=attachments)

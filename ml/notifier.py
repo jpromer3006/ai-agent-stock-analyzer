@@ -116,8 +116,11 @@ def send_email(subject: str, body: str, to: str | None = None,
             p = Path(p)
             if not p.exists():
                 continue
-            maintype, subtype = ("application", "pdf") if p.suffix == ".pdf" \
-                else ("application", "octet-stream")
+            maintype, subtype = {
+                ".pdf": ("application", "pdf"),
+                ".mp3": ("audio", "mpeg"),
+                ".md": ("text", "markdown"),
+            }.get(p.suffix, ("application", "octet-stream"))
             msg.add_attachment(p.read_bytes(), maintype=maintype,
                                subtype=subtype, filename=p.name)
         with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30) as s:
