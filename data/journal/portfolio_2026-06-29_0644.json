@@ -44,9 +44,9 @@
       "led_by": "sepa",
       "sentiment": 0.54,
       "earnings_risk": false,
-      "outcome_return": -0.0358,
+      "outcome_return": -0.0305,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -75,9 +75,9 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.023,
+      "outcome_return": -0.1194,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -92,9 +92,9 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": -0.0969,
+      "outcome_return": -0.1742,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -123,9 +123,9 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": 0.044,
+      "outcome_return": -0.0409,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -188,9 +188,9 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": -0.065,
+      "outcome_return": -0.0521,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -219,9 +219,9 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0229,
+      "outcome_return": 0.007,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -267,9 +267,9 @@
       "led_by": "sepa",
       "sentiment": 0.293,
       "earnings_risk": false,
-      "outcome_return": -0.0383,
+      "outcome_return": -0.0946,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -284,10 +284,10 @@
       "led_by": "sepa",
       "sentiment": 0.238,
       "earnings_risk": false,
-      "outcome_return": -0.1957,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.2676,
+      "outcome_exit": "stop",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "BEAM",
@@ -301,9 +301,9 @@
       "led_by": "sepa",
       "sentiment": 0.274,
       "earnings_risk": false,
-      "outcome_return": 0.0147,
+      "outcome_return": 0.0319,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     }
   ],
@@ -339,9 +339,9 @@
       "summary": "within limits; cash 46%"
     }
   ],
-  "realized_avg_return": -0.0789,
+  "realized_avg_return": -0.1261,
   "realized_hit_rate": 0.0,
   "horizon_days": 20,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3
+  "realized_final_count": 4,
+  "realized_stop_exits": 4
 }
