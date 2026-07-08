@@ -20,14 +20,25 @@ LOG="data/journal/watchdog_$(date +%Y-%m-%d).log"
 {
   echo "==== watchdog $(date '+%Y-%m-%d %H:%M:%S %Z') ===="
   TODAY=$(date +%Y-%m-%d)
+  HOUR=$(date +%H)
+
+  # Two patrols per trading day. The evening patrol must NOT be satisfied by
+  # the morning's journal commit, so it only counts commits after 16:30.
+  if [[ ${HOUR} -ge 16 ]]; then
+    SINCE="${TODAY} 16:30:00"
+    PATROL="close-wrap (16:50 cloud slot)"
+  else
+    SINCE="${TODAY} 00:00:00"
+    PATROL="morning (9:05 cloud slot)"
+  fi
 
   git fetch origin main --quiet 2>/dev/null
-  if git log origin/main --grep="journal ${TODAY}" --oneline | grep -q journal; then
-    echo "cloud already delivered today's run - nothing to do"
+  if git log origin/main --grep="journal ${TODAY}" --since="${SINCE}" --oneline | grep -q journal; then
+    echo "cloud already delivered the ${PATROL} run - nothing to do"
     exit 0
   fi
 
-  echo "NO cloud journal for ${TODAY} by 10:20 ET - running local fallback"
+  echo "NO cloud journal for the ${PATROL} - running local fallback"
   if [[ -f "$CONDA_BASE/bin/activate" ]]; then
     source "$CONDA_BASE/bin/activate"
     conda activate "$CONDA_ENV" 2>/dev/null
