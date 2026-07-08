@@ -30,7 +30,7 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0401,
+      "outcome_return": -0.0368,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -78,7 +78,7 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.1121,
+      "outcome_return": -0.111,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -95,7 +95,7 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0269,
+      "outcome_return": 0.022,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -112,7 +112,7 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.0102,
+      "outcome_return": -0.0133,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -163,9 +163,9 @@
       "led_by": "sepa",
       "sentiment": 0.331,
       "earnings_risk": false,
-      "outcome_return": 0.0195,
+      "outcome_return": -0.0112,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -197,7 +197,7 @@
       "led_by": "sepa",
       "sentiment": 0.171,
       "earnings_risk": false,
-      "outcome_return": -0.0222,
+      "outcome_return": -0.007,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -214,7 +214,7 @@
       "led_by": "sepa",
       "sentiment": 0.15,
       "earnings_risk": false,
-      "outcome_return": -0.0008,
+      "outcome_return": 0.0012,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -248,7 +248,7 @@
       "led_by": "sepa",
       "sentiment": 0.128,
       "earnings_risk": false,
-      "outcome_return": -0.0461,
+      "outcome_return": -0.0467,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false

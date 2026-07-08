@@ -30,7 +30,7 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0401,
+      "outcome_return": -0.0368,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -92,7 +92,7 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.1121,
+      "outcome_return": -0.111,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -109,7 +109,7 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": -0.143,
+      "outcome_return": -0.1125,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -126,7 +126,7 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0269,
+      "outcome_return": 0.022,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -188,7 +188,7 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": -0.036,
+      "outcome_return": -0.0487,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -205,7 +205,7 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.0102,
+      "outcome_return": -0.0133,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -267,7 +267,7 @@
       "led_by": "sepa",
       "sentiment": 0.293,
       "earnings_risk": false,
-      "outcome_return": -0.1002,
+      "outcome_return": -0.0974,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -301,7 +301,7 @@
       "led_by": "sepa",
       "sentiment": 0.152,
       "earnings_risk": false,
-      "outcome_return": -0.0572,
+      "outcome_return": -0.0725,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
