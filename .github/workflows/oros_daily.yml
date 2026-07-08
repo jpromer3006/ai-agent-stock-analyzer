@@ -22,12 +22,14 @@ name: OROS daily run
 
 on:
   schedule:
-    # 13:05 UTC = 9:05 ET during daylight saving (EDT). GitHub's scheduler
-    # routinely fires cron 15-45 minutes late (observed both live days), so
-    # this early slot targets ACTUAL delivery by ~9:30-10:00 ET. In winter
-    # (EST) it fires an hour earlier; adjust to '5 14 * * 1-5' each November
-    # if that matters.
+    # Two runs per trading day (JP, 2026-07-08). GitHub's scheduler routinely
+    # fires cron 15-45 minutes late, so both slots aim early:
+    #   morning read: 13:05 UTC = 9:05 ET (EDT) -> lands ~9:30-10:00 ET
+    #   close wrap:   20:50 UTC = 16:50 ET (EDT) -> lands ~17:15-17:45 ET
+    # In winter (EST) both fire an hour earlier; adjust each November if
+    # that matters.
     - cron: "5 13 * * 1-5"
+    - cron: "50 20 * * 1-5"
   workflow_dispatch: {}        # manual "Run workflow" button for testing
 
 permissions:
