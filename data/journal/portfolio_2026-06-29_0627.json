@@ -57,7 +57,7 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": -0.1742,
+      "outcome_return": -0.1547,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -91,7 +91,7 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0409,
+      "outcome_return": -0.0353,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -108,7 +108,7 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": -0.0521,
+      "outcome_return": -0.0354,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -125,7 +125,7 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.007,
+      "outcome_return": 0.0173,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -142,7 +142,7 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.1194,
+      "outcome_return": -0.1095,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -187,7 +187,7 @@
       "led_by": "sepa",
       "sentiment": 0.306,
       "earnings_risk": false,
-      "outcome_return": 0.0181,
+      "outcome_return": 0.0131,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -204,7 +204,7 @@
       "led_by": "sepa",
       "sentiment": 0.363,
       "earnings_risk": false,
-      "outcome_return": -0.0001,
+      "outcome_return": -0.005,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -221,7 +221,7 @@
       "led_by": "sepa",
       "sentiment": 0.361,
       "earnings_risk": false,
-      "outcome_return": -0.0277,
+      "outcome_return": -0.0381,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -238,7 +238,7 @@
       "led_by": "sepa",
       "sentiment": 0.293,
       "earnings_risk": false,
-      "outcome_return": -0.0946,
+      "outcome_return": -0.083,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -286,7 +286,7 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": 0.0019,
+      "outcome_return": -0.0112,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -338,8 +338,8 @@
       "summary": "within limits; cash 53%"
     }
   ],
-  "realized_avg_return": -0.0561,
-  "realized_hit_rate": 0.25,
+  "realized_avg_return": -0.0528,
+  "realized_hit_rate": 0.167,
   "horizon_days": 5,
   "realized_final_count": 12,
   "realized_stop_exits": 2

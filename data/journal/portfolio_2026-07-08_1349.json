@@ -1,0 +1,227 @@
+{
+  "timestamp": "2026-07-08T13:49:20.396149Z",
+  "date": "2026-07-08",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 71530.66,
+  "cash": 28469.34,
+  "weights": {
+    "value": 0.024,
+    "growth": 0.067,
+    "weinstein": 0.166,
+    "swing": 0.121,
+    "ipo": 0.118,
+    "sepa": 0.218,
+    "canslim": 0.175,
+    "technical": 0.111
+  },
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.787,
+      "shares": 43,
+      "dollars": 3893.22,
+      "weight_pct": 3.89,
+      "entry": 90.54,
+      "stop": 83.33,
+      "led_by": "sepa",
+      "sentiment": 0.226,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ANET",
+      "sector": "Information Technology",
+      "conviction": 0.7605,
+      "shares": 22,
+      "dollars": 3741.76,
+      "weight_pct": 3.74,
+      "entry": 170.08,
+      "stop": 156.19,
+      "led_by": "sepa",
+      "sentiment": 0.176,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CSX",
+      "sector": "Industrials",
+      "conviction": 0.7551,
+      "shares": 153,
+      "dollars": 7386.84,
+      "weight_pct": 7.39,
+      "entry": 48.28,
+      "stop": 46.24,
+      "led_by": "sepa",
+      "sentiment": 0.116,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LLY",
+      "sector": "Health Care",
+      "conviction": 0.7521,
+      "shares": 2,
+      "dollars": 2437.82,
+      "weight_pct": 2.44,
+      "entry": 1218.91,
+      "stop": 1073.09,
+      "led_by": "sepa",
+      "sentiment": 0.192,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BEAM",
+      "sector": "Health Care",
+      "conviction": 0.7481,
+      "shares": 68,
+      "dollars": 2445.96,
+      "weight_pct": 2.45,
+      "entry": 35.97,
+      "stop": 31.38,
+      "led_by": "sepa",
+      "sentiment": 0.274,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "EBAY",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7453,
+      "shares": 69,
+      "dollars": 7792.86,
+      "weight_pct": 7.79,
+      "entry": 112.94,
+      "stop": 108.47,
+      "led_by": "sepa",
+      "sentiment": 0.291,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MO",
+      "sector": "Consumer Staples",
+      "conviction": 0.7366,
+      "shares": 130,
+      "dollars": 9495.2,
+      "weight_pct": 9.5,
+      "entry": 73.04,
+      "stop": 70.64,
+      "led_by": "sepa",
+      "sentiment": 0.212,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "PSA",
+      "sector": "Real Estate",
+      "conviction": 0.7362,
+      "shares": 14,
+      "dollars": 4630.08,
+      "weight_pct": 4.63,
+      "entry": 330.72,
+      "stop": 308.7,
+      "led_by": "sepa",
+      "sentiment": 0.33,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BATRK",
+      "sector": "Communication Services",
+      "conviction": 0.7168,
+      "shares": 140,
+      "dollars": 7383.6,
+      "weight_pct": 7.38,
+      "entry": 52.74,
+      "stop": 50.52,
+      "led_by": "sepa",
+      "sentiment": 0.349,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.7166,
+      "shares": 24,
+      "dollars": 7389.12,
+      "weight_pct": 7.39,
+      "entry": 307.88,
+      "stop": 295.1,
+      "led_by": "sepa",
+      "sentiment": 0.051,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LIN",
+      "sector": "Materials",
+      "conviction": 0.7106,
+      "shares": 17,
+      "dollars": 8981.78,
+      "weight_pct": 8.98,
+      "entry": 528.34,
+      "stop": 510.04,
+      "led_by": "sepa",
+      "sentiment": 0.16,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "UPS",
+      "sector": "Industrials",
+      "conviction": 0.7082,
+      "shares": 54,
+      "dollars": 5952.42,
+      "weight_pct": 5.95,
+      "entry": 110.23,
+      "stop": 104.48,
+      "led_by": "sepa",
+      "sentiment": 0.33,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "642 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 72% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 28%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}

@@ -29,10 +29,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0165,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.0214,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "BE",
@@ -80,9 +80,9 @@
       "led_by": "weinstein",
       "sentiment": 0.185,
       "earnings_risk": false,
-      "outcome_return": -0.202,
-      "outcome_exit": "stop",
-      "outcome_days": 4,
+      "outcome_return": -0.1822,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
       "outcome_final": true
     },
     {
@@ -114,10 +114,10 @@
       "led_by": "technical",
       "sentiment": 0.282,
       "earnings_risk": false,
-      "outcome_return": 0.0583,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": 0.0198,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -152,9 +152,9 @@
       "summary": "within limits; cash 37%"
     }
   ],
-  "realized_avg_return": -0.0714,
-  "realized_hit_rate": 0.0,
+  "realized_avg_return": -0.0446,
+  "realized_hit_rate": 0.167,
   "horizon_days": 5,
-  "realized_final_count": 4,
-  "realized_stop_exits": 4
+  "realized_final_count": 6,
+  "realized_stop_exits": 3
 }

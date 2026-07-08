@@ -61,9 +61,9 @@
       "led_by": "technical",
       "sentiment": 0.32,
       "earnings_risk": false,
-      "outcome_return": 0.0231,
+      "outcome_return": 0.0061,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 3,
       "outcome_final": false
     },
     {
@@ -78,9 +78,9 @@
       "led_by": "sepa",
       "sentiment": 0.296,
       "earnings_risk": false,
-      "outcome_return": 0.0164,
+      "outcome_return": -0.0023,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 3,
       "outcome_final": false
     },
     {
@@ -95,9 +95,9 @@
       "led_by": "sepa",
       "sentiment": 0.242,
       "earnings_risk": false,
-      "outcome_return": 0.0233,
+      "outcome_return": 0.0136,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 3,
       "outcome_final": false
     },
     {
@@ -129,10 +129,10 @@
       "led_by": "technical",
       "sentiment": 0.084,
       "earnings_risk": false,
-      "outcome_return": -0.0161,
-      "outcome_exit": "open",
+      "outcome_return": -0.029,
+      "outcome_exit": "stop",
       "outcome_days": 2,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "PG",
@@ -146,9 +146,9 @@
       "led_by": "technical",
       "sentiment": 0.214,
       "earnings_risk": false,
-      "outcome_return": 0.0116,
+      "outcome_return": -0.0132,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 3,
       "outcome_final": false
     },
     {
@@ -163,9 +163,9 @@
       "led_by": "technical",
       "sentiment": 0.008,
       "earnings_risk": false,
-      "outcome_return": -0.0237,
+      "outcome_return": -0.0646,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 3,
       "outcome_final": false
     }
   ],
@@ -201,9 +201,9 @@
       "summary": "within limits; cash 18%"
     }
   ],
-  "realized_avg_return": -0.0316,
+  "realized_avg_return": -0.0303,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1
+  "realized_final_count": 2,
+  "realized_stop_exits": 2
 }
