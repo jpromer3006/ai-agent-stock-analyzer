@@ -1,0 +1,69 @@
+{
+  "name": "Capstone First Portfolio (frozen 2026-07-06)",
+  "note": "The first cloud-built OROS portfolio, frozen for the capstone comparison through 2026-07-29. Simulated $100,000. Buy-and-hold at the journaled 07-06 entries; never modified.",
+  "start_date": "2026-07-06",
+  "account": 100000.0,
+  "cash": 45775.28,
+  "holdings": [
+    {
+      "ticker": "CATY",
+      "shares": 74,
+      "entry": 62.27
+    },
+    {
+      "ticker": "BPOP",
+      "shares": 21,
+      "entry": 167.71
+    },
+    {
+      "ticker": "BOKF",
+      "shares": 43,
+      "entry": 139.21
+    },
+    {
+      "ticker": "DE",
+      "shares": 6,
+      "entry": 622.73
+    },
+    {
+      "ticker": "BATRK",
+      "shares": 162,
+      "entry": 52.22
+    },
+    {
+      "ticker": "EBAY",
+      "shares": 68,
+      "entry": 113.3
+    },
+    {
+      "ticker": "ANET",
+      "shares": 18,
+      "entry": 176.34
+    },
+    {
+      "ticker": "LLY",
+      "shares": 2,
+      "entry": 1202.89
+    },
+    {
+      "ticker": "SPG",
+      "shares": 17,
+      "entry": 225.08
+    },
+    {
+      "ticker": "ALMS",
+      "shares": 79,
+      "entry": 27.31
+    },
+    {
+      "ticker": "CSX",
+      "shares": 104,
+      "entry": 49.12
+    },
+    {
+      "ticker": "BCRX",
+      "shares": 359,
+      "entry": 9.85
+    }
+  ]
+}

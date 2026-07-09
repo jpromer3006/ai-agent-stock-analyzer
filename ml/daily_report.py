@@ -198,6 +198,21 @@ def build_report_data(opps: dict | None = None, changes: dict | None = None) -> 
         my_book = analyze_book()
     except Exception as e:  # noqa: BLE001
         logger.warning("my_portfolio analysis failed: %s", e)
+    # Capstone comparison (Fordham, due 7/29): frozen first portfolio vs the
+    # evolving book vs SPY, all simulated $100k. Chain appends today's live
+    # day-return first so the comparison includes today.
+    capstone = None
+    try:
+        from ml.capstone_tracker import (baseline_status, update_live_chain,
+                                         live_chain_status)
+        acct = float((rec or {}).get("account") or 100_000.0)
+        if rec and pnl.get("rows"):
+            update_live_chain(float(pnl.get("total_day_usd") or 0.0) / acct)
+        capstone = baseline_status()
+        if capstone:
+            capstone["live"] = live_chain_status(capstone["account"])
+    except Exception as e:  # noqa: BLE001
+        logger.warning("capstone tracker failed: %s", e)
     picks, etf_picks = [], []
     try:
         from ml.top_picks import weinstein_top_picks, weinstein_etf_picks
@@ -215,7 +230,8 @@ def build_report_data(opps: dict | None = None, changes: dict | None = None) -> 
             "indexes": _index_snapshot(), "proposal": rec, "pnl": pnl,
             "scoreboard": scoreboard, "opps": opps, "changes": changes or {},
             "top_picks": picks, "etf_picks": etf_picks,
-            "actions": _todays_actions(rec), "my_book": my_book}
+            "actions": _todays_actions(rec), "my_book": my_book,
+            "capstone": capstone}
 
 
 # ---------------------------------------------------------------------------
@@ -535,12 +551,70 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
             tbl.auto_set_font_size(False)
             tbl.set_fontsize(8)
             tbl.scale(1, 1.35)
+            # Highlight what readers want at a glance: the DAY move (JP,
+            # 07/08). The paper book re-enters daily, so Unreal is ~$0 by
+            # construction — keep it plain; the capstone page carries the
+            # accruing-gains story.
             for j, r in enumerate(rows, start=1):
-                color = "#1a7f37" if r["unreal_usd"] >= 0 else "#cf222e"
-                tbl[j, 8].set_text_props(color=color, fontweight="bold")
-                tbl[j, 7].set_text_props(color=color)
+                color = "#1a7f37" if r["day_usd"] >= 0 else "#cf222e"
+                tbl[j, 6].set_text_props(color=color, fontweight="bold")
+                tbl[j, 5].set_text_props(color=color, fontweight="bold")
                 if r["below_stop"]:
                     tbl[j, 0].set_text_props(color="#cf222e", fontweight="bold")
+            pdf.savefig(fig)
+            plt.close(fig)
+
+        # ---- Capstone comparison page (frozen 07-06 book vs live vs SPY) ---
+        cs = data.get("capstone")
+        if cs and cs.get("rows"):
+            fig, ax = plt.subplots(figsize=(8.5, 11))
+            ax.axis("off")
+            ax.set_title("Capstone Comparison — First Portfolio (frozen 07/06) "
+                         "to 07/29", fontsize=14, fontweight="bold", loc="left")
+            cells = [[r["ticker"], f"{r['shares']:.0f}", f"{r['entry']:.2f}",
+                      f"{r['last']:.2f}", f"{r['day_pct']:+.2f}%",
+                      _esc(f"${r['day_usd']:+,.0f}"),
+                      f"{r['unreal_pct']:+.2f}%", _esc(f"${r['unreal_usd']:+,.0f}")]
+                     for r in cs["rows"]]
+            tbl = ax.table(cellText=cells, colLabels=[
+                "Ticker", "Shares", "Entry 07/06", "Last", "Day %",
+                _esc("Day $"), "Gain %", _esc("Gain $")],
+                loc="upper center", cellLoc="right")
+            tbl.auto_set_font_size(False)
+            tbl.set_fontsize(8)
+            tbl.scale(1, 1.35)
+            for j, r in enumerate(cs["rows"], start=1):
+                color = "#1a7f37" if r["unreal_usd"] >= 0 else "#cf222e"
+                tbl[j, 7].set_text_props(color=color, fontweight="bold")
+                tbl[j, 6].set_text_props(color=color)
+            y0 = 0.55
+            ret_c = "#1a7f37" if cs["return_pct"] >= 0 else "#cf222e"
+            fig.text(0.07, y0, _esc(
+                f"FIRST PORTFOLIO (frozen, buy-and-hold): ${cs['value']:,.0f}  "
+                f"({cs['return_pct']:+.2f}% since {cs['start_date']})"),
+                fontsize=11, fontweight="bold", color=ret_c)
+            lv = cs.get("live") or {}
+            if lv:
+                lc = "#1a7f37" if lv["return_pct"] >= 0 else "#cf222e"
+                fig.text(0.07, y0 - 0.03, _esc(
+                    f"LIVE OROS BOOK (evolving, chained daily returns): "
+                    f"${lv['value']:,.0f}  ({lv['return_pct']:+.2f}% over "
+                    f"{lv['days']} trading day(s))"), fontsize=11,
+                    fontweight="bold", color=lc)
+            if cs.get("spy_value"):
+                fig.text(0.07, y0 - 0.06, _esc(
+                    f"SPY (same $100,000 from the 07/06 close): "
+                    f"${cs['spy_value']:,.0f}  ({cs['spy_return_pct']:+.2f}%)"),
+                    fontsize=11, fontweight="bold", color="#57606a")
+            fig.text(0.07, y0 - 0.13,
+                     "Method, for honest comparison: all three start at the same "
+                     "$100,000 on 2026-07-06.\nThe First Portfolio is frozen — "
+                     "buy-and-hold at the journaled entries, cash earns 0%.\n"
+                     "The Live book rebuilds daily, so its cumulative value chains "
+                     "each day's return of the\nbook actually held that day (the "
+                     "chain only appends; nothing is restated).\nSimulated money "
+                     "throughout. Educational, not financial advice.",
+                     fontsize=9, color="#57606a", va="top")
             pdf.savefig(fig)
             plt.close(fig)
 
@@ -836,6 +910,16 @@ def _summary_body(data: dict) -> str:
         lines += [f"  - {a}" for a in acts[:10]]
     else:
         lines.append("  Nothing to do today. The book is behaving — let the winners run.")
+    cs = data.get("capstone")
+    if cs and cs.get("rows"):
+        lines.append("")
+        lines.append("CAPSTONE COMPARISON (simulated $100k each, since 07/06):")
+        lines.append(f"  First Portfolio (frozen): ${cs['value']:,.0f} ({cs['return_pct']:+.2f}%)")
+        lv = cs.get("live") or {}
+        if lv:
+            lines.append(f"  Live OROS book (chained): ${lv['value']:,.0f} ({lv['return_pct']:+.2f}%)")
+        if cs.get("spy_value"):
+            lines.append(f"  SPY benchmark: ${cs['spy_value']:,.0f} ({cs['spy_return_pct']:+.2f}%)")
     mb = data.get("my_book")
     if mb and mb.get("rows"):
         lines.append("")
