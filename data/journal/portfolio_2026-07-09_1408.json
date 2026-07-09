@@ -1,0 +1,227 @@
+{
+  "timestamp": "2026-07-09T14:08:01.427662Z",
+  "date": "2026-07-09",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 53004.67,
+  "cash": 46995.33,
+  "weights": {
+    "technical": 0.111,
+    "sepa": 0.218,
+    "ipo": 0.118,
+    "canslim": 0.175,
+    "growth": 0.067,
+    "swing": 0.121,
+    "weinstein": 0.166,
+    "value": 0.024
+  },
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.7584,
+      "shares": 42,
+      "dollars": 3822.84,
+      "weight_pct": 3.82,
+      "entry": 91.02,
+      "stop": 83.6,
+      "led_by": "sepa",
+      "sentiment": 0.226,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LLY",
+      "sector": "Health Care",
+      "conviction": 0.7329,
+      "shares": 2,
+      "dollars": 2429.02,
+      "weight_pct": 2.43,
+      "entry": 1214.51,
+      "stop": 1079.99,
+      "led_by": "sepa",
+      "sentiment": 0.109,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "WELL",
+      "sector": "Real Estate",
+      "conviction": 0.7289,
+      "shares": 18,
+      "dollars": 4189.86,
+      "weight_pct": 4.19,
+      "entry": 232.77,
+      "stop": 215.67,
+      "led_by": "sepa",
+      "sentiment": 0.197,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.7264,
+      "shares": 22,
+      "dollars": 3702.38,
+      "weight_pct": 3.7,
+      "entry": 168.29,
+      "stop": 154.63,
+      "led_by": "sepa",
+      "sentiment": 0.318,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "PM",
+      "sector": "Consumer Staples",
+      "conviction": 0.72,
+      "shares": 45,
+      "dollars": 8340.3,
+      "weight_pct": 8.34,
+      "entry": 185.34,
+      "stop": 178.41,
+      "led_by": "sepa",
+      "sentiment": 0.267,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPU",
+      "sector": "Other",
+      "conviction": 0.7161,
+      "shares": 103,
+      "dollars": 4121.03,
+      "weight_pct": 4.12,
+      "entry": 40.01,
+      "stop": 36.98,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.7136,
+      "shares": 68,
+      "dollars": 3992.96,
+      "weight_pct": 3.99,
+      "entry": 58.72,
+      "stop": 54.18,
+      "led_by": "sepa",
+      "sentiment": 0.076,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "EBAY",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7082,
+      "shares": 51,
+      "dollars": 5921.1,
+      "weight_pct": 5.92,
+      "entry": 116.1,
+      "stop": 110.02,
+      "led_by": "sepa",
+      "sentiment": 0.178,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "KRE",
+      "sector": "Other",
+      "conviction": 0.7042,
+      "shares": 65,
+      "dollars": 4883.45,
+      "weight_pct": 4.88,
+      "entry": 75.13,
+      "stop": 70.39,
+      "led_by": "sepa",
+      "sentiment": 0.189,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CSX",
+      "sector": "Industrials",
+      "conviction": 0.7039,
+      "shares": 115,
+      "dollars": 5638.45,
+      "weight_pct": 5.64,
+      "entry": 49.03,
+      "stop": 46.32,
+      "led_by": "sepa",
+      "sentiment": 0.187,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "JNJ",
+      "sector": "Health Care",
+      "conviction": 0.7034,
+      "shares": 11,
+      "dollars": 2879.03,
+      "weight_pct": 2.88,
+      "entry": 261.73,
+      "stop": 235.08,
+      "led_by": "sepa",
+      "sentiment": 0.169,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CART",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7,
+      "shares": 65,
+      "dollars": 3084.25,
+      "weight_pct": 3.08,
+      "entry": 47.45,
+      "stop": 42.66,
+      "led_by": "sepa",
+      "sentiment": 0.03,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "640 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 53% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 47%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}
