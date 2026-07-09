@@ -2,8 +2,7 @@
   "name": "Chase Self-Directed (...8661)",
   "note": "JP's real book - TRACKED ONLY. OROS never trades or touches the account. Stops are Weinstein 30-week-MA levels, ratcheted up daily, never down. Update holdings here (or tell Claude) whenever a real trade happens.",
   "updated": "2026-07-08",
-  "margin_debt": 6750.00,
-  "margin_debt_note": "ESTIMATE after AVGO sale (40sh x ~$370) - confirm against Chase Cash & sweep and correct",
+  "margin_debt": 6105.34,
   "holdings": [
     {"ticker": "AAPL", "shares": 50, "cost_basis": 312.04, "stop": 274.14},
     {"ticker": "WELL", "shares": 20, "cost_basis": 209.49, "stop": 202.60},
