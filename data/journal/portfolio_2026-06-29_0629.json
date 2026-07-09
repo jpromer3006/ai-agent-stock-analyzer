@@ -30,7 +30,7 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0068,
+      "outcome_return": -0.012,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -92,7 +92,7 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.0163,
+      "outcome_return": -0.0088,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -109,7 +109,7 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": -0.0918,
+      "outcome_return": -0.0807,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -126,7 +126,7 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0355,
+      "outcome_return": 0.0377,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -188,7 +188,7 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": -0.0463,
+      "outcome_return": -0.0242,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -205,7 +205,7 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.0141,
+      "outcome_return": -0.0298,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -267,7 +267,7 @@
       "led_by": "sepa",
       "sentiment": 0.293,
       "earnings_risk": false,
-      "outcome_return": -0.083,
+      "outcome_return": -0.0886,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -301,7 +301,7 @@
       "led_by": "sepa",
       "sentiment": 0.152,
       "earnings_risk": false,
-      "outcome_return": -0.0838,
+      "outcome_return": -0.0792,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false

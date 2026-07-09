@@ -1,0 +1,227 @@
+{
+  "timestamp": "2026-07-09T21:23:51.437647Z",
+  "date": "2026-07-09",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 56098.01,
+  "cash": 43901.99,
+  "weights": {
+    "weinstein": 0.166,
+    "value": 0.024,
+    "sepa": 0.218,
+    "growth": 0.067,
+    "ipo": 0.118,
+    "canslim": 0.175,
+    "technical": 0.111,
+    "swing": 0.121
+  },
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.7584,
+      "shares": 41,
+      "dollars": 3737.15,
+      "weight_pct": 3.74,
+      "entry": 91.15,
+      "stop": 83.6,
+      "led_by": "sepa",
+      "sentiment": 0.226,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.754,
+      "shares": 21,
+      "dollars": 3557.19,
+      "weight_pct": 3.56,
+      "entry": 169.39,
+      "stop": 154.66,
+      "led_by": "sepa",
+      "sentiment": 0.318,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BATRK",
+      "sector": "Communication Services",
+      "conviction": 0.7518,
+      "shares": 157,
+      "dollars": 8170.28,
+      "weight_pct": 8.17,
+      "entry": 52.04,
+      "stop": 50.06,
+      "led_by": "sepa",
+      "sentiment": 0.349,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.7437,
+      "shares": 61,
+      "dollars": 3614.25,
+      "weight_pct": 3.61,
+      "entry": 59.25,
+      "stop": 54.19,
+      "led_by": "sepa",
+      "sentiment": 0.076,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ARWR",
+      "sector": "Health Care",
+      "conviction": 0.7398,
+      "shares": 47,
+      "dollars": 3948.0,
+      "weight_pct": 3.95,
+      "entry": 84.0,
+      "stop": 77.41,
+      "led_by": "sepa",
+      "sentiment": 0.218,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LLY",
+      "sector": "Health Care",
+      "conviction": 0.7329,
+      "shares": 2,
+      "dollars": 2433.9,
+      "weight_pct": 2.43,
+      "entry": 1216.95,
+      "stop": 1080.03,
+      "led_by": "sepa",
+      "sentiment": 0.109,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BEAM",
+      "sector": "Health Care",
+      "conviction": 0.7322,
+      "shares": 72,
+      "dollars": 2579.04,
+      "weight_pct": 2.58,
+      "entry": 35.82,
+      "stop": 31.53,
+      "led_by": "sepa",
+      "sentiment": 0.197,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "WELL",
+      "sector": "Real Estate",
+      "conviction": 0.7276,
+      "shares": 18,
+      "dollars": 4178.16,
+      "weight_pct": 4.18,
+      "entry": 232.12,
+      "stop": 215.66,
+      "led_by": "sepa",
+      "sentiment": 0.197,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CCEP",
+      "sector": "Consumer Staples",
+      "conviction": 0.7253,
+      "shares": 34,
+      "dollars": 3573.06,
+      "weight_pct": 3.57,
+      "entry": 105.09,
+      "stop": 96.06,
+      "led_by": "sepa",
+      "sentiment": 0.242,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CMPR",
+      "sector": "Industrials",
+      "conviction": 0.7181,
+      "shares": 48,
+      "dollars": 4689.12,
+      "weight_pct": 4.69,
+      "entry": 97.69,
+      "stop": 91.24,
+      "led_by": "sepa",
+      "sentiment": 0.342,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "UPS",
+      "sector": "Industrials",
+      "conviction": 0.7112,
+      "shares": 50,
+      "dollars": 5537.0,
+      "weight_pct": 5.54,
+      "entry": 110.74,
+      "stop": 104.56,
+      "led_by": "sepa",
+      "sentiment": 0.359,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "KO",
+      "sector": "Consumer Staples",
+      "conviction": 0.7099,
+      "shares": 122,
+      "dollars": 10080.86,
+      "weight_pct": 10.08,
+      "entry": 82.63,
+      "stop": 80.08,
+      "led_by": "sepa",
+      "sentiment": 0.148,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "645 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 56% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 44%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}

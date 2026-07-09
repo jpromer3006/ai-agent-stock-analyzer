@@ -30,7 +30,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0146,
+      "outcome_return": 0.0237,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -64,7 +64,7 @@
       "led_by": "sepa",
       "sentiment": 0.06,
       "earnings_risk": false,
-      "outcome_return": 0.0013,
+      "outcome_return": 0.0101,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -81,7 +81,7 @@
       "led_by": "sepa",
       "sentiment": 0.172,
       "earnings_risk": false,
-      "outcome_return": -0.0031,
+      "outcome_return": 0.0052,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -98,7 +98,7 @@
       "led_by": "technical",
       "sentiment": 0.175,
       "earnings_risk": false,
-      "outcome_return": -0.0048,
+      "outcome_return": -0.0173,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -115,7 +115,7 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": 0.0124,
+      "outcome_return": 0.0023,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -132,7 +132,7 @@
       "led_by": "sepa",
       "sentiment": 0.147,
       "earnings_risk": false,
-      "outcome_return": -0.0083,
+      "outcome_return": -0.0002,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -149,7 +149,7 @@
       "led_by": "sepa",
       "sentiment": 0.269,
       "earnings_risk": false,
-      "outcome_return": -0.0405,
+      "outcome_return": -0.0393,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -166,7 +166,7 @@
       "led_by": "sepa",
       "sentiment": 0.325,
       "earnings_risk": false,
-      "outcome_return": -0.0301,
+      "outcome_return": -0.0333,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
