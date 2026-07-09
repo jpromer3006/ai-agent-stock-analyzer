@@ -6,8 +6,15 @@ the link can see it (professors, Nathan). Going public later is one toggle —
 but talk to a securities attorney first (see the advising discussion).
 
 ## Step 1 — The channel (2 min)
-1. Go to youtube.com signed in as **jp.romero3006@gmail.com**.
-2. Click your avatar → "Create a channel" → name it **OROS Market Desk**.
+Your Google account already has a personal channel (@JP.Romero3006), so
+YouTube won't show "Create a channel". Make a separate BRAND channel:
+
+1. Signed in as **jp.romero3006@gmail.com**, go to **youtube.com/channel_switcher**
+   (or avatar → Settings → "Add or manage your channel(s)").
+2. Click **Create a channel** → name it **OROS Market Desk**.
+3. IMPORTANT for Step 3 later: when Google's consent screen asks which
+   account/channel to authorize, pick **OROS Market Desk** — that's what
+   routes the uploads to the brand channel instead of your personal one.
 
 ## Step 2 — Google Cloud credentials (5 min)
 1. Go to https://console.cloud.google.com (same Google account).
