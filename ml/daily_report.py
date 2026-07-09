@@ -984,6 +984,18 @@ def send_daily_report(to: str | None = None, opps: dict | None = None,
             audio_note = (audio_note + " " + fallback_note).strip()
         except Exception as e:  # noqa: BLE001
             logger.warning("broadcast failed: %s", e)
+    # Publish the episode to the OROS Market Desk channel (unlisted; skips
+    # cleanly until the YT_* credentials exist — docs/YOUTUBE_SETUP.md).
+    if audio_path is not None and str(audio_path).endswith(".mp4"):
+        try:
+            from ml.publish_youtube import publish_episode
+            yt_url, yt_note = publish_episode(audio_path)
+            if yt_note and "not configured" not in yt_note:
+                audio_note = (audio_note + "\n" + yt_note).strip()
+            elif yt_url:
+                audio_note = (audio_note + "\n" + yt_note).strip()
+        except Exception as e:  # noqa: BLE001
+            logger.warning("youtube publish failed: %s", e)
     marker = pdf.with_suffix(".sent")
     if email:
         if marker.exists() and not force:

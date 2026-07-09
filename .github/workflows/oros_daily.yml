@@ -77,6 +77,9 @@ jobs:
           OROS_REPORT_TO=${{ secrets.OROS_REPORT_TO }}
           ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
           ELEVENLABS_API_KEY=${{ secrets.ELEVENLABS_API_KEY }}
+          YT_CLIENT_ID=${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET=${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN=${{ secrets.YT_REFRESH_TOKEN }}
           FRED_API_KEY=${{ secrets.FRED_API_KEY }}
           ALPHA_VANTAGE_API_KEY=${{ secrets.ALPHA_VANTAGE_API_KEY }}
           FMP_API_KEY=${{ secrets.FMP_API_KEY }}
