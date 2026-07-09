@@ -119,6 +119,7 @@ def send_email(subject: str, body: str, to: str | None = None,
             maintype, subtype = {
                 ".pdf": ("application", "pdf"),
                 ".mp3": ("audio", "mpeg"),
+                ".mp4": ("video", "mp4"),
                 ".md": ("text", "markdown"),
             }.get(p.suffix, ("application", "octet-stream"))
             msg.add_attachment(p.read_bytes(), maintype=maintype,

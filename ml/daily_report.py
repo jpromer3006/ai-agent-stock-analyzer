@@ -752,14 +752,23 @@ def _weekly(df):
 
 
 def _pick_chart_page(pdf, plt, p: dict) -> None:
-    """One full-page Weinstein view of a Top Pick: price + 30-week MA with the
-    trade plan, breakout volume, and Mansfield RS vs SPY."""
+    """One full-page Weinstein view of a Top Pick (PDF wrapper)."""
+    fig = pick_chart_fig(plt, p)
+    if fig is not None:
+        pdf.savefig(fig)
+        plt.close(fig)
+
+
+def pick_chart_fig(plt, p: dict):
+    """Build the Weinstein chart figure for a pick: price + 30-week MA with
+    the trade plan, breakout volume, and Mansfield RS vs SPY. Shared by the
+    PDF report and the daily video brief."""
     import pandas as pd
     from data import price_cache
 
     df = price_cache.get_history(p["ticker"])
     if df is None or len(df) < 160:
-        return
+        return None
     wk = _weekly(df).tail(110)                       # ~2 years of weekly bars
     ma30 = _weekly(df)["Close"].rolling(30).mean().reindex(wk.index)
 
@@ -834,8 +843,7 @@ def _pick_chart_page(pdf, plt, p: dict) -> None:
                   f"exit on a weekly close below the stop. Educational, not financial advice."),
              fontsize=7, color="#888888", wrap=True)
     fig.subplots_adjust(top=0.94, bottom=0.09, left=0.09, right=0.97, hspace=0.12)
-    pdf.savefig(fig)
-    plt.close(fig)
+    return fig
 
 
 def _research_memo_pdf(data: dict) -> tuple[Path | None, str]:
@@ -961,13 +969,21 @@ def send_daily_report(to: str | None = None, opps: dict | None = None,
     memo_path, memo_note = (None, "")
     if research:
         memo_path, memo_note = _research_memo_pdf(data)
-    # The 60-second audio morning brief (ElevenLabs; skips cleanly without a key).
+    # The narrated video brief (charts + voice); falls back to the 60-second
+    # audio-only broadcast when ffmpeg isn't available in this environment.
     audio_path, audio_note = (None, "")
     try:
-        from ml.daily_broadcast import generate_broadcast
-        audio_path, audio_note = generate_broadcast(data)
+        from ml.daily_video import generate_video_brief
+        audio_path, audio_note = generate_video_brief(data)
     except Exception as e:  # noqa: BLE001
-        logger.warning("broadcast failed: %s", e)
+        logger.warning("video brief failed: %s", e)
+    if audio_path is None:
+        try:
+            from ml.daily_broadcast import generate_broadcast
+            audio_path, fallback_note = generate_broadcast(data)
+            audio_note = (audio_note + " " + fallback_note).strip()
+        except Exception as e:  # noqa: BLE001
+            logger.warning("broadcast failed: %s", e)
     marker = pdf.with_suffix(".sent")
     if email:
         if marker.exists() and not force:

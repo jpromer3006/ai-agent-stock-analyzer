@@ -55,6 +55,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           python -m pip install --upgrade pip
           # earthengine (satellite) is optional and slow; skip it in the cloud.
           grep -v "earthengine-api" requirements.txt > /tmp/reqs.txt
