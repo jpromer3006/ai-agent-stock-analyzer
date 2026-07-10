@@ -988,8 +988,8 @@ def send_daily_report(to: str | None = None, opps: dict | None = None,
     # cleanly until the YT_* credentials exist — docs/YOUTUBE_SETUP.md).
     if audio_path is not None and str(audio_path).endswith(".mp4"):
         try:
-            from ml.publish_youtube import publish_episode
-            yt_url, yt_note = publish_episode(audio_path)
+            from ml.publish_youtube import publish_episode, episode_title
+            yt_url, yt_note = publish_episode(audio_path, episode_title(data))
             if yt_note and "not configured" not in yt_note:
                 audio_note = (audio_note + "\n" + yt_note).strip()
             elif yt_url:

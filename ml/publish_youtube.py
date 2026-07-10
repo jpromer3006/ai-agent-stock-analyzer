@@ -66,6 +66,25 @@ def _access_token() -> str | None:
     return r.json().get("access_token")
 
 
+def episode_title(data: dict) -> str:
+    """A headline that carries the date AND the day's finding, so the channel
+    reads like a dated broadcast archive at a glance."""
+    from datetime import datetime as _dt
+    try:
+        from zoneinfo import ZoneInfo
+        now = _dt.now(ZoneInfo("America/New_York"))
+    except Exception:
+        now = _dt.now()
+    regime = (data.get("regime") or "").upper() or "MARKET"
+    picks = (data.get("top_picks") or []) + (data.get("etf_picks") or [])
+    if picks:
+        tickers = ", ".join(p["ticker"] for p in picks[:2])
+        hook = f"Pick: {tickers}"
+    else:
+        hook = "No setup today"
+    return f"OROS Market Desk — {now:%b %d, %Y} · {regime} · {hook}"
+
+
 def publish_episode(video_path: Path | str,
                     title: str | None = None) -> tuple[str | None, str]:
     """Upload an episode. Returns (watch_url or None, status line)."""
