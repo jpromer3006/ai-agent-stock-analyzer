@@ -9,6 +9,8 @@ and appends YT_* lines to .env.
 
     cd "/Users/jpromero/Ai-Agent Oros"
     python3 scripts/yt_authorize.py CLIENT_ID CLIENT_SECRET
+      OR (read the downloaded JSON directly):
+    python3 scripts/yt_authorize.py docs/client_secret_XXXX.json
 """
 
 from __future__ import annotations
@@ -47,10 +49,20 @@ class _Handler(http.server.BaseHTTPRequestHandler):
 
 
 def main() -> int:
-    if len(sys.argv) != 3:
+    # Accept either two args (id, secret) OR one arg (path to the client_secret
+    # JSON Google downloads) — JP downloaded the JSON, so support it directly.
+    if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
+        d = json.loads(Path(sys.argv[1]).read_text())
+        k = d.get("installed") or d.get("web") or {}
+        cid, sec = k.get("client_id", "").strip(), k.get("client_secret", "").strip()
+        if not (cid and sec):
+            print("Could not find client_id/client_secret in that JSON.")
+            return 1
+    elif len(sys.argv) == 3:
+        cid, sec = sys.argv[1].strip(), sys.argv[2].strip()
+    else:
         print(__doc__)
         return 1
-    cid, sec = sys.argv[1].strip(), sys.argv[2].strip()
 
     srv = http.server.HTTPServer(("localhost", PORT), _Handler)
     threading.Thread(target=srv.serve_forever, daemon=True).start()

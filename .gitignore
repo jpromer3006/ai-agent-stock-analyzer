@@ -40,3 +40,8 @@ Thumbs.db
 
 # Email dedupe markers are per-machine, never shared state
 data/journal/reports/*.sent
+
+# Google OAuth client secret files (never commit)
+client_secret_*.json
+docs/client_secret_*.json
+**/client_secret_*.json
