@@ -1,21 +1,61 @@
 {
   "name": "Chase Self-Directed (...8661)",
   "note": "JP's real book - TRACKED ONLY. OROS never trades or touches the account. Stops are Weinstein 30-week-MA levels, ratcheted up daily, never down. Update holdings here (or tell Claude) whenever a real trade happens.",
-  "updated": "2026-07-08",
+  "updated": "2026-07-10",
   "margin_debt": 6105.34,
   "holdings": [
-    {"ticker": "AAPL", "shares": 50, "cost_basis": 312.04, "stop": 274.14},
-    {"ticker": "WELL", "shares": 20, "cost_basis": 209.49, "stop": 202.60},
-    {"ticker": "DY",   "shares": 10, "cost_basis": 542.68, "stop": 398.23},
-    {"ticker": "NVDA", "shares": 16, "cost_basis": 158.24, "stop": 192.63},
-    {"ticker": "CAT",  "shares": 1,  "cost_basis": 891.67, "stop": 761.85}
+    {
+      "ticker": "AAPL",
+      "shares": 50,
+      "cost_basis": 312.04,
+      "stop": 274.14
+    },
+    {
+      "ticker": "WELL",
+      "shares": 20,
+      "cost_basis": 209.49,
+      "stop": 202.6
+    },
+    {
+      "ticker": "DY",
+      "shares": 10,
+      "cost_basis": 542.68,
+      "stop": 398.23
+    },
+    {
+      "ticker": "NVDA",
+      "shares": 16,
+      "cost_basis": 158.24,
+      "stop": 192.63
+    },
+    {
+      "ticker": "CAT",
+      "shares": 1,
+      "cost_basis": 891.67,
+      "stop": 766.73
+    }
   ],
   "closed": [
-    {"ticker": "AVGO", "shares": 40, "cost_basis": 428.16, "exit_date": "2026-07-08",
-     "reason": "Weinstein invalidation (weekly close below 30-week MA) - system flag honored; realized loss ~-$2,300, leverage cut from 2.15x to ~1.3x"},
-    {"ticker": "TSLA", "shares": 6, "cost_basis": 317.10, "exit_date": "2026-07-07",
-     "reason": "closed below stop 413.57 - system flag honored"},
-    {"ticker": "HOOD", "shares": 10, "cost_basis": 84.36, "exit_date": "2026-07-07",
-     "reason": "Stage 3 topping - sold into strength per review flag"}
+    {
+      "ticker": "AVGO",
+      "shares": 40,
+      "cost_basis": 428.16,
+      "exit_date": "2026-07-08",
+      "reason": "Weinstein invalidation (weekly close below 30-week MA) - system flag honored; realized loss ~-$2,300, leverage cut from 2.15x to ~1.3x"
+    },
+    {
+      "ticker": "TSLA",
+      "shares": 6,
+      "cost_basis": 317.1,
+      "exit_date": "2026-07-07",
+      "reason": "closed below stop 413.57 - system flag honored"
+    },
+    {
+      "ticker": "HOOD",
+      "shares": 10,
+      "cost_basis": 84.36,
+      "exit_date": "2026-07-07",
+      "reason": "Stage 3 topping - sold into strength per review flag"
+    }
   ]
 }
