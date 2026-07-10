@@ -44,7 +44,7 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.0499,
+      "outcome_return": -0.0522,
       "outcome_exit": "open",
       "outcome_days": 8,
       "outcome_final": false
@@ -61,7 +61,7 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": -0.0939,
+      "outcome_return": -0.0731,
       "outcome_exit": "open",
       "outcome_days": 8,
       "outcome_final": false
@@ -106,7 +106,7 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0062,
+      "outcome_return": 0.0036,
       "outcome_exit": "open",
       "outcome_days": 8,
       "outcome_final": false
@@ -171,7 +171,7 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": -0.0235,
+      "outcome_return": -0.0237,
       "outcome_exit": "open",
       "outcome_days": 8,
       "outcome_final": false
@@ -188,7 +188,7 @@
       "led_by": "sepa",
       "sentiment": 0.456,
       "earnings_risk": false,
-      "outcome_return": -0.059,
+      "outcome_return": -0.0769,
       "outcome_exit": "open",
       "outcome_days": 8,
       "outcome_final": false
@@ -219,7 +219,7 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0374,
+      "outcome_return": 0.0355,
       "outcome_exit": "open",
       "outcome_days": 8,
       "outcome_final": false
@@ -267,10 +267,10 @@
       "led_by": "sepa",
       "sentiment": 0.317,
       "earnings_risk": false,
-      "outcome_return": -0.0527,
-      "outcome_exit": "open",
+      "outcome_return": -0.0968,
+      "outcome_exit": "stop",
       "outcome_days": 8,
-      "outcome_final": false
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -305,9 +305,9 @@
       "summary": "within limits; cash 58%"
     }
   ],
-  "realized_avg_return": -0.1561,
+  "realized_avg_return": -0.1413,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3
+  "realized_final_count": 4,
+  "realized_stop_exits": 4
 }
