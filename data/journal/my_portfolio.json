@@ -1,7 +1,7 @@
 {
   "name": "Chase Self-Directed (...8661)",
   "note": "JP's real book - TRACKED ONLY. OROS never trades or touches the account. Stops are Weinstein 30-week-MA levels, ratcheted up daily, never down. Update holdings here (or tell Claude) whenever a real trade happens.",
-  "updated": "2026-07-10",
+  "updated": "2026-07-13",
   "margin_debt": 6105.34,
   "holdings": [
     {
@@ -14,13 +14,13 @@
       "ticker": "WELL",
       "shares": 20,
       "cost_basis": 209.49,
-      "stop": 202.6
+      "stop": 203.62
     },
     {
       "ticker": "DY",
       "shares": 10,
       "cost_basis": 542.68,
-      "stop": 398.23
+      "stop": 400.5
     },
     {
       "ticker": "NVDA",

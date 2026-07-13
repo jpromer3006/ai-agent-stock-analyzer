@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0106,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BCRX",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.269,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0306,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BPOP",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.318,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0045,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CCEP",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.242,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0111,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "EBC",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.125,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0067,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "ASND",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.191,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0216,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "LIN",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.157,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0042,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CSX",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0073,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "SBUX",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.006,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0145,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CMPR",
@@ -156,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.422,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0174,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "KRE",
@@ -184,7 +214,10 @@
       "led_by": "sepa",
       "sentiment": 0.198,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0012,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
