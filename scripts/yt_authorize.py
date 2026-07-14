@@ -27,7 +27,10 @@ import requests
 
 PORT = 8765
 REDIRECT = f"http://localhost:{PORT}"
-SCOPE = "https://www.googleapis.com/auth/youtube.upload"
+# upload alone can't insert captions or add to playlists; force-ssl covers
+# uploads, captions, and playlist management (JP, 2026-07-14).
+SCOPE = ("https://www.googleapis.com/auth/youtube.upload "
+         "https://www.googleapis.com/auth/youtube.force-ssl")
 _code: list[str] = []
 
 
