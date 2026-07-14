@@ -978,6 +978,12 @@ def send_daily_report(to: str | None = None, opps: dict | None = None,
     the cloud runner fire on the same day (marker is per machine)."""
     to = to or os.environ.get("OROS_REPORT_TO", "").strip() or DEFAULT_RECIPIENT
     data = build_report_data(opps=opps, changes=changes)
+    # Give the morning picks memory: the Closing Bell grades them tonight.
+    try:
+        from ml.picks_ledger import record_picks
+        record_picks((data.get("top_picks") or []) + (data.get("etf_picks") or []))
+    except Exception as e:  # noqa: BLE001
+        logger.warning("picks ledger record failed: %s", e)
     pdf = render_pdf(data)
     memo_path, memo_note = (None, "")
     if research:

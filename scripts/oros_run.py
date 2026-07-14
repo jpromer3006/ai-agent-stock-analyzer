@@ -83,7 +83,28 @@ def main() -> int:
                     help="skip the scan-complete + daily-report emails")
     ap.add_argument("--report-to", default=None,
                     help="daily report recipient (default OROS_REPORT_TO / JPR20@fordham.edu)")
+    ap.add_argument("--edition", default="auto",
+                    choices=("auto", "morning", "evening"),
+                    help="morning = full scan + newscast; evening = the "
+                         "Closing Bell (grade the morning, tally the day). "
+                         "auto resolves by Eastern clock (>=14:00 ET = evening)")
     args = ap.parse_args()
+
+    # The Closing Bell: the 16:50 ET cron slot grades instead of re-scanning.
+    edition = args.edition
+    if edition == "auto":
+        try:
+            from zoneinfo import ZoneInfo
+            edition = ("evening"
+                       if datetime.now(ZoneInfo("America/New_York")).hour >= 14
+                       else "morning")
+        except Exception:
+            edition = "morning"
+    if edition == "evening":
+        log.info("OROS Closing Bell run (evening edition)")
+        from ml.evening_report import send_evening_report
+        send_evening_report(to=args.report_to)
+        return 0
 
     from data import price_cache
     from data.universe import build_liquid_ranking, load_liquid_ranking, get_universe

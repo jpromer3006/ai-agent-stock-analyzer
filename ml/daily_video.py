@@ -650,15 +650,18 @@ def _capstone_scene(plt, cs: dict):
 
 def _signoff_scene(plt, data: dict):
     board = data.get("scoreboard") or {}
-    lines = []
-    best = None
-    for m, v in board.items():
-        if v.get("expectancy_pct") is not None:
-            if best is None or v["expectancy_pct"] > best[1]:
-                best = (m, v["expectancy_pct"])
+    try:
+        from ml.strategy_registry import display_name
+    except Exception:  # noqa: BLE001
+        def display_name(m):  # noqa: ANN001
+            return m
+    lines = [("OROS builds and journals a separate experimental book per "
+              "strategy author — graded forward from a standing start:",
+              {"size": 12, "color": _MUT, "dy": 0.06})]
     for m, v in list(board.items())[:4]:
         e = v.get("expectancy_pct")
-        lines.append((f"{m:<16} expectancy {'—' if e is None else f'{e:+.2f}%'}   "
+        nm = str(display_name(m))[:16]
+        lines.append((f"{nm:<17} expectancy {'—' if e is None else f'{e:+.2f}%'}   "
                       f"({v.get('positions_scored') or 0} graded)",
                       {"size": 13, "color": _UP if (e or -1) > 0 else _MUT}))
     rec = data.get("proposal") or {}
@@ -848,6 +851,15 @@ def _capstone_script(cs: dict) -> list[str]:
     return [" ".join(s), _teach("race")]
 
 
+_SCOREBOARD_FRAME = (
+    "One note on the board you are seeing. Those are not one portfolio but "
+    "several: OROS builds and journals a separate experimental book for each "
+    "strategy author it studies — Weinstein, Minervini, O'Neil and their "
+    "peers — all graded forward from a standing start. Early numbers read "
+    "cold by design. The scoreboard exists to earn trust over time, not to "
+    "impress tonight."
+)
+
 _CREDITS_SCRIPT = (
     "A word on how this desk works. Every segment you just watched was "
     "researched and assembled end to end by the OROS specialist agents: a "
@@ -876,7 +888,7 @@ def _signoff_script(data: dict) -> list[str]:
     elif exps:
         s.append("The forward record shows early positive expectancy; sizing "
                  "follows the record, not the mood.")
-    segs = [" ".join(s)]
+    segs = [" ".join(s), _SCOREBOARD_FRAME]
     if _lesson_key() == "signoff":
         segs.append(_LESSONS["signoff"])
     segs.append(_CREDITS_SCRIPT)
@@ -1109,6 +1121,207 @@ def generate_video_brief(data: dict) -> tuple[Path | None, str]:
     except Exception as e:  # noqa: BLE001
         logger.warning("video brief failed: %s", e)
         return None, f"Video brief: unavailable today ({type(e).__name__})."
+
+
+# ---------------------------------------------------------------------------
+# The Closing Bell (JP, 2026-07-14): the evening verdict show. The morning
+# proposes; the evening grades. 60-90 seconds: did the Top Story trigger,
+# who won the day, running record, disclosure. Autonomy, twice a day.
+# ---------------------------------------------------------------------------
+_VERDICT_LINES = {
+    "home_run": ("CONFIRMED HOME RUN", _UP),
+    "triggered_up": ("Triggered — closed above the entry", _UP),
+    "triggered_down": ("Triggered — closed below; the stop is the plan", _WARN),
+    "not_triggered": ("Never triggered — the entry protected you", _MUT),
+    "ungraded": ("No fresh bar to grade (holiday or data gap)", _MUT),
+}
+
+
+def _verdict_scene(plt, verdicts: list[dict]):
+    lines = []
+    for v in verdicts[:3]:
+        label, color = _VERDICT_LINES.get(v["verdict"], ("", _MUT))
+        pct = (f"   close {v['vs_trigger_pct']:+.1f}% vs trigger"
+               if v.get("vs_trigger_pct") is not None else "")
+        lines.append((f"{v['ticker']:6} {label}{pct}",
+                      {"color": color, "size": 15,
+                       "weight": "bold" if v["verdict"] == "home_run" else "normal"}))
+        lines.append((f"       trigger {v['buy_stop']:,.2f}   stop "
+                      f"{v['stop_loss']:,.2f}   target {v['target']:,.2f}",
+                      {"color": _MUT, "size": 11, "dy": 0.085}))
+    if not lines:
+        lines = [("No pick was on the tape this morning. No trade, no grade.",
+                  {"color": _MUT, "size": 15})]
+    return _card(plt, "The Verdict — this morning's pick, graded", lines,
+                 kicker=f"{datetime.now():%A, %B %d, %Y} · after the close")
+
+
+def _verdict_script(verdicts: list[dict]) -> list[str]:
+    if not verdicts:
+        return [("Good evening from the OROS closing desk. This morning the "
+                 "system named no pick, so tonight there is nothing to "
+                 "grade. No setup, no trade, no loss — that is the "
+                 "discipline working."),
+                _EVENING_FRAME]
+    s = ["Good evening from the OROS closing desk. Time to grade this "
+         "morning's call — the part most shows skip."]
+    for v in verdicts[:3]:
+        t = v["ticker"]
+        if v["verdict"] == "home_run":
+            s.append(f"{t}: home run confirmed. The market pushed up through "
+                     f"the trigger and closed {v['vs_trigger_pct']:+.1f} "
+                     f"percent above it. The system called it, on the "
+                     f"record, before the open.")
+        elif v["verdict"] == "triggered_up":
+            s.append(f"{t} triggered and closed {v['vs_trigger_pct']:+.1f} "
+                     f"percent above the entry. So far, so disciplined.")
+        elif v["verdict"] == "triggered_down":
+            s.append(f"{t} triggered, then faded to "
+                     f"{v['vs_trigger_pct']:+.1f} percent below the entry. "
+                     f"If it closes a week below the stop, the exit is "
+                     f"automatic. That is not a failure; that is the plan.")
+        elif v["verdict"] == "not_triggered":
+            s.append(f"{t} never reached the trigger, so no position was "
+                     f"taken. The entry did its quiet job: it kept us out.")
+    return [" ".join(s), _EVENING_FRAME]
+
+
+_EVENING_FRAME = (
+    "Why we grade in public: a forecast that is never checked is just "
+    "content. Every morning call gets an evening verdict, and both go in "
+    "the permanent record."
+)
+
+
+def _tally_scene(plt, tally: dict):
+    today = tally.get("today") or {}
+    rows = [("Live OROS book", today.get("live_pct"), _BLUE),
+            ("Frozen First Portfolio", today.get("frozen_pct"), _UP),
+            ("SPY index fund", today.get("spy_pct"), _MUT)]
+    ranked = sorted([r for r in rows if r[1] is not None],
+                    key=lambda r: -r[1])
+    lines = []
+    for i, (name, pct, color) in enumerate(ranked):
+        crown = "1st  " if i == 0 else ("2nd  " if i == 1 else "3rd  ")
+        lines.append((f"{crown}{name:26} {pct:+.2f}% on the day",
+                      {"color": color, "size": 15,
+                       "weight": "bold" if i == 0 else "normal"}))
+    vf = tally.get("vs_frozen") or {}
+    vs = tally.get("vs_spy") or {}
+    lines.append((f"Season record — live book vs frozen: "
+                  f"{vf.get('wins', 0)}-{vf.get('losses', 0)}"
+                  f"{('-' + str(vf['ties'])) if vf.get('ties') else ''}"
+                  f"    vs SPY: {vs.get('wins', 0)}-{vs.get('losses', 0)}",
+                  {"color": _GOLD, "size": 13, "dy": 0.09}))
+    return _card(plt, "Who Won the Day", lines)
+
+
+def _tally_script(tally: dict) -> list[str]:
+    today = tally.get("today") or {}
+    rows = [("the live self-rebuilding book", today.get("live_pct")),
+            ("the frozen first portfolio", today.get("frozen_pct")),
+            ("the index fund", today.get("spy_pct"))]
+    ranked = sorted([r for r in rows if r[1] is not None], key=lambda r: -r[1])
+    if not ranked:
+        return []
+    s = [f"Who won the day? {ranked[0][0].capitalize()}, "
+         f"{ranked[0][1]:+.2f} percent."]
+    for name, pct in ranked[1:]:
+        s.append(f"Then {name} at {pct:+.2f}.")
+    vf = tally.get("vs_frozen") or {}
+    s.append(f"Season record: the live book is {vf.get('wins', 0)} and "
+             f"{vf.get('losses', 0)} against its frozen past self.")
+    return [" ".join(s)]
+
+
+_EVENING_CLOSE = (
+    "All figures are simulated paper trading, graded and journaled by the "
+    "OROS agents with no human intervention. Nothing here is financial "
+    "advice. From the closing desk — see you at the open."
+)
+
+
+def generate_evening_brief(verdicts: list[dict], tally: dict,
+                           ) -> tuple[Path | None, str]:
+    """The Closing Bell MP4 (short). Returns (path or None, status)."""
+    if os.environ.get("OROS_VIDEO", "1") == "0":
+        return None, "Closing Bell: disabled (OROS_VIDEO=0)."
+    if not shutil.which("ffmpeg"):
+        return None, "Closing Bell: skipped (no ffmpeg)."
+    try:
+        from data.audio_client import is_available, generate_audio
+        if not is_available():
+            return None, "Closing Bell: skipped (no ELEVENLABS_API_KEY)."
+        import matplotlib
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+
+        scenes: list[tuple[str, str, object, list[str], str]] = [
+            ("verdict", "The Verdict", _verdict_scene(plt, verdicts),
+             _verdict_script(verdicts), "analyst"),
+        ]
+        ts = _tally_script(tally)
+        if ts:
+            scenes.append(("tally", "Who Won the Day",
+                           _tally_scene(plt, tally), ts, "sports"))
+        scenes.append(("close", "Sign-off",
+                       _card(plt, "The Closing Bell",
+                             [("Graded in public. Journaled forever.",
+                               {"size": 16, "weight": "bold"}),
+                              (_CREDITS_LINE, {"color": _MUT, "size": 10,
+                                               "dy": 0.09})]),
+                       [_EVENING_CLOSE], "anchor"))
+
+        tmp = Path(tempfile.mkdtemp(prefix="oros_close_"))
+        clips, chapters, cues, t = [], [], [], 0.0
+        for i, (key, title, fig, segments, voice) in enumerate(scenes):
+            segments = [s for s in (segments or []) if s and s.strip()]
+            if not segments:
+                plt.close(fig)
+                continue
+            png = tmp / f"scene{i}.png"
+            fig.savefig(png, dpi=100, facecolor=fig.get_facecolor())
+            plt.close(fig)
+            mp3, timed = _narration_audio(segments, generate_audio, tmp, i,
+                                          voice=voice)
+            if mp3 is None:
+                continue
+            clip = tmp / f"clip{i}.mp4"
+            if _scene_to_clip(png, Path(mp3), clip):
+                clips.append(clip)
+                dur = _mp3_duration(clip) or sum(d for _, d in timed)
+                chapters.append({"title": title, "start_s": round(t, 2)})
+                seg_t = t
+                for text, d in timed:
+                    cues.append((seg_t, seg_t + d, text))
+                    seg_t += d
+                t += dur
+        if not clips:
+            return None, "Closing Bell: no scenes could be rendered."
+        lst = tmp / "list.txt"
+        lst.write_text("".join(f"file '{c}'\n" for c in clips))
+        out = _REPORT_DIR / f"oros_close_{datetime.now():%Y-%m-%d}.mp4"
+        r = subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0",
+                            "-i", str(lst), "-c", "copy", str(out)],
+                           capture_output=True, timeout=180)
+        if r.returncode != 0 or not out.exists():
+            return None, "Closing Bell: final assembly failed."
+        try:
+            _write_srt(cues, out.with_suffix(".srt"))
+            import json as _json
+            hr = next((v["ticker"] for v in verdicts
+                       if v["verdict"] == "home_run"), None)
+            out.with_suffix(".meta.json").write_text(_json.dumps(
+                {"edition": "evening", "chapters": chapters,
+                 "home_run_confirmed": hr, "tally": tally,
+                 "duration_s": round(t, 1)}, indent=1))
+        except Exception as e:  # noqa: BLE001
+            logger.warning("closing bell sidecars failed: %s", e)
+        logger.info("closing bell written: %s (%.0fs)", out.name, t)
+        return out, f"Closing Bell video: {len(clips)} scenes, {t:.0f}s."
+    except Exception as e:  # noqa: BLE001
+        logger.warning("closing bell failed: %s", e)
+        return None, f"Closing Bell: unavailable ({type(e).__name__})."
 
 
 if __name__ == "__main__":
