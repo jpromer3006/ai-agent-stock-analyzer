@@ -87,7 +87,7 @@ jobs:
 
       - name: OROS run (scan + auto portfolio + report email)
         run: |
-          PYTHONPATH=. python scripts/oros_run.py --mandate auto --cap 800
+          PYTHONPATH=. python scripts/oros_run.py --mandate auto --cap 500
 
       - name: Alert on failure (email)
         # failure() alone misses timeout kills (GitHub marks those "cancelled");

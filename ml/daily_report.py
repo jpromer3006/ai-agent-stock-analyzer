@@ -226,12 +226,25 @@ def build_report_data(opps: dict | None = None, changes: dict | None = None) -> 
         _now = datetime.now(ZoneInfo("America/New_York"))
     except Exception:
         _now = datetime.now()
+    breadth, oros500 = None, None
+    try:
+        from ml.breadth import latest_breadth
+        breadth = latest_breadth()
+    except Exception:
+        pass
+    try:
+        from ml.oros500 import load_constituents
+        oros500 = load_constituents()
+        if oros500:
+            oros500 = {k: v for k, v in oros500.items() if k != "symbols"}
+    except Exception:
+        pass
     return {"date": f"{_now:%A, %B %d, %Y}", "regime": regime, "vix": vix,
             "indexes": _index_snapshot(), "proposal": rec, "pnl": pnl,
             "scoreboard": scoreboard, "opps": opps, "changes": changes or {},
             "top_picks": picks, "etf_picks": etf_picks,
             "actions": _todays_actions(rec), "my_book": my_book,
-            "capstone": capstone}
+            "capstone": capstone, "breadth": breadth, "oros500": oros500}
 
 
 # ---------------------------------------------------------------------------

@@ -70,7 +70,8 @@ def record_cost(amount: float) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--refresh-cap", type=int, default=1500, help="names to refresh prices for")
-    ap.add_argument("--cap", type=int, default=800, help="liquid names to scan")
+    ap.add_argument("--cap", type=int, default=500,
+                    help="liquid names to scan (the OROS 500)")
     ap.add_argument("--positions", type=int, default=12)
     ap.add_argument("--account", type=float, default=100_000.0)
     ap.add_argument("--mandate", default="auto",
@@ -142,6 +143,20 @@ def main() -> int:
     # 4. Journal (propose-and-journal-only; never trades)
     path = record_proposal(plan, args.account, trace=res.trace, note="nightly run")
     record_cost(0.0)  # quant engine is token-free
+
+    # 4b. The OROS 500: journal constituents + stage breadth so the broadcast's
+    # claims ("the OROS 500", "52% Advancing") are true by construction. Runs
+    # off the stage cache the orchestrator just warmed.
+    try:
+        from ml.oros500 import record_constituents
+        from ml.breadth import record_breadth
+        c500 = record_constituents(symbols)
+        br = record_breadth(symbols)
+        log.info("OROS 500 journaled: %d names (+%d/-%d) | breadth %s",
+                 c500["count"], len(c500["entered"]), len(c500["left"]),
+                 br["counts"])
+    except Exception as e:  # noqa: BLE001
+        log.warning("OROS 500 / breadth journaling failed: %s", e)
 
     # 5. Update outcomes on older proposals (forward track record)
     props = list_proposals()

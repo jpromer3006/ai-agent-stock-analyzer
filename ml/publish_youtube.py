@@ -39,6 +39,99 @@ it never trades. Nothing in this video is financial advice. Educational
 project - Fordham University, MS in AI in Business.
 """
 
+_GLOSSARY = """GLOSSARY
+30-week moving average: the average weekly closing price over 30 weeks — the trend's spine.
+Stage 1-4 (Weinstein): Basing (spring), Advancing (summer), Topping (autumn), Declining (winter).
+Buy-stop: a conditional entry ABOVE the market — you buy only if price proves demand by rising through it.
+Stop-loss: the pre-planned exit, taken on a weekly close below, never an afternoon scare.
+Expectancy: average profit or loss per graded trade — the system's honest report card.
+Throttle: OROS cuts its own position sizes when its forward record weakens."""
+
+_SOURCES = """SOURCES & AGENTS
+Data: SEC EDGAR XBRL company filings, FRED (Federal Reserve) economic data, daily market prices.
+Agents: universe scanner, stage classifier, router, sector specialists, sentiment analyst, portfolio builder, risk manager (veto power), and this news desk.
+No human intervention: the system scans, builds, risk-checks, writes, and voices this briefing on its own."""
+
+
+def _fmt_ts(sec: float) -> str:
+    s = int(round(sec))
+    return f"{s // 3600}:{(s % 3600) // 60:02d}:{s % 60:02d}" if s >= 3600 \
+        else f"{s // 60}:{s % 60:02d}"
+
+
+def build_description(meta: dict | None) -> str:
+    """Rich, per-episode description: hook, chapters, the day's numbers,
+    sources, glossary, disclaimer. Falls back to the static text."""
+    if not meta:
+        return _DESCRIPTION
+    parts = []
+    day, total = meta.get("race_day"), meta.get("race_total")
+    hook = ["An autonomous AI runs three simulated $100,000 books and "
+            "publishes its record daily, win or lose."]
+    if day and total:
+        hook.append(f"Race day {day} of {total} — live book vs frozen book "
+                    f"vs the S&P 500, finish line July 29.")
+    if meta.get("home_run"):
+        hook.append(f"Today's TOP STORY: {meta['home_run']} cleared the "
+                    "strict home-run bar (fresh breakout, 3-to-1 reward on "
+                    "risk, 2x volume).")
+    parts.append(" ".join(hook))
+    ch = meta.get("chapters") or []
+    if ch:
+        # YouTube chapters require the first stamp to be 0:00.
+        lines = ["CHAPTERS"]
+        if ch[0].get("start_s", 0) > 0:
+            ch = [{"title": ch[0]["title"], "start_s": 0}] + ch[1:]
+        for c in ch:
+            lines.append(f"{_fmt_ts(float(c.get('start_s') or 0))} {c['title']}")
+        parts.append("\n".join(lines))
+    br = meta.get("breadth") or {}
+    if br.get("counts") and br.get("total"):
+        tot = max(br["total"], 1)
+        c = br["counts"]
+        parts.append("MARKET ANALYSIS — the OROS 500 by stage\n"
+                     + "  ".join(f"{k}: {v} ({100 * v / tot:.0f}%)"
+                                 for k, v in c.items())
+                     + f"\nInvalidations on watch: {br.get('invalidated', 0)}")
+    if meta.get("takeaway"):
+        parts.append(meta["takeaway"].replace("Tonight's takeaway. ",
+                                              "THE TAKEAWAY\n"))
+    parts.append(_SOURCES)
+    parts.append(_GLOSSARY)
+    parts.append(_DESCRIPTION.strip())
+    return "\n\n".join(parts)[:4900]     # YouTube caps descriptions at 5000
+
+
+def upload_captions(video_id: str, srt_path: Path, token: str) -> bool:
+    """Best-effort captions.insert so the Transcript panel populates.
+    Requires the youtube.force-ssl scope; failures are logged, never fatal."""
+    try:
+        srt = srt_path.read_bytes()
+        import json as _json
+        boundary = "oros_caption_boundary"
+        snippet = _json.dumps({"snippet": {"videoId": video_id,
+                                           "language": "en",
+                                           "name": "OROS Market Desk",
+                                           "isDraft": False}})
+        body = (f"--{boundary}\r\nContent-Type: application/json; "
+                f"charset=UTF-8\r\n\r\n{snippet}\r\n"
+                f"--{boundary}\r\nContent-Type: application/octet-stream"
+                f"\r\n\r\n").encode() + srt + f"\r\n--{boundary}--".encode()
+        r = requests.post(
+            "https://www.googleapis.com/upload/youtube/v3/captions"
+            "?uploadType=multipart&part=snippet",
+            data=body, timeout=120, headers={
+                "Authorization": f"Bearer {token}",
+                "Content-Type": f"multipart/related; boundary={boundary}"})
+        ok = r.status_code in (200, 201)
+        if not ok:
+            logger.warning("caption upload failed: %s %s",
+                           r.status_code, r.text[:200])
+        return ok
+    except Exception as e:  # noqa: BLE001
+        logger.warning("caption upload failed: %s", e)
+        return False
+
 
 def _load_env_fallback() -> None:
     if os.environ.get("YT_REFRESH_TOKEN"):
@@ -77,9 +170,16 @@ def episode_title(data: dict) -> str:
         now = _dt.now()
     regime = (data.get("regime") or "").upper() or "MARKET"
     picks = (data.get("top_picks") or []) + (data.get("etf_picks") or [])
-    if picks:
-        tickers = ", ".join(p["ticker"] for p in picks[:2])
-        hook = f"Pick: {tickers}"
+    home_run = None
+    try:
+        from ml.daily_video import _is_home_run
+        home_run = next((p for p in picks if _is_home_run(p)), None)
+    except Exception:
+        pass
+    if home_run:
+        hook = f"HOME RUN setup: {home_run['ticker']}"
+    elif picks:
+        hook = f"Pick: {', '.join(p['ticker'] for p in picks[:2])}"
     else:
         hook = "No setup today"
     return f"OROS Market Desk — {now:%b %d, %Y} · {regime} · {hook}"
@@ -98,11 +198,21 @@ def publish_episode(video_path: Path | str,
         return None, ("YouTube: skipped (YT_CLIENT_ID / YT_CLIENT_SECRET / "
                       "YT_REFRESH_TOKEN not configured).")
     title = title or f"OROS Market Desk — {datetime.now():%B %d, %Y}"
+    # Sidecar metadata from the video builder → rich description + captions.
+    ep_meta = None
+    meta_path = video_path.with_suffix(".meta.json")
+    if meta_path.exists():
+        try:
+            import json as _json
+            ep_meta = _json.loads(meta_path.read_text())
+        except Exception:  # noqa: BLE001
+            pass
     meta = {
-        "snippet": {"title": title, "description": _DESCRIPTION,
+        "snippet": {"title": title, "description": build_description(ep_meta),
                     "categoryId": "25",
                     "tags": ["OROS", "market analysis", "AI", "paper trading",
-                             "educational"]},
+                             "educational", "AI agents", "Weinstein",
+                             "stage analysis"]},
         "status": {"privacyStatus": "unlisted",
                    "selfDeclaredMadeForKids": False},
     }
@@ -126,6 +236,10 @@ def publish_episode(video_path: Path | str,
             return None, f"YouTube: upload failed ({put.status_code})."
         vid = put.json().get("id")
         url = f"https://youtu.be/{vid}"
+        srt = video_path.with_suffix(".srt")
+        if vid and srt.exists():
+            if upload_captions(vid, srt, token):
+                logger.info("captions uploaded for %s", vid)
         logger.info("episode published (unlisted): %s", url)
         return url, f"Watch today's episode (unlisted): {url}"
     except Exception as e:  # noqa: BLE001
