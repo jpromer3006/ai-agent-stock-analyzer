@@ -185,6 +185,42 @@ def episode_title(data: dict) -> str:
     return f"OROS Market Desk — {now:%b %d, %Y} · {regime} · {hook}"
 
 
+def _add_to_playlist(video_id: str, playlist_title: str, token: str) -> bool:
+    """Best-effort: find the channel playlist by title and append the video.
+    (Morning Desk / Closing Bell playlists created by JP, 2026-07-14.)
+    Needs the youtube or youtube.force-ssl scope; failures never block."""
+    try:
+        hdr = {"Authorization": f"Bearer {token}"}
+        r = requests.get("https://www.googleapis.com/youtube/v3/playlists",
+                         params={"part": "snippet", "mine": "true",
+                                 "maxResults": 50}, headers=hdr, timeout=30)
+        if r.status_code != 200:
+            logger.warning("playlist lookup failed: %s %s",
+                           r.status_code, r.text[:150])
+            return False
+        pid = next((it["id"] for it in r.json().get("items", [])
+                    if it["snippet"]["title"].strip().lower()
+                    == playlist_title.strip().lower()), None)
+        if not pid:
+            logger.warning("playlist %r not found on channel", playlist_title)
+            return False
+        r = requests.post(
+            "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+            json={"snippet": {"playlistId": pid, "resourceId": {
+                "kind": "youtube#video", "videoId": video_id}}},
+            headers=hdr, timeout=30)
+        ok = r.status_code in (200, 201)
+        if ok:
+            logger.info("added %s to playlist %r", video_id, playlist_title)
+        else:
+            logger.warning("playlist insert failed: %s %s",
+                           r.status_code, r.text[:150])
+        return ok
+    except Exception as e:  # noqa: BLE001
+        logger.warning("playlist add failed: %s", e)
+        return False
+
+
 def publish_episode(video_path: Path | str,
                     title: str | None = None) -> tuple[str | None, str]:
     """Upload an episode. Returns (watch_url or None, status line)."""
@@ -207,13 +243,16 @@ def publish_episode(video_path: Path | str,
             ep_meta = _json.loads(meta_path.read_text())
         except Exception:  # noqa: BLE001
             pass
+    # Public by default since 2026-07-14 (channel went public). Override with
+    # OROS_YT_PRIVACY=unlisted for dry runs.
+    privacy = os.environ.get("OROS_YT_PRIVACY", "public").strip() or "public"
     meta = {
         "snippet": {"title": title, "description": build_description(ep_meta),
                     "categoryId": "25",
                     "tags": ["OROS", "market analysis", "AI", "paper trading",
                              "educational", "AI agents", "Weinstein",
                              "stage analysis"]},
-        "status": {"privacyStatus": "unlisted",
+        "status": {"privacyStatus": privacy,
                    "selfDeclaredMadeForKids": False},
     }
     try:
@@ -240,8 +279,13 @@ def publish_episode(video_path: Path | str,
         if vid and srt.exists():
             if upload_captions(vid, srt, token):
                 logger.info("captions uploaded for %s", vid)
-        logger.info("episode published (unlisted): %s", url)
-        return url, f"Watch today's episode (unlisted): {url}"
+        if vid:
+            playlist = ("Closing Bell"
+                        if (ep_meta or {}).get("edition") == "evening"
+                        else "Morning Desk")
+            _add_to_playlist(vid, playlist, token)
+        logger.info("episode published (%s): %s", privacy, url)
+        return url, f"Watch today's episode ({privacy}): {url}"
     except Exception as e:  # noqa: BLE001
         logger.warning("YouTube publish failed: %s", e)
         return None, f"YouTube: unavailable today ({type(e).__name__})."
