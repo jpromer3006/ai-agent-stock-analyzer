@@ -144,6 +144,11 @@ def _load_env_fallback() -> None:
 
 
 def _access_token() -> str | None:
+    """Returns an access token, None when YT_* are unconfigured, or ""
+    when credentials exist but the refresh was REJECTED — callers must
+    surface that last case loudly (root cause of the silent 2026-07-14
+    no-upload day: a stale refresh token failed here and the report
+    email hid it behind the 'not configured' filter)."""
     _load_env_fallback()
     cid = os.environ.get("YT_CLIENT_ID", "").strip()
     sec = os.environ.get("YT_CLIENT_SECRET", "").strip()
@@ -155,7 +160,7 @@ def _access_token() -> str | None:
         "refresh_token": ref, "grant_type": "refresh_token"}, timeout=30)
     if r.status_code != 200:
         logger.warning("YouTube token refresh failed: %s %s", r.status_code, r.text[:200])
-        return None
+        return ""
     return r.json().get("access_token")
 
 
@@ -233,6 +238,10 @@ def publish_episode(video_path: Path | str,
     if token is None:
         return None, ("YouTube: skipped (YT_CLIENT_ID / YT_CLIENT_SECRET / "
                       "YT_REFRESH_TOKEN not configured).")
+    if token == "":
+        return None, ("YouTube: TOKEN REFRESH FAILED — the refresh token was "
+                      "rejected. Re-run scripts/yt_authorize.py and update "
+                      "the YT_REFRESH_TOKEN GitHub Actions secret.")
     title = title or f"OROS Market Desk — {datetime.now():%B %d, %Y}"
     # Sidecar metadata from the video builder → rich description + captions.
     ep_meta = None
@@ -279,13 +288,16 @@ def publish_episode(video_path: Path | str,
         if vid and srt.exists():
             if upload_captions(vid, srt, token):
                 logger.info("captions uploaded for %s", vid)
+        pl_note = ""
         if vid:
             playlist = ("Closing Bell"
                         if (ep_meta or {}).get("edition") == "evening"
                         else "Morning Desk")
-            _add_to_playlist(vid, playlist, token)
+            if not _add_to_playlist(vid, playlist, token):
+                pl_note = (f" (WARNING: not added to playlist {playlist!r} — "
+                           "check token scope includes youtube.force-ssl)")
         logger.info("episode published (%s): %s", privacy, url)
-        return url, f"Watch today's episode ({privacy}): {url}"
+        return url, f"Watch today's episode ({privacy}): {url}{pl_note}"
     except Exception as e:  # noqa: BLE001
         logger.warning("YouTube publish failed: %s", e)
         return None, f"YouTube: unavailable today ({type(e).__name__})."
