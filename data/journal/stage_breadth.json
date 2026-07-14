@@ -1,0 +1,15 @@
+{
+ "entries": [
+  {
+   "date": "2026-07-14",
+   "total": 494,
+   "counts": {
+    "Advancing": 269,
+    "Basing": 79,
+    "Topping": 63,
+    "Declining": 83
+   },
+   "invalidated": 3
+  }
+ ]
+}

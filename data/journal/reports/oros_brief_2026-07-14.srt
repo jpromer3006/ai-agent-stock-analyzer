@@ -1,0 +1,215 @@
+1
+00:00:00,000 --> 00:00:01,001
+Good morning.
+
+2
+00:00:01,001 --> 00:00:06,702
+From the OROS Market Desk, here is the rundown for Tuesday, July 14, 2026.
+
+3
+00:00:06,702 --> 00:00:08,242
+The tape reads bull.
+
+4
+00:00:08,242 --> 00:00:15,098
+No setup cleared our home-run bar today, and you will hear why that is a story in itself.
+
+5
+00:00:15,098 --> 00:00:27,115
+And at the sports desk, day 7 of 18 in the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:27,115 --> 00:00:35,346
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:35,346 --> 00:00:42,710
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:42,672 --> 00:00:44,664
+First, the market open.
+
+9
+00:00:44,664 --> 00:00:50,901
+The S and P five hundred slipped 0.1 percent, while the NASDAQ lost 1.7.
+
+10
+00:00:50,901 --> 00:00:58,350
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+11
+00:00:58,350 --> 00:01:00,775
+The fear gauge sits at 16.9.
+
+12
+00:01:00,775 --> 00:01:10,101
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:10,063 --> 00:01:12,121
+Turning to the model book.
+
+14
+00:01:12,121 --> 00:01:22,173
+The system holds 12 positions with 58% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+15
+00:01:22,173 --> 00:01:28,664
+New to the book: AAPU, BOKF, SBUX — each passed the full entry gauntlet overnight.
+
+16
+00:01:28,664 --> 00:01:44,336
+Rotated out: ANET, which still advancing, but outranked by stronger names; CMPR, which still advancing, but outranked by stronger names; EBAY, which still advancing, but outranked by stronger names.
+
+17
+00:01:44,336 --> 00:01:46,921
+Today's lesson is position management.
+
+18
+00:01:46,921 --> 00:01:48,214
+Cash is a position.
+
+19
+00:01:48,214 --> 00:01:55,902
+The system sizes deployment by rule, and when its own forward record weakens, a throttle automatically cuts size.
+
+20
+00:01:55,902 --> 00:01:59,849
+Rotation is not indecision; it is the portfolio breathing.
+
+21
+00:01:59,849 --> 00:02:04,816
+Names that stop qualifying leave, and names that start qualifying arrive.
+
+22
+00:02:04,769 --> 00:02:09,683
+On the day, the book is up 107 dollars.
+
+23
+00:02:09,683 --> 00:02:12,833
+BOKF leads, +0.9 percent.
+
+24
+00:02:12,833 --> 00:02:15,101
+AAPU lags at -2.2.
+
+25
+00:02:15,101 --> 00:02:21,905
+The checklist is clear: nothing requires action today.
+
+26
+00:02:21,905 --> 00:02:25,432
+On screen, the day's gainers and laggards inside the paper book.
+
+27
+00:02:25,388 --> 00:02:27,228
+Now, market analysis.
+
+28
+00:02:27,228 --> 00:02:39,849
+Overnight the scanner graded the OROS five hundred — 500 of the most liquid names on the tape — and sorted every chart into its Weinstein stage.
+
+29
+00:02:39,849 --> 00:02:43,004
+54 percent are advancing in Stage 2.
+
+30
+00:02:43,004 --> 00:02:44,932
+16 percent are basing.
+
+31
+00:02:44,932 --> 00:02:47,210
+17 percent are in decline.
+
+32
+00:02:47,210 --> 00:02:51,066
+Outside our shop, the fear gauge reads 16.9.
+
+33
+00:02:51,066 --> 00:02:54,960
+Why this screen matters: stages are the market's seasons.
+
+34
+00:02:54,960 --> 00:02:58,718
+Basing is spring, when ownership quietly changes hands.
+
+35
+00:02:58,718 --> 00:03:02,407
+Advancing is summer, the only season this system buys.
+
+36
+00:03:02,407 --> 00:03:05,686
+Topping is autumn, when smart money distributes.
+
+37
+00:03:05,686 --> 00:03:09,511
+Declining is winter, when the first job is staying warm.
+
+38
+00:03:09,511 --> 00:03:14,498
+The more of the market in summer, the more the tide is doing the lifting.
+
+39
+00:03:14,472 --> 00:03:16,021
+Tonight's takeaway.
+
+40
+00:03:16,021 --> 00:03:18,304
+A portfolio is not a museum.
+
+41
+00:03:18,304 --> 00:03:26,619
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+42
+00:03:26,593 --> 00:03:29,003
+Before we close, the disclosure segment.
+
+43
+00:03:29,003 --> 00:03:34,848
+The system's forward track record remains negative across strategies, and it is published anyway.
+
+44
+00:03:34,848 --> 00:03:39,367
+Position sizes stay automatically reduced until the record earns them back.
+
+45
+00:03:39,367 --> 00:03:41,869
+One note on the board you are seeing.
+
+46
+00:03:41,869 --> 00:03:56,812
+Those are not one portfolio but several: OROS builds and journals a separate experimental book for each strategy author it studies — Weinstein, Minervini, O'Neil and their peers — all graded forward from a standing start.
+
+47
+00:03:56,812 --> 00:03:59,111
+Early numbers read cold by design.
+
+48
+00:03:59,111 --> 00:04:03,844
+The scoreboard exists to earn trust over time, not to impress tonight.
+
+49
+00:04:03,844 --> 00:04:05,930
+A word on how this desk works.
+
+50
+00:04:05,930 --> 00:04:23,457
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+51
+00:04:23,457 --> 00:04:31,873
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+52
+00:04:31,873 --> 00:04:34,806
+All figures are simulated paper trading.
+
+53
+00:04:34,806 --> 00:04:41,184
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+54
+00:04:41,184 --> 00:04:45,143
+From the OROS Market Desk, have a disciplined session.

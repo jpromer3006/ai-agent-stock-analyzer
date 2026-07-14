@@ -32,20 +32,20 @@
       "ticker": "CAT",
       "shares": 1,
       "cost_basis": 891.67,
-      "stop": 766.73
+      "stop": 771.46
     },
     {
       "ticker": "TSM",
       "shares": 10,
       "cost_basis": 443.98,
-      "stop": 365.48,
+      "stop": 368.14,
       "note": "JP independent pick (outside OROS gates) - added from Chase 07-14"
     },
     {
       "ticker": "TSEM",
       "shares": 10,
       "cost_basis": 231.34,
-      "stop": null,
+      "stop": 181.8,
       "note": "JP independent pick (outside OROS gates) - added from Chase 07-14"
     }
   ],

@@ -1,0 +1,227 @@
+{
+  "timestamp": "2026-07-14T13:48:52.065280Z",
+  "date": "2026-07-14",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 57679.39,
+  "cash": 42320.61,
+  "weights": {
+    "swing": 0.121,
+    "canslim": 0.175,
+    "technical": 0.111,
+    "value": 0.024,
+    "ipo": 0.118,
+    "growth": 0.067,
+    "weinstein": 0.166,
+    "sepa": 0.218
+  },
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.766,
+      "shares": 36,
+      "dollars": 3351.96,
+      "weight_pct": 3.35,
+      "entry": 93.11,
+      "stop": 84.45,
+      "led_by": "sepa",
+      "sentiment": 0.226,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.7447,
+      "shares": 22,
+      "dollars": 3733.62,
+      "weight_pct": 3.73,
+      "entry": 169.71,
+      "stop": 155.91,
+      "led_by": "sepa",
+      "sentiment": 0.276,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.7212,
+      "shares": 21,
+      "dollars": 6593.16,
+      "weight_pct": 6.59,
+      "entry": 313.96,
+      "stop": 299.53,
+      "led_by": "sepa",
+      "sentiment": 0.024,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPU",
+      "sector": "Other",
+      "conviction": 0.7189,
+      "shares": 102,
+      "dollars": 4175.88,
+      "weight_pct": 4.18,
+      "entry": 40.94,
+      "stop": 37.89,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "KRE",
+      "sector": "Other",
+      "conviction": 0.7114,
+      "shares": 65,
+      "dollars": 4883.45,
+      "weight_pct": 4.88,
+      "entry": 75.13,
+      "stop": 70.39,
+      "led_by": "sepa",
+      "sentiment": 0.259,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CSX",
+      "sector": "Industrials",
+      "conviction": 0.7077,
+      "shares": 87,
+      "dollars": 4364.79,
+      "weight_pct": 4.36,
+      "entry": 50.17,
+      "stop": 46.61,
+      "led_by": "sepa",
+      "sentiment": 0.206,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "WELL",
+      "sector": "Real Estate",
+      "conviction": 0.7053,
+      "shares": 16,
+      "dollars": 3772.96,
+      "weight_pct": 3.77,
+      "entry": 235.81,
+      "stop": 216.87,
+      "led_by": "sepa",
+      "sentiment": 0.303,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CGON",
+      "sector": "Health Care",
+      "conviction": 0.6982,
+      "shares": 38,
+      "dollars": 2784.64,
+      "weight_pct": 2.78,
+      "entry": 73.28,
+      "stop": 65.26,
+      "led_by": "sepa",
+      "sentiment": -0.225,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BOKF",
+      "sector": "Financials",
+      "conviction": 0.6938,
+      "shares": 47,
+      "dollars": 6544.28,
+      "weight_pct": 6.54,
+      "entry": 139.24,
+      "stop": 132.65,
+      "led_by": "sepa",
+      "sentiment": 0.197,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CCEP",
+      "sector": "Consumer Staples",
+      "conviction": 0.6872,
+      "shares": 31,
+      "dollars": 3310.8,
+      "weight_pct": 3.31,
+      "entry": 106.8,
+      "stop": 96.78,
+      "led_by": "sepa",
+      "sentiment": 0.242,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "SBUX",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.6863,
+      "shares": 55,
+      "dollars": 5950.45,
+      "weight_pct": 5.95,
+      "entry": 108.19,
+      "stop": 102.57,
+      "led_by": "sepa",
+      "sentiment": 0.024,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BATRK",
+      "sector": "Communication Services",
+      "conviction": 0.6856,
+      "shares": 156,
+      "dollars": 8213.4,
+      "weight_pct": 8.21,
+      "entry": 52.65,
+      "stop": 50.65,
+      "led_by": "sepa",
+      "sentiment": 0.349,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "495 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 58% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 42%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}
