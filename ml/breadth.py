@@ -30,8 +30,11 @@ _FILE = _J / "stage_breadth.json"
 STAGE_ORDER = ("Advancing", "Basing", "Topping", "Declining")
 
 
-def record_breadth(symbols: list[str]) -> dict:
-    """Tally stages across `symbols` and journal today's entry."""
+_CLOSE_FILE = _J / "stage_breadth_close.json"
+
+
+def _tally_stages(symbols: list[str]) -> dict:
+    """Stage counts across `symbols` off the on-disk price cache."""
     from data import price_cache
     from ml.stage_analyzer import analyze_stage
 
@@ -52,14 +55,15 @@ def record_breadth(symbols: list[str]) -> dict:
         graded += 1
         if getattr(r, "is_invalidated", False):
             invalidated += 1
+    return {"date": f"{datetime.now():%Y-%m-%d}", "total": graded,
+            "counts": counts, "invalidated": invalidated}
 
-    entry = {"date": f"{datetime.now():%Y-%m-%d}", "total": graded,
-             "counts": counts, "invalidated": invalidated}
 
+def _journal(entry: dict, path: Path) -> None:
     hist = {"entries": []}
-    if _FILE.exists():
+    if path.exists():
         try:
-            hist = json.loads(_FILE.read_text())
+            hist = json.loads(path.read_text())
         except Exception:  # noqa: BLE001
             pass
     entries = hist.get("entries") or []
@@ -68,9 +72,50 @@ def record_breadth(symbols: list[str]) -> dict:
     else:
         entries.append(entry)
     _J.mkdir(parents=True, exist_ok=True)
-    _FILE.write_text(json.dumps({"entries": entries}, indent=1))
-    logger.info("stage breadth journaled: %s of %d graded", counts, graded)
+    path.write_text(json.dumps({"entries": entries}, indent=1))
+
+
+def record_breadth(symbols: list[str]) -> dict:
+    """Tally stages across `symbols` and journal today's (morning) entry."""
+    entry = _tally_stages(symbols)
+    _journal(entry, _FILE)
+    logger.info("stage breadth journaled: %s of %d graded",
+                entry["counts"], entry["total"])
     return entry
+
+
+def record_close_breadth(symbols: list[str]) -> dict:
+    """The evening Second Look: tally stages after the close, journaled to
+    a separate file so the morning entry survives the day. The Closing
+    Bell diffs the two — that intraday shift is the market insight."""
+    entry = _tally_stages(symbols)
+    _journal(entry, _CLOSE_FILE)
+    logger.info("closing stage breadth journaled: %s of %d graded",
+                entry["counts"], entry["total"])
+    return entry
+
+
+def intraday_shift() -> dict | None:
+    """Today's morning entry vs tonight's close entry.
+    Returns {"open": entry|None, "close": entry} or None when no close
+    entry exists for today."""
+    def _last(path: Path) -> dict | None:
+        if not path.exists():
+            return None
+        try:
+            entries = json.loads(path.read_text()).get("entries") or []
+        except Exception:  # noqa: BLE001
+            return None
+        return entries[-1] if entries else None
+
+    today = f"{datetime.now():%Y-%m-%d}"
+    close = _last(_CLOSE_FILE)
+    if not close or close.get("date") != today:
+        return None
+    opening = _last(_FILE)
+    if opening and opening.get("date") != today:
+        opening = None
+    return {"open": opening, "close": close}
 
 
 def latest_breadth(lookback: int = 5) -> dict | None:

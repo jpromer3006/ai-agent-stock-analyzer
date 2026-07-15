@@ -11,9 +11,15 @@ the edition resolves to "evening" (the 16:50 ET cron slot). It:
      the running season record (append-only day_tally.json).
   4. Updates the capstone live chain with the day's return (so the morning
      and evening runs never double-append: chain is idempotent per date).
-  5. Renders the short Closing Bell video, publishes to YouTube, emails it.
+  5. The Second Look: re-scans the morning's universe off closing bars
+     (journaled separately, so the morning breadth entry survives) and
+     reads the system's own scoreboard — wins/losses in the book, trailing
+     expectancy, the self-imposed throttle (The Loop).
+  6. Renders the Closing Bell video (verdict, second look, loop, tally),
+     publishes to YouTube, emails it.
 
-Educational, not financial advice. OROS proposes and journals only.
+Wins and losses are DETERMINED HERE, in the evening — the morning only
+proposes. Educational, not financial advice. OROS proposes and journals only.
 """
 
 from __future__ import annotations
@@ -41,6 +47,100 @@ def _spy_day_pct() -> float | None:
         return 100.0 * (float(c.iloc[-1]) / float(c.iloc[-2]) - 1)
     except Exception:  # noqa: BLE001
         return None
+
+
+def _index_day_moves() -> dict:
+    """Day % for the index quartet, off the (just refreshed) cache."""
+    from data import price_cache
+    out = {}
+    for t in ("SPY", "QQQ", "DIA", "IWM"):
+        try:
+            c = price_cache.get_history(t)["Close"].dropna()
+            out[t] = 100.0 * (float(c.iloc[-1]) / float(c.iloc[-2]) - 1)
+        except Exception:  # noqa: BLE001
+            out[t] = None
+    return out
+
+
+def _evening_scan() -> dict | None:
+    """The Second Look (JP, 2026-07-15): re-grade the same universe the
+    morning scanned, off closing bars, journaled to its own file so the
+    morning entry survives. Returns breadth.intraday_shift() or None.
+    Cap via OROS_EVENING_SCAN_CAP (default 500); OROS_EVENING_SCAN=0
+    disables. Best-effort — a failed re-scan never blocks the grading."""
+    if os.environ.get("OROS_EVENING_SCAN", "1") == "0":
+        return None
+    try:
+        from data import price_cache
+        from data.universe import load_liquid_ranking
+        from ml.breadth import intraday_shift, record_close_breadth
+        cap = int(os.environ.get("OROS_EVENING_SCAN_CAP", "500"))
+        symbols = (load_liquid_ranking() or [])[:cap]
+        if not symbols:
+            logger.warning("evening scan: no liquid ranking on disk; skipped")
+            return None
+        try:
+            price_cache.refresh_prices(sorted(symbols))
+        except Exception as e:  # noqa: BLE001
+            logger.warning("evening scan refresh partial: %s", e)
+        record_close_breadth(symbols)
+        return intraday_shift()
+    except Exception as e:  # noqa: BLE001
+        logger.warning("evening scan failed: %s", e)
+        return None
+
+
+def _reflection(rec: dict, pnl_rows: list[dict], shift: dict | None) -> dict:
+    """The Loop scene's data: the system reading its own scoreboard —
+    today's wins and losses inside the book, trailing expectancy, the
+    self-imposed throttle, and what tonight hands to tomorrow's open."""
+    refl: dict = {}
+    rows = [r for r in (pnl_rows or []) if r.get("day_pct") is not None]
+    if rows:
+        scored = sorted(((r["ticker"], float(r["day_pct"])) for r in rows),
+                        key=lambda x: -x[1])
+        refl["book"] = {"total": len(rows),
+                        "up": sum(1 for _, p in scored if p > 0),
+                        "down": sum(1 for _, p in scored if p < 0),
+                        "best": scored[0], "worst": scored[-1]}
+    mandate = (rec.get("mandate") or "swing_momentum").strip()
+    try:
+        from ml.portfolio_engine import drawdown_throttle
+        thr, note = drawdown_throttle(mandate)
+        refl["throttle"] = thr
+        refl["throttle_line"] = (note or "throttle: full size "
+                                 "(record too thin to judge yet)")
+    except Exception as e:  # noqa: BLE001
+        logger.warning("throttle read failed: %s", e)
+    try:
+        from ml.portfolio_journal import compare_by_mandate
+        v = compare_by_mandate().get(mandate) or {}
+        n, exp = v.get("positions_scored"), v.get("expectancy_pct")
+        if n and exp is not None:
+            refl["expectancy_line"] = (f"expectancy {exp:+.2f}% per trade "
+                                       f"over {n} graded positions")
+    except Exception as e:  # noqa: BLE001
+        logger.warning("expectancy read failed: %s", e)
+    # What tonight hands to tomorrow: honest, one line.
+    parts = []
+    close = (shift or {}).get("close") or {}
+    opening = (shift or {}).get("open") or {}
+    if close.get("total"):
+        adv = (close.get("counts") or {}).get("Advancing", 0)
+        parts.append(f"{adv} names close the day in Stage 2")
+        if opening:
+            d_inv = (int(close.get("invalidated") or 0)
+                     - int(opening.get("invalidated") or 0))
+            if d_inv > 0:
+                parts.append(f"{d_inv} new invalidation"
+                             f"{'s' if d_inv != 1 else ''} queue exit reviews")
+    thr = refl.get("throttle", 1.0)
+    if thr < 1.0:
+        parts.append(f"position size stays cut to {thr:.0%} until the "
+                     f"record earns it back")
+    refl["tomorrow"] = ("; ".join(parts) + "." if parts else
+                        "the gates reset at the open — no setup, no trade.")
+    return refl
 
 
 def send_evening_report(to: str | None = None) -> None:
@@ -90,8 +190,18 @@ def send_evening_report(to: str | None = None) -> None:
         except Exception as e:  # noqa: BLE001
             logger.warning("live chain update failed: %s", e)
 
-    # 5. Video -> YouTube -> email.
-    video, note = generate_evening_brief(verdicts, tally)
+    # 5. The Second Look: re-scan the morning's universe off closing bars
+    #    (separate journal file — the morning entry survives), then read
+    #    the system's own scoreboard for The Loop scene.
+    shift = _evening_scan()
+    idx_moves = _index_day_moves()
+    pnl_rows = (pnl.get("rows") or []) if rec else []
+    refl = _reflection(rec, pnl_rows, shift)
+
+    # 6. Video -> YouTube -> email.
+    video, note = generate_evening_brief(verdicts, tally, shift=shift,
+                                         reflection=refl,
+                                         idx_moves=idx_moves)
     logger.info("%s", note)
 
     hr = next((v["ticker"] for v in verdicts if v["verdict"] == "home_run"),
@@ -134,8 +244,26 @@ def send_evening_report(to: str | None = None) -> None:
                    f"Day: live {t.get('live_pct') if t.get('live_pct') is None else format(t['live_pct'], '+.2f')}%"
                    f" | frozen {t.get('frozen_pct') if t.get('frozen_pct') is None else format(t['frozen_pct'], '+.2f')}%"
                    f" | SPY {t.get('spy_pct') if t.get('spy_pct') is None else format(t['spy_pct'], '+.2f')}%",
-                   f"Season record vs frozen: {vf.get('wins', 0)}-{vf.get('losses', 0)}",
-                   watch,
+                   f"Season record vs frozen: {vf.get('wins', 0)}-{vf.get('losses', 0)}"]
+    close_e = (shift or {}).get("close")
+    if close_e and close_e.get("total"):
+        open_e = (shift or {}).get("open")
+        tot_c = max(int(close_e["total"]), 1)
+        seg = []
+        for k in ("Advancing", "Basing", "Topping", "Declining"):
+            pc = 100 * (close_e["counts"] or {}).get(k, 0) / tot_c
+            if open_e and open_e.get("total"):
+                po = 100 * (open_e["counts"] or {}).get(k, 0) / max(int(open_e["total"]), 1)
+                seg.append(f"{k} {po:.0f}%->{pc:.0f}%")
+            else:
+                seg.append(f"{k} {pc:.0f}%")
+        body_lines += ["", "Second Look (evening re-scan vs open): " + "  ".join(seg),
+                       f"Invalidations on watch: {close_e.get('invalidated', 0)}"]
+    if refl.get("throttle_line"):
+        body_lines.append(refl["throttle_line"])
+    if refl.get("tomorrow"):
+        body_lines.append("Tomorrow: " + refl["tomorrow"])
+    body_lines += [watch,
                    "",
                    "Simulated paper trading. OROS proposes and journals only;"
                    " it never trades. Educational, not financial advice."]

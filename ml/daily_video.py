@@ -1241,9 +1241,156 @@ _EVENING_CLOSE = (
 )
 
 
+# ---------------------------------------------------------------------------
+# The Second Look — the evening re-scan (JP, 2026-07-15): the same universe
+# graded again after the close, narrated as the shift since the open.
+# ---------------------------------------------------------------------------
+def _second_look_scene(plt, shift: dict, idx_moves: dict | None):
+    opening, close = shift.get("open"), shift["close"]
+    tot_c = max(int(close.get("total") or 0), 1)
+    spec = [("Advancing", "Stage 2 · summer", _UP),
+            ("Basing", "Stage 1 · spring", _BLUE),
+            ("Topping", "Stage 3 · autumn", _WARN),
+            ("Declining", "Stage 4 · winter", _DN)]
+    lines = []
+    for key, sub, color in spec:
+        c = int((close.get("counts") or {}).get(key, 0))
+        pc = 100 * c / tot_c
+        if opening and opening.get("total"):
+            o = int((opening.get("counts") or {}).get(key, 0))
+            po = 100 * o / max(int(opening["total"]), 1)
+            d = pc - po
+            arrow = "▲" if d >= 0.5 else ("▼" if d <= -0.5 else "·")
+            lines.append((f"{key.upper():10} open {po:4.0f}%  ->  "
+                          f"close {pc:4.0f}%   {arrow} {d:+.0f} pts",
+                          {"color": color, "size": 14}))
+        else:
+            lines.append((f"{key.upper():10} close {pc:4.0f}%   ({c} of {tot_c})",
+                          {"color": color, "size": 14}))
+    inv_c = int(close.get("invalidated") or 0)
+    inv_line = f"Invalidations on watch: {inv_c}"
+    if opening is not None:
+        d_inv = inv_c - int(opening.get("invalidated") or 0)
+        if d_inv:
+            inv_line += f"  ({d_inv:+d} since the open)"
+    lines.append((inv_line, {"color": _WARN if inv_c else _MUT,
+                             "size": 12, "dy": 0.09}))
+    if idx_moves:
+        lines.append(("   ".join(f"{_INDEX_NAMES.get(t, t)} {p:+.2f}%"
+                                 for t, p in idx_moves.items()
+                                 if p is not None),
+                      {"color": _FG, "size": 12}))
+    return _card(plt, "The Second Look — same universe, graded again",
+                 lines, kicker=f"{close.get('total', 0)} names re-graded "
+                               f"after the close")
+
+
+def _second_look_script(shift: dict, idx_moves: dict | None) -> list[str]:
+    opening, close = shift.get("open"), shift["close"]
+    tot_c = max(int(close.get("total") or 0), 1)
+    s = [f"The second look. Tonight the scanner went back over "
+         f"{close.get('total', 0)} names — the same universe it graded "
+         f"this morning — and re-staged every chart off the closing bar."]
+    if opening and opening.get("total"):
+        tot_o = max(int(opening["total"]), 1)
+        moves = []
+        for key in ("Advancing", "Basing", "Topping", "Declining"):
+            po = 100 * (opening["counts"] or {}).get(key, 0) / tot_o
+            pc = 100 * (close["counts"] or {}).get(key, 0) / tot_c
+            if abs(pc - po) >= 0.5:
+                verb = "grew" if pc > po else "slipped"
+                moves.append(f"{key} {verb} from {po:.0f} to {pc:.0f} percent")
+        if moves:
+            s.append("Since the open: " + "; ".join(moves[:3]) + ".")
+        else:
+            s.append("The stage picture barely moved since the open — "
+                     "a quiet tape beneath the surface.")
+        d_inv = int(close.get("invalidated") or 0) - int(opening.get("invalidated") or 0)
+        if d_inv > 0:
+            s.append(f"{d_inv} more name{'s' if d_inv != 1 else ''} closed "
+                     f"below the thirty-week line and joined the "
+                     f"invalidation watch. Those exits queue for the open.")
+        elif d_inv < 0:
+            s.append(f"{-d_inv} name{'s' if d_inv != -1 else ''} reclaimed "
+                     f"the thirty-week line and came off the watch.")
+    else:
+        s.append("No morning entry was journaled today, so tonight's read "
+                 "stands alone as the baseline for tomorrow.")
+    if idx_moves:
+        parts = [f"{_INDEX_NAMES.get(t, t)} {p:+.2f} percent"
+                 for t, p in idx_moves.items() if p is not None]
+        if parts:
+            s.append("The indexes at the bell: " + ", ".join(parts) + ".")
+    return [" ".join(s)]
+
+
+# ---------------------------------------------------------------------------
+# The Loop — the self-reflection scene (JP, 2026-07-15): the system reads
+# its own scoreboard, adjusts its own risk, and says so out loud.
+# ---------------------------------------------------------------------------
+def _loop_scene(plt, refl: dict):
+    lines = [("PROPOSE  ->  GRADE  ->  JOURNAL  ->  ADJUST  ->  PROPOSE",
+              {"color": _GOLD, "size": 14, "weight": "bold", "dy": 0.09})]
+    bk = refl.get("book") or {}
+    if bk.get("total"):
+        lines.append((f"The book today: {bk.get('up', 0)} up, "
+                      f"{bk.get('down', 0)} down of {bk['total']} positions",
+                      {"color": _FG, "size": 13}))
+        if bk.get("best"):
+            lines.append((f"  best {bk['best'][0]} {bk['best'][1]:+.2f}%   "
+                          f"worst {bk['worst'][0]} {bk['worst'][1]:+.2f}%",
+                          {"color": _MUT, "size": 12}))
+    if refl.get("expectancy_line"):
+        lines.append((refl["expectancy_line"], {"color": _BLUE, "size": 13}))
+    if refl.get("throttle_line"):
+        lines.append((refl["throttle_line"],
+                      {"color": _WARN if refl.get("throttle", 1.0) < 1.0
+                       else _UP, "size": 13}))
+    if refl.get("tomorrow"):
+        lines.append(("", {"size": 8, "dy": 0.03}))
+        lines.append((f"Tomorrow: {refl['tomorrow']}",
+                      {"color": _FG, "size": 12, "dy": 0.05}))
+    return _card(plt, "The Loop — the system grades itself", lines)
+
+
+def _loop_script(refl: dict) -> list[str]:
+    s = ["Now the part that makes this system different: the loop. Every "
+         "morning OROS proposes. Every evening it grades its own call, "
+         "journals the verdict, and adjusts its own risk before it is "
+         "allowed to propose again."]
+    bk = refl.get("book") or {}
+    if bk.get("total"):
+        s.append(f"Inside the book today: {bk.get('up', 0)} positions up, "
+                 f"{bk.get('down', 0)} down.")
+        if bk.get("best") and bk.get("worst"):
+            s.append(f"Best, {bk['best'][0]} at {bk['best'][1]:+.2f} percent. "
+                     f"Worst, {bk['worst'][0]} at {bk['worst'][1]:+.2f}. Both "
+                     f"go in the journal — wins and losses get the same ink.")
+    if refl.get("expectancy_line"):
+        s.append(f"The honest scoreboard reads: {refl['expectancy_line']}.")
+    thr = refl.get("throttle", 1.0)
+    if thr < 1.0:
+        s.append(f"Because that record is soft, the system has throttled "
+                 f"itself to {thr:.0%} position size. Nobody told it to — "
+                 f"full size must be earned back with wins.")
+    elif refl.get("throttle_line"):
+        s.append("The record has earned full position size — for now. That "
+                 "privilege is re-checked every single evening.")
+    if refl.get("tomorrow"):
+        s.append(f"What tonight's read hands to tomorrow's open: "
+                 f"{refl['tomorrow']}")
+    return [" ".join(s)]
+
+
 def generate_evening_brief(verdicts: list[dict], tally: dict,
+                           shift: dict | None = None,
+                           reflection: dict | None = None,
+                           idx_moves: dict | None = None,
                            ) -> tuple[Path | None, str]:
-    """The Closing Bell MP4 (short). Returns (path or None, status)."""
+    """The Closing Bell MP4. Verdict first (the loop catching its own wins
+    and losses), then the Second Look (evening re-scan vs the open), The
+    Loop (self-reflection + tomorrow), the day's tally, sign-off.
+    Returns (path or None, status)."""
     if os.environ.get("OROS_VIDEO", "1") == "0":
         return None, "Closing Bell: disabled (OROS_VIDEO=0)."
     if not shutil.which("ffmpeg"):
@@ -1260,6 +1407,21 @@ def generate_evening_brief(verdicts: list[dict], tally: dict,
             ("verdict", "The Verdict", _verdict_scene(plt, verdicts),
              _verdict_script(verdicts), "analyst"),
         ]
+        if shift and shift.get("close"):
+            try:
+                scenes.append(("second_look", "The Second Look",
+                               _second_look_scene(plt, shift, idx_moves),
+                               _second_look_script(shift, idx_moves),
+                               "analyst"))
+            except Exception as e:  # noqa: BLE001
+                logger.warning("second look scene failed: %s", e)
+        if reflection:
+            try:
+                scenes.append(("loop", "The Loop",
+                               _loop_scene(plt, reflection),
+                               _loop_script(reflection), "anchor"))
+            except Exception as e:  # noqa: BLE001
+                logger.warning("loop scene failed: %s", e)
         ts = _tally_script(tally)
         if ts:
             scenes.append(("tally", "Who Won the Day",
@@ -1314,6 +1476,7 @@ def generate_evening_brief(verdicts: list[dict], tally: dict,
             out.with_suffix(".meta.json").write_text(_json.dumps(
                 {"edition": "evening", "chapters": chapters,
                  "home_run_confirmed": hr, "tally": tally,
+                 "breadth": (shift or {}).get("close"),
                  "duration_s": round(t, 1)}, indent=1))
         except Exception as e:  # noqa: BLE001
             logger.warning("closing bell sidecars failed: %s", e)
