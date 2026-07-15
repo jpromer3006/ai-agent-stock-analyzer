@@ -2,8 +2,12 @@
  "edition": "evening",
  "chapters": [
   {
-   "title": "Sign-off",
+   "title": "The Loop",
    "start_s": 0.0
+  },
+  {
+   "title": "Sign-off",
+   "start_s": 62.6
   }
  ],
  "home_run_confirmed": null,
@@ -26,5 +30,16 @@
    "spy_pct": 0.3963635929681075
   }
  },
- "duration_s": 12.5
+ "breadth": {
+  "date": "2026-07-15",
+  "total": 494,
+  "counts": {
+   "Advancing": 267,
+   "Basing": 77,
+   "Topping": 69,
+   "Declining": 81
+  },
+  "invalidated": 1
+ },
+ "duration_s": 75.1
 }
