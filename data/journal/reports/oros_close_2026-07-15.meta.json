@@ -1,0 +1,30 @@
+{
+ "edition": "evening",
+ "chapters": [
+  {
+   "title": "Sign-off",
+   "start_s": 0.0
+  }
+ ],
+ "home_run_confirmed": null,
+ "tally": {
+  "days": 2,
+  "vs_frozen": {
+   "wins": 2,
+   "losses": 0,
+   "ties": 0
+  },
+  "vs_spy": {
+   "wins": 0,
+   "losses": 2,
+   "ties": 0
+  },
+  "today": {
+   "date": "2026-07-15",
+   "live_pct": -0.15342460632324217,
+   "frozen_pct": -0.17477532577514648,
+   "spy_pct": 0.2367514226963907
+  }
+ },
+ "duration_s": 12.5
+}
