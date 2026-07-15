@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0108,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BPOP",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.276,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0037,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "AAPL",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.024,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0224,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "AAPU",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0396,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "KRE",
@@ -100,7 +112,10 @@
       "led_by": "sepa",
       "sentiment": 0.206,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0137,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "WELL",
@@ -114,7 +129,10 @@
       "led_by": "sepa",
       "sentiment": 0.303,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.005,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CGON",
@@ -128,7 +146,10 @@
       "led_by": "sepa",
       "sentiment": -0.225,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0258,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BOKF",
@@ -142,7 +163,10 @@
       "led_by": "sepa",
       "sentiment": 0.197,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0026,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CCEP",
@@ -156,7 +180,10 @@
       "led_by": "sepa",
       "sentiment": 0.242,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0117,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "SBUX",
@@ -170,7 +197,10 @@
       "led_by": "sepa",
       "sentiment": 0.024,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0196,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BATRK",
@@ -184,7 +214,10 @@
       "led_by": "sepa",
       "sentiment": 0.349,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0156,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     }
   ],
   "agent_trace": [

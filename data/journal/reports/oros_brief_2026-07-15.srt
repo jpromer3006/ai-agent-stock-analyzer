@@ -1,0 +1,215 @@
+1
+00:00:00,000 --> 00:00:00,948
+Good morning.
+
+2
+00:00:00,948 --> 00:00:06,489
+From the OROS Market Desk, here is the rundown for Wednesday, July 15, 2026.
+
+3
+00:00:06,489 --> 00:00:07,947
+The tape reads bull.
+
+4
+00:00:07,947 --> 00:00:14,436
+No setup cleared our home-run bar today, and you will hear why that is a story in itself.
+
+5
+00:00:14,436 --> 00:00:25,809
+And at the sports desk, day 8 of 18 in the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:25,809 --> 00:00:34,040
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:34,040 --> 00:00:41,404
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:41,366 --> 00:00:43,117
+First, the market open.
+
+9
+00:00:43,117 --> 00:00:48,597
+The S and P five hundred gained 0.4 percent, while the NASDAQ added 1.1.
+
+10
+00:00:48,597 --> 00:00:55,143
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+11
+00:00:55,143 --> 00:00:57,275
+The fear gauge sits at 16.1.
+
+12
+00:00:57,275 --> 00:00:59,778
+Today's lesson is this market screen.
+
+13
+00:00:59,778 --> 00:01:06,747
+The gold line is the thirty week moving average, the single most useful trend filter in stage analysis.
+
+14
+00:01:06,747 --> 00:01:14,257
+When price holds above a rising gold line, the tide is coming in, and long trades get the benefit of the doubt.
+
+15
+00:01:14,257 --> 00:01:23,188
+When price sinks below a falling gold line, the tide is going out, and the first job becomes protecting capital, not finding heroes.
+
+16
+00:01:23,141 --> 00:01:25,360
+Turning to the model book.
+
+17
+00:01:25,360 --> 00:01:36,196
+The system holds 12 positions with 47% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+18
+00:01:36,196 --> 00:01:43,535
+New to the book: AMLX, ANET, USB, XBI — each passed the full entry gauntlet overnight.
+
+19
+00:01:43,535 --> 00:02:05,721
+Rotated out: AAPU, which still advancing, but outranked by stronger names; BATRK, which still advancing, but outranked by stronger names; BOKF, which still advancing, but outranked by stronger names; KRE, which still advancing, but outranked by stronger names.
+
+20
+00:02:05,721 --> 00:02:11,755
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+21
+00:02:11,711 --> 00:02:15,941
+On the day, the book is down 154 dollars.
+
+22
+00:02:15,941 --> 00:02:18,520
+AAPL leads, +1.2 percent.
+
+23
+00:02:18,520 --> 00:02:20,377
+SBUX lags at -1.2.
+
+24
+00:02:20,377 --> 00:02:25,948
+The checklist is clear: nothing requires action today.
+
+25
+00:02:25,948 --> 00:02:29,474
+On screen, the day's gainers and laggards inside the paper book.
+
+26
+00:02:29,430 --> 00:02:31,135
+Now, market analysis.
+
+27
+00:02:31,135 --> 00:02:42,825
+Overnight the scanner graded the OROS five hundred — 500 of the most liquid names on the tape — and sorted every chart into its Weinstein stage.
+
+28
+00:02:42,825 --> 00:02:45,748
+53 percent are advancing in Stage 2.
+
+29
+00:02:45,748 --> 00:02:47,534
+16 percent are basing.
+
+30
+00:02:47,534 --> 00:02:49,645
+17 percent are in decline.
+
+31
+00:02:49,645 --> 00:02:55,977
+The advancing share is down 1 points since 2026-07-14 — the tide is going out.
+
+32
+00:02:55,977 --> 00:02:59,549
+Outside our shop, the fear gauge reads 16.1.
+
+33
+00:02:59,549 --> 00:03:03,443
+Why this screen matters: stages are the market's seasons.
+
+34
+00:03:03,443 --> 00:03:07,200
+Basing is spring, when ownership quietly changes hands.
+
+35
+00:03:07,200 --> 00:03:10,889
+Advancing is summer, the only season this system buys.
+
+36
+00:03:10,889 --> 00:03:14,168
+Topping is autumn, when smart money distributes.
+
+37
+00:03:14,168 --> 00:03:17,994
+Declining is winter, when the first job is staying warm.
+
+38
+00:03:17,994 --> 00:03:22,981
+The more of the market in summer, the more the tide is doing the lifting.
+
+39
+00:03:22,955 --> 00:03:24,504
+Tonight's takeaway.
+
+40
+00:03:24,504 --> 00:03:26,787
+A portfolio is not a museum.
+
+41
+00:03:26,787 --> 00:03:35,102
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+42
+00:03:35,076 --> 00:03:37,486
+Before we close, the disclosure segment.
+
+43
+00:03:37,486 --> 00:03:43,331
+The system's forward track record remains negative across strategies, and it is published anyway.
+
+44
+00:03:43,331 --> 00:03:47,850
+Position sizes stay automatically reduced until the record earns them back.
+
+45
+00:03:47,850 --> 00:03:50,352
+One note on the board you are seeing.
+
+46
+00:03:50,352 --> 00:04:05,295
+Those are not one portfolio but several: OROS builds and journals a separate experimental book for each strategy author it studies — Weinstein, Minervini, O'Neil and their peers — all graded forward from a standing start.
+
+47
+00:04:05,295 --> 00:04:07,594
+Early numbers read cold by design.
+
+48
+00:04:07,594 --> 00:04:12,327
+The scoreboard exists to earn trust over time, not to impress tonight.
+
+49
+00:04:12,327 --> 00:04:14,413
+A word on how this desk works.
+
+50
+00:04:14,413 --> 00:04:31,940
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+51
+00:04:31,940 --> 00:04:40,356
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+52
+00:04:40,356 --> 00:04:43,289
+All figures are simulated paper trading.
+
+53
+00:04:43,289 --> 00:04:49,667
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+54
+00:04:49,667 --> 00:04:53,626
+From the OROS Market Desk, have a disciplined session.

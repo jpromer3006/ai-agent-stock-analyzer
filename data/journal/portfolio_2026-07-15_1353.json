@@ -1,0 +1,227 @@
+{
+  "timestamp": "2026-07-15T13:53:32.438548Z",
+  "date": "2026-07-15",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 47428.08,
+  "cash": 52571.92,
+  "weights": {
+    "value": 0.024,
+    "technical": 0.111,
+    "canslim": 0.175,
+    "growth": 0.067,
+    "ipo": 0.118,
+    "weinstein": 0.166,
+    "swing": 0.121,
+    "sepa": 0.218
+  },
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.7616,
+      "shares": 40,
+      "dollars": 3684.0,
+      "weight_pct": 3.68,
+      "entry": 92.1,
+      "stop": 84.43,
+      "led_by": "sepa",
+      "sentiment": 0.226,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ANET",
+      "sector": "Information Technology",
+      "conviction": 0.7524,
+      "shares": 16,
+      "dollars": 2872.64,
+      "weight_pct": 2.87,
+      "entry": 179.54,
+      "stop": 160.93,
+      "led_by": "sepa",
+      "sentiment": 0.038,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "SBUX",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7472,
+      "shares": 81,
+      "dollars": 8591.67,
+      "weight_pct": 8.59,
+      "entry": 106.07,
+      "stop": 102.23,
+      "led_by": "sepa",
+      "sentiment": 0.107,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.7442,
+      "shares": 23,
+      "dollars": 3889.07,
+      "weight_pct": 3.89,
+      "entry": 169.09,
+      "stop": 155.89,
+      "led_by": "sepa",
+      "sentiment": 0.276,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.7207,
+      "shares": 14,
+      "dollars": 4493.86,
+      "weight_pct": 4.49,
+      "entry": 320.99,
+      "stop": 299.67,
+      "led_by": "sepa",
+      "sentiment": 0.305,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "WELL",
+      "sector": "Real Estate",
+      "conviction": 0.714,
+      "shares": 15,
+      "dollars": 3554.85,
+      "weight_pct": 3.55,
+      "entry": 236.99,
+      "stop": 216.89,
+      "led_by": "sepa",
+      "sentiment": 0.377,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AMLX",
+      "sector": "Health Care",
+      "conviction": 0.7111,
+      "shares": 122,
+      "dollars": 2197.22,
+      "weight_pct": 2.2,
+      "entry": 18.01,
+      "stop": 15.45,
+      "led_by": "sepa",
+      "sentiment": 0.174,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CSX",
+      "sector": "Industrials",
+      "conviction": 0.7005,
+      "shares": 108,
+      "dollars": 5344.92,
+      "weight_pct": 5.34,
+      "entry": 49.49,
+      "stop": 46.6,
+      "led_by": "sepa",
+      "sentiment": 0.158,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CGON",
+      "sector": "Health Care",
+      "conviction": 0.6946,
+      "shares": 51,
+      "dollars": 3640.89,
+      "weight_pct": 3.64,
+      "entry": 71.39,
+      "stop": 65.33,
+      "led_by": "sepa",
+      "sentiment": -0.225,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "USB",
+      "sector": "Financials",
+      "conviction": 0.6857,
+      "shares": 54,
+      "dollars": 3380.94,
+      "weight_pct": 3.38,
+      "entry": 62.61,
+      "stop": 56.91,
+      "led_by": "sepa",
+      "sentiment": 0.196,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CCEP",
+      "sector": "Consumer Staples",
+      "conviction": 0.6827,
+      "shares": 35,
+      "dollars": 3694.25,
+      "weight_pct": 3.69,
+      "entry": 105.55,
+      "stop": 96.75,
+      "led_by": "sepa",
+      "sentiment": 0.242,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XBI",
+      "sector": "Other",
+      "conviction": 0.6781,
+      "shares": 13,
+      "dollars": 2083.77,
+      "weight_pct": 2.08,
+      "entry": 160.29,
+      "stop": 137.13,
+      "led_by": "sepa",
+      "sentiment": 0.146,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "495 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 47% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 53%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}

@@ -30,7 +30,7 @@
       "led_by": "sepa",
       "sentiment": 0.227,
       "earnings_risk": false,
-      "outcome_return": -0.0066,
+      "outcome_return": -0.0117,
       "outcome_exit": "open",
       "outcome_days": 5,
       "outcome_final": false
@@ -47,7 +47,7 @@
       "led_by": "sepa",
       "sentiment": 0.318,
       "earnings_risk": false,
-      "outcome_return": 0.0054,
+      "outcome_return": 0.0018,
       "outcome_exit": "open",
       "outcome_days": 5,
       "outcome_final": false
@@ -64,7 +64,7 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": 0.0133,
+      "outcome_return": 0.0023,
       "outcome_exit": "open",
       "outcome_days": 5,
       "outcome_final": false
@@ -98,7 +98,7 @@
       "led_by": "sepa",
       "sentiment": 0.296,
       "earnings_risk": false,
-      "outcome_return": -0.0208,
+      "outcome_return": -0.0336,
       "outcome_exit": "open",
       "outcome_days": 5,
       "outcome_final": false
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.131,
       "earnings_risk": false,
-      "outcome_return": -0.0293,
-      "outcome_exit": "open",
+      "outcome_return": -0.0488,
+      "outcome_exit": "stop",
       "outcome_days": 5,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "SBUX",
@@ -149,7 +149,7 @@
       "led_by": "sepa",
       "sentiment": 0.156,
       "earnings_risk": false,
-      "outcome_return": 0.0294,
+      "outcome_return": 0.0092,
       "outcome_exit": "open",
       "outcome_days": 5,
       "outcome_final": false
@@ -166,7 +166,7 @@
       "led_by": "sepa",
       "sentiment": 0.143,
       "earnings_risk": false,
-      "outcome_return": 0.0274,
+      "outcome_return": 0.0134,
       "outcome_exit": "open",
       "outcome_days": 5,
       "outcome_final": false
@@ -200,9 +200,9 @@
       "led_by": "sepa",
       "sentiment": 0.349,
       "earnings_risk": false,
-      "outcome_return": -0.0038,
+      "outcome_return": -0.0193,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -217,7 +217,7 @@
       "led_by": "sepa",
       "sentiment": 0.236,
       "earnings_risk": false,
-      "outcome_return": -0.0033,
+      "outcome_return": -0.0144,
       "outcome_exit": "open",
       "outcome_days": 5,
       "outcome_final": false
@@ -256,8 +256,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.1153,
+  "realized_avg_return": -0.0987,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3
+  "realized_final_count": 4,
+  "realized_stop_exits": 4
 }

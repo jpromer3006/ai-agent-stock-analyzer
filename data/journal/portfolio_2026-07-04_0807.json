@@ -30,7 +30,7 @@
       "led_by": "sepa",
       "sentiment": 0.168,
       "earnings_risk": false,
-      "outcome_return": 0.0303,
+      "outcome_return": 0.053,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -61,7 +61,7 @@
       "led_by": "technical",
       "sentiment": 0.32,
       "earnings_risk": false,
-      "outcome_return": 0.0152,
+      "outcome_return": 0.0185,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -78,7 +78,7 @@
       "led_by": "sepa",
       "sentiment": 0.296,
       "earnings_risk": false,
-      "outcome_return": 0.004,
+      "outcome_return": -0.0181,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -95,7 +95,7 @@
       "led_by": "sepa",
       "sentiment": 0.242,
       "earnings_risk": false,
-      "outcome_return": -0.0308,
+      "outcome_return": -0.0335,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -146,10 +146,10 @@
       "led_by": "technical",
       "sentiment": 0.214,
       "earnings_risk": false,
-      "outcome_return": -0.027,
-      "outcome_exit": "open",
+      "outcome_return": -0.0362,
+      "outcome_exit": "stop",
       "outcome_days": 7,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "HD",
@@ -163,7 +163,7 @@
       "led_by": "technical",
       "sentiment": 0.008,
       "earnings_risk": false,
-      "outcome_return": -0.0502,
+      "outcome_return": -0.0409,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -201,9 +201,9 @@
       "summary": "within limits; cash 18%"
     }
   ],
-  "realized_avg_return": -0.0303,
+  "realized_avg_return": -0.0323,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2
+  "realized_final_count": 3,
+  "realized_stop_exits": 3
 }
