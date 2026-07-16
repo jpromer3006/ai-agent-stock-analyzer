@@ -1,0 +1,208 @@
+{
+  "timestamp": "2026-07-16T14:46:56.446668Z",
+  "date": "2026-07-16",
+  "regime": "bull",
+  "mandate": "value_hold",
+  "account": 100000.0,
+  "invested": 52049.69,
+  "cash": 47950.31,
+  "weights": {
+    "value": 0.358,
+    "canslim": 0.096,
+    "weinstein": 0.124,
+    "sepa": 0.076,
+    "swing": 0.019,
+    "technical": 0.046,
+    "ipo": 0.057,
+    "growth": 0.225
+  },
+  "note": "UI build \u00b7 value_hold",
+  "holdings": [
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.6051,
+      "shares": 22,
+      "dollars": 1357.84,
+      "weight_pct": 1.36,
+      "entry": 61.72,
+      "stop": 54.85,
+      "led_by": "sepa",
+      "sentiment": 0.118,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "WFC",
+      "sector": "Financials",
+      "conviction": 0.4157,
+      "shares": 21,
+      "dollars": 1853.67,
+      "weight_pct": 1.85,
+      "entry": 88.27,
+      "stop": 81.07,
+      "led_by": "technical",
+      "sentiment": 0.142,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "GS",
+      "sector": "Financials",
+      "conviction": 0.3645,
+      "shares": 1,
+      "dollars": 1117.93,
+      "weight_pct": 1.12,
+      "entry": 1117.93,
+      "stop": 1024.55,
+      "led_by": "sepa",
+      "sentiment": 0.127,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "DE",
+      "sector": "Industrials",
+      "conviction": 0.3264,
+      "shares": 11,
+      "dollars": 6537.08,
+      "weight_pct": 6.54,
+      "entry": 594.28,
+      "stop": 566.94,
+      "led_by": "sepa",
+      "sentiment": 0.088,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "TGT",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.3171,
+      "shares": 27,
+      "dollars": 3784.32,
+      "weight_pct": 3.78,
+      "entry": 140.16,
+      "stop": 128.88,
+      "led_by": "sepa",
+      "sentiment": 0.379,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "KO",
+      "sector": "Consumer Staples",
+      "conviction": 0.2996,
+      "shares": 91,
+      "dollars": 7653.1,
+      "weight_pct": 7.65,
+      "entry": 84.1,
+      "stop": 80.69,
+      "led_by": "sepa",
+      "sentiment": 0.305,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CVX",
+      "sector": "Energy",
+      "conviction": 0.2952,
+      "shares": 56,
+      "dollars": 10253.04,
+      "weight_pct": 10.25,
+      "entry": 183.09,
+      "stop": 177.59,
+      "led_by": "sepa",
+      "sentiment": 0.199,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "JNJ",
+      "sector": "Health Care",
+      "conviction": 0.2713,
+      "shares": 11,
+      "dollars": 2765.73,
+      "weight_pct": 2.77,
+      "entry": 251.43,
+      "stop": 237.77,
+      "led_by": "sepa",
+      "sentiment": 0.214,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "GE",
+      "sector": "Industrials",
+      "conviction": 0.2559,
+      "shares": 10,
+      "dollars": 3474.5,
+      "weight_pct": 3.47,
+      "entry": 347.45,
+      "stop": 332.14,
+      "led_by": "sepa",
+      "sentiment": 0.216,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "RTX",
+      "sector": "Industrials",
+      "conviction": 0.2475,
+      "shares": 29,
+      "dollars": 5623.1,
+      "weight_pct": 5.62,
+      "entry": 193.9,
+      "stop": 183.35,
+      "led_by": "weinstein",
+      "sentiment": 0.293,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "HD",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.0807,
+      "shares": 22,
+      "dollars": 7629.38,
+      "weight_pct": 7.63,
+      "entry": 346.79,
+      "stop": 332.94,
+      "led_by": "technical",
+      "sentiment": 0.222,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "25 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: value 38%, growth 24%, weinstein 10%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.42, weinstein x1.38"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "11 holdings, 52% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 48%"
+    }
+  ]
+}
