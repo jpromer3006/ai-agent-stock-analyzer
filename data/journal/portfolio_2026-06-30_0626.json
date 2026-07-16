@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0684,
+      "outcome_return": 0.0562,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.06,
       "earnings_risk": false,
-      "outcome_return": 0.0217,
+      "outcome_return": 0.0411,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.172,
       "earnings_risk": false,
-      "outcome_return": -0.0249,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": -0.0803,
+      "outcome_exit": "stop",
+      "outcome_days": 11,
+      "outcome_final": true
     },
     {
       "ticker": "ABBV",
@@ -98,9 +98,9 @@
       "led_by": "technical",
       "sentiment": 0.175,
       "earnings_risk": false,
-      "outcome_return": -0.0347,
+      "outcome_return": -0.0288,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": -0.0166,
+      "outcome_return": -0.0317,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.147,
       "earnings_risk": false,
-      "outcome_return": -0.0004,
+      "outcome_return": 0.0209,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.269,
       "earnings_risk": false,
-      "outcome_return": -0.0498,
+      "outcome_return": -0.0678,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.325,
       "earnings_risk": false,
-      "outcome_return": -0.0437,
+      "outcome_return": -0.0265,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 11,
       "outcome_final": false
     }
   ],
@@ -204,9 +204,9 @@
       "summary": "within limits; cash 8%"
     }
   ],
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
+  "realized_avg_return": -0.0803,
+  "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_final_count": 1,
+  "realized_stop_exits": 1
 }

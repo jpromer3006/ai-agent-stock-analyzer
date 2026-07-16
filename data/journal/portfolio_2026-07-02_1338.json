@@ -72,9 +72,9 @@
       "led_by": "sepa",
       "sentiment": 0.305,
       "earnings_risk": false,
-      "outcome_return": -0.0502,
+      "outcome_return": -0.0416,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 9,
       "outcome_final": false
     },
     {
@@ -117,10 +117,10 @@
       "led_by": "sepa",
       "sentiment": 0.231,
       "earnings_risk": false,
-      "outcome_return": -0.0697,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.1136,
+      "outcome_exit": "stop",
+      "outcome_days": 8,
+      "outcome_final": true
     },
     {
       "ticker": "FFBC",
@@ -148,10 +148,10 @@
       "led_by": "sepa",
       "sentiment": 0.254,
       "earnings_risk": false,
-      "outcome_return": -0.079,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.1243,
+      "outcome_exit": "stop",
+      "outcome_days": 9,
+      "outcome_final": true
     },
     {
       "ticker": "EWTX",
@@ -228,9 +228,9 @@
       "summary": "within limits; cash 1%"
     }
   ],
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
+  "realized_avg_return": -0.1189,
+  "realized_hit_rate": 0.0,
   "horizon_days": 20,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_final_count": 2,
+  "realized_stop_exits": 2
 }

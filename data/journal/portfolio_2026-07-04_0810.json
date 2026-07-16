@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.341,
       "earnings_risk": false,
-      "outcome_return": -0.014,
+      "outcome_return": -0.0051,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 9,
       "outcome_final": false
     },
     {
@@ -75,10 +75,10 @@
       "led_by": "sepa",
       "sentiment": 0.33,
       "earnings_risk": false,
-      "outcome_return": -0.0427,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.0898,
+      "outcome_exit": "stop",
+      "outcome_days": 9,
+      "outcome_final": true
     },
     {
       "ticker": "DGII",
@@ -92,10 +92,10 @@
       "led_by": "sepa",
       "sentiment": 0.231,
       "earnings_risk": false,
-      "outcome_return": -0.0691,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.113,
+      "outcome_exit": "stop",
+      "outcome_days": 8,
+      "outcome_final": true
     },
     {
       "ticker": "MKSI",
@@ -123,9 +123,9 @@
       "led_by": "sepa",
       "sentiment": 0.227,
       "earnings_risk": false,
-      "outcome_return": -0.0128,
+      "outcome_return": 0.0085,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 9,
       "outcome_final": false
     },
     {
@@ -168,9 +168,9 @@
       "led_by": "sepa",
       "sentiment": 0.255,
       "earnings_risk": false,
-      "outcome_return": -0.0005,
+      "outcome_return": -0.0377,
       "outcome_exit": "open",
-      "outcome_days": 8,
+      "outcome_days": 9,
       "outcome_final": false
     },
     {
@@ -234,9 +234,9 @@
       "summary": "within limits; cash 1%"
     }
   ],
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
+  "realized_avg_return": -0.1014,
+  "realized_hit_rate": 0.0,
   "horizon_days": 20,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_final_count": 2,
+  "realized_stop_exits": 2
 }

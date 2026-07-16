@@ -89,9 +89,9 @@
       "led_by": "sepa",
       "sentiment": 0.228,
       "earnings_risk": false,
-      "outcome_return": 0.0157,
+      "outcome_return": 0.0392,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -106,9 +106,9 @@
       "led_by": "sepa",
       "sentiment": 0.186,
       "earnings_risk": false,
-      "outcome_return": 0.0077,
+      "outcome_return": 0.0147,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -137,10 +137,10 @@
       "led_by": "sepa",
       "sentiment": 0.269,
       "earnings_risk": false,
-      "outcome_return": -0.0828,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": -0.1356,
+      "outcome_exit": "stop",
+      "outcome_days": 11,
+      "outcome_final": true
     },
     {
       "ticker": "FFBC",
@@ -168,9 +168,9 @@
       "led_by": "sepa",
       "sentiment": 0.306,
       "earnings_risk": false,
-      "outcome_return": 0.0257,
+      "outcome_return": 0.0451,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -185,9 +185,9 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": -0.1016,
+      "outcome_return": -0.1139,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -237,9 +237,9 @@
       "summary": "within limits; cash 1%"
     }
   ],
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
+  "realized_avg_return": -0.1356,
+  "realized_hit_rate": 0.0,
   "horizon_days": 20,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_final_count": 1,
+  "realized_stop_exits": 1
 }

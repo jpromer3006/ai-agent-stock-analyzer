@@ -44,10 +44,10 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0249,
-      "outcome_exit": "open",
-      "outcome_days": 10,
-      "outcome_final": false
+      "outcome_return": -0.0729,
+      "outcome_exit": "stop",
+      "outcome_days": 12,
+      "outcome_final": true
     },
     {
       "ticker": "ALGM",
@@ -61,10 +61,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.1069,
-      "outcome_exit": "open",
-      "outcome_days": 11,
-      "outcome_final": false
+      "outcome_return": -0.1791,
+      "outcome_exit": "stop",
+      "outcome_days": 12,
+      "outcome_final": true
     },
     {
       "ticker": "BTSG",
@@ -78,9 +78,9 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": -0.0076,
+      "outcome_return": 0.0009,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -95,9 +95,9 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.047,
+      "outcome_return": -0.0205,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 12,
       "outcome_final": false
     }
   ],
@@ -133,9 +133,9 @@
       "summary": "within limits; cash 71%"
     }
   ],
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
+  "realized_avg_return": -0.126,
+  "realized_hit_rate": 0.0,
   "horizon_days": 20,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_final_count": 2,
+  "realized_stop_exits": 2
 }

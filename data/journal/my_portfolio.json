@@ -1,14 +1,14 @@
 {
   "name": "Chase Self-Directed (...8661)",
   "note": "JP's real book - TRACKED ONLY. OROS never trades or touches the account. Stops are Weinstein 30-week-MA levels, ratcheted up daily, never down. Update holdings here (or tell Claude) whenever a real trade happens.",
-  "updated": "2026-07-14",
+  "updated": "2026-07-16",
   "margin_debt": 12858.54,
   "holdings": [
     {
       "ticker": "AAPL",
       "shares": 50,
       "cost_basis": 312.04,
-      "stop": 274.14
+      "stop": 276.15
     },
     {
       "ticker": "WELL",
@@ -26,13 +26,13 @@
       "ticker": "NVDA",
       "shares": 16,
       "cost_basis": 158.24,
-      "stop": 192.63
+      "stop": 193.79
     },
     {
       "ticker": "CAT",
       "shares": 1,
       "cost_basis": 891.67,
-      "stop": 771.46
+      "stop": 775.4
     },
     {
       "ticker": "TSM",
@@ -45,7 +45,7 @@
       "ticker": "TSEM",
       "shares": 10,
       "cost_basis": 231.34,
-      "stop": 181.8,
+      "stop": 183.42,
       "note": "JP independent pick (outside OROS gates) - added from Chase 07-14"
     }
   ],
