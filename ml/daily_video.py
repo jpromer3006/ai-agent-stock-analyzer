@@ -225,6 +225,27 @@ _LESSONS = {
 }
 
 
+def _company(t: str) -> str:
+    """Broadcast-friendly company name for a ticker ('' if unknown)."""
+    try:
+        from data.universe import company_name
+        return company_name(t)
+    except Exception:  # noqa: BLE001
+        return ""
+
+
+def _named(t: str) -> str:
+    """'LAMR' -> 'Lamar Advertising (LAMR)' for lists on air and on cards."""
+    n = _company(t)
+    return f"{n} ({t})" if n else t
+
+
+def _spoken(t: str) -> str:
+    """First on-air mention: 'Lamar Advertising, ticker LAMR'."""
+    n = _company(t)
+    return f"{n}, ticker {t}" if n else t
+
+
 def _lesson_key() -> str:
     """Deterministic daily rotation through the lesson topics."""
     keys = sorted(_LESSONS)
@@ -271,7 +292,8 @@ def _coldopen_scene(plt, data: dict, home_run: dict | None):
         (f"01  THE MARKET OPEN      regime {regime}"
          + (f", VIX {data['vix'].get('level', '')}" if data.get("vix") else ""),
          {"color": _UP if regime == "BULL" else _WARN, "size": 15}),
-        ((f"02  TOP STORY           {home_run['ticker']} — a home-run setup"
+        ((f"02  TOP STORY           {_named(home_run['ticker'])[:34]} — "
+          f"home-run setup"
           if home_run else
           "02  TOP STORY           no setup cleared the bar — discipline day"),
          {"color": _GOLD if home_run else _MUT, "size": 15}),
@@ -294,8 +316,9 @@ def _coldopen_script(data: dict, home_run: dict | None) -> list[str]:
            f"for {data.get('date', 'today')}."]
     dyn.append(f"The tape reads {regime.lower()}.")
     if home_run:
-        dyn.append(f"Our top story: {home_run['ticker']} cleared every gate "
-                   f"and the home-run bar. The full trade plan is ahead.")
+        dyn.append(f"Our top story: {_spoken(home_run['ticker'])} cleared "
+                   f"every gate and the home-run bar. The full trade plan "
+                   f"is ahead.")
     else:
         dyn.append("No setup cleared our home-run bar today, and you will "
                    "hear why that is a story in itself.")
@@ -739,11 +762,12 @@ def _book_script(data: dict) -> list[str]:
          f"{inv/acct:.0%} of capital deployed and the rest in cash, a split the "
          f"risk rules choose, not a leftover."]
     if added:
-        s.append(f"New to the book: {', '.join(added[:6])} — each passed the full "
-                 "entry gauntlet overnight.")
+        s.append(f"New to the book: "
+                 f"{', '.join(_named(t) for t in added[:6])} — each passed "
+                 "the full entry gauntlet overnight.")
     if dropped:
         s.append("Rotated out: " + "; ".join(
-            f"{t}, which {_change_reason(t)}" for t in dropped[:4]) + ".")
+            f"{_named(t)}, which {_change_reason(t)}" for t in dropped[:4]) + ".")
     if not added and not dropped:
         s.append("No rotation today; the book stands pat.")
     return [" ".join(s), _teach("book")]
@@ -759,9 +783,9 @@ def _movers_script(data: dict) -> list[str]:
          f"{abs(tot):,.0f} dollars."]
     up, dn = rows[0], rows[-1]
     if up["day_usd"] > 0:
-        s.append(f"{up['ticker']} leads, {up['day_pct']:+.1f} percent.")
+        s.append(f"{_named(up['ticker'])} leads, {up['day_pct']:+.1f} percent.")
     if dn["day_usd"] < 0:
-        s.append(f"{dn['ticker']} lags at {dn['day_pct']:+.1f}.")
+        s.append(f"{_named(dn['ticker'])} lags at {dn['day_pct']:+.1f}.")
     acts = data.get("actions") or []
     s.append("The checklist is clear: nothing requires action today."
              if not acts else
@@ -801,7 +825,7 @@ def _pick_script(p: dict, home_run: bool = False) -> list[str]:
              "setup — a label its own rules only allow when everything "
              "lines up" if home_run else "Now the chart of the day")
     dyn = (
-        f"{label}: {p['ticker']}, the top {kind} to clear every quality "
+        f"{label}: {_spoken(p['ticker'])}, the top {kind} to clear every quality "
         f"gate. The entry trigger sits at {p['buy_stop']:,.2f}, the exit at "
         f"{p['stop_loss']:,.2f}, and the objective at {p['target']:,.2f} — "
         f"{p['risk_reward']:.1f} dollars of potential reward per dollar "
@@ -1146,7 +1170,9 @@ def _verdict_scene(plt, verdicts: list[dict]):
         lines.append((f"{v['ticker']:6} {label}{pct}",
                       {"color": color, "size": 15,
                        "weight": "bold" if v["verdict"] == "home_run" else "normal"}))
-        lines.append((f"       trigger {v['buy_stop']:,.2f}   stop "
+        nm = _company(v["ticker"])
+        lines.append(((f"       {nm[:26]} · " if nm else "       ")
+                      + f"trigger {v['buy_stop']:,.2f}   stop "
                       f"{v['stop_loss']:,.2f}   target {v['target']:,.2f}",
                       {"color": _MUT, "size": 11, "dy": 0.085}))
     if not lines:
@@ -1166,7 +1192,7 @@ def _verdict_script(verdicts: list[dict]) -> list[str]:
     s = ["Good evening from the OROS closing desk. Time to grade this "
          "morning's call — the part most shows skip."]
     for v in verdicts[:3]:
-        t = v["ticker"]
+        t = _spoken(v["ticker"])
         if v["verdict"] == "home_run":
             s.append(f"{t}: home run confirmed. The market pushed up through "
                      f"the trigger and closed {v['vs_trigger_pct']:+.1f} "

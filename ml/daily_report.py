@@ -788,7 +788,13 @@ def pick_chart_fig(plt, p: dict):
     fig, (ax1, ax2, ax3) = plt.subplots(
         3, 1, figsize=(8.5, 11), sharex=True,
         gridspec_kw={"height_ratios": [3.2, 1.0, 1.0]})
-    fig.suptitle(f"{p['ticker']} — Weinstein weekly view ({p['setup']} Stage 2 setup)",
+    try:
+        from data.universe import company_name
+        _nm = company_name(p["ticker"])
+    except Exception:  # noqa: BLE001
+        _nm = ""
+    _head = f"{_nm} ({p['ticker']})" if _nm else p["ticker"]
+    fig.suptitle(f"{_head} — Weinstein weekly view ({p['setup']} Stage 2 setup)",
                  fontsize=14, fontweight="bold", x=0.07, ha="left")
 
     # -- Panel 1: price, 30-week MA, breakout anchor, trade plan ----------

@@ -72,7 +72,14 @@ def build_description(meta: dict | None) -> str:
         hook.append(f"Race day {day} of {total} — live book vs frozen book "
                     f"vs the S&P 500, finish line July 29.")
     if meta.get("home_run"):
-        hook.append(f"Today's TOP STORY: {meta['home_run']} cleared the "
+        hr = meta["home_run"]
+        try:
+            from data.universe import company_name
+            n = company_name(hr)
+            hr = f"{n} ({hr})" if n else hr
+        except Exception:  # noqa: BLE001
+            pass
+        hook.append(f"Today's TOP STORY: {hr} cleared the "
                     "strict home-run bar (fresh breakout, 3-to-1 reward on "
                     "risk, 2x volume).")
     parts.append(" ".join(hook))
@@ -181,13 +188,23 @@ def episode_title(data: dict) -> str:
         home_run = next((p for p in picks if _is_home_run(p)), None)
     except Exception:
         pass
+    def _named(t: str) -> str:
+        try:
+            from data.universe import company_name
+            n = company_name(t)
+            return f"{n} ({t})" if n else t
+        except Exception:  # noqa: BLE001
+            return t
+
     if home_run:
-        hook = f"HOME RUN setup: {home_run['ticker']}"
+        hook = f"HOME RUN setup: {_named(home_run['ticker'])}"
     elif picks:
-        hook = f"Pick: {', '.join(p['ticker'] for p in picks[:2])}"
+        hook = f"Pick: {', '.join(_named(p['ticker']) for p in picks[:2])}"
     else:
         hook = "No setup today"
-    return f"OROS Market Desk — {now:%b %d, %Y} · {regime} · {hook}"
+    # YouTube caps titles at 100 chars; keep the date + regime, trim the hook.
+    title = f"OROS Market Desk — {now:%b %d, %Y} · {regime} · {hook}"
+    return title if len(title) <= 100 else title[:97] + "..."
 
 
 def _add_to_playlist(video_id: str, playlist_title: str, token: str) -> bool:

@@ -270,6 +270,77 @@ def get_universe(filtered: bool = False, **filter_kwargs) -> dict[str, UniverseE
 
 
 # ---------------------------------------------------------------------------
+# Broadcast-friendly company names (JP, 2026-07-16): the exchange listings
+# carry every security's legal name ("Lamar Advertising Company - Class A
+# Common Stock"); the Market Desk wants "Lamar Advertising". Cached in
+# process; empty string when unknown so callers can fall back to the ticker.
+# ---------------------------------------------------------------------------
+_NAME_CACHE: dict[str, str] = {}
+
+_NAME_SUFFIXES = (
+    "inc", "inc.", "incorporated", "corp", "corp.", "corporation",
+    "company", "co", "co.", "ltd", "ltd.", "limited", "plc", "p.l.c.",
+    "n.v.", "s.a.", "se", "ag", "lp", "l.p.", "llc", "l.l.c.", "trust",
+    "the",
+)
+
+
+_NAME_PHRASES = (
+    "common stock", "ordinary shares", "ordinary share", "class a", "class b",
+    "class c", "american depositary shares", "american depositary share",
+    "depositary shares", "depositary share", "common shares", "new",
+    "each representing", "adr", "ads",
+)
+
+
+def _clean_company_name(raw: str) -> str:
+    """'Arista Networks, Inc. Common Stock' -> 'Arista Networks'."""
+    name = (raw or "").split(" - ")[0].strip()
+    # Strip trailing security-type phrases, then legal suffixes, repeatedly.
+    changed = True
+    while changed:
+        changed = False
+        low = name.lower().rstrip(" ,.")
+        for ph in _NAME_PHRASES:
+            if low.endswith(ph) and len(low) > len(ph) + 2:
+                name = name[: len(name) - (len(name.lower()) - low.rfind(ph))]
+                changed = True
+                break
+        words = name.rstrip(" ,.").split()
+        while len(words) > 1 and words[-1].lower().strip(",.") in _NAME_SUFFIXES:
+            words.pop()
+            changed = True
+        name = " ".join(words).rstrip(" ,.")
+    if name.lower().startswith("the ") and len(name) > 4:
+        name = name[4:]
+    return name.strip().rstrip(",.")
+
+
+def company_name(symbol: str) -> str:
+    """Short, speakable company name for a ticker ('' if unknown)."""
+    global _NAME_CACHE
+    sym = (symbol or "").upper().strip()
+    if not sym:
+        return ""
+    if not _NAME_CACHE:
+        try:
+            _NAME_CACHE = {s: _clean_company_name(e.name)
+                           for s, e in build_raw_universe().items()}
+        except Exception as e:  # noqa: BLE001
+            logger.warning("company name map unavailable: %s", e)
+            return ""
+    name = _NAME_CACHE.get(sym, "")
+    # A name that is just the ticker again (or empty) is useless on air.
+    return "" if name.upper() == sym else name
+
+
+def named(symbol: str) -> str:
+    """'LAMR' -> 'Lamar Advertising (LAMR)'; falls back to the bare ticker."""
+    n = company_name(symbol)
+    return f"{n} ({symbol.upper()})" if n else symbol.upper()
+
+
+# ---------------------------------------------------------------------------
 # Liquidity-ranked universe (built by the nightly job; read by the Portfolio)
 # ---------------------------------------------------------------------------
 _RANK_PATH = _CACHE_DIR / "liquid_ranked.json"
