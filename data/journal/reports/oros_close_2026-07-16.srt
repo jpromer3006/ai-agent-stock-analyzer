@@ -1,0 +1,55 @@
+1
+00:00:00,000 --> 00:00:04,688
+Now the part that makes this system different: the loop.
+
+2
+00:00:04,688 --> 00:00:07,033
+Every morning OROS proposes.
+
+3
+00:00:07,033 --> 00:00:17,330
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+4
+00:00:17,330 --> 00:00:21,265
+Inside the book today: 12 positions up, 0 down.
+
+5
+00:00:21,265 --> 00:00:23,526
+Best, UNP at +3.84 percent.
+
+6
+00:00:23,526 --> 00:00:25,200
+Worst, XLE at +0.92.
+
+7
+00:00:25,200 --> 00:00:30,056
+Both go in the journal — wins and losses get the same ink.
+
+8
+00:00:30,056 --> 00:00:36,921
+The honest scoreboard reads: expectancy -8.33% per trade over 74 graded positions.
+
+9
+00:00:36,921 --> 00:00:43,786
+Because that record is soft, the system has throttled itself to 25% position size.
+
+10
+00:00:43,786 --> 00:00:48,810
+Nobody told it to — full size must be earned back with wins.
+
+11
+00:00:48,810 --> 00:01:04,131
+What tonight's read hands to tomorrow's open: 267 names close the day in Stage 2; 1 new invalidation queue exit reviews; position size stays cut to 25% until the record earns it back.
+
+12
+00:01:04,087 --> 00:01:11,422
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+13
+00:01:11,422 --> 00:01:13,663
+Nothing here is financial advice.
+
+14
+00:01:13,663 --> 00:01:16,652
+From the closing desk — see you at the open.
