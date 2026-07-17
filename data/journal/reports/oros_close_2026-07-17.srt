@@ -1,0 +1,55 @@
+1
+00:00:00,000 --> 00:00:04,792
+Now the part that makes this system different: the loop.
+
+2
+00:00:04,792 --> 00:00:07,189
+Every morning OROS proposes.
+
+3
+00:00:07,189 --> 00:00:17,715
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+4
+00:00:17,715 --> 00:00:21,652
+Inside the book today: 6 positions up, 6 down.
+
+5
+00:00:21,652 --> 00:00:24,048
+Best, CASY at +3.88 percent.
+
+6
+00:00:24,048 --> 00:00:25,845
+Worst, SBUX at -2.66.
+
+7
+00:00:25,845 --> 00:00:30,809
+Both go in the journal — wins and losses get the same ink.
+
+8
+00:00:30,809 --> 00:00:37,826
+The honest scoreboard reads: expectancy -8.37% per trade over 83 graded positions.
+
+9
+00:00:37,826 --> 00:00:44,844
+Because that record is soft, the system has throttled itself to 25% position size.
+
+10
+00:00:44,844 --> 00:00:49,979
+Nobody told it to — full size must be earned back with wins.
+
+11
+00:00:49,979 --> 00:01:02,302
+What tonight's read hands to tomorrow's open: 263 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+12
+00:01:02,276 --> 00:01:09,611
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+13
+00:01:09,611 --> 00:01:11,852
+Nothing here is financial advice.
+
+14
+00:01:11,852 --> 00:01:14,841
+From the closing desk — see you at the open.

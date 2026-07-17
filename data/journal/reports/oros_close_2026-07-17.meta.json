@@ -1,0 +1,45 @@
+{
+ "edition": "evening",
+ "chapters": [
+  {
+   "title": "The Loop",
+   "start_s": 0.0
+  },
+  {
+   "title": "Sign-off",
+   "start_s": 62.28
+  }
+ ],
+ "home_run_confirmed": null,
+ "tally": {
+  "days": 4,
+  "vs_frozen": {
+   "wins": 4,
+   "losses": 0,
+   "ties": 0
+  },
+  "vs_spy": {
+   "wins": 2,
+   "losses": 2,
+   "ties": 0
+  },
+  "today": {
+   "date": "2026-07-17",
+   "live_pct": 0.026140548706054687,
+   "frozen_pct": -0.04308036804199219,
+   "spy_pct": -0.9897156017872222
+  }
+ },
+ "breadth": {
+  "date": "2026-07-17",
+  "total": 495,
+  "counts": {
+   "Advancing": 263,
+   "Basing": 93,
+   "Topping": 62,
+   "Declining": 77
+  },
+  "invalidated": 2
+ },
+ "duration_s": 74.8
+}
