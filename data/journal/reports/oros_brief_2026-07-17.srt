@@ -1,0 +1,203 @@
+1
+00:00:00,000 --> 00:00:00,969
+Good morning.
+
+2
+00:00:00,969 --> 00:00:06,408
+From the OROS Market Desk, here is the rundown for Friday, July 17, 2026.
+
+3
+00:00:06,408 --> 00:00:07,898
+The tape reads bull.
+
+4
+00:00:07,898 --> 00:00:14,529
+No setup cleared our home-run bar today, and you will hear why that is a story in itself.
+
+5
+00:00:14,529 --> 00:00:26,227
+And at the sports desk, day 10 of 18 in the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:26,227 --> 00:00:34,458
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:34,458 --> 00:00:41,822
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:41,784 --> 00:00:43,598
+First, the market open.
+
+9
+00:00:43,598 --> 00:00:49,276
+The S and P five hundred slipped 0.5 percent, while the NASDAQ lost 1.6.
+
+10
+00:00:49,276 --> 00:00:56,059
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+11
+00:00:56,059 --> 00:00:58,267
+The fear gauge sits at 19.4.
+
+12
+00:00:58,267 --> 00:01:07,593
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:07,555 --> 00:01:09,786
+Turning to the model book.
+
+14
+00:01:09,786 --> 00:01:20,685
+The system holds 12 positions with 55% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+15
+00:01:20,685 --> 00:01:38,278
+New to the book: Apple (AAPL), Popular (BPOP), Credit Acceptance (CACC), Caseys General Stores (CASY), CSX, State Street SPDR S&P Regional Banking ETF (KRE) — each passed the full entry gauntlet overnight.
+
+16
+00:01:38,278 --> 00:02:02,308
+Rotated out: Bank of America (BAC), which still advancing, but outranked by stronger names; Chevron (CVX), which fell back into a base; Deere & (DE), which still advancing, but outranked by stronger names; GE Aerospace (GE), which still advancing, but outranked by stronger names.
+
+17
+00:02:02,308 --> 00:02:08,342
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+18
+00:02:08,298 --> 00:02:12,385
+On the day, the book is up 652 dollars.
+
+19
+00:02:12,385 --> 00:02:17,520
+Caseys General Stores (CASY) leads, +3.8 percent.
+
+20
+00:02:17,520 --> 00:02:20,454
+Popular (BPOP) lags at -0.5.
+
+21
+00:02:20,454 --> 00:02:26,113
+The checklist is clear: nothing requires action today.
+
+22
+00:02:26,113 --> 00:02:29,640
+On screen, the day's gainers and laggards inside the paper book.
+
+23
+00:02:29,596 --> 00:02:31,489
+Now, market analysis.
+
+24
+00:02:31,489 --> 00:02:44,467
+Overnight the scanner graded the OROS five hundred — 500 of the most liquid names on the tape — and sorted every chart into its Weinstein stage.
+
+25
+00:02:44,467 --> 00:02:47,711
+52 percent are advancing in Stage 2.
+
+26
+00:02:47,711 --> 00:02:49,694
+18 percent are basing.
+
+27
+00:02:49,694 --> 00:02:52,037
+15 percent are in decline.
+
+28
+00:02:52,037 --> 00:02:59,067
+The advancing share is down 2 points since 2026-07-14 — the tide is going out.
+
+29
+00:02:59,067 --> 00:03:03,033
+Outside our shop, the fear gauge reads 19.4.
+
+30
+00:03:03,033 --> 00:03:06,927
+Why this screen matters: stages are the market's seasons.
+
+31
+00:03:06,927 --> 00:03:10,684
+Basing is spring, when ownership quietly changes hands.
+
+32
+00:03:10,684 --> 00:03:14,373
+Advancing is summer, the only season this system buys.
+
+33
+00:03:14,373 --> 00:03:17,652
+Topping is autumn, when smart money distributes.
+
+34
+00:03:17,652 --> 00:03:21,478
+Declining is winter, when the first job is staying warm.
+
+35
+00:03:21,478 --> 00:03:26,465
+The more of the market in summer, the more the tide is doing the lifting.
+
+36
+00:03:26,438 --> 00:03:27,987
+Tonight's takeaway.
+
+37
+00:03:27,987 --> 00:03:30,270
+A portfolio is not a museum.
+
+38
+00:03:30,270 --> 00:03:38,585
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+39
+00:03:38,559 --> 00:03:40,969
+Before we close, the disclosure segment.
+
+40
+00:03:40,969 --> 00:03:46,814
+The system's forward track record remains negative across strategies, and it is published anyway.
+
+41
+00:03:46,814 --> 00:03:51,333
+Position sizes stay automatically reduced until the record earns them back.
+
+42
+00:03:51,333 --> 00:03:53,835
+One note on the board you are seeing.
+
+43
+00:03:53,835 --> 00:04:08,778
+Those are not one portfolio but several: OROS builds and journals a separate experimental book for each strategy author it studies — Weinstein, Minervini, O'Neil and their peers — all graded forward from a standing start.
+
+44
+00:04:08,778 --> 00:04:11,077
+Early numbers read cold by design.
+
+45
+00:04:11,077 --> 00:04:15,810
+The scoreboard exists to earn trust over time, not to impress tonight.
+
+46
+00:04:15,810 --> 00:04:17,896
+A word on how this desk works.
+
+47
+00:04:17,896 --> 00:04:35,423
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+48
+00:04:35,423 --> 00:04:43,839
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+49
+00:04:43,839 --> 00:04:46,772
+All figures are simulated paper trading.
+
+50
+00:04:46,772 --> 00:04:53,150
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+51
+00:04:53,150 --> 00:04:57,109
+From the OROS Market Desk, have a disciplined session.
