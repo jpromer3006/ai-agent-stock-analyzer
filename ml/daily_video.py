@@ -275,7 +275,12 @@ def _add_anchor(fig, plt, anchor: Path | None = None):
     try:
         if not img_path.exists():
             return
-        img = plt.imread(str(img_path))
+        try:                       # PIL sniffs the real format (a JPEG saved
+            from PIL import Image  # as .png must still load — JP, 2026-07-18)
+            import numpy as np
+            img = np.asarray(Image.open(str(img_path)).convert("RGB"))
+        except Exception:  # noqa: BLE001
+            img = plt.imread(str(img_path))
         h, w = img.shape[0], img.shape[1]
         ax = fig.add_axes([0.66, 0.16, 0.30, 0.58])   # right column
         ax.imshow(img)
