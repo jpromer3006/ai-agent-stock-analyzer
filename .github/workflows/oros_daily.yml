@@ -83,6 +83,8 @@ jobs:
           FRED_API_KEY=${{ secrets.FRED_API_KEY }}
           ALPHA_VANTAGE_API_KEY=${{ secrets.ALPHA_VANTAGE_API_KEY }}
           FMP_API_KEY=${{ secrets.FMP_API_KEY }}
+          OROS_DIGEST_TO=${{ vars.OROS_DIGEST_TO || 'nl102@fordham.edu' }}
+          OROS_REPORT_URL_BASE=${{ vars.OROS_REPORT_URL_BASE }}
           EOF
 
       - name: OROS run (scan + auto portfolio + report email)
@@ -140,3 +142,21 @@ jobs:
           git diff --cached --quiet || git commit -m "OROS daily run: journal $(date -u +%F)"
           git pull --rebase origin ${GITHUB_REF_NAME} || true
           git push || echo "journal push failed (non-fatal)"
+
+      # Public PDF mirror (JP, 2026-07-18): pushes the day's report to the
+      # public oros-reports repo so the YouTube description can link it.
+      # Activates only when the OROS_REPORTS_TOKEN secret exists (a
+      # fine-grained PAT with contents:write on jpromer3006/oros-reports).
+      - name: Mirror report PDF to public repo
+        if: always() && env.REPORTS_TOKEN != ''
+        env:
+          REPORTS_TOKEN: ${{ secrets.OROS_REPORTS_TOKEN }}
+        run: |
+          PDF="data/journal/reports/oros_report_$(date -u +%F).pdf"
+          if [ -f "$PDF" ]; then
+            git clone --depth 1 "https://x-access-token:${REPORTS_TOKEN}@github.com/jpromer3006/oros-reports.git" /tmp/reports
+            cp "$PDF" /tmp/reports/
+            cd /tmp/reports
+            git config user.name "oros-bot"; git config user.email "actions@github.com"
+            git add . && git commit -m "report $(date -u +%F)" && git push || echo "mirror push failed (non-fatal)"
+          fi

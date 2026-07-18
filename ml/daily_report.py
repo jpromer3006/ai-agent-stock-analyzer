@@ -975,6 +975,68 @@ def _summary_body(data: dict) -> str:
     return "\n".join(lines)
 
 
+def _send_glance_digest(data: dict, yt_url: str | None) -> None:
+    """The advisor's morning glance (JP, 2026-07-18): 'added X, Y; dropped Z'
+    with one plain-language reason per name and the episode link. Everything
+    here is read from the journaled proposal — zero extra computation."""
+    import os as _os
+    digest_to = [a.strip() for a in
+                 _os.environ.get("OROS_DIGEST_TO", "nl102@fordham.edu").split(",")
+                 if a.strip()]
+    if not digest_to:
+        return
+    ch = data.get("changes") or {}
+    added, dropped = ch.get("added") or [], ch.get("removed") or []
+    rec = data.get("proposal") or {}
+    hold = {h["ticker"]: h for h in rec.get("holdings", [])}
+    try:
+        from data.universe import named
+    except Exception:  # noqa: BLE001
+        def named(t):  # noqa: ANN001
+            return t
+    try:
+        from ml.strategy_registry import display_name
+    except Exception:  # noqa: BLE001
+        def display_name(m):  # noqa: ANN001
+            return m
+    lines = [("added " + ", ".join(added) if added else "no adds")
+             + ("; dropped " + ", ".join(dropped) if dropped else "; no drops")]
+    if added:
+        lines.append("")
+        lines.append("Why they made the book:")
+        for t in added[:8]:
+            h = hold.get(t) or {}
+            led = display_name(h.get("led_by")) if h.get("led_by") else None
+            bits = [b for b in (h.get("sector"),
+                                f"led by the {led} strategy" if led else None,
+                                f"conviction {h['conviction']:.2f}"
+                                if h.get("conviction") is not None else None) if b]
+            lines.append(f"  {named(t)} — " + (", ".join(bits) or "passed every gate"))
+    if dropped:
+        try:
+            from ml.daily_video import _change_reason
+            lines.append("")
+            lines.append("Why they left:")
+            for t in dropped[:8]:
+                lines.append(f"  {named(t)} — {_change_reason(t)}")
+        except Exception:  # noqa: BLE001
+            pass
+    bench = rec.get("bench") or []
+    if bench:
+        lines.append("")
+        lines.append("Considered but excluded (the bench):")
+        for b in bench[:5]:
+            lines.append(f"  {named(b['ticker'])} — {b['reason']}")
+    if yt_url:
+        lines.append("")
+        lines.append(f"Today's briefing: {yt_url}")
+    lines += ["", "Simulated paper trading. OROS proposes and journals only; "
+              "it never trades. Educational, not financial advice."]
+    from ml.notifier import send_email
+    for addr in digest_to:
+        send_email("OROS: portfolio update", "\n".join(lines), to=addr)
+
+
 def send_daily_report(to: str | None = None, opps: dict | None = None,
                       changes: dict | None = None, force: bool = False,
                       email: bool = True, research: bool = True) -> Path:
@@ -1011,6 +1073,7 @@ def send_daily_report(to: str | None = None, opps: dict | None = None,
             logger.warning("broadcast failed: %s", e)
     # Publish the episode to the OROS Market Desk channel (unlisted; skips
     # cleanly until the YT_* credentials exist — docs/YOUTUBE_SETUP.md).
+    yt_url = None
     if audio_path is not None and str(audio_path).endswith(".mp4"):
         try:
             from ml.publish_youtube import publish_episode, episode_title
@@ -1021,6 +1084,14 @@ def send_daily_report(to: str | None = None, opps: dict | None = None,
                 audio_note = (audio_note + "\n" + yt_note).strip()
         except Exception as e:  # noqa: BLE001
             logger.warning("youtube publish failed: %s", e)
+    # At-a-glance digest for advisors (JP, 2026-07-18): adds/drops in one
+    # line, one honest reason each, the watch link — no attachments.
+    # Recipients: OROS_DIGEST_TO (comma-separated); Nathan Lara by default.
+    if email:
+        try:
+            _send_glance_digest(data, yt_url)
+        except Exception as e:  # noqa: BLE001
+            logger.warning("glance digest failed: %s", e)
     marker = pdf.with_suffix(".sent")
     if email:
         if marker.exists() and not force:

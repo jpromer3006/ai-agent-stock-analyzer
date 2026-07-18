@@ -102,6 +102,10 @@ class PortfolioPlan:
     invested: float = 0.0
     cash: float = 0.0
     note: str = ""
+    # The bench (JP, 2026-07-18): candidates that survived the scan but were
+    # excluded at construction, with the reason. Free transparency — every
+    # reason below is already computed in this loop; we only record it.
+    bench: list[dict] = field(default_factory=list)
 
 
 # ---------------------------------------------------------------------------
@@ -515,17 +519,29 @@ def build_portfolio(symbols: list[str], config: Optional[PortfolioConfig] = None
     # half-size treatment instead.
     _EARNINGS_BLACKOUT_MANDATES = {"fast_momentum", "swing_momentum"}
     selected: list[Holding] = []
+    bench: list[dict] = []                # the near-misses, with reasons
+
+    def _benched(h, reason: str) -> None:
+        if len(bench) < 12:
+            bench.append({"ticker": h.ticker, "sector": h.sector,
+                          "composite": round(float(h.composite or 0), 3),
+                          "reason": reason})
+
     sector_count: dict[str, int] = {}
     heat_budget = cfg.max_heat * cfg.account_size
     heat_used = 0.0
     for h in enriched:
         if len(selected) >= cfg.max_positions:
+            _benched(h, f"outranked — book full at {cfg.max_positions}")
             break
         if h.earnings_risk and cfg.mandate in _EARNINGS_BLACKOUT_MANDATES:
+            _benched(h, "earnings inside the blackout window")
             continue
         if h.sector not in ("UNKNOWN", "Other") and sector_count.get(h.sector, 0) >= cfg.max_per_sector:
+            _benched(h, f"sector cap — already {cfg.max_per_sector} in {h.sector}")
             continue
         if _size(h) < 1:                                 # stop too far for budget — skip, don't waste a slot
+            _benched(h, "stop too wide for the 1% risk budget")
             continue
         # The risk WALLET (hard heat cap): total worst-case loss if every stop
         # hit at once may never exceed max_heat of the account. When the
@@ -536,6 +552,7 @@ def build_portfolio(symbols: list[str], config: Optional[PortfolioConfig] = None
             per_share_risk = h.entry - h.stop
             fit = int((heat_budget - heat_used) / per_share_risk) if per_share_risk > 0 else 0
             if fit < 1:
+                _benched(h, "risk wallet spent — worst-case loss cap reached")
                 break
             h.shares = min(h.shares, fit)
             h.dollars = round(h.shares * h.entry, 2)
@@ -598,6 +615,7 @@ def build_portfolio(symbols: list[str], config: Optional[PortfolioConfig] = None
 
     active = [k for k, v in weights.items() if v > 0]
     return PortfolioPlan(
+        bench=bench,
         regime=regime, mandate=plan.mandate,
         weights={k: round(v, 3) for k, v in weights.items()},
         max_invested=plan.max_invested,

@@ -100,6 +100,13 @@ def build_description(meta: dict | None) -> str:
                      + "  ".join(f"{k}: {v} ({100 * v / tot:.0f}%)"
                                  for k, v in c.items())
                      + f"\nInvalidations on watch: {br.get('invalidated', 0)}")
+    # Full PDF report link (JP, 2026-07-18): appears only when the public
+    # reports mirror is configured (OROS_REPORT_URL_BASE env/variable).
+    base = os.environ.get("OROS_REPORT_URL_BASE", "").strip().rstrip("/")
+    if base:
+        from datetime import datetime as _dt2
+        parts.append("FULL REPORT (PDF)\n"
+                     f"{base}/oros_report_{_dt2.now():%Y-%m-%d}.pdf")
     if meta.get("takeaway"):
         parts.append(meta["takeaway"].replace("Tonight's takeaway. ",
                                               "THE TAKEAWAY\n"))

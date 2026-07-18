@@ -46,6 +46,7 @@ def record_proposal(plan, account: float, trace=None, note: str = "") -> Path:
             "sentiment": h.sentiment, "earnings_risk": h.earnings_risk,
             "outcome_return": None,        # filled later by update_outcomes
         } for h in plan.holdings],
+        "bench": list(getattr(plan, "bench", []) or []),
         "agent_trace": [{"agent": s.agent, "role": s.role, "summary": s.summary}
                         for s in (trace or [])],
     }

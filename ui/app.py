@@ -66,7 +66,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-mode_col1, mode_col2, mode_col3 = st.columns(3)
+mode_col1, mode_col2, mode_col3, mode_col4 = st.columns(4)
 with mode_col1:
     portfolio_active = st.session_state.app_mode == "portfolio"
     label = "💼 Portfolio  ✓" if portfolio_active else "💼 Portfolio"
@@ -88,6 +88,13 @@ with mode_col3:
                  type="primary" if research_active else "secondary"):
         st.session_state.app_mode = "research"
         st.rerun()
+with mode_col4:
+    yt_active = st.session_state.app_mode == "youtube"
+    label = "📺 YouTube News  ✓" if yt_active else "📺 YouTube News"
+    if st.button(label, key="mode_youtube", use_container_width=True,
+                 type="primary" if yt_active else "secondary"):
+        st.session_state.app_mode = "youtube"
+        st.rerun()
 
 st.markdown("")
 
@@ -95,6 +102,15 @@ st.markdown("")
 # not already loaded. Managed thereafter in Portfolio → Morning run & automation.
 from ui.components.cron_control import maybe_prompt_cron_on_launch
 maybe_prompt_cron_on_launch()
+
+
+# ═══════════════════════════════════════════════════════════════════════════
+# YOUTUBE NEWS MODE — customize, render, publish (no email)
+# ═══════════════════════════════════════════════════════════════════════════
+if st.session_state.app_mode == "youtube":
+    from ui.components.youtube_mode import render_youtube_mode
+    render_youtube_mode()
+    st.stop()
 
 
 # ═══════════════════════════════════════════════════════════════════════════

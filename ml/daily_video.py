@@ -265,6 +265,28 @@ def _esc(s: str) -> str:
     return str(s).replace("$", r"\$")
 
 
+_ANCHOR_IMG = _ROOT / "ui" / "assets" / "anchor.png"
+
+
+def _add_anchor(fig, plt, anchor: Path | None = None):
+    """Composite the desk anchor's headshot onto a scene card (right side).
+    Uses ui/assets/anchor.png by default; silently skips if absent."""
+    img_path = Path(anchor) if anchor else _ANCHOR_IMG
+    try:
+        if not img_path.exists():
+            return
+        img = plt.imread(str(img_path))
+        h, w = img.shape[0], img.shape[1]
+        ax = fig.add_axes([0.66, 0.16, 0.30, 0.58])   # right column
+        ax.imshow(img)
+        ax.axis("off")
+        # Subtle caption so the face reads as the desk, not a stock photo.
+        fig.text(0.81, 0.115, "The OROS Desk", fontsize=10, color=_MUT,
+                 ha="center", family="monospace")
+    except Exception as e:  # noqa: BLE001
+        logger.warning("anchor image skipped: %s", e)
+
+
 def _card(plt, title: str, lines: list[tuple[str, dict]], kicker: str = ""):
     fig = plt.figure(figsize=(12.8, 7.2))
     fig.patch.set_facecolor(_BG)
@@ -770,6 +792,14 @@ def _book_script(data: dict) -> list[str]:
             f"{_named(t)}, which {_change_reason(t)}" for t in dropped[:4]) + ".")
     if not added and not dropped:
         s.append("No rotation today; the book stands pat.")
+    # The bench (JP, 2026-07-18): who ALMOST made the book, and why not —
+    # read straight from the journaled construction, zero extra latency.
+    bench = rec.get("bench") or []
+    if bench:
+        b = bench[:3]
+        s.append("Left on the bench: " + "; ".join(
+            f"{_named(x['ticker'])}, {x['reason']}" for x in b)
+            + ". Passing the scan is not enough; the book must afford you.")
     return [" ".join(s), _teach("book")]
 
 
@@ -1010,8 +1040,37 @@ def _scene_to_clip(png: Path, mp3: Path, out: Path) -> bool:
     return r.returncode == 0 and out.exists()
 
 
-def generate_video_brief(data: dict) -> tuple[Path | None, str]:
-    """Build the Market Desk MP4. Returns (path or None, status line)."""
+def default_scripts(data: dict) -> dict[str, list[str]]:
+    """The rundown's auto-written narration, keyed by scene, for the
+    YouTube News tab (edit there, then pass back as `overrides`)."""
+    picks = (data.get("top_picks") or []) + (data.get("etf_picks") or [])
+    home_run = next((p for p in picks if _is_home_run(p)), None)
+    story = home_run or (picks[0] if picks else None)
+    out = {"coldopen": _coldopen_script(data, home_run),
+           "market": _market_script(data),
+           "topstory": (_pick_script(story, home_run=home_run is not None)
+                        if story else _no_pick_script()),
+           "book": _book_script(data) if data.get("proposal") else [],
+           "movers": _movers_script(data)}
+    cs = data.get("capstone")
+    if cs and cs.get("rows"):
+        out["race"] = _capstone_script(cs)
+    try:
+        out["analysis"] = _analysis_script(data)
+    except Exception:  # noqa: BLE001
+        pass
+    out["takeaway"] = [_TAKEAWAYS[_takeaway_key(data, home_run is not None)]]
+    out["signoff"] = _signoff_script(data)
+    return {k: v for k, v in out.items() if v}
+
+
+def generate_video_brief(data: dict, overrides: dict | None = None,
+                         anchor: Path | str | None = None,
+                         ) -> tuple[Path | None, str]:
+    """Build the Market Desk MP4. Returns (path or None, status line).
+    `overrides`: {scene_key: narration} from the YouTube News tab — a string
+    or list of segment strings replaces that scene's auto script.
+    `anchor`: headshot image for the cold open + sign-off desk scenes."""
     if os.environ.get("OROS_VIDEO", "1") == "0":
         return None, "Video brief: disabled (OROS_VIDEO=0)."
     if not shutil.which("ffmpeg"):
@@ -1031,9 +1090,10 @@ def generate_video_brief(data: dict) -> tuple[Path | None, str]:
         story_pick = home_run or (picks[0] if picks else None)
 
         scenes: list[tuple[str, str, object, list[str], str]] = []
+        _cold = _coldopen_scene(plt, data, home_run)
+        _add_anchor(_cold, plt, anchor)
         scenes.append(("coldopen", "Tonight on the Market Desk",
-                       _coldopen_scene(plt, data, home_run),
-                       _coldopen_script(data, home_run), "anchor"))
+                       _cold, _coldopen_script(data, home_run), "anchor"))
         scenes.append(("market", "The Market Open",
                        _market_scene(plt, data), _market_script(data),
                        "anchor"))
@@ -1075,13 +1135,17 @@ def generate_video_brief(data: dict) -> tuple[Path | None, str]:
         tk = _takeaway_key(data, home_run is not None)
         scenes.append(("takeaway", "The Takeaway", _takeaway_scene(plt, tk),
                        [_TAKEAWAYS[tk]], "anchor"))
+        _sign = _signoff_scene(plt, data)
+        _add_anchor(_sign, plt, anchor)
         scenes.append(("signoff", "Disclosure & Credits",
-                       _signoff_scene(plt, data), _signoff_script(data),
-                       "anchor"))
+                       _sign, _signoff_script(data), "anchor"))
 
         tmp = Path(tempfile.mkdtemp(prefix="oros_video_"))
         clips, chapters, cues, t = [], [], [], 0.0
         for i, (key, title, fig, segments, voice) in enumerate(scenes):
+            if overrides and key in overrides:            # tab-edited script
+                ov = overrides[key]
+                segments = [ov] if isinstance(ov, str) else list(ov or [])
             segments = [s for s in (segments or []) if s and s.strip()]
             if not segments:
                 plt.close(fig)
