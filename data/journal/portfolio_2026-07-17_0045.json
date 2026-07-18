@@ -1,0 +1,171 @@
+{
+  "timestamp": "2026-07-17T00:45:10.921664Z",
+  "date": "2026-07-17",
+  "regime": "bull",
+  "mandate": "growth_hold",
+  "account": 10000.0,
+  "invested": 8129.89,
+  "cash": 1870.11,
+  "weights": {
+    "canslim": 0.282,
+    "value": 0.053,
+    "technical": 0.066,
+    "weinstein": 0.11,
+    "growth": 0.226,
+    "ipo": 0.084,
+    "sepa": 0.146,
+    "swing": 0.032
+  },
+  "note": "UI build \u00b7 growth_hold",
+  "holdings": [
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.7298,
+      "shares": 12,
+      "dollars": 1124.4,
+      "weight_pct": 11.24,
+      "entry": 93.7,
+      "stop": 85.0,
+      "led_by": "sepa",
+      "sentiment": 0.262,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "NBIX",
+      "sector": "Health Care",
+      "conviction": 0.722,
+      "shares": 6,
+      "dollars": 1029.3,
+      "weight_pct": 10.29,
+      "entry": 171.55,
+      "stop": 162.21,
+      "led_by": "sepa",
+      "sentiment": 0.276,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MTCH",
+      "sector": "Information Technology",
+      "conviction": 0.7196,
+      "shares": 29,
+      "dollars": 1168.41,
+      "weight_pct": 11.68,
+      "entry": 40.29,
+      "stop": 36.3,
+      "led_by": "sepa",
+      "sentiment": 0.251,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.6978,
+      "shares": 6,
+      "dollars": 1043.16,
+      "weight_pct": 10.43,
+      "entry": 173.86,
+      "stop": 156.87,
+      "led_by": "sepa",
+      "sentiment": 0.276,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.6774,
+      "shares": 9,
+      "dollars": 553.41,
+      "weight_pct": 5.53,
+      "entry": 61.49,
+      "stop": 54.84,
+      "led_by": "sepa",
+      "sentiment": 0.118,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "SBUX",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.6244,
+      "shares": 11,
+      "dollars": 1192.07,
+      "weight_pct": 11.92,
+      "entry": 108.37,
+      "stop": 102.6,
+      "led_by": "sepa",
+      "sentiment": 0.053,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "JAZZ",
+      "sector": "Health Care",
+      "conviction": 0.6121,
+      "shares": 4,
+      "dollars": 968.72,
+      "weight_pct": 9.69,
+      "entry": 242.18,
+      "stop": 232.19,
+      "led_by": "sepa",
+      "sentiment": 0.285,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "PLD",
+      "sector": "Real Estate",
+      "conviction": 0.5942,
+      "shares": 7,
+      "dollars": 1050.42,
+      "weight_pct": 10.5,
+      "entry": 150.06,
+      "stop": 142.38,
+      "led_by": "sepa",
+      "sentiment": 0.358,
+      "earnings_risk": true,
+      "outcome_return": null
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "495 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: growth 27%, canslim 23%, weinstein 12%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.50, canslim x1.44"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "8 holdings, 81% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 19%"
+    }
+  ],
+  "horizon_days": 60,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}
