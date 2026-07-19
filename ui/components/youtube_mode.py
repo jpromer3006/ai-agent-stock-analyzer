@@ -20,6 +20,7 @@ import streamlit as st
 _ROOT = Path(__file__).resolve().parent.parent.parent
 _ASSETS = _ROOT / "ui" / "assets"
 _ANCHOR = _ASSETS / "anchor.png"
+_ENDCARD = _ASSETS / "endcard_logo.png"
 
 _SCENE_LABELS = {
     "coldopen": "01 · Cold open — Tonight on the Market Desk",
@@ -39,21 +40,22 @@ def render_youtube_mode() -> None:
     st.caption("Edit the script, set the anchor, render, publish. "
                "No emails are sent from this tab — upload only.")
 
-    # ----- The anchor's headshot -----------------------------------------
+    # ----- The end card (logo / sponsor slot) -----------------------------
     col_img, col_up = st.columns([1, 2])
     with col_img:
-        if _ANCHOR.exists():
-            st.image(str(_ANCHOR), caption="Current desk anchor", width=180)
+        if _ENDCARD.exists():
+            st.image(str(_ENDCARD), caption="Current end card", width=240)
         else:
-            st.info("No anchor headshot yet.")
+            st.info("No end-card logo yet.")
     with col_up:
-        up = st.file_uploader("Anchor headshot (PNG/JPG)",
+        up = st.file_uploader("End-card logo (PNG/JPG) — closes every "
+                              "episode with the disclaimer",
                               type=["png", "jpg", "jpeg"])
         if up is not None:
             _ASSETS.mkdir(parents=True, exist_ok=True)
-            _ANCHOR.write_bytes(up.getvalue())
-            st.success("Anchor saved — appears on the cold open and "
-                       "sign-off of every render from now on.")
+            _ENDCARD.write_bytes(up.getvalue())
+            st.success("End card saved — the last few seconds of every "
+                       "render from now on. Swap it any time (sponsor slot).")
             st.rerun()
 
     st.divider()

@@ -1035,6 +1035,53 @@ def _write_srt(cues: list[tuple[float, float, str]], path: Path) -> None:
     path.write_text("\n".join(out), encoding="utf-8")
 
 
+_ENDCARD_IMG = _ROOT / "ui" / "assets" / "endcard_logo.png"
+
+
+def _endcard_clip(plt, tmp: Path, seconds: float = 4.5) -> Path | None:
+    """The closing card (JP, 2026-07-18): full-bleed logo + disclaimer,
+    a few quiet seconds. The image is a swappable asset — the OROS banner
+    today, a sponsor's logo tomorrow. Silent audio, no narration."""
+    try:
+        if not _ENDCARD_IMG.exists():
+            return None
+        try:
+            from PIL import Image
+            import numpy as np
+            img = np.asarray(Image.open(str(_ENDCARD_IMG)).convert("RGB"))
+        except Exception:  # noqa: BLE001
+            img = plt.imread(str(_ENDCARD_IMG))
+        fig = plt.figure(figsize=(12.8, 7.2))
+        fig.patch.set_facecolor(_BG)
+        ax = fig.add_axes([0, 0, 1, 1])
+        ax.imshow(img, aspect="auto")
+        ax.axis("off")
+        fig.text(0.5, 0.115, "Simulated paper trading · OROS proposes and "
+                 "journals only · it never trades",
+                 ha="center", fontsize=12, color="#e6edf3",
+                 bbox=dict(facecolor="#0d1117", alpha=0.75, pad=6,
+                           edgecolor="none"))
+        fig.text(0.5, 0.055, "Educational content — not financial advice",
+                 ha="center", fontsize=11, color="#8b949e",
+                 bbox=dict(facecolor="#0d1117", alpha=0.75, pad=5,
+                           edgecolor="none"))
+        png = tmp / "endcard.png"
+        fig.savefig(png, dpi=100, facecolor=fig.get_facecolor())
+        plt.close(fig)
+        silent = tmp / "silent.mp3"
+        r = subprocess.run(["ffmpeg", "-y", "-f", "lavfi",
+                            "-i", "anullsrc=r=44100:cl=mono",
+                            "-t", str(seconds), "-q:a", "9", str(silent)],
+                           capture_output=True, timeout=60)
+        if r.returncode != 0:
+            return None
+        clip = tmp / "endcard.mp4"
+        return clip if _scene_to_clip(png, silent, clip) else None
+    except Exception as e:  # noqa: BLE001
+        logger.warning("end card skipped: %s", e)
+        return None
+
+
 def _scene_to_clip(png: Path, mp3: Path, out: Path) -> bool:
     cmd = ["ffmpeg", "-y", "-loop", "1", "-i", str(png), "-i", str(mp3),
            "-c:v", "libx264", "-tune", "stillimage", "-pix_fmt", "yuv420p",
@@ -1095,10 +1142,9 @@ def generate_video_brief(data: dict, overrides: dict | None = None,
         story_pick = home_run or (picks[0] if picks else None)
 
         scenes: list[tuple[str, str, object, list[str], str]] = []
-        _cold = _coldopen_scene(plt, data, home_run)
-        _add_anchor(_cold, plt, anchor)
         scenes.append(("coldopen", "Tonight on the Market Desk",
-                       _cold, _coldopen_script(data, home_run), "anchor"))
+                       _coldopen_scene(plt, data, home_run),
+                       _coldopen_script(data, home_run), "anchor"))
         scenes.append(("market", "The Market Open",
                        _market_scene(plt, data), _market_script(data),
                        "anchor"))
@@ -1140,10 +1186,9 @@ def generate_video_brief(data: dict, overrides: dict | None = None,
         tk = _takeaway_key(data, home_run is not None)
         scenes.append(("takeaway", "The Takeaway", _takeaway_scene(plt, tk),
                        [_TAKEAWAYS[tk]], "anchor"))
-        _sign = _signoff_scene(plt, data)
-        _add_anchor(_sign, plt, anchor)
         scenes.append(("signoff", "Disclosure & Credits",
-                       _sign, _signoff_script(data), "anchor"))
+                       _signoff_scene(plt, data), _signoff_script(data),
+                       "anchor"))
 
         tmp = Path(tempfile.mkdtemp(prefix="oros_video_"))
         clips, chapters, cues, t = [], [], [], 0.0
@@ -1175,6 +1220,9 @@ def generate_video_brief(data: dict, overrides: dict | None = None,
                 t += dur
         if not clips:
             return None, "Video brief: no scenes could be rendered."
+        ec = _endcard_clip(plt, tmp)
+        if ec is not None:
+            clips.append(ec)
 
         lst = tmp / "list.txt"
         lst.write_text("".join(f"file '{c}'\n" for c in clips))
@@ -1555,6 +1603,9 @@ def generate_evening_brief(verdicts: list[dict], tally: dict,
                 t += dur
         if not clips:
             return None, "Closing Bell: no scenes could be rendered."
+        ec = _endcard_clip(plt, tmp)
+        if ec is not None:
+            clips.append(ec)
         lst = tmp / "list.txt"
         lst.write_text("".join(f"file '{c}'\n" for c in clips))
         out = _REPORT_DIR / f"oros_close_{datetime.now():%Y-%m-%d}.mp4"
