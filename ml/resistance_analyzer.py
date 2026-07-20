@@ -288,9 +288,9 @@ def _derive_grade(result: ResistanceResult) -> tuple[str, str]:
     """
     if result.virgin_territory:
         return "A+", (
-            "Virgin territory. Price is at or above the 10-year high — "
-            "no overhead supply exists on the long-range chart. Chapter 4's "
-            "ideal: nobody is trapped long, so buying meets no resistance."
+            "Open sky. Price is at or above the 10-year high — no overhead "
+            "supply exists on the long-range chart. The ideal case: nobody "
+            "is trapped long above, so buying meets no resistance."
         )
     if result.nearest_resistance_pct is None:
         # No zones above current price but not virgin (rare edge case — e.g.
@@ -303,8 +303,7 @@ def _derive_grade(result: ResistanceResult) -> tuple[str, str]:
     if pct > GRADE_A_MIN_DISTANCE_PCT:
         return "A", (
             f"Nearest overhead resistance sits {pct:.0%} above current "
-            f"price — well beyond the 25% Chapter 4 threshold. Path higher "
-            f"is clear."
+            f"price — well beyond the 25% threshold. Path higher is clear."
         )
     if pct >= GRADE_B_MIN_DISTANCE_PCT:
         return "B", (
@@ -314,8 +313,8 @@ def _derive_grade(result: ResistanceResult) -> tuple[str, str]:
         )
     return "C", (
         f"Nearest overhead resistance is only {pct:.0%} above current "
-        f"price — heavy near-term supply. Chapter 4 warns that getting "
-        f"through this zone will absorb most of the breakout's buying power."
+        f"price — heavy near-term supply. Getting through this zone will "
+        f"absorb most of a breakout's buying power."
     )
 
 

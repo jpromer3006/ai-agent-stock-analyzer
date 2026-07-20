@@ -123,9 +123,11 @@ def _render_section_2_resistance(ticker: str, resistance: ResistanceResult) -> N
         st.warning(f"Resistance picture unavailable: {resistance.error}")
         return
 
+    # Same palette as the four stage cards: green = clear, amber = caution,
+    # red = danger — so the grade reads instantly (JP, 2026-07-20).
     grade_color = {
         "A+": "#3fb950", "A": "#56d364",
-        "B": "#ffc107", "C": "#ff7b1a", "n/a": "#6c757d",
+        "B": "#ffc107", "C": "#f85149", "n/a": "#6c757d",
     }.get(resistance.grade, "#6c757d")
 
     # Header card
@@ -147,9 +149,12 @@ def _render_section_2_resistance(ticker: str, resistance: ResistanceResult) -> N
         f"<div style='color:#8b949e;margin-top:10px;font-size:12px'>"
         f"People who bought higher and are losing tend to sell when price "
         f"returns to their entry — their old buy zones form ceilings. "
-        f"Grades: <b>A+</b> open sky (at the 10-yr high) · <b>A</b> nearest "
-        f"ceiling &gt;25% away · <b>B</b> 10–25% · <b>C</b> under 10% — "
-        f"heavy ceiling right overhead. (Weinstein, Ch. 4.)</div>"
+        f"Same colors as the stage cards: "
+        f"<b style='color:#3fb950'>A+</b> open sky (at the 10-yr high) · "
+        f"<b style='color:#56d364'>A</b> nearest ceiling &gt;25% away · "
+        f"<b style='color:#ffc107'>B</b> 10–25% · "
+        f"<b style='color:#f85149'>C</b> under 10% — heavy ceiling right "
+        f"overhead.</div>"
         f"</div>",
         unsafe_allow_html=True,
     )
@@ -435,6 +440,8 @@ def _render_section_4a_specialist(ticker: str) -> None:
         # how the agents show their sources without crowding the prose.
         from agents.orchestrator import _to_footnotes
         memo_text = _to_footnotes(memo_text)
+        # Ask OROS (section 6) reads the memo from here.
+        st.session_state[f"oros_memo_{ticker}"] = memo_text
 
         st.session_state[state_key] = {"memo": memo_text, "tool_calls": tool_calls}
         st.rerun()
@@ -616,7 +623,7 @@ def render_research_dossier(ticker: str) -> None:
 
     # ── Section 3: Chapter 3 calendar ───────────────────────────────────
     st.markdown("---")
-    st.markdown("### 3️⃣ Chapter 3 — Calendar Context")
+    st.markdown("### 3️⃣ Calendar Context")
     render_calendar_heatmap(section_header=False)
 
     # ── Section 4: Two analysts side by side ────────────────────────────
@@ -639,3 +646,12 @@ def render_research_dossier(ticker: str) -> None:
     st.markdown("---")
     st.markdown("### 5️⃣ Decision Panel")
     _render_section_5_decision(ticker, stage_result, chartist_output)
+
+    # ── Section 6: Ask OROS — scoped chat over this dossier ──────────────
+    st.markdown("---")
+    from ui.components.oros_chat import render_ask_oros
+    _chat_ctx = st.session_state.get(f"oros_memo_{ticker}", "")
+    _chat_ctx += (f"\n\nStage: {getattr(stage_result, 'stage_name', '?')} · "
+                  f"Resistance grade: {getattr(resistance, 'grade', 'n/a')} "
+                  f"({getattr(resistance, 'grade_narrative', '')})")
+    render_ask_oros(ticker, context=_chat_ctx)

@@ -87,6 +87,55 @@ def render_youtube_mode() -> None:
                            height=140, key=f"yt_scene_{key}")
         edited[key] = [b.strip() for b in txt.split("\n\n") if b.strip()]
 
+    # ----- Script assistant (Claude) --------------------------------------
+    with st.expander("🤖 Script assistant — draft scenes from a report"):
+        st.caption("Upload a research report and/or give an instruction; "
+                   "Claude rewrites the chosen scenes in the desk's voice. "
+                   "The closing disclosure is enforced in code — no edit or "
+                   "assistant output can remove it from the broadcast.")
+        rep = st.file_uploader("Research report (PDF / MD / TXT) — optional",
+                               type=["pdf", "md", "txt"], key="yt_report")
+        instr = st.text_area(
+            "Instruction",
+            value="Rewrite the selected scenes: tighter, more engaging, "
+                  "plain spoken English, grounded in the report's facts.",
+            height=80, key="yt_instr")
+        targets = st.multiselect(
+            "Scenes to rewrite", list(scripts.keys()),
+            default=[k for k in ("topstory",) if k in scripts],
+            format_func=lambda k: _SCENE_LABELS.get(k, k), key="yt_targets")
+        if st.button("✍️ Draft with Claude", key="yt_draft") and targets:
+            report_text = ""
+            if rep is not None:
+                try:
+                    if rep.name.lower().endswith(".pdf"):
+                        import io
+                        from pypdf import PdfReader
+                        report_text = "\n".join(
+                            (p.extract_text() or "")
+                            for p in PdfReader(io.BytesIO(rep.getvalue())).pages)
+                    else:
+                        report_text = rep.getvalue().decode("utf-8", "ignore")
+                except Exception as e:
+                    st.warning(f"Could not read the report ({e}); "
+                               "drafting from instruction only.")
+            current = {k: "\n\n".join(edited.get(k) or scripts[k])
+                       for k in targets}
+            with st.spinner("Claude is writing in the desk's voice..."):
+                try:
+                    from ui.components.oros_chat import draft_scripts
+                    out = draft_scripts(current, instr, report_text)
+                    n = 0
+                    for k, v in out.items():
+                        if k in targets:
+                            st.session_state[f"yt_scene_{k}"] = v
+                            n += 1
+                    st.success(f"Rewrote {n} scene(s) — review above, then "
+                               "render. Disclosure stays enforced.")
+                    st.rerun()
+                except Exception as e:
+                    st.error(f"Assistant unavailable: {type(e).__name__}: {e}")
+
     st.divider()
     c1, c2 = st.columns(2)
 

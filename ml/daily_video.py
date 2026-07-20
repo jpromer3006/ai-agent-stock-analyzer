@@ -1196,6 +1196,14 @@ def generate_video_brief(data: dict, overrides: dict | None = None,
             if overrides and key in overrides:            # tab-edited script
                 ov = overrides[key]
                 segments = [ov] if isinstance(ov, str) else list(ov or [])
+                # The disclosure is law (JP, 2026-07-20): no edit, human or
+                # assistant, may remove it from the sign-off. Enforced here,
+                # not by policy. Env escape hatch for deliberate overrides.
+                if (key == "signoff"
+                        and os.environ.get("OROS_ALLOW_DISCLOSURE_EDIT", "0") != "1"
+                        and not any("never trades" in s and "not financial advice" in s
+                                    for s in segments)):
+                    segments.append(_DISCLOSURE_SCRIPT)
             segments = [s for s in (segments or []) if s and s.strip()]
             if not segments:
                 plt.close(fig)
