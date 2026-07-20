@@ -135,7 +135,7 @@ def _render_section_2_resistance(ticker: str, resistance: ResistanceResult) -> N
         f"<div style='display:flex;justify-content:space-between;"
         f"align-items:center'>"
         f"<div><div style='font-size:11px;color:#8b949e;letter-spacing:1px'>"
-        f"CHAPTER 4 — RESISTANCE GRADE</div>"
+        f"OVERHEAD CEILING GRADE · HOW CLOSE IS TRAPPED SUPPLY?</div>"
         f"<div style='font-size:36px;font-weight:700;color:{grade_color};"
         f"margin-top:4px'>{resistance.grade}</div></div>"
         f"<div style='text-align:right'>"
@@ -144,6 +144,12 @@ def _render_section_2_resistance(ticker: str, resistance: ResistanceResult) -> N
         f"${resistance.ten_year_high or 0:.2f}</div></div></div>"
         f"<div style='color:#c9d1d9;margin-top:10px;font-size:14px;"
         f"line-height:1.5'>{resistance.grade_narrative}</div>"
+        f"<div style='color:#8b949e;margin-top:10px;font-size:12px'>"
+        f"People who bought higher and are losing tend to sell when price "
+        f"returns to their entry — their old buy zones form ceilings. "
+        f"Grades: <b>A+</b> open sky (at the 10-yr high) · <b>A</b> nearest "
+        f"ceiling &gt;25% away · <b>B</b> 10–25% · <b>C</b> under 10% — "
+        f"heavy ceiling right overhead. (Weinstein, Ch. 4.)</div>"
         f"</div>",
         unsafe_allow_html=True,
     )
@@ -605,7 +611,7 @@ def render_research_dossier(ticker: str) -> None:
 
     # ── Section 2: Chapter 4 resistance ─────────────────────────────────
     st.markdown("---")
-    st.markdown("### 2️⃣ Chapter 4 — Overhead Resistance")
+    st.markdown("### 2️⃣ Overhead Resistance — the ceiling above")
     _render_section_2_resistance(ticker, resistance)
 
     # ── Section 3: Chapter 3 calendar ───────────────────────────────────
