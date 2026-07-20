@@ -1,0 +1,80 @@
+{
+ "date": "Monday, July 20, 2026",
+ "regime": "bull",
+ "lesson": "market",
+ "race_day": 11,
+ "race_total": 18,
+ "home_run": null,
+ "takeaway": "Tonight's takeaway. A portfolio is not a museum. Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.",
+ "breadth": {
+  "date": "2026-07-20",
+  "total": 494,
+  "counts": {
+   "Advancing": 268,
+   "Basing": 85,
+   "Topping": 59,
+   "Declining": 82
+  },
+  "invalidated": 2,
+  "prior": {
+   "date": "2026-07-14",
+   "total": 494,
+   "counts": {
+    "Advancing": 269,
+    "Basing": 79,
+    "Topping": 63,
+    "Declining": 83
+   },
+   "invalidated": 3
+  }
+ },
+ "oros500": {
+  "name": "OROS 500",
+  "date": "2026-07-20",
+  "count": 500,
+  "target": 500,
+  "entered": [
+   "AGEN",
+   "AMA",
+   "BIYA",
+   "CLBK"
+  ],
+  "left": [
+   "APPN",
+   "CADL",
+   "CGEM",
+   "EFSC"
+  ]
+ },
+ "chapters": [
+  {
+   "title": "Tonight on the Market Desk",
+   "start_s": 0.0
+  },
+  {
+   "title": "The Market Open",
+   "start_s": 41.18
+  },
+  {
+   "title": "Business Desk \u2014 the book",
+   "start_s": 67.05
+  },
+  {
+   "title": "Movers in the Book",
+   "start_s": 73.04
+  },
+  {
+   "title": "Market Analysis \u2014 the OROS 500",
+   "start_s": 76.52
+  },
+  {
+   "title": "The Takeaway",
+   "start_s": 99.93
+  },
+  {
+   "title": "Disclosure & Credits",
+   "start_s": 112.05
+  }
+ ],
+ "duration_s": 190.6
+}

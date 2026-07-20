@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.341,
       "earnings_risk": false,
-      "outcome_return": 0.0148,
+      "outcome_return": 0.0046,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -75,10 +75,10 @@
       "led_by": "sepa",
       "sentiment": 0.33,
       "earnings_risk": false,
-      "outcome_return": -0.0945,
-      "outcome_exit": "stop",
-      "outcome_days": 10,
-      "outcome_final": true
+      "outcome_return": -0.049,
+      "outcome_exit": "open",
+      "outcome_days": 11,
+      "outcome_final": false
     },
     {
       "ticker": "DGII",
@@ -123,9 +123,9 @@
       "led_by": "sepa",
       "sentiment": 0.227,
       "earnings_risk": false,
-      "outcome_return": 0.0185,
+      "outcome_return": 0.0037,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -168,9 +168,9 @@
       "led_by": "sepa",
       "sentiment": 0.255,
       "earnings_risk": false,
-      "outcome_return": -0.1239,
+      "outcome_return": 0.0595,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -234,9 +234,9 @@
       "summary": "within limits; cash 1%"
     }
   ],
-  "realized_avg_return": -0.1038,
+  "realized_avg_return": -0.113,
   "realized_hit_rate": 0.0,
   "horizon_days": 20,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2
+  "realized_final_count": 1,
+  "realized_stop_exits": 1
 }

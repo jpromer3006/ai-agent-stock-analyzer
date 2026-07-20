@@ -44,9 +44,9 @@
       "led_by": "technical",
       "sentiment": 0.131,
       "earnings_risk": false,
-      "outcome_return": -0.0022,
+      "outcome_return": -0.0179,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 2,
       "outcome_final": false
     },
     {
@@ -75,9 +75,9 @@
       "led_by": "technical",
       "sentiment": 0.204,
       "earnings_risk": false,
-      "outcome_return": -0.0547,
+      "outcome_return": -0.0506,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 2,
       "outcome_final": false
     },
     {
@@ -92,9 +92,9 @@
       "led_by": "technical",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.0176,
+      "outcome_return": -0.0078,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 2,
       "outcome_final": false
     },
     {

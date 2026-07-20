@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.371,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0076,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CACC",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.575,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0011,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "WELL",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.433,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0013,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "MET",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.262,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0004,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CASY",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.178,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0116,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "TGT",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.367,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0149,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "MO",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.072,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "SBUX",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.076,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0268,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "KRE",
@@ -156,7 +180,10 @@
       "led_by": "sepa",
       "sentiment": 0.125,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0107,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "AAPL",
@@ -170,7 +197,10 @@
       "led_by": "sepa",
       "sentiment": 0.123,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0093,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "NEE",
@@ -184,7 +214,10 @@
       "led_by": "sepa",
       "sentiment": 0.39,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.016,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     }
   ],
   "agent_trace": [
