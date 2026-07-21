@@ -1,0 +1,135 @@
+1
+00:00:00,000 --> 00:00:08,231
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+2
+00:00:08,231 --> 00:00:15,595
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+3
+00:00:15,557 --> 00:00:24,883
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+4
+00:00:24,845 --> 00:00:30,879
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+5
+00:00:30,835 --> 00:00:34,674
+On the day, the book is down 174 dollars.
+
+6
+00:00:34,674 --> 00:00:38,701
+DXP Enterprises (DXPE) leads, +1.6 percent.
+
+7
+00:00:38,701 --> 00:00:41,791
+Union Pacific (UNP) lags at -1.4.
+
+8
+00:00:41,791 --> 00:00:46,848
+The checklist is clear: nothing requires action today.
+
+9
+00:00:46,848 --> 00:00:49,475
+Today's lesson is noise versus signal.
+
+10
+00:00:49,475 --> 00:00:53,139
+Daily moves are weather; the weekly trend is climate.
+
+11
+00:00:53,139 --> 00:00:56,181
+The system never exits on a scary afternoon.
+
+12
+00:00:56,181 --> 00:01:01,712
+It acts only on weekly closes, because that is where the real information lives.
+
+13
+00:01:01,662 --> 00:01:05,556
+Why this screen matters: stages are the market's seasons.
+
+14
+00:01:05,556 --> 00:01:09,313
+Basing is spring, when ownership quietly changes hands.
+
+15
+00:01:09,313 --> 00:01:13,002
+Advancing is summer, the only season this system buys.
+
+16
+00:01:13,002 --> 00:01:16,281
+Topping is autumn, when smart money distributes.
+
+17
+00:01:16,281 --> 00:01:20,107
+Declining is winter, when the first job is staying warm.
+
+18
+00:01:20,107 --> 00:01:25,094
+The more of the market in summer, the more the tide is doing the lifting.
+
+19
+00:01:25,067 --> 00:01:26,616
+Tonight's takeaway.
+
+20
+00:01:26,616 --> 00:01:28,899
+A portfolio is not a museum.
+
+21
+00:01:28,899 --> 00:01:37,214
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+22
+00:01:37,188 --> 00:01:39,598
+Before we close, the disclosure segment.
+
+23
+00:01:39,598 --> 00:01:45,443
+The system's forward track record remains negative across strategies, and it is published anyway.
+
+24
+00:01:45,443 --> 00:01:49,962
+Position sizes stay automatically reduced until the record earns them back.
+
+25
+00:01:49,962 --> 00:01:52,464
+One note on the board you are seeing.
+
+26
+00:01:52,464 --> 00:02:07,407
+Those are not one portfolio but several: OROS builds and journals a separate experimental book for each strategy author it studies — Weinstein, Minervini, O'Neil and their peers — all graded forward from a standing start.
+
+27
+00:02:07,407 --> 00:02:09,706
+Early numbers read cold by design.
+
+28
+00:02:09,706 --> 00:02:14,439
+The scoreboard exists to earn trust over time, not to impress tonight.
+
+29
+00:02:14,439 --> 00:02:16,525
+A word on how this desk works.
+
+30
+00:02:16,525 --> 00:02:34,052
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+31
+00:02:34,052 --> 00:02:42,468
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+32
+00:02:42,468 --> 00:02:45,401
+All figures are simulated paper trading.
+
+33
+00:02:45,401 --> 00:02:51,779
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+34
+00:02:51,779 --> 00:02:55,738
+From the OROS Market Desk, have a disciplined session.
