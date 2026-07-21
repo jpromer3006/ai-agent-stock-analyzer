@@ -1,0 +1,41 @@
+{
+ "edition": "evening",
+ "chapters": [
+  {
+   "title": "Sign-off",
+   "start_s": 0.0
+  }
+ ],
+ "home_run_confirmed": null,
+ "tally": {
+  "days": 6,
+  "vs_frozen": {
+   "wins": 6,
+   "losses": 0,
+   "ties": 0
+  },
+  "vs_spy": {
+   "wins": 2,
+   "losses": 4,
+   "ties": 0
+  },
+  "today": {
+   "date": "2026-07-21",
+   "live_pct": 0.3247695999145508,
+   "frozen_pct": 0.14095980548858641,
+   "spy_pct": 0.8341309298597777
+  }
+ },
+ "breadth": {
+  "date": "2026-07-21",
+  "total": 493,
+  "counts": {
+   "Advancing": 263,
+   "Basing": 86,
+   "Topping": 57,
+   "Declining": 87
+  },
+  "invalidated": 7
+ },
+ "duration_s": 12.5
+}
