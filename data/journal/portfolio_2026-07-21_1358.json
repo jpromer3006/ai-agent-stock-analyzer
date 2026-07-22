@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.371,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0026,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "DXPE",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.214,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0313,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "DRH",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.209,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0165,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "AAPL",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.15,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0108,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "WELL",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.433,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0069,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CASY",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.178,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.001,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "TGT",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.113,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0062,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "COLB",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.16,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0005,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "UNP",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.157,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0068,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BANR",
@@ -156,7 +183,10 @@
       "led_by": "technical",
       "sentiment": 0.083,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.009,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "UPS",
@@ -170,7 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.142,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0243,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CHRW",
@@ -184,7 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.098,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0143,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     }
   ],
   "bench": [
