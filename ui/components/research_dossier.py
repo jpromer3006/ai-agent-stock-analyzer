@@ -593,9 +593,10 @@ def render_research_dossier(ticker: str) -> None:
         f"## 🔬 Research Dossier — **{ticker}**"
     )
     st.caption(
-        "Five-section Weinstein decision dossier. Sections 1, 2, 3, and 4b "
-        "render in under a second. Section 4a (sector specialist) runs "
-        "only on demand."
+        "Six-section decision dossier. Sections 1, 2, 3, and 4b render in "
+        "under a second; section 4a (sector specialist memo) runs on "
+        "demand. Section 6 at the bottom is 💬 Ask OROS — a chat that "
+        "answers questions about this dossier and the system."
     )
 
     # Run analyses

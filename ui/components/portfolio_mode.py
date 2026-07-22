@@ -321,8 +321,14 @@ def _render_plan(plan, trace, account: float, mkey: str, max_pos: int,
 
     # ---- Holdings table ----
     if plan.holdings:
+        try:
+            from data.universe import company_name as _cname
+        except Exception:  # noqa: BLE001
+            def _cname(t):  # noqa: ANN001
+                return ""
         df = pd.DataFrame([{
-            "Ticker": h.ticker, "Sector": h.sector, "Conviction": round(h.composite, 2),
+            "Ticker": h.ticker, "Company": _cname(h.ticker) or "—",
+            "Sector": h.sector, "Conviction": round(h.composite, 2),
             "News": round(h.sentiment, 2),
             "Flags": " ".join(f for f, on in
                               [("📌pin", getattr(h, "manual", False)),

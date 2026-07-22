@@ -1058,8 +1058,14 @@ def _render_full_table(report: ScanReport):
             )
         else:
             resist_display = resist_label
+        try:
+            from data.universe import company_name as _cname
+            _co = _cname(r.ticker) or ""
+        except Exception:  # noqa: BLE001
+            _co = ""
         row = {
             "Ticker": r.ticker,
+            "Company": _co,
             "Stage": f"{r.stage} {STAGE_ICON[r.stage]} {r.stage_name}",
             "Buy Gates": buy_status,
             "Resist": resist_display,

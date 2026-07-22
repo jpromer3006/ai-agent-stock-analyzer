@@ -75,6 +75,9 @@ def render_youtube_mode() -> None:
     data = st.session_state.get("yt_data")
     scripts = st.session_state.get("yt_scripts")
     if not data or not scripts:
+        st.info("Load today's rundown above — then the editable scene "
+                "scripts, the 🤖 Script assistant (Claude), and the render "
+                "and upload controls appear here.")
         st.stop()
 
     st.caption("Blank line = new narration segment (cached separately). "
