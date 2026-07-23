@@ -40,7 +40,10 @@ _QA_SYSTEM = (
     "the relevant analysis and note that OROS is educational and they "
     "should consult a licensed advisor. Never invent figures - if the "
     "context or your knowledge does not contain a number, say so plainly. "
-    "Cite the memo sections you draw on. Be concise and warm."
+    "Cite the memo sections you draw on. Be concise and warm. "
+    "Reply in whatever language the user writes in; when refusing an "
+    "out-of-scope question in another language, translate the refusal "
+    "line faithfully, preserving its exact meaning."
 )
 
 _SCRIPT_SYSTEM = (
