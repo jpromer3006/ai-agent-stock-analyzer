@@ -1103,11 +1103,22 @@ def send_daily_report(to: str | None = None, opps: dict | None = None,
                 body += "\n\n" + memo_note
             if audio_note:
                 body += "\n" + audio_note
-            attachments = ([pdf] + ([memo_path] if memo_path else [])
-                           + ([audio_path] if audio_path else []))
-            ok = send_email(f"OROS Daily Report — {datetime.now():%b %d, %Y} — "
-                            f"{data['regime'].upper()}",
-                            body, to=to, attachments=attachments)
+            # Email tightening (JP, 2026-07-29): episodes are public on
+            # YouTube, so the email carries the WATCH LINK, not the MP4.
+            # PDF + memo stay attached; the video attaches only as a
+            # fallback when publishing failed (no yt_url).
+            attachments = [pdf] + ([memo_path] if memo_path else [])
+            if audio_path and not yt_url:
+                attachments.append(audio_path)
+            # Subject matches the channel's title style: date · regime · hook.
+            try:
+                from ml.publish_youtube import episode_title
+                subject = episode_title(data).replace(
+                    "OROS Market Desk", "OROS Daily", 1)
+            except Exception:  # noqa: BLE001
+                subject = (f"OROS Daily — {datetime.now():%b %d, %Y} · "
+                           f"{data['regime'].upper()}")
+            ok = send_email(subject, body, to=to, attachments=attachments)
             if ok:
                 marker.write_text(datetime.utcnow().isoformat() + "Z")
     return pdf

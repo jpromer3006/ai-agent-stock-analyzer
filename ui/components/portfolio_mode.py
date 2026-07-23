@@ -492,6 +492,54 @@ def _execute_builds(source: str, limit: int, selected_mandates: list[str],
     )
 
 
+def _render_latest_journaled_build() -> None:
+    """The tab's opening view: this morning's cloud build, straight from the
+    journal — renders instantly (no scan, no network)."""
+    try:
+        from ml.daily_report import _latest_proposal
+        rec = _latest_proposal()
+    except Exception:  # noqa: BLE001
+        rec = None
+    if not rec or not rec.get("holdings"):
+        return
+    try:
+        from data.universe import company_name as _cname
+    except Exception:  # noqa: BLE001
+        def _cname(t):  # noqa: ANN001
+            return ""
+    try:
+        from ml.strategy_registry import display_name as _dn
+    except Exception:  # noqa: BLE001
+        def _dn(m):  # noqa: ANN001
+            return m
+    acct = float(rec.get("account") or 100_000.0)
+    inv = float(rec.get("invested") or 0.0)
+    st.markdown(f"#### 🌅 Latest build — {rec.get('date', '?')} "
+                f"({rec.get('regime', '?').upper()} · "
+                f"{_dn(rec.get('mandate', ''))})")
+    c1, c2, c3 = st.columns(3)
+    c1.metric("Positions", len(rec.get("holdings", [])))
+    c2.metric("Deployed", f"{inv / acct:.0%}")
+    c3.metric("Cash", f"{(acct - inv) / acct:.0%}")
+    df = pd.DataFrame([{
+        "Ticker": h.get("ticker"), "Company": _cname(h.get("ticker", "")) or "—",
+        "Sector": h.get("sector"), "Shares": h.get("shares"),
+        "Entry": h.get("entry"), "Stop": h.get("stop"),
+        "Weight %": h.get("weight_pct"),
+        "Led by": _dn(h.get("led_by")) if h.get("led_by") else "n/a",
+    } for h in rec.get("holdings", [])])
+    st.dataframe(df, use_container_width=True, hide_index=True)
+    bench = rec.get("bench") or []
+    if bench:
+        with st.expander(f"🪑 The bench — {len(bench)} candidates excluded, "
+                         "with reasons"):
+            for b in bench:
+                st.markdown(f"- **{b.get('ticker')}** — {b.get('reason')}")
+    st.caption("Journaled by the autonomous morning run. Auto-build below "
+               "constructs a fresh book without touching this record.")
+    st.markdown("---")
+
+
 def render_portfolio_mode() -> None:
     st.markdown(
         "<div style='background:#0d1117;padding:14px 20px;border-radius:8px;"
@@ -636,8 +684,13 @@ def render_portfolio_mode() -> None:
 
     plans = st.session_state.get("portfolio_plans")
     if not plans:
-        st.info("Click **🤖 Auto-build** and OROS will construct the best book it can "
-                "from the data — or open the sidebar settings and build manually.")
+        # Instant first impression (JP, 2026-07-29): show this morning's
+        # JOURNALED build immediately — no waiting, no click. Auto-build
+        # still constructs a fresh book on demand.
+        _render_latest_journaled_build()
+        st.info("Click **🤖 Auto-build** and OROS will construct a fresh book "
+                "from the data — or open the sidebar settings and build "
+                "manually.")
         render_disclaimer()
         return
 

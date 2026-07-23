@@ -267,8 +267,10 @@ def send_evening_report(to: str | None = None) -> None:
                    "",
                    "Simulated paper trading. OROS proposes and journals only;"
                    " it never trades. Educational, not financial advice."]
+    # Watch link instead of MP4 attachment (JP, 2026-07-29): the episode is
+    # public on YouTube; attach the file only when publishing failed.
     send_email(title, "\n".join(body_lines), to=to,
-               attachments=[video] if video else None)
+               attachments=[video] if (video and not watch.strip()) else None)
 
 
 if __name__ == "__main__":

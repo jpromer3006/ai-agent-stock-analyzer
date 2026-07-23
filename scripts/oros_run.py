@@ -216,17 +216,21 @@ def main() -> int:
             _now_et = datetime.now(ZoneInfo("America/New_York"))
         except Exception:
             _now_et = datetime.now()
-        send_email(
-            f"OROS: scan complete — {_now_et:%b %d, %Y %H:%M %Z}",
-            (f"The automated OROS scan ran.\n\n"
-             f"Universe scanned: {len(symbols)} names\n"
-             f"Regime: {plan.regime.upper()} | mandate: {mandate}\n"
-             f"Holdings proposed: {len(plan.holdings)}\n"
-             f"Changes vs last run: +{changes['added'] or []} -{changes['removed'] or []}\n"
-             f"IPO breakouts: {[o['ticker'] for o in opps['breakouts'][:6]] or 'none'}\n\n"
-             f"Daily report with gains/losses follows as a PDF.\n"
-             f"OROS proposes and journals only — it never trades."),
-            to=report_to)
+        # One morning email (JP, 2026-07-29): the daily report IS the
+        # heartbeat; the separate scan-complete email is opt-in only
+        # (OROS_SCAN_EMAIL=1). Failures still alert loudly below.
+        if _os.environ.get("OROS_SCAN_EMAIL", "0") == "1":
+            send_email(
+                f"OROS: scan complete — {_now_et:%b %d, %Y %H:%M %Z}",
+                (f"The automated OROS scan ran.\n\n"
+                 f"Universe scanned: {len(symbols)} names\n"
+                 f"Regime: {plan.regime.upper()} | mandate: {mandate}\n"
+                 f"Holdings proposed: {len(plan.holdings)}\n"
+                 f"Changes vs last run: +{changes['added'] or []} -{changes['removed'] or []}\n"
+                 f"IPO breakouts: {[o['ticker'] for o in opps['breakouts'][:6]] or 'none'}\n\n"
+                 f"Daily report with gains/losses follows as a PDF.\n"
+                 f"OROS proposes and journals only — it never trades."),
+                to=report_to)
         try:
             from ml.daily_report import send_daily_report
             # Research Memo of the Day rides along only while the LLM budget
