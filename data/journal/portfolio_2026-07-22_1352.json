@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.424,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0066,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "DXPE",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.214,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0032,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "MET",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.262,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0205,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CSX",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.19,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0533,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "AAPL",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.184,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0202,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "WELL",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.399,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0004,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CASY",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.147,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0065,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BUSE",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.356,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0133,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "UNP",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.157,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0673,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CHRD",
@@ -156,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.46,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0207,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "TGT",
@@ -170,7 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.2,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.034,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "IYT",

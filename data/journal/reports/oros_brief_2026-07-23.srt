@@ -1,0 +1,107 @@
+1
+00:00:00,000 --> 00:00:08,231
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+2
+00:00:08,231 --> 00:00:15,595
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+3
+00:00:15,557 --> 00:00:24,883
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+4
+00:00:24,845 --> 00:00:30,879
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+5
+00:00:30,835 --> 00:00:34,362
+On screen, the day's gainers and laggards inside the paper book.
+
+6
+00:00:34,318 --> 00:00:38,212
+Why this screen matters: stages are the market's seasons.
+
+7
+00:00:38,212 --> 00:00:41,969
+Basing is spring, when ownership quietly changes hands.
+
+8
+00:00:41,969 --> 00:00:45,658
+Advancing is summer, the only season this system buys.
+
+9
+00:00:45,658 --> 00:00:48,937
+Topping is autumn, when smart money distributes.
+
+10
+00:00:48,937 --> 00:00:52,763
+Declining is winter, when the first job is staying warm.
+
+11
+00:00:52,763 --> 00:00:57,750
+The more of the market in summer, the more the tide is doing the lifting.
+
+12
+00:00:57,723 --> 00:00:59,272
+Tonight's takeaway.
+
+13
+00:00:59,272 --> 00:01:01,555
+A portfolio is not a museum.
+
+14
+00:01:01,555 --> 00:01:09,870
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+15
+00:01:09,844 --> 00:01:12,254
+Before we close, the disclosure segment.
+
+16
+00:01:12,254 --> 00:01:18,099
+The system's forward track record remains negative across strategies, and it is published anyway.
+
+17
+00:01:18,099 --> 00:01:22,618
+Position sizes stay automatically reduced until the record earns them back.
+
+18
+00:01:22,618 --> 00:01:25,120
+One note on the board you are seeing.
+
+19
+00:01:25,120 --> 00:01:40,063
+Those are not one portfolio but several: OROS builds and journals a separate experimental book for each strategy author it studies — Weinstein, Minervini, O'Neil and their peers — all graded forward from a standing start.
+
+20
+00:01:40,063 --> 00:01:42,362
+Early numbers read cold by design.
+
+21
+00:01:42,362 --> 00:01:47,095
+The scoreboard exists to earn trust over time, not to impress tonight.
+
+22
+00:01:47,095 --> 00:01:49,181
+A word on how this desk works.
+
+23
+00:01:49,181 --> 00:02:06,708
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+24
+00:02:06,708 --> 00:02:15,124
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+25
+00:02:15,124 --> 00:02:18,057
+All figures are simulated paper trading.
+
+26
+00:02:18,057 --> 00:02:24,435
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+27
+00:02:24,435 --> 00:02:28,394
+From the OROS Market Desk, have a disciplined session.
