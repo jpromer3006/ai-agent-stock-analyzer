@@ -674,6 +674,13 @@ def _render_leader_rows(results: list[StageResult], direction: str = "bull"):
                           use_container_width=True):
                 st.session_state.trader_detail_ticker = r.ticker
                 st.rerun()
+            try:
+                from data.universe import company_name as _cn
+                _co = _cn(r.ticker)
+            except Exception:  # noqa: BLE001
+                _co = ""
+            if _co:
+                st.caption(_co[:28])
         cols[1].markdown(
             f"<div style='padding-top:6px'>Bull "
             f"<span style='color:{color};font-weight:600'>"
