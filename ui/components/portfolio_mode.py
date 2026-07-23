@@ -535,7 +535,7 @@ def _render_latest_journaled_build() -> None:
                          "with reasons"):
             for b in bench:
                 st.markdown(f"- **{b.get('ticker')}** — {b.get('reason')}")
-    st.caption("Journaled by the autonomous morning run. Auto-build below "
+    st.caption("Journaled by the autonomous morning run. Agentic Autonomous Mode below "
                "constructs a fresh book without touching this record.")
     st.markdown("---")
 
@@ -609,7 +609,7 @@ def render_portfolio_mode() -> None:
             "Account Value ($)", 0, 100_000_000, 0, 1_000,
             help="Total capital this portfolio is sized against. Start at $0 and enter "
                  "your real account value; position sizes and risk dollars scale from it. "
-                 "Auto-build uses the last journaled account when this is left at $0.",
+                 "Agentic Autonomous Mode uses the last journaled account when this is left at $0.",
         )
         max_pos = st.slider("Max Tickrs (concentrated)", 5, 25, 12)
         max_per_sector = st.slider(
@@ -673,7 +673,7 @@ def render_portfolio_mode() -> None:
             st.warning("Pick at least one mandate (the checkboxes in the sidebar).")
         elif account <= 0:
             st.warning("Enter your Account Value (greater than $0) so Tickrs can be "
-                       "sized — or use 🤖 Auto-build.")
+                       "sized — or use 🤖 Agentic Autonomous Mode.")
         else:
             _execute_builds(source=source, limit=int(limit),
                             selected_mandates=selected_mandates,
@@ -688,7 +688,7 @@ def render_portfolio_mode() -> None:
         # JOURNALED build immediately — no waiting, no click. Auto-build
         # still constructs a fresh book on demand.
         _render_latest_journaled_build()
-        st.info("Click **🤖 Auto-build** and OROS will construct a fresh book "
+        st.info("Click **🤖 Agentic Autonomous Mode** and OROS will construct a fresh book "
                 "from the data — or open the sidebar settings and build "
                 "manually.")
         render_disclaimer()
