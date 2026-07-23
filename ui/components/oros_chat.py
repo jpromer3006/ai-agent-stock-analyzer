@@ -98,18 +98,25 @@ def draft_scripts(current: dict[str, str], instruction: str,
     return {str(k): str(v) for k, v in out.items() if str(v).strip()}
 
 
-def render_ask_oros(ticker: str, context: str = "") -> None:
-    st.markdown("### 6️⃣ 💬 Ask OROS")
-    st.caption("Questions about this dossier, the memo, or anything "
+def render_ask_oros(subject: str, context: str = "",
+                    heading: str = "### 6️⃣ 💬 Ask OROS",
+                    caption: str | None = None,
+                    placeholder: str | None = None) -> None:
+    """Reusable scoped chat. `subject` keys the history (a ticker on the
+    dossier, 'portfolio' on the Portfolio tab); `context` grounds answers."""
+    st.markdown(heading)
+    st.caption(caption or
+               "Questions about this dossier, the memo, or anything "
                "finance, SEC, or OROS. Educational conversation only — "
                "OROS never gives personalized financial advice.")
-    key = f"oros_chat_{ticker}"
+    key = f"oros_chat_{subject}"
     hist = st.session_state.setdefault(key, [])
     for m in hist:
         with st.chat_message(m["role"]):
             st.markdown(m["content"].replace("$", "\\$"))
-    q = st.chat_input(f"Ask about {ticker}, the memo, or the system...",
-                      key=f"oros_chat_input_{ticker}")
+    q = st.chat_input(placeholder or
+                      f"Ask about {subject}, the memo, or the system...",
+                      key=f"oros_chat_input_{subject}")
     if q:
         hist.append({"role": "user", "content": q})
         with st.chat_message("user"):

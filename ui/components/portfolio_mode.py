@@ -541,6 +541,64 @@ def _render_latest_journaled_build() -> None:
     st.markdown("---")
 
 
+def _portfolio_chat_context() -> str:
+    """Ground Ask OROS in whatever the tab is showing: the journaled build,
+    any session-built mandate books, and the reading rules for the numbers."""
+    import json as _json
+    parts: list[str] = []
+    try:
+        from ml.daily_report import _latest_proposal
+        rec = _latest_proposal() or {}
+        if rec.get("holdings"):
+            head = {k: rec.get(k) for k in ("date", "regime", "mandate",
+                                            "account", "invested", "cash")}
+            parts.append("LATEST JOURNALED BUILD: " + _json.dumps(head, default=str))
+            parts.append("Holdings: " + _json.dumps(
+                [{k: h.get(k) for k in ("ticker", "sector", "conviction",
+                                        "shares", "entry", "stop",
+                                        "weight_pct", "led_by")}
+                 for h in rec["holdings"]], default=str))
+            if rec.get("bench"):
+                parts.append("Bench (excluded, with reasons): "
+                             + _json.dumps(rec["bench"], default=str))
+            if rec.get("note"):
+                parts.append("Build note: " + str(rec["note"])[:400])
+    except Exception:  # noqa: BLE001
+        pass
+    plans = st.session_state.get("portfolio_plans") or {}
+    for m, plan in list(plans.items())[:4]:
+        try:
+            parts.append(f"SESSION BUILD '{m}': regime="
+                         f"{getattr(plan, 'regime', '?')}, invested="
+                         f"{getattr(plan, 'invested', 0)}, cash="
+                         f"{getattr(plan, 'cash', 0)}")
+            parts.append("holdings: " + _json.dumps(
+                [{"ticker": h.ticker, "sector": h.sector,
+                  "conviction": round(getattr(h, "composite", 0), 2),
+                  "weight_pct": getattr(h, "weight_pct", None),
+                  "entry": h.entry, "stop": h.stop,
+                  "risk_dollars": getattr(h, "risk_dollars", None)}
+                 for h in (plan.holdings or [])], default=str))
+        except Exception:  # noqa: BLE001
+            continue
+    parts.append(
+        "HOW TO READ THESE NUMBERS: Weight % = position dollars / account. "
+        "It is an artifact of risk sizing, NOT confidence: every position "
+        "risks roughly the same dollars via its stop, so a tight stop buys "
+        "more shares (bigger weight) and a volatile chart gets fewer. "
+        "Conviction = the agents' composite score (their confidence); it "
+        "buys priority in the build queue, not a bigger bet. Stop = the "
+        "exit level (weekly close below = invalidated). Risk $ = shares x "
+        "(entry - stop), the planned loss if the stop is hit. The Risk "
+        "Score blends portfolio heat 30%, name concentration 25%, sector "
+        "concentration 20%, froth/earnings flags 15%, capital deployed "
+        "10%. The bench = candidates that passed the scan but were "
+        "excluded at construction, with the reason. Multiple mandate tabs "
+        "= separate experimental books built per strategy author; they "
+        "share nothing and are graded forward independently.")
+    return "\n".join(parts)
+
+
 def render_portfolio_mode() -> None:
     st.markdown(
         "<div style='background:#0d1117;padding:14px 20px;border-radius:8px;"
@@ -692,6 +750,14 @@ def render_portfolio_mode() -> None:
         st.info("Click **🤖 Agentic Autonomous Mode** and OROS will construct a fresh book "
                 "from the data — or open the sidebar settings and build "
                 "manually.")
+        from ui.components.oros_chat import render_ask_oros
+        render_ask_oros(
+            "portfolio", context=_portfolio_chat_context(),
+            heading="### 💬 Ask OROS about this book",
+            caption="How to read the table, why a name is sized the way it "
+                    "is, what the bench means — educational only, never "
+                    "financial advice.",
+            placeholder="e.g. Why does HST have the biggest weight?")
         render_disclaimer()
         return
 
@@ -761,4 +827,12 @@ def render_portfolio_mode() -> None:
     except Exception:
         pass
 
+    from ui.components.oros_chat import render_ask_oros
+    render_ask_oros(
+        "portfolio", context=_portfolio_chat_context(),
+        heading="### 💬 Ask OROS about these books",
+        caption="How to read the numbers, compare the mandate books, or "
+                "understand a sizing choice — educational only, never "
+                "financial advice.",
+        placeholder="e.g. Compare the four books — which is most concentrated?")
     render_disclaimer()
