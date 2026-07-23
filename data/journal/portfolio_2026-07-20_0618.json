@@ -1,0 +1,296 @@
+{
+  "timestamp": "2026-07-20T06:18:35.697261Z",
+  "date": "2026-07-20",
+  "regime": "bull",
+  "mandate": "value_hold",
+  "account": 10000.0,
+  "invested": 5934.55,
+  "cash": 4065.45,
+  "weights": {
+    "sepa": 0.076,
+    "growth": 0.225,
+    "value": 0.358,
+    "ipo": 0.057,
+    "technical": 0.046,
+    "swing": 0.019,
+    "canslim": 0.096,
+    "weinstein": 0.124
+  },
+  "note": "UI build \u00b7 value_hold",
+  "holdings": [
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.6166,
+      "shares": 2,
+      "dollars": 122.54,
+      "weight_pct": 1.23,
+      "entry": 61.27,
+      "stop": 55.01,
+      "led_by": "sepa",
+      "sentiment": 0.176,
+      "earnings_risk": true,
+      "outcome_return": 0.0014,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
+    },
+    {
+      "ticker": "WFC",
+      "sector": "Financials",
+      "conviction": 0.416,
+      "shares": 4,
+      "dollars": 350.04,
+      "weight_pct": 3.5,
+      "entry": 87.51,
+      "stop": 84.33,
+      "led_by": "technical",
+      "sentiment": 0.207,
+      "earnings_risk": true,
+      "outcome_return": 0.004,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
+    },
+    {
+      "ticker": "SCHW",
+      "sector": "Financials",
+      "conviction": 0.3362,
+      "shares": 3,
+      "dollars": 304.68,
+      "weight_pct": 3.05,
+      "entry": 101.56,
+      "stop": 92.61,
+      "led_by": "technical",
+      "sentiment": 0.32,
+      "earnings_risk": false,
+      "outcome_return": -0.0172,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CVX",
+      "sector": "Energy",
+      "conviction": 0.2831,
+      "shares": 5,
+      "dollars": 936.9,
+      "weight_pct": 9.37,
+      "entry": 187.38,
+      "stop": 181.56,
+      "led_by": "sepa",
+      "sentiment": 0.115,
+      "earnings_risk": false,
+      "outcome_return": 0.0302,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
+    },
+    {
+      "ticker": "MRK",
+      "sector": "Health Care",
+      "conviction": 0.2807,
+      "shares": 3,
+      "dollars": 382.5,
+      "weight_pct": 3.83,
+      "entry": 127.5,
+      "stop": 119.07,
+      "led_by": "sepa",
+      "sentiment": 0.323,
+      "earnings_risk": false,
+      "outcome_return": -0.0034,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
+    },
+    {
+      "ticker": "JNJ",
+      "sector": "Health Care",
+      "conviction": 0.2764,
+      "shares": 1,
+      "dollars": 253.04,
+      "weight_pct": 2.53,
+      "entry": 253.04,
+      "stop": 238.32,
+      "led_by": "sepa",
+      "sentiment": 0.154,
+      "earnings_risk": true,
+      "outcome_return": -0.0029,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
+    },
+    {
+      "ticker": "COP",
+      "sector": "Energy",
+      "conviction": 0.271,
+      "shares": 7,
+      "dollars": 802.97,
+      "weight_pct": 8.03,
+      "entry": 114.71,
+      "stop": 110.71,
+      "led_by": "sepa",
+      "sentiment": 0.08,
+      "earnings_risk": false,
+      "outcome_return": 0.0385,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
+    },
+    {
+      "ticker": "KO",
+      "sector": "Consumer Staples",
+      "conviction": 0.2702,
+      "shares": 11,
+      "dollars": 897.16,
+      "weight_pct": 8.97,
+      "entry": 81.56,
+      "stop": 78.82,
+      "led_by": "sepa",
+      "sentiment": 0.028,
+      "earnings_risk": false,
+      "outcome_return": 0.0138,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
+    },
+    {
+      "ticker": "XOM",
+      "sector": "Energy",
+      "conviction": 0.2344,
+      "shares": 6,
+      "dollars": 884.16,
+      "weight_pct": 8.84,
+      "entry": 147.36,
+      "stop": 142.78,
+      "led_by": "sepa",
+      "sentiment": 0.272,
+      "earnings_risk": false,
+      "outcome_return": 0.0402,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ABT",
+      "sector": "Health Care",
+      "conviction": 0.1513,
+      "shares": 1,
+      "dollars": 100.68,
+      "weight_pct": 1.01,
+      "entry": 100.68,
+      "stop": 89.06,
+      "led_by": "technical",
+      "sentiment": 0.106,
+      "earnings_risk": true,
+      "outcome_return": -0.01,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "PG",
+      "sector": "Materials",
+      "conviction": 0.1171,
+      "shares": 6,
+      "dollars": 899.88,
+      "weight_pct": 9.0,
+      "entry": 149.98,
+      "stop": 144.93,
+      "led_by": "technical",
+      "sentiment": 0.188,
+      "earnings_risk": false,
+      "outcome_return": -0.0125,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "GS",
+      "sector": "Financials",
+      "composite": 0.35,
+      "reason": "stop too wide for the 1% risk budget"
+    },
+    {
+      "ticker": "LLY",
+      "sector": "Health Care",
+      "composite": 0.341,
+      "reason": "stop too wide for the 1% risk budget"
+    },
+    {
+      "ticker": "JPM",
+      "sector": "Financials",
+      "composite": 0.334,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "V",
+      "sector": "Financials",
+      "composite": 0.329,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "MA",
+      "sector": "Financials",
+      "composite": 0.179,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "AXP",
+      "sector": "Financials",
+      "composite": 0.179,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "MDT",
+      "sector": "Health Care",
+      "composite": 0.114,
+      "reason": "sector cap \u2014 already 3 in Health Care"
+    },
+    {
+      "ticker": "PFE",
+      "sector": "Health Care",
+      "composite": 0.072,
+      "reason": "sector cap \u2014 already 3 in Health Care"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "25 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: value 38%, growth 24%, weinstein 10%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.42, weinstein x1.38"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "11 holdings, 59% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 41%"
+    }
+  ],
+  "horizon_days": 120,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}

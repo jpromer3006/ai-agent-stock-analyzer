@@ -635,14 +635,14 @@ def render_portfolio_mode() -> None:
         use_av = st.checkbox("Alpha Vantage news (uses 25/day quota)", value=False)
 
     c_auto, c_manual = st.columns(2)
-    auto_build = c_auto.button("🤖 Auto-build — OROS picks the settings",
+    auto_build = c_auto.button("🤖 Agentic Autonomous Mode",
                                type="primary", use_container_width=True,
                                help="OROS derives every setting from the data: regime, "
                                     "paper-trade scoreboard, last journaled account. "
                                     "No sliders needed.")
-    build = c_manual.button("🏗 Build with my settings", use_container_width=True)
+    build = c_manual.button("🏗 Custom Build", use_container_width=True)
     st.caption(
-        "Auto-build lets OROS choose the mandate, risk, and universe from the data "
+        "Agentic Autonomous Mode lets OROS choose the mandate, risk, and universe from the data "
         "it gathers (regime + forward scoreboard). Manual settings live in the "
         "sidebar expander. Open market scans the whole market up to the cap; the "
         "first build is slower while the price cache warms (the nightly job "

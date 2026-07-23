@@ -1,0 +1,197 @@
+{
+  "timestamp": "2026-07-19T05:42:04.596204Z",
+  "date": "2026-07-19",
+  "regime": "bull",
+  "mandate": "fast_momentum",
+  "account": 1000.0,
+  "invested": 235.98,
+  "cash": 764.02,
+  "weights": {
+    "sepa": 0.282,
+    "growth": 0.033,
+    "weinstein": 0.08,
+    "swing": 0.103,
+    "ipo": 0.184,
+    "canslim": 0.221,
+    "technical": 0.096
+  },
+  "note": "UI build \u00b7 fast_momentum",
+  "holdings": [
+    {
+      "ticker": "XLE",
+      "sector": "Other",
+      "conviction": 0.6593,
+      "shares": 1,
+      "dollars": 57.68,
+      "weight_pct": 5.77,
+      "entry": 57.68,
+      "stop": 55.95,
+      "led_by": "sepa",
+      "sentiment": 0.257,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BKH",
+      "sector": "Utilities",
+      "conviction": 0.6394,
+      "shares": 1,
+      "dollars": 74.61,
+      "weight_pct": 7.46,
+      "entry": 74.61,
+      "stop": 72.28,
+      "led_by": "sepa",
+      "sentiment": 0.105,
+      "earnings_risk": false,
+      "outcome_return": -0.0038,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
+    },
+    {
+      "ticker": "F",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.5154,
+      "shares": 3,
+      "dollars": 42.69,
+      "weight_pct": 4.27,
+      "entry": 14.23,
+      "stop": 13.57,
+      "led_by": "sepa",
+      "sentiment": 0.111,
+      "earnings_risk": false,
+      "outcome_return": 0.0056,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
+    },
+    {
+      "ticker": "MDLZ",
+      "sector": "Consumer Staples",
+      "conviction": 0.4666,
+      "shares": 1,
+      "dollars": 61.0,
+      "weight_pct": 6.1,
+      "entry": 61.0,
+      "stop": 58.5,
+      "led_by": "technical",
+      "sentiment": 0.125,
+      "earnings_risk": false,
+      "outcome_return": -0.0113,
+      "outcome_exit": "open",
+      "outcome_days": 3,
+      "outcome_final": false
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "USB",
+      "sector": "Financials",
+      "composite": 0.742,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "composite": 0.725,
+      "reason": "stop too wide for the 1% risk budget"
+    },
+    {
+      "ticker": "SBUX",
+      "sector": "Consumer Discretionary",
+      "composite": 0.721,
+      "reason": "stop too wide for the 1% risk budget"
+    },
+    {
+      "ticker": "WELL",
+      "sector": "Real Estate",
+      "composite": 0.719,
+      "reason": "stop too wide for the 1% risk budget"
+    },
+    {
+      "ticker": "MO",
+      "sector": "Consumer Staples",
+      "composite": 0.707,
+      "reason": "stop too wide for the 1% risk budget"
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "composite": 0.706,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "composite": 0.694,
+      "reason": "stop too wide for the 1% risk budget"
+    },
+    {
+      "ticker": "PLD",
+      "sector": "Real Estate",
+      "composite": 0.684,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "UNP",
+      "sector": "Industrials",
+      "composite": 0.679,
+      "reason": "stop too wide for the 1% risk budget"
+    },
+    {
+      "ticker": "SPG",
+      "sector": "Real Estate",
+      "composite": 0.673,
+      "reason": "stop too wide for the 1% risk budget"
+    },
+    {
+      "ticker": "JPM",
+      "sector": "Financials",
+      "composite": 0.662,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "AMGN",
+      "sector": "Health Care",
+      "composite": 0.654,
+      "reason": "stop too wide for the 1% risk budget"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "195 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 23%, ipo 22%, canslim 19%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.50, canslim x1.44"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "4 holdings, 24% invested, 7 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 76%"
+    }
+  ],
+  "horizon_days": 5,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}

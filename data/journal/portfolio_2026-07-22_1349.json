@@ -1,0 +1,241 @@
+{
+  "timestamp": "2026-07-22T13:49:40.963511Z",
+  "date": "2026-07-22",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 10000.0,
+  "invested": 4309.46,
+  "cash": 5690.54,
+  "weights": {
+    "value": 0.02,
+    "technical": 0.121,
+    "ipo": 0.096,
+    "swing": 0.086,
+    "sepa": 0.267,
+    "canslim": 0.205,
+    "growth": 0.055,
+    "weinstein": 0.15
+  },
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "MNST",
+      "sector": "Consumer Staples",
+      "conviction": 0.771,
+      "shares": 5,
+      "dollars": 487.5,
+      "weight_pct": 4.88,
+      "entry": 97.5,
+      "stop": 91.25,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CSX",
+      "sector": "Industrials",
+      "conviction": 0.7625,
+      "shares": 11,
+      "dollars": 550.22,
+      "weight_pct": 5.5,
+      "entry": 50.02,
+      "stop": 47.25,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "NTRS",
+      "sector": "Financials",
+      "conviction": 0.7588,
+      "shares": 1,
+      "dollars": 188.52,
+      "weight_pct": 1.89,
+      "entry": 188.52,
+      "stop": 171.54,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.7528,
+      "shares": 1,
+      "dollars": 327.97,
+      "weight_pct": 3.28,
+      "entry": 327.97,
+      "stop": 304.93,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "COLB",
+      "sector": "Financials",
+      "conviction": 0.7497,
+      "shares": 14,
+      "dollars": 458.36,
+      "weight_pct": 4.58,
+      "entry": 32.74,
+      "stop": 30.63,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.7265,
+      "shares": 2,
+      "dollars": 346.66,
+      "weight_pct": 3.47,
+      "entry": 173.33,
+      "stop": 158.31,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "KBWB",
+      "sector": "Other",
+      "conviction": 0.7256,
+      "shares": 3,
+      "dollars": 295.11,
+      "weight_pct": 2.95,
+      "entry": 98.37,
+      "stop": 90.07,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "DXPE",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7248,
+      "shares": 2,
+      "dollars": 348.16,
+      "weight_pct": 3.48,
+      "entry": 174.08,
+      "stop": 158.61,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MTCH",
+      "sector": "Information Technology",
+      "conviction": 0.7245,
+      "shares": 7,
+      "dollars": 282.03,
+      "weight_pct": 2.82,
+      "entry": 40.29,
+      "stop": 36.3,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "KRE",
+      "sector": "Other",
+      "conviction": 0.7235,
+      "shares": 4,
+      "dollars": 311.68,
+      "weight_pct": 3.12,
+      "entry": 77.92,
+      "stop": 71.36,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "UNP",
+      "sector": "Industrials",
+      "conviction": 0.7229,
+      "shares": 1,
+      "dollars": 295.92,
+      "weight_pct": 2.96,
+      "entry": 295.92,
+      "stop": 273.07,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "TGT",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7221,
+      "shares": 3,
+      "dollars": 417.33,
+      "weight_pct": 4.17,
+      "entry": 139.11,
+      "stop": 129.91,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "CASY",
+      "sector": "Consumer Discretionary",
+      "composite": 0.755,
+      "reason": "stop too wide for the 1% risk budget"
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "composite": 0.718,
+      "reason": "outranked \u2014 book full at 12"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "795 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.50, canslim x1.44"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 43% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 57%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}
