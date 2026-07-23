@@ -523,7 +523,8 @@ def _render_latest_journaled_build() -> None:
     c3.metric("Cash", f"{(acct - inv) / acct:.0%}")
     df = pd.DataFrame([{
         "Ticker": h.get("ticker"), "Company": _cname(h.get("ticker", "")) or "—",
-        "Sector": h.get("sector"), "Shares": h.get("shares"),
+        "Sector": h.get("sector"), "Conviction": h.get("conviction"),
+        "Shares": h.get("shares"),
         "Entry": h.get("entry"), "Stop": h.get("stop"),
         "Weight %": h.get("weight_pct"),
         "Led by": _dn(h.get("led_by")) if h.get("led_by") else "n/a",
