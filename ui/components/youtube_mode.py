@@ -83,6 +83,15 @@ def render_youtube_mode() -> None:
     st.caption("Blank line = new narration segment (cached separately). "
                "Evergreen teaching blocks are paid for once — edit them "
                "only when you mean to re-record.")
+    # Apply any assistant draft BEFORE the text areas exist this run —
+    # Streamlit forbids touching a widget's state after it renders.
+    _pending = st.session_state.pop("yt_pending_draft", None)
+    if _pending:
+        for _k, _v in _pending.items():
+            st.session_state[f"yt_scene_{_k}"] = _v
+        st.success(f"Assistant rewrote {len(_pending)} scene(s) — review "
+                   "below, then render. Disclosure stays enforced.")
+
     edited: dict[str, list[str]] = {}
     for key, segs in scripts.items():
         label = _SCENE_LABELS.get(key, key)
@@ -128,13 +137,11 @@ def render_youtube_mode() -> None:
                 try:
                     from ui.components.oros_chat import draft_scripts
                     out = draft_scripts(current, instr, report_text)
-                    n = 0
-                    for k, v in out.items():
-                        if k in targets:
-                            st.session_state[f"yt_scene_{k}"] = v
-                            n += 1
-                    st.success(f"Rewrote {n} scene(s) — review above, then "
-                               "render. Disclosure stays enforced.")
+                    # Park the draft; it is applied at the TOP of the next
+                    # run, before the text areas render (Streamlit forbids
+                    # writing widget state after instantiation).
+                    st.session_state["yt_pending_draft"] = {
+                        k: v for k, v in out.items() if k in targets}
                     st.rerun()
                 except Exception as e:
                     st.error(f"Assistant unavailable: {type(e).__name__}: {e}")
