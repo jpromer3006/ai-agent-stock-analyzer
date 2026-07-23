@@ -107,7 +107,7 @@ def render_ask_oros(ticker: str, context: str = "") -> None:
     hist = st.session_state.setdefault(key, [])
     for m in hist:
         with st.chat_message(m["role"]):
-            st.markdown(m["content"])
+            st.markdown(m["content"].replace("$", "\\$"))
     q = st.chat_input(f"Ask about {ticker}, the memo, or the system...",
                       key=f"oros_chat_input_{ticker}")
     if q:
@@ -123,5 +123,5 @@ def render_ask_oros(ticker: str, context: str = "") -> None:
                     a = ("OROS chat is unavailable right now "
                          f"({type(e).__name__}). The dossier above is "
                          "unaffected.")
-            st.markdown(a)
+            st.markdown(a.replace("$", "\\$"))
         hist.append({"role": "assistant", "content": a})
