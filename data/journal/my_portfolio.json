@@ -1,52 +1,64 @@
 {
   "name": "Chase Self-Directed (...8661)",
-  "note": "JP's real book - TRACKED ONLY. OROS never trades or touches the account. Stops are Weinstein 30-week-MA levels, ratcheted up daily, never down. Update holdings here (or tell Claude) whenever a real trade happens.",
+  "note": "JP's real Chase book - TRACKED ONLY; OROS never trades. As of 2026-07-23 the book MIRRORS the OROS live portfolio, executed manually by JP; stops are the OROS journaled levels, ratcheted daily. Mirror requires mirroring EXITS too: act on the daily adds/drops emails or accept drift.",
   "updated": "2026-07-23",
-  "margin_debt": 12858.54,
+  "margin_debt": 107.19,
   "holdings": [
     {
-      "ticker": "AAPL",
-      "shares": 50,
-      "cost_basis": 312.04,
-      "stop": 277.84
+      "ticker": "NVDA",
+      "shares": 25,
+      "cost_basis": 226.17,
+      "stop": 199.11,
+      "note": "mirrors OROS live book 2026-07-23"
     },
     {
       "ticker": "WELL",
       "shares": 20,
-      "cost_basis": 209.49,
-      "stop": 205.83
+      "cost_basis": 209.485,
+      "stop": 220.86,
+      "note": "mirrors OROS live book 2026-07-23"
     },
     {
-      "ticker": "DY",
-      "shares": 10,
-      "cost_basis": 542.68,
-      "stop": 402.6
+      "ticker": "XOP",
+      "shares": 20,
+      "cost_basis": 179.61,
+      "stop": 164.01,
+      "note": "mirrors OROS live book 2026-07-23"
     },
     {
-      "ticker": "NVDA",
-      "shares": 16,
-      "cost_basis": 158.24,
-      "stop": 193.79
+      "ticker": "ANET",
+      "shares": 20,
+      "cost_basis": 177.57,
+      "stop": 161.41,
+      "note": "mirrors OROS live book 2026-07-23"
     },
     {
-      "ticker": "CAT",
+      "ticker": "DRH",
+      "shares": 200,
+      "cost_basis": 12.815,
+      "stop": 11.64,
+      "note": "mirrors OROS live book 2026-07-23"
+    },
+    {
+      "ticker": "BGC",
+      "shares": 200,
+      "cost_basis": 11.525,
+      "stop": 10.87,
+      "note": "mirrors OROS live book 2026-07-23"
+    },
+    {
+      "ticker": "CASY",
       "shares": 1,
-      "cost_basis": 891.67,
-      "stop": 781.25
+      "cost_basis": 866.56,
+      "stop": 824.72,
+      "note": "mirrors OROS live book 2026-07-23"
     },
     {
-      "ticker": "TSM",
+      "ticker": "CSX",
       "shares": 10,
-      "cost_basis": 443.98,
-      "stop": 372.64,
-      "note": "JP independent pick (outside OROS gates) - added from Chase 07-14"
-    },
-    {
-      "ticker": "TSEM",
-      "shares": 10,
-      "cost_basis": 231.34,
-      "stop": 187.44,
-      "note": "JP independent pick (outside OROS gates) - added from Chase 07-14"
+      "cost_basis": 52.765,
+      "stop": 47.4,
+      "note": "mirrors OROS live book 2026-07-23"
     }
   ],
   "closed": [
@@ -70,6 +82,41 @@
       "cost_basis": 84.36,
       "exit_date": "2026-07-07",
       "reason": "Stage 3 topping - sold into strength per review flag"
+    },
+    {
+      "ticker": "AAPL",
+      "shares": 50,
+      "cost_basis": 312.04,
+      "exit_date": "2026-07-23",
+      "reason": "book rotated to mirror the OROS live portfolio (JP's decision, executed manually at Chase)"
+    },
+    {
+      "ticker": "DY",
+      "shares": 10,
+      "cost_basis": 542.68,
+      "exit_date": "2026-07-23",
+      "reason": "book rotated to mirror the OROS live portfolio (JP's decision, executed manually at Chase)"
+    },
+    {
+      "ticker": "CAT",
+      "shares": 1,
+      "cost_basis": 891.67,
+      "exit_date": "2026-07-23",
+      "reason": "book rotated to mirror the OROS live portfolio (JP's decision, executed manually at Chase)"
+    },
+    {
+      "ticker": "TSM",
+      "shares": 10,
+      "cost_basis": 443.98,
+      "exit_date": "2026-07-23",
+      "reason": "book rotated to mirror the OROS live portfolio (JP's decision, executed manually at Chase)"
+    },
+    {
+      "ticker": "TSEM",
+      "shares": 10,
+      "cost_basis": 231.34,
+      "exit_date": "2026-07-23",
+      "reason": "book rotated to mirror the OROS live portfolio (JP's decision, executed manually at Chase)"
     }
   ]
 }
