@@ -391,7 +391,7 @@ def _render_plan(plan, trace, account: float, mkey: str, max_pos: int,
 
         # ---- Portfolio vs index funds (SPY/QQQ default, user-pickable) ----
         _render_benchmark_compare(plan, account, mkey)
-        if st.button("📈 Analyze this book in Trader (Weinstein stages)",
+        if st.button("📈 Analyze this book in Stage Scan",
                      key=f"to_trader_{mkey}"):
             # Use the handoff helper so the selectbox key, the mirror var, and
             # the scan cache are all updated together — otherwise the Trader tab
@@ -650,7 +650,7 @@ def render_portfolio_mode() -> None:
     )
     st.caption(
         "One constructed portfolio, not lists. The engine reads the market regime, "
-        "blends Weinstein, momentum, and the IPO track via the strategy router, then "
+        "blends stage analysis, momentum, and the IPO track via the strategy router, then "
         "selects and risk-sizes a concentrated book. Educational, not financial advice."
     )
 

@@ -127,7 +127,7 @@ def route_to_trader(watchlist_name: str) -> None:
 def render_watchlist_sidebar():
     """Scan-list picker + ticker add/remove in the sidebar. Returns selected tickers."""
     st.sidebar.markdown("### 📈 OROS Stage Scan")
-    st.sidebar.caption("Weinstein Stage Analysis · daily scan")
+    st.sidebar.caption("Stage analysis · daily scan")
 
     watchlists = list_watchlists()
 
@@ -161,7 +161,7 @@ def render_watchlist_sidebar():
         key="watchlist_selector",
         help=(
             "Each option is a portfolio you built: the combined book "
-            "(Portfolio Holdings All) or a single mandate. Weinstein stages every "
+            "(Portfolio Holdings All) or a single mandate. The scan stages every "
             "ticker in it when you click Scan Now."
         ),
     )
@@ -214,7 +214,7 @@ def render_watchlist_sidebar():
             "Max risk per trade (%)",
             min_value=0.10, max_value=5.0, value=1.0, step=0.10,
             key="trader_risk_pct",
-            help="Weinstein's rule of thumb is 1% to 2% of capital "
+            help="A common rule of thumb is 1% to 2% of capital "
                  "per trade. Risk = shares × (entry - stop).",
         )
         st.number_input(
@@ -288,7 +288,7 @@ def render_scan_panel(tickers: list[str]):
         if not tickers:
             st.warning("Watchlist is empty — add tickers via the sidebar.")
             return
-        with st.spinner(f"Running Weinstein Stage Analysis on {len(tickers)} tickers..."):
+        with st.spinner(f"Running stage analysis on {len(tickers)} tickers..."):
             progress = st.progress(0.0, text="Starting...")
 
             def on_progress(done, total, t):
@@ -357,7 +357,7 @@ def _render_excluded_tickers_panel(report: ScanReport):
         st.caption(
             "These tickers were dropped because their price/volume data is "
             "unreliable (delisted, illiquid, or sparse). They can't be "
-            "evaluated against Weinstein's gates. Consider removing them "
+            "evaluated against the entry gates. Consider removing them "
             "from your watchlist — the scan will be cleaner and faster."
         )
 
@@ -506,7 +506,7 @@ def _render_leaderboards(report: ScanReport):
             unsafe_allow_html=True,
         )
         st.caption(
-            "**Action: BUY now.** These are textbook Weinstein Stage 2 setups: "
+            "**Action: BUY now.** These are textbook Stage 2 setups: "
             "price above a rising 30-week MA, recent volume expansion (≥1.5× "
             "the 50-day baseline), and Mansfield RS above zero (outperforming "
             "SPY). Trade the GTC stop-limit shown in the detail view."
@@ -515,7 +515,7 @@ def _render_leaderboards(report: ScanReport):
             _render_leader_rows(confirmed, direction="bull")
         else:
             st.info(
-                "No confirmed Stage 2 BUYs in this watchlist right now. Per Weinstein, "
+                "No confirmed Stage 2 BUYs in this watchlist right now. Per the method, "
                 "wait for volume expansion and a positive Mansfield RS line before "
                 "initiating any long position."
             )
@@ -533,8 +533,8 @@ def _render_leaderboards(report: ScanReport):
                 unsafe_allow_html=True,
             )
             st.caption(
-                "These cleared every Weinstein stock-level gate, but the "
-                "broad market is topping or declining. Per Weinstein Ch. 8, "
+                "These cleared every stock-level gate, but the "
+                "broad market is topping or declining. Per the market-regime rule, "
                 "about 75% of stocks follow the tape, so new longs are held "
                 "back until the market regime improves."
             )
@@ -652,7 +652,7 @@ def _render_leaderboards(report: ScanReport):
         )
         st.caption(
             "**Action: SELL existing holdings · consider SHORT.** Price below "
-            "a declining 30-week MA. Weinstein's most emphatic rule: never "
+            "a declining 30-week MA. The method's most emphatic rule: never "
             "buy a Stage 4 stock 'no matter how cheap it appears.' For traders "
             "with shorting experience, mirror the Stage 2 setup: enter on a "
             "sell-stop just below the recent pivot low, cover at the 30-week MA."
@@ -821,7 +821,7 @@ def _render_leader_rows(results: list[StageResult], direction: str = "bull"):
         today_color = "#3fb950" if today_pct >= 0 else "#f85149"
         today_str = (
             f"<span style='color:{today_color};font-weight:600' "
-            f"title='One-day price move. Daily noise, not a Weinstein stage "
+            f"title='One-day price move. Daily noise, not a stage "
             f"signal. The stage is a weekly framework off the 30-week MA.'>"
             f"Today {today_pct:+.2%}</span>"
         )
@@ -951,7 +951,7 @@ def _render_leader_rows(results: list[StageResult], direction: str = "bull"):
                     use_container_width=True,
                     help=(
                         "Switch to the Research tab and run the full "
-                        "Weinstein dossier on this ticker (Chapter 3 "
+                        "research dossier on this ticker (Chapter 3 "
                         "calendar context, 10-year resistance chart, "
                         "Chartist Strategist verdict, Setup Confidence "
                         "Score)."
@@ -1214,7 +1214,7 @@ def _render_single_detail(r: StageResult):
         _render_buy_justification(r)
 
     # Reasoning
-    st.markdown("**Weinstein reasoning:**")
+    st.markdown("**Stage reasoning:**")
     for line in r.explanation:
         st.caption(f"  · {line}")
 
@@ -1268,10 +1268,10 @@ def _render_buy_gates_panel(r: StageResult):
     overall_bg = "#1a3d2e" if confirmed else "#3d2a1a"
     overall_bd = "#3fb950" if confirmed else "#d29922"
     if confirmed:
-        overall_text = "✓ Weinstein BUY CONFIRMED"
+        overall_text = "✓ BUY CONFIRMED — both gates pass"
         overall_subtext = (
             "Both gates pass and the run is not extended. A Stage 2 "
-            "trade-trigger order is justified per Weinstein Ch. 1: volume "
+            "trade-trigger order is justified: volume "
             "must expand AND relative strength must be in positive territory."
         )
     elif extended and gates_ok:
@@ -1279,16 +1279,16 @@ def _render_buy_gates_panel(r: StageResult):
         overall_subtext = (
             f"Volume and RS gates both pass, but {r.ticker} is "
             f"{r.pct_above_ma:+.1%} above its 30-week MA — the move is "
-            "mature. Weinstein Ch. 5: 'Don't chase stocks that have already "
-            "had a major move.' Wait for a basing pattern, or watch for "
+            "mature. The method warns against chasing a move that is already "
+            "mature. Wait for a basing pattern, or watch for "
             "a Stage 2 continuation breakout from a fresh consolidation."
         )
     else:
         overall_text = "⚠ Buy not confirmed — both gates must pass"
         overall_subtext = (
-            "Stan Weinstein, Ch. 1: 'Never buy a stock when its "
-            "relative-strength line is in negative territory, no matter "
-            "how cheap it appears.' Wait for both gates to pass."
+            "The method's rule: never buy while the relative-strength line "
+            "is negative, no matter how cheap it looks. Wait for both "
+            "gates to pass."
         )
 
     st.markdown("")
@@ -1311,7 +1311,7 @@ def _render_buy_gates_panel(r: StageResult):
                 "GATE 1 · VOLUME EXPANSION",
                 f"{r.volume_surge:.2f}× (5d max / 50d avg)",
                 "≥ 1.5×",
-                "Weinstein Ch. 1: 'buy on volume expansion at breakout'",
+                "Rule: buy only on volume expansion at the breakout",
             ),
             unsafe_allow_html=True,
         )
@@ -1322,7 +1322,7 @@ def _render_buy_gates_panel(r: StageResult):
                 "GATE 2 · MANSFIELD RELATIVE STRENGTH",
                 f"{r.mansfield_rs:+.1f} vs SPY",
                 "> 0",
-                "Weinstein Ch. 1: RS line must be in positive territory",
+                "Rule: the RS line must be in positive territory",
             ),
             unsafe_allow_html=True,
         )
@@ -1376,7 +1376,7 @@ def _render_buy_justification(r: StageResult):
 
 def _render_position_calculator(r: StageResult):
     """
-    Position-sizing calculator with Weinstein-style P&L projections.
+    Position-sizing calculator with stage-based P&L projections.
 
     User enters either a share count OR a dollar budget, then clicks the
     Calculate button to run the projection. Result is cached in session
@@ -1395,7 +1395,7 @@ def _render_position_calculator(r: StageResult):
         "Enter your budget or share count, then click **Calculate**. The "
         "calculator projects two targets: short-term swing (~4–8 weeks) and "
         "long-term measured move (~4–12 months). Time windows adjust to the "
-        "current 30-week MA slope. Targets follow Weinstein Ch. 3 (% of "
+        "current 30-week MA slope. Targets follow the measured-move rule (% of "
         "52-week base depth)."
     )
 
@@ -1418,7 +1418,7 @@ def _render_position_calculator(r: StageResult):
                 step=500.0,
                 key=f"calc_dollars_{r.ticker}",
                 help="The calculator will compute the maximum whole shares "
-                     "you can buy at the Weinstein entry price.",
+                     "you can buy at the stage entry price.",
             )
             shares = 0
         else:
@@ -1452,7 +1452,7 @@ def _render_position_calculator(r: StageResult):
     if proj is None:
         st.info(
             "💡 Set your budget or share count above, then click "
-            "**🧮 Calculate projection** to see the Weinstein-style "
+            "**🧮 Calculate projection** to see the stage-based "
             "P&L estimate."
         )
         return
@@ -1541,8 +1541,7 @@ def _render_position_calculator(r: StageResult):
         st.caption(
             "**Short-term target** = entry + 25% of 52-week base depth · "
             "**Long-term target** = entry + 100% of base depth (full measured "
-            "move). Per Stan Weinstein, *Secrets for Profiting in Bull and "
-            "Bear Markets*, Chapter 3 (\"The Ideal Time to Buy\")."
+            "move). Measured-move rule; source cited in the disclaimer."
         )
 
 
@@ -1551,13 +1550,13 @@ def _render_trade_setup_card(r: StageResult):
     ts = r.trade_setup
     if ts is None or not ts.applicable:
         st.info(
-            f"📭 **No Weinstein setup right now.** "
+            f"📭 **No stage setup right now.** "
             f"{ts.narrative if ts else 'Wait for a Stage 2 breakout.'}"
         )
         return
 
     st.markdown("---")
-    st.markdown("### 🎯 Weinstein Trade Setup")
+    st.markdown("### 🎯 Stage Trade Setup")
 
     # Color by direction
     direction_color = STAGE_COLOR[2] if ts.direction == "LONG" else STAGE_COLOR[4]
@@ -1711,7 +1710,7 @@ def _render_price_chart(r: StageResult):
             row=2, col=1,
         )
 
-    title = f"{ticker} — Weinstein chart  ·  hover any marker for details"
+    title = f"{ticker} — stage chart  ·  hover any marker for details"
     fig.update_layout(
         title=title,
         height=600,
@@ -1746,7 +1745,7 @@ def _render_price_chart(r: StageResult):
     if legend_html:
         st.markdown(legend_html, unsafe_allow_html=True)
     st.caption(
-        "💡 Hover any triangle or circle on the chart for the full Weinstein "
+        "💡 Hover any triangle or circle on the chart for the full stage "
         "interpretation (date, price, meaning)."
     )
 
@@ -1841,9 +1840,9 @@ def render_trader_mode():
     """Top-level Trader Mode renderer. Call from app.py."""
     tickers = render_watchlist_sidebar()
 
-    st.markdown("## 📈 OROS Stage Scan — Weinstein Stage Analysis")
+    st.markdown("## 📈 OROS Stage Scan — Stage Analysis")
     st.caption(
-        "Pure methodology from Stan Weinstein's *Secrets for Profiting in Bull and Bear Markets*. "
+        "Classic four-stage trend analysis (source cited in the disclaimer). "
         "Scans your scan list for Stage 2 breakouts (BUY) and Stage 4 breakdowns (SELL/SHORT). "
         "Runs in ~0.5s per ticker via yfinance. No LLM."
     )
@@ -1889,7 +1888,7 @@ def _render_market_regime_banner():
             f"<div style='background:{regime.regime_color};color:white;"
             f"padding:14px;border-radius:8px;text-align:center'>"
             f"<div style='font-size:11px;opacity:0.9;letter-spacing:1px'>"
-            f"WEINSTEIN CH. 8 — MARKET REGIME</div>"
+            f"MARKET REGIME — THE WHOLE MARKET'S STAGE</div>"
             f"<div style='font-size:22px;font-weight:700;margin-top:4px'>"
             f"{regime.regime_emoji} {regime.regime}</div>"
             f"<div style='font-size:12px;opacity:0.9;margin-top:2px'>"
@@ -1916,5 +1915,5 @@ def _render_market_regime_banner():
             f"({regime.spy_pct_above_ma:+.1%}, slope {regime.spy_ma_slope_pct:+.1%}/mo) · "
             f"{momentum_note}{breadth_note}  \n"
             f"💡 **Playbook:** {regime.regime_action}  \n"
-            f"_Weinstein Ch. 8: 'No stock is an island. Know the market's stage first.'_"
+            f"_Rule: check the whole market's stage before any single stock._"
         )

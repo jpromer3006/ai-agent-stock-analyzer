@@ -43,6 +43,8 @@ the text. No author endorses or is affiliated with OROS.
 - **Classic Value**: is it inexpensive on classic value measures.
 - **Technical**, **Swing**, and **New-Issue Momentum**: indicator, short term, and IPO setups.
 
+**Sources.** Stage analysis concepts are drawn from Stan Weinstein, *Secrets for Profiting in Bull and Bear Markets* (1988); growth, momentum, and value concepts from the published works in the OROS library (O'Neil and peers). All methodologies are referenced for attribution only — no author endorses or is affiliated with OROS, and no book text is reproduced.
+
 A market regime check (bull, neutral, or bear, read from the broad market and
 volatility) then decides how much to trust each strategy today and how much cash
 to hold, and the chosen mandate sets the starting blend. A name is selected
