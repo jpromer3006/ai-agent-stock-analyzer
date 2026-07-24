@@ -48,9 +48,12 @@ def render_youtube_mode() -> None:
         else:
             st.info("No end-card logo yet.")
     with col_up:
-        up = st.file_uploader("End-card logo (PNG/JPG) — closes every "
-                              "episode with the disclaimer",
-                              type=["png", "jpg", "jpeg"])
+        st.markdown("**End-card logo — image only (PNG/JPG)**")
+        up = st.file_uploader("The closing logo shown for a few seconds with "
+                              "the disclaimer. This is NOT for research "
+                              "reports — those upload inside the Script "
+                              "assistant after you load the rundown below.",
+                              type=["png", "jpg", "jpeg"], key="yt_endcard")
         if up is not None:
             _ASSETS.mkdir(parents=True, exist_ok=True)
             _ENDCARD.write_bytes(up.getvalue())
@@ -100,7 +103,8 @@ def render_youtube_mode() -> None:
         edited[key] = [b.strip() for b in txt.split("\n\n") if b.strip()]
 
     # ----- Script assistant (Claude) --------------------------------------
-    with st.expander("🤖 Script assistant — draft scenes from a report"):
+    with st.expander("🤖 Script assistant — draft scenes from a report "
+                     "(⬅ upload research PDFs HERE)", expanded=True):
         st.caption("Upload a research report and/or give an instruction; "
                    "Claude rewrites the chosen scenes in the desk's voice. "
                    "The closing disclosure is enforced in code — no edit or "
