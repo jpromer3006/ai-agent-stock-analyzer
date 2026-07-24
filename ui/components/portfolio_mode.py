@@ -547,7 +547,12 @@ def _render_latest_journaled_build() -> None:
             return m
     acct = float(rec.get("account") or 100_000.0)
     inv = float(rec.get("invested") or 0.0)
-    st.markdown(f"#### 🌅 Latest build — {rec.get('date', '?')} "
+    try:
+        from datetime import datetime as _dt
+        _bd = _dt.strptime(str(rec.get("date", ""))[:10], "%Y-%m-%d").strftime("%m/%d/%Y")
+    except Exception:
+        _bd = rec.get("date", "?")
+    st.markdown(f"#### 🌅 Latest build — {_bd} "
                 f"({rec.get('regime', '?').upper()} · "
                 f"{_dn(rec.get('mandate', ''))})")
     c1, c2, c3 = st.columns(3)

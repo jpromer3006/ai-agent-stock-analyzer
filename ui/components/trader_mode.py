@@ -1755,6 +1755,15 @@ def _render_price_chart(r: StageResult):
 # Main entry
 # ---------------------------------------------------------------------------
 
+def _us_date(d) -> str:
+    """ISO 'YYYY-MM-DD' -> 'MM/DD/YYYY' for display (falls back untouched)."""
+    try:
+        from datetime import datetime as _dt
+        return _dt.strptime(str(d)[:10], "%Y-%m-%d").strftime("%m/%d/%Y")
+    except Exception:
+        return str(d)
+
+
 def _render_oros500_breadth() -> None:
     """The timestamped OROS 500 overnight scan, straight from the journal —
     the same stage breadth the YouTube 'Market Analysis' segment shows. This
@@ -1768,8 +1777,8 @@ def _render_oros500_breadth() -> None:
         return
     tot = max(int(b["total"]), 1)
     c = b["counts"]
-    spec = [("Advancing", "Stage 2 · summer", "#3fb950"),
-            ("Basing", "Stage 1 · spring", "#58a6ff"),
+    spec = [("Basing", "Stage 1 · spring", "#58a6ff"),
+            ("Advancing", "Stage 2 · summer", "#3fb950"),
             ("Topping", "Stage 3 · autumn", "#f0883e"),
             ("Declining", "Stage 4 · winter", "#f85149")]
     from pathlib import Path as _P
@@ -1789,7 +1798,7 @@ def _render_oros500_breadth() -> None:
                      "preserve capital; only bearish setups qualify.",
     }
     st.markdown(f"#### 🔭 OROS Scan — {tot} names graded overnight "
-                f"({b.get('date', '?')})")
+                f"({_us_date(b.get('date', '?'))})")
     cols = st.columns(4)
     for col, (key, sub, color) in zip(cols, spec):
         n = int(c.get(key, 0))
