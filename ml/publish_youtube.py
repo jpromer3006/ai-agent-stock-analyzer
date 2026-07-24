@@ -50,6 +50,7 @@ Throttle: OROS cuts its own position sizes when its forward record weakens."""
 _SOURCES = """SOURCES & AGENTS
 Data: SEC EDGAR XBRL company filings, FRED (Federal Reserve) economic data, daily market prices.
 Agents: universe scanner, stage classifier, router, sector specialists, sentiment analyst, portfolio builder, risk manager (veto power), and this news desk.
+Methodologies are referenced for attribution only; no author endorses or is affiliated with OROS.
 No human intervention: the system scans, builds, risk-checks, writes, and voices this briefing on its own."""
 
 

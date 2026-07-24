@@ -30,15 +30,18 @@ by it are **not investment advice** and **not a recommendation to buy, sell,
 or hold any security**.
 
 **The investment theory, in plain language.** OROS does not rely on a single
-theory. It runs eight classic strategies side by side as equal peers, each
-named for the author it comes from:
+theory. It runs eight classic strategy traditions side by side as equal peers.
+Where the source book is in the OROS library, the strategy carries its
+author's name; where it is not, the label stays descriptive — the
+implementation is inspired by published ideas but cannot be verified against
+the text. No author endorses or is affiliated with OROS.
 
 - **Weinstein** (stage analysis): is the stock in a healthy uptrend above a rising 30 week average.
-- **Minervini** (SEPA trend template): does the price pass a checklist of trend conditions.
+- **Trend Momentum** (trend template): does the price pass a checklist of trend conditions.
 - **O'Neil** (CANSLIM): is it a leader near new highs with strong momentum and volume.
-- **Lynch** (growth at a reasonable price): is the growth cheap relative to its rate.
-- **Graham** (value): is it inexpensive on classic value measures.
-- **Technical**, **Swing**, and **O'Neil/Minervini** (new issues): indicator, short term, and IPO setups.
+- **GARP Growth** (growth at a reasonable price): is the growth cheap relative to its rate.
+- **Classic Value**: is it inexpensive on classic value measures.
+- **Technical**, **Swing**, and **New-Issue Momentum**: indicator, short term, and IPO setups.
 
 A market regime check (bull, neutral, or bear, read from the broad market and
 volatility) then decides how much to trust each strategy today and how much cash
@@ -78,11 +81,12 @@ investment decision.**
 # ---------------------------------------------------------------------------
 DISCLAIMER_SHORT: str = (
     "⚠️ For educational and informational purposes only — not investment "
-    "advice. The eight peer strategies (Weinstein, Minervini, O'Neil, Lynch, "
-    "Graham, and others) and the bull_prob score are heuristics with known "
+    "advice. The eight peer strategies (stage analysis, momentum, growth, "
+    "value, and others) and the bull_prob score are heuristics with known "
     "limitations (model assumptions, data quality, changing market conditions). "
-    "Does not consider your individual circumstances. Consult a licensed advisor "
-    "before investing."
+    "Methodologies are referenced for attribution only; no author endorses or "
+    "is affiliated with OROS. Does not consider your individual circumstances. "
+    "Consult a licensed advisor before investing."
 )
 
 

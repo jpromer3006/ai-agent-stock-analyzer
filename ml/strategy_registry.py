@@ -307,21 +307,24 @@ def all_keys() -> list[str]:
 # Display names — author attribution for the UI.
 #
 # The Quant team asked what investment theory each strategy represents, so the
-# UI shows the author's name wherever a strategy key would otherwise leak.
-# Five books map to a single author. Three (technical, swing) have no canonical
-# author and stay descriptive; ipo (new-issue momentum) is O'Neil and Minervini.
+# Attribution rule (JP, 2026-07-27): an author's NAME appears only where the
+# source book is physically in Finance Books/, so fidelity is verifiable
+# against the text and the name never reads as endorsement. Strategies whose
+# source texts are not on the shelf get descriptive labels instead. Weinstein
+# and O'Neil are on the shelf; Minervini, Lynch, and Graham are not (their
+# scorers are inspired-by implementations of published ideas).
 # This is the single source of truth: UI surfaces import display_name() rather
 # than hard-coding their own mapping.
 # ---------------------------------------------------------------------------
 DISPLAY_NAMES: dict[str, str] = {
     "weinstein": "Weinstein",
-    "sepa": "Minervini",
+    "sepa": "Trend Momentum",
     "canslim": "O'Neil",
-    "growth": "Lynch",
-    "value": "Graham",
+    "growth": "GARP Growth",
+    "value": "Classic Value",
     "technical": "Technical",
     "swing": "Swing",
-    "ipo": "O'Neil/Minervini",
+    "ipo": "New-Issue Momentum",
 }
 
 

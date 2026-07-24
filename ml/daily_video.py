@@ -912,11 +912,11 @@ def _capstone_script(cs: dict) -> list[str]:
 
 _SCOREBOARD_FRAME = (
     "One note on the board you are seeing. Those are not one portfolio but "
-    "several: OROS builds and journals a separate experimental book for each "
-    "strategy author it studies — Weinstein, Minervini, O'Neil and their "
-    "peers — all graded forward from a standing start. Early numbers read "
-    "cold by design. The scoreboard exists to earn trust over time, not to "
-    "impress tonight."
+    "several: OROS builds and journals a separate experimental book for "
+    "each strategy tradition it studies — stage analysis, momentum, growth, "
+    "and value — all graded forward from a standing start. Early numbers "
+    "read cold by design. The scoreboard exists to earn trust over time, "
+    "not to impress tonight."
 )
 
 _CREDITS_SCRIPT = (
