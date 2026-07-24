@@ -679,7 +679,20 @@ def render_portfolio_mode() -> None:
                  "previously built book, 📝 are your own saved lists. Open market "
                  "scans the whole market up to the cap.",
         )
-        limit = int(st.number_input("🔭 OROS Scan — names to grade (100–3000)", min_value=100, max_value=3000, value=500, step=50, help="The timestamped scan: how many of the most liquid names to grade. The autonomous runs use 500 (the OROS 500)."))
+        # The scan cap only applies to Open Market (the one source with
+        # thousands of names). Saved lists are scanned in full, so the
+        # field is disabled for them to avoid implying otherwise.
+        limit = int(st.number_input(
+            "🔭 OROS Scan — names to grade (100–3000)",
+            min_value=100, max_value=3000, value=500, step=50,
+            disabled=(source != _DYNAMIC_SOURCE),
+            help="The timestamped scan: how many of the most liquid names "
+                 "to grade. Applies to Open Market only — a saved list is "
+                 "always scanned in full. The autonomous runs use 500 "
+                 "(the OROS 500)."))
+        if source != _DYNAMIC_SOURCE:
+            st.caption("Cap applies to Open Market only — this list is "
+                       "scanned in full.")
         if source == _DYNAMIC_SOURCE:
             # Open market is rescanned live each run, so its timestamp is "now".
             # Show the ACTUAL pool size, not the slider, so the cap can't overstate it.
