@@ -60,9 +60,10 @@ st.markdown(
     "padding:14px 20px;border-radius:8px;margin-bottom:12px'>"
     "<div style='display:flex;justify-content:space-between;align-items:center'>"
     "<div><span style='color:#e6edf3;font-size:22px;font-weight:700'>"
-    "🤖 Ai-Agent Stock Analyzer</span>"
+    "⛰️ OROS Market Desk</span>"
     "<span style='color:#8b949e;margin-left:12px;font-size:13px'>"
-    "Fordham Applied Finance Project · Lecture 9</span></div></div></div>",
+    "Capstone · agentic computational scanner with investment steering"
+    "</span></div></div></div>",
     unsafe_allow_html=True,
 )
 

@@ -1755,6 +1755,47 @@ def _render_price_chart(r: StageResult):
 # Main entry
 # ---------------------------------------------------------------------------
 
+def _render_oros500_breadth() -> None:
+    """The timestamped OROS 500 overnight scan, straight from the journal —
+    the same stage breadth the YouTube 'Market Analysis' segment shows. This
+    is the WHOLE scanned universe; the panel below scans only your watchlist."""
+    try:
+        from ml.breadth import latest_breadth
+        b = latest_breadth()
+    except Exception:  # noqa: BLE001
+        b = None
+    if not b or not b.get("counts") or not b.get("total"):
+        return
+    tot = max(int(b["total"]), 1)
+    c = b["counts"]
+    spec = [("Advancing", "Stage 2 · summer", "#3fb950"),
+            ("Basing", "Stage 1 · spring", "#58a6ff"),
+            ("Topping", "Stage 3 · autumn", "#f0883e"),
+            ("Declining", "Stage 4 · winter", "#f85149")]
+    st.markdown(f"#### 🔭 OROS Scan — {tot} names graded overnight "
+                f"({b.get('date', '?')})")
+    cols = st.columns(4)
+    for col, (key, sub, color) in zip(cols, spec):
+        n = int(c.get(key, 0))
+        pct = 100 * n / tot
+        col.markdown(
+            f"<div style='border:1px solid {color};border-radius:8px;"
+            f"padding:8px 10px'>"
+            f"<div style='color:{color};font-weight:700;font-size:13px'>"
+            f"{key.upper()}</div>"
+            f"<div style='color:{color};font-size:26px;font-weight:700'>"
+            f"{pct:.0f}%</div>"
+            f"<div style='color:#8b949e;font-size:12px'>{n} of {tot} · "
+            f"{sub}</div></div>",
+            unsafe_allow_html=True)
+    inv = b.get("invalidated") or 0
+    st.caption(f"The whole OROS 500 stage split from the last autonomous "
+               f"scan — the same figures the broadcast reports. "
+               f"Invalidations on watch: {inv}. The panel below scans only "
+               f"your selected watchlist, live.")
+    st.markdown("")
+
+
 def render_trader_mode():
     """Top-level Trader Mode renderer. Call from app.py."""
     tickers = render_watchlist_sidebar()
@@ -1768,6 +1809,11 @@ def render_trader_mode():
 
     # Market Regime banner — Weinstein Ch. 8 "No Isolationism" rule
     _render_market_regime_banner()
+
+    # OROS 500 overnight scan — the timestamped breadth the broadcast uses.
+    # Read-only from the journal; this is the whole market's stage split,
+    # separate from the small watchlist scanned live below.
+    _render_oros500_breadth()
 
     render_scan_panel(tickers)
 
