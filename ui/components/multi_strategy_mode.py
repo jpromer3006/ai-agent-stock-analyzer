@@ -94,7 +94,7 @@ def render_multi_strategy_mode() -> None:
     st.sidebar.markdown("### ⚖️ Comparison settings")
     watchlists = list_watchlists() or [DEFAULT_NAME]
     source = st.sidebar.selectbox(
-        "Candidate source (locked for all books)",
+        "🔭 Scan pool (locked for all books)",
         ["Dynamic universe (liquid subset)"] + watchlists, index=0,
         help="Every checked book scores this exact same pool, so a name dropping "
              "from one book is a strategy decision, not a missing candidate.",

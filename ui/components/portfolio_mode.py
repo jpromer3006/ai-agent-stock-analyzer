@@ -88,7 +88,11 @@ def _grouped_sources(watchlists: list[str]) -> tuple[list[str], dict[str, str]]:
     for w in universe:
         labels[w] = f"🌐 {w}"
     for w in handoffs:
-        labels[w] = f"📥 {w}"
+        # These are ticker SNAPSHOTS of previously built books, not saved
+        # portfolios (no shares/stops carry over). "Re-scan:" makes the
+        # intent explicit: grade that book's names fresh, today.
+        rest = w[len("Portfolio Holdings"):].strip()
+        labels[w] = f"📥 Re-scan: {rest} build" if rest else "📥 Re-scan: latest build"
     for w in mine:
         labels[w] = f"📝 {w}"
     return ordered, labels
@@ -672,12 +676,14 @@ def render_portfolio_mode() -> None:
         # handoffs, 📝 personal lists) so the source list reads cleanly.
         _source_options, _source_labels = _grouped_sources(watchlists)
         source = st.selectbox(
-            "Candidate source",
+            "🔭 Scan pool — where OROS looks",
             _source_options, index=0,
             format_func=lambda w: _source_labels.get(w, w),
-            help="🌐 universe sources scan broad lists, 📥 portfolio handoffs reuse a "
-                 "previously built book, 📝 are your own saved lists. Open market "
-                 "scans the whole market up to the cap.",
+            help="🌐 universes scan broad markets (Open Market goes up to the "
+                 "cap below). 📥 Re-scan entries grade the ticker list from a "
+                 "previous build fresh today — they are snapshots, not saved "
+                 "portfolios; no shares or stops carry over. 📝 are your own "
+                 "saved lists, scanned in full.",
         )
         # The scan cap only applies to Open Market (the one source with
         # thousands of names). Saved lists are scanned in full, so the
@@ -707,7 +713,7 @@ def render_portfolio_mode() -> None:
             ts = watchlist_updated_at(source)
             when = f" · chosen {ts:%b %d, %Y %H:%M}" if ts else " · date unknown"
             st.caption(f"{n_preview} candidate names{when}")
-        st.markdown("**Portfolio** — check one or more to build together")
+        st.markdown("**Playbook** — check one or more to build together")
         _mandate_keys = list(ARCHETYPES.keys())
         selected_mandates = [
             m for m in _mandate_keys
