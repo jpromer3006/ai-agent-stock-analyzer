@@ -30,7 +30,10 @@
       "led_by": "weinstein",
       "sentiment": 0.211,
       "earnings_risk": true,
-      "outcome_return": null
+      "outcome_return": 0.0057,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BAC",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0093,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "USB",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0086,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CVX",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0034,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "COP",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": -0.027,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0048,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "XOM",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0022,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "DE",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": -0.04,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0007,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "UNP",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0006,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     }
   ],
   "bench": [
@@ -194,5 +218,10 @@
       "role": "post-construction risk",
       "summary": "within limits; cash 68%"
     }
-  ]
+  ],
+  "horizon_days": 120,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
 }
