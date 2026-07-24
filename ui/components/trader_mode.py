@@ -126,7 +126,7 @@ def route_to_trader(watchlist_name: str) -> None:
 
 def render_watchlist_sidebar():
     """Scan-list picker + ticker add/remove in the sidebar. Returns selected tickers."""
-    st.sidebar.markdown("### 📈 Trader Mode")
+    st.sidebar.markdown("### 📈 OROS Stage Scan")
     st.sidebar.caption("Weinstein Stage Analysis · daily scan")
 
     watchlists = list_watchlists()
@@ -1832,7 +1832,7 @@ def render_trader_mode():
     """Top-level Trader Mode renderer. Call from app.py."""
     tickers = render_watchlist_sidebar()
 
-    st.markdown("## 📈 Trader Mode — Weinstein Stage Analysis")
+    st.markdown("## 📈 OROS Stage Scan — Weinstein Stage Analysis")
     st.caption(
         "Pure methodology from Stan Weinstein's *Secrets for Profiting in Bull and Bear Markets*. "
         "Scans your scan list for Stage 2 breakouts (BUY) and Stage 4 breakdowns (SELL/SHORT). "

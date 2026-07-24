@@ -77,7 +77,7 @@ with mode_col1:
         st.rerun()
 with mode_col2:
     trader_active = st.session_state.app_mode == "trader"
-    label = "📈 Trader  ✓" if trader_active else "📈 Trader"
+    label = "📈 Stage Scan  ✓" if trader_active else "📈 Stage Scan"
     if st.button(label, key="mode_trader", use_container_width=True,
                  type="primary" if trader_active else "secondary"):
         st.session_state.app_mode = "trader"
