@@ -662,7 +662,7 @@ def render_portfolio_mode() -> None:
     # Settings live behind a click-to-open expander so the default experience
     # is autonomous: press Auto-build and OROS chooses everything from the data.
     watchlists = list_watchlists() or [DEFAULT_NAME]
-    with st.sidebar.expander("💼 Portfolio settings (manual — click to open)",
+    with st.sidebar.expander("🏗 Custom Build settings (manual — click to open)",
                              expanded=False):
         # Open market is the default so the portfolio scans the whole market,
         # not a small saved watchlist. Options are grouped (🌐 universe, 📥 portfolio
@@ -676,7 +676,7 @@ def render_portfolio_mode() -> None:
                  "previously built book, 📝 are your own saved lists. Open market "
                  "scans the whole market up to the cap.",
         )
-        limit = st.slider("Universe cap (Open market only)", 100, 3000, 400, 100)
+        limit = int(st.number_input("🔭 OROS Scan — names to grade (100–3000)", min_value=100, max_value=3000, value=500, step=50, help="The timestamped scan: how many of the most liquid names to grade. The autonomous runs use 500 (the OROS 500)."))
         if source == _DYNAMIC_SOURCE:
             # Open market is rescanned live each run, so its timestamp is "now".
             # Show the ACTUAL pool size, not the slider, so the cap can't overstate it.
@@ -691,14 +691,14 @@ def render_portfolio_mode() -> None:
             ts = watchlist_updated_at(source)
             when = f" · chosen {ts:%b %d, %Y %H:%M}" if ts else " · date unknown"
             st.caption(f"{n_preview} candidate names{when}")
-        st.markdown("**Mandate** — check one or more to build together")
+        st.markdown("**Portfolio** — check one or more to build together")
         _mandate_keys = list(ARCHETYPES.keys())
         selected_mandates = [
             m for m in _mandate_keys
             if st.checkbox(m, value=(m == "swing_momentum"), key=f"mandate_{m}")
         ]
         claude_first = st.checkbox(
-            "🤖 Claude picks first (LLM selects names, quant sizes them)",
+            "🤖 Claude Picks (LLM selects names, quant sizes them)",
             value=False,
             help="When on, Claude chooses tickers from a liquidity-ranked slice of the "
                  "universe and assigns each to a mandate; the quant engine then gates, "
