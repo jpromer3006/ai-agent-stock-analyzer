@@ -104,7 +104,8 @@ def choose_auto_settings() -> dict:
         "mandate": mandate,
         "mandate_reason": why,
         "account": last_account(),
-        "limit": 800,                       # Open-market universe cap
+        "limit": 500,                       # the OROS 500 — matches the cloud
+                                            # run (--cap 500) and the branding
         "source": "Open market",
         **preset,
     }
