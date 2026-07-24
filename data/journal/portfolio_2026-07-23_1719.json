@@ -1,0 +1,97 @@
+{
+  "timestamp": "2026-07-23T17:19:56.392620Z",
+  "date": "2026-07-23",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 16032.5,
+  "cash": 83967.5,
+  "weights": {
+    "canslim": 0.195,
+    "ipo": 0.114,
+    "value": 0.023,
+    "sepa": 0.225,
+    "growth": 0.065,
+    "swing": 0.093,
+    "weinstein": 0.154,
+    "technical": 0.131
+  },
+  "note": "UI build \u00b7 swing_momentum",
+  "holdings": [
+    {
+      "ticker": "ANET",
+      "sector": "Information Technology",
+      "conviction": 0.6879,
+      "shares": 19,
+      "dollars": 3362.81,
+      "weight_pct": 3.36,
+      "entry": 176.99,
+      "stop": 161.29,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ASML",
+      "sector": "Industrials",
+      "conviction": 0.6627,
+      "shares": 2,
+      "dollars": 3608.92,
+      "weight_pct": 3.61,
+      "entry": 1804.46,
+      "stop": 1675.69,
+      "led_by": "sepa",
+      "sentiment": 0.164,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MNST",
+      "sector": "Consumer Staples",
+      "conviction": 0.552,
+      "shares": 97,
+      "dollars": 9060.77,
+      "weight_pct": 9.06,
+      "entry": 93.41,
+      "stop": 90.22,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "bench": [],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "15 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "3 holdings, 16% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 84%"
+    }
+  ]
+}

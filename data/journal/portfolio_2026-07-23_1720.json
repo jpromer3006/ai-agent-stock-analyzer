@@ -1,0 +1,198 @@
+{
+  "timestamp": "2026-07-23T17:20:29.560212Z",
+  "date": "2026-07-23",
+  "regime": "bull",
+  "mandate": "value_hold",
+  "account": 100000.0,
+  "invested": 32455.15,
+  "cash": 67544.85,
+  "weights": {
+    "canslim": 0.096,
+    "ipo": 0.057,
+    "value": 0.358,
+    "sepa": 0.076,
+    "growth": 0.225,
+    "swing": 0.019,
+    "weinstein": 0.124,
+    "technical": 0.046
+  },
+  "note": "UI build \u00b7 value_hold",
+  "holdings": [
+    {
+      "ticker": "C",
+      "sector": "Financials",
+      "conviction": 0.6756,
+      "shares": 17,
+      "dollars": 2238.73,
+      "weight_pct": 2.24,
+      "entry": 131.69,
+      "stop": 122.71,
+      "led_by": "weinstein",
+      "sentiment": 0.211,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.5921,
+      "shares": 58,
+      "dollars": 3544.96,
+      "weight_pct": 3.54,
+      "entry": 61.12,
+      "stop": 55.76,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "USB",
+      "sector": "Financials",
+      "conviction": 0.5092,
+      "shares": 61,
+      "dollars": 3855.81,
+      "weight_pct": 3.86,
+      "entry": 63.21,
+      "stop": 58.09,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CVX",
+      "sector": "Energy",
+      "conviction": 0.4204,
+      "shares": 23,
+      "dollars": 4502.25,
+      "weight_pct": 4.5,
+      "entry": 195.75,
+      "stop": 182.4,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "COP",
+      "sector": "Energy",
+      "conviction": 0.402,
+      "shares": 44,
+      "dollars": 5328.84,
+      "weight_pct": 5.33,
+      "entry": 121.11,
+      "stop": 114.01,
+      "led_by": "sepa",
+      "sentiment": -0.027,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XOM",
+      "sector": "Energy",
+      "conviction": 0.3647,
+      "shares": 28,
+      "dollars": 4407.2,
+      "weight_pct": 4.41,
+      "entry": 157.4,
+      "stop": 146.38,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "DE",
+      "sector": "Industrials",
+      "conviction": 0.3428,
+      "shares": 9,
+      "dollars": 5528.16,
+      "weight_pct": 5.53,
+      "entry": 614.24,
+      "stop": 582.64,
+      "led_by": "sepa",
+      "sentiment": -0.04,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "UNP",
+      "sector": "Industrials",
+      "conviction": 0.3039,
+      "shares": 10,
+      "dollars": 3049.2,
+      "weight_pct": 3.05,
+      "entry": 304.92,
+      "stop": 273.87,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "BRK-B",
+      "sector": "Financials",
+      "composite": 0.481,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "SCHW",
+      "sector": "Financials",
+      "composite": 0.344,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "JPM",
+      "sector": "Financials",
+      "composite": 0.341,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "GS",
+      "sector": "Financials",
+      "composite": 0.339,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "JNJ",
+      "sector": "Health Care",
+      "composite": 0.263,
+      "reason": "outranked \u2014 book full at 8"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "25 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: value 38%, growth 24%, weinstein 10%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.42, weinstein x1.38"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "8 holdings, 32% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 68%"
+    }
+  ]
+}

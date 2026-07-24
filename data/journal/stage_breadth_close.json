@@ -68,14 +68,14 @@
   },
   {
    "date": "2026-07-23",
-   "total": 494,
+   "total": 497,
    "counts": {
-    "Advancing": 261,
-    "Basing": 110,
-    "Topping": 43,
-    "Declining": 80
+    "Advancing": 259,
+    "Basing": 108,
+    "Topping": 38,
+    "Declining": 92
    },
-   "invalidated": 1
+   "invalidated": 3
   }
  ]
 }

@@ -28,6 +28,23 @@ from ui.components.disclaimer import render_disclaimer
 
 _REGIME_COLOR = {"bull": "#1a7f37", "neutral": "#9a6700", "bear": "#cf222e"}
 
+# Company logos (JP, 2026-07-27): a small logo identifying the stock beside its
+# name — standard fintech practice (nominative identification, like every
+# broker). FMP's ticker-keyed image CDN; the key rides in the URL when present.
+# ETFs and names without a logo just show blank. External image load per row.
+_FMP_LOGO = "https://financialmodelingprep.com/image-stock/{sym}.png"
+
+
+def _logo_url(ticker: str) -> str:
+    t = (ticker or "").upper().strip().replace(".", "-")
+    return _FMP_LOGO.format(sym=t) if t else ""
+
+
+def _logo_column():
+    return st.column_config.ImageColumn("Logo", width="small",
+                                        help="Company logo (identification "
+                                             "only) · via FMP")
+
 _DYNAMIC_SOURCE = "Open market"
 # Curated broad lists that act as universe sources, not personal scratch lists.
 _UNIVERSE_LISTS = {"Top Picks", "Momentum Leaders"}
@@ -327,6 +344,7 @@ def _render_plan(plan, trace, account: float, mkey: str, max_pos: int,
             def _cname(t):  # noqa: ANN001
                 return ""
         df = pd.DataFrame([{
+            "Logo": _logo_url(h.ticker),
             "Ticker": h.ticker, "Company": _cname(h.ticker) or "—",
             "Sector": h.sector, "Conviction": round(h.composite, 2),
             "News": round(h.sentiment, 2),
@@ -337,7 +355,8 @@ def _render_plan(plan, trace, account: float, mkey: str, max_pos: int,
             "Entry": h.entry, "Stop": h.stop, "Risk $": round(h.risk_dollars),
             "Led by": display_name(max(h.strategy_scores, key=h.strategy_scores.get)) if h.strategy_scores else "n/a",
         } for h in plan.holdings])
-        st.dataframe(df, use_container_width=True, hide_index=True)
+        st.dataframe(df, use_container_width=True, hide_index=True,
+                     column_config={"Logo": _logo_column()})
 
         with st.expander("Per-Tickr rationale"):
             for h in plan.holdings:
@@ -522,6 +541,7 @@ def _render_latest_journaled_build() -> None:
     c2.metric("Deployed", f"{inv / acct:.0%}")
     c3.metric("Cash", f"{(acct - inv) / acct:.0%}")
     df = pd.DataFrame([{
+        "Logo": _logo_url(h.get("ticker", "")),
         "Ticker": h.get("ticker"), "Company": _cname(h.get("ticker", "")) or "—",
         "Sector": h.get("sector"), "Conviction": h.get("conviction"),
         "Shares": h.get("shares"),
@@ -529,7 +549,8 @@ def _render_latest_journaled_build() -> None:
         "Weight %": h.get("weight_pct"),
         "Led by": _dn(h.get("led_by")) if h.get("led_by") else "n/a",
     } for h in rec.get("holdings", [])])
-    st.dataframe(df, use_container_width=True, hide_index=True)
+    st.dataframe(df, use_container_width=True, hide_index=True,
+                 column_config={"Logo": _logo_column()})
     bench = rec.get("bench") or []
     if bench:
         with st.expander(f"🪑 The bench — {len(bench)} candidates excluded, "
