@@ -45,6 +45,22 @@ def _logo_column():
                                         help="Company logo (identification "
                                              "only) · via FMP")
 
+
+def _flag_str(h) -> str:
+    """Warning flags (caution triangle, never a flame — a flame reads as
+    'good'). A holding with no cautions gets a green check: it passed every
+    gate AND carries no froth or earnings warning. Not advice — it marks the
+    absence of red flags, not a recommendation."""
+    warn = []
+    if getattr(h, "earnings_risk", False):
+        warn.append("⚠️ earnings")
+    if getattr(h, "froth", False):
+        warn.append("⚠️ crowded")          # 'froth' = overheated social hype
+    pin = "📌 pin" if getattr(h, "manual", False) else ""
+    if warn:
+        return (pin + " " + " ".join(warn)).strip()
+    return (pin + " ✅ clean").strip()
+
 _DYNAMIC_SOURCE = "Open market"
 # Curated broad lists that act as universe sources, not personal scratch lists.
 _UNIVERSE_LISTS = {"Top Picks", "Momentum Leaders"}
@@ -348,9 +364,7 @@ def _render_plan(plan, trace, account: float, mkey: str, max_pos: int,
             "Ticker": h.ticker, "Company": _cname(h.ticker) or "—",
             "Sector": h.sector, "Conviction": round(h.composite, 2),
             "News": round(h.sentiment, 2),
-            "Flags": " ".join(f for f, on in
-                              [("📌pin", getattr(h, "manual", False)),
-                               ("⚠️earnings", h.earnings_risk), ("🔥froth", h.froth)] if on) or "-",
+            "Flags": _flag_str(h),
             "Shares": h.shares, "$ Position": round(h.dollars), "Weight %": h.weight_pct,
             "Entry": h.entry, "Stop": h.stop, "Risk $": round(h.risk_dollars),
             "Led by": display_name(max(h.strategy_scores, key=h.strategy_scores.get)) if h.strategy_scores else "n/a",
