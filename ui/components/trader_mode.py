@@ -1772,6 +1772,22 @@ def _render_oros500_breadth() -> None:
             ("Basing", "Stage 1 · spring", "#58a6ff"),
             ("Topping", "Stage 3 · autumn", "#f0883e"),
             ("Declining", "Stage 4 · winter", "#f85149")]
+    from pathlib import Path as _P
+    _assets = _P(__file__).resolve().parent.parent / "assets" / "stages"
+    _img = {"Advancing": "stage_2.png", "Basing": "stage_1.png",
+            "Topping": "stage_3.png", "Declining": "stage_4.png"}
+    _signal = {
+        "Advancing": "Price above a **rising** 30-week MA. The breakout on "
+                     "expanding volume is the buy signal — the only stage "
+                     "the system buys.",
+        "Basing": "Price moves **sideways** after a decline and the 30-week "
+                  "MA flattens. Quiet accumulation — watchlist it, don't "
+                  "chase until it breaks out.",
+        "Topping": "Price turns **choppy** after a long advance and the MA "
+                   "flattens. Distribution — avoid new longs, tighten stops.",
+        "Declining": "Price **below a falling** 30-week MA. Downtrend — "
+                     "preserve capital; only bearish setups qualify.",
+    }
     st.markdown(f"#### 🔭 OROS Scan — {tot} names graded overnight "
                 f"({b.get('date', '?')})")
     cols = st.columns(4)
@@ -1779,8 +1795,8 @@ def _render_oros500_breadth() -> None:
         n = int(c.get(key, 0))
         pct = 100 * n / tot
         col.markdown(
-            f"<div style='border:1px solid {color};border-radius:8px;"
-            f"padding:8px 10px'>"
+            f"<div style='border:1px solid {color};border-radius:8px 8px 0 0;"
+            f"padding:8px 10px;border-bottom:none'>"
             f"<div style='color:{color};font-weight:700;font-size:13px'>"
             f"{key.upper()}</div>"
             f"<div style='color:{color};font-size:26px;font-weight:700'>"
@@ -1788,9 +1804,25 @@ def _render_oros500_breadth() -> None:
             f"<div style='color:#8b949e;font-size:12px'>{n} of {tot} · "
             f"{sub}</div></div>",
             unsafe_allow_html=True)
+        if col.button(f"📈 See the {key} chart", key=f"stagebtn_{key}",
+                      use_container_width=True):
+            st.session_state["trader_stage_focus"] = (
+                None if st.session_state.get("trader_stage_focus") == key
+                else key)
+    focus = st.session_state.get("trader_stage_focus")
+    if focus:
+        ic, tc = st.columns([1, 2])
+        _p = _assets / _img.get(focus, "")
+        if _p.exists():
+            ic.image(str(_p), use_container_width=True)
+        color = dict((k, v) for k, _, v in spec).get(focus, "#8b949e")
+        tc.markdown(f"**{focus} — Stage on the chart**")
+        tc.markdown(_signal.get(focus, ""))
+        tc.caption("Gold line = 30-week moving average · colored line = "
+                   "weekly price. Click the button again to hide.")
     inv = b.get("invalidated") or 0
-    st.caption(f"The whole OROS 500 stage split from the last autonomous "
-               f"scan — the same figures the broadcast reports. "
+    st.caption(f"The whole OROS scan's stage split from the last autonomous "
+               f"run — the same figures the broadcast reports. "
                f"Invalidations on watch: {inv}. The panel below scans only "
                f"your selected watchlist, live.")
     st.markdown("")
