@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.058,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0605,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "DXCM",
@@ -44,9 +47,9 @@
       "led_by": "technical",
       "sentiment": 0.131,
       "earnings_risk": false,
-      "outcome_return": -0.0921,
+      "outcome_return": -0.0939,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -61,7 +64,10 @@
       "led_by": "weinstein",
       "sentiment": 0.241,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0623,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     },
     {
       "ticker": "META",
@@ -75,9 +81,9 @@
       "led_by": "technical",
       "sentiment": 0.204,
       "earnings_risk": false,
-      "outcome_return": -0.1098,
+      "outcome_return": -0.1069,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -92,9 +98,9 @@
       "led_by": "technical",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.1051,
+      "outcome_return": -0.1086,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -109,7 +115,10 @@
       "led_by": "technical",
       "sentiment": -0.052,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0349,
+      "outcome_exit": "open",
+      "outcome_days": 5,
+      "outcome_final": false
     }
   ],
   "agent_trace": [

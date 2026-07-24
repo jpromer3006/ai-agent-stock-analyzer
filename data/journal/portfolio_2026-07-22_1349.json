@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0404,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CSX",
@@ -44,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0624,
+      "outcome_return": 0.0558,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -61,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0561,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "AAPL",
@@ -75,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0073,
+      "outcome_return": -0.0192,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -92,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0476,
+      "outcome_return": -0.0147,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -109,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0071,
+      "outcome_return": -0.0141,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -126,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0222,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "DXPE",
@@ -140,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0026,
+      "outcome_return": 0.0042,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -157,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0717,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "KRE",
@@ -188,9 +200,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0311,
+      "outcome_return": 0.0284,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -205,9 +217,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0279,
+      "outcome_return": -0.0333,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 1,
       "outcome_final": false
     }
   ],

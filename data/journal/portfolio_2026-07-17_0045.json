@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.262,
       "earnings_risk": false,
-      "outcome_return": -0.0098,
+      "outcome_return": -0.0124,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -47,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.276,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0152,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "MTCH",
@@ -61,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.251,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0717,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "BPOP",
@@ -75,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.276,
       "earnings_risk": false,
-      "outcome_return": -0.0101,
+      "outcome_return": -0.0171,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -92,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.118,
       "earnings_risk": true,
-      "outcome_return": 0.0033,
+      "outcome_return": -0.0034,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -109,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.053,
       "earnings_risk": false,
-      "outcome_return": -0.0313,
+      "outcome_return": -0.0476,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -126,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.285,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0524,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "PLD",
@@ -140,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.358,
       "earnings_risk": true,
-      "outcome_return": -0.0356,
+      "outcome_return": -0.0329,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 4,
       "outcome_final": false
     }
   ],

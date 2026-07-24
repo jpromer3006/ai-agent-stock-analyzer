@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.483,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0561,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "BPOP",
@@ -44,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.276,
       "earnings_risk": false,
-      "outcome_return": -0.0101,
+      "outcome_return": -0.0171,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -61,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.251,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0717,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "MET",
@@ -75,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.262,
       "earnings_risk": false,
-      "outcome_return": -0.0098,
+      "outcome_return": -0.0124,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -92,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.377,
       "earnings_risk": false,
-      "outcome_return": 0.0297,
+      "outcome_return": 0.023,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -109,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.053,
       "earnings_risk": false,
-      "outcome_return": -0.0313,
+      "outcome_return": -0.0476,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -143,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.125,
       "earnings_risk": false,
-      "outcome_return": 0.0442,
+      "outcome_return": 0.0377,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -160,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.125,
       "earnings_risk": false,
-      "outcome_return": -0.0294,
+      "outcome_return": -0.0358,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -177,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.207,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0286,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "KBWB",
@@ -191,7 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.114,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0222,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "CCEP",
@@ -205,9 +217,9 @@
       "led_by": "sepa",
       "sentiment": 0.279,
       "earnings_risk": false,
-      "outcome_return": -0.0111,
+      "outcome_return": -0.0229,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 4,
       "outcome_final": false
     }
   ],

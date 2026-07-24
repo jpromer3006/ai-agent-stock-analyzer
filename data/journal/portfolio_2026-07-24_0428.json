@@ -1,0 +1,143 @@
+{
+  "timestamp": "2026-07-24T04:28:39.475137Z",
+  "date": "2026-07-24",
+  "regime": "bull",
+  "mandate": "value_hold",
+  "account": 100000.0,
+  "invested": 36946.04,
+  "cash": 63053.96,
+  "weights": {
+    "technical": 0.059,
+    "weinstein": 0.097,
+    "swing": 0.021,
+    "canslim": 0.114,
+    "sepa": 0.078,
+    "growth": 0.222,
+    "value": 0.353,
+    "ipo": 0.056
+  },
+  "note": "UI build \u00b7 value_hold",
+  "holdings": [
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.604,
+      "shares": 67,
+      "dollars": 4105.76,
+      "weight_pct": 4.11,
+      "entry": 61.28,
+      "stop": 55.76,
+      "led_by": "sepa",
+      "sentiment": 0.164,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XLU",
+      "sector": "Other",
+      "conviction": 0.5712,
+      "shares": 259,
+      "dollars": 11963.21,
+      "weight_pct": 11.96,
+      "entry": 46.19,
+      "stop": 44.74,
+      "led_by": "technical",
+      "sentiment": 0.261,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "USB",
+      "sector": "Financials",
+      "conviction": 0.518,
+      "shares": 71,
+      "dollars": 4496.43,
+      "weight_pct": 4.5,
+      "entry": 63.33,
+      "stop": 58.09,
+      "led_by": "sepa",
+      "sentiment": 0.195,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XOP",
+      "sector": "Other",
+      "conviction": 0.481,
+      "shares": 64,
+      "dollars": 11242.24,
+      "weight_pct": 11.24,
+      "entry": 175.66,
+      "stop": 163.98,
+      "led_by": "sepa",
+      "sentiment": 0.22,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ABBV",
+      "sector": "Health Care",
+      "conviction": 0.4434,
+      "shares": 20,
+      "dollars": 5138.4,
+      "weight_pct": 5.14,
+      "entry": 256.92,
+      "stop": 220.03,
+      "led_by": "weinstein",
+      "sentiment": 0.152,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "composite": 0.469,
+      "reason": "sector cap \u2014 already 2 in Financials"
+    },
+    {
+      "ticker": "XLE",
+      "sector": "Other",
+      "composite": 0.437,
+      "reason": "outranked \u2014 book full at 5"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "2995 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: value 38%, growth 24%, weinstein 10%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.50, canslim x1.44"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "5 holdings, 37% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 63%"
+    }
+  ],
+  "horizon_days": 120,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}

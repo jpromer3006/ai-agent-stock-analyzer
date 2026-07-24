@@ -1,0 +1,247 @@
+{
+  "timestamp": "2026-07-24T14:45:33.509188Z",
+  "date": "2026-07-24",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 57968.62,
+  "cash": 42031.38,
+  "weights": {
+    "ipo": 0.096,
+    "canslim": 0.205,
+    "weinstein": 0.15,
+    "technical": 0.121,
+    "swing": 0.086,
+    "value": 0.02,
+    "sepa": 0.267,
+    "growth": 0.055
+  },
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "HST",
+      "sector": "Real Estate",
+      "conviction": 0.7718,
+      "shares": 343,
+      "dollars": 8218.28,
+      "weight_pct": 8.22,
+      "entry": 23.96,
+      "stop": 23.05,
+      "led_by": "sepa",
+      "sentiment": 0.31,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "DRH",
+      "sector": "Real Estate",
+      "conviction": 0.7375,
+      "shares": 303,
+      "dollars": 3839.01,
+      "weight_pct": 3.84,
+      "entry": 12.67,
+      "stop": 11.64,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "HTO",
+      "sector": "Utilities",
+      "conviction": 0.7242,
+      "shares": 65,
+      "dollars": 4154.8,
+      "weight_pct": 4.15,
+      "entry": 63.92,
+      "stop": 59.18,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "SPG",
+      "sector": "Real Estate",
+      "conviction": 0.724,
+      "shares": 27,
+      "dollars": 6080.4,
+      "weight_pct": 6.08,
+      "entry": 225.2,
+      "stop": 213.87,
+      "led_by": "sepa",
+      "sentiment": 0.27,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "UNP",
+      "sector": "Industrials",
+      "conviction": 0.7183,
+      "shares": 10,
+      "dollars": 3043.3,
+      "weight_pct": 3.04,
+      "entry": 304.33,
+      "stop": 273.85,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CSX",
+      "sector": "Industrials",
+      "conviction": 0.7183,
+      "shares": 57,
+      "dollars": 3010.17,
+      "weight_pct": 3.01,
+      "entry": 52.81,
+      "stop": 47.41,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CASY",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7116,
+      "shares": 6,
+      "dollars": 5251.5,
+      "weight_pct": 5.25,
+      "entry": 875.25,
+      "stop": 824.86,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "DXPE",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7116,
+      "shares": 20,
+      "dollars": 3496.2,
+      "weight_pct": 3.5,
+      "entry": 174.81,
+      "stop": 159.45,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XOP",
+      "sector": "Other",
+      "conviction": 0.7101,
+      "shares": 26,
+      "dollars": 4567.16,
+      "weight_pct": 4.57,
+      "entry": 175.66,
+      "stop": 163.98,
+      "led_by": "sepa",
+      "sentiment": 0.22,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BGC",
+      "sector": "Financials",
+      "conviction": 0.7053,
+      "shares": 488,
+      "dollars": 5655.92,
+      "weight_pct": 5.66,
+      "entry": 11.59,
+      "stop": 10.95,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "PM",
+      "sector": "Consumer Staples",
+      "conviction": 0.7052,
+      "shares": 34,
+      "dollars": 6498.08,
+      "weight_pct": 6.5,
+      "entry": 191.12,
+      "stop": 182.09,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "KALU",
+      "sector": "Materials",
+      "conviction": 0.6993,
+      "shares": 23,
+      "dollars": 4153.8,
+      "weight_pct": 4.15,
+      "entry": 180.6,
+      "stop": 167.29,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "JBHT",
+      "sector": "Industrials",
+      "composite": 0.745,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "WELL",
+      "sector": "Real Estate",
+      "composite": 0.712,
+      "reason": "sector cap \u2014 already 3 in Real Estate"
+    },
+    {
+      "ticker": "CHRD",
+      "sector": "Energy",
+      "composite": 0.696,
+      "reason": "outranked \u2014 book full at 12"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "795 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.50, canslim x1.44"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 58% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 42%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}
