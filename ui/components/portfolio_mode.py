@@ -81,7 +81,10 @@ def _grouped_sources(watchlists: list[str]) -> tuple[list[str], dict[str, str]]:
             if w not in _UNIVERSE_LISTS and not w.startswith("Portfolio Holdings")]
 
     ordered = [_DYNAMIC_SOURCE] + universe + handoffs + sorted(mine)
-    labels: dict[str, str] = {_DYNAMIC_SOURCE: f"🌐 {_DYNAMIC_SOURCE}"}
+    # Display label only — the selectbox VALUE stays "Open market" so every
+    # downstream check (source == _DYNAMIC_SOURCE) is untouched.
+    labels: dict[str, str] = {
+        _DYNAMIC_SOURCE: "🌐 Open Market — the full OROS Scan universe"}
     for w in universe:
         labels[w] = f"🌐 {w}"
     for w in handoffs:

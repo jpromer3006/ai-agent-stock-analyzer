@@ -316,6 +316,27 @@ def _clean_company_name(raw: str) -> str:
     return name.strip().rstrip(",.")
 
 
+def _light_clean(raw: str) -> str:
+    """Strip only security-type phrases; KEEP the legal suffix.
+
+    Fallback for names that collapse to the bare ticker under the full
+    clean ('CSX Corporation Common Stock' -> 'CSX' == ticker). In a table
+    or on air, 'CSX Corporation' beats a blank cell.
+    """
+    name = (raw or "").split(" - ")[0].strip()
+    changed = True
+    while changed:
+        changed = False
+        low = name.lower().rstrip(" ,.")
+        for ph in _NAME_PHRASES:
+            if low.endswith(ph) and len(low) > len(ph) + 2:
+                name = name[: len(name) - (len(name.lower()) - low.rfind(ph))]
+                changed = True
+                break
+        name = name.strip().rstrip(",.")
+    return name
+
+
 def company_name(symbol: str) -> str:
     """Short, speakable company name for a ticker ('' if unknown)."""
     global _NAME_CACHE
@@ -324,13 +345,20 @@ def company_name(symbol: str) -> str:
         return ""
     if not _NAME_CACHE:
         try:
-            _NAME_CACHE = {s: _clean_company_name(e.name)
-                           for s, e in build_raw_universe().items()}
+            cache: dict[str, str] = {}
+            for s, e in build_raw_universe().items():
+                n = _clean_company_name(e.name)
+                if n.upper() == s:
+                    # Full clean ate the whole name (CSX, EBAY): fall back
+                    # to the lighter clean that keeps the legal suffix.
+                    n = _light_clean(e.name)
+                cache[s] = n
+            _NAME_CACHE = cache
         except Exception as e:  # noqa: BLE001
             logger.warning("company name map unavailable: %s", e)
             return ""
     name = _NAME_CACHE.get(sym, "")
-    # A name that is just the ticker again (or empty) is useless on air.
+    # A name that is STILL just the ticker again (or empty) stays blank.
     return "" if name.upper() == sym else name
 
 
