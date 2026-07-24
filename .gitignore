@@ -45,3 +45,7 @@ data/journal/reports/*.sent
 client_secret_*.json
 docs/client_secret_*.json
 **/client_secret_*.json
+
+# Copyrighted source library — personal-use only, must NEVER be committed
+# (the RAG index in data/chromadb is likewise ignored above)
+Finance Books/
