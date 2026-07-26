@@ -257,7 +257,7 @@ def _render_benchmark_compare(plan, account: float, mkey: str) -> None:
                               "$%{y:,.0f}<extra></extra>",
             ))
         fig.update_layout(
-            title="Growth of $10,000 — this book's weights vs index funds",
+            title="Growth of $100,000 — this book's weights vs index funds",
             template="plotly_dark", height=420, hovermode="x unified",
             legend=dict(orientation="h", y=-0.15),
             margin=dict(l=40, r=20, t=50, b=40),

@@ -29,7 +29,7 @@ _SCENE_LABELS = {
     "book": "04 · Business Desk — the book",
     "movers": "05 · Movers in the Book",
     "race": "06 · Sports Desk — The Race",
-    "analysis": "07 · Market Analysis — the OROS 500",
+    "analysis": "07 · OROS Scan — Top Pick of the Day",
     "takeaway": "08 · The Takeaway",
     "signoff": "09 · Disclosure & Credits",
 }

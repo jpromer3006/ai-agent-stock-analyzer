@@ -25,7 +25,7 @@ import pandas as pd
 
 logger = logging.getLogger(__name__)
 
-START_VALUE = 10_000.0
+START_VALUE = 100_000.0   # match the $100,000 books everywhere on the desk
 
 # Benchmarks offered by default in the UI. Users can add any ticker on top.
 DEFAULT_BENCHMARKS = ["SPY", "QQQ"]

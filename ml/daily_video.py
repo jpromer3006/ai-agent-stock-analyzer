@@ -439,6 +439,94 @@ def _analysis_script(data: dict) -> list[str]:
     return [" ".join(s), _ANALYSIS_EXPLAINER]
 
 
+def _toppick_scene(plt, data: dict):
+    """OROS Scan — Top Pick of the Day (JP, 2026-07-27): the scan's verdict
+    on one card — top stock AND top ETF with the full trade plan numbers.
+    Replaces the breadth grid as the 07 segment; breadth remains journaled
+    and lives in the app's Stage Scan tab. Raises when no picks exist so
+    the rundown can fall back to the breadth scene."""
+    tp = (data.get("top_picks") or [])
+    etp = (data.get("etf_picks") or [])
+    if not tp and not etp:
+        raise ValueError("no picks today — fall back to breadth")
+    br = data.get("breadth") or {}
+    n500 = (data.get("oros500") or {}).get("count") or br.get("total") or 500
+
+    fig = plt.figure(figsize=(12.8, 7.2))
+    fig.patch.set_facecolor(_BG)
+    fig.text(0.06, 0.93, _esc(f"{br.get('date', '')} · the best of {n500} "
+             f"names graded overnight"), fontsize=13, color=_MUT,
+             family="monospace")
+    fig.text(0.06, 0.84, "OROS Scan — Top Pick of the Day",
+             fontsize=26, fontweight="bold", color=_FG)
+
+    def _block(y: float, label: str, p: dict, color: str) -> None:
+        fig.text(0.06, y + 0.10, label, fontsize=13, fontweight="bold",
+                 color=_MUT, family="monospace")
+        fig.text(0.06, y, _esc(_named(p["ticker"])), fontsize=21,
+                 fontweight="bold", color=color)
+        row = (f"last {p['last_close']:.2f}   buy-stop {p['buy_stop']:.2f}   "
+               f"stop {p['stop_loss']:.2f}   target {p['target']:.2f}   "
+               f"R/R {p['risk_reward']:.1f}")
+        fig.text(0.06, y - 0.075, _esc(row), fontsize=13, color=_FG,
+                 family="monospace")
+        sub = (f"setup: {p.get('setup', '?')}   bull {p['bull_prob']:.0%}   "
+               f"+{p['pct_above_ma']:.1f}% vs 30-week MA   "
+               f"{p.get('shares_1pct', '?')} sh at 1% risk")
+        fig.text(0.06, y - 0.135, _esc(sub), fontsize=11, color=_MUT,
+                 family="monospace")
+
+    y = 0.615
+    if tp:
+        _block(y, "STOCK TRACK", tp[0], _UP)
+        y -= 0.31
+    if etp:
+        _block(y, "ETF TRACK", etp[0], _BLUE)
+    fig.text(0.06, 0.105,
+             "The plan: enter ONLY if price takes out the buy-stop. "
+             "Exit on a weekly close below the stop.",
+             fontsize=12, color=_WARN, family="monospace")
+    fig.text(0.06, 0.045, _FOOTER, fontsize=9, color=_MUT)
+    return fig
+
+
+def _toppick_script(data: dict) -> list[str]:
+    tp = (data.get("top_picks") or [])
+    etp = (data.get("etf_picks") or [])
+    if not tp and not etp:
+        raise ValueError("no picks today — fall back to breadth")
+    br = data.get("breadth") or {}
+    n500 = (data.get("oros500") or {}).get("count") or br.get("total") or 500
+    s = [f"Now the moment the desk waits for — the OROS Scan, top pick of "
+         f"the day. Overnight the agents graded {n500} of the most liquid "
+         f"names on the tape, and this is what rose to the top."]
+    if tp:
+        p = tp[0]
+        s.append(
+            f"On the stock track: {_spoken(p['ticker'])}. The plan in plain "
+            f"English: it last closed at {p['last_close']:.2f} dollars. The "
+            f"system would only buy strength — a buy-stop at "
+            f"{p['buy_stop']:.2f}, nothing happens unless price proves "
+            f"itself first. If it triggers, the exit is a weekly close "
+            f"below {p['stop_loss']:.2f}, and the measured target is "
+            f"{p['target']:.2f}.")
+    if etp:
+        p = etp[0]
+        s.append(
+            f"And on the E T F track: {_spoken(p['ticker'])}, last at "
+            f"{p['last_close']:.2f}, buy-stop {p['buy_stop']:.2f}, stop "
+            f"{p['stop_loss']:.2f}, target {p['target']:.2f}.")
+    counts, tot = br.get("counts") or {}, max(br.get("total") or 0, 1)
+    if counts:
+        adv = 100 * counts.get("Advancing", 0) / tot
+        s.append(f"The backdrop: {adv:.0f} percent of the OROS five hundred "
+                 f"are advancing in Stage two — that's the tide these picks "
+                 f"swim in.")
+    s.append("Tomorrow evening the Closing Bell grades this call in public, "
+             "win or lose. That's the deal.")
+    return s
+
+
 def _takeaway_scene(plt, key: str):
     text = _TAKEAWAYS[key]
     body = text.replace("Tonight's takeaway. ", "")
@@ -1108,9 +1196,12 @@ def default_scripts(data: dict) -> dict[str, list[str]]:
     if cs and cs.get("rows"):
         out["race"] = _capstone_script(cs)
     try:
-        out["analysis"] = _analysis_script(data)
+        out["analysis"] = _toppick_script(data)
     except Exception:  # noqa: BLE001
-        pass
+        try:
+            out["analysis"] = _analysis_script(data)
+        except Exception:  # noqa: BLE001
+            pass
     out["takeaway"] = [_TAKEAWAYS[_takeaway_key(data, home_run is not None)]]
     out["signoff"] = _signoff_script(data)
     return {k: v for k, v in out.items() if v}
@@ -1177,12 +1268,21 @@ def generate_video_brief(data: dict, overrides: dict | None = None,
             scenes.append(("race", "Sports Desk — The Race",
                            _capstone_scene(plt, cs), _capstone_script(cs),
                            "sports"))
+        # 07: the scan's verdict — Top Pick of the Day (stock + ETF).
+        # Falls back to the stage-breadth grid on no-pick days so the
+        # segment never goes dark (JP, 2026-07-27).
         try:
-            scenes.append(("analysis", "Market Analysis — the OROS 500",
-                           _analysis_scene(plt, data),
-                           _analysis_script(data), "anchor"))
+            scenes.append(("analysis", "OROS Scan — Top Pick of the Day",
+                           _toppick_scene(plt, data),
+                           _toppick_script(data), "analyst"))
         except Exception as e:  # noqa: BLE001
-            logger.info("market analysis segment skipped: %s", e)
+            logger.info("top-pick segment: %s — using breadth fallback", e)
+            try:
+                scenes.append(("analysis", "Market Analysis — the OROS 500",
+                               _analysis_scene(plt, data),
+                               _analysis_script(data), "anchor"))
+            except Exception as e2:  # noqa: BLE001
+                logger.info("market analysis segment skipped: %s", e2)
         tk = _takeaway_key(data, home_run is not None)
         scenes.append(("takeaway", "The Takeaway", _takeaway_scene(plt, tk),
                        [_TAKEAWAYS[tk]], "anchor"))

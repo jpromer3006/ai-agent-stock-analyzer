@@ -712,7 +712,7 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
                                  linestyle="-" if col == "Portfolio" else "--",
                                  label=col,
                                  color="#00a344" if col == "Portfolio" else None)
-                    ax1.set_title(_esc("Growth of $10,000 — this book vs index & mutual funds"),
+                    ax1.set_title(_esc("Growth of $100,000 — this book vs index & mutual funds"),
                                   fontsize=13, fontweight="bold", loc="left")
                     ax1.legend(loc="upper left", fontsize=8)
                     ax1.grid(alpha=0.25)
