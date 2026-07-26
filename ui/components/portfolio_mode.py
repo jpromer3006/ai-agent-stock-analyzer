@@ -191,7 +191,7 @@ def _risk_score(plan, account: float, max_pos: int) -> Optional[dict]:
 
 
 def _render_benchmark_compare(plan, account: float, mkey: str) -> None:
-    """Portfolio vs index funds: hypothetical growth of $10k for the book's
+    """Portfolio vs index funds: hypothetical growth of $100k for the book's
     CURRENT weights next to user-chosen benchmarks. The journaled scoreboard
     stays the honest forward record; this answers 'would an index fund have
     done as well?' over a past window."""
@@ -583,6 +583,21 @@ def _render_latest_journaled_build() -> None:
                          "with reasons"):
             for b in bench:
                 st.markdown(f"- **{b.get('ticker')}** — {b.get('reason')}")
+    # vs Index Funds on the LANDING view too (JP, 2026-07-27): previously the
+    # comparison only appeared after a session build, so on a fresh launch the
+    # chart was invisible. A tiny shim adapts the journaled dict to the plan
+    # shape the renderer expects (h.ticker / h.weight_pct attrs + plan.cash).
+    try:
+        from types import SimpleNamespace as _NS
+        _plan_shim = _NS(
+            holdings=[_NS(ticker=h.get("ticker", ""),
+                          weight_pct=float(h.get("weight_pct") or 0))
+                      for h in rec.get("holdings", [])],
+            cash=float(rec.get("cash") or max(acct - inv, 0.0)),
+        )
+        _render_benchmark_compare(_plan_shim, acct, "journaled")
+    except Exception as _e:  # noqa: BLE001
+        st.caption(f"vs Index Funds chart unavailable: {_e}")
     st.caption("Journaled by the autonomous morning run. Agentic Autonomous Mode below "
                "constructs a fresh book without touching this record.")
     st.markdown("---")
