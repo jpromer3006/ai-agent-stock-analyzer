@@ -29,10 +29,10 @@
       "led_by": "sepa",
       "sentiment": 0.257,
       "earnings_risk": false,
-      "outcome_return": 0.0295,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": 0.0336,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "BKH",
@@ -46,10 +46,10 @@
       "led_by": "sepa",
       "sentiment": 0.105,
       "earnings_risk": false,
-      "outcome_return": 0.0066,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": 0.0091,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "F",
@@ -63,10 +63,10 @@
       "led_by": "sepa",
       "sentiment": 0.111,
       "earnings_risk": false,
-      "outcome_return": -0.0056,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": 0.0098,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "MDLZ",
@@ -80,10 +80,10 @@
       "led_by": "technical",
       "sentiment": 0.125,
       "earnings_risk": false,
-      "outcome_return": -0.0156,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.0079,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -193,8 +193,8 @@
     }
   ],
   "horizon_days": 5,
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
-  "realized_final_count": 0,
+  "realized_avg_return": 0.0112,
+  "realized_hit_rate": 0.75,
+  "realized_final_count": 4,
   "realized_stop_exits": 0
 }

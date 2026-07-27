@@ -78,6 +78,19 @@
   {
    "date": "2026-07-24",
    "picks": []
+  },
+  {
+   "date": "2026-07-27",
+   "picks": [
+    {
+     "ticker": "BANR",
+     "buy_stop": 72.79,
+     "stop_loss": 63.85,
+     "target": 80.2,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }

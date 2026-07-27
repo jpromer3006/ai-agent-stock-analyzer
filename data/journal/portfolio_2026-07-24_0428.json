@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.164,
       "earnings_risk": true,
-      "outcome_return": null
+      "outcome_return": 0.0215,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "XLU",
@@ -58,7 +61,10 @@
       "led_by": "sepa",
       "sentiment": 0.195,
       "earnings_risk": true,
-      "outcome_return": null
+      "outcome_return": 0.0133,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "XOP",
@@ -86,7 +92,10 @@
       "led_by": "weinstein",
       "sentiment": 0.152,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0161,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     }
   ],
   "bench": [
