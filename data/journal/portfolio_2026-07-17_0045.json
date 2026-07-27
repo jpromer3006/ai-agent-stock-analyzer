@@ -30,7 +30,7 @@
       "led_by": "sepa",
       "sentiment": 0.262,
       "earnings_risk": false,
-      "outcome_return": 0.0168,
+      "outcome_return": 0.0197,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.276,
       "earnings_risk": false,
-      "outcome_return": 0.0152,
+      "outcome_return": 0.0246,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.251,
       "earnings_risk": false,
-      "outcome_return": -0.0717,
+      "outcome_return": -0.0591,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -81,7 +81,7 @@
       "led_by": "sepa",
       "sentiment": 0.276,
       "earnings_risk": false,
-      "outcome_return": -0.0053,
+      "outcome_return": -0.0104,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -98,7 +98,7 @@
       "led_by": "sepa",
       "sentiment": 0.118,
       "earnings_risk": true,
-      "outcome_return": 0.018,
+      "outcome_return": 0.0179,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -115,7 +115,7 @@
       "led_by": "sepa",
       "sentiment": 0.053,
       "earnings_risk": false,
-      "outcome_return": -0.0287,
+      "outcome_return": -0.0336,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.285,
       "earnings_risk": false,
-      "outcome_return": 0.0524,
+      "outcome_return": 0.0483,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -149,7 +149,7 @@
       "led_by": "sepa",
       "sentiment": 0.358,
       "earnings_risk": true,
-      "outcome_return": -0.0177,
+      "outcome_return": -0.0183,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false

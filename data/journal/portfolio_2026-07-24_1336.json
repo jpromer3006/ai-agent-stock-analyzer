@@ -44,7 +44,7 @@
       "led_by": "sepa",
       "sentiment": 0.369,
       "earnings_risk": false,
-      "outcome_return": 0.0102,
+      "outcome_return": 0.0163,
       "outcome_exit": "open",
       "outcome_days": 1,
       "outcome_final": false
@@ -75,7 +75,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0213,
+      "outcome_return": 0.0245,
       "outcome_exit": "open",
       "outcome_days": 1,
       "outcome_final": false
@@ -92,7 +92,7 @@
       "led_by": "sepa",
       "sentiment": 0.096,
       "earnings_risk": false,
-      "outcome_return": -0.0209,
+      "outcome_return": -0.0398,
       "outcome_exit": "open",
       "outcome_days": 1,
       "outcome_final": false
@@ -123,7 +123,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0147,
+      "outcome_return": 0.0242,
       "outcome_exit": "open",
       "outcome_days": 1,
       "outcome_final": false
@@ -140,10 +140,7 @@
       "led_by": "sepa",
       "sentiment": 0.138,
       "earnings_risk": false,
-      "outcome_return": -0.1225,
-      "outcome_exit": "stop",
-      "outcome_days": 1,
-      "outcome_final": true
+      "outcome_return": null
     },
     {
       "ticker": "KALU",
@@ -171,7 +168,7 @@
       "led_by": "sepa",
       "sentiment": 0.214,
       "earnings_risk": false,
-      "outcome_return": -0.0482,
+      "outcome_return": -0.0191,
       "outcome_exit": "open",
       "outcome_days": 1,
       "outcome_final": false
@@ -188,7 +185,7 @@
       "led_by": "sepa",
       "sentiment": 0.214,
       "earnings_risk": false,
-      "outcome_return": -0.0204,
+      "outcome_return": -0.0091,
       "outcome_exit": "open",
       "outcome_days": 1,
       "outcome_final": false
@@ -205,7 +202,7 @@
       "led_by": "sepa",
       "sentiment": 0.107,
       "earnings_risk": false,
-      "outcome_return": 0.0181,
+      "outcome_return": 0.0093,
       "outcome_exit": "open",
       "outcome_days": 1,
       "outcome_final": false
@@ -282,8 +279,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.1225,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
 }

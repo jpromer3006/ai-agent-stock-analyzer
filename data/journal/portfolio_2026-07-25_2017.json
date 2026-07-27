@@ -1,0 +1,307 @@
+{
+  "timestamp": "2026-07-25T20:17:05.627269Z",
+  "date": "2026-07-25",
+  "regime": "bull",
+  "mandate": "value_hold",
+  "account": 100000.0,
+  "invested": 53634.55,
+  "cash": 46365.45,
+  "weights": {
+    "swing": 0.019,
+    "sepa": 0.076,
+    "value": 0.358,
+    "technical": 0.046,
+    "canslim": 0.096,
+    "growth": 0.225,
+    "weinstein": 0.124,
+    "ipo": 0.057
+  },
+  "note": "UI build \u00b7 value_hold",
+  "holdings": [
+    {
+      "ticker": "C",
+      "sector": "Financials",
+      "conviction": 0.6664,
+      "shares": 16,
+      "dollars": 2115.04,
+      "weight_pct": 2.12,
+      "entry": 132.19,
+      "stop": 122.86,
+      "led_by": "weinstein",
+      "sentiment": 0.109,
+      "earnings_risk": true,
+      "outcome_return": 0.017,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AIG",
+      "sector": "Financials",
+      "conviction": 0.6186,
+      "shares": 117,
+      "dollars": 9250.02,
+      "weight_pct": 9.25,
+      "entry": 79.06,
+      "stop": 76.4,
+      "led_by": "swing",
+      "sentiment": 0.11,
+      "earnings_risk": false,
+      "outcome_return": 0.0082,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.585,
+      "shares": 25,
+      "dollars": 1551.25,
+      "weight_pct": 1.55,
+      "entry": 62.05,
+      "stop": 55.99,
+      "led_by": "sepa",
+      "sentiment": -0.012,
+      "earnings_risk": true,
+      "outcome_return": 0.0087,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "VZ",
+      "sector": "Communication Services",
+      "conviction": 0.5024,
+      "shares": 74,
+      "dollars": 3432.12,
+      "weight_pct": 3.43,
+      "entry": 46.38,
+      "stop": 44.29,
+      "led_by": "sepa",
+      "sentiment": -0.079,
+      "earnings_risk": true,
+      "outcome_return": 0.0162,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "T",
+      "sector": "Communication Services",
+      "conviction": 0.4479,
+      "shares": 107,
+      "dollars": 2581.91,
+      "weight_pct": 2.58,
+      "entry": 24.13,
+      "stop": 22.67,
+      "led_by": "value",
+      "sentiment": -0.039,
+      "earnings_risk": true,
+      "outcome_return": 0.0017,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CVX",
+      "sector": "Energy",
+      "conviction": 0.4126,
+      "shares": 25,
+      "dollars": 4869.75,
+      "weight_pct": 4.87,
+      "entry": 194.79,
+      "stop": 182.58,
+      "led_by": "sepa",
+      "sentiment": -0.094,
+      "earnings_risk": false,
+      "outcome_return": -0.017,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "COP",
+      "sector": "Energy",
+      "conviction": 0.3982,
+      "shares": 50,
+      "dollars": 6013.0,
+      "weight_pct": 6.01,
+      "entry": 120.26,
+      "stop": 114.04,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0207,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "conviction": 0.3713,
+      "shares": 26,
+      "dollars": 5377.84,
+      "weight_pct": 5.38,
+      "entry": 206.84,
+      "stop": 194.88,
+      "led_by": "weinstein",
+      "sentiment": 0.057,
+      "earnings_risk": false,
+      "outcome_return": -0.0048,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "GM",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.3676,
+      "shares": 43,
+      "dollars": 3553.52,
+      "weight_pct": 3.55,
+      "entry": 82.64,
+      "stop": 79.05,
+      "led_by": "sepa",
+      "sentiment": 0.046,
+      "earnings_risk": true,
+      "outcome_return": 0.0347,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "DE",
+      "sector": "Industrials",
+      "conviction": 0.3576,
+      "shares": 6,
+      "dollars": 3768.96,
+      "weight_pct": 3.77,
+      "entry": 628.16,
+      "stop": 583.37,
+      "led_by": "sepa",
+      "sentiment": 0.012,
+      "earnings_risk": false,
+      "outcome_return": -0.0048,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "KHC",
+      "sector": "Consumer Staples",
+      "conviction": 0.3568,
+      "shares": 286,
+      "dollars": 7341.62,
+      "weight_pct": 7.34,
+      "entry": 25.67,
+      "stop": 24.58,
+      "led_by": "swing",
+      "sentiment": 0.166,
+      "earnings_risk": false,
+      "outcome_return": 0.016,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "FDX",
+      "sector": "Industrials",
+      "conviction": 0.3565,
+      "shares": 12,
+      "dollars": 3779.52,
+      "weight_pct": 3.78,
+      "entry": 314.96,
+      "stop": 302.29,
+      "led_by": "swing",
+      "sentiment": 0.107,
+      "earnings_risk": true,
+      "outcome_return": -0.0009,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "USB",
+      "sector": "Financials",
+      "composite": 0.518,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "composite": 0.492,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "BRK-B",
+      "sector": "Financials",
+      "composite": 0.488,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "WFC",
+      "sector": "Financials",
+      "composite": 0.391,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "SCHW",
+      "sector": "Financials",
+      "composite": 0.36,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "UNH",
+      "sector": "Financials",
+      "composite": 0.358,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "SBUX",
+      "sector": "Consumer Discretionary",
+      "composite": 0.348,
+      "reason": "outranked \u2014 book full at 12"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "100 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: value 38%, growth 24%, weinstein 10%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.42, weinstein x1.38"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 54% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 46%"
+    }
+  ],
+  "horizon_days": 120,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}

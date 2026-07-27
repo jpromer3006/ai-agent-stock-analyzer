@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0411,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CSX",
@@ -44,7 +47,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0475,
+      "outcome_return": 0.0531,
       "outcome_exit": "open",
       "outcome_days": 2,
       "outcome_final": false
@@ -61,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0178,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "KRE",
@@ -92,7 +98,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0492,
+      "outcome_return": -0.0412,
       "outcome_exit": "open",
       "outcome_days": 2,
       "outcome_final": false
@@ -109,7 +115,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0253,
+      "outcome_return": 0.0321,
       "outcome_exit": "open",
       "outcome_days": 2,
       "outcome_final": false
@@ -126,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0424,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "TGT",
@@ -140,7 +149,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0025,
+      "outcome_return": 0.0014,
       "outcome_exit": "open",
       "outcome_days": 2,
       "outcome_final": false
@@ -157,7 +166,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0442,
+      "outcome_return": -0.015,
       "outcome_exit": "open",
       "outcome_days": 2,
       "outcome_final": false
@@ -174,7 +183,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0202,
+      "outcome_return": 0.0225,
       "outcome_exit": "open",
       "outcome_days": 2,
       "outcome_final": false
@@ -191,7 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.018,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "UPS",
@@ -205,7 +217,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0156,
+      "outcome_return": -0.015,
       "outcome_exit": "open",
       "outcome_days": 2,
       "outcome_final": false

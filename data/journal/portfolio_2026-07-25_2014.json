@@ -1,0 +1,307 @@
+{
+  "timestamp": "2026-07-25T20:14:32.701644Z",
+  "date": "2026-07-25",
+  "regime": "bull",
+  "mandate": "fast_momentum",
+  "account": 100000.0,
+  "invested": 90987.35,
+  "cash": 9012.65,
+  "weights": {
+    "swing": 0.099,
+    "sepa": 0.286,
+    "technical": 0.08,
+    "canslim": 0.197,
+    "growth": 0.035,
+    "weinstein": 0.107,
+    "ipo": 0.196
+  },
+  "note": "UI build \u00b7 fast_momentum",
+  "holdings": [
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.7152,
+      "shares": 23,
+      "dollars": 7659.46,
+      "weight_pct": 7.66,
+      "entry": 333.02,
+      "stop": 306.23,
+      "led_by": "sepa",
+      "sentiment": 0.179,
+      "earnings_risk": false,
+      "outcome_return": 0.007,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.7124,
+      "shares": 77,
+      "dollars": 7301.91,
+      "weight_pct": 7.3,
+      "entry": 94.83,
+      "stop": 86.8,
+      "led_by": "sepa",
+      "sentiment": 0.133,
+      "earnings_risk": false,
+      "outcome_return": 0.0076,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "SPG",
+      "sector": "Real Estate",
+      "conviction": 0.6627,
+      "shares": 40,
+      "dollars": 9191.2,
+      "weight_pct": 9.19,
+      "entry": 229.78,
+      "stop": 214.4,
+      "led_by": "sepa",
+      "sentiment": 0.232,
+      "earnings_risk": false,
+      "outcome_return": 0.004,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "COP",
+      "sector": "Energy",
+      "conviction": 0.6493,
+      "shares": 99,
+      "dollars": 11905.74,
+      "weight_pct": 11.91,
+      "entry": 120.26,
+      "stop": 114.04,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0207,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CVX",
+      "sector": "Energy",
+      "conviction": 0.6346,
+      "shares": 51,
+      "dollars": 9934.29,
+      "weight_pct": 9.93,
+      "entry": 194.79,
+      "stop": 182.58,
+      "led_by": "sepa",
+      "sentiment": -0.094,
+      "earnings_risk": false,
+      "outcome_return": -0.017,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "MRK",
+      "sector": "Health Care",
+      "conviction": 0.6247,
+      "shares": 60,
+      "dollars": 7864.2,
+      "weight_pct": 7.86,
+      "entry": 131.07,
+      "stop": 120.73,
+      "led_by": "sepa",
+      "sentiment": 0.269,
+      "earnings_risk": false,
+      "outcome_return": 0.0021,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "MO",
+      "sector": "Consumer Staples",
+      "conviction": 0.6158,
+      "shares": 164,
+      "dollars": 11970.36,
+      "weight_pct": 11.97,
+      "entry": 72.99,
+      "stop": 70.48,
+      "led_by": "sepa",
+      "sentiment": 0.039,
+      "earnings_risk": false,
+      "outcome_return": -0.0121,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "DE",
+      "sector": "Industrials",
+      "conviction": 0.6102,
+      "shares": 13,
+      "dollars": 8166.08,
+      "weight_pct": 8.17,
+      "entry": 628.16,
+      "stop": 583.37,
+      "led_by": "sepa",
+      "sentiment": 0.012,
+      "earnings_risk": false,
+      "outcome_return": -0.0048,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "GD",
+      "sector": "Industrials",
+      "conviction": 0.6017,
+      "shares": 19,
+      "dollars": 7348.25,
+      "weight_pct": 7.35,
+      "entry": 386.75,
+      "stop": 354.13,
+      "led_by": "sepa",
+      "sentiment": 0.186,
+      "earnings_risk": false,
+      "outcome_return": 0.0109,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AMGN",
+      "sector": "Health Care",
+      "conviction": 0.5937,
+      "shares": 24,
+      "dollars": 9024.96,
+      "weight_pct": 9.02,
+      "entry": 376.04,
+      "stop": 350.12,
+      "led_by": "sepa",
+      "sentiment": 0.049,
+      "earnings_risk": false,
+      "outcome_return": 0.0018,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "BMY",
+      "sector": "Other",
+      "conviction": 0.5887,
+      "shares": 10,
+      "dollars": 620.9,
+      "weight_pct": 0.62,
+      "entry": 62.09,
+      "stop": 57.02,
+      "led_by": "sepa",
+      "sentiment": -0.049,
+      "earnings_risk": false,
+      "outcome_return": 0.0083,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "UNP",
+      "sector": "Industrials",
+      "composite": 0.675,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "composite": 0.672,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "JPM",
+      "sector": "Financials",
+      "composite": 0.669,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "USB",
+      "sector": "Financials",
+      "composite": 0.669,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "PM",
+      "sector": "Consumer Staples",
+      "composite": 0.619,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "FDX",
+      "sector": "Industrials",
+      "composite": 0.611,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "GS",
+      "sector": "Financials",
+      "composite": 0.594,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "RTX",
+      "sector": "Industrials",
+      "composite": 0.592,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "JNJ",
+      "sector": "Health Care",
+      "composite": 0.591,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "LLY",
+      "sector": "Health Care",
+      "composite": 0.589,
+      "reason": "risk wallet spent \u2014 worst-case loss cap reached"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "100 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 23%, ipo 22%, canslim 19%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.42, weinstein x1.38"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "11 holdings, 91% invested, 7 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 9%"
+    }
+  ],
+  "horizon_days": 5,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}

@@ -83,11 +83,11 @@
    "date": "2026-07-27",
    "picks": [
     {
-     "ticker": "BANR",
-     "buy_stop": 72.79,
-     "stop_loss": 63.85,
-     "target": 80.2,
-     "is_etf": false,
+     "ticker": "DBC",
+     "buy_stop": 31.85,
+     "stop_loss": 27.14,
+     "target": 37.24,
+     "is_etf": true,
      "home_run_flag": false
     }
    ]
