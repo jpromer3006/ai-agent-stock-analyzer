@@ -311,19 +311,27 @@ def _card(plt, title: str, lines: list[tuple[str, dict]], kicker: str = ""):
     return fig
 
 
-def _coldopen_scene(plt, data: dict, home_run: dict | None):
+def _coldopen_scene(plt, data: dict, home_run: dict | None,
+                    story: dict | None = None):
     """The rundown card: three headlines and the no-human tagline."""
     day, total = _race_day()
     regime = (data.get("regime") or "?").upper()
+    if home_run:
+        line2 = (f"02  TOP STORY           {_named(home_run['ticker'])[:34]} — "
+                 f"home-run setup")
+        c2 = _GOLD
+    elif story:
+        line2 = (f"02  TOP PICK            {_named(story['ticker'])[:34]} — "
+                 f"chart, strategy, trade plan")
+        c2 = _GOLD
+    else:
+        line2 = "02  TOP STORY           no setup cleared the bar — discipline day"
+        c2 = _MUT
     lines = [
         (f"01  THE MARKET OPEN      regime {regime}"
          + (f", VIX {data['vix'].get('level', '')}" if data.get("vix") else ""),
          {"color": _UP if regime == "BULL" else _WARN, "size": 15}),
-        ((f"02  TOP STORY           {_named(home_run['ticker'])[:34]} — "
-          f"home-run setup"
-          if home_run else
-          "02  TOP STORY           no setup cleared the bar — discipline day"),
-         {"color": _GOLD if home_run else _MUT, "size": 15}),
+        (line2, {"color": c2, "size": 15}),
         (f"03  THE RACE            day {day} of {total} — three books, "
          f"same $100,000", {"color": _BLUE, "size": 15}),
         ("", {"size": 8, "dy": 0.03}),
@@ -336,7 +344,8 @@ def _coldopen_scene(plt, data: dict, home_run: dict | None):
                  kicker=data.get("date", ""))
 
 
-def _coldopen_script(data: dict, home_run: dict | None) -> list[str]:
+def _coldopen_script(data: dict, home_run: dict | None,
+                     story: dict | None = None) -> list[str]:
     day, total = _race_day()
     regime = (data.get("regime") or "mixed").upper()
     dyn = [f"Good morning. From the OROS Market Desk, here is the rundown "
@@ -346,8 +355,12 @@ def _coldopen_script(data: dict, home_run: dict | None) -> list[str]:
         dyn.append(f"Our top story: {_spoken(home_run['ticker'])} cleared "
                    f"every gate and the home-run bar. The full trade plan "
                    f"is ahead.")
+    elif story:
+        dyn.append(f"Our top pick of the day: {_spoken(story['ticker'])}. "
+                   f"The chart, the strategy behind it, and the exact trade "
+                   f"plan are ahead.")
     else:
-        dyn.append("No setup cleared our home-run bar today, and you will "
+        dyn.append("No setup cleared our bar today, and you will "
                    "hear why that is a story in itself.")
     dyn.append(f"And at the sports desk, day {day} of {total} in the race: "
                f"the live book, the frozen book, and the index, all running "
@@ -516,12 +529,6 @@ def _toppick_script(data: dict) -> list[str]:
             f"And on the E T F track: {_spoken(p['ticker'])}, last at "
             f"{p['last_close']:.2f}, buy-stop {p['buy_stop']:.2f}, stop "
             f"{p['stop_loss']:.2f}, target {p['target']:.2f}.")
-    counts, tot = br.get("counts") or {}, max(br.get("total") or 0, 1)
-    if counts:
-        adv = 100 * counts.get("Advancing", 0) / tot
-        s.append(f"The backdrop: {adv:.0f} percent of the OROS five hundred "
-                 f"are advancing in Stage two — that's the tide these picks "
-                 f"swim in.")
     s.append("Tomorrow evening the Closing Bell grades this call in public, "
              "win or lose. That's the deal.")
     return s
@@ -1186,22 +1193,18 @@ def default_scripts(data: dict) -> dict[str, list[str]]:
     picks = (data.get("top_picks") or []) + (data.get("etf_picks") or [])
     home_run = next((p for p in picks if _is_home_run(p)), None)
     story = home_run or (picks[0] if picks else None)
-    out = {"coldopen": _coldopen_script(data, home_run),
+    out = {"coldopen": _coldopen_script(data, home_run, story),
            "market": _market_script(data),
            "topstory": (_pick_script(story, home_run=home_run is not None)
                         if story else _no_pick_script()),
-           "book": _book_script(data) if data.get("proposal") else [],
-           "movers": _movers_script(data)}
+           "book": _book_script(data) if data.get("proposal") else []}
     cs = data.get("capstone")
     if cs and cs.get("rows"):
         out["race"] = _capstone_script(cs)
     try:
         out["analysis"] = _toppick_script(data)
     except Exception:  # noqa: BLE001
-        try:
-            out["analysis"] = _analysis_script(data)
-        except Exception:  # noqa: BLE001
-            pass
+        pass
     out["takeaway"] = [_TAKEAWAYS[_takeaway_key(data, home_run is not None)]]
     out["signoff"] = _signoff_script(data)
     return {k: v for k, v in out.items() if v}
@@ -1234,8 +1237,9 @@ def generate_video_brief(data: dict, overrides: dict | None = None,
 
         scenes: list[tuple[str, str, object, list[str], str]] = []
         scenes.append(("coldopen", "Tonight on the Market Desk",
-                       _coldopen_scene(plt, data, home_run),
-                       _coldopen_script(data, home_run), "anchor"))
+                       _coldopen_scene(plt, data, home_run, story_pick),
+                       _coldopen_script(data, home_run, story_pick),
+                       "anchor"))
         scenes.append(("market", "The Market Open",
                        _market_scene(plt, data), _market_script(data),
                        "anchor"))
@@ -1255,34 +1259,27 @@ def generate_video_brief(data: dict, overrides: dict | None = None,
                                    {"weight": "bold", "size": 17, "color": _WARN}),
                                   ("No setup means no trade.", {"color": _MUT})]),
                            _no_pick_script(), "analyst"))
-        if data.get("proposal"):
-            scenes.append(("book", "Business Desk — the book",
-                           _book_scene(plt, data), _book_script(data),
-                           "anchor"))
-        mv = _movers_scene(plt, data)
-        if mv is not None:
-            scenes.append(("movers", "Movers in the Book", mv,
-                           _movers_script(data), "anchor"))
-        cs = data.get("capstone")
-        if cs and cs.get("rows"):
-            scenes.append(("race", "Sports Desk — The Race",
-                           _capstone_scene(plt, cs), _capstone_script(cs),
-                           "sports"))
-        # 07: the scan's verdict — Top Pick of the Day (stock + ETF).
-        # Falls back to the stage-breadth grid on no-pick days so the
-        # segment never goes dark (JP, 2026-07-27).
+        # 04: the scan's verdict card (stock + ETF trade plan). Advisor cut
+        # (2026-07-27): the four-season breadth scene is OFF AIR — backend
+        # context that never changed on camera; it lives in the app's Stage
+        # Scan tab. No fallback: on a no-pick day the segment is skipped.
         try:
             scenes.append(("analysis", "OROS Scan — Top Pick of the Day",
                            _toppick_scene(plt, data),
                            _toppick_script(data), "analyst"))
         except Exception as e:  # noqa: BLE001
-            logger.info("top-pick segment: %s — using breadth fallback", e)
-            try:
-                scenes.append(("analysis", "Market Analysis — the OROS 500",
-                               _analysis_scene(plt, data),
-                               _analysis_script(data), "anchor"))
-            except Exception as e2:  # noqa: BLE001
-                logger.info("market analysis segment skipped: %s", e2)
+            logger.info("top-pick segment skipped: %s", e)
+        if data.get("proposal"):
+            scenes.append(("book", "Business Desk — the book",
+                           _book_scene(plt, data), _book_script(data),
+                           "anchor"))
+        # Movers moved to the Closing Bell (advisor restructure): the morning
+        # was narrating yesterday's moves; the evening owns the day's result.
+        cs = data.get("capstone")
+        if cs and cs.get("rows"):
+            scenes.append(("race", "Sports Desk — The Race",
+                           _capstone_scene(plt, cs), _capstone_script(cs),
+                           "sports"))
         tk = _takeaway_key(data, home_run is not None)
         scenes.append(("takeaway", "The Takeaway", _takeaway_scene(plt, tk),
                        [_TAKEAWAYS[tk]], "anchor"))
@@ -1633,15 +1630,45 @@ def _loop_script(refl: dict) -> list[str]:
     return [" ".join(s)]
 
 
+def _grade_chart_script(v: dict) -> list[str]:
+    """The Top Pick discussed over its own chart: triggered or not,
+    right call or wrong guess, with the numbers (advisor restructure,
+    2026-07-27)."""
+    t = _spoken(v.get("ticker", ""))
+    bs = v.get("buy_stop")
+    sl = v.get("stop_loss")
+    pct = v.get("vs_trigger_pct")
+    verdict = v.get("verdict", "")
+    if verdict in ("home_run", "triggered_up"):
+        return [f"Here is the chart behind the grade. {t} took out the "
+                f"buy-stop at {bs:.2f} and closed "
+                f"{pct:+.1f} percent above it — the system guessed right, "
+                f"and the plan is live: the exit is a weekly close below "
+                f"{sl:.2f}, nothing else."]
+    if verdict == "triggered_down":
+        return [f"Here is the chart behind the grade. {t} took out the "
+                f"buy-stop at {bs:.2f}, then faded to {pct:+.1f} percent "
+                f"below it — the system guessed wrong on the day, and it "
+                f"says so out loud. The stop at {sl:.2f} decides what "
+                f"happens next; that is exactly what it is for."]
+    return [f"Here is the chart behind the call. {t} never touched the "
+            f"buy-stop at {bs:.2f}, so not one simulated dollar was ever "
+            f"at risk. That is not a wrong guess — it is a no-bet. The "
+            f"order sits and waits for proof of strength."]
+
+
 def generate_evening_brief(verdicts: list[dict], tally: dict,
                            shift: dict | None = None,
                            reflection: dict | None = None,
                            idx_moves: dict | None = None,
+                           data: dict | None = None,
                            ) -> tuple[Path | None, str]:
-    """The Closing Bell MP4. Verdict first (the loop catching its own wins
-    and losses), then the Second Look (evening re-scan vs the open), The
-    Loop (self-reflection + tomorrow), the day's tally, sign-off.
-    Returns (path or None, status)."""
+    """The Closing Bell MP4 (advisor restructure, 2026-07-27).
+    Rundown: the Verdict, the Top Pick graded over its own chart, Movers
+    in the Book, The Loop (self-reflection on the morning strategy), and
+    the Portfolio Race measured at the close. The Second Look breadth
+    scene is off air (seasons are backend context), and the old tally
+    card is replaced by the race chart. Returns (path or None, status)."""
     if os.environ.get("OROS_VIDEO", "1") == "0":
         return None, "Closing Bell: disabled (OROS_VIDEO=0)."
     if not shutil.which("ffmpeg"):
@@ -1658,14 +1685,29 @@ def generate_evening_brief(verdicts: list[dict], tally: dict,
             ("verdict", "The Verdict", _verdict_scene(plt, verdicts),
              _verdict_script(verdicts), "analyst"),
         ]
-        if shift and shift.get("close"):
+        # The Top Pick, graded over its own chart: was it triggered, was
+        # the call right or wrong, and what do the numbers say.
+        graded = [v for v in (verdicts or []) if v.get("buy_stop")]
+        if graded:
             try:
-                scenes.append(("second_look", "The Second Look",
-                               _second_look_scene(plt, shift, idx_moves),
-                               _second_look_script(shift, idx_moves),
-                               "analyst"))
+                from ml.daily_report import pick_chart_fig
+                fig = pick_chart_fig(plt, graded[0])
+                if fig is not None:
+                    scenes.append(("grade_chart", "The Top Pick, Graded",
+                                   fig, _grade_chart_script(graded[0]),
+                                   "analyst"))
             except Exception as e:  # noqa: BLE001
-                logger.warning("second look scene failed: %s", e)
+                logger.warning("grade chart scene failed: %s", e)
+        # Movers in the Book — moved here from the morning show: the
+        # evening owns the day's gainers and laggards.
+        if data:
+            try:
+                mv = _movers_scene(plt, data)
+                if mv is not None:
+                    scenes.append(("movers", "Movers in the Book", mv,
+                                   _movers_script(data), "anchor"))
+            except Exception as e:  # noqa: BLE001
+                logger.warning("movers scene failed: %s", e)
         if reflection:
             try:
                 scenes.append(("loop", "The Loop",
@@ -1673,10 +1715,16 @@ def generate_evening_brief(verdicts: list[dict], tally: dict,
                                _loop_script(reflection), "anchor"))
             except Exception as e:  # noqa: BLE001
                 logger.warning("loop scene failed: %s", e)
-        ts = _tally_script(tally)
-        if ts:
-            scenes.append(("tally", "Who Won the Day",
-                           _tally_scene(plt, tally), ts, "sports"))
+        # The Portfolio and the Race, measured at the close — where the
+        # day's numbers are real.
+        cs = (data or {}).get("capstone")
+        if cs and cs.get("rows"):
+            try:
+                scenes.append(("race", "The Portfolio — the Race at the Close",
+                               _capstone_scene(plt, cs),
+                               _capstone_script(cs), "sports"))
+            except Exception as e:  # noqa: BLE001
+                logger.warning("race scene failed: %s", e)
         scenes.append(("close", "Sign-off",
                        _card(plt, "The Closing Bell",
                              [("Graded in public. Journaled forever.",

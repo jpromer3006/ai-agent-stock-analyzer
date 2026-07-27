@@ -198,10 +198,17 @@ def send_evening_report(to: str | None = None) -> None:
     pnl_rows = (pnl.get("rows") or []) if rec else []
     refl = _reflection(rec, pnl_rows, shift)
 
-    # 6. Video -> YouTube -> email.
+    # 6. Video -> YouTube -> email. Full report data feeds the evening's
+    # Movers and Race scenes (advisor restructure, 2026-07-27).
+    data = None
+    try:
+        from ml.daily_report import build_report_data
+        data = build_report_data()
+    except Exception as e:  # noqa: BLE001
+        logger.warning("evening report data unavailable: %s", e)
     video, note = generate_evening_brief(verdicts, tally, shift=shift,
                                          reflection=refl,
-                                         idx_moves=idx_moves)
+                                         idx_moves=idx_moves, data=data)
     logger.info("%s", note)
 
     hr = next((v["ticker"] for v in verdicts if v["verdict"] == "home_run"),
