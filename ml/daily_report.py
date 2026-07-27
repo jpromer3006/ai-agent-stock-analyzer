@@ -170,12 +170,12 @@ def build_report_data(opps: dict | None = None, changes: dict | None = None) -> 
     # runner didn't hand us changes (standalone report runs).
     if not changes and rec:
         try:
-            import json as _json
-            from ml.portfolio_journal import list_proposals
-            props = list_proposals()
-            if len(props) >= 2:
-                prev = [h["ticker"] for h in
-                        _json.loads(props[-2].read_text()).get("holdings", [])]
+            # Mandate-aware baseline (phantom-drop fix, 2026-07-27): compare
+            # only against the previous build of the SAME mandate, so in-app
+            # experiments can never contaminate the emailed added/dropped list.
+            from ml.portfolio_journal import previous_holdings_same_mandate
+            prev = previous_holdings_same_mandate(rec.get("mandate", ""))
+            if prev:
                 from ml.notifier import detect_changes
                 changes = detect_changes([h["ticker"] for h in rec.get("holdings", [])], prev)
         except Exception:

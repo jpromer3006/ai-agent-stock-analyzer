@@ -189,12 +189,11 @@ def main() -> int:
 
     # 6. Changes + opportunities + alert (so nothing is left out)
     from ml.notifier import detect_changes, scan_opportunities, build_alert, notify
-    prev_holdings = []
-    if len(props) >= 2:
-        try:
-            prev_holdings = [h["ticker"] for h in json.loads(props[-2].read_text()).get("holdings", [])]
-        except Exception:
-            pass
+    # Mandate-aware baseline (phantom-drop fix, 2026-07-27): diff ONLY
+    # against the previous build of the SAME mandate — never against an
+    # in-app experiment or another mandate's book.
+    from ml.portfolio_journal import previous_holdings_same_mandate
+    prev_holdings = previous_holdings_same_mandate(getattr(plan, "mandate", ""))
     new_holdings = [h.ticker for h in plan.holdings]
     changes = detect_changes(new_holdings, prev_holdings)
     opps = scan_opportunities(symbols)

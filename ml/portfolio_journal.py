@@ -216,3 +216,32 @@ def _demo() -> None:
 
 if __name__ == "__main__":
     _demo()
+
+
+def previous_holdings_same_mandate(mandate: str) -> list[str]:
+    """Tickers of the most recent PRIOR journaled build with THIS mandate.
+
+    The daily added/dropped diff must compare like with like. The journal
+    also records in-app experiments (Custom Builds, Compare mode, other
+    mandates) and any second automation's runs — and diffing against those
+    produced "phantom drops": names reported as removed that the emailed
+    book never held (JP's audit 2026-07-27 found 48 phantom mentions in
+    11 of 18 reports; worst case, a Saturday value_hold experiment made
+    Monday's swing report "drop" an entire value book). Only a build of
+    the same mandate is a valid baseline.
+    """
+    import json as _json
+    try:
+        props = list_proposals()
+    except Exception:  # noqa: BLE001
+        return []
+    # props[-1] is the current build (already journaled by the runner);
+    # walk backwards through the rest for the same mandate.
+    for path in reversed(props[:-1]):
+        try:
+            rec = _json.loads(path.read_text())
+        except Exception:  # noqa: BLE001
+            continue
+        if rec.get("mandate") == mandate:
+            return [h.get("ticker") for h in rec.get("holdings", []) if h.get("ticker")]
+    return []
