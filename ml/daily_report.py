@@ -168,6 +168,11 @@ def build_report_data(opps: dict | None = None, changes: dict | None = None) -> 
     pnl = _holdings_pnl(rec) if rec else {"rows": [], "stops_hit": []}
     # Fallback: derive added/dropped from the last two proposals when the
     # runner didn't hand us changes (standalone report runs).
+    # Uniformity rule (JP, 2026-07-28): if the journaled proposal carries its
+    # own diff (written once by the runner), that IS the truth — the report,
+    # digest, and broadcast all read it. Recompute only when it is absent.
+    if rec and rec.get("changes"):
+        changes = rec["changes"]
     if not changes and rec:
         try:
             # Mandate-aware baseline (phantom-drop fix, 2026-07-27): compare
@@ -192,12 +197,16 @@ def build_report_data(opps: dict | None = None, changes: dict | None = None) -> 
             opps = scan_opportunities(max_check=200)
         except Exception:
             opps = {"breakouts": [], "watch": []}
+    # Personal (Chase) book: OFF by default (JP, 2026-07-28) — the public
+    # report shows only the simulated OROS books. Set OROS_PERSONAL_BOOK=1
+    # to re-include the private section locally.
     my_book = None
-    try:
-        from ml.my_portfolio import analyze_book
-        my_book = analyze_book()
-    except Exception as e:  # noqa: BLE001
-        logger.warning("my_portfolio analysis failed: %s", e)
+    if os.environ.get("OROS_PERSONAL_BOOK", "0") == "1":
+        try:
+            from ml.my_portfolio import analyze_book
+            my_book = analyze_book()
+        except Exception as e:  # noqa: BLE001
+            logger.warning("my_portfolio analysis failed: %s", e)
     # Capstone comparison (Fordham, due 7/29): frozen first portfolio vs the
     # evolving book vs SPY, all simulated $100k. Chain appends today's live
     # day-return first so the comparison includes today.

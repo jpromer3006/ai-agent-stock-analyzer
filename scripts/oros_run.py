@@ -196,6 +196,16 @@ def main() -> int:
     prev_holdings = previous_holdings_same_mandate(getattr(plan, "mandate", ""))
     new_holdings = [h.ticker for h in plan.holdings]
     changes = detect_changes(new_holdings, prev_holdings)
+    # Uniformity rule (JP, 2026-07-28): the diff is computed ONCE, here, and
+    # written INTO the journaled proposal. The report, the glance digest, and
+    # the broadcast all read that one record — no second computation may ever
+    # disagree with the emailed report again.
+    try:
+        rec_j = json.loads(props[-1].read_text())
+        rec_j["changes"] = changes
+        props[-1].write_text(json.dumps(rec_j, indent=1))
+    except Exception:
+        pass
     opps = scan_opportunities(symbols)
     alert = build_alert(changes, opps)
     if alert:
