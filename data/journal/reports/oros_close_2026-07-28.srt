@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:03,527
+On screen, the day's gainers and laggards inside the paper book.
+
+2
+00:00:03,483 --> 00:00:10,818
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+3
+00:00:10,818 --> 00:00:13,059
+Nothing here is financial advice.
+
+4
+00:00:13,059 --> 00:00:16,048
+From the closing desk — see you at the open.
