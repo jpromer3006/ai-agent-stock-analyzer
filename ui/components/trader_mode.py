@@ -746,12 +746,25 @@ def _render_leaderboards(report: ScanReport):
                            key="stage_explorer_n") if len(bucket) > 10 else len(bucket)
         if bucket:
             _dir = {1: "watch", 2: "bull", 3: "stage3", 4: "bear"}[pick]
-            _render_leader_rows(bucket[:show_n], direction=_dir)
+            global _ROW_KEY_NS
+            _ROW_KEY_NS = "sx_"
+            try:
+                _render_leader_rows(bucket[:show_n], direction=_dir)
+            finally:
+                _ROW_KEY_NS = ""
             if len(bucket) > show_n:
                 st.caption(f"{len(bucket) - show_n} more in this stage — "
                            "raise the slider to see them all.")
         else:
             st.info("No names graded into this stage in the current scan.")
+
+
+# Widget-key namespace: the Stage Explorer re-renders tickers that may
+# already appear in the curated leaderboards above. Same ticker + same key
+# pattern = StreamlitDuplicateElementKey crash (JP hit this 2026-07-28).
+# The explorer sets this to "sx_" around its render; every per-ticker
+# widget key includes it.
+_ROW_KEY_NS = ""
 
 
 def _render_leader_rows(results: list[StageResult], direction: str = "bull"):
@@ -761,7 +774,7 @@ def _render_leader_rows(results: list[StageResult], direction: str = "bull"):
         ticker_button = f"**{r.ticker}**"
         cols = st.columns([2, 2, 3, 2, 2])
         with cols[0]:
-            if st.button(ticker_button, key=f"lb_{direction}_{r.ticker}",
+            if st.button(ticker_button, key=f"lb_{_ROW_KEY_NS}{direction}_{r.ticker}",
                           use_container_width=True):
                 st.session_state.trader_detail_ticker = r.ticker
                 st.rerun()
@@ -1038,7 +1051,7 @@ def _render_leader_rows(results: list[StageResult], direction: str = "bull"):
             with sub_cols[1]:
                 if st.button(
                     "📖 Open Research dossier",
-                    key=f"dossier_{r.ticker}",
+                    key=f"dossier_{_ROW_KEY_NS}{r.ticker}",
                     use_container_width=True,
                     help=(
                         "Switch to the Research tab and run the full "
@@ -1495,7 +1508,7 @@ def _render_position_calculator(r: StageResult):
         "Size by",
         options=["💵 Dollar amount", "📊 Share count"],
         horizontal=True,
-        key=f"calc_mode_{r.ticker}",
+        key=f"calc_mode_{_ROW_KEY_NS}{r.ticker}",
         label_visibility="collapsed",
     )
 
@@ -1507,7 +1520,7 @@ def _render_position_calculator(r: StageResult):
                 min_value=0.0,
                 value=10000.0,
                 step=500.0,
-                key=f"calc_dollars_{r.ticker}",
+                key=f"calc_dollars_{_ROW_KEY_NS}{r.ticker}",
                 help="The calculator will compute the maximum whole shares "
                      "you can buy at the stage entry price.",
             )
@@ -1518,7 +1531,7 @@ def _render_position_calculator(r: StageResult):
                 min_value=0,
                 value=100,
                 step=10,
-                key=f"calc_shares_{r.ticker}",
+                key=f"calc_shares_{_ROW_KEY_NS}{r.ticker}",
             )
             dollars = 0.0
     with col_in2:
@@ -1526,7 +1539,7 @@ def _render_position_calculator(r: StageResult):
         st.markdown("")
         run_clicked = st.button(
             "🧮  Calculate projection",
-            key=f"calc_run_{r.ticker}",
+            key=f"calc_run_{_ROW_KEY_NS}{r.ticker}",
             type="primary",
             use_container_width=True,
         )
@@ -1908,6 +1921,13 @@ def _render_oros500_breadth() -> None:
             st.session_state["trader_stage_focus"] = (
                 None if st.session_state.get("trader_stage_focus") == key
                 else key)
+            # Cards double as navigation (JP, 2026-07-28): clicking a stage
+            # card also points the Stage Explorer (below the scan results)
+            # at that stage, so the schematic and the ticker list agree.
+            _card_stage = {"Basing": 1, "Advancing": 2,
+                           "Topping": 3, "Declining": 4}.get(key)
+            if _card_stage:
+                st.session_state["stage_explorer_pick"] = _card_stage
     focus = st.session_state.get("trader_stage_focus")
     if focus:
         ic, tc = st.columns([1, 2])
