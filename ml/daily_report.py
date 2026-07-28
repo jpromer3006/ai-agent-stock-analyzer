@@ -65,10 +65,25 @@ def _index_snapshot() -> list[dict]:
 
 
 def _latest_proposal() -> dict | None:
+    """The report's book of record. Prefers the latest AUTONOMOUS build
+    (morning run) over in-app experiments — a 2 AM Custom Build must never
+    become 'the portfolio' the report, video, and app narrate (JP's
+    uniformity rule, 2026-07-28). Falls back to the absolute latest only
+    when no autonomous record exists."""
     try:
+        import json as _json
         from ml.portfolio_journal import list_proposals, load_proposal
         props = list_proposals()
-        return load_proposal(props[-1]) if props else None
+        if not props:
+            return None
+        for path in reversed(props):
+            try:
+                rec = _json.loads(path.read_text())
+            except Exception:  # noqa: BLE001
+                continue
+            if not str(rec.get("note") or "").startswith("UI build"):
+                return rec
+        return load_proposal(props[-1])
     except Exception as e:  # noqa: BLE001
         logger.warning("no proposal available: %s", e)
         return None
