@@ -31,9 +31,12 @@ from data.tickers import UNIVERSE, StockCategory, tickers_by_category, category_
 # ---------------------------------------------------------------------------
 # Page config
 # ---------------------------------------------------------------------------
+from pathlib import Path as _Path
+
+_ICON = _Path(__file__).parent / "assets" / "oros_icon.png"
 st.set_page_config(
-    page_title="Ai-Agent Stock Analyzer",
-    page_icon="🤖",
+    page_title="OROS Market Desk",
+    page_icon=str(_ICON) if _ICON.exists() else "⛰️",
     layout="wide",
 )
 
@@ -55,12 +58,23 @@ if st.session_state.app_mode == "assistant":
 # ---------------------------------------------------------------------------
 # Top banner: Mode toggle
 # ---------------------------------------------------------------------------
+# Brand mark in the banner (JP, 2026-07-28): the gold mountain-and-sun,
+# base64-embedded so the header needs no static file server. Falls back
+# to the emoji if the asset is missing.
+try:
+    import base64 as _b64
+    _logo_b64 = _b64.b64encode(_ICON.read_bytes()).decode()
+    _logo_tag = ("<img src='data:image/png;base64," + _logo_b64 +
+                 "' style='height:34px;vertical-align:middle;"
+                 "margin-right:10px'/>")
+except Exception:  # noqa: BLE001
+    _logo_tag = "⛰️ "
 st.markdown(
     "<div style='background:linear-gradient(90deg,#1a1a2e,#16213e);"
     "padding:14px 20px;border-radius:8px;margin-bottom:12px'>"
     "<div style='display:flex;justify-content:space-between;align-items:center'>"
     "<div><span style='color:#e6edf3;font-size:22px;font-weight:700'>"
-    "⛰️ OROS Market Desk</span>"
+    + _logo_tag + "OROS Market Desk</span>"
     "<span style='color:#8b949e;margin-left:12px;font-size:13px'>"
     "Capstone · agentic computational scanner with investment steering"
     "</span></div></div></div>",
