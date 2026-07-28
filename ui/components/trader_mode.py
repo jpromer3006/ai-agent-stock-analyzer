@@ -186,6 +186,36 @@ def render_watchlist_sidebar():
         if not tickers:
             st.sidebar.warning("No OROS 500 journal yet — run the morning "
                                "scan once, or pick a portfolio book.")
+        else:
+            # Membership transparency (JP, 2026-07-27): see exactly WHICH
+            # names are in the branded universe, when it was set, and who
+            # entered/left — plus a CSV for outside analysis.
+            _d = rec.get("date", "?")
+            with st.expander(f"📜 The OROS 500 membership — {len(tickers)} "
+                             f"names as of {_d}", expanded=False):
+                _ent = rec.get("entered")
+                _lft = rec.get("left")
+                if isinstance(_ent, list) and _ent:
+                    st.caption("Entered latest rebuild: " + ", ".join(_ent[:15]))
+                if isinstance(_lft, list) and _lft:
+                    st.caption("Left latest rebuild: " + ", ".join(_lft[:15]))
+                try:
+                    from data.universe import company_name as _cn
+                except Exception:  # noqa: BLE001
+                    def _cn(t):  # noqa: ANN001
+                        return ""
+                import pandas as _pd
+                _df = _pd.DataFrame(
+                    {"#": range(1, len(tickers) + 1),
+                     "Ticker": tickers,
+                     "Company": [_cn(t) or "—" for t in tickers]})
+                st.dataframe(_df, use_container_width=True, hide_index=True,
+                             height=340)
+                st.download_button(
+                    "⬇ Download membership (CSV)",
+                    _df.to_csv(index=False).encode(),
+                    file_name=f"oros500_{_d}.csv", mime="text/csv",
+                    key="oros500_csv")
     else:
         tickers = load_watchlist(selected)
 
