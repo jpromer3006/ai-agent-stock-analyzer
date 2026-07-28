@@ -518,6 +518,11 @@ def _execute_builds(source: str, limit: int, selected_mandates: list[str],
         try:
             from data.watchlists import save_watchlist
             save_watchlist("Portfolio Holdings All", combined)
+            # Committee-proofing (JP, 2026-07-28): snapshot the EXACT pool
+            # this build graded, so Stage Scan can answer "where are the
+            # 500 tickers?" — selectable there as 'OROS Scan Pool'.
+            if source == _DYNAMIC_SOURCE and len(symbols) >= 100:
+                save_watchlist("OROS Scan Pool", symbols)
             # Point Trader at the combined book (sets the selectbox key
             # before that widget is instantiated, and clears stale scans).
             from ui.components.trader_mode import route_to_trader

@@ -144,7 +144,12 @@ def render_watchlist_sidebar():
     # portfolio books built in the Portfolio tab.
     _OROS500_OPT = "🌐 OROS 500 — the overnight scan universe"
     portfolio_lists = [w for w in watchlists if w.startswith("Portfolio Holdings")]
-    options = [_OROS500_OPT] + (portfolio_lists or watchlists or [DEFAULT_NAME])
+    # 'OROS Scan Pool' = the exact candidate pool of the LAST in-app build
+    # (snapshotted by the Portfolio tab) — hidden in the dropdown until a
+    # build creates it, then selectable to prove which names were graded.
+    pool_lists = [w for w in watchlists if w == "OROS Scan Pool"]
+    options = ([_OROS500_OPT] + pool_lists
+               + (portfolio_lists or watchlists or [DEFAULT_NAME]))
 
     if "watchlist_selector" not in st.session_state:
         st.session_state.watchlist_selector = (
