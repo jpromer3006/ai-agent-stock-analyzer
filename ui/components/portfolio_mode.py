@@ -527,8 +527,8 @@ def _execute_builds(source: str, limit: int, selected_mandates: list[str],
 
     st.success(
         f"Built {len(plans)} portfolio(s): {', '.join(plans)}. "
-        f"Trader is now set to scan the combined {len(combined)} Tickr(s) "
-        "from these books (open the Trader tab)."
+        f"Stage Scan is now set to grade the combined {len(combined)} Tickr(s) "
+        "from these books (open the Stage Scan tab)."
     )
 
 
@@ -723,6 +723,24 @@ def render_portfolio_mode() -> None:
             st.caption(
                 f"{actual} candidate names{capnote} · scanned {_dt.now():%b %d, %Y %H:%M}"
             )
+            # Which names, exactly (JP, 2026-07-27): the pool is auditable,
+            # not just countable. Same list the build grades, best-first.
+            with st.expander("📜 View the candidate pool", expanded=False):
+                _pool = _candidate_symbols(source, limit)
+                st.caption("Best-first: liquid large-cap core, then the "
+                           "nightly liquidity ranking, topped up from cache "
+                           "and the investable universe to the cap.")
+                st.dataframe(
+                    pd.DataFrame({"#": range(1, len(_pool) + 1),
+                                  "Ticker": _pool}),
+                    use_container_width=True, hide_index=True, height=260)
+                st.download_button(
+                    "⬇ Download pool (CSV)",
+                    ("\n".join(["rank,ticker"] +
+                                [f"{i},{t}" for i, t in enumerate(_pool, 1)])
+                     ).encode(),
+                    file_name="oros_scan_pool.csv", mime="text/csv",
+                    key="scan_pool_csv")
         else:
             n_preview = len(load_watchlist(source))
             ts = watchlist_updated_at(source)
