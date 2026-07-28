@@ -502,6 +502,10 @@ def _execute_builds(source: str, limit: int, selected_mandates: list[str],
 
     st.session_state.portfolio_plans = plans
     st.session_state.portfolio_account = float(account)
+    # The star exhibit (JP, 2026-07-28): keep Claude's RAW shortlist so the
+    # results view can show every nomination — including the ones the quant
+    # gates refused. LLM nominates; arithmetic elects.
+    st.session_state.claude_shortlist = picks_by_mandate if claude_first else {}
     # Remember the geometry the book was actually built with, so rendering
     # after an auto-build doesn't read the (untouched) sidebar sliders.
     st.session_state.portfolio_buildinfo = {
@@ -867,6 +871,38 @@ def render_portfolio_mode() -> None:
     binfo = st.session_state.get("portfolio_buildinfo", {})
     r_max_pos = int(binfo.get("max_pos", max_pos))
     r_max_sec = int(binfo.get("max_per_sector", max_per_sector))
+
+    # ---- Claude's audition sheet (the star exhibit, JP 2026-07-28) ----
+    # Every name the LLM nominated, marked by whether the quant gates
+    # elected it into the book. Nominations that failed sizing/gating are
+    # the proof that arithmetic — not the LLM — has the last word.
+    _shortlist = st.session_state.get("claude_shortlist") or {}
+    if _shortlist:
+        _placed = {h.ticker for pl in plans.values()
+                   for h in pl["plan"].holdings}
+        _total_nom = len({t for v in _shortlist.values() for t in v})
+        with st.expander(f"🤖 Claude's picks — {_total_nom} nominations, "
+                         f"{len(_placed)} elected by the quant gates",
+                         expanded=True):
+            st.caption("The LLM nominates; the arithmetic elects. ✅ made "
+                       "the book (gated, sized, stopped like every other "
+                       "name) · ⬜ nominated but not placed (failed a gate, "
+                       "lost a slot, or hit a cap).")
+            try:
+                from data.universe import company_name as _cn2
+            except Exception:  # noqa: BLE001
+                def _cn2(t):  # noqa: ANN001
+                    return ""
+            for _m, _names in _shortlist.items():
+                if not _names:
+                    continue
+                st.markdown(f"**{display_name(_m)}** — {len(_names)} nominated")
+                chips = []
+                for t in _names:
+                    mark = "✅" if t in _placed else "⬜"
+                    nm = _cn2(t)
+                    chips.append(f"{mark} **{t}**" + (f" ({nm})" if nm else ""))
+                st.markdown(" · ".join(chips))
 
     # ---- Render each selected mandate's portfolio ----
     names = list(plans.keys())
