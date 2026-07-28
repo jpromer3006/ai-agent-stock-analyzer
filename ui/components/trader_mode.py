@@ -352,7 +352,7 @@ def render_scan_panel(tickers: list[str]):
             progress.empty()
         st.session_state[cache_key] = report
         from datetime import datetime
-        st.session_state.last_scan_time = datetime.now().strftime("%H:%M:%S")
+        st.session_state.last_scan_time = datetime.now().strftime("%m/%d/%Y %I:%M %p")
         st.rerun()
 
     report: ScanReport = st.session_state[cache_key]

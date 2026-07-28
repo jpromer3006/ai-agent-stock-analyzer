@@ -675,7 +675,7 @@ def render_portfolio_mode() -> None:
         "<div style='background:#0d1117;padding:14px 20px;border-radius:8px;"
         "margin-bottom:12px'><span style='color:#e6edf3;font-size:22px;"
         "font-weight:700'>💼 Portfolio</span><span style='color:#8b949e;"
-        "margin-left:12px;font-size:13px'>Regime-aware, multi-strategy construction"
+        "margin-left:12px;font-size:13px'>Robo-Advisor \u00b7 regime-aware, multi-strategy construction"
         "</span></div>",
         unsafe_allow_html=True,
     )
@@ -730,7 +730,7 @@ def render_portfolio_mode() -> None:
             actual = len(_candidate_symbols(source, limit))
             capnote = f" (cap {limit})" if actual < limit else ""
             st.caption(
-                f"{actual} candidate names{capnote} · scanned {_dt.now():%b %d, %Y %H:%M}"
+                f"{actual} candidate names{capnote} · scanned {_dt.now():%m/%d/%Y %I:%M %p}"
             )
             # Which names, exactly (JP, 2026-07-27): the pool is auditable,
             # not just countable. Same list the build grades, best-first.

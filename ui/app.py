@@ -49,7 +49,9 @@ if "analyses" not in st.session_state:
 if "selected_ticker" not in st.session_state:
     st.session_state.selected_ticker = None
 if "app_mode" not in st.session_state:
-    st.session_state.app_mode = "research"
+    # Scanner-first (JP, 2026-07-28): the app opens on the Stage Scan —
+    # OROS is a computational scanner first, with investment steering.
+    st.session_state.app_mode = "trader"
 # Migrate any old 'assistant' mode state to research
 if st.session_state.app_mode == "assistant":
     st.session_state.app_mode = "research"
@@ -83,18 +85,18 @@ st.markdown(
 
 mode_col1, mode_col2, mode_col3, mode_col4 = st.columns(4)
 with mode_col1:
-    portfolio_active = st.session_state.app_mode == "portfolio"
-    label = "💼 Portfolio  ✓" if portfolio_active else "💼 Portfolio"
-    if st.button(label, key="mode_portfolio", use_container_width=True,
-                 type="primary" if portfolio_active else "secondary"):
-        st.session_state.app_mode = "portfolio"
-        st.rerun()
-with mode_col2:
     trader_active = st.session_state.app_mode == "trader"
     label = "📈 Stage Scan  ✓" if trader_active else "📈 Stage Scan"
     if st.button(label, key="mode_trader", use_container_width=True,
                  type="primary" if trader_active else "secondary"):
         st.session_state.app_mode = "trader"
+        st.rerun()
+with mode_col2:
+    portfolio_active = st.session_state.app_mode == "portfolio"
+    label = "💼 Portfolio  ✓" if portfolio_active else "💼 Portfolio"
+    if st.button(label, key="mode_portfolio", use_container_width=True,
+                 type="primary" if portfolio_active else "secondary"):
+        st.session_state.app_mode = "portfolio"
         st.rerun()
 with mode_col3:
     research_active = st.session_state.app_mode == "research"
