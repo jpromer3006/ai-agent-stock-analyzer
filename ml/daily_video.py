@@ -190,8 +190,8 @@ _ORIENT = {
     "race": ("On screen, three equity lines grown from the same starting "
              "dollar: the frozen first book, the live book, and the index "
              "fund."),
-    "signoff": ("On screen, the forward scoreboard that decides how large the "
-                "system is allowed to trade."),
+    "signoff": ("On screen, the disclosure and the credits — one journaled "
+                "record behind every number you heard."),
 }
 
 _LESSONS = {
@@ -217,11 +217,11 @@ _LESSONS = {
              "That is why the S and P line shares the chart. If the system "
              "cannot outrun it, the index deserves the money, and publishing "
              "the race every day keeps the system honest."),
-    "signoff": ("Today's lesson is the scoreboard. Expectancy is the average "
-                "profit or loss per graded trade. A system that publishes a "
-                "negative record and cuts its own size is doing the one "
-                "thing most traders never do: letting evidence, not "
-                "confidence, set the risk."),
+    "signoff": ("Today's lesson is provenance. Every number in this episode "
+                "was read from one journaled record, the same record that "
+                "was emailed as this morning's report. When the video, the "
+                "email, and the app cannot disagree, trust stops being a "
+                "promise and becomes a property of the system."),
 }
 
 
@@ -534,6 +534,50 @@ def _toppick_script(data: dict) -> list[str]:
     return s
 
 
+def _holdings_scene(plt, data: dict):
+    """The actual book on screen (JP, 2026-07-28): ticker, shares, entry,
+    stop — read from the SAME journaled proposal the report emails."""
+    rec = data.get("proposal") or {}
+    holds = rec.get("holdings") or []
+    if not holds:
+        raise ValueError("no holdings journaled")
+    fig = plt.figure(figsize=(12.8, 7.2))
+    fig.patch.set_facecolor(_BG)
+    fig.text(0.06, 0.93, _esc(f"{rec.get('date', '')} · mandate "
+             f"{rec.get('mandate', '?')} · the same book as today's report"),
+             fontsize=12, color=_MUT, family="monospace")
+    fig.text(0.06, 0.84, "The Portfolio — Actual Holdings",
+             fontsize=26, fontweight="bold", color=_FG)
+    fig.text(0.06, 0.76, f"{'TICKER':<8}{'SHARES':>8}{'ENTRY':>11}{'STOP':>11}",
+             fontsize=13, color=_MUT, family="monospace")
+    y = 0.71
+    for h in holds[:14]:
+        fig.text(0.06, y,
+                 f"{h.get('ticker', '?'):<8}{h.get('shares', 0):>8.0f}"
+                 f"{h.get('entry', 0):>11.2f}{h.get('stop', 0):>11.2f}",
+                 fontsize=13.5, color=_FG, family="monospace")
+        y -= 0.042
+    fig.text(0.06, max(y - 0.02, 0.09),
+             "Every position sized by risk and carrying a defined exit.",
+             fontsize=12, color=_UP, family="monospace")
+    fig.text(0.06, 0.045, _FOOTER, fontsize=9, color=_MUT)
+    return fig
+
+
+def _holdings_script(data: dict) -> list[str]:
+    rec = data.get("proposal") or {}
+    holds = rec.get("holdings") or []
+    if not holds:
+        raise ValueError("no holdings")
+    tickers = [h.get("ticker", "") for h in holds]
+    front = ", ".join(_spoken(t) for t in tickers[:3])
+    return [f"And here is the book itself — the actual holdings, identical "
+            f"to this morning's emailed report. {len(holds)} positions, led "
+            f"by {front}. Every line carries its share count, its entry, "
+            f"and its exit — because a position without a defined exit is "
+            f"not a position, it is a hope."]
+
+
 def _takeaway_scene(plt, key: str):
     text = _TAKEAWAYS[key]
     body = text.replace("Tonight's takeaway. ", "")
@@ -794,28 +838,22 @@ def _capstone_scene(plt, cs: dict):
 
 
 def _signoff_scene(plt, data: dict):
-    board = data.get("scoreboard") or {}
-    try:
-        from ml.strategy_registry import display_name
-    except Exception:  # noqa: BLE001
-        def display_name(m):  # noqa: ANN001
-            return m
-    lines = [("OROS builds and journals a separate experimental book per "
-              "strategy author — graded forward from a standing start:",
-              {"size": 12, "color": _MUT, "dy": 0.06})]
-    for m, v in list(board.items())[:4]:
-        e = v.get("expectancy_pct")
-        nm = str(display_name(m))[:16]
-        lines.append((f"{nm:<17} expectancy {'—' if e is None else f'{e:+.2f}%'}   "
-                      f"({v.get('positions_scored') or 0} graded)",
-                      {"size": 13, "color": _UP if (e or -1) > 0 else _MUT}))
+    # Advisor + JP (2026-07-28): the four experimental strategy books are
+    # backend research — off air. The disclosure closes on THE portfolio
+    # (the one book the report emails) and the rules that govern it.
     rec = data.get("proposal") or {}
-    thr = next((s.strip() for s in (rec.get("note") or "").split(".")
-                if "throttle" in s.lower()), "")
-    if thr:
-        lines.append((thr, {"color": _WARN, "size": 13, "dy": 0.06}))
+    n = len(rec.get("holdings") or [])
+    lines = []
+    if n:
+        lines.append((f"The OROS portfolio: {n} positions, every one with a "
+                      f"defined exit — the same book in today's report.",
+                      {"size": 13, "color": _FG, "dy": 0.05}))
+    lines.append(("OROS proposes and journals only — it never trades.",
+                  {"size": 15, "weight": "bold", "color": _WARN, "dy": 0.05}))
+    lines.append(("Simulated paper trading · educational, not financial advice",
+                  {"size": 12, "color": _MUT, "dy": 0.05}))
     lines.append((_CREDITS_LINE, {"color": _MUT, "size": 10, "dy": 0.09}))
-    return _card(plt, "Disclosure — The Honest Scoreboard", lines)
+    return _card(plt, "Disclosure & Credits", lines)
 
 
 # ---------------------------------------------------------------------------
@@ -1031,18 +1069,18 @@ _DISCLOSURE_SCRIPT = (
 
 
 def _signoff_script(data: dict) -> list[str]:
-    board = data.get("scoreboard") or {}
-    exps = [v.get("expectancy_pct") for v in board.values()
-            if v.get("expectancy_pct") is not None]
+    # Uniformity rule (JP, 2026-07-28): the show narrates ONE portfolio —
+    # the same book the report emails. The four experimental strategy
+    # scoreboards are research plumbing and stay off air.
+    rec = data.get("proposal") or {}
+    n = len(rec.get("holdings") or [])
     s = ["Before we close, the disclosure segment."]
-    if exps and max(exps) <= 0:
-        s.append("The system's forward track record remains negative across "
-                 "strategies, and it is published anyway. Position sizes stay "
-                 "automatically reduced until the record earns them back.")
-    elif exps:
-        s.append("The forward record shows early positive expectancy; sizing "
-                 "follows the record, not the mood.")
-    segs = [" ".join(s), _SCOREBOARD_FRAME]
+    if n:
+        s.append(f"Everything you heard today concerns one simulated "
+                 f"portfolio of {n} positions — the same book, line for "
+                 f"line, as this morning's emailed report. One record, "
+                 f"every surface.")
+    segs = [" ".join(s)]
     if _lesson_key() == "signoff":
         segs.append(_LESSONS["signoff"])
     segs.append(_CREDITS_SCRIPT)
@@ -1198,6 +1236,10 @@ def default_scripts(data: dict) -> dict[str, list[str]]:
            "topstory": (_pick_script(story, home_run=home_run is not None)
                         if story else _no_pick_script()),
            "book": _book_script(data) if data.get("proposal") else []}
+    try:
+        out["holdings"] = _holdings_script(data)
+    except Exception:  # noqa: BLE001
+        pass
     cs = data.get("capstone")
     if cs and cs.get("rows"):
         out["race"] = _capstone_script(cs)
@@ -1273,6 +1315,13 @@ def generate_video_brief(data: dict, overrides: dict | None = None,
             scenes.append(("book", "Business Desk — the book",
                            _book_scene(plt, data), _book_script(data),
                            "anchor"))
+        # The actual holdings — same journaled record as the report.
+        try:
+            scenes.append(("holdings", "The Portfolio — Actual Holdings",
+                           _holdings_scene(plt, data),
+                           _holdings_script(data), "anchor"))
+        except Exception as e:  # noqa: BLE001
+            logger.info("holdings scene skipped: %s", e)
         # Movers moved to the Closing Bell (advisor restructure): the morning
         # was narrating yesterday's moves; the evening owns the day's result.
         cs = data.get("capstone")

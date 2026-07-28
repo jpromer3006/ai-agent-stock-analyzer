@@ -28,9 +28,10 @@ _SCENE_LABELS = {
     "topstory": "03 · Top Pick — the chart and the strategy",
     "analysis": "04 · OROS Scan — the trade card (stock + ETF)",
     "book": "05 · The Book — Today's Rotation (IN/OUT)",
-    "race": "06 · The Portfolio — The Race",
-    "takeaway": "07 · The Takeaway",
-    "signoff": "08 · Disclosure & Credits",
+    "holdings": "06 · The Portfolio — Actual Holdings",
+    "race": "07 · The Race — live vs frozen vs SPY",
+    "takeaway": "08 · The Takeaway",
+    "signoff": "09 · Disclosure & Credits",
 }
 
 
