@@ -129,8 +129,14 @@ def latest_breadth(lookback: int = 5) -> dict | None:
         return None
     if not entries:
         return None
-    cur = dict(entries[-1])
-    prior = entries[max(0, len(entries) - 1 - lookback)] if len(entries) > 1 else None
+    # Branding + honesty guard (JP, 2026-07-27): the segment narrates the
+    # OROS 500, so ignore oversized entries written by legacy local runs
+    # (e.g. an 800-cap scan recording 788). Fall back to the raw latest
+    # only if no <=500 entry exists.
+    sized = [e for e in entries if (e.get("total") or 0) <= 500]
+    pool = sized or entries
+    cur = dict(pool[-1])
+    prior = pool[max(0, len(pool) - 1 - lookback)] if len(pool) > 1 else None
     cur["prior"] = prior if (prior and prior.get("date") != cur["date"]) else None
     return cur
 

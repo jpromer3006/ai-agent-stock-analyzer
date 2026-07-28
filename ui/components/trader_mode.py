@@ -139,14 +139,12 @@ def render_watchlist_sidebar():
     # (e.g. a handoff that points Trader at a freshly built universe) would be
     # silently reverted. Other tabs route here via route_to_trader(), which
     # sets this key BEFORE the widget is instantiated on the next rerun.
-    # Scan list is limited to the portfolio books built in the Portfolio tab.
+    # Scan sources: the OROS 500 overnight universe first (the OVERALL
+    # scan — powers the Stage Explorer across every stage), then the
+    # portfolio books built in the Portfolio tab.
+    _OROS500_OPT = "🌐 OROS 500 — the overnight scan universe"
     portfolio_lists = [w for w in watchlists if w.startswith("Portfolio Holdings")]
-    options = portfolio_lists or watchlists or [DEFAULT_NAME]
-    if not portfolio_lists:
-        st.sidebar.info(
-            "Build portfolios in the Portfolio tab first — the scan list is your "
-            "portfolio books (combined and per mandate)."
-        )
+    options = [_OROS500_OPT] + (portfolio_lists or watchlists or [DEFAULT_NAME])
 
     if "watchlist_selector" not in st.session_state:
         st.session_state.watchlist_selector = (
@@ -168,7 +166,28 @@ def render_watchlist_sidebar():
     # Mirror to trader_watchlist for downstream readers (cache key, captions).
     st.session_state.trader_watchlist = selected
 
-    tickers = load_watchlist(selected)
+    if selected == _OROS500_OPT:
+        # The journaled constituents, capped at the branded 500 (a legacy
+        # 800-cap local run may have over-recorded; target wins).
+        tickers = []
+        try:
+            from ml.oros500 import load_constituents
+            rec = load_constituents() or {}
+            target = int(rec.get("target") or 500)
+            tickers = list(rec.get("symbols") or [])[:target]
+        except Exception:  # noqa: BLE001
+            pass
+        if not tickers:
+            try:
+                from data.universe import load_liquid_ranking
+                tickers = (load_liquid_ranking() or [])[:500]
+            except Exception:  # noqa: BLE001
+                tickers = []
+        if not tickers:
+            st.sidebar.warning("No OROS 500 journal yet — run the morning "
+                               "scan once, or pick a portfolio book.")
+    else:
+        tickers = load_watchlist(selected)
 
     # Manual ad hoc check: type any tickers to stage them alongside the book,
     # without saving them. This is the "is COIN / HOOD / META / ASTS in Stage 2?"

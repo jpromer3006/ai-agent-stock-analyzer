@@ -247,6 +247,13 @@ def maybe_prompt_cron_on_launch() -> None:
     enable it. Dismissed for the rest of the session either way."""
     if st.session_state.get("cron_prompt_done"):
         return
+    # Permanent opt-out (JP, 2026-07-27): the GitHub Actions cloud run is
+    # the single source of truth; once dismissed for good, never nag again.
+    from pathlib import Path as _P
+    _optout = _P(__file__).resolve().parent.parent.parent / "data" / "journal" / ".cron_prompt_optout"
+    if _optout.exists():
+        st.session_state["cron_prompt_done"] = True
+        return
     # Resolve loaded-state once per session to avoid repeated launchctl calls.
     if "cron_loaded_at_launch" not in st.session_state:
         st.session_state["cron_loaded_at_launch"] = cron_is_loaded()
@@ -271,3 +278,13 @@ def maybe_prompt_cron_on_launch() -> None:
             if st.button("Not now", key="cron_launch_skip"):
                 st.session_state["cron_prompt_done"] = True
                 st.rerun()
+        if st.button("☁️ The cloud runs it — don't ask again",
+                     key="cron_launch_optout"):
+            try:
+                _optout.parent.mkdir(parents=True, exist_ok=True)
+                _optout.write_text("dismissed — GitHub Actions is the "
+                                   "scheduler of record\n")
+            except Exception:  # noqa: BLE001
+                pass
+            st.session_state["cron_prompt_done"] = True
+            st.rerun()
