@@ -89,7 +89,7 @@ def _render_section_1_stage_header(ticker: str, stage_result: StageResult) -> No
             f"<div style='font-size:12px;color:#8b949e'>ENTRY TIMING</div>"
             f"<div style='font-size:32px;font-weight:700;color:{color}'>"
             f"{stage_result.action}</div>"
-            f"<div style='font-size:13px;color:#8b949e'>Weinstein entry call · "
+            f"<div style='font-size:13px;color:#8b949e'>Research entry call · "
             f"as of {stage_result.as_of_date}</div>"
             f"</div>",
             unsafe_allow_html=True,
@@ -199,7 +199,7 @@ def _render_section_2_resistance(ticker: str, resistance: ResistanceResult) -> N
                     annotation_font_color="#3fb950",
                 )
             fig.update_layout(
-                title=f"{ticker} — 10-year weekly chart with overhead supply zones",
+                title=f"{ticker} — Research · 10-year weekly chart & resistance zones",
                 height=420,
                 paper_bgcolor="rgba(0,0,0,0)",
                 plot_bgcolor="rgba(0,0,0,0)",
@@ -383,7 +383,7 @@ def _render_section_4a_specialist(ticker: str) -> None:
     if not cached:
         st.info(
             f"💼 Generates the fundamentals memo for {ticker} via SEC EDGAR "
-            f"XBRL, RAG over the 10-K, FRED macro, and the Weinstein book "
+            f"XBRL, RAG over the 10-K, FRED macro, and the stage-analysis library "
             f"lookup. ~30-90s of Claude tool-use. Runs only when you click."
         )
         if not st.button(
@@ -544,7 +544,7 @@ def _render_section_5_decision(ticker: str, stage_result: StageResult,
             f"<div style='font-size:13px;color:#c9d1d9;margin-top:4px'>"
             f"Confidence {chartist_output.confidence_score:.0f}%</div>"
             f"<div style='font-size:11px;color:#8b949e;margin-top:8px'>"
-            f"Weinstein action label: "
+            f"Stage action label: "
             f"<span style='color:{action_color};font-weight:700'>"
             f"{stage_result.action}</span></div>"
             f"</div>",
@@ -567,7 +567,7 @@ def _render_section_5_decision(ticker: str, stage_result: StageResult,
             )
         else:
             st.info(
-                "No actionable Weinstein trade setup for this stage. "
+                "No actionable trade setup for this stage. "
                 "Setups apply to Stage 2 (long) and Stage 4 (short) only."
             )
 
@@ -590,17 +590,17 @@ def render_research_dossier(ticker: str) -> None:
         return
 
     st.markdown(
-        f"## 🔬 Research Dossier — **{ticker}**"
+        f"## 📜 The Historian — Research Dossier · **{ticker}**"
     )
     st.caption(
-        "Six-section decision dossier. Sections 1, 2, 3, and 4b render in "
+        "The Historian: a six-section decision dossier with ten years of context. Sections 1, 2, 3, and 4b render in "
         "under a second; section 4a (sector specialist memo) runs on "
         "demand. Section 6 at the bottom is 💬 Ask OROS — a chat that "
         "answers questions about this dossier and the system."
     )
 
     # Run analyses
-    with st.spinner(f"Running Weinstein stage analysis on {ticker}..."):
+    with st.spinner(f"Running stage analysis on {ticker}..."):
         stage_result = analyze_stage(ticker)
     if stage_result.error:
         st.error(f"Stage analysis failed: {stage_result.error}")
