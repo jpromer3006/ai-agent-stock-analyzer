@@ -662,6 +662,48 @@ def _render_leaderboards(report: ScanReport):
         else:
             st.info("No Stage 4 candidates in this watchlist right now.")
 
+    # ---- Stage Explorer (JP, 2026-07-27): browse ANY stage, not just the
+    # Stage 2 lens. The scan already grades every name 1-4 (report.stage_
+    # buckets); the leaderboards above are curated slices. This panel opens
+    # the full bucket for whichever stage strategy the user is researching:
+    # Stage 1 accumulation watching, Stage 3 exit/tightening, Stage 4 short
+    # study. Read-only browse — no gates or actions are altered.
+    st.markdown("---")
+    with st.expander("🔭 Stage Explorer — browse every name in any stage",
+                     expanded=False):
+        st.caption(
+            "The scan grades the whole list into all four stages — the "
+            "panels above curate; this explorer shows everything. Different "
+            "stages serve different strategies: Stage 1 for accumulation "
+            "watchlists, Stage 2 for the buy discipline, Stage 3 for exit "
+            "planning, Stage 4 for avoid/short study. Educational, not "
+            "advice."
+        )
+        buckets = report.stage_buckets
+        _labels = {
+            1: f"Stage 1 · Basing ({len(buckets[1])})",
+            2: f"Stage 2 · Advancing ({len(buckets[2])})",
+            3: f"Stage 3 · Topping ({len(buckets[3])})",
+            4: f"Stage 4 · Declining ({len(buckets[4])})",
+        }
+        pick = st.radio("Stage to browse", [1, 2, 3, 4],
+                        format_func=lambda k: _labels[k],
+                        horizontal=True, key="stage_explorer_pick")
+        bucket = [r for r in buckets.get(pick, []) if not getattr(r, "error", None)]
+        bucket = sorted(bucket, key=lambda r: r.bull_probability,
+                        reverse=(pick != 4))
+        show_n = st.slider("Names to show", 10, max(10, len(bucket)),
+                           min(25, max(10, len(bucket))), 5,
+                           key="stage_explorer_n") if len(bucket) > 10 else len(bucket)
+        if bucket:
+            _dir = {1: "watch", 2: "bull", 3: "stage3", 4: "bear"}[pick]
+            _render_leader_rows(bucket[:show_n], direction=_dir)
+            if len(bucket) > show_n:
+                st.caption(f"{len(bucket) - show_n} more in this stage — "
+                           "raise the slider to see them all.")
+        else:
+            st.info("No names graded into this stage in the current scan.")
+
 
 def _render_leader_rows(results: list[StageResult], direction: str = "bull"):
     for r in results:
