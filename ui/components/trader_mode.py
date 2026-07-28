@@ -718,8 +718,13 @@ def _render_leaderboards(report: ScanReport):
     # Stage 1 accumulation watching, Stage 3 exit/tightening, Stage 4 short
     # study. Read-only browse — no gates or actions are altered.
     st.markdown("---")
-    with st.expander("🔭 Stage Explorer — browse every name in any stage",
-                     expanded=False):
+    # A stage-card click "jumps" here: the label changes (new widget
+    # identity), so the expander reliably opens on that stage instead of
+    # silently staying collapsed (JP, 2026-07-28).
+    _jump = st.session_state.pop("stage_explorer_jump", None)
+    _sx_label = ("🔭 Stage Explorer — browse every name in any stage"
+                 + (f" · jumped to {_jump}" if _jump else ""))
+    with st.expander(_sx_label, expanded=bool(_jump)):
         st.caption(
             "The scan grades the whole list into all four stages — the "
             "panels above curate; this explorer shows everything. Different "
@@ -1928,6 +1933,7 @@ def _render_oros500_breadth() -> None:
                            "Topping": 3, "Declining": 4}.get(key)
             if _card_stage:
                 st.session_state["stage_explorer_pick"] = _card_stage
+                st.session_state["stage_explorer_jump"] = key
     focus = st.session_state.get("trader_stage_focus")
     if focus:
         ic, tc = st.columns([1, 2])
