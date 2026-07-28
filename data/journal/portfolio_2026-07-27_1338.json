@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0033,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BGC",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.413,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.01,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "WELL",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.364,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0041,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "HST",
@@ -86,7 +95,10 @@
       "led_by": "sepa",
       "sentiment": 0.394,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0231,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "FLR",
@@ -100,7 +112,10 @@
       "led_by": "sepa",
       "sentiment": 0.237,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.054,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "XOP",
@@ -142,7 +157,10 @@
       "led_by": "sepa",
       "sentiment": 0.096,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.025,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "SPG",
@@ -156,7 +174,10 @@
       "led_by": "sepa",
       "sentiment": 0.232,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0192,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "DRS",
@@ -170,7 +191,10 @@
       "led_by": "sepa",
       "sentiment": 0.09,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0047,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "AAPL",
@@ -184,7 +208,10 @@
       "led_by": "sepa",
       "sentiment": 0.049,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0096,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     }
   ],
   "bench": [

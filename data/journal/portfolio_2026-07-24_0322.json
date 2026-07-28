@@ -44,9 +44,9 @@
       "led_by": "sepa",
       "sentiment": 0.369,
       "earnings_risk": false,
-      "outcome_return": 0.0163,
+      "outcome_return": 0.0121,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 2,
       "outcome_final": false
     },
     {
@@ -61,9 +61,9 @@
       "led_by": "sepa",
       "sentiment": 0.096,
       "earnings_risk": false,
-      "outcome_return": -0.0398,
+      "outcome_return": -0.0133,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 2,
       "outcome_final": false
     },
     {
@@ -78,9 +78,9 @@
       "led_by": "sepa",
       "sentiment": 0.214,
       "earnings_risk": false,
-      "outcome_return": -0.0091,
+      "outcome_return": -0.0846,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 2,
       "outcome_final": false
     },
     {
@@ -95,9 +95,9 @@
       "led_by": "sepa",
       "sentiment": 0.27,
       "earnings_risk": false,
-      "outcome_return": 0.0245,
+      "outcome_return": 0.0441,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 2,
       "outcome_final": false
     },
     {
@@ -112,7 +112,10 @@
       "led_by": "sepa",
       "sentiment": 0.22,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0375,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "ARWR",
@@ -126,9 +129,9 @@
       "led_by": "sepa",
       "sentiment": 0.335,
       "earnings_risk": false,
-      "outcome_return": -0.0063,
+      "outcome_return": -0.0224,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 2,
       "outcome_final": false
     },
     {
@@ -143,9 +146,9 @@
       "led_by": "sepa",
       "sentiment": 0.03,
       "earnings_risk": false,
-      "outcome_return": 0.0426,
+      "outcome_return": 0.0526,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 2,
       "outcome_final": false
     },
     {
@@ -160,7 +163,10 @@
       "led_by": "sepa",
       "sentiment": 0.138,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.1511,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "COP",
@@ -174,9 +180,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0202,
+      "outcome_return": -0.0295,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 2,
       "outcome_final": false
     },
     {
@@ -191,9 +197,9 @@
       "led_by": "sepa",
       "sentiment": 0.417,
       "earnings_risk": false,
-      "outcome_return": -0.0252,
+      "outcome_return": -0.0477,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 2,
       "outcome_final": false
     },
     {
@@ -208,10 +214,10 @@
       "led_by": "sepa",
       "sentiment": 0.096,
       "earnings_risk": false,
-      "outcome_return": -0.0236,
-      "outcome_exit": "open",
+      "outcome_return": -0.0461,
+      "outcome_exit": "stop",
       "outcome_days": 1,
-      "outcome_final": false
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -315,8 +321,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_avg_return": -0.0986,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 2,
+  "realized_stop_exits": 2
 }

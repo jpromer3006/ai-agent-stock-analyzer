@@ -109,6 +109,17 @@
     "Declining": 145
    },
    "invalidated": 3
+  },
+  {
+   "date": "2026-07-28",
+   "total": 494,
+   "counts": {
+    "Advancing": 241,
+    "Basing": 93,
+    "Topping": 81,
+    "Declining": 79
+   },
+   "invalidated": 1
   }
  ]
 }
