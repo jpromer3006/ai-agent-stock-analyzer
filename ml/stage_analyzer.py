@@ -350,6 +350,18 @@ def _compute_indicators(df: pd.DataFrame, bench_df: Optional[pd.DataFrame] = Non
 
     pct_above_ma = (last_close - last_ma) / last_ma if last_ma != 0 else 0.0
 
+    # Directional context for the flat-MA stages (JP's BND catch, 2026-07-28):
+    # Stage 1 and Stage 3 are locally identical — a flat MA with price
+    # oscillating around it. Weinstein's definition is directional: a flat MA
+    # you ROSE into is Topping; one you FELL into is Basing. Measure how the
+    # MA approached its current level over ~26 weeks (130 trading days).
+    _APPROACH_DAYS = 130
+    if len(ma.dropna()) >= _APPROACH_DAYS:
+        ma_then26 = float(ma.dropna().iloc[-_APPROACH_DAYS])
+        ma_approach_pct = (last_ma - ma_then26) / ma_then26 if ma_then26 else 0.0
+    else:
+        ma_approach_pct = 0.0
+
     # Prior weekly bar (5 trading days back) for stage hysteresis. If the
     # price only crossed the MA this week, the prior bar was on the other
     # side, and the stage promotion/demotion is deferred until it persists.
@@ -419,6 +431,7 @@ def _compute_indicators(df: pd.DataFrame, bench_df: Optional[pd.DataFrame] = Non
         "ma_slope_pct": ma_slope_pct,
         "pct_above_ma": pct_above_ma,
         "pct_above_ma_prev": pct_above_ma_prev,
+        "ma_approach_pct": ma_approach_pct,
         "volume_surge": volume_surge,
         "pct_from_52w_high": pct_from_52w_high,
         "pct_from_52w_low": pct_from_52w_low,
@@ -564,18 +577,29 @@ def _classify_stage(ind: dict) -> tuple[int, str, float, list[str]]:
             exp.append("✓ Price above rising 30W MA → Stage 2 Advancing")
             return 2, "Advancing", confidence, exp
 
-    # Stage 3: Topping — price still above MA but MA has flattened/rolled over
-    if pct_above > 0 and slope < STAGE2_MIN_SLOPE_PCT:
-        # Topping: weakening momentum
+    # Directional context (JP's BND catch, 2026-07-28): a flat MA is Stage 3
+    # if the MA ROSE into the flat (top of an advance) and Stage 1 if it FELL
+    # into the flat (floor of a decline). +1% over ~26 weeks is the tiebreak
+    # (low-volatility instruments like bond ETFs move their MA in small steps).
+    approach = ind.get("ma_approach_pct", 0.0)
+
+    # Stage 3: Topping — MA flattened/rolled over at the top of an advance.
+    # Price may oscillate slightly BELOW the flat MA while distributing, so a
+    # small negative pct_above no longer escapes to the Stage 1 default.
+    if slope < STAGE2_MIN_SLOPE_PCT and (
+            pct_above > 0
+            or (pct_above > -STAGE1_MAX_PRICE_DEVIATION and approach > 0.01)):
         confidence = 0.4 + min(0.4, abs(slope) * 20)
-        exp.append("⚠ Price above MA but slope flattening → Stage 3 Topping")
+        exp.append(f"⚠ Flattening MA after an advance (MA {approach:+.1%} "
+                   f"over 26w) → Stage 3 Topping")
         return 3, "Topping", confidence, exp
 
-    # Stage 1: Basing — price near flat MA (default)
+    # Stage 1: Basing — price near flat MA that FELL into the flat (default)
     confidence = 0.5
     if abs(pct_above) < STAGE1_MAX_PRICE_DEVIATION and abs(slope) < STAGE1_MAX_SLOPE_PCT:
         confidence = 0.7
-        exp.append("◯ Price near flat MA → Stage 1 Basing (wait for breakout)")
+        exp.append(f"◯ Price near flat MA (MA {approach:+.1%} over 26w) "
+                   f"→ Stage 1 Basing (wait for breakout)")
     else:
         exp.append("◯ Ambiguous setup → treating as Stage 1 Basing")
     return 1, "Basing", confidence, exp
