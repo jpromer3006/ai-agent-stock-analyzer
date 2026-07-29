@@ -583,16 +583,24 @@ def _classify_stage(ind: dict) -> tuple[int, str, float, list[str]]:
     # (low-volatility instruments like bond ETFs move their MA in small steps).
     approach = ind.get("ma_approach_pct", 0.0)
 
-    # Stage 3: Topping — MA flattened/rolled over at the top of an advance.
-    # Price may oscillate slightly BELOW the flat MA while distributing, so a
-    # small negative pct_above no longer escapes to the Stage 1 default.
-    if slope < STAGE2_MIN_SLOPE_PCT and (
-            pct_above > 0
-            or (pct_above > -STAGE1_MAX_PRICE_DEVIATION and approach > 0.01)):
+    # Stage 3: Topping — a flat MA the price ROSE into (top of an advance).
+    # BOTH sides of the MA are checked against the approach direction now:
+    # JP's HOOD catch (2026-07-28) showed price ABOVE a flat MA that had
+    # FALLEN -23% into place being called Topping — that shape is a repair
+    # base after a decline, not a top. Stage 3 requires the MA to have
+    # risen into the flat; price may sit slightly above OR below it.
+    if (slope < STAGE2_MIN_SLOPE_PCT and approach > 0.01
+            and pct_above > -STAGE1_MAX_PRICE_DEVIATION):
         confidence = 0.4 + min(0.4, abs(slope) * 20)
         exp.append(f"⚠ Flattening MA after an advance (MA {approach:+.1%} "
                    f"over 26w) → Stage 3 Topping")
         return 3, "Topping", confidence, exp
+    if slope < STAGE2_MIN_SLOPE_PCT and approach < -0.01 and pct_above > 0:
+        # Price has reclaimed a flat/falling MA that DECLINED into place —
+        # Weinstein's post-markdown repair base, not a top.
+        exp.append(f"◯ Price above a flat MA that FELL into place "
+                   f"(MA {approach:+.1%} over 26w) → Stage 1 repair base")
+        return 1, "Basing", 0.6, exp
 
     # Stage 1: Basing — price near flat MA that FELL into the flat (default)
     confidence = 0.5
