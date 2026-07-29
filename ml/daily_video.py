@@ -45,6 +45,14 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
+# GUI-launched apps (Launch.command / Finder) inherit a minimal PATH that
+# excludes Homebrew, so shutil.which("ffmpeg") fails in the Streamlit
+# process even when ffmpeg is installed (JP hit this rendering from the
+# YouTube News tab, 2026-07-28). Extend PATH with the standard locations.
+for _extra in ("/opt/homebrew/bin", "/usr/local/bin"):
+    if os.path.isdir(_extra) and _extra not in os.environ.get("PATH", ""):
+        os.environ["PATH"] = os.environ.get("PATH", "") + os.pathsep + _extra
+
 _ROOT = Path(__file__).resolve().parent.parent
 _REPORT_DIR = _ROOT / "data" / "journal" / "reports"
 _SIZE = "1280x720"
