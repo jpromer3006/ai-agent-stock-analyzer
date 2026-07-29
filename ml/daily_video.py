@@ -1757,6 +1757,15 @@ def generate_evening_brief(verdicts: list[dict], tally: dict,
                                    _movers_script(data), "anchor"))
             except Exception as e:  # noqa: BLE001
                 logger.warning("movers scene failed: %s", e)
+        # The actual holdings — the same journaled book as the report
+        # (JP asked for the portfolio in BOTH shows, 2026-07-28).
+        if data:
+            try:
+                scenes.append(("holdings", "The Portfolio — Actual Holdings",
+                               _holdings_scene(plt, data),
+                               _holdings_script(data), "anchor"))
+            except Exception as e:  # noqa: BLE001
+                logger.warning("evening holdings scene skipped: %s", e)
         if reflection:
             try:
                 scenes.append(("loop", "The Loop",

@@ -119,7 +119,7 @@ def disable_cron() -> tuple[bool, str]:
         return False, str(e)
 
 
-def run_now(cap: int = 800, positions: int = 12) -> tuple[bool, str]:
+def run_now(cap: int = 500, positions: int = 12) -> tuple[bool, str]:
     """Kick the morning run in the background using the app's own interpreter.
 
     Returns (ok, log_filename). Token-free quant engine; never trades.
@@ -131,8 +131,12 @@ def run_now(cap: int = 800, positions: int = 12) -> tuple[bool, str]:
         env["PYTHONPATH"] = str(_ROOT)
         fh = open(log, "w")
         subprocess.Popen(
+            # Explicit edition (JP, 2026-07-28): the button says MORNING,
+            # so it always runs the morning edition — a 3 PM click must
+            # never fire a surprise Closing Bell (auto flips after 14:00).
             [sys.executable, str(_RUN_SCRIPT),
-             "--cap", str(cap), "--positions", str(positions)],
+             "--cap", str(cap), "--positions", str(positions),
+             "--edition", "morning"],
             cwd=str(_ROOT), env=env, stdout=fh, stderr=subprocess.STDOUT,
             start_new_session=True,
         )
