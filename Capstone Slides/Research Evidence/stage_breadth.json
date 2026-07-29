@@ -1,0 +1,136 @@
+{
+ "entries": [
+  {
+   "date": "2026-07-14",
+   "total": 494,
+   "counts": {
+    "Advancing": 269,
+    "Basing": 79,
+    "Topping": 63,
+    "Declining": 83
+   },
+   "invalidated": 3
+  },
+  {
+   "date": "2026-07-15",
+   "total": 494,
+   "counts": {
+    "Advancing": 264,
+    "Basing": 77,
+    "Topping": 69,
+    "Declining": 84
+   },
+   "invalidated": 2
+  },
+  {
+   "date": "2026-07-16",
+   "total": 494,
+   "counts": {
+    "Advancing": 267,
+    "Basing": 83,
+    "Topping": 65,
+    "Declining": 79
+   },
+   "invalidated": 2
+  },
+  {
+   "date": "2026-07-17",
+   "total": 495,
+   "counts": {
+    "Advancing": 258,
+    "Basing": 89,
+    "Topping": 72,
+    "Declining": 76
+   },
+   "invalidated": 2
+  },
+  {
+   "date": "2026-07-20",
+   "total": 494,
+   "counts": {
+    "Advancing": 268,
+    "Basing": 85,
+    "Topping": 59,
+    "Declining": 82
+   },
+   "invalidated": 2
+  },
+  {
+   "date": "2026-07-21",
+   "total": 494,
+   "counts": {
+    "Advancing": 261,
+    "Basing": 96,
+    "Topping": 55,
+    "Declining": 82
+   },
+   "invalidated": 4
+  },
+  {
+   "date": "2026-07-22",
+   "total": 493,
+   "counts": {
+    "Advancing": 266,
+    "Basing": 89,
+    "Topping": 53,
+    "Declining": 85
+   },
+   "invalidated": 6
+  },
+  {
+   "date": "2026-07-23",
+   "total": 494,
+   "counts": {
+    "Advancing": 261,
+    "Basing": 108,
+    "Topping": 46,
+    "Declining": 79
+   },
+   "invalidated": 1
+  },
+  {
+   "date": "2026-07-24",
+   "total": 787,
+   "counts": {
+    "Advancing": 420,
+    "Basing": 156,
+    "Topping": 68,
+    "Declining": 143
+   },
+   "invalidated": 5
+  },
+  {
+   "date": "2026-07-27",
+   "total": 788,
+   "counts": {
+    "Advancing": 414,
+    "Basing": 144,
+    "Topping": 85,
+    "Declining": 145
+   },
+   "invalidated": 3
+  },
+  {
+   "date": "2026-07-28",
+   "total": 494,
+   "counts": {
+    "Advancing": 241,
+    "Basing": 93,
+    "Topping": 81,
+    "Declining": 79
+   },
+   "invalidated": 1
+  },
+  {
+   "date": "2026-07-29",
+   "total": 787,
+   "counts": {
+    "Advancing": 376,
+    "Basing": 246,
+    "Topping": 37,
+    "Declining": 128
+   },
+   "invalidated": 5
+  }
+ ]
+}

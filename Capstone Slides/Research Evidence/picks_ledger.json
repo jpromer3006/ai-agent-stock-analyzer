@@ -1,0 +1,104 @@
+{
+ "entries": [
+  {
+   "date": "2026-07-14",
+   "picks": []
+  },
+  {
+   "date": "2026-07-15",
+   "picks": []
+  },
+  {
+   "date": "2026-07-16",
+   "picks": [
+    {
+     "ticker": "BANR",
+     "buy_stop": 71.08,
+     "stop_loss": 63.61,
+     "target": 77.64,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
+  },
+  {
+   "date": "2026-07-17",
+   "picks": [
+    {
+     "ticker": "BIIB",
+     "buy_stop": 217.71,
+     "stop_loss": 187.87,
+     "target": 264.69,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "BANR",
+     "buy_stop": 72.79,
+     "stop_loss": 63.68,
+     "target": 80.2,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
+  },
+  {
+   "date": "2026-07-20",
+   "picks": [
+    {
+     "ticker": "BANR",
+     "buy_stop": 72.79,
+     "stop_loss": 63.7,
+     "target": 80.2,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "BIIB",
+     "buy_stop": 217.71,
+     "stop_loss": 187.98,
+     "target": 264.69,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
+  },
+  {
+   "date": "2026-07-21",
+   "picks": []
+  },
+  {
+   "date": "2026-07-22",
+   "picks": []
+  },
+  {
+   "date": "2026-07-23",
+   "picks": []
+  },
+  {
+   "date": "2026-07-24",
+   "picks": []
+  },
+  {
+   "date": "2026-07-27",
+   "picks": [
+    {
+     "ticker": "DBC",
+     "buy_stop": 31.85,
+     "stop_loss": 27.14,
+     "target": 37.24,
+     "is_etf": true,
+     "home_run_flag": false
+    }
+   ]
+  },
+  {
+   "date": "2026-07-28",
+   "picks": []
+  },
+  {
+   "date": "2026-07-29",
+   "picks": []
+  }
+ ]
+}
