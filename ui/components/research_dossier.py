@@ -652,7 +652,58 @@ def render_research_dossier(ticker: str) -> None:
     st.markdown("---")
     from ui.components.oros_chat import render_ask_oros
     _chat_ctx = st.session_state.get(f"oros_memo_{ticker}", "")
-    _chat_ctx += (f"\n\nStage: {getattr(stage_result, 'stage_name', '?')} · "
-                  f"Resistance grade: {getattr(resistance, 'grade', 'n/a')} "
-                  f"({getattr(resistance, 'grade_narrative', '')})")
+    # WYSIWYG context (JP, 2026-07-28): the chat must know EVERYTHING the
+    # user can see in this tab — the Decision Panel's verdict/confidence,
+    # the trade setup, the stage card numbers — plus a glossary so it can
+    # explain the labels, not just repeat them.
+    try:
+        _sr, _co = stage_result, chartist_output
+        _ts = getattr(_sr, "trade_setup", None)
+        _panel = [
+            f"ON-SCREEN VALUES the user is looking at for {ticker}:",
+            f"Stage card: Stage {getattr(_sr, 'stage', '?')} "
+            f"({getattr(_sr, 'stage_name', '?')}) · action label "
+            f"{getattr(_sr, 'action', '?')} · price "
+            f"${getattr(_sr, 'last_close', 0):.2f} · 30-week MA "
+            f"${getattr(_sr, 'ma_30w', 0):.2f} · price vs MA "
+            f"{getattr(_sr, 'pct_above_ma', 0):+.1%} · Mansfield RS "
+            f"{getattr(_sr, 'mansfield_rs', 0):+.1f} · bull probability "
+            f"{getattr(_sr, 'bull_probability', 0):.0%} (classifier "
+            f"confidence {getattr(_sr, 'confidence', 0):.0%})",
+            f"DECISION PANEL — DOSSIER VERDICT: "
+            f"'{getattr(_co, 'confidence_band', '?')}' at Confidence "
+            f"{getattr(_co, 'confidence_score', 0):.0f}%. Meaning: the "
+            f"verdict band is the Chartist Strategist's blended read of "
+            f"every section (stage, resistance, volume, RS, fundamentals); "
+            f"'Mixed' means bullish and bearish evidence are roughly "
+            f"balanced, so no strong call either way. The Confidence % is "
+            f"how strongly the evidence agrees with that band — it is NOT "
+            f"a probability of profit.",
+            f"Resistance grade: {getattr(resistance, 'grade', 'n/a')} "
+            f"({getattr(resistance, 'grade_narrative', '')})",
+        ]
+        if _ts is not None and getattr(_ts, "applicable", False):
+            _panel.append(
+                f"TRADE SETUP shown: entry "
+                f"${getattr(_ts, 'entry_price', 0):.2f} "
+                f"({getattr(_ts, 'entry_type', '?')}) · stop "
+                f"${getattr(_ts, 'stop_loss', 0):.2f} (30-week MA "
+                f"invalidator) · target 1 "
+                f"${getattr(_ts, 'target_1', 0):.2f} · R/R "
+                f"{getattr(_ts, 'risk_reward_ratio', 0):.2f}:1. An R/R "
+                f"below 1.0 means risking more than the projected reward "
+                f"— an unattractive setup the system would not chase.")
+        _panel.append(
+            "GLOSSARY: stage action labels are BUY (Stage 2, gates pass), "
+            "WATCH (setup forming — wait for the trigger), TRIM (Stage 3 "
+            "tighten/reduce), AVOID/SHORT-study (Stage 4). Resistance "
+            "grades: A+ open sky at the 10-yr high · A ceiling >25% away "
+            "· B 10-25% · C under 10% (heavy overhead supply). Bull "
+            "probability blends momentum, volume, relative strength, and "
+            "sentiment. Entry prices are buy-stops: enter only if price "
+            "proves strength by taking the level out.")
+        _chat_ctx += "\n\n" + "\n".join(_panel)
+    except Exception:  # noqa: BLE001
+        _chat_ctx += (f"\n\nStage: {getattr(stage_result, 'stage_name', '?')} · "
+                      f"Resistance grade: {getattr(resistance, 'grade', 'n/a')}")
     render_ask_oros(ticker, context=_chat_ctx)
