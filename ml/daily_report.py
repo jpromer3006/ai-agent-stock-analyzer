@@ -400,7 +400,12 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
                       f"{', '.join(o['ticker'] for o in bts[:8]) or 'none'}", {"dy": 0.02}))
         lines.append((f"  Young names on watch: {len(opps.get('watch') or [])}",
                       {"dy": 0.024}))
-        if data.get("scoreboard"):
+        # The four experimental strategy books are research plumbing, not
+        # the product (JP, 2026-07-28): off the report by default — the
+        # journals keep grading them silently. OROS_SHOW_SCOREBOARD=1 to
+        # re-include locally for research.
+        if data.get("scoreboard") and os.environ.get(
+                "OROS_SHOW_SCOREBOARD", "0") == "1":
             lines.append(("PAPER-TRADE SCOREBOARD (forward, stop-aware, "
                           "graded at each mandate's own horizon)",
                           {"weight": "bold", "dy": 0.024}))

@@ -195,7 +195,7 @@ def render_watchlist_sidebar():
             # Membership transparency (JP, 2026-07-27): see exactly WHICH
             # names are in the branded universe, when it was set, and who
             # entered/left — plus a CSV for outside analysis.
-            _d = rec.get("date", "?")
+            _d = _us_date(rec.get("date", "?"))
             with st.expander(f"📜 The OROS 500 membership — {len(tickers)} "
                              f"names as of {_d}", expanded=False):
                 _ent = rec.get("entered")
