@@ -89,10 +89,51 @@ def _latest_proposal() -> dict | None:
         return None
 
 
+def _first_entries(rec: dict) -> dict:
+    """For each CURRENT holding, the entry price and date from the earliest
+    CONSECUTIVE autonomous journal it appears in. The book re-journals
+    entries at each morning's price, which made 'Unreal' read $0 forever
+    (JP, 2026-07-29) — real position P&L must measure from when the name
+    first joined the book, exactly like a brokerage does."""
+    import json as _json
+    out = {h["ticker"]: {"entry": float(h.get("entry") or 0),
+                         "date": rec.get("date", "")}
+           for h in rec.get("holdings", []) if h.get("ticker")}
+    try:
+        from ml.portfolio_journal import list_proposals
+        autos = []
+        for path in list_proposals():
+            try:
+                r = _json.loads(path.read_text())
+            except Exception:  # noqa: BLE001
+                continue
+            if str(r.get("note") or "").startswith("UI build"):
+                continue
+            autos.append(r)
+        # newest-first, skipping today's own record(s)
+        active = set(out)
+        for r in reversed(autos):
+            if r.get("date", "") >= rec.get("date", ""):
+                continue
+            held = {h.get("ticker"): h for h in r.get("holdings", [])}
+            for t in list(active):
+                if t in held:
+                    out[t] = {"entry": float(held[t].get("entry") or out[t]["entry"]),
+                              "date": r.get("date", out[t]["date"])}
+                else:
+                    active.discard(t)      # run broken — history stops here
+            if not active:
+                break
+    except Exception:  # noqa: BLE001
+        pass
+    return out
+
+
 def _holdings_pnl(rec: dict) -> dict:
     """Per-holding unrealized paper P&L since the journaled entry, plus the
     day's move. This is the 'watch portfolios and report gains/losses' core."""
     from data import price_cache
+    firsts = _first_entries(rec)
     rows, tot_cost, tot_val, tot_day = [], 0.0, 0.0, 0.0
     for h in rec.get("holdings", []):
         df = price_cache.get_history(h["ticker"])
@@ -100,7 +141,9 @@ def _holdings_pnl(rec: dict) -> dict:
             continue
         c = df["Close"].dropna()
         last, prev = float(c.iloc[-1]), float(c.iloc[-2])
-        entry = float(h.get("entry") or last)
+        _f = firsts.get(h["ticker"]) or {}
+        entry = float(_f.get("entry") or h.get("entry") or last)
+        held_since = _f.get("date", rec.get("date", ""))
         shares = float(h.get("shares") or 0)
         cost, val = shares * entry, shares * last
         day_d = shares * (last - prev)
@@ -111,6 +154,7 @@ def _holdings_pnl(rec: dict) -> dict:
             "day_pct": 100 * (last / prev - 1), "day_usd": day_d,
             "unreal_pct": 100 * (last / entry - 1) if entry else 0.0,
             "unreal_usd": val - cost,
+            "held_since": held_since,
             "below_stop": bool(h.get("stop")) and last < float(h["stop"]),
         })
         tot_cost += cost
@@ -588,7 +632,7 @@ def render_pdf(data: dict, out_path: Path | None = None) -> Path:
                      for r in rows]
             tbl = ax.table(cellText=cells, colLabels=[
                 "Ticker", "Shares", "Entry", "Last", "Stop",
-                "Day %", _esc("Day $"), "Unreal %", _esc("Unreal $")],
+                "Day %", _esc("Day $"), "Gain %", _esc("Gain $")],
                 loc="upper center", cellLoc="right")
             tbl.auto_set_font_size(False)
             tbl.set_fontsize(8)
