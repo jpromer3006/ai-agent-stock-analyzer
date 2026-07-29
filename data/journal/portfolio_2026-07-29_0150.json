@@ -1,0 +1,165 @@
+{
+  "timestamp": "2026-07-29T01:50:25.258404Z",
+  "date": "2026-07-29",
+  "regime": "bull",
+  "mandate": "growth_hold",
+  "account": 100000.0,
+  "invested": 76817.74,
+  "cash": 23182.26,
+  "weights": {
+    "ipo": 0.084,
+    "technical": 0.066,
+    "growth": 0.226,
+    "swing": 0.032,
+    "sepa": 0.146,
+    "value": 0.053,
+    "canslim": 0.282,
+    "weinstein": 0.11
+  },
+  "note": "UI build \u00b7 growth_hold",
+  "holdings": [
+    {
+      "ticker": "CASY",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.596,
+      "shares": 14,
+      "dollars": 11996.04,
+      "weight_pct": 12.0,
+      "entry": 856.86,
+      "stop": 815.36,
+      "led_by": "sepa",
+      "sentiment": 0.178,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "WELL",
+      "sector": "Real Estate",
+      "conviction": 0.5784,
+      "shares": 29,
+      "dollars": 7063.53,
+      "weight_pct": 7.06,
+      "entry": 243.57,
+      "stop": 222.64,
+      "led_by": "sepa",
+      "sentiment": 0.275,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CCEP",
+      "sector": "Consumer Staples",
+      "conviction": 0.5722,
+      "shares": 105,
+      "dollars": 11702.25,
+      "weight_pct": 11.7,
+      "entry": 111.45,
+      "stop": 99.55,
+      "led_by": "sepa",
+      "sentiment": 0.235,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.5702,
+      "shares": 123,
+      "dollars": 11991.27,
+      "weight_pct": 11.99,
+      "entry": 97.49,
+      "stop": 87.51,
+      "led_by": "sepa",
+      "sentiment": 0.133,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LAMR",
+      "sector": "Real Estate",
+      "conviction": 0.5702,
+      "shares": 73,
+      "dollars": 11841.33,
+      "weight_pct": 11.84,
+      "entry": 162.21,
+      "stop": 154.06,
+      "led_by": "sepa",
+      "sentiment": 0.207,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.5688,
+      "shares": 35,
+      "dollars": 11902.8,
+      "weight_pct": 11.9,
+      "entry": 340.08,
+      "stop": 307.83,
+      "led_by": "sepa",
+      "sentiment": 0.101,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CSX",
+      "sector": "Industrials",
+      "conviction": 0.5563,
+      "shares": 203,
+      "dollars": 10320.52,
+      "weight_pct": 10.32,
+      "entry": 50.84,
+      "stop": 47.84,
+      "led_by": "sepa",
+      "sentiment": -0.003,
+      "earnings_risk": true,
+      "outcome_return": null
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "UNH",
+      "sector": "Financials",
+      "composite": 0.548,
+      "reason": "risk wallet spent \u2014 worst-case loss cap reached"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "495 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: growth 27%, canslim 23%, weinstein 12%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.50, canslim x1.44"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "7 holdings, 77% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 23%"
+    }
+  ],
+  "horizon_days": 60,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}

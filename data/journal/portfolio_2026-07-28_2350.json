@@ -1,0 +1,301 @@
+{
+  "timestamp": "2026-07-28T23:50:46.674991Z",
+  "date": "2026-07-28",
+  "regime": "bull",
+  "mandate": "value_hold",
+  "account": 10000.0,
+  "invested": 4177.78,
+  "cash": 5822.22,
+  "weights": {
+    "ipo": 0.056,
+    "technical": 0.059,
+    "growth": 0.222,
+    "swing": 0.021,
+    "sepa": 0.078,
+    "value": 0.353,
+    "canslim": 0.114,
+    "weinstein": 0.097
+  },
+  "note": "UI build \u00b7 value_hold",
+  "holdings": [
+    {
+      "ticker": "ACGL",
+      "sector": "Financials",
+      "conviction": 0.745,
+      "shares": 3,
+      "dollars": 319.44,
+      "weight_pct": 3.19,
+      "entry": 106.48,
+      "stop": 96.1,
+      "led_by": "sepa",
+      "sentiment": 0.064,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CATY",
+      "sector": "Financials",
+      "conviction": 0.6674,
+      "shares": 4,
+      "dollars": 254.2,
+      "weight_pct": 2.54,
+      "entry": 63.55,
+      "stop": 60.06,
+      "led_by": "sepa",
+      "sentiment": 0.191,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BUSE",
+      "sector": "Financials",
+      "conviction": 0.6412,
+      "shares": 8,
+      "dollars": 241.84,
+      "weight_pct": 2.42,
+      "entry": 30.23,
+      "stop": 28.29,
+      "led_by": "sepa",
+      "sentiment": 0.153,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "EBC",
+      "sector": "Other",
+      "conviction": 0.5849,
+      "shares": 6,
+      "dollars": 141.3,
+      "weight_pct": 1.41,
+      "entry": 23.55,
+      "stop": 21.2,
+      "led_by": "sepa",
+      "sentiment": 0.117,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MTCH",
+      "sector": "Information Technology",
+      "conviction": 0.4946,
+      "shares": 11,
+      "dollars": 432.08,
+      "weight_pct": 4.32,
+      "entry": 39.28,
+      "stop": 36.67,
+      "led_by": "sepa",
+      "sentiment": 0.314,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LIVN",
+      "sector": "Health Care",
+      "conviction": 0.4205,
+      "shares": 8,
+      "dollars": 656.72,
+      "weight_pct": 6.57,
+      "entry": 82.09,
+      "stop": 78.24,
+      "led_by": "sepa",
+      "sentiment": 0.182,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ABNB",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.3651,
+      "shares": 2,
+      "dollars": 306.22,
+      "weight_pct": 3.06,
+      "entry": 153.11,
+      "stop": 140.03,
+      "led_by": "sepa",
+      "sentiment": 0.085,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CCEP",
+      "sector": "Consumer Staples",
+      "conviction": 0.3547,
+      "shares": 2,
+      "dollars": 222.9,
+      "weight_pct": 2.23,
+      "entry": 111.45,
+      "stop": 99.55,
+      "led_by": "sepa",
+      "sentiment": 0.235,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "HTO",
+      "sector": "Utilities",
+      "conviction": 0.3442,
+      "shares": 3,
+      "dollars": 192.75,
+      "weight_pct": 1.93,
+      "entry": 64.25,
+      "stop": 59.62,
+      "led_by": "sepa",
+      "sentiment": 0.189,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MO",
+      "sector": "Consumer Staples",
+      "conviction": 0.3408,
+      "shares": 9,
+      "dollars": 673.38,
+      "weight_pct": 6.73,
+      "entry": 74.82,
+      "stop": 71.57,
+      "led_by": "sepa",
+      "sentiment": 0.01,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LAMR",
+      "sector": "Real Estate",
+      "conviction": 0.3285,
+      "shares": 3,
+      "dollars": 486.63,
+      "weight_pct": 4.87,
+      "entry": 162.21,
+      "stop": 154.06,
+      "led_by": "sepa",
+      "sentiment": 0.207,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "HALO",
+      "sector": "Health Care",
+      "conviction": 0.3255,
+      "shares": 3,
+      "dollars": 250.32,
+      "weight_pct": 2.5,
+      "entry": 83.44,
+      "stop": 73.4,
+      "led_by": "sepa",
+      "sentiment": 0.078,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "FCNCA",
+      "sector": "Financials",
+      "composite": 0.641,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "FULT",
+      "sector": "Financials",
+      "composite": 0.638,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "composite": 0.629,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "composite": 0.594,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "CVBF",
+      "sector": "Financials",
+      "composite": 0.569,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "CINF",
+      "sector": "Financials",
+      "composite": 0.548,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "INDB",
+      "sector": "Financials",
+      "composite": 0.532,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "USB",
+      "sector": "Financials",
+      "composite": 0.518,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "composite": 0.5,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "UNH",
+      "sector": "Financials",
+      "composite": 0.39,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "NTRS",
+      "sector": "Financials",
+      "composite": 0.371,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "DE",
+      "sector": "Industrials",
+      "composite": 0.358,
+      "reason": "stop too wide for the 1% risk budget"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "995 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: value 38%, growth 24%, weinstein 10%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.50, canslim x1.44"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 42% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 58%"
+    }
+  ],
+  "horizon_days": 120,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}

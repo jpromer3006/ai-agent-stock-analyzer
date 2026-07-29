@@ -1,0 +1,235 @@
+{
+  "timestamp": "2026-07-29T01:51:00.076331Z",
+  "date": "2026-07-29",
+  "regime": "bull",
+  "mandate": "value_hold",
+  "account": 100000.0,
+  "invested": 39266.7,
+  "cash": 60733.3,
+  "weights": {
+    "ipo": 0.056,
+    "technical": 0.059,
+    "growth": 0.222,
+    "swing": 0.021,
+    "sepa": 0.078,
+    "value": 0.353,
+    "canslim": 0.114,
+    "weinstein": 0.097
+  },
+  "note": "UI build \u00b7 value_hold",
+  "holdings": [
+    {
+      "ticker": "CCEP",
+      "sector": "Consumer Staples",
+      "conviction": 0.3371,
+      "shares": 26,
+      "dollars": 2897.7,
+      "weight_pct": 2.9,
+      "entry": 111.45,
+      "stop": 99.55,
+      "led_by": "sepa",
+      "sentiment": 0.235,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CASY",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.3316,
+      "shares": 7,
+      "dollars": 5998.02,
+      "weight_pct": 6.0,
+      "entry": 856.86,
+      "stop": 815.36,
+      "led_by": "sepa",
+      "sentiment": 0.178,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LAMR",
+      "sector": "Real Estate",
+      "conviction": 0.3285,
+      "shares": 38,
+      "dollars": 6163.98,
+      "weight_pct": 6.16,
+      "entry": 162.21,
+      "stop": 154.06,
+      "led_by": "sepa",
+      "sentiment": 0.207,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ARWR",
+      "sector": "Health Care",
+      "conviction": 0.3232,
+      "shares": 40,
+      "dollars": 3431.2,
+      "weight_pct": 3.43,
+      "entry": 85.78,
+      "stop": 78.09,
+      "led_by": "sepa",
+      "sentiment": 0.335,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "KO",
+      "sector": "Consumer Staples",
+      "conviction": 0.3225,
+      "shares": 22,
+      "dollars": 1941.94,
+      "weight_pct": 1.94,
+      "entry": 88.27,
+      "stop": 81.38,
+      "led_by": "sepa",
+      "sentiment": 0.008,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "WELL",
+      "sector": "Real Estate",
+      "conviction": 0.3192,
+      "shares": 7,
+      "dollars": 1704.99,
+      "weight_pct": 1.7,
+      "entry": 243.57,
+      "stop": 222.64,
+      "led_by": "sepa",
+      "sentiment": 0.275,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "TGT",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.3177,
+      "shares": 24,
+      "dollars": 3460.8,
+      "weight_pct": 3.46,
+      "entry": 144.2,
+      "stop": 131.35,
+      "led_by": "sepa",
+      "sentiment": 0.23,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.317,
+      "shares": 11,
+      "dollars": 1915.76,
+      "weight_pct": 1.92,
+      "entry": 174.16,
+      "stop": 161.02,
+      "led_by": "sepa",
+      "sentiment": 0.372,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.3135,
+      "shares": 31,
+      "dollars": 3022.19,
+      "weight_pct": 3.02,
+      "entry": 97.49,
+      "stop": 87.51,
+      "led_by": "sepa",
+      "sentiment": 0.133,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "SPG",
+      "sector": "Real Estate",
+      "conviction": 0.3125,
+      "shares": 14,
+      "dollars": 3313.8,
+      "weight_pct": 3.31,
+      "entry": 236.7,
+      "stop": 215.79,
+      "led_by": "sepa",
+      "sentiment": 0.134,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "UNP",
+      "sector": "Industrials",
+      "conviction": 0.3124,
+      "shares": 8,
+      "dollars": 2355.6,
+      "weight_pct": 2.36,
+      "entry": 294.45,
+      "stop": 275.97,
+      "led_by": "sepa",
+      "sentiment": 0.163,
+      "earnings_risk": true,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.3119,
+      "shares": 9,
+      "dollars": 3060.72,
+      "weight_pct": 3.06,
+      "entry": 340.08,
+      "stop": 307.83,
+      "led_by": "sepa",
+      "sentiment": 0.101,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "HALO",
+      "sector": "Health Care",
+      "composite": 0.309,
+      "reason": "outranked \u2014 book full at 12"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "495 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: value 38%, growth 24%, weinstein 10%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.50, canslim x1.44"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 39% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 61%"
+    }
+  ],
+  "horizon_days": 120,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}

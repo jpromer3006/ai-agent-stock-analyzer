@@ -1,0 +1,228 @@
+{
+  "timestamp": "2026-07-28T06:28:39.121856Z",
+  "date": "2026-07-28",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 47442.09,
+  "cash": 52557.91,
+  "weights": {
+    "swing": 0.093,
+    "weinstein": 0.154,
+    "ipo": 0.114,
+    "canslim": 0.195,
+    "technical": 0.131,
+    "sepa": 0.225,
+    "growth": 0.065,
+    "value": 0.023
+  },
+  "note": "UI build \u00b7 swing_momentum",
+  "holdings": [
+    {
+      "ticker": "ABNB",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.6028,
+      "shares": 43,
+      "dollars": 6314.98,
+      "weight_pct": 6.31,
+      "entry": 146.86,
+      "stop": 139.64,
+      "led_by": "sepa",
+      "sentiment": 0.17,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MNST",
+      "sector": "Consumer Staples",
+      "conviction": 0.5889,
+      "shares": 99,
+      "dollars": 9437.67,
+      "weight_pct": 9.44,
+      "entry": 95.33,
+      "stop": 92.2,
+      "led_by": "sepa",
+      "sentiment": 0.21,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ANET",
+      "sector": "Information Technology",
+      "conviction": 0.5877,
+      "shares": 20,
+      "dollars": 3415.2,
+      "weight_pct": 3.42,
+      "entry": 170.76,
+      "stop": 155.34,
+      "led_by": "sepa",
+      "sentiment": 0.159,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "TSM",
+      "sector": "Semiconductors",
+      "conviction": 0.4064,
+      "shares": 11,
+      "dollars": 4389.99,
+      "weight_pct": 4.39,
+      "entry": 399.09,
+      "stop": 370.81,
+      "led_by": "weinstein",
+      "sentiment": -0.01,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "PWR",
+      "sector": "Industrials",
+      "conviction": 0.4056,
+      "shares": 8,
+      "dollars": 4962.24,
+      "weight_pct": 4.96,
+      "entry": 620.28,
+      "stop": 582.61,
+      "led_by": "weinstein",
+      "sentiment": 0.198,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ASML",
+      "sector": "Industrials",
+      "conviction": 0.3971,
+      "shares": 1,
+      "dollars": 1655.26,
+      "weight_pct": 1.66,
+      "entry": 1655.26,
+      "stop": 1489.89,
+      "led_by": "weinstein",
+      "sentiment": -0.108,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LRCX",
+      "sector": "Industrials",
+      "conviction": 0.3775,
+      "shares": 7,
+      "dollars": 2041.27,
+      "weight_pct": 2.04,
+      "entry": 291.61,
+      "stop": 251.68,
+      "led_by": "weinstein",
+      "sentiment": 0.005,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "KLAC",
+      "sector": "Health Care",
+      "conviction": 0.3535,
+      "shares": 11,
+      "dollars": 2236.96,
+      "weight_pct": 2.24,
+      "entry": 203.36,
+      "stop": 175.5,
+      "led_by": "weinstein",
+      "sentiment": 0.139,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "COIN",
+      "sector": "Financials",
+      "conviction": 0.2704,
+      "shares": 21,
+      "dollars": 3517.29,
+      "weight_pct": 3.52,
+      "entry": 167.49,
+      "stop": 153.03,
+      "led_by": "technical",
+      "sentiment": 0.06,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "SHOP",
+      "sector": "Information Technology",
+      "conviction": 0.2309,
+      "shares": 21,
+      "dollars": 2664.48,
+      "weight_pct": 2.66,
+      "entry": 126.88,
+      "stop": 112.0,
+      "led_by": "technical",
+      "sentiment": 0.339,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MSTR",
+      "sector": "Financials",
+      "conviction": 0.1792,
+      "shares": 29,
+      "dollars": 2860.85,
+      "weight_pct": 2.86,
+      "entry": 98.65,
+      "stop": 88.2,
+      "led_by": "swing",
+      "sentiment": 0.025,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "PLTR",
+      "sector": "Information Technology",
+      "conviction": 0.1576,
+      "shares": 30,
+      "dollars": 3945.9,
+      "weight_pct": 3.95,
+      "entry": 131.53,
+      "stop": 121.29,
+      "led_by": "swing",
+      "sentiment": 0.122,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "bench": [],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "30 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted technical x1.22, canslim x1.15"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 47% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 53%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}

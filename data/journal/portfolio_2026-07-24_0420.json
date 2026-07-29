@@ -29,7 +29,10 @@
       "led_by": "sepa",
       "sentiment": 0.31,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.063,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "WELL",
@@ -43,10 +46,10 @@
       "led_by": "sepa",
       "sentiment": 0.369,
       "earnings_risk": false,
-      "outcome_return": -0.051,
-      "outcome_exit": "horizon",
-      "outcome_days": 5,
-      "outcome_final": true
+      "outcome_return": -0.0141,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "CASY",
@@ -60,10 +63,10 @@
       "led_by": "sepa",
       "sentiment": 0.096,
       "earnings_risk": false,
-      "outcome_return": -0.0049,
-      "outcome_exit": "horizon",
-      "outcome_days": 5,
-      "outcome_final": true
+      "outcome_return": -0.021,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "ANET",
@@ -77,10 +80,10 @@
       "led_by": "sepa",
       "sentiment": 0.214,
       "earnings_risk": false,
-      "outcome_return": -0.1055,
-      "outcome_exit": "stop",
-      "outcome_days": 3,
-      "outcome_final": true
+      "outcome_return": -0.0391,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "SPG",
@@ -94,10 +97,10 @@
       "led_by": "sepa",
       "sentiment": 0.27,
       "earnings_risk": false,
-      "outcome_return": 0.0185,
-      "outcome_exit": "horizon",
-      "outcome_days": 5,
-      "outcome_final": true
+      "outcome_return": 0.0511,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     }
   ],
   "bench": [
@@ -159,8 +162,8 @@
     }
   ],
   "horizon_days": 5,
-  "realized_avg_return": -0.0357,
-  "realized_hit_rate": 0.25,
-  "realized_final_count": 4,
-  "realized_stop_exits": 1
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
 }

@@ -98,24 +98,20 @@
   },
   {
    "date": "2026-07-29",
-   "picks": []
-  },
-  {
-   "date": "2026-07-30",
-   "picks": []
-  },
-  {
-   "date": "2026-07-31",
-   "picks": []
-  },
-  {
-   "date": "2026-08-03",
    "picks": [
     {
-     "ticker": "SBUX",
-     "buy_stop": 108.91,
-     "stop_loss": 97.94,
-     "target": 124.62,
+     "ticker": "PLD",
+     "buy_stop": 150.81,
+     "stop_loss": 136.85,
+     "target": 175.43,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "AGNC",
+     "buy_stop": 11.49,
+     "stop_loss": 10.44,
+     "target": 13.09,
      "is_etf": false,
      "home_run_flag": false
     }

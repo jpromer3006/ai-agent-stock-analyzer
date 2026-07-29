@@ -1,0 +1,265 @@
+{
+  "timestamp": "2026-07-29T01:49:04.141872Z",
+  "date": "2026-07-29",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 45898.77,
+  "cash": 54101.23,
+  "weights": {
+    "ipo": 0.096,
+    "technical": 0.121,
+    "growth": 0.055,
+    "swing": 0.086,
+    "sepa": 0.267,
+    "value": 0.02,
+    "canslim": 0.205,
+    "weinstein": 0.15
+  },
+  "note": "UI build \u00b7 swing_momentum",
+  "holdings": [
+    {
+      "ticker": "CASY",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.8005,
+      "shares": 7,
+      "dollars": 5998.02,
+      "weight_pct": 6.0,
+      "entry": 856.86,
+      "stop": 815.36,
+      "led_by": "sepa",
+      "sentiment": 0.178,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CCEP",
+      "sector": "Consumer Staples",
+      "conviction": 0.7975,
+      "shares": 26,
+      "dollars": 2897.7,
+      "weight_pct": 2.9,
+      "entry": 111.45,
+      "stop": 99.55,
+      "led_by": "sepa",
+      "sentiment": 0.235,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.7896,
+      "shares": 31,
+      "dollars": 3022.19,
+      "weight_pct": 3.02,
+      "entry": 97.49,
+      "stop": 87.51,
+      "led_by": "sepa",
+      "sentiment": 0.133,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ACGL",
+      "sector": "Financials",
+      "conviction": 0.7621,
+      "shares": 30,
+      "dollars": 3194.4,
+      "weight_pct": 3.19,
+      "entry": 106.48,
+      "stop": 96.1,
+      "led_by": "sepa",
+      "sentiment": 0.064,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MTCH",
+      "sector": "Information Technology",
+      "conviction": 0.7561,
+      "shares": 119,
+      "dollars": 4674.32,
+      "weight_pct": 4.67,
+      "entry": 39.28,
+      "stop": 36.67,
+      "led_by": "sepa",
+      "sentiment": 0.314,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LAMR",
+      "sector": "Real Estate",
+      "conviction": 0.7452,
+      "shares": 38,
+      "dollars": 6163.98,
+      "weight_pct": 6.16,
+      "entry": 162.21,
+      "stop": 154.06,
+      "led_by": "sepa",
+      "sentiment": 0.207,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.7442,
+      "shares": 9,
+      "dollars": 3060.72,
+      "weight_pct": 3.06,
+      "entry": 340.08,
+      "stop": 307.83,
+      "led_by": "sepa",
+      "sentiment": 0.101,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "COKE",
+      "sector": "Consumer Staples",
+      "conviction": 0.7372,
+      "shares": 21,
+      "dollars": 4095.0,
+      "weight_pct": 4.09,
+      "entry": 195.0,
+      "stop": 180.77,
+      "led_by": "sepa",
+      "sentiment": 0.179,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "HALO",
+      "sector": "Health Care",
+      "conviction": 0.7332,
+      "shares": 31,
+      "dollars": 2586.64,
+      "weight_pct": 2.59,
+      "entry": 83.44,
+      "stop": 73.4,
+      "led_by": "sepa",
+      "sentiment": 0.078,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "TGT",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7263,
+      "shares": 24,
+      "dollars": 3460.8,
+      "weight_pct": 3.46,
+      "entry": 144.2,
+      "stop": 131.35,
+      "led_by": "sepa",
+      "sentiment": 0.23,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ARWR",
+      "sector": "Health Care",
+      "conviction": 0.7159,
+      "shares": 40,
+      "dollars": 3431.2,
+      "weight_pct": 3.43,
+      "entry": 85.78,
+      "stop": 78.09,
+      "led_by": "sepa",
+      "sentiment": 0.335,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "SPG",
+      "sector": "Real Estate",
+      "conviction": 0.715,
+      "shares": 14,
+      "dollars": 3313.8,
+      "weight_pct": 3.31,
+      "entry": 236.7,
+      "stop": 215.79,
+      "led_by": "sepa",
+      "sentiment": 0.134,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "composite": 0.78,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "composite": 0.748,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "WELL",
+      "sector": "Real Estate",
+      "composite": 0.741,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "KO",
+      "sector": "Consumer Staples",
+      "composite": 0.734,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "USB",
+      "sector": "Financials",
+      "composite": 0.733,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "CSX",
+      "sector": "Industrials",
+      "composite": 0.712,
+      "reason": "outranked \u2014 book full at 12"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "495 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.50, canslim x1.44"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 46% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 54%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}
