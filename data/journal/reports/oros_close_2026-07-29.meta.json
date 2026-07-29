@@ -1,0 +1,45 @@
+{
+ "edition": "evening",
+ "chapters": [
+  {
+   "title": "Movers in the Book",
+   "start_s": 0.0
+  },
+  {
+   "title": "Sign-off",
+   "start_s": 3.48
+  }
+ ],
+ "home_run_confirmed": null,
+ "tally": {
+  "days": 11,
+  "vs_frozen": {
+   "wins": 8,
+   "losses": 3,
+   "ties": 0
+  },
+  "vs_spy": {
+   "wins": 6,
+   "losses": 5,
+   "ties": 0
+  },
+  "today": {
+   "date": "2026-07-29",
+   "live_pct": -0.22051984882354736,
+   "frozen_pct": -0.7785399770736694,
+   "spy_pct": -1.5387473482586067
+  }
+ },
+ "breadth": {
+  "date": "2026-07-29",
+  "total": 493,
+  "counts": {
+   "Advancing": 224,
+   "Basing": 178,
+   "Topping": 20,
+   "Declining": 71
+  },
+  "invalidated": 1
+ },
+ "duration_s": 16.0
+}
