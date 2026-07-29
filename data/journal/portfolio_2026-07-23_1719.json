@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0865,
+      "outcome_return": -0.0556,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -47,7 +47,7 @@
       "led_by": "sepa",
       "sentiment": 0.164,
       "earnings_risk": false,
-      "outcome_return": -0.0827,
+      "outcome_return": -0.0839,
       "outcome_exit": "stop",
       "outcome_days": 2,
       "outcome_final": true
@@ -104,7 +104,7 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0827,
+  "realized_avg_return": -0.0839,
   "realized_hit_rate": 0.0,
   "realized_final_count": 1,
   "realized_stop_exits": 1

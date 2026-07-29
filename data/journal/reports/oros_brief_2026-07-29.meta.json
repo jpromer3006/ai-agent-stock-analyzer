@@ -1,0 +1,72 @@
+{
+ "date": "Wednesday, July 29, 2026",
+ "regime": "bull",
+ "lesson": "book",
+ "race_day": 18,
+ "race_total": 18,
+ "home_run": null,
+ "takeaway": "Tonight's takeaway. A portfolio is not a museum. Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.",
+ "breadth": {
+  "date": "2026-07-29",
+  "total": 493,
+  "counts": {
+   "Advancing": 240,
+   "Basing": 160,
+   "Topping": 22,
+   "Declining": 71
+  },
+  "invalidated": 2,
+  "prior": {
+   "date": "2026-07-20",
+   "total": 494,
+   "counts": {
+    "Advancing": 268,
+    "Basing": 85,
+    "Topping": 59,
+    "Declining": 82
+   },
+   "invalidated": 2
+  }
+ },
+ "oros500": {
+  "name": "OROS 500",
+  "date": "2026-07-29",
+  "count": 500,
+  "target": 500,
+  "entered": [
+   "ACT",
+   "AMPG",
+   "COAG",
+   "CONL"
+  ],
+  "left": [
+   "ANNX",
+   "ARDX",
+   "CCOI",
+   "CMPR"
+  ]
+ },
+ "chapters": [
+  {
+   "title": "Tonight on the Market Desk",
+   "start_s": 0.0
+  },
+  {
+   "title": "The Market Open",
+   "start_s": 15.56
+  },
+  {
+   "title": "Business Desk \u2014 the book",
+   "start_s": 24.85
+  },
+  {
+   "title": "The Takeaway",
+   "start_s": 45.28
+  },
+  {
+   "title": "Disclosure & Credits",
+   "start_s": 57.4
+  }
+ ],
+ "duration_s": 98.7
+}

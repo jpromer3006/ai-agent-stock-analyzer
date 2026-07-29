@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.149,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0134,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "MET",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0148,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "ACGL",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.064,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0376,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CCEP",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.279,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0145,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CVX",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.181,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0022,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BGC",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.336,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0209,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "DRH",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.209,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0278,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "MO",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": -0.004,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0074,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "XLE",
@@ -156,7 +180,10 @@
       "led_by": "sepa",
       "sentiment": 0.031,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0069,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "COKE",
@@ -170,7 +197,10 @@
       "led_by": "sepa",
       "sentiment": 0.179,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.002,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "DRS",
@@ -184,7 +214,10 @@
       "led_by": "sepa",
       "sentiment": 0.09,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.001,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     }
   ],
   "bench": [

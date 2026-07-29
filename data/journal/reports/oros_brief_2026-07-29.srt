@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:08,231
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+2
+00:00:08,231 --> 00:00:15,595
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+3
+00:00:15,557 --> 00:00:24,883
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+4
+00:00:24,845 --> 00:00:27,431
+Today's lesson is position management.
+
+5
+00:00:27,431 --> 00:00:28,723
+Cash is a position.
+
+6
+00:00:28,723 --> 00:00:36,412
+The system sizes deployment by rule, and when its own forward record weakens, a throttle automatically cuts size.
+
+7
+00:00:36,412 --> 00:00:40,358
+Rotation is not indecision; it is the portfolio breathing.
+
+8
+00:00:40,358 --> 00:00:45,325
+Names that stop qualifying leave, and names that start qualifying arrive.
+
+9
+00:00:45,278 --> 00:00:46,827
+Tonight's takeaway.
+
+10
+00:00:46,827 --> 00:00:49,110
+A portfolio is not a museum.
+
+11
+00:00:49,110 --> 00:00:57,425
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+12
+00:00:57,399 --> 00:00:59,486
+A word on how this desk works.
+
+13
+00:00:59,486 --> 00:01:17,013
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+14
+00:01:17,013 --> 00:01:25,428
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+15
+00:01:25,428 --> 00:01:28,361
+All figures are simulated paper trading.
+
+16
+00:01:28,361 --> 00:01:34,740
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+17
+00:01:34,740 --> 00:01:38,699
+From the OROS Market Desk, have a disciplined session.
