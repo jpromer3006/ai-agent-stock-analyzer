@@ -1,307 +1,343 @@
 {
- "timestamp": "2026-07-29T13:48:11.461754Z",
- "date": "2026-07-29",
- "regime": "bull",
- "mandate": "swing_momentum",
- "account": 100000.0,
- "invested": 56381.5,
- "cash": 43618.5,
- "weights": {
-  "canslim": 0.175,
-  "technical": 0.111,
-  "weinstein": 0.166,
-  "growth": 0.067,
-  "value": 0.024,
-  "ipo": 0.118,
-  "sepa": 0.218,
-  "swing": 0.121
- },
- "note": "nightly run",
- "holdings": [
-  {
-   "ticker": "MET",
-   "sector": "Financials",
-   "conviction": 0.756,
-   "shares": 33,
-   "dollars": 3210.24,
-   "weight_pct": 3.21,
-   "entry": 97.28,
-   "stop": 87.86,
-   "led_by": "sepa",
-   "sentiment": 0.133,
-   "earnings_risk": false,
-   "outcome_return": null
+  "timestamp": "2026-07-29T13:48:11.461754Z",
+  "date": "2026-07-29",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 56381.5,
+  "cash": 43618.5,
+  "weights": {
+    "canslim": 0.175,
+    "technical": 0.111,
+    "weinstein": 0.166,
+    "growth": 0.067,
+    "value": 0.024,
+    "ipo": 0.118,
+    "sepa": 0.218,
+    "swing": 0.121
   },
-  {
-   "ticker": "APA",
-   "sector": "Energy",
-   "conviction": 0.7435,
-   "shares": 173,
-   "dollars": 6205.51,
-   "weight_pct": 6.21,
-   "entry": 35.87,
-   "stop": 34.07,
-   "led_by": "sepa",
-   "sentiment": 0.141,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "CASY",
-   "sector": "Consumer Discretionary",
-   "conviction": 0.7294,
-   "shares": 6,
-   "dollars": 5250.9,
-   "weight_pct": 5.25,
-   "entry": 875.15,
-   "stop": 824.08,
-   "led_by": "sepa",
-   "sentiment": 0.178,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ARWR",
-   "sector": "Health Care",
-   "conviction": 0.7225,
-   "shares": 40,
-   "dollars": 3440.0,
-   "weight_pct": 3.44,
-   "entry": 86.0,
-   "stop": 78.27,
-   "led_by": "sepa",
-   "sentiment": 0.335,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "DRS",
-   "sector": "Industrials",
-   "conviction": 0.7213,
-   "shares": 113,
-   "dollars": 5461.29,
-   "weight_pct": 5.46,
-   "entry": 48.33,
-   "stop": 45.57,
-   "led_by": "sepa",
-   "sentiment": 0.09,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "CCEP",
-   "sector": "Consumer Staples",
-   "conviction": 0.7182,
-   "shares": 28,
-   "dollars": 3111.36,
-   "weight_pct": 3.11,
-   "entry": 111.12,
-   "stop": 99.99,
-   "led_by": "sepa",
-   "sentiment": 0.235,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BGC",
-   "sector": "Financials",
-   "conviction": 0.7152,
-   "shares": 411,
-   "dollars": 4927.89,
-   "weight_pct": 4.93,
-   "entry": 11.99,
-   "stop": 11.23,
-   "led_by": "sepa",
-   "sentiment": 0.289,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "DE",
-   "sector": "Industrials",
-   "conviction": 0.7139,
-   "shares": 7,
-   "dollars": 4397.05,
-   "weight_pct": 4.4,
-   "entry": 628.15,
-   "stop": 586.97,
-   "led_by": "sepa",
-   "sentiment": 0.012,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "MO",
-   "sector": "Consumer Staples",
-   "conviction": 0.7104,
-   "shares": 83,
-   "dollars": 6258.2,
-   "weight_pct": 6.26,
-   "entry": 75.4,
-   "stop": 71.64,
-   "led_by": "sepa",
-   "sentiment": 0.059,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BAC",
-   "sector": "Financials",
-   "conviction": 0.705,
-   "shares": 56,
-   "dollars": 3487.12,
-   "weight_pct": 3.49,
-   "entry": 62.27,
-   "stop": 56.76,
-   "led_by": "sepa",
-   "sentiment": 0.21,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "CVX",
-   "sector": "Energy",
-   "conviction": 0.6919,
-   "shares": 33,
-   "dollars": 6337.32,
-   "weight_pct": 6.34,
-   "entry": 192.04,
-   "stop": 182.8,
-   "led_by": "sepa",
-   "sentiment": -0.069,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "COKE",
-   "sector": "Consumer Staples",
-   "conviction": 0.6912,
-   "shares": 22,
-   "dollars": 4294.62,
-   "weight_pct": 4.29,
-   "entry": 195.21,
-   "stop": 181.28,
-   "led_by": "sepa",
-   "sentiment": 0.179,
-   "earnings_risk": false,
-   "outcome_return": null
-  }
- ],
- "bench": [
-  {
-   "ticker": "CATY",
-   "sector": "Financials",
-   "composite": 0.769,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "BPOP",
-   "sector": "Financials",
-   "composite": 0.733,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "ACGL",
-   "sector": "Financials",
-   "composite": 0.731,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "UNH",
-   "sector": "Financials",
-   "composite": 0.707,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "BIIB",
-   "sector": "Health Care",
-   "composite": 0.701,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "DLR",
-   "sector": "Real Estate",
-   "composite": 0.696,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "KO",
-   "sector": "Consumer Staples",
-   "composite": 0.694,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "EBC",
-   "sector": "Financials",
-   "composite": 0.693,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "AAPL",
-   "sector": "Information Technology",
-   "composite": 0.69,
-   "reason": "outranked \u2014 book full at 12"
-  }
- ],
- "agent_trace": [
-  {
-   "agent": "DataAgent",
-   "role": "universe & data",
-   "summary": "495 candidate names (benchmarks removed)"
-  },
-  {
-   "agent": "RegimeAgent",
-   "role": "market regime",
-   "summary": "regime = BULL"
-  },
-  {
-   "agent": "RouterAgent",
-   "role": "strategy mandate weights",
-   "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
-  },
-  {
-   "agent": "MemoryAgent",
-   "role": "experience-weighted tilt",
-   "summary": "boosted weinstein x1.00, sepa x1.00"
-  },
-  {
-   "agent": "ConstructionAgent",
-   "role": "strategy ensemble + sizing",
-   "summary": "12 holdings, 56% invested, 8 strategies"
-  },
-  {
-   "agent": "RiskAgent",
-   "role": "post-construction risk",
-   "summary": "within limits; cash 44%"
-  }
- ],
- "horizon_days": 20,
- "realized_avg_return": null,
- "realized_hit_rate": null,
- "realized_final_count": 0,
- "realized_stop_exits": 0,
- "changes": {
-  "added": [
-   "APA",
-   "ARWR",
-   "BAC",
-   "DE"
+  "note": "nightly run",
+  "holdings": [
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.756,
+      "shares": 33,
+      "dollars": 3210.24,
+      "weight_pct": 3.21,
+      "entry": 97.28,
+      "stop": 87.86,
+      "led_by": "sepa",
+      "sentiment": 0.133,
+      "earnings_risk": false,
+      "outcome_return": 0.0007,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "APA",
+      "sector": "Energy",
+      "conviction": 0.7435,
+      "shares": 173,
+      "dollars": 6205.51,
+      "weight_pct": 6.21,
+      "entry": 35.87,
+      "stop": 34.07,
+      "led_by": "sepa",
+      "sentiment": 0.141,
+      "earnings_risk": false,
+      "outcome_return": 0.0078,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CASY",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7294,
+      "shares": 6,
+      "dollars": 5250.9,
+      "weight_pct": 5.25,
+      "entry": 875.15,
+      "stop": 824.08,
+      "led_by": "sepa",
+      "sentiment": 0.178,
+      "earnings_risk": false,
+      "outcome_return": -0.0028,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ARWR",
+      "sector": "Health Care",
+      "conviction": 0.7225,
+      "shares": 40,
+      "dollars": 3440.0,
+      "weight_pct": 3.44,
+      "entry": 86.0,
+      "stop": 78.27,
+      "led_by": "sepa",
+      "sentiment": 0.335,
+      "earnings_risk": false,
+      "outcome_return": 0.0042,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "DRS",
+      "sector": "Industrials",
+      "conviction": 0.7213,
+      "shares": 113,
+      "dollars": 5461.29,
+      "weight_pct": 5.46,
+      "entry": 48.33,
+      "stop": 45.57,
+      "led_by": "sepa",
+      "sentiment": 0.09,
+      "earnings_risk": false,
+      "outcome_return": -0.0062,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CCEP",
+      "sector": "Consumer Staples",
+      "conviction": 0.7182,
+      "shares": 28,
+      "dollars": 3111.36,
+      "weight_pct": 3.11,
+      "entry": 111.12,
+      "stop": 99.99,
+      "led_by": "sepa",
+      "sentiment": 0.235,
+      "earnings_risk": false,
+      "outcome_return": 0.0018,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "BGC",
+      "sector": "Financials",
+      "conviction": 0.7152,
+      "shares": 411,
+      "dollars": 4927.89,
+      "weight_pct": 4.93,
+      "entry": 11.99,
+      "stop": 11.23,
+      "led_by": "sepa",
+      "sentiment": 0.289,
+      "earnings_risk": false,
+      "outcome_return": -0.0167,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "DE",
+      "sector": "Industrials",
+      "conviction": 0.7139,
+      "shares": 7,
+      "dollars": 4397.05,
+      "weight_pct": 4.4,
+      "entry": 628.15,
+      "stop": 586.97,
+      "led_by": "sepa",
+      "sentiment": 0.012,
+      "earnings_risk": false,
+      "outcome_return": -0.0467,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "MO",
+      "sector": "Consumer Staples",
+      "conviction": 0.7104,
+      "shares": 83,
+      "dollars": 6258.2,
+      "weight_pct": 6.26,
+      "entry": 75.4,
+      "stop": 71.64,
+      "led_by": "sepa",
+      "sentiment": 0.059,
+      "earnings_risk": false,
+      "outcome_return": -0.0828,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.705,
+      "shares": 56,
+      "dollars": 3487.12,
+      "weight_pct": 3.49,
+      "entry": 62.27,
+      "stop": 56.76,
+      "led_by": "sepa",
+      "sentiment": 0.21,
+      "earnings_risk": false,
+      "outcome_return": -0.011,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CVX",
+      "sector": "Energy",
+      "conviction": 0.6919,
+      "shares": 33,
+      "dollars": 6337.32,
+      "weight_pct": 6.34,
+      "entry": 192.04,
+      "stop": 182.8,
+      "led_by": "sepa",
+      "sentiment": -0.069,
+      "earnings_risk": false,
+      "outcome_return": -0.0061,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "COKE",
+      "sector": "Consumer Staples",
+      "conviction": 0.6912,
+      "shares": 22,
+      "dollars": 4294.62,
+      "weight_pct": 4.29,
+      "entry": 195.21,
+      "stop": 181.28,
+      "led_by": "sepa",
+      "sentiment": 0.179,
+      "earnings_risk": false,
+      "outcome_return": -0.0212,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    }
   ],
-  "removed": [
-   "AAPL",
-   "ACGL",
-   "DRH",
-   "XLE"
+  "bench": [
+    {
+      "ticker": "CATY",
+      "sector": "Financials",
+      "composite": 0.769,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "composite": 0.733,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "ACGL",
+      "sector": "Financials",
+      "composite": 0.731,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "UNH",
+      "sector": "Financials",
+      "composite": 0.707,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "BIIB",
+      "sector": "Health Care",
+      "composite": 0.701,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "DLR",
+      "sector": "Real Estate",
+      "composite": 0.696,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "KO",
+      "sector": "Consumer Staples",
+      "composite": 0.694,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "EBC",
+      "sector": "Financials",
+      "composite": 0.693,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "composite": 0.69,
+      "reason": "outranked \u2014 book full at 12"
+    }
   ],
-  "unchanged": [
-   "BGC",
-   "CASY",
-   "CCEP",
-   "COKE",
-   "CVX",
-   "DRS",
-   "MET",
-   "MO"
-  ]
- }
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "495 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 56% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 44%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": -0.0828,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 1,
+  "realized_stop_exits": 1,
+  "changes": {
+    "added": [
+      "APA",
+      "ARWR",
+      "BAC",
+      "DE"
+    ],
+    "removed": [
+      "AAPL",
+      "ACGL",
+      "DRH",
+      "XLE"
+    ],
+    "unchanged": [
+      "BGC",
+      "CASY",
+      "CCEP",
+      "COKE",
+      "CVX",
+      "DRS",
+      "MET",
+      "MO"
+    ]
+  }
 }
