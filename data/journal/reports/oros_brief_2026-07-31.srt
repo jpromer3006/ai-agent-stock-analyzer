@@ -1,0 +1,191 @@
+1
+00:00:00,000 --> 00:00:00,951
+Good morning.
+
+2
+00:00:00,951 --> 00:00:06,294
+From the OROS Market Desk, here is the rundown for Friday, July 31, 2026.
+
+3
+00:00:06,294 --> 00:00:07,758
+The tape reads bull.
+
+4
+00:00:07,758 --> 00:00:13,613
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:13,613 --> 00:00:25,104
+And at the sports desk, day 18 of 18 in the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:25,104 --> 00:00:33,334
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:33,334 --> 00:00:40,699
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:40,661 --> 00:00:42,561
+First, the market open.
+
+9
+00:00:42,561 --> 00:00:48,510
+The S and P five hundred gained 1.7 percent, while the NASDAQ added 3.3.
+
+10
+00:00:48,510 --> 00:00:55,615
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+11
+00:00:55,615 --> 00:00:57,928
+The fear gauge sits at 16.7.
+
+12
+00:00:57,928 --> 00:01:07,254
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:07,216 --> 00:01:15,916
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+14
+00:01:15,916 --> 00:01:20,025
+Forcing a pick on a weak tape is how systems bleed.
+
+15
+00:01:20,025 --> 00:01:20,669
+We wait.
+
+16
+00:01:20,637 --> 00:01:23,084
+Turning to the model book.
+
+17
+00:01:23,084 --> 00:01:35,039
+The system holds 12 positions with 56% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+18
+00:01:35,039 --> 00:01:42,288
+New to the book: Amgen (AMGN), JP Morgan Chase & (JPM), Merck & Company, Inc.
+
+19
+00:01:42,288 --> 00:01:50,477
+Common Stock (new) (MRK), Target (TGT) — each passed the full entry gauntlet overnight.
+
+20
+00:01:50,477 --> 00:02:27,848
+Rotated out: Apple (AAPL), which still advancing, but outranked by stronger names; Invesco DB Commodity Index Tracking Fund (DBC), which still advancing, but outranked by stronger names; Diamondrock Hospitality (DRH), which still advancing, but outranked by stronger names; State Street SPDR S&P Oil & Gas Exploration & Production ETF (XOP), which still advancing, but outranked by stronger names.
+
+21
+00:02:27,848 --> 00:02:45,733
+Left on the bench: Popular (BPOP), earnings inside the blackout window; BGC Group (BGC), earnings inside the blackout window; Bristol-Myers Squibb (BMY), earnings inside the blackout window.
+
+22
+00:02:45,733 --> 00:02:51,099
+Passing the scan is not enough; the book must afford you.
+
+23
+00:02:51,099 --> 00:02:57,133
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+24
+00:02:57,090 --> 00:03:04,271
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+25
+00:03:04,271 --> 00:03:13,057
+12 positions, led by MetLife, ticker MET, Coca-Cola Europacific Partners, ticker CCEP, Bank of America, ticker BAC.
+
+26
+00:03:13,057 --> 00:03:23,448
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+27
+00:03:23,421 --> 00:03:25,635
+Over to the sports desk.
+
+28
+00:03:25,635 --> 00:03:35,323
+Day 18 of 18 in the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+29
+00:03:35,323 --> 00:03:41,505
+In first place, the live self-rebuilding book, in blue, at 103,509.
+
+30
+00:03:41,505 --> 00:03:48,609
+Then the frozen first portfolio, the green line, 3.5 thousand back at 99,960.
+
+31
+00:03:48,609 --> 00:03:53,961
+Then the index fund, in gray, 4.8 thousand back at 98,724.
+
+32
+00:03:53,961 --> 00:03:55,529
+That's the final.
+
+33
+00:03:55,529 --> 00:03:58,574
+The full season review is coming.
+
+34
+00:03:58,574 --> 00:04:03,372
+Every line starts the same day with the same dollar.
+
+35
+00:04:03,372 --> 00:04:05,217
+Nothing is restated.
+
+36
+00:04:05,217 --> 00:04:14,125
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+37
+00:04:14,087 --> 00:04:15,636
+Tonight's takeaway.
+
+38
+00:04:15,636 --> 00:04:17,919
+A portfolio is not a museum.
+
+39
+00:04:17,919 --> 00:04:26,234
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+40
+00:04:26,208 --> 00:04:29,222
+Before we close, the disclosure segment.
+
+41
+00:04:29,222 --> 00:04:39,844
+Everything you heard today concerns one simulated portfolio of 12 positions — the same book, line for line, as this morning's emailed report.
+
+42
+00:04:39,844 --> 00:04:41,803
+One record, every surface.
+
+43
+00:04:41,803 --> 00:04:43,890
+A word on how this desk works.
+
+44
+00:04:43,890 --> 00:05:01,417
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+45
+00:05:01,417 --> 00:05:09,832
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+46
+00:05:09,832 --> 00:05:12,765
+All figures are simulated paper trading.
+
+47
+00:05:12,765 --> 00:05:19,144
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+48
+00:05:19,144 --> 00:05:23,103
+From the OROS Market Desk, have a disciplined session.
