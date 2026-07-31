@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:28,063
+On the day, the book is up 137 dollars.
+
+7
+00:00:28,063 --> 00:00:32,385
+APA Corporation (APA) leads, +2.7 percent.
+
+8
+00:00:32,385 --> 00:00:37,119
+Arrowhead Pharmaceuticals (ARWR) lags at -3.1.
+
+9
+00:00:37,119 --> 00:00:42,675
+The checklist is clear: nothing requires action today.
+
+10
+00:00:42,675 --> 00:00:45,302
+Today's lesson is noise versus signal.
+
+11
+00:00:45,302 --> 00:00:48,966
+Daily moves are weather; the weekly trend is climate.
+
+12
+00:00:48,966 --> 00:00:52,008
+The system never exits on a scary afternoon.
+
+13
+00:00:52,008 --> 00:00:57,539
+It acts only on weekly closes, because that is where the real information lives.
+
+14
+00:00:57,489 --> 00:01:04,670
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+15
+00:01:04,670 --> 00:01:13,456
+12 positions, led by MetLife, ticker MET, Coca-Cola Europacific Partners, ticker CCEP, Bank of America, ticker BAC.
+
+16
+00:01:13,456 --> 00:01:23,847
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+17
+00:01:23,820 --> 00:01:28,645
+Now the part that makes this system different: the loop.
+
+18
+00:01:28,645 --> 00:01:31,057
+Every morning OROS proposes.
+
+19
+00:01:31,057 --> 00:01:41,654
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+20
+00:01:41,654 --> 00:01:45,617
+Inside the book today: 7 positions up, 5 down.
+
+21
+00:01:45,617 --> 00:01:47,943
+Best, APA at +2.73 percent.
+
+22
+00:01:47,943 --> 00:01:49,752
+Worst, ARWR at -3.06.
+
+23
+00:01:49,752 --> 00:01:54,749
+Both go in the journal — wins and losses get the same ink.
+
+24
+00:01:54,749 --> 00:02:01,900
+The honest scoreboard reads: expectancy -8.46% per trade over 166 graded positions.
+
+25
+00:02:01,900 --> 00:02:08,965
+Because that record is soft, the system has throttled itself to 25% position size.
+
+26
+00:02:08,965 --> 00:02:14,134
+Nobody told it to — full size must be earned back with wins.
+
+27
+00:02:14,134 --> 00:02:26,540
+What tonight's read hands to tomorrow's open: 242 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+28
+00:02:26,514 --> 00:02:28,868
+Over to the sports desk.
+
+29
+00:02:28,868 --> 00:02:39,167
+Day 18 of 18 in the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+30
+00:02:39,167 --> 00:02:45,739
+In first place, the live self-rebuilding book, in blue, at 103,724.
+
+31
+00:02:45,739 --> 00:02:53,292
+Then the frozen first portfolio, the green line, 3.8 thousand back at 99,890.
+
+32
+00:02:53,292 --> 00:02:58,981
+Then the index fund, in gray, 4.3 thousand back at 99,434.
+
+33
+00:02:58,981 --> 00:03:00,649
+That's the final.
+
+34
+00:03:00,649 --> 00:03:03,886
+The full season review is coming.
+
+35
+00:03:03,886 --> 00:03:08,986
+Every line starts the same day with the same dollar.
+
+36
+00:03:08,986 --> 00:03:10,948
+Nothing is restated.
+
+37
+00:03:10,948 --> 00:03:19,856
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+38
+00:03:19,818 --> 00:03:27,153
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+39
+00:03:27,153 --> 00:03:29,394
+Nothing here is financial advice.
+
+40
+00:03:29,394 --> 00:03:32,383
+From the closing desk — see you at the open.
