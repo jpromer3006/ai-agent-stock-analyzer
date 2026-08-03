@@ -49,7 +49,7 @@
       "earnings_risk": false,
       "outcome_return": 0.0025,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     },
     {
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.077,
-      "outcome_exit": "stop",
-      "outcome_days": 7,
-      "outcome_final": true
+      "outcome_return": -0.0671,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     },
     {
       "ticker": "COLB",
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0422,
+      "outcome_return": -0.0327,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0164,
+      "outcome_return": 0.0193,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0259,
+      "outcome_return": -0.0239,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -200,9 +200,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0234,
+      "outcome_return": -0.0175,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     },
     {
@@ -217,9 +217,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.025,
+      "outcome_return": 0.0669,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     }
   ],
@@ -270,8 +270,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.1129,
+  "realized_avg_return": -0.1488,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2
+  "realized_final_count": 1,
+  "realized_stop_exits": 1
 }

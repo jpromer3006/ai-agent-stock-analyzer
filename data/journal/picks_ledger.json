@@ -107,6 +107,19 @@
   {
    "date": "2026-07-31",
    "picks": []
+  },
+  {
+   "date": "2026-08-03",
+   "picks": [
+    {
+     "ticker": "SBUX",
+     "buy_stop": 108.91,
+     "stop_loss": 97.94,
+     "target": 124.62,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }

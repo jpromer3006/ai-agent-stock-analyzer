@@ -44,9 +44,9 @@
       "led_by": "sepa",
       "sentiment": 0.369,
       "earnings_risk": false,
-      "outcome_return": -0.0526,
+      "outcome_return": -0.0507,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -61,9 +61,9 @@
       "led_by": "sepa",
       "sentiment": 0.096,
       "earnings_risk": false,
-      "outcome_return": -0.0058,
+      "outcome_return": -0.0199,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -95,9 +95,9 @@
       "led_by": "sepa",
       "sentiment": 0.27,
       "earnings_risk": false,
-      "outcome_return": 0.0213,
+      "outcome_return": 0.019,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -112,9 +112,9 @@
       "led_by": "sepa",
       "sentiment": 0.22,
       "earnings_risk": false,
-      "outcome_return": -0.0045,
+      "outcome_return": 0.0099,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -129,9 +129,9 @@
       "led_by": "sepa",
       "sentiment": 0.335,
       "earnings_risk": false,
-      "outcome_return": 0.0002,
+      "outcome_return": -0.0424,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -146,10 +146,10 @@
       "led_by": "sepa",
       "sentiment": 0.03,
       "earnings_risk": false,
-      "outcome_return": -0.0589,
-      "outcome_exit": "stop",
-      "outcome_days": 5,
-      "outcome_final": true
+      "outcome_return": -0.0488,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "CHRW",
@@ -180,9 +180,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0089,
+      "outcome_return": -0.019,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -321,8 +321,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0869,
+  "realized_avg_return": -0.0939,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 5,
-  "realized_stop_exits": 5
+  "realized_final_count": 4,
+  "realized_stop_exits": 4
 }

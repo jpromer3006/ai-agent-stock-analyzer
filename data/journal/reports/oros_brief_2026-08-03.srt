@@ -1,0 +1,279 @@
+1
+00:00:00,000 --> 00:00:01,083
+Good morning.
+
+2
+00:00:01,083 --> 00:00:07,328
+From the OROS Market Desk, here is the rundown for Monday, August 03, 2026.
+
+3
+00:00:07,328 --> 00:00:08,994
+The tape reads bull.
+
+4
+00:00:08,994 --> 00:00:12,991
+Our top pick of the day: Starbucks, ticker SBUX.
+
+5
+00:00:12,991 --> 00:00:18,821
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:18,821 --> 00:00:31,896
+And at the sports desk, day 18 of 18 in the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:31,896 --> 00:00:40,126
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:40,126 --> 00:00:47,491
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:47,453 --> 00:00:49,425
+First, the market open.
+
+10
+00:00:49,425 --> 00:00:55,598
+The S and P five hundred gained 0.7 percent, while the NASDAQ added 0.6.
+
+11
+00:00:55,598 --> 00:01:02,972
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+12
+00:01:02,972 --> 00:01:05,373
+The fear gauge sits at 16.3.
+
+13
+00:01:05,373 --> 00:01:14,699
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+14
+00:01:14,661 --> 00:01:23,396
+Now the chart of the day: Starbucks, ticker SBUX, the top stock to clear every quality gate.
+
+15
+00:01:23,396 --> 00:01:36,025
+The entry trigger sits at 108.91, the exit at 97.94, and the objective at 124.62 — 1.4 dollars of potential reward per dollar risked.
+
+16
+00:01:36,025 --> 00:01:42,481
+At 91 shares, a failed trade costs about one percent of the account.
+
+17
+00:01:42,481 --> 00:01:53,706
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+18
+00:01:53,706 --> 00:02:02,861
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+19
+00:02:02,861 --> 00:02:08,514
+You buy only if the market pushes up through that line, proving demand.
+
+20
+00:02:08,514 --> 00:02:14,484
+If it never gets there, you never buy, and that is the plan protecting you.
+
+21
+00:02:14,484 --> 00:02:21,888
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+22
+00:02:21,888 --> 00:02:34,387
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+23
+00:02:34,387 --> 00:02:35,422
+Buy on proof.
+
+24
+00:02:35,422 --> 00:02:36,457
+Exit by rule.
+
+25
+00:02:36,457 --> 00:02:37,730
+Size to survive.
+
+26
+00:02:37,698 --> 00:02:43,262
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+27
+00:02:43,262 --> 00:02:51,334
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+28
+00:02:51,334 --> 00:02:55,319
+On the stock track: Starbucks, ticker SBUX.
+
+29
+00:02:55,319 --> 00:03:00,881
+The plan in plain English: it last closed at 106.21 dollars.
+
+30
+00:03:00,881 --> 00:03:10,891
+The system would only buy strength — a buy-stop at 108.91, nothing happens unless price proves itself first.
+
+31
+00:03:10,891 --> 00:03:19,233
+If it triggers, the exit is a weekly close below 97.94, and the measured target is 124.62.
+
+32
+00:03:19,233 --> 00:03:24,409
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+33
+00:03:24,409 --> 00:03:25,528
+That's the deal.
+
+34
+00:03:25,502 --> 00:03:27,732
+Turning to the model book.
+
+35
+00:03:27,732 --> 00:03:38,624
+The system holds 12 positions with 58% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+36
+00:03:38,624 --> 00:03:53,547
+New to the book: Airbnb (ABNB), Avnet (AVT), Deere & (DE), State Street SPDR S&P Oil & Gas Exploration & Production ETF (XOP) — each passed the full entry gauntlet overnight.
+
+37
+00:03:53,547 --> 00:04:17,560
+Rotated out: Amgen (AMGN), which still advancing, but outranked by stronger names; Arrowhead Pharmaceuticals (ARWR), which still advancing, but outranked by stronger names; Caseys General Stores (CASY), which still advancing, but outranked by stronger names; Merck & Company, Inc.
+
+38
+00:04:17,560 --> 00:04:24,507
+Common Stock (new) (MRK), which still advancing, but outranked by stronger names.
+
+39
+00:04:24,507 --> 00:04:40,888
+Left on the bench: Cathay General Bancorp (CATY), earnings inside the blackout window; Popular (BPOP), earnings inside the blackout window; Chevron (CVX), earnings inside the blackout window.
+
+40
+00:04:40,888 --> 00:04:45,776
+Passing the scan is not enough; the book must afford you.
+
+41
+00:04:45,776 --> 00:04:48,362
+Today's lesson is position management.
+
+42
+00:04:48,362 --> 00:04:49,655
+Cash is a position.
+
+43
+00:04:49,655 --> 00:04:57,343
+The system sizes deployment by rule, and when its own forward record weakens, a throttle automatically cuts size.
+
+44
+00:04:57,343 --> 00:05:01,289
+Rotation is not indecision; it is the portfolio breathing.
+
+45
+00:05:01,289 --> 00:05:06,256
+Names that stop qualifying leave, and names that start qualifying arrive.
+
+46
+00:05:06,210 --> 00:05:13,398
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+47
+00:05:13,398 --> 00:05:22,038
+12 positions, led by MetLife, ticker MET, Chord Energy, ticker CHRD, Coca-Cola Europacific Partners, ticker CCEP.
+
+48
+00:05:22,038 --> 00:05:32,437
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+49
+00:05:32,402 --> 00:05:34,573
+Over to the sports desk.
+
+50
+00:05:34,573 --> 00:05:44,074
+Day 18 of 18 in the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+51
+00:05:44,074 --> 00:05:50,136
+In first place, the live self-rebuilding book, in blue, at 103,928.
+
+52
+00:05:50,136 --> 00:05:57,102
+Then the frozen first portfolio, the green line, 4.2 thousand back at 99,738.
+
+53
+00:05:57,102 --> 00:06:02,350
+Then the index fund, in gray, 4.5 thousand back at 99,434.
+
+54
+00:06:02,350 --> 00:06:03,888
+That's the final.
+
+55
+00:06:03,888 --> 00:06:06,874
+The full season review is coming.
+
+56
+00:06:06,874 --> 00:06:11,579
+Every line starts the same day with the same dollar.
+
+57
+00:06:11,579 --> 00:06:13,388
+Nothing is restated.
+
+58
+00:06:13,388 --> 00:06:22,296
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+59
+00:06:22,258 --> 00:06:23,807
+Tonight's takeaway.
+
+60
+00:06:23,807 --> 00:06:26,090
+A portfolio is not a museum.
+
+61
+00:06:26,090 --> 00:06:34,405
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+62
+00:06:34,379 --> 00:06:37,393
+Before we close, the disclosure segment.
+
+63
+00:06:37,393 --> 00:06:48,015
+Everything you heard today concerns one simulated portfolio of 12 positions — the same book, line for line, as this morning's emailed report.
+
+64
+00:06:48,015 --> 00:06:49,974
+One record, every surface.
+
+65
+00:06:49,974 --> 00:06:52,061
+A word on how this desk works.
+
+66
+00:06:52,061 --> 00:07:09,588
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+67
+00:07:09,588 --> 00:07:18,003
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+68
+00:07:18,003 --> 00:07:20,936
+All figures are simulated paper trading.
+
+69
+00:07:20,936 --> 00:07:27,315
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+70
+00:07:27,315 --> 00:07:31,274
+From the OROS Market Desk, have a disciplined session.
