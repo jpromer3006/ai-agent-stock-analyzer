@@ -205,6 +205,29 @@ def render_cron_panel() -> None:
                     st.rerun()
                 else:
                     st.error(f"Could not start: {info}")
+            # Demo button (JP, 2026-07-30): generate and EMAIL today's report
+            # on demand — the exact same pipeline as the automated morning
+            # email, built from today's journals. No rescan, no video render,
+            # so it completes in under a minute, live on stage.
+            if st.button("📧 Email me today's report",
+                         use_container_width=True, key="cron_email_report"):
+                with st.spinner("Building today's report from the journals "
+                                "and emailing it to you (~30s)..."):
+                    _prev = os.environ.get("OROS_VIDEO")
+                    os.environ["OROS_VIDEO"] = "0"      # report only
+                    try:
+                        from ml.daily_report import send_daily_report
+                        pdf = send_daily_report(force=True, research=False)
+                        st.success(f"Sent — check your inbox ({pdf.name}). "
+                                   "Same pipeline, same journals as the "
+                                   "automated morning email.")
+                    except Exception as e:  # noqa: BLE001
+                        st.error(f"Could not send: {type(e).__name__}: {e}")
+                    finally:
+                        if _prev is None:
+                            os.environ.pop("OROS_VIDEO", None)
+                        else:
+                            os.environ["OROS_VIDEO"] = _prev
 
         # ── Schedule toggle ─────────────────────────────────────────────────
         with c2:
