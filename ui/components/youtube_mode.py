@@ -189,5 +189,44 @@ def render_youtube_mode() -> None:
                 else:
                     st.error(note)
 
+    # One-click pipeline (JP, 2026-07-30): render THEN publish in a single
+    # press — the full desk workflow, live on stage. The two-step buttons
+    # above remain for preview-first workflows.
+    st.divider()
+    st.markdown("**🚀 One click — render & publish to the channel**")
+    _oc1, _oc2 = st.columns([1, 2])
+    with _oc1:
+        one_privacy = st.selectbox(
+            "Visibility", ["unlisted", "public"], index=0,
+            key="yt_oneclick_privacy",
+            help="unlisted = private link to share · public = on the channel")
+    with _oc2:
+        st.caption("Renders this script (edited scenes get fresh voices, "
+                   "unchanged ones come from cache — typically 2-5 min), "
+                   "then uploads straight to OROS Market Desk. The closing "
+                   "disclosure is enforced in code either way.")
+    if st.button("🚀 Render & publish in one click", type="primary",
+                 use_container_width=True, key="yt_oneclick"):
+        with st.spinner("Rendering — scenes, three voices, assembly..."):
+            from ml.daily_video import generate_video_brief
+            path, note = generate_video_brief(
+                data, overrides=edited,
+                anchor=_ANCHOR if _ANCHOR.exists() else None)
+        if path is None:
+            st.error(note)
+        else:
+            st.session_state.yt_video = str(path)
+            with st.spinner("Uploading to OROS Market Desk..."):
+                os.environ["OROS_YT_PRIVACY"] = one_privacy
+                from ml.publish_youtube import publish_episode, episode_title
+                url, pnote = publish_episode(str(path), episode_title(data))
+            if url:
+                st.success(f"Live on the channel ({one_privacy}): {url}")
+                st.markdown(f"[▶ Watch it here]({url})")
+                st.video(str(path))
+            else:
+                st.error(f"Rendered but upload failed: {pnote} — the MP4 is "
+                         "saved; use the two-step Upload button above to retry.")
+
     st.caption("Simulated paper trading · OROS proposes and journals only · "
                "educational, not financial advice")
