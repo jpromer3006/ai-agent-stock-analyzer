@@ -29,7 +29,10 @@
       "led_by": "sepa",
       "sentiment": 0.149,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0165,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "HST",
@@ -43,7 +46,10 @@
       "led_by": "sepa",
       "sentiment": 0.296,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0048,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "MET",
@@ -57,7 +63,10 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0197,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "AAPL",
@@ -71,7 +80,10 @@
       "led_by": "sepa",
       "sentiment": 0.124,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0103,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "CVX",
@@ -85,7 +97,10 @@
       "led_by": "sepa",
       "sentiment": 0.219,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0122,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "XLE",
@@ -99,7 +114,10 @@
       "led_by": "sepa",
       "sentiment": 0.295,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0103,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "XOM",
@@ -113,7 +131,10 @@
       "led_by": "sepa",
       "sentiment": 0.227,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0142,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "SPG",
@@ -127,7 +148,10 @@
       "led_by": "sepa",
       "sentiment": 0.134,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0053,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "TGT",
@@ -141,7 +165,10 @@
       "led_by": "sepa",
       "sentiment": 0.156,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0297,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "MO",
@@ -155,7 +182,10 @@
       "led_by": "sepa",
       "sentiment": 0.037,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0679,
+      "outcome_exit": "stop",
+      "outcome_days": 2,
+      "outcome_final": true
     },
     {
       "ticker": "BMY",
@@ -169,7 +199,10 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0368,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     }
   ],
   "bench": [
@@ -255,8 +288,8 @@
     }
   ],
   "horizon_days": 5,
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_avg_return": -0.0679,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 1,
+  "realized_stop_exits": 1
 }

@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": -0.0102,
+      "outcome_return": -0.0022,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.141,
       "earnings_risk": false,
-      "outcome_return": 0.021,
+      "outcome_return": 0.0128,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.178,
       "earnings_risk": false,
-      "outcome_return": -0.0197,
+      "outcome_return": -0.0087,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.335,
       "earnings_risk": false,
-      "outcome_return": -0.0337,
+      "outcome_return": 0.0153,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -98,10 +98,7 @@
       "led_by": "sepa",
       "sentiment": 0.09,
       "earnings_risk": false,
-      "outcome_return": -0.0299,
-      "outcome_exit": "open",
-      "outcome_days": 3,
-      "outcome_final": false
+      "outcome_return": null
     },
     {
       "ticker": "CCEP",
@@ -115,9 +112,9 @@
       "led_by": "sepa",
       "sentiment": 0.235,
       "earnings_risk": false,
-      "outcome_return": -0.0194,
+      "outcome_return": 0.0053,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -132,10 +129,7 @@
       "led_by": "sepa",
       "sentiment": 0.289,
       "earnings_risk": false,
-      "outcome_return": -0.04,
-      "outcome_exit": "open",
-      "outcome_days": 3,
-      "outcome_final": false
+      "outcome_return": null
     },
     {
       "ticker": "DE",
@@ -149,9 +143,9 @@
       "led_by": "sepa",
       "sentiment": 0.012,
       "earnings_risk": false,
-      "outcome_return": -0.0256,
+      "outcome_return": -0.0457,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -183,9 +177,9 @@
       "led_by": "sepa",
       "sentiment": 0.21,
       "earnings_risk": false,
-      "outcome_return": -0.0006,
+      "outcome_return": -0.0087,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -200,9 +194,9 @@
       "led_by": "sepa",
       "sentiment": -0.069,
       "earnings_risk": false,
-      "outcome_return": 0.0107,
+      "outcome_return": 0.0014,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 1,
       "outcome_final": false
     },
     {
@@ -217,9 +211,9 @@
       "led_by": "sepa",
       "sentiment": 0.179,
       "earnings_risk": false,
-      "outcome_return": -0.0548,
+      "outcome_return": -0.0276,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 1,
       "outcome_final": false
     }
   ],

@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": 0.0203,
+      "outcome_return": 0.0159,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 3,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.364,
       "earnings_risk": false,
-      "outcome_return": -0.0299,
+      "outcome_return": -0.0615,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 3,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.296,
       "earnings_risk": false,
-      "outcome_return": 0.0396,
+      "outcome_return": 0.0241,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 3,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": -0.0441,
+      "outcome_return": 0.0047,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 3,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.096,
       "earnings_risk": false,
-      "outcome_return": -0.0177,
+      "outcome_return": 0.0217,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 3,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.232,
       "earnings_risk": false,
-      "outcome_return": 0.026,
+      "outcome_return": -0.0012,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 3,
       "outcome_final": false
     },
     {
@@ -217,9 +217,9 @@
       "led_by": "sepa",
       "sentiment": 0.049,
       "earnings_risk": false,
-      "outcome_return": 0.0141,
+      "outcome_return": -0.0058,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 3,
       "outcome_final": false
     }
   ],

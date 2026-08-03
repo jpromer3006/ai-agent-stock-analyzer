@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.17,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0355,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "MNST",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.21,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0243,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "ANET",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.159,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0015,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "TSM",
@@ -72,7 +81,10 @@
       "led_by": "weinstein",
       "sentiment": -0.01,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0106,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "PWR",
@@ -86,7 +98,10 @@
       "led_by": "weinstein",
       "sentiment": 0.198,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0953,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "ASML",
@@ -100,7 +115,10 @@
       "led_by": "weinstein",
       "sentiment": -0.108,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0023,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "LRCX",
@@ -114,7 +132,10 @@
       "led_by": "weinstein",
       "sentiment": 0.005,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.021,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "KLAC",
@@ -128,7 +149,10 @@
       "led_by": "weinstein",
       "sentiment": 0.139,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.1631,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "COIN",
@@ -142,7 +166,10 @@
       "led_by": "technical",
       "sentiment": 0.06,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0233,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "SHOP",
@@ -156,7 +183,10 @@
       "led_by": "technical",
       "sentiment": 0.339,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0353,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "MSTR",
@@ -170,7 +200,10 @@
       "led_by": "swing",
       "sentiment": 0.025,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0092,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "PLTR",
@@ -184,7 +217,10 @@
       "led_by": "swing",
       "sentiment": 0.122,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0705,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     }
   ],
   "bench": [],
@@ -221,8 +257,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_avg_return": -0.1292,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 2,
+  "realized_stop_exits": 2
 }

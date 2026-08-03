@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.178,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0078,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "MET",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0014,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "CCEP",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.235,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0083,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "ACGL",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.064,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0484,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "MTCH",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.314,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0041,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "AAPL",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.101,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0179,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "COKE",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.179,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0272,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "TGT",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.23,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0019,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "SPG",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.134,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0276,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "LAMR",
@@ -156,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.207,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0111,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "PSA",
@@ -170,7 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.152,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0467,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "ARWR",
@@ -184,7 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.335,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0428,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     }
   ],
   "bench": [

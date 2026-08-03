@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.258,
       "earnings_risk": false,
-      "outcome_return": -0.0264,
-      "outcome_exit": "open",
-      "outcome_days": 2,
-      "outcome_final": false
+      "outcome_return": -0.0938,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     },
     {
       "ticker": "ECPG",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.369,
       "earnings_risk": false,
-      "outcome_return": -0.0205,
+      "outcome_return": -0.0524,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.195,
       "earnings_risk": false,
-      "outcome_return": 0.0445,
+      "outcome_return": 0.0241,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.096,
       "earnings_risk": false,
-      "outcome_return": -0.0245,
+      "outcome_return": -0.0124,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.22,
       "earnings_risk": false,
-      "outcome_return": -0.0529,
+      "outcome_return": -0.0045,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -217,9 +217,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0533,
+      "outcome_return": -0.0124,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 4,
       "outcome_final": false
     }
   ],
@@ -312,8 +312,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0602,
+  "realized_avg_return": -0.0686,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3
+  "realized_final_count": 4,
+  "realized_stop_exits": 4
 }

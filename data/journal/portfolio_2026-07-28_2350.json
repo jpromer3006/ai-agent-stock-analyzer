@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.064,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0502,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "CATY",
@@ -86,7 +89,10 @@
       "led_by": "sepa",
       "sentiment": 0.314,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0008,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "LIVN",
@@ -114,7 +120,10 @@
       "led_by": "sepa",
       "sentiment": 0.085,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0067,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "CCEP",
@@ -128,7 +137,10 @@
       "led_by": "sepa",
       "sentiment": 0.235,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0023,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "HTO",
@@ -156,7 +168,10 @@
       "led_by": "sepa",
       "sentiment": 0.01,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.092,
+      "outcome_exit": "stop",
+      "outcome_days": 2,
+      "outcome_final": true
     },
     {
       "ticker": "LAMR",
@@ -170,7 +185,10 @@
       "led_by": "sepa",
       "sentiment": 0.207,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0096,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "HALO",
@@ -184,7 +202,10 @@
       "led_by": "sepa",
       "sentiment": 0.078,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0017,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     }
   ],
   "bench": [
@@ -294,8 +315,8 @@
     }
   ],
   "horizon_days": 120,
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_avg_return": -0.092,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 1,
+  "realized_stop_exits": 1
 }

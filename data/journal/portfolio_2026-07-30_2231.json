@@ -1,0 +1,142 @@
+{
+  "timestamp": "2026-07-30T22:31:51.362990Z",
+  "date": "2026-07-30",
+  "regime": "bull",
+  "mandate": "fast_momentum",
+  "account": 10000.0,
+  "invested": 5501.15,
+  "cash": 4498.85,
+  "weights": {
+    "ipo": 0.184,
+    "growth": 0.033,
+    "weinstein": 0.08,
+    "technical": 0.096,
+    "sepa": 0.282,
+    "swing": 0.103,
+    "canslim": 0.221
+  },
+  "note": "UI build \u00b7 fast_momentum",
+  "holdings": [
+    {
+      "ticker": "HST",
+      "sector": "Real Estate",
+      "conviction": 0.7479,
+      "shares": 47,
+      "dollars": 1179.23,
+      "weight_pct": 11.79,
+      "entry": 25.09,
+      "stop": 23.48,
+      "led_by": "sepa",
+      "sentiment": 0.222,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.7388,
+      "shares": 3,
+      "dollars": 1000.29,
+      "weight_pct": 10.0,
+      "entry": 333.43,
+      "stop": 309.3,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "INCY",
+      "sector": "Industrials",
+      "conviction": 0.7239,
+      "shares": 8,
+      "dollars": 983.92,
+      "weight_pct": 9.84,
+      "entry": 122.99,
+      "stop": 108.66,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.7134,
+      "shares": 19,
+      "dollars": 1172.87,
+      "weight_pct": 11.73,
+      "entry": 61.73,
+      "stop": 56.96,
+      "led_by": "sepa",
+      "sentiment": 0.107,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.7074,
+      "shares": 12,
+      "dollars": 1164.84,
+      "weight_pct": 11.65,
+      "entry": 97.07,
+      "stop": 88.17,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "composite": 0.736,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "CCEP",
+      "sector": "Consumer Staples",
+      "composite": 0.694,
+      "reason": "outranked \u2014 book full at 5"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "495 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 23%, ipo 22%, canslim 19%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted sepa x1.50, canslim x1.44"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "5 holdings, 55% invested, 7 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 45%"
+    }
+  ],
+  "horizon_days": 5,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0
+}

@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.31,
       "earnings_risk": false,
-      "outcome_return": 0.063,
+      "outcome_return": 0.0472,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.27,
       "earnings_risk": false,
-      "outcome_return": 0.0511,
+      "outcome_return": 0.0233,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0325,
+      "outcome_return": -0.0489,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0373,
+      "outcome_return": -0.0496,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.021,
+      "outcome_return": -0.0089,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.22,
       "earnings_risk": false,
-      "outcome_return": -0.0529,
+      "outcome_return": -0.0045,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -200,9 +200,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0474,
+      "outcome_return": 0.0046,
       "outcome_exit": "open",
-      "outcome_days": 2,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {

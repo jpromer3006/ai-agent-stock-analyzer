@@ -123,25 +123,25 @@
   },
   {
    "date": "2026-07-30",
-   "total": 493,
+   "total": 494,
    "counts": {
-    "Advancing": 243,
-    "Basing": 146,
-    "Topping": 25,
-    "Declining": 79
+    "Advancing": 207,
+    "Basing": 190,
+    "Topping": 21,
+    "Declining": 76
    },
-   "invalidated": 1
+   "invalidated": 0
   },
   {
    "date": "2026-07-31",
-   "total": 493,
+   "total": 494,
    "counts": {
-    "Advancing": 242,
-    "Basing": 146,
-    "Topping": 25,
-    "Declining": 80
+    "Advancing": 238,
+    "Basing": 152,
+    "Topping": 22,
+    "Declining": 82
    },
-   "invalidated": 1
+   "invalidated": 2
   }
  ]
 }
