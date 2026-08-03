@@ -804,6 +804,58 @@ def render_portfolio_mode() -> None:
                                     "paper-trade scoreboard, last journaled account. "
                                     "No sliders needed.")
     build = c_manual.button("🏗 Custom Build", use_container_width=True)
+
+    # Owner overrides for AUTONOMOUS mode (JP, 2026-07-30): autonomous stays
+    # data-driven, but the owner can pin its defaults here. Saved to the
+    # journal (auditable); 'auto' hands the choice back to the data.
+    with st.expander("⚙️ Autonomous defaults (owner overrides)", expanded=False):
+        try:
+            from ml.auto_config import load_overrides, save_overrides
+            _ov = load_overrides()
+            _m_opts = ["auto", "swing_momentum", "fast_momentum",
+                       "growth_hold", "value_hold"]
+            oc1, oc2, oc3, oc4 = st.columns(4)
+            _ov_mandate = oc1.selectbox(
+                "Playbook", _m_opts,
+                index=_m_opts.index(_ov.get("mandate", "auto"))
+                if _ov.get("mandate", "auto") in _m_opts else 0,
+                key="ov_mandate",
+                help="'auto' = regime + forward scoreboard decide (default)")
+            _ov_limit = oc2.number_input(
+                "Tickers scanned", 100, 3000,
+                int(_ov.get("limit", 500)), 50, key="ov_limit")
+            _ov_pos = oc3.number_input(
+                "Max positions", 4, 30,
+                int(_ov.get("max_pos", 12)), 1, key="ov_pos",
+                help="'auto' regime presets: bull 12 · neutral 10 · bear 6 — "
+                     "saving pins this number across regimes")
+            _ov_sector = oc4.number_input(
+                "Max per sector", 1, 8,
+                int(_ov.get("max_per_sector", 3)), 1, key="ov_sector")
+            b1, b2, _ = st.columns([1, 1, 2])
+            if b1.button("💾 Save overrides", key="ov_save",
+                         use_container_width=True):
+                save_overrides({
+                    "mandate": None if _ov_mandate == "auto" else _ov_mandate,
+                    "limit": int(_ov_limit) if int(_ov_limit) != 500 else None,
+                    "max_pos": int(_ov_pos) if int(_ov_pos) != 12 else None,
+                    "max_per_sector": (int(_ov_sector)
+                                       if int(_ov_sector) != 3 else None),
+                })
+                st.success("Saved — Agentic Autonomous Mode now uses these. "
+                           "Set a field back to its default (or Playbook to "
+                           "'auto') to hand the choice back to the data.")
+            if b2.button("↩️ Reset to data-driven", key="ov_reset",
+                         use_container_width=True):
+                save_overrides({})
+                st.success("Cleared — autonomous mode is fully data-driven "
+                           "again (regime + scoreboard decide).")
+            if _ov:
+                st.caption("Active overrides: " + ", ".join(
+                    f"{k}={v}" for k, v in _ov.items()))
+        except Exception as _e:  # noqa: BLE001
+            st.caption(f"Overrides unavailable: {_e}")
+
     st.caption(
         "Agentic Autonomous Mode lets OROS choose the mandate, risk, and universe from the data "
         "it gathers (regime + forward scoreboard). Manual settings live in the "

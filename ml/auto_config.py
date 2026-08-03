@@ -20,9 +20,37 @@ Everything is deterministic and auditable. Educational, not financial advice.
 
 from __future__ import annotations
 
+import json
 import logging
+from pathlib import Path
 
 logger = logging.getLogger(__name__)
+
+# Owner overrides (JP, 2026-07-30): autonomous mode stays data-driven, but
+# the owner may pin specific defaults through the app. Stored in the journal
+# so the choice is auditable — and if committed, the cloud run inherits it.
+_OVERRIDES_FILE = (Path(__file__).resolve().parent.parent
+                   / "data" / "journal" / "auto_overrides.json")
+_OVERRIDABLE = {"limit", "max_pos", "max_per_sector", "risk_pct", "mandate"}
+
+
+def load_overrides() -> dict:
+    try:
+        if _OVERRIDES_FILE.exists():
+            d = json.loads(_OVERRIDES_FILE.read_text())
+            return {k: v for k, v in d.items() if k in _OVERRIDABLE}
+    except Exception as e:  # noqa: BLE001
+        logger.warning("auto overrides unreadable: %s", e)
+    return {}
+
+
+def save_overrides(d: dict) -> None:
+    clean = {k: v for k, v in (d or {}).items()
+             if k in _OVERRIDABLE and v not in (None, "", "auto")}
+    if clean:
+        _OVERRIDES_FILE.write_text(json.dumps(clean, indent=1))
+    elif _OVERRIDES_FILE.exists():
+        _OVERRIDES_FILE.unlink()
 
 # Regime-conditioned defaults. Bear mode cuts risk and breadth (capital
 # preservation); bull mode lets the book breathe.
@@ -109,6 +137,15 @@ def choose_auto_settings() -> dict:
         "source": "Open market",
         **preset,
     }
+    ov = load_overrides()
+    if ov:
+        if ov.get("mandate"):
+            cfg["mandate"] = ov["mandate"]
+            cfg["mandate_reason"] = "owner override (app setting)"
+        for k in ("limit", "max_pos", "max_per_sector", "risk_pct"):
+            if k in ov:
+                cfg[k] = ov[k]
+        cfg["overrides"] = ov
     logger.info("auto settings: %s", cfg)
     return cfg
 
