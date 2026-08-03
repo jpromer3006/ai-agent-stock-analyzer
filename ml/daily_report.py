@@ -1054,7 +1054,7 @@ def _send_glance_digest(data: dict, yt_url: str | None) -> None:
     here is read from the journaled proposal — zero extra computation."""
     import os as _os
     digest_to = [a.strip() for a in
-                 _os.environ.get("OROS_DIGEST_TO", "nl102@fordham.edu").split(",")
+                 _os.environ.get("OROS_DIGEST_TO", "").split(",")
                  if a.strip()]
     if not digest_to:
         return
