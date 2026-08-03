@@ -1,0 +1,147 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:27,726
+On the day, the book is down 51 dollars.
+
+7
+00:00:27,726 --> 00:00:30,760
+Deere & (DE) leads, +2.1 percent.
+
+8
+00:00:30,760 --> 00:00:36,458
+State Street Energy Select Sector SPDR ETF (XLE) lags at -1.3.
+
+9
+00:00:36,458 --> 00:00:41,421
+The checklist is clear: nothing requires action today.
+
+10
+00:00:41,421 --> 00:00:44,948
+On screen, the day's gainers and laggards inside the paper book.
+
+11
+00:00:44,904 --> 00:00:52,092
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+12
+00:00:52,092 --> 00:01:00,732
+12 positions, led by MetLife, ticker MET, Chord Energy, ticker CHRD, Coca-Cola Europacific Partners, ticker CCEP.
+
+13
+00:01:00,732 --> 00:01:11,131
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+14
+00:01:11,096 --> 00:01:16,201
+Now the part that makes this system different: the loop.
+
+15
+00:01:16,201 --> 00:01:18,753
+Every morning OROS proposes.
+
+16
+00:01:18,753 --> 00:01:29,966
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+17
+00:01:29,966 --> 00:01:34,159
+Inside the book today: 6 positions up, 6 down.
+
+18
+00:01:34,159 --> 00:01:36,621
+Best, TGT at +3.36 percent.
+
+19
+00:01:36,621 --> 00:01:38,444
+Worst, XOP at -1.76.
+
+20
+00:01:38,444 --> 00:01:43,731
+Both go in the journal — wins and losses get the same ink.
+
+21
+00:01:43,731 --> 00:01:51,297
+The honest scoreboard reads: expectancy -8.42% per trade over 149 graded positions.
+
+22
+00:01:51,297 --> 00:01:58,772
+Because that record is soft, the system has throttled itself to 25% position size.
+
+23
+00:01:58,772 --> 00:02:04,242
+Nobody told it to — full size must be earned back with wins.
+
+24
+00:02:04,242 --> 00:02:17,369
+What tonight's read hands to tomorrow's open: 245 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+25
+00:02:17,319 --> 00:02:19,653
+Over to the sports desk.
+
+26
+00:02:19,653 --> 00:02:29,863
+Day 18 of 18 in the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+27
+00:02:29,863 --> 00:02:36,378
+In first place, the live self-rebuilding book, in blue, at 103,645.
+
+28
+00:02:36,378 --> 00:02:42,115
+Then the index fund, in gray, 2.8 thousand back at 100,851.
+
+29
+00:02:42,115 --> 00:02:49,603
+Then the frozen first portfolio, the green line, 4.3 thousand back at 99,384.
+
+30
+00:02:49,603 --> 00:02:51,256
+That's the final.
+
+31
+00:02:51,256 --> 00:02:54,465
+The full season review is coming.
+
+32
+00:02:54,465 --> 00:02:59,521
+Every line starts the same day with the same dollar.
+
+33
+00:02:59,521 --> 00:03:01,466
+Nothing is restated.
+
+34
+00:03:01,466 --> 00:03:10,374
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+35
+00:03:10,336 --> 00:03:17,671
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+36
+00:03:17,671 --> 00:03:19,912
+Nothing here is financial advice.
+
+37
+00:03:19,912 --> 00:03:22,901
+From the closing desk — see you at the open.
