@@ -661,6 +661,35 @@ def _render_leaderboards(report: ScanReport):
 
         st.markdown("")
 
+        # Stage 1 Basing gets a first-class panel (JP, 2026-08-03): plain
+        # basing names were only reachable through the Stage Explorer, while
+        # every other stage had its own leaderboard. Top names by bull
+        # probability — the accumulation watchlist.
+        _basing_all = [r for r in report.stage_buckets.get(1, [])
+                       if not getattr(r, "error", None)]
+        _basing = sorted(_basing_all, key=lambda r: r.bull_probability,
+                         reverse=True)[:10]
+        st.markdown(
+            f"#### ⚪ Stage 1 Basing "
+            f"<span style='color:#8b949e;font-weight:400;font-size:14px'>"
+            f"— accumulation watchlist ({len(_basing_all)})</span>",
+            unsafe_allow_html=True,
+        )
+        st.caption(
+            "**Action: WATCH — do not buy yet.** Sideways price around a "
+            "flat 30-week MA after a decline: ownership quietly changing "
+            "hands. These become candidates only on a volume-confirmed "
+            "breakout above the base (promotion to Stage 2). Top 10 by "
+            "bull probability shown — the full list lives in the Stage "
+            "Explorer below."
+        )
+        if _basing:
+            _render_leader_rows(_basing, direction="watch")
+        else:
+            st.info("No Stage 1 basing names in this scan list right now.")
+
+        st.markdown("")
+
     # Stage 1 Transition Watch — Stage 4 stocks that have completed a
     # base and started a fresh rally. Shown to BOTH long-bias and
     # short-bias users because long bias users want to watch for
