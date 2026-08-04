@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.178,
       "earnings_risk": false,
-      "outcome_return": 0.0124,
+      "outcome_return": -0.0066,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.275,
       "earnings_risk": true,
-      "outcome_return": -0.0326,
+      "outcome_return": -0.0634,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.235,
       "earnings_risk": false,
-      "outcome_return": 0.0023,
+      "outcome_return": -0.074,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": -0.0043,
+      "outcome_return": -0.0333,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.101,
       "earnings_risk": false,
-      "outcome_return": -0.0196,
-      "outcome_exit": "open",
-      "outcome_days": 1,
-      "outcome_final": false
+      "outcome_return": -0.1078,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     },
     {
       "ticker": "CSX",
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": -0.003,
       "earnings_risk": true,
-      "outcome_return": -0.0128,
+      "outcome_return": -0.025,
       "outcome_exit": "open",
-      "outcome_days": 1,
+      "outcome_days": 4,
       "outcome_final": false
     }
   ],
@@ -179,8 +179,8 @@
     }
   ],
   "horizon_days": 60,
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_avg_return": -0.1078,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 1,
+  "realized_stop_exits": 1
 }

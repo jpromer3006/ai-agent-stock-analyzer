@@ -1,0 +1,199 @@
+1
+00:00:00,000 --> 00:00:00,893
+Good morning.
+
+2
+00:00:00,893 --> 00:00:06,115
+From the OROS Market Desk, here is the rundown for Tuesday, August 04, 2026.
+
+3
+00:00:06,115 --> 00:00:07,489
+The tape reads bull.
+
+4
+00:00:07,489 --> 00:00:12,985
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:12,985 --> 00:00:23,771
+And at the sports desk, day 18 of 18 in the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:23,771 --> 00:00:32,002
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:32,002 --> 00:00:39,367
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:39,329 --> 00:00:41,327
+First, the market open.
+
+9
+00:00:41,327 --> 00:00:47,581
+The S and P five hundred gained 1.4 percent, while the NASDAQ added 1.8.
+
+10
+00:00:47,581 --> 00:00:55,052
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+11
+00:00:55,052 --> 00:00:57,484
+The fear gauge sits at 15.8.
+
+12
+00:00:57,484 --> 00:00:59,987
+Today's lesson is this market screen.
+
+13
+00:00:59,987 --> 00:01:06,956
+The gold line is the thirty week moving average, the single most useful trend filter in stage analysis.
+
+14
+00:01:06,956 --> 00:01:14,467
+When price holds above a rising gold line, the tide is coming in, and long trades get the benefit of the doubt.
+
+15
+00:01:14,467 --> 00:01:23,398
+When price sinks below a falling gold line, the tide is going out, and the first job becomes protecting capital, not finding heroes.
+
+16
+00:01:23,351 --> 00:01:32,051
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+17
+00:01:32,051 --> 00:01:36,160
+Forcing a pick on a weak tape is how systems bleed.
+
+18
+00:01:36,160 --> 00:01:36,804
+We wait.
+
+19
+00:01:36,772 --> 00:01:39,050
+Turning to the model book.
+
+20
+00:01:39,050 --> 00:01:50,176
+The system holds 12 positions with 60% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+21
+00:01:50,176 --> 00:02:07,260
+New to the book: Arrowhead Pharmaceuticals (ARWR), Broadcom (AVGO), BOK Financial (BOKF), Citigroup (C), Emerson Electric (EMR), GE Aerospace (GE) — each passed the full entry gauntlet overnight.
+
+22
+00:02:07,260 --> 00:02:35,909
+Rotated out: Avnet (AVT), which still advancing, but outranked by stronger names; Coca-Cola Europacific Partners (CCEP), which still advancing, but outranked by stronger names; Deere & (DE), which still advancing, but outranked by stronger names; JP Morgan Chase & (JPM), which still advancing, but outranked by stronger names.
+
+23
+00:02:35,909 --> 00:02:52,993
+Left on the bench: Cathay General Bancorp (CATY), earnings inside the blackout window; Axogen (AXGN), earnings inside the blackout window; First Busey (BUSE), earnings inside the blackout window.
+
+24
+00:02:52,993 --> 00:02:57,987
+Passing the scan is not enough; the book must afford you.
+
+25
+00:02:57,987 --> 00:03:04,021
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+26
+00:03:03,977 --> 00:03:11,303
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+27
+00:03:11,303 --> 00:03:21,825
+12 positions, led by State Street SPDR S&P Oil & Gas Exploration & Production ETF, ticker XOP, Target, ticker TGT, Airbnb, ticker ABNB.
+
+28
+00:03:21,825 --> 00:03:32,424
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+29
+00:03:32,398 --> 00:03:34,595
+Over to the sports desk.
+
+30
+00:03:34,595 --> 00:03:44,207
+Day 18 of 18 in the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+31
+00:03:44,207 --> 00:03:50,341
+In first place, the live self-rebuilding book, in blue, at 103,390.
+
+32
+00:03:50,341 --> 00:03:55,742
+Then the index fund, in gray, 2.5 thousand back at 100,851.
+
+33
+00:03:55,742 --> 00:04:02,790
+Then the frozen first portfolio, the green line, 3.9 thousand back at 99,447.
+
+34
+00:04:02,790 --> 00:04:04,347
+That's the final.
+
+35
+00:04:04,347 --> 00:04:07,368
+The full season review is coming.
+
+36
+00:04:07,368 --> 00:04:12,128
+Every line starts the same day with the same dollar.
+
+37
+00:04:12,128 --> 00:04:13,959
+Nothing is restated.
+
+38
+00:04:13,959 --> 00:04:22,867
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+39
+00:04:22,829 --> 00:04:24,378
+Tonight's takeaway.
+
+40
+00:04:24,378 --> 00:04:26,661
+A portfolio is not a museum.
+
+41
+00:04:26,661 --> 00:04:34,976
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+42
+00:04:34,950 --> 00:04:37,964
+Before we close, the disclosure segment.
+
+43
+00:04:37,964 --> 00:04:48,586
+Everything you heard today concerns one simulated portfolio of 12 positions — the same book, line for line, as this morning's emailed report.
+
+44
+00:04:48,586 --> 00:04:50,545
+One record, every surface.
+
+45
+00:04:50,545 --> 00:04:52,632
+A word on how this desk works.
+
+46
+00:04:52,632 --> 00:05:10,159
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+47
+00:05:10,159 --> 00:05:18,574
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+48
+00:05:18,574 --> 00:05:21,507
+All figures are simulated paper trading.
+
+49
+00:05:21,507 --> 00:05:27,886
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+50
+00:05:27,886 --> 00:05:31,845
+From the OROS Market Desk, have a disciplined session.
