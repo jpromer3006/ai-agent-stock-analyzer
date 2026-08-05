@@ -1,0 +1,163 @@
+1
+00:00:00,000 --> 00:00:03,271
+Good evening from the OROS closing desk.
+
+2
+00:00:03,271 --> 00:00:08,259
+Time to grade this morning's call — the part most shows skip.
+
+3
+00:00:08,259 --> 00:00:15,210
+Bristol-Myers Squibb, ticker BMY never reached the trigger, so no position was taken.
+
+4
+00:00:15,210 --> 00:00:18,808
+The entry did its quiet job: it kept us out.
+
+5
+00:00:18,808 --> 00:00:23,744
+Why we grade in public: a forecast that is never checked is just content.
+
+6
+00:00:23,744 --> 00:00:29,153
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+7
+00:00:29,118 --> 00:00:33,675
+On the day, the book is up 156 dollars.
+
+8
+00:00:33,675 --> 00:00:37,999
+Astronics (ATRO) leads, +2.1 percent.
+
+9
+00:00:37,999 --> 00:00:44,542
+State Street SPDR S&P MIDCAP 400 ETF (MDY) lags at -0.6.
+
+10
+00:00:44,542 --> 00:00:50,852
+The checklist is clear: nothing requires action today.
+
+11
+00:00:50,852 --> 00:00:53,479
+Today's lesson is noise versus signal.
+
+12
+00:00:53,479 --> 00:00:57,143
+Daily moves are weather; the weekly trend is climate.
+
+13
+00:00:57,143 --> 00:01:00,185
+The system never exits on a scary afternoon.
+
+14
+00:01:00,185 --> 00:01:05,716
+It acts only on weekly closes, because that is where the real information lives.
+
+15
+00:01:05,666 --> 00:01:13,833
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+16
+00:01:13,833 --> 00:01:21,566
+12 positions, led by MetLife, ticker MET, Target, ticker TGT, BOK Financial, ticker BOKF.
+
+17
+00:01:21,566 --> 00:01:33,382
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+18
+00:01:33,344 --> 00:01:38,143
+Now the part that makes this system different: the loop.
+
+19
+00:01:38,143 --> 00:01:40,543
+Every morning OROS proposes.
+
+20
+00:01:40,543 --> 00:01:51,083
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+21
+00:01:51,083 --> 00:01:55,025
+Inside the book today: 7 positions up, 5 down.
+
+22
+00:01:55,025 --> 00:01:57,425
+Best, ATRO at +2.06 percent.
+
+23
+00:01:57,425 --> 00:01:59,053
+Worst, DE at -0.87.
+
+24
+00:01:59,053 --> 00:02:04,024
+Both go in the journal — wins and losses get the same ink.
+
+25
+00:02:04,024 --> 00:02:11,137
+The honest scoreboard reads: expectancy -8.41% per trade over 174 graded positions.
+
+26
+00:02:11,137 --> 00:02:18,164
+Because that record is soft, the system has throttled itself to 25% position size.
+
+27
+00:02:18,164 --> 00:02:23,306
+Nobody told it to — full size must be earned back with wins.
+
+28
+00:02:23,306 --> 00:02:35,646
+What tonight's read hands to tomorrow's open: 226 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+29
+00:02:35,620 --> 00:02:37,854
+Over to the sports desk.
+
+30
+00:02:37,854 --> 00:02:47,625
+Day 18 of 18 in the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+31
+00:02:47,625 --> 00:02:53,861
+In first place, the live self-rebuilding book, in blue, at 104,324.
+
+32
+00:02:53,861 --> 00:02:59,352
+Then the index fund, in gray, 1.9 thousand back at 102,464.
+
+33
+00:02:59,352 --> 00:03:06,611
+Then the frozen first portfolio, the green line, 4.1 thousand back at 100,181.
+
+34
+00:03:06,611 --> 00:03:08,193
+That's the final.
+
+35
+00:03:08,193 --> 00:03:11,264
+The full season review is coming.
+
+36
+00:03:11,264 --> 00:03:16,103
+Every line starts the same day with the same dollar.
+
+37
+00:03:16,103 --> 00:03:17,965
+Nothing is restated.
+
+38
+00:03:17,965 --> 00:03:26,872
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+39
+00:03:26,834 --> 00:03:34,169
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+40
+00:03:34,169 --> 00:03:36,411
+Nothing here is financial advice.
+
+41
+00:03:36,411 --> 00:03:39,399
+From the closing desk — see you at the open.
