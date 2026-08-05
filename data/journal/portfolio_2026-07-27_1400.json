@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": -0.0108,
+      "outcome_return": 0.0172,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.135,
       "earnings_risk": false,
-      "outcome_return": -0.0066,
+      "outcome_return": -0.0009,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.364,
       "earnings_risk": false,
-      "outcome_return": -0.0859,
+      "outcome_return": -0.0664,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.413,
       "earnings_risk": false,
-      "outcome_return": -0.0434,
-      "outcome_exit": "open",
+      "outcome_return": -0.0553,
+      "outcome_exit": "stop",
       "outcome_days": 6,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "APA",
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.096,
       "earnings_risk": false,
-      "outcome_return": -0.0087,
+      "outcome_return": -0.0085,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.394,
       "earnings_risk": false,
-      "outcome_return": 0.006,
+      "outcome_return": -0.0074,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": 0.0013,
+      "outcome_return": -0.0121,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.09,
       "earnings_risk": false,
-      "outcome_return": -0.0738,
-      "outcome_exit": "open",
+      "outcome_return": -0.0767,
+      "outcome_exit": "stop",
       "outcome_days": 6,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "AAPL",
@@ -217,9 +217,9 @@
       "led_by": "sepa",
       "sentiment": 0.204,
       "earnings_risk": false,
-      "outcome_return": -0.0295,
+      "outcome_return": -0.027,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     }
   ],
@@ -312,8 +312,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.068,
+  "realized_avg_return": -0.0672,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3
+  "realized_final_count": 5,
+  "realized_stop_exits": 5
 }

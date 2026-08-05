@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": -0.0137,
+      "outcome_return": 0.0142,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.413,
       "earnings_risk": false,
-      "outcome_return": -0.0522,
-      "outcome_exit": "open",
+      "outcome_return": -0.064,
+      "outcome_exit": "stop",
       "outcome_days": 6,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "WELL",
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.364,
       "earnings_risk": false,
-      "outcome_return": -0.0914,
+      "outcome_return": -0.072,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": 0.0013,
+      "outcome_return": -0.0121,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.096,
       "earnings_risk": false,
-      "outcome_return": -0.0034,
+      "outcome_return": -0.0032,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.232,
       "earnings_risk": false,
-      "outcome_return": -0.0214,
+      "outcome_return": -0.0335,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -200,10 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.09,
       "earnings_risk": false,
-      "outcome_return": -0.0658,
-      "outcome_exit": "open",
+      "outcome_return": -0.0687,
+      "outcome_exit": "stop",
       "outcome_days": 6,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "AAPL",
@@ -318,8 +318,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0693,
+  "realized_avg_return": -0.0681,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3
+  "realized_final_count": 5,
+  "realized_stop_exits": 5
 }

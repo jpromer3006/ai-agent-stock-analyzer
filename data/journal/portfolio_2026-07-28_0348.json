@@ -29,7 +29,7 @@
       "led_by": "sepa",
       "sentiment": 0.149,
       "earnings_risk": false,
-      "outcome_return": -0.0025,
+      "outcome_return": -0.0032,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -63,7 +63,7 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": -0.01,
+      "outcome_return": 0.0099,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -97,7 +97,7 @@
       "led_by": "sepa",
       "sentiment": 0.219,
       "earnings_risk": false,
-      "outcome_return": -0.0152,
+      "outcome_return": 0.0021,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -114,10 +114,10 @@
       "led_by": "sepa",
       "sentiment": 0.295,
       "earnings_risk": false,
-      "outcome_return": 0.0074,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": 0.0027,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "XOM",
@@ -131,7 +131,7 @@
       "led_by": "sepa",
       "sentiment": 0.227,
       "earnings_risk": false,
-      "outcome_return": -0.0296,
+      "outcome_return": -0.0052,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -148,7 +148,7 @@
       "led_by": "sepa",
       "sentiment": 0.134,
       "earnings_risk": false,
-      "outcome_return": -0.0254,
+      "outcome_return": -0.0249,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -165,7 +165,7 @@
       "led_by": "sepa",
       "sentiment": 0.156,
       "earnings_risk": false,
-      "outcome_return": 0.0502,
+      "outcome_return": 0.0554,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -199,7 +199,7 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": 0.0316,
+      "outcome_return": 0.0532,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -288,8 +288,8 @@
     }
   ],
   "horizon_days": 5,
-  "realized_avg_return": -0.0187,
-  "realized_hit_rate": 0.222,
-  "realized_final_count": 9,
+  "realized_avg_return": -0.0077,
+  "realized_hit_rate": 0.5,
+  "realized_final_count": 10,
   "realized_stop_exits": 2
 }

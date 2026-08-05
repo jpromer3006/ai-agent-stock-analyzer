@@ -29,9 +29,9 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": 0.013,
+      "outcome_return": -0.0005,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -46,10 +46,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0711,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.0348,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "MET",
@@ -63,10 +63,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0287,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.0011,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "AAPL",
@@ -97,10 +97,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0184,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.0127,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "MTCH",
@@ -165,10 +165,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0181,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.0155,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "CHRD",
@@ -182,10 +182,10 @@
       "led_by": "sepa",
       "sentiment": 0.372,
       "earnings_risk": false,
-      "outcome_return": -0.0048,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.018,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "XLE",
@@ -199,9 +199,9 @@
       "led_by": "sepa",
       "sentiment": 0.309,
       "earnings_risk": false,
-      "outcome_return": 0.0024,
+      "outcome_return": -0.0022,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     }
   ],
@@ -252,8 +252,8 @@
     }
   ],
   "horizon_days": 5,
-  "realized_avg_return": -0.098,
+  "realized_avg_return": -0.0397,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 2,
+  "realized_final_count": 7,
   "realized_stop_exits": 2
 }

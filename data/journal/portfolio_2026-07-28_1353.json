@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.149,
       "earnings_risk": false,
-      "outcome_return": -0.0143,
+      "outcome_return": -0.0086,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": -0.0169,
+      "outcome_return": 0.011,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.064,
       "earnings_risk": false,
-      "outcome_return": -0.0671,
+      "outcome_return": -0.0627,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.279,
       "earnings_risk": false,
-      "outcome_return": -0.0847,
+      "outcome_return": -0.049,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.181,
       "earnings_risk": false,
-      "outcome_return": -0.0234,
+      "outcome_return": -0.0126,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.336,
       "earnings_risk": false,
-      "outcome_return": -0.0426,
-      "outcome_exit": "open",
+      "outcome_return": -0.0545,
+      "outcome_exit": "stop",
       "outcome_days": 5,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "DRH",
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.209,
       "earnings_risk": false,
-      "outcome_return": 0.0453,
+      "outcome_return": 0.0379,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.238,
       "earnings_risk": false,
-      "outcome_return": 0.0074,
+      "outcome_return": 0.0027,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -217,7 +217,7 @@
       "led_by": "sepa",
       "sentiment": 0.09,
       "earnings_risk": false,
-      "outcome_return": -0.0614,
+      "outcome_return": -0.0643,
       "outcome_exit": "stop",
       "outcome_days": 5,
       "outcome_final": true
@@ -306,8 +306,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0858,
+  "realized_avg_return": -0.0801,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 4,
-  "realized_stop_exits": 4
+  "realized_final_count": 5,
+  "realized_stop_exits": 5
 }
