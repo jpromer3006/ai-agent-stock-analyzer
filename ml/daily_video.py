@@ -45,11 +45,17 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
-# GUI-launched apps (Launch.command / Finder) inherit a minimal PATH that
-# excludes Homebrew, so shutil.which("ffmpeg") fails in the Streamlit
-# process even when ffmpeg is installed (JP hit this rendering from the
-# YouTube News tab, 2026-07-28). Extend PATH with the standard locations.
-for _extra in ("/opt/homebrew/bin", "/usr/local/bin"):
+# GUI-launched apps (Launch.command / Finder) and launchd jobs inherit a
+# minimal PATH that excludes Homebrew AND the conda env, so
+# shutil.which("ffmpeg") fails even when ffmpeg is installed (Streamlit
+# render 2026-07-28; watchdog Closing Bell "skipped (no ffmpeg)"
+# 2026-08-06). Extend PATH with every standard location.
+_HOME = os.path.expanduser("~")
+for _extra in ("/opt/homebrew/bin", "/usr/local/bin",
+               f"{_HOME}/anaconda3/envs/dev2/bin",
+               f"{_HOME}/anaconda3/bin",
+               f"{_HOME}/miniconda3/envs/dev2/bin",
+               f"{_HOME}/miniconda3/bin"):
     if os.path.isdir(_extra) and _extra not in os.environ.get("PATH", ""):
         os.environ["PATH"] = os.environ.get("PATH", "") + os.pathsep + _extra
 
