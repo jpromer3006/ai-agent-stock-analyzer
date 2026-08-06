@@ -129,14 +129,14 @@ def latest_breadth(lookback: int = 5) -> dict | None:
         return None
     if not entries:
         return None
-    # Branding + honesty guard (JP, 2026-07-27): the segment narrates the
-    # OROS 500, so ignore oversized entries written by legacy local runs
-    # (e.g. an 800-cap scan recording 788). Fall back to the raw latest
-    # only if no <=500 entry exists.
-    sized = [e for e in entries if (e.get("total") or 0) <= 500]
-    pool = sized or entries
-    cur = dict(pool[-1])
-    prior = pool[max(0, len(pool) - 1 - lookback)] if len(pool) > 1 else None
+    # The newest entry wins, whatever its size (JP, 2026-08-05: "it should
+    # relate to either the autonomous scan or the scan now" — never pinned
+    # to an old date). The old <=500 filter hid oversized legacy-cap entries
+    # and froze the panel at the last clean date; the cap fossils in
+    # oros_cron.sh / oros_watchdog.sh are fixed at the source instead, and
+    # the panel reports the entry's real total so it stays honest either way.
+    cur = dict(entries[-1])
+    prior = entries[max(0, len(entries) - 1 - lookback)] if len(entries) > 1 else None
     cur["prior"] = prior if (prior and prior.get("date") != cur["date"]) else None
     return cur
 

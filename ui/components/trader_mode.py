@@ -351,6 +351,18 @@ def render_scan_panel(tickers: list[str]):
             report = scan_universe(tickers, progress_callback=on_progress)
             progress.empty()
         st.session_state[cache_key] = report
+        # A universe-scale Scan Now also refreshes today's stage-breadth
+        # journal entry (idempotent per date), so the OROS Scan panel always
+        # reflects the autonomous scan OR the scan you just ran — never a
+        # stale date (JP, 2026-08-05). Small watchlist scans don't qualify:
+        # a 15-name book is not market breadth. Cheap: scan_universe just
+        # warmed the stage cache, so the tally is pure cache reads.
+        if len(tickers) >= 100:
+            try:
+                from ml.breadth import record_breadth
+                record_breadth(tickers)
+            except Exception:  # noqa: BLE001
+                pass
         from datetime import datetime
         st.session_state.last_scan_time = datetime.now().strftime("%m/%d/%Y %I:%M %p")
         st.rerun()
@@ -1939,8 +1951,10 @@ def _render_oros500_breadth() -> None:
         "Declining": "Price **below a falling** 30-week MA. Downtrend — "
                      "preserve capital; only bearish setups qualify.",
     }
-    st.markdown(f"#### 🔭 OROS Scan — {tot} names graded overnight "
+    st.markdown(f"#### 🔭 OROS Scan — {tot} names graded "
                 f"({_us_date(b.get('date', '?'))})")
+    st.caption("Updated by the overnight autonomous run — or by your own "
+               "Scan Now whenever the scan covers 100+ names.")
     cols = st.columns(4)
     for col, (key, sub, color) in zip(cols, spec):
         n = int(c.get(key, 0))

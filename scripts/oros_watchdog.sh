@@ -32,7 +32,14 @@ LOG="data/journal/watchdog_$(date +%Y-%m-%d).log"
     PATROL="morning (9:05 cloud slot)"
   fi
 
-  git fetch origin main --quiet 2>/dev/null
+  # If we cannot even reach GitHub, the Mac is offline: the cloud has almost
+  # certainly delivered (it runs on GitHub's servers), we just can't see it —
+  # and a local fallback couldn't email anyway. Stand down instead of
+  # journaling an offline scan over stale prices (JP, 2026-08-05).
+  if ! git fetch origin main --quiet 2>/dev/null; then
+    echo "git fetch failed (offline?) - standing down, no local fallback"
+    exit 0
+  fi
   if git log origin/main --grep="journal ${TODAY}" --since="${SINCE}" --oneline | grep -q journal; then
     echo "cloud already delivered the ${PATROL} run - nothing to do"
     exit 0
@@ -43,6 +50,8 @@ LOG="data/journal/watchdog_$(date +%Y-%m-%d).log"
     source "$CONDA_BASE/bin/activate"
     conda activate "$CONDA_ENV" 2>/dev/null
   fi
-  PYTHONPATH=. python3 scripts/oros_run.py --mandate auto --cap 800
+  # cap 500 = the OROS 500, same as the cloud (was a fossil 800 — it wrote
+  # 787-name breadth entries that broke uniformity with every other surface)
+  PYTHONPATH=. python3 scripts/oros_run.py --mandate auto --cap 500
   echo "watchdog fallback finished: exit $?"
 } >> "$LOG" 2>&1

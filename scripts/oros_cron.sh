@@ -34,7 +34,8 @@ LOG="$LOG_DIR/cron_$(date +%Y-%m-%d).log"
     echo "WARN: conda env '$CONDA_ENV' not active (got '${CONDA_DEFAULT_ENV:-none}'); using python3 on PATH."
   fi
 
-  PYTHONPATH=. python3 scripts/oros_run.py --cap 800 --positions 12
+  # cap 500 = the OROS 500, same as the cloud runner (fossil 800 removed)
+  PYTHONPATH=. python3 scripts/oros_run.py --cap 500 --positions 12
   rc=$?
 
   echo "OROS morning run end: $(date '+%Y-%m-%d %H:%M:%S %Z') | exit=$rc"
