@@ -24,7 +24,7 @@ import streamlit as st
 from agents.classifier import classify, explain_classification
 from agents.orchestrator import run_agent
 from ui.components.disclaimer import render_disclaimer
-from ui.components.demo_qr import render_demo_qr_sidebar, render_demo_qr_panel
+# demo_qr imports removed (2026-08-06 security review)
 from data.tickers import UNIVERSE, StockCategory, tickers_by_category, category_counts
 
 
@@ -242,10 +242,8 @@ with st.sidebar:
     st.caption(f"Universe: {len(UNIVERSE)} tickers across {len(category_counts())} specialists")
 
 
-# Sidebar: Live demo QR toggle — placed BEFORE the ticker browser so the
-# host doesn't have to scroll past 50 ticker buttons to find it. Auto-
-# enables itself if a Cloudflare tunnel URL was written by Launch.command.
-render_demo_qr_sidebar(port=8501)
+# Demo QR removed (2026-08-06 security review): it auto-advertised an
+# unauthenticated public tunnel URL. Re-enable deliberately for demo days.
 
 
 with st.sidebar:
@@ -288,8 +286,7 @@ with st.sidebar:
 # ---------------------------------------------------------------------------
 # Main area — Search bar
 # ---------------------------------------------------------------------------
-# Demo QR banner — appears at very top of page when toggle is on
-render_demo_qr_panel(port=8501)
+# (Demo QR banner removed — 2026-08-06 security review)
 
 st.title("🔬 Research Mode — deep memo via Claude + SEC")
 st.caption(

@@ -42,3 +42,4 @@ pyyaml>=6.0
 
 # Demo QR code (presentation launcher)
 qrcode[pil]>=7.4.0
+pypdf>=5.1.0            # PDF text extraction (uploads + mirror PII gate)

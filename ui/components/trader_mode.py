@@ -282,33 +282,9 @@ def render_watchlist_sidebar():
     # keep the sidebar focused: the scan list is the portfolio books, and the
     # ad hoc box above covers checking any extra ticker's stage.
 
-    # ------------------------------------------------------------------
-    # Demo QR code — lets an audience scan and open the app on their phone.
-    # Prefers the public Cloudflare tunnel URL (any network); falls back to
-    # the Mac's LAN IP (same WiFi) so it still works on plain localhost.
-    # ------------------------------------------------------------------
-    with st.sidebar.expander("📲 Demo QR code", expanded=False):
-        from ui.components.demo_qr import get_demo_url, make_qr_png_bytes
-
-        url, scope = get_demo_url(port=8501)
-        if url is None:
-            st.caption(
-                "No public or LAN address detected. Run `Launch.command` to "
-                "start the Cloudflare tunnel, or connect this Mac to WiFi."
-            )
-        else:
-            try:
-                png = make_qr_png_bytes(url, box_size=8)
-                st.image(png, use_container_width=True)
-            except Exception as exc:
-                st.caption(f"QR generation unavailable: {exc}")
-            if scope == "public":
-                st.caption(f"🌍 Public link — any phone, any network.\n\n{url}")
-            else:
-                st.caption(
-                    f"📶 Same WiFi only.\n\n{url}\n\n"
-                    "Run `Launch.command` for a public link that works anywhere."
-                )
+    # Demo QR removed (2026-08-06 security review): the QR advertised an
+    # unauthenticated public tunnel URL to anyone in the room. The
+    # ui/components/demo_qr.py module remains for a future gated demo mode.
 
     return tickers
 

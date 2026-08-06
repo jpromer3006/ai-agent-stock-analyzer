@@ -153,8 +153,18 @@ jobs:
         env:
           REPORTS_TOKEN: ${{ secrets.OROS_REPORTS_TOKEN }}
         run: |
+          # HARD GATE (2026-08-06 security review): never mirror a PDF built
+          # with the personal book, and refuse any PDF whose text contains
+          # personal-account markers. The public repo is public forever.
+          if [ "${OROS_PERSONAL_BOOK:-0}" = "1" ]; then
+            echo "personal book enabled — refusing to mirror"; exit 0
+          fi
           PDF="data/journal/reports/oros_report_$(date -u +%F).pdf"
           if [ -f "$PDF" ]; then
+            # fail-closed: any parse error also refuses the mirror
+            if python -c "from pypdf import PdfReader; import sys; t=' '.join((p.extract_text() or '') for p in PdfReader('$PDF').pages); sys.exit(1 if ('your real holdings' in t or '8661' in t) else 0)"; then :; else
+              echo 'PII marker (or parse failure) — refusing to mirror'; exit 0
+            fi
             git clone --depth 1 "https://x-access-token:${REPORTS_TOKEN}@github.com/jpromer3006/oros-reports.git" /tmp/reports
             cp "$PDF" /tmp/reports/
             cd /tmp/reports

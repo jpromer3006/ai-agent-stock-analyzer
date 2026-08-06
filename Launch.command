@@ -71,22 +71,33 @@ if [[ "$CONDA_DEFAULT_ENV" != "dev2" ]]; then
 fi
 echo -e "      ${GREEN}✓ Active: $CONDA_DEFAULT_ENV${RESET}"
 
-# ─── Step 3: Ensure cloudflared is available ───────────────────────────
-echo -e "${BOLD}[3/5]${RESET} Checking Cloudflare tunnel binary..."
-CLOUDFLARED="/tmp/cloudflared"
-if [[ ! -x "$CLOUDFLARED" ]]; then
-    echo -e "      ${YELLOW}⚠ Not found at /tmp/cloudflared — downloading...${RESET}"
+# ─── Step 3: Cloudflare tunnel binary (OPT-IN, 2026-08-06 security review) ──
+# The tunnel exposes the whole app to the public internet with no login.
+# It now requires an explicit OROS_TUNNEL=1, and the binary lives in the
+# user's home dir (never world-writable /tmp, where any local process
+# could pre-plant an executable).
+if [[ "${OROS_TUNNEL:-0}" == "1" ]]; then
+  echo -e "${BOLD}[3/5]${RESET} Checking Cloudflare tunnel binary..."
+  OROS_BIN="$HOME/.oros/bin"
+  mkdir -p "$OROS_BIN"
+  CLOUDFLARED="$OROS_BIN/cloudflared"
+  if [[ ! -x "$CLOUDFLARED" ]]; then
+    echo -e "      ${YELLOW}⚠ Not found — downloading...${RESET}"
     curl -sL \
         https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-darwin-arm64.tgz \
-        -o /tmp/cloudflared.tgz
-    tar -xzf /tmp/cloudflared.tgz -C /tmp/ 2>/dev/null
+        -o "$OROS_BIN/cloudflared.tgz"
+    tar -xzf "$OROS_BIN/cloudflared.tgz" -C "$OROS_BIN" 2>/dev/null
     chmod +x "$CLOUDFLARED"
     if [[ ! -x "$CLOUDFLARED" ]]; then
         echo -e "      ${RED}✗ Download failed${RESET}"
         exit 1
     fi
+  fi
+  echo -e "      ${GREEN}✓ $($CLOUDFLARED --version 2>&1 | head -1)${RESET}"
+else
+  echo -e "${BOLD}[3/5]${RESET} Public tunnel: ${YELLOW}OFF${RESET} (demo days: OROS_TUNNEL=1 ./Launch.command)"
+  CLOUDFLARED=""
 fi
-echo -e "      ${GREEN}✓ $($CLOUDFLARED --version 2>&1 | head -1)${RESET}"
 
 # ─── Step 4: Start Streamlit ───────────────────────────────────────────
 echo -e "${BOLD}[4/5]${RESET} Starting Streamlit UI on port 8501..."
@@ -120,14 +131,15 @@ else
     echo -e "      ${YELLOW}⚠ Chrome not found — opened in your default browser${RESET}"
 fi
 
-# ─── Step 5: Start Cloudflare tunnel ───────────────────────────────────
+# ─── Step 5: Start Cloudflare tunnel (only when OROS_TUNNEL=1) ─────────
+TUNNEL_URL=""
+if [[ -n "$CLOUDFLARED" ]]; then
 echo -e "${BOLD}[5/5]${RESET} Starting Cloudflare tunnel (this gives your team a shareable URL)..."
 TUNNEL_LOG="/tmp/adminai_tunnel.log"
 "$CLOUDFLARED" tunnel --url http://localhost:8501 > "$TUNNEL_LOG" 2>&1 &
 TUNNEL_PID=$!
 
 # Wait up to 20 seconds for tunnel URL
-TUNNEL_URL=""
 for i in {1..20}; do
     if grep -q "trycloudflare.com" "$TUNNEL_LOG" 2>/dev/null; then
         TUNNEL_URL=$(grep -o "https://[a-zA-Z0-9-]*\.trycloudflare\.com" "$TUNNEL_LOG" | head -1)
@@ -137,8 +149,11 @@ for i in {1..20}; do
     fi
     sleep 1
 done
+else
+    echo -e "${BOLD}[5/5]${RESET} Tunnel skipped — local only (http://localhost:8501)."
+fi
 
-if [[ -z "$TUNNEL_URL" ]]; then
+if [[ "${OROS_TUNNEL:-0}" == "1" && -z "$TUNNEL_URL" ]]; then
     echo -e "      ${YELLOW}⚠ Tunnel URL not detected yet. Local URL still works.${RESET}"
 fi
 
