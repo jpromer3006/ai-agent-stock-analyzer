@@ -164,8 +164,24 @@ def main() -> int:
         log.error("orchestrator produced no plan")
         return 1
 
-    # 4. Journal (propose-and-journal-only; never trades)
-    path = record_proposal(plan, args.account, trace=res.trace, note="nightly run")
+    # Invariant (JP, 2026-08-06): the book must be a SUBSET of the scan.
+    # On 8/05 a fossil 800-cap watchdog run journaled MTCH/HST/GSAT — names
+    # outside the OROS 500 — and the app's Stage Detail couldn't find its
+    # own holdings. Announce any break loudly at write time.
+    _scan_set = set(symbols)
+    _outside = [getattr(h, "ticker", None) for h in (plan.holdings or [])
+                if getattr(h, "ticker", None) not in _scan_set]
+    if _outside:
+        log.warning("UNIVERSE BREAK: holdings outside the scanned %d: %s "
+                    "(source=%s)", len(symbols), _outside,
+                    os.environ.get("OROS_RUN_SOURCE", "local"))
+
+    # 4. Journal (propose-and-journal-only; never trades). The note carries
+    # provenance so same-day records from different runners are tellable
+    # apart (cloud vs watchdog vs cron).
+    _src = os.environ.get("OROS_RUN_SOURCE", "local")
+    path = record_proposal(plan, args.account, trace=res.trace,
+                           note=f"nightly run ({_src})")
     record_cost(0.0)  # quant engine is token-free
 
     # 4b. The OROS 500: journal constituents + stage breadth so the broadcast's
