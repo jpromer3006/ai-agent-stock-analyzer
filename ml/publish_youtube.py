@@ -66,12 +66,12 @@ def build_description(meta: dict | None) -> str:
     if not meta:
         return _DESCRIPTION
     parts = []
-    day, total = meta.get("race_day"), meta.get("race_total")
+    day = meta.get("race_day")
     hook = ["An autonomous AI runs three simulated $100,000 books and "
             "publishes its record daily, win or lose."]
-    if day and total:
-        hook.append(f"Race day {day} of {total} — live book vs frozen book "
-                    f"vs the S&P 500, finish line July 29.")
+    if day:
+        hook.append(f"Race day {day} — live book vs frozen book "
+                    f"vs the S&P 500, updated every trading day.")
     if meta.get("home_run"):
         hr = meta["home_run"]
         try:

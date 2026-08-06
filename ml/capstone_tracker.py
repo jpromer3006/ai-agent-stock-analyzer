@@ -31,7 +31,15 @@ logger = logging.getLogger(__name__)
 _J = Path(__file__).resolve().parent.parent / "data" / "journal"
 _BASELINE = _J / "capstone_baseline.json"
 _CHAIN = _J / "capstone_chain.json"
-END_DATE = "2026-07-29"
+
+# The capstone finish line was 2026-07-29 (Fordham finale). The race did not
+# stop there: the chain keeps appending daily, so the "end date" is simply
+# today (JP, 2026-08-05 — "the race must be updated to the current date").
+CAPSTONE_FINALE = "2026-07-29"
+
+
+def _today() -> str:
+    return f"{datetime.now():%Y-%m-%d}"
 
 
 def _close_on_or_after(df, date: str):
@@ -79,7 +87,7 @@ def baseline_status() -> dict | None:
         if start:
             spy_value = acct * float(spy["Close"].dropna().iloc[-1]) / start
 
-    return {"name": b["name"], "start_date": b["start_date"], "end_date": END_DATE,
+    return {"name": b["name"], "start_date": b["start_date"], "end_date": _today(),
             "account": acct, "cash": float(b.get("cash") or 0.0),
             "rows": rows, "value": value,
             "return_pct": 100 * (value / acct - 1),

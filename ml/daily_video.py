@@ -95,23 +95,20 @@ _TAGLINE = ("Every position, every chart, and every word of this broadcast "
             "question this channel exists to answer: can a system that "
             "reflects on its own record hold its own?")
 
-# Season arc: the capstone race ends 2026-07-29 (Fordham finale).
+# Season arc: the capstone finale was 2026-07-29; the race now runs
+# open-ended to the current date (JP, 2026-08-05). Same books, same start
+# dollar, no finish line — the day counter just keeps climbing.
 _RACE_START = "2026-07-06"
-_RACE_END = "2026-07-29"
 
 
-def _race_day() -> tuple[int, int]:
-    """(current trading day number, total trading days) of the race."""
+def _race_day() -> int:
+    """Current trading day number of the open-ended race (1-based)."""
     import numpy as np
     try:
         start = datetime.strptime(_RACE_START, "%Y-%m-%d").date()
-        end = datetime.strptime(_RACE_END, "%Y-%m-%d").date()
-        today = min(datetime.now().date(), end)
-        total = int(np.busday_count(start, end) + 1)
-        cur = max(1, min(int(np.busday_count(start, today) + 1), total))
-        return cur, total
+        return max(1, int(np.busday_count(start, datetime.now().date()) + 1))
     except Exception:  # noqa: BLE001
-        return 1, 17
+        return 1
 
 
 # ---------------------------------------------------------------------------
@@ -322,7 +319,7 @@ def _card(plt, title: str, lines: list[tuple[str, dict]], kicker: str = ""):
 def _coldopen_scene(plt, data: dict, home_run: dict | None,
                     story: dict | None = None):
     """The rundown card: three headlines and the no-human tagline."""
-    day, total = _race_day()
+    day = _race_day()
     regime = (data.get("regime") or "?").upper()
     if home_run:
         line2 = (f"02  TOP STORY           {_named(home_run['ticker'])[:34]} — "
@@ -340,7 +337,7 @@ def _coldopen_scene(plt, data: dict, home_run: dict | None,
          + (f", VIX {data['vix'].get('level', '')}" if data.get("vix") else ""),
          {"color": _UP if regime == "BULL" else _WARN, "size": 15}),
         (line2, {"color": c2, "size": 15}),
-        (f"03  THE RACE            day {day} of {total} — three books, "
+        (f"03  THE RACE            day {day} — three books, "
          f"same $100,000", {"color": _BLUE, "size": 15}),
         ("", {"size": 8, "dy": 0.03}),
         ("No human intervention: scanned, built, risk-checked,",
@@ -354,7 +351,7 @@ def _coldopen_scene(plt, data: dict, home_run: dict | None,
 
 def _coldopen_script(data: dict, home_run: dict | None,
                      story: dict | None = None) -> list[str]:
-    day, total = _race_day()
+    day = _race_day()
     regime = (data.get("regime") or "mixed").upper()
     dyn = [f"Good morning. From the OROS Market Desk, here is the rundown "
            f"for {data.get('date', 'today')}."]
@@ -370,7 +367,7 @@ def _coldopen_script(data: dict, home_run: dict | None,
     else:
         dyn.append("No setup cleared our bar today, and you will "
                    "hear why that is a story in itself.")
-    dyn.append(f"And at the sports desk, day {day} of {total} in the race: "
+    dyn.append(f"And at the sports desk, day {day} of the race: "
                f"the live book, the frozen book, and the index, all running "
                f"the same one hundred thousand simulated dollars.")
     return [" ".join(dyn), _TAGLINE]
@@ -785,9 +782,10 @@ def _capstone_chart_scene(plt, cs: dict):
     fig.patch.set_facecolor(_BG)
     fig.subplots_adjust(left=0.08, right=0.82, top=0.78, bottom=0.12)
     fig.text(0.06, 0.94, f"Same \\$100,000, three books, since {cs['start_date']}"
-             f" · finish line {cs.get('end_date', '')}",
+             f" · through {cs.get('end_date', '')}",
              fontsize=13, color=_MUT, family="monospace")
-    fig.text(0.06, 0.85, "The Race — to July 29", fontsize=26,
+    fig.text(0.06, 0.85,
+             f"The Race — to {datetime.now():%B %-d}", fontsize=26,
              fontweight="bold", color=_FG)
     _style_dark_ax(ax)
     ax.axhline(acct, color=_GRID, linewidth=1.0, linestyle=":")
@@ -808,7 +806,9 @@ def _capstone_chart_scene(plt, cs: dict):
                     annotation_clip=False)
     ax.set_ylabel("Simulated value ($)", color=_MUT, fontsize=9)
     import matplotlib.dates as mdates
-    ax.xaxis.set_major_locator(mdates.DayLocator())
+    # Open-ended race: a label for every day collides once the season runs
+    # past a month. Cap the tick count and let matplotlib pick clean dates.
+    ax.xaxis.set_major_locator(mdates.AutoDateLocator(maxticks=14))
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %d"))
     ax.tick_params(axis="x", labelsize=8)
     fig.text(0.06, 0.035, "dotted line = the starting \\$100,000 · append-only "
@@ -834,7 +834,7 @@ def _capstone_text_scene(plt, cs: dict):
                       f"({cs['spy_return_pct']:+.2f}%)", {"color": _MUT}))
     lines.append(("Append-only measurement. Nothing restated.",
                   {"size": 12, "color": _MUT, "dy": 0.055}))
-    return _card(plt, "The Race — to July 29", lines)
+    return _card(plt, f"The Race — to {datetime.now():%B %-d}", lines)
 
 
 def _capstone_scene(plt, cs: dict):
@@ -1022,7 +1022,7 @@ def _no_pick_script() -> list[str]:
 
 def _capstone_script(cs: dict) -> list[str]:
     """The sports desk: standings language, play-by-play voice."""
-    day, total = _race_day()
+    day = _race_day()
     lv = cs.get("live") or {}
     standings = [("the frozen first portfolio, the green line",
                   float(cs["value"]), float(cs["return_pct"]))]
@@ -1034,18 +1034,15 @@ def _capstone_script(cs: dict) -> list[str]:
                           float(cs["spy_value"]), float(cs["spy_return_pct"])))
     standings.sort(key=lambda r: -r[1])
     lead_name, lead_v, _ = standings[0]
-    s = [f"Over to the sports desk. Day {day} of {total} in the race: three "
+    s = [f"Over to the sports desk. Day {day} of the race: three "
          f"books, the same one hundred thousand simulated dollars, since "
          f"July sixth."]
     s.append(f"In first place, {lead_name}, at {lead_v:,.0f}.")
     for name, v, _pct in standings[1:]:
         gap = (lead_v - v) / 1000.0
         s.append(f"Then {name}, {gap:,.1f} thousand back at {v:,.0f}.")
-    if day >= total:
-        s.append("That's the final. The full season review is coming.")
-    else:
-        s.append(f"{total - day} trading day{'s' if total - day != 1 else ''} "
-                 f"to the finish line.")
+    s.append("The race has no finish line. Same books, same dollars, "
+             "back at it tomorrow.")
     s.append("Every line starts the same day with the same dollar. Nothing "
              "is restated.")
     return [" ".join(s), _teach("race")]
@@ -1398,10 +1395,9 @@ def generate_video_brief(data: dict, overrides: dict | None = None,
         # Sidecar metadata: chapters + captions for the YouTube publisher.
         try:
             _write_srt(cues, out.with_suffix(".srt"))
-            day, total = _race_day()
+            day = _race_day()
             meta = {"date": data.get("date"), "regime": data.get("regime"),
                     "lesson": _lesson_key(), "race_day": day,
-                    "race_total": total,
                     "home_run": (home_run or {}).get("ticker"),
                     "takeaway": _TAKEAWAYS[tk],
                     "breadth": data.get("breadth"),
