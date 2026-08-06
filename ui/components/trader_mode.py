@@ -337,8 +337,11 @@ def render_scan_panel(tickers: list[str]):
             import os as _os
             _os.environ["OROS_RUN_SOURCE"] = "scan-now"   # provenance
             try:
-                from ml.breadth import record_breadth
-                record_breadth(tickers)
+                # Journal from the SAME StageResults this page renders —
+                # never a second grading pass (JP, 2026-08-06: the panel
+                # said Basing 159 while the cards said 177).
+                from ml.breadth import record_breadth_from_results
+                record_breadth_from_results(report.results)
             except Exception:  # noqa: BLE001
                 pass
             finally:

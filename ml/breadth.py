@@ -88,6 +88,47 @@ def _journal(entry: dict, path: Path) -> None:
     path.write_text(json.dumps({"entries": entries}, indent=1))
 
 
+def _entry_from_results(results) -> dict:
+    """Tally an entry from ALREADY-COMPUTED StageResults (no re-grading).
+
+    Uniformity fix (JP, 2026-08-06): re-grading symbols after a scan used a
+    second pass over the price cache, and borderline names flipped between
+    Basing and Advancing — the journaled panel disagreed with the very scan
+    that wrote it (159 vs 177 Basing). One scan, one grade: the journal now
+    derives from the same StageResult objects the UI renders.
+    """
+    from ml.oros_config import OROS_CAP, run_source
+    if len(results) > OROS_CAP:
+        logger.warning(
+            "CONFIG DRIFT: breadth from %d results but OROS_CAP=%d "
+            "(source=%s)", len(results), OROS_CAP, run_source())
+    counts = {k: 0 for k in STAGE_ORDER}
+    invalidated = graded = 0
+    for r in results:
+        if getattr(r, "error", None):
+            continue
+        name = getattr(r, "stage_name", None)
+        if name not in counts:
+            continue
+        counts[name] += 1
+        graded += 1
+        if getattr(r, "is_invalidated", False):
+            invalidated += 1
+    return {"date": f"{datetime.now():%Y-%m-%d}", "total": graded,
+            "counts": counts, "invalidated": invalidated,
+            "source": run_source()}
+
+
+def record_breadth_from_results(results) -> dict:
+    """Journal today's breadth from a finished scan's StageResults —
+    the Scan Now path. Idempotent per date, same file as record_breadth."""
+    entry = _entry_from_results(results)
+    _journal(entry, _FILE)
+    logger.info("stage breadth journaled from scan results: %s of %d graded",
+                entry["counts"], entry["total"])
+    return entry
+
+
 def record_breadth(symbols: list[str]) -> dict:
     """Tally stages across `symbols` and journal today's (morning) entry."""
     entry = _tally_stages(symbols)
