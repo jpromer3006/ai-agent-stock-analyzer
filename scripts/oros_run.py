@@ -14,7 +14,7 @@ Guardrails: propose-and-journal-only (no orders, no money moved); the budget cap
 defers LLM work rather than blocking; everything is logged.
 
 Examples:
-    PYTHONPATH=. python3 scripts/oros_run.py --refresh-cap 1500 --cap 800
+    PYTHONPATH=. python3 scripts/oros_run.py                  # caps come from ml/oros_config.py
     PYTHONPATH=. python3 scripts/oros_run.py --light          # quick run, no full refresh
 """
 
@@ -68,10 +68,13 @@ def record_cost(amount: float) -> None:
 
 # ---------------------------------------------------------------------------
 def main() -> int:
+    from ml.oros_config import OROS_CAP, OROS_REFRESH_CAP
     ap = argparse.ArgumentParser()
-    ap.add_argument("--refresh-cap", type=int, default=1500, help="names to refresh prices for")
-    ap.add_argument("--cap", type=int, default=500,
-                    help="liquid names to scan (the OROS 500)")
+    ap.add_argument("--refresh-cap", type=int, default=OROS_REFRESH_CAP,
+                    help="names to refresh prices for")
+    ap.add_argument("--cap", type=int, default=OROS_CAP,
+                    help="liquid names to scan (the OROS 500); the default "
+                         "is the single source of truth in ml/oros_config.py")
     ap.add_argument("--positions", type=int, default=12)
     ap.add_argument("--account", type=float, default=100_000.0)
     ap.add_argument("--mandate", default="auto",

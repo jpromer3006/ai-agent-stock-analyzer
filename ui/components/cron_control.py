@@ -119,24 +119,30 @@ def disable_cron() -> tuple[bool, str]:
         return False, str(e)
 
 
-def run_now(cap: int = 500, positions: int = 12) -> tuple[bool, str]:
+def run_now(cap: int | None = None, positions: int = 12) -> tuple[bool, str]:
     """Kick the morning run in the background using the app's own interpreter.
 
     Returns (ok, log_filename). Token-free quant engine; never trades.
+    cap=None means the oros_config default (the OROS 500) — callers only
+    pass a number to deliberately override it.
     """
     try:
         _JOURNAL.mkdir(parents=True, exist_ok=True)
         log = _JOURNAL / f"manual_run_{datetime.now():%Y%m%d_%H%M%S}.log"
         env = dict(os.environ)
         env["PYTHONPATH"] = str(_ROOT)
+        env["OROS_RUN_SOURCE"] = "app-button"     # journal provenance
         fh = open(log, "w")
+        args = [sys.executable, str(_RUN_SCRIPT),
+                "--positions", str(positions),
+                # Explicit edition (JP, 2026-07-28): the button says MORNING,
+                # so it always runs the morning edition — a 3 PM click must
+                # never fire a surprise Closing Bell (auto flips after 14:00).
+                "--edition", "morning"]
+        if cap is not None:
+            args += ["--cap", str(cap)]
         subprocess.Popen(
-            # Explicit edition (JP, 2026-07-28): the button says MORNING,
-            # so it always runs the morning edition — a 3 PM click must
-            # never fire a surprise Closing Bell (auto flips after 14:00).
-            [sys.executable, str(_RUN_SCRIPT),
-             "--cap", str(cap), "--positions", str(positions),
-             "--edition", "morning"],
+            args,
             cwd=str(_ROOT), env=env, stdout=fh, stderr=subprocess.STDOUT,
             start_new_session=True,
         )

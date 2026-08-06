@@ -36,7 +36,17 @@ _CLOSE_FILE = _J / "stage_breadth_close.json"
 def _tally_stages(symbols: list[str]) -> dict:
     """Stage counts across `symbols` off the on-disk price cache."""
     from data import price_cache
+    from ml.oros_config import OROS_CAP, run_source
     from ml.stage_analyzer import analyze_stage
+
+    # Write-time drift alarm (2026-08-05 lesson): validate at the producer,
+    # never patch at the reader. A read-side filter once hid a week of
+    # oversized entries and froze the panel at 7/28.
+    if len(symbols) > OROS_CAP:
+        logger.warning(
+            "CONFIG DRIFT: breadth tally over %d symbols but OROS_CAP=%d — "
+            "some entry point is carrying its own cap (source=%s)",
+            len(symbols), OROS_CAP, run_source())
 
     counts = {k: 0 for k in STAGE_ORDER}
     invalidated = graded = 0
@@ -56,7 +66,10 @@ def _tally_stages(symbols: list[str]) -> dict:
         if getattr(r, "is_invalidated", False):
             invalidated += 1
     return {"date": f"{datetime.now():%Y-%m-%d}", "total": graded,
-            "counts": counts, "invalidated": invalidated}
+            "counts": counts, "invalidated": invalidated,
+            # Provenance: who wrote this entry (cloud / cron / watchdog /
+            # app-button / scan-now / local). Audits become a one-line grep.
+            "source": run_source()}
 
 
 def _journal(entry: dict, path: Path) -> None:

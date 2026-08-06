@@ -358,11 +358,15 @@ def render_scan_panel(tickers: list[str]):
         # a 15-name book is not market breadth. Cheap: scan_universe just
         # warmed the stage cache, so the tally is pure cache reads.
         if len(tickers) >= 100:
+            import os as _os
+            _os.environ["OROS_RUN_SOURCE"] = "scan-now"   # provenance
             try:
                 from ml.breadth import record_breadth
                 record_breadth(tickers)
             except Exception:  # noqa: BLE001
                 pass
+            finally:
+                _os.environ.pop("OROS_RUN_SOURCE", None)
         from datetime import datetime
         st.session_state.last_scan_time = datetime.now().strftime("%m/%d/%Y %I:%M %p")
         st.rerun()

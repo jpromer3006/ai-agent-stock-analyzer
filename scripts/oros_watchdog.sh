@@ -50,8 +50,8 @@ LOG="data/journal/watchdog_$(date +%Y-%m-%d).log"
     source "$CONDA_BASE/bin/activate"
     conda activate "$CONDA_ENV" 2>/dev/null
   fi
-  # cap 500 = the OROS 500, same as the cloud (was a fossil 800 — it wrote
-  # 787-name breadth entries that broke uniformity with every other surface)
-  PYTHONPATH=. python3 scripts/oros_run.py --mandate auto --cap 500
+  # scan cap comes from ml/oros_config.py — never restated in runner scripts
+  # (the old hard-coded 800 here wrote 787-name breadth entries for a week)
+  OROS_RUN_SOURCE=watchdog PYTHONPATH=. python3 scripts/oros_run.py --mandate auto
   echo "watchdog fallback finished: exit $?"
 } >> "$LOG" 2>&1
