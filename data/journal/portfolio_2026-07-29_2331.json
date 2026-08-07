@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": -0.0398,
+      "outcome_return": -0.029,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -47,7 +47,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.026,
+      "outcome_return": 0.0302,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -64,7 +64,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0264,
+      "outcome_return": -0.0257,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0521,
-      "outcome_exit": "stop",
+      "outcome_return": -0.0401,
+      "outcome_exit": "open",
       "outcome_days": 6,
-      "outcome_final": true
+      "outcome_final": false
     },
     {
       "ticker": "MO",
@@ -166,7 +166,7 @@
       "led_by": "technical",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0548,
+      "outcome_return": -0.0503,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.309,
       "earnings_risk": false,
-      "outcome_return": -0.0228,
+      "outcome_return": -0.0084,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -217,7 +217,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0174,
+      "outcome_return": -0.0153,
       "outcome_exit": "open",
       "outcome_days": 6,
       "outcome_final": false
@@ -270,8 +270,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0827,
+  "realized_avg_return": -0.098,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3
+  "realized_final_count": 2,
+  "realized_stop_exits": 2
 }

@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:00,947
+Good morning.
+
+2
+00:00:00,947 --> 00:00:06,409
+From the OROS Market Desk, here is the rundown for Friday, August 07, 2026.
+
+3
+00:00:06,409 --> 00:00:07,866
+The tape reads bull.
+
+4
+00:00:07,866 --> 00:00:12,090
+Our top pick of the day: Bristol-Myers Squibb, ticker BMY.
+
+5
+00:00:12,090 --> 00:00:17,188
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:17,188 --> 00:00:28,186
+And at the sports desk, day 25 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:28,186 --> 00:00:36,417
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:36,417 --> 00:00:43,781
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:43,743 --> 00:00:45,683
+First, the market open.
+
+10
+00:00:45,683 --> 00:00:51,758
+The S and P five hundred slipped 0.2 percent, while the NASDAQ lost 0.4.
+
+11
+00:00:51,758 --> 00:00:59,013
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+12
+00:00:59,013 --> 00:01:01,376
+The fear gauge sits at 15.3.
+
+13
+00:01:01,376 --> 00:01:10,701
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+14
+00:01:10,663 --> 00:01:19,706
+Now the chart of the day: Bristol-Myers Squibb, ticker BMY, the top stock to clear every quality gate.
+
+15
+00:01:19,706 --> 00:01:31,321
+The entry trigger sits at 66.22, the exit at 57.56, and the objective at 78.56 — 1.4 dollars of potential reward per dollar risked.
+
+16
+00:01:31,321 --> 00:01:37,439
+At 115 shares, a failed trade costs about one percent of the account.
+
+17
+00:01:37,439 --> 00:01:48,663
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+18
+00:01:48,663 --> 00:01:57,819
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+19
+00:01:57,819 --> 00:02:03,471
+You buy only if the market pushes up through that line, proving demand.
+
+20
+00:02:03,471 --> 00:02:09,442
+If it never gets there, you never buy, and that is the plan protecting you.
+
+21
+00:02:09,442 --> 00:02:16,845
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+22
+00:02:16,845 --> 00:02:29,344
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+23
+00:02:29,344 --> 00:02:30,379
+Buy on proof.
+
+24
+00:02:30,379 --> 00:02:31,414
+Exit by rule.
+
+25
+00:02:31,414 --> 00:02:32,687
+Size to survive.
+
+26
+00:02:32,655 --> 00:02:38,219
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+27
+00:02:38,219 --> 00:02:46,291
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+28
+00:02:46,291 --> 00:02:50,939
+On the stock track: Bristol-Myers Squibb, ticker BMY.
+
+29
+00:02:50,939 --> 00:02:56,113
+The plan in plain English: it last closed at 64.15 dollars.
+
+30
+00:02:56,113 --> 00:03:05,497
+The system would only buy strength — a buy-stop at 66.22, nothing happens unless price proves itself first.
+
+31
+00:03:05,497 --> 00:03:13,302
+If it triggers, the exit is a weekly close below 57.56, and the measured target is 78.56.
+
+32
+00:03:13,302 --> 00:03:18,478
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+33
+00:03:18,478 --> 00:03:19,597
+That's the deal.
+
+34
+00:03:19,571 --> 00:03:21,799
+Turning to the model book.
+
+35
+00:03:21,799 --> 00:03:32,685
+The system holds 12 positions with 68% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+36
+00:03:32,685 --> 00:03:46,227
+New to the book: Astronics (ATRO), Popular (BPOP), iShares MSCI Japan Index Fund (EWJ), RTX Corporation (RTX) — each passed the full entry gauntlet overnight.
+
+37
+00:03:46,227 --> 00:04:15,797
+Rotated out: Airbnb (ABNB), which still advancing, but outranked by stronger names; Citigroup (C), which still advancing, but outranked by stronger names; iShares International Country Rotation Active ETF (CORO), which still advancing, but outranked by stronger names; General Motors (GM), which still advancing, but outranked by stronger names.
+
+38
+00:04:15,797 --> 00:04:31,825
+Left on the bench: Cognex (CGNX), earnings inside the blackout window; First Busey (BUSE), earnings inside the blackout window; APA Corporation (APA), earnings inside the blackout window.
+
+39
+00:04:31,825 --> 00:04:36,711
+Passing the scan is not enough; the book must afford you.
+
+40
+00:04:36,711 --> 00:04:42,745
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+41
+00:04:42,701 --> 00:04:49,903
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+42
+00:04:49,903 --> 00:04:57,489
+12 positions, led by Target, ticker TGT, Popular, ticker BPOP, Cathay General Bancorp, ticker CATY.
+
+43
+00:04:57,489 --> 00:05:07,909
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+44
+00:05:07,871 --> 00:05:10,102
+Over to the sports desk.
+
+45
+00:05:10,102 --> 00:05:19,307
+Day 25 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+46
+00:05:19,307 --> 00:05:25,537
+In first place, the live self-rebuilding book, in blue, at 103,974.
+
+47
+00:05:25,537 --> 00:05:31,023
+Then the index fund, in gray, 1.7 thousand back at 102,300.
+
+48
+00:05:31,023 --> 00:05:38,182
+Then the frozen first portfolio, the green line, 4.1 thousand back at 99,911.
+
+49
+00:05:38,182 --> 00:05:40,785
+The race has no finish line.
+
+50
+00:05:40,785 --> 00:05:45,062
+Same books, same dollars, back at it tomorrow.
+
+51
+00:05:45,062 --> 00:05:49,897
+Every line starts the same day with the same dollar.
+
+52
+00:05:49,897 --> 00:05:51,757
+Nothing is restated.
+
+53
+00:05:51,757 --> 00:06:00,664
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+54
+00:06:00,626 --> 00:06:02,175
+Tonight's takeaway.
+
+55
+00:06:02,175 --> 00:06:04,458
+A portfolio is not a museum.
+
+56
+00:06:04,458 --> 00:06:12,773
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+57
+00:06:12,747 --> 00:06:15,761
+Before we close, the disclosure segment.
+
+58
+00:06:15,761 --> 00:06:26,383
+Everything you heard today concerns one simulated portfolio of 12 positions — the same book, line for line, as this morning's emailed report.
+
+59
+00:06:26,383 --> 00:06:28,342
+One record, every surface.
+
+60
+00:06:28,342 --> 00:06:30,260
+Today's lesson is provenance.
+
+61
+00:06:30,260 --> 00:06:38,392
+Every number in this episode was read from one journaled record, the same record that was emailed as this morning's report.
+
+62
+00:06:38,392 --> 00:06:46,393
+When the video, the email, and the app cannot disagree, trust stops being a promise and becomes a property of the system.
+
+63
+00:06:46,393 --> 00:06:48,479
+A word on how this desk works.
+
+64
+00:06:48,479 --> 00:07:06,006
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+65
+00:07:06,006 --> 00:07:14,422
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+66
+00:07:14,422 --> 00:07:17,355
+All figures are simulated paper trading.
+
+67
+00:07:17,355 --> 00:07:23,733
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+68
+00:07:23,733 --> 00:07:27,692
+From the OROS Market Desk, have a disciplined session.

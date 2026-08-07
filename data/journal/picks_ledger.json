@@ -145,6 +145,27 @@
   {
    "date": "2026-08-06",
    "picks": []
+  },
+  {
+   "date": "2026-08-07",
+   "picks": [
+    {
+     "ticker": "BMY",
+     "buy_stop": 66.22,
+     "stop_loss": 57.56,
+     "target": 78.56,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "EMR",
+     "buy_stop": 163.28,
+     "stop_loss": 142.04,
+     "target": 183.14,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }

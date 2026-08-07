@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.149,
       "earnings_risk": false,
-      "outcome_return": -0.0482,
-      "outcome_exit": "stop",
+      "outcome_return": -0.0361,
+      "outcome_exit": "open",
       "outcome_days": 7,
-      "outcome_final": true
+      "outcome_final": false
     },
     {
       "ticker": "MET",
@@ -47,7 +47,7 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": 0.0384,
+      "outcome_return": 0.0427,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -64,7 +64,7 @@
       "led_by": "sepa",
       "sentiment": 0.064,
       "earnings_risk": false,
-      "outcome_return": -0.0702,
+      "outcome_return": -0.0658,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -81,7 +81,7 @@
       "led_by": "sepa",
       "sentiment": 0.279,
       "earnings_risk": false,
-      "outcome_return": -0.0406,
+      "outcome_return": -0.0399,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -98,7 +98,7 @@
       "led_by": "sepa",
       "sentiment": 0.181,
       "earnings_risk": false,
-      "outcome_return": -0.0222,
+      "outcome_return": -0.0124,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -132,7 +132,7 @@
       "led_by": "sepa",
       "sentiment": 0.209,
       "earnings_risk": false,
-      "outcome_return": 0.0176,
+      "outcome_return": -0.0117,
       "outcome_exit": "open",
       "outcome_days": 7,
       "outcome_final": false
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.238,
       "earnings_risk": false,
-      "outcome_return": -0.018,
+      "outcome_return": -0.0034,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -306,8 +306,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0748,
+  "realized_avg_return": -0.0801,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 6,
-  "realized_stop_exits": 6
+  "realized_final_count": 5,
+  "realized_stop_exits": 5
 }
