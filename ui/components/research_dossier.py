@@ -603,7 +603,32 @@ def render_research_dossier(ticker: str) -> None:
     with st.spinner(f"Running stage analysis on {ticker}..."):
         stage_result = analyze_stage(ticker)
     if stage_result.error:
+        # Limited-data mode (JP, 2026-08-07): the Historian's chart gate
+        # failed, but SEC filings exist independently of yfinance's price
+        # coverage (OTC names, fresh IPOs, transitioning tickers). A real
+        # desk doesn't send the analyst home because the chartist can't
+        # work — the fundamentals voice stays available, on demand.
         st.error(f"Stage analysis failed: {stage_result.error}")
+        st.info(
+            "**Limited-data mode.** The Historian needs price history for "
+            "its chart sections (stage, resistance, calendar) — those are "
+            "off for this ticker. The **sector specialist** can still "
+            "research it from SEC filings and fundamentals and write an "
+            "executive summary below."
+        )
+        # Cheap expectation-setter: does SEC even know this ticker?
+        try:
+            from data.sec_client import get_cik
+            if get_cik(ticker) is None:
+                st.warning(
+                    f"Heads up: {ticker} has no SEC registration either "
+                    "(no CIK found). The specialist can still try, but if "
+                    "this is a foreign listing, a fund, or a typo, expect "
+                    "a thin result."
+                )
+        except Exception:  # noqa: BLE001
+            pass
+        _render_section_4a_specialist(ticker)
         return
 
     with st.spinner("Reading the 10-year resistance picture..."):
