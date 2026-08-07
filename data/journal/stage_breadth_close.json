@@ -180,12 +180,12 @@
    "date": "2026-08-07",
    "total": 494,
    "counts": {
-    "Advancing": 240,
-    "Basing": 163,
+    "Advancing": 247,
+    "Basing": 159,
     "Topping": 27,
-    "Declining": 64
+    "Declining": 61
    },
-   "invalidated": 2,
+   "invalidated": 5,
    "source": "cloud"
   }
  ]

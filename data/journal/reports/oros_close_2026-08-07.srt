@@ -1,147 +1,159 @@
 1
-00:00:00,000 --> 00:00:03,105
+00:00:00,000 --> 00:00:03,117
 Good evening from the OROS closing desk.
 
 2
-00:00:03,105 --> 00:00:09,005
-This morning the system named no pick, so tonight there is nothing to grade.
+00:00:03,117 --> 00:00:07,871
+Time to grade this morning's call — the part most shows skip.
 
 3
-00:00:09,005 --> 00:00:13,740
-No setup, no trade, no loss — that is the discipline working.
+00:00:07,871 --> 00:00:14,494
+Bristol-Myers Squibb, ticker BMY never reached the trigger, so no position was taken.
 
 4
-00:00:13,740 --> 00:00:18,676
-Why we grade in public: a forecast that is never checked is just content.
+00:00:14,494 --> 00:00:17,923
+The entry did its quiet job: it kept us out.
 
 5
-00:00:18,676 --> 00:00:24,085
-Every morning call gets an evening verdict, and both go in the permanent record.
+00:00:17,923 --> 00:00:24,235
+Emerson Electric, ticker EMR never reached the trigger, so no position was taken.
 
 6
-00:00:24,050 --> 00:00:28,095
-On the day, the book is down 589 dollars.
+00:00:24,235 --> 00:00:27,664
+The entry did its quiet job: it kept us out.
 
 7
-00:00:28,095 --> 00:00:32,437
-BridgeBio Pharma (BBIO) leads, +1.0 percent.
+00:00:27,664 --> 00:00:32,599
+Why we grade in public: a forecast that is never checked is just content.
 
 8
-00:00:32,437 --> 00:00:35,101
-Citigroup (C) lags at -2.8.
+00:00:32,599 --> 00:00:38,008
+Every morning call gets an evening verdict, and both go in the permanent record.
 
 9
-00:00:35,101 --> 00:00:40,429
-The checklist is clear: nothing requires action today.
+00:00:37,973 --> 00:00:42,008
+On the day, the book is up 341 dollars.
 
 10
-00:00:40,429 --> 00:00:43,955
-On screen, the day's gainers and laggards inside the paper book.
+00:00:42,008 --> 00:00:47,803
+iShares MSCI Japan Index Fund (EWJ) leads, +1.8 percent.
 
 11
-00:00:43,911 --> 00:00:51,083
-And here is the book itself — the actual holdings, identical to this morning's emailed report.
+00:00:47,803 --> 00:00:51,011
+GE Aerospace (GE) lags at -1.2.
 
 12
-00:00:51,083 --> 00:00:58,637
-12 positions, led by Citigroup, ticker C, Cathay General Bancorp, ticker CATY, Airbnb, ticker ABNB.
+00:00:51,011 --> 00:00:56,598
+The checklist is clear: nothing requires action today.
 
 13
-00:00:58,637 --> 00:01:09,015
-Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+00:00:56,598 --> 00:01:00,125
+On screen, the day's gainers and laggards inside the paper book.
 
 14
-00:01:08,988 --> 00:01:13,817
-Now the part that makes this system different: the loop.
+00:01:00,081 --> 00:01:07,283
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
 
 15
-00:01:13,817 --> 00:01:16,232
-Every morning OROS proposes.
+00:01:07,283 --> 00:01:14,869
+12 positions, led by Target, ticker TGT, Popular, ticker BPOP, Cathay General Bancorp, ticker CATY.
 
 16
-00:01:16,232 --> 00:01:26,839
-Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+00:01:14,869 --> 00:01:25,289
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
 
 17
-00:01:26,839 --> 00:01:30,892
-Inside the book today: 2 positions up, 10 down.
+00:01:25,251 --> 00:01:30,374
+Now the part that makes this system different: the loop.
 
 18
-00:01:30,892 --> 00:01:33,307
-Best, BBIO at +0.99 percent.
+00:01:30,374 --> 00:01:32,935
+Every morning OROS proposes.
 
 19
-00:01:33,307 --> 00:01:34,859
-Worst, C at -2.78.
+00:01:32,935 --> 00:01:44,187
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
 
 20
-00:01:34,859 --> 00:01:39,861
-Both go in the journal — wins and losses get the same ink.
+00:01:44,187 --> 00:01:48,395
+Inside the book today: 6 positions up, 6 down.
 
 21
-00:01:39,861 --> 00:01:47,018
-The honest scoreboard reads: expectancy -8.27% per trade over 182 graded positions.
+00:01:48,395 --> 00:01:50,957
+Best, ATRO at +2.25 percent.
 
 22
-00:01:47,018 --> 00:01:54,090
-Because that record is soft, the system has throttled itself to 25% position size.
+00:01:50,957 --> 00:01:52,695
+Worst, GE at -1.19.
 
 23
-00:01:54,090 --> 00:01:59,264
-Nobody told it to — full size must be earned back with wins.
+00:01:52,695 --> 00:01:58,001
+Both go in the journal — wins and losses get the same ink.
 
 24
-00:01:59,264 --> 00:02:11,682
-What tonight's read hands to tomorrow's open: 240 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+00:01:58,001 --> 00:02:05,594
+The honest scoreboard reads: expectancy -8.37% per trade over 176 graded positions.
 
 25
-00:02:11,635 --> 00:02:13,847
-Over to the sports desk.
+00:02:05,594 --> 00:02:13,095
+Because that record is soft, the system has throttled itself to 25% position size.
 
 26
-00:02:13,847 --> 00:02:22,969
-Day 25 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+00:02:13,095 --> 00:02:18,584
+Nobody told it to — full size must be earned back with wins.
 
 27
-00:02:22,969 --> 00:02:29,143
-In first place, the live self-rebuilding book, in blue, at 103,815.
+00:02:18,584 --> 00:02:35,416
+What tonight's read hands to tomorrow's open: 247 names close the day in Stage 2; 3 new invalidations queue exit reviews; position size stays cut to 25% until the record earns it back.
 
 28
-00:02:29,143 --> 00:02:34,580
-Then the index fund, in gray, 1.5 thousand back at 102,300.
+00:02:35,375 --> 00:02:37,596
+Over to the sports desk.
 
 29
-00:02:34,580 --> 00:02:41,675
-Then the frozen first portfolio, the green line, 3.9 thousand back at 99,911.
+00:02:37,596 --> 00:02:46,760
+Day 25 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
 
 30
-00:02:41,675 --> 00:02:44,255
-The race has no finish line.
+00:02:46,760 --> 00:02:52,962
+In first place, the live self-rebuilding book, in blue, at 104,786.
 
 31
-00:02:44,255 --> 00:02:48,494
-Same books, same dollars, back at it tomorrow.
+00:02:52,962 --> 00:02:58,423
+Then the index fund, in gray, 1.9 thousand back at 102,926.
 
 32
-00:02:48,494 --> 00:02:53,286
-Every line starts the same day with the same dollar.
+00:02:58,423 --> 00:03:05,642
+Then the frozen first portfolio, the green line, 4.7 thousand back at 100,088.
 
 33
-00:02:53,286 --> 00:02:55,129
-Nothing is restated.
+00:03:05,642 --> 00:03:08,234
+The race has no finish line.
 
 34
-00:02:55,129 --> 00:03:04,037
-On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+00:03:08,234 --> 00:03:12,492
+Same books, same dollars, back at it tomorrow.
 
 35
-00:03:03,999 --> 00:03:11,334
-All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+00:03:12,492 --> 00:03:17,305
+Every line starts the same day with the same dollar.
 
 36
-00:03:11,334 --> 00:03:13,575
-Nothing here is financial advice.
+00:03:17,305 --> 00:03:19,156
+Nothing is restated.
 
 37
-00:03:13,575 --> 00:03:16,564
+00:03:19,156 --> 00:03:28,064
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+38
+00:03:28,026 --> 00:03:35,361
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+39
+00:03:35,361 --> 00:03:37,602
+Nothing here is financial advice.
+
+40
+00:03:37,602 --> 00:03:40,591
 From the closing desk — see you at the open.
