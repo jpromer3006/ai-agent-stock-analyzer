@@ -1,325 +1,325 @@
 {
- "timestamp": "2026-08-07T13:28:59.994797Z",
- "date": "2026-08-07",
- "regime": "bull",
- "mandate": "swing_momentum",
- "account": 100000.0,
- "invested": 68011.62,
- "cash": 31988.38,
- "weights": {
-  "canslim": 0.175,
-  "swing": 0.121,
-  "weinstein": 0.166,
-  "technical": 0.111,
-  "sepa": 0.218,
-  "value": 0.024,
-  "growth": 0.067,
-  "ipo": 0.118
- },
- "note": "nightly run (cloud)",
- "holdings": [
-  {
-   "ticker": "TGT",
-   "sector": "Consumer Discretionary",
-   "conviction": 0.7512,
-   "shares": 24,
-   "dollars": 3529.92,
-   "weight_pct": 3.53,
-   "entry": 147.08,
-   "stop": 134.46,
-   "led_by": "sepa",
-   "sentiment": 0.312,
-   "earnings_risk": false,
-   "outcome_return": null
+  "timestamp": "2026-08-07T13:28:59.994797Z",
+  "date": "2026-08-07",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 68011.62,
+  "cash": 31988.38,
+  "weights": {
+    "canslim": 0.175,
+    "swing": 0.121,
+    "weinstein": 0.166,
+    "technical": 0.111,
+    "sepa": 0.218,
+    "value": 0.024,
+    "growth": 0.067,
+    "ipo": 0.118
   },
-  {
-   "ticker": "BPOP",
-   "sector": "Financials",
-   "conviction": 0.7416,
-   "shares": 27,
-   "dollars": 4755.78,
-   "weight_pct": 4.76,
-   "entry": 176.14,
-   "stop": 164.88,
-   "led_by": "sepa",
-   "sentiment": 0.348,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "CATY",
-   "sector": "Financials",
-   "conviction": 0.7232,
-   "shares": 117,
-   "dollars": 7454.07,
-   "weight_pct": 7.45,
-   "entry": 63.71,
-   "stop": 61.06,
-   "led_by": "sepa",
-   "sentiment": 0.191,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ATRO",
-   "sector": "Industrials",
-   "conviction": 0.7176,
-   "shares": 62,
-   "dollars": 4714.48,
-   "weight_pct": 4.71,
-   "entry": 76.04,
-   "stop": 71.0,
-   "led_by": "sepa",
-   "sentiment": 0.25,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BOKF",
-   "sector": "Financials",
-   "conviction": 0.7103,
-   "shares": 39,
-   "dollars": 5634.33,
-   "weight_pct": 5.63,
-   "entry": 144.47,
-   "stop": 136.61,
-   "led_by": "sepa",
-   "sentiment": 0.181,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "GE",
-   "sector": "Industrials",
-   "conviction": 0.7046,
-   "shares": 13,
-   "dollars": 4869.15,
-   "weight_pct": 4.87,
-   "entry": 374.55,
-   "stop": 350.6,
-   "led_by": "sepa",
-   "sentiment": 0.042,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "JETS",
-   "sector": "Other",
-   "conviction": 0.6883,
-   "shares": 176,
-   "dollars": 5744.64,
-   "weight_pct": 5.74,
-   "entry": 32.64,
-   "stop": 30.87,
-   "led_by": "sepa",
-   "sentiment": 0.129,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "RTX",
-   "sector": "Industrials",
-   "conviction": 0.6671,
-   "shares": 10,
-   "dollars": 2232.5,
-   "weight_pct": 2.23,
-   "entry": 223.25,
-   "stop": 193.91,
-   "led_by": "sepa",
-   "sentiment": 0.155,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AVGO",
-   "sector": "Semiconductors",
-   "conviction": 0.662,
-   "shares": 12,
-   "dollars": 5046.84,
-   "weight_pct": 5.05,
-   "entry": 420.57,
-   "stop": 394.7,
-   "led_by": "sepa",
-   "sentiment": 0.068,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BBIO",
-   "sector": "Health Care",
-   "conviction": 0.6617,
-   "shares": 40,
-   "dollars": 3312.0,
-   "weight_pct": 3.31,
-   "entry": 82.8,
-   "stop": 75.15,
-   "led_by": "sepa",
-   "sentiment": 0.206,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "EWJ",
-   "sector": "Other",
-   "conviction": 0.6517,
-   "shares": 109,
-   "dollars": 10371.35,
-   "weight_pct": 10.37,
-   "entry": 95.15,
-   "stop": 92.3,
-   "led_by": "sepa",
-   "sentiment": 0.21,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "XLI",
-   "sector": "Other",
-   "conviction": 0.6443,
-   "shares": 56,
-   "dollars": 10346.56,
-   "weight_pct": 10.35,
-   "entry": 184.76,
-   "stop": 179.22,
-   "led_by": "sepa",
-   "sentiment": 0.135,
-   "earnings_risk": false,
-   "outcome_return": null
-  }
- ],
- "bench": [
-  {
-   "ticker": "CGNX",
-   "sector": "Health Care",
-   "composite": 0.782,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "BUSE",
-   "sector": "Financials",
-   "composite": 0.762,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "APA",
-   "sector": "Energy",
-   "composite": 0.755,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "DXCM",
-   "sector": "Health Care",
-   "composite": 0.754,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "EMR",
-   "sector": "Industrials",
-   "composite": 0.741,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "AXGN",
-   "sector": "Health Care",
-   "composite": 0.726,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "ABNB",
-   "sector": "Consumer Discretionary",
-   "composite": 0.721,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "EQIX",
-   "sector": "Real Estate",
-   "composite": 0.721,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "BMY",
-   "sector": "Health Care",
-   "composite": 0.706,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "SCHW",
-   "sector": "Financials",
-   "composite": 0.704,
-   "reason": "sector cap \u2014 already 3 in Financials"
-  },
-  {
-   "ticker": "DNLI",
-   "sector": "Health Care",
-   "composite": 0.704,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "BAC",
-   "sector": "Financials",
-   "composite": 0.703,
-   "reason": "sector cap \u2014 already 3 in Financials"
-  }
- ],
- "agent_trace": [
-  {
-   "agent": "DataAgent",
-   "role": "universe & data",
-   "summary": "495 candidate names (benchmarks removed)"
-  },
-  {
-   "agent": "RegimeAgent",
-   "role": "market regime",
-   "summary": "regime = BULL"
-  },
-  {
-   "agent": "RouterAgent",
-   "role": "strategy mandate weights",
-   "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
-  },
-  {
-   "agent": "MemoryAgent",
-   "role": "experience-weighted tilt",
-   "summary": "boosted weinstein x1.00, sepa x1.00"
-  },
-  {
-   "agent": "ConstructionAgent",
-   "role": "strategy ensemble + sizing",
-   "summary": "12 holdings, 68% invested, 8 strategies"
-  },
-  {
-   "agent": "RiskAgent",
-   "role": "post-construction risk",
-   "summary": "within limits; cash 32%"
-  }
- ],
- "horizon_days": 20,
- "realized_avg_return": null,
- "realized_hit_rate": null,
- "realized_final_count": 0,
- "realized_stop_exits": 0,
- "changes": {
-  "added": [
-   "ATRO",
-   "BPOP",
-   "EWJ",
-   "RTX"
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "TGT",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7512,
+      "shares": 24,
+      "dollars": 3529.92,
+      "weight_pct": 3.53,
+      "entry": 147.08,
+      "stop": 134.46,
+      "led_by": "sepa",
+      "sentiment": 0.312,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "conviction": 0.7416,
+      "shares": 27,
+      "dollars": 4755.78,
+      "weight_pct": 4.76,
+      "entry": 176.14,
+      "stop": 164.88,
+      "led_by": "sepa",
+      "sentiment": 0.348,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CATY",
+      "sector": "Financials",
+      "conviction": 0.7232,
+      "shares": 117,
+      "dollars": 7454.07,
+      "weight_pct": 7.45,
+      "entry": 63.71,
+      "stop": 61.06,
+      "led_by": "sepa",
+      "sentiment": 0.191,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ATRO",
+      "sector": "Industrials",
+      "conviction": 0.7176,
+      "shares": 62,
+      "dollars": 4714.48,
+      "weight_pct": 4.71,
+      "entry": 76.04,
+      "stop": 71.0,
+      "led_by": "sepa",
+      "sentiment": 0.25,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BOKF",
+      "sector": "Financials",
+      "conviction": 0.7103,
+      "shares": 39,
+      "dollars": 5634.33,
+      "weight_pct": 5.63,
+      "entry": 144.47,
+      "stop": 136.61,
+      "led_by": "sepa",
+      "sentiment": 0.181,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "GE",
+      "sector": "Industrials",
+      "conviction": 0.7046,
+      "shares": 13,
+      "dollars": 4869.15,
+      "weight_pct": 4.87,
+      "entry": 374.55,
+      "stop": 350.6,
+      "led_by": "sepa",
+      "sentiment": 0.042,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "JETS",
+      "sector": "Other",
+      "conviction": 0.6883,
+      "shares": 176,
+      "dollars": 5744.64,
+      "weight_pct": 5.74,
+      "entry": 32.64,
+      "stop": 30.87,
+      "led_by": "sepa",
+      "sentiment": 0.129,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "RTX",
+      "sector": "Industrials",
+      "conviction": 0.6671,
+      "shares": 10,
+      "dollars": 2232.5,
+      "weight_pct": 2.23,
+      "entry": 223.25,
+      "stop": 193.91,
+      "led_by": "sepa",
+      "sentiment": 0.155,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AVGO",
+      "sector": "Semiconductors",
+      "conviction": 0.662,
+      "shares": 12,
+      "dollars": 5046.84,
+      "weight_pct": 5.05,
+      "entry": 420.57,
+      "stop": 394.7,
+      "led_by": "sepa",
+      "sentiment": 0.068,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BBIO",
+      "sector": "Health Care",
+      "conviction": 0.6617,
+      "shares": 40,
+      "dollars": 3312.0,
+      "weight_pct": 3.31,
+      "entry": 82.8,
+      "stop": 75.15,
+      "led_by": "sepa",
+      "sentiment": 0.206,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "EWJ",
+      "sector": "Other",
+      "conviction": 0.6517,
+      "shares": 109,
+      "dollars": 10371.35,
+      "weight_pct": 10.37,
+      "entry": 95.15,
+      "stop": 92.3,
+      "led_by": "sepa",
+      "sentiment": 0.21,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XLI",
+      "sector": "Other",
+      "conviction": 0.6443,
+      "shares": 56,
+      "dollars": 10346.56,
+      "weight_pct": 10.35,
+      "entry": 184.76,
+      "stop": 179.22,
+      "led_by": "sepa",
+      "sentiment": 0.135,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
   ],
-  "removed": [
-   "ABNB",
-   "C",
-   "CORO",
-   "GM"
+  "bench": [
+    {
+      "ticker": "CGNX",
+      "sector": "Health Care",
+      "composite": 0.782,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "BUSE",
+      "sector": "Financials",
+      "composite": 0.762,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "APA",
+      "sector": "Energy",
+      "composite": 0.755,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "DXCM",
+      "sector": "Health Care",
+      "composite": 0.754,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "EMR",
+      "sector": "Industrials",
+      "composite": 0.741,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "AXGN",
+      "sector": "Health Care",
+      "composite": 0.726,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "ABNB",
+      "sector": "Consumer Discretionary",
+      "composite": 0.721,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "EQIX",
+      "sector": "Real Estate",
+      "composite": 0.721,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "BMY",
+      "sector": "Health Care",
+      "composite": 0.706,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "SCHW",
+      "sector": "Financials",
+      "composite": 0.704,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "DNLI",
+      "sector": "Health Care",
+      "composite": 0.704,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "composite": 0.703,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    }
   ],
-  "unchanged": [
-   "AVGO",
-   "BBIO",
-   "BOKF",
-   "CATY",
-   "GE",
-   "JETS",
-   "TGT",
-   "XLI"
-  ]
- }
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "495 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 68% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 32%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0,
+  "changes": {
+    "added": [
+      "ATRO",
+      "BPOP",
+      "EWJ",
+      "RTX"
+    ],
+    "removed": [
+      "ABNB",
+      "C",
+      "CORO",
+      "GM"
+    ],
+    "unchanged": [
+      "AVGO",
+      "BBIO",
+      "BOKF",
+      "CATY",
+      "GE",
+      "JETS",
+      "TGT",
+      "XLI"
+    ]
+  }
 }
