@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.312,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0336,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BPOP",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.348,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0124,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CATY",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.191,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0053,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "ATRO",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.25,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0076,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BOKF",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.181,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0091,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "GE",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.042,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.021,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "JETS",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.129,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0368,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "RTX",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.155,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0039,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "AVGO",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.068,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0044,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BBIO",
@@ -156,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.206,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0226,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "EWJ",
@@ -170,7 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.21,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0095,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "XLI",
@@ -184,7 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.135,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0009,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     }
   ],
   "bench": [
