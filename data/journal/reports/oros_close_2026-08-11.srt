@@ -1,0 +1,163 @@
+1
+00:00:00,000 --> 00:00:03,212
+Good evening from the OROS closing desk.
+
+2
+00:00:03,212 --> 00:00:08,110
+Time to grade this morning's call — the part most shows skip.
+
+3
+00:00:08,110 --> 00:00:14,454
+Emerson Electric, ticker EMR triggered and closed +0.7 percent above the entry.
+
+4
+00:00:14,454 --> 00:00:16,300
+So far, so disciplined.
+
+5
+00:00:16,300 --> 00:00:21,236
+Why we grade in public: a forecast that is never checked is just content.
+
+6
+00:00:21,236 --> 00:00:26,645
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+7
+00:00:26,610 --> 00:00:30,328
+On the day, the book is down 419 dollars.
+
+8
+00:00:30,328 --> 00:00:38,218
+State Street SPDR S&P Oil & Gas Exploration & Production ETF (XOP) leads, +1.4 percent.
+
+9
+00:00:38,218 --> 00:00:40,939
+Alphabet (GOOGL) lags at -3.8.
+
+10
+00:00:40,939 --> 00:00:45,836
+The checklist is clear: nothing requires action today.
+
+11
+00:00:45,836 --> 00:00:49,363
+On screen, the day's gainers and laggards inside the paper book.
+
+12
+00:00:49,319 --> 00:00:56,815
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+13
+00:00:56,815 --> 00:01:04,231
+12 positions, led by NVIDIA, ticker NVDA, Broadcom, ticker AVGO, Bank of America, ticker BAC.
+
+14
+00:01:04,231 --> 00:01:15,076
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+15
+00:01:15,046 --> 00:01:19,996
+Now the part that makes this system different: the loop.
+
+16
+00:01:19,996 --> 00:01:22,472
+Every morning OROS proposes.
+
+17
+00:01:22,472 --> 00:01:33,345
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+18
+00:01:33,345 --> 00:01:37,412
+Inside the book today: 5 positions up, 7 down.
+
+19
+00:01:37,412 --> 00:01:39,798
+Best, XOP at +1.39 percent.
+
+20
+00:01:39,798 --> 00:01:41,743
+Worst, GOOGL at -3.84.
+
+21
+00:01:41,743 --> 00:01:46,870
+Both go in the journal — wins and losses get the same ink.
+
+22
+00:01:46,870 --> 00:01:54,208
+The honest scoreboard reads: expectancy -8.37% per trade over 176 graded positions.
+
+23
+00:01:54,208 --> 00:02:01,457
+Because that record is soft, the system has throttled itself to 25% position size.
+
+24
+00:02:01,457 --> 00:02:06,761
+Nobody told it to — full size must be earned back with wins.
+
+25
+00:02:06,761 --> 00:02:22,938
+What tonight's read hands to tomorrow's open: 251 names close the day in Stage 2; 1 new invalidation queue exit reviews; position size stays cut to 25% until the record earns it back.
+
+26
+00:02:22,894 --> 00:02:25,146
+Over to the sports desk.
+
+27
+00:02:25,146 --> 00:02:34,435
+Day 27 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+28
+00:02:34,435 --> 00:02:40,722
+In first place, the live self-rebuilding book, in blue, at 103,787.
+
+29
+00:02:40,722 --> 00:02:46,258
+Then the index fund, in gray, 1.2 thousand back at 102,566.
+
+30
+00:02:46,258 --> 00:02:53,577
+Then the frozen first portfolio, the green line, 3.6 thousand back at 100,159.
+
+31
+00:02:53,577 --> 00:02:56,204
+The race has no finish line.
+
+32
+00:02:56,204 --> 00:03:00,520
+Same books, same dollars, back at it tomorrow.
+
+33
+00:03:00,520 --> 00:03:05,399
+Every line starts the same day with the same dollar.
+
+34
+00:03:05,399 --> 00:03:07,276
+Nothing is restated.
+
+35
+00:03:07,276 --> 00:03:09,605
+Today's lesson is benchmarking.
+
+36
+00:03:09,605 --> 00:03:16,067
+Any strategy must beat the boring alternative: the same money parked in an index fund.
+
+37
+00:03:16,067 --> 00:03:19,523
+That is why the S and P line shares the chart.
+
+38
+00:03:19,523 --> 00:03:28,540
+If the system cannot outrun it, the index deserves the money, and publishing the race every day keeps the system honest.
+
+39
+00:03:28,499 --> 00:03:35,834
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+40
+00:03:35,834 --> 00:03:38,076
+Nothing here is financial advice.
+
+41
+00:03:38,076 --> 00:03:41,064
+From the closing desk — see you at the open.
