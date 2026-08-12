@@ -1,0 +1,147 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:27,170
+On the day, the book is up 352 dollars.
+
+7
+00:00:27,170 --> 00:00:29,890
+NVIDIA (NVDA) leads, +3.0 percent.
+
+8
+00:00:29,890 --> 00:00:32,530
+General Motors (GM) lags at -2.9.
+
+9
+00:00:32,530 --> 00:00:36,850
+The checklist is clear: nothing requires action today.
+
+10
+00:00:36,850 --> 00:00:40,377
+On screen, the day's gainers and laggards inside the paper book.
+
+11
+00:00:40,333 --> 00:00:47,900
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+12
+00:00:47,900 --> 00:00:58,042
+12 positions, led by NVIDIA, ticker NVDA, State Street Technology Select Sector SPDR ETF, ticker XLK, GE Aerospace, ticker GE.
+
+13
+00:00:58,042 --> 00:01:08,989
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+14
+00:01:08,940 --> 00:01:13,611
+Now the part that makes this system different: the loop.
+
+15
+00:01:13,611 --> 00:01:15,946
+Every morning OROS proposes.
+
+16
+00:01:15,946 --> 00:01:26,205
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+17
+00:01:26,205 --> 00:01:30,042
+Inside the book today: 9 positions up, 3 down.
+
+18
+00:01:30,042 --> 00:01:32,378
+Best, NVDA at +3.03 percent.
+
+19
+00:01:32,378 --> 00:01:33,962
+Worst, GM at -2.90.
+
+20
+00:01:33,962 --> 00:01:38,800
+Both go in the journal — wins and losses get the same ink.
+
+21
+00:01:38,800 --> 00:01:45,723
+The honest scoreboard reads: expectancy -8.37% per trade over 176 graded positions.
+
+22
+00:01:45,723 --> 00:01:52,562
+Because that record is soft, the system has throttled itself to 25% position size.
+
+23
+00:01:52,562 --> 00:01:57,567
+Nobody told it to — full size must be earned back with wins.
+
+24
+00:01:57,567 --> 00:02:12,914
+What tonight's read hands to tomorrow's open: 251 names close the day in Stage 2; 2 new invalidations queue exit reviews; position size stays cut to 25% until the record earns it back.
+
+25
+00:02:12,887 --> 00:02:15,104
+Over to the sports desk.
+
+26
+00:02:15,104 --> 00:02:24,252
+Day 28 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+27
+00:02:24,252 --> 00:02:30,442
+In first place, the live self-rebuilding book, in blue, at 104,153.
+
+28
+00:02:30,442 --> 00:02:35,893
+Then the index fund, in gray, 1.3 thousand back at 102,823.
+
+29
+00:02:35,893 --> 00:02:43,100
+Then the frozen first portfolio, the green line, 3.4 thousand back at 100,740.
+
+30
+00:02:43,100 --> 00:02:45,687
+The race has no finish line.
+
+31
+00:02:45,687 --> 00:02:49,937
+Same books, same dollars, back at it tomorrow.
+
+32
+00:02:49,937 --> 00:02:54,742
+Every line starts the same day with the same dollar.
+
+33
+00:02:54,742 --> 00:02:56,590
+Nothing is restated.
+
+34
+00:02:56,590 --> 00:03:05,498
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+35
+00:03:05,460 --> 00:03:12,795
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+36
+00:03:12,795 --> 00:03:15,036
+Nothing here is financial advice.
+
+37
+00:03:15,036 --> 00:03:18,025
+From the closing desk — see you at the open.
