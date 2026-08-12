@@ -1,0 +1,199 @@
+1
+00:00:00,000 --> 00:00:00,981
+Good morning.
+
+2
+00:00:00,981 --> 00:00:06,867
+From the OROS Market Desk, here is the rundown for Wednesday, August 12, 2026.
+
+3
+00:00:06,867 --> 00:00:08,377
+The tape reads bull.
+
+4
+00:00:08,377 --> 00:00:14,414
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:14,414 --> 00:00:25,809
+And at the sports desk, day 28 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:25,809 --> 00:00:34,040
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:34,040 --> 00:00:41,404
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:41,366 --> 00:00:43,140
+First, the market open.
+
+9
+00:00:43,140 --> 00:00:48,692
+The S and P five hundred slipped 0.3 percent, while the NASDAQ lost 0.3.
+
+10
+00:00:48,692 --> 00:00:55,324
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+11
+00:00:55,324 --> 00:00:57,484
+The fear gauge sits at 15.0.
+
+12
+00:00:57,484 --> 00:01:06,809
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:06,771 --> 00:01:15,471
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+14
+00:01:15,471 --> 00:01:19,580
+Forcing a pick on a weak tape is how systems bleed.
+
+15
+00:01:19,580 --> 00:01:20,224
+We wait.
+
+16
+00:01:20,192 --> 00:01:22,409
+Turning to the model book.
+
+17
+00:01:22,409 --> 00:01:33,237
+The system holds 12 positions with 57% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+18
+00:01:33,237 --> 00:01:54,637
+New to the book: Banner (BANR), GE Aerospace (GE), General Motors (GM), Charles Schwab Corporation (The) (SCHW), State Street SPDR S&P Biotech ETF (XBI), State Street Energy Select Sector SPDR ETF (XLE) — each passed the full entry gauntlet overnight.
+
+19
+00:01:54,637 --> 00:02:24,307
+Rotated out: Global X Artificial Intelligence & Technology ETF (AIQ), which still advancing, but outranked by stronger names; Astronics (ATRO), which still advancing, but outranked by stronger names; BOK Financial (BOKF), which still advancing, but outranked by stronger names; Citigroup (C), which still advancing, but outranked by stronger names.
+
+20
+00:02:24,307 --> 00:02:39,995
+Left on the bench: Amazon.com (AMZN), earnings inside the blackout window; APA Corporation (APA), earnings inside the blackout window; Fluor (FLR), earnings inside the blackout window.
+
+21
+00:02:39,995 --> 00:02:44,855
+Passing the scan is not enough; the book must afford you.
+
+22
+00:02:44,855 --> 00:02:50,889
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+23
+00:02:50,845 --> 00:02:58,412
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+24
+00:02:58,412 --> 00:03:08,554
+12 positions, led by NVIDIA, ticker NVDA, State Street Technology Select Sector SPDR ETF, ticker XLK, GE Aerospace, ticker GE.
+
+25
+00:03:08,554 --> 00:03:19,501
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+26
+00:03:19,452 --> 00:03:21,691
+Over to the sports desk.
+
+27
+00:03:21,691 --> 00:03:30,925
+Day 28 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+28
+00:03:30,925 --> 00:03:37,175
+In first place, the live self-rebuilding book, in blue, at 103,974.
+
+29
+00:03:37,175 --> 00:03:42,678
+Then the index fund, in gray, 1.4 thousand back at 102,566.
+
+30
+00:03:42,678 --> 00:03:49,954
+Then the frozen first portfolio, the green line, 3.9 thousand back at 100,048.
+
+31
+00:03:49,954 --> 00:03:52,566
+The race has no finish line.
+
+32
+00:03:52,566 --> 00:03:56,857
+Same books, same dollars, back at it tomorrow.
+
+33
+00:03:56,857 --> 00:04:01,707
+Every line starts the same day with the same dollar.
+
+34
+00:04:01,707 --> 00:04:03,573
+Nothing is restated.
+
+35
+00:04:03,573 --> 00:04:12,481
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+36
+00:04:12,443 --> 00:04:13,992
+Tonight's takeaway.
+
+37
+00:04:13,992 --> 00:04:16,275
+A portfolio is not a museum.
+
+38
+00:04:16,275 --> 00:04:24,590
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+39
+00:04:24,564 --> 00:04:27,578
+Before we close, the disclosure segment.
+
+40
+00:04:27,578 --> 00:04:38,200
+Everything you heard today concerns one simulated portfolio of 12 positions — the same book, line for line, as this morning's emailed report.
+
+41
+00:04:38,200 --> 00:04:40,159
+One record, every surface.
+
+42
+00:04:40,159 --> 00:04:42,077
+Today's lesson is provenance.
+
+43
+00:04:42,077 --> 00:04:50,209
+Every number in this episode was read from one journaled record, the same record that was emailed as this morning's report.
+
+44
+00:04:50,209 --> 00:04:58,210
+When the video, the email, and the app cannot disagree, trust stops being a promise and becomes a property of the system.
+
+45
+00:04:58,210 --> 00:05:00,296
+A word on how this desk works.
+
+46
+00:05:00,296 --> 00:05:17,823
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+47
+00:05:17,823 --> 00:05:26,239
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+48
+00:05:26,239 --> 00:05:29,172
+All figures are simulated paper trading.
+
+49
+00:05:29,172 --> 00:05:35,550
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+50
+00:05:35,550 --> 00:05:39,509
+From the OROS Market Desk, have a disciplined session.

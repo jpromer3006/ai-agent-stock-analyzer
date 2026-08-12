@@ -1,327 +1,327 @@
 {
- "timestamp": "2026-08-11T13:29:13.346473Z",
- "date": "2026-08-11",
- "regime": "bull",
- "mandate": "swing_momentum",
- "account": 100000.0,
- "invested": 63763.53,
- "cash": 36236.47,
- "weights": {
-  "weinstein": 0.166,
-  "canslim": 0.175,
-  "ipo": 0.118,
-  "value": 0.024,
-  "swing": 0.121,
-  "growth": 0.067,
-  "sepa": 0.218,
-  "technical": 0.111
- },
- "note": "nightly run (cloud)",
- "holdings": [
-  {
-   "ticker": "NVDA",
-   "sector": "Semiconductors",
-   "conviction": 0.7526,
-   "shares": 26,
-   "dollars": 5656.3,
-   "weight_pct": 5.66,
-   "entry": 217.55,
-   "stop": 205.9,
-   "led_by": "sepa",
-   "sentiment": 0.019,
-   "earnings_risk": false,
-   "outcome_return": null
+  "timestamp": "2026-08-11T13:29:13.346473Z",
+  "date": "2026-08-11",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 63763.53,
+  "cash": 36236.47,
+  "weights": {
+    "weinstein": 0.166,
+    "canslim": 0.175,
+    "ipo": 0.118,
+    "value": 0.024,
+    "swing": 0.121,
+    "growth": 0.067,
+    "sepa": 0.218,
+    "technical": 0.111
   },
-  {
-   "ticker": "AVGO",
-   "sector": "Semiconductors",
-   "conviction": 0.7127,
-   "shares": 11,
-   "dollars": 4646.4,
-   "weight_pct": 4.65,
-   "entry": 422.4,
-   "stop": 394.76,
-   "led_by": "sepa",
-   "sentiment": 0.098,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BAC",
-   "sector": "Financials",
-   "conviction": 0.7044,
-   "shares": 59,
-   "dollars": 3767.74,
-   "weight_pct": 3.77,
-   "entry": 63.86,
-   "stop": 58.62,
-   "led_by": "sepa",
-   "sentiment": 0.144,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ATRO",
-   "sector": "Industrials",
-   "conviction": 0.7005,
-   "shares": 59,
-   "dollars": 4452.14,
-   "weight_pct": 4.45,
-   "entry": 75.46,
-   "stop": 70.21,
-   "led_by": "sepa",
-   "sentiment": 0.25,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "C",
-   "sector": "Financials",
-   "conviction": 0.6812,
-   "shares": 35,
-   "dollars": 4732.7,
-   "weight_pct": 4.73,
-   "entry": 135.22,
-   "stop": 126.49,
-   "led_by": "swing",
-   "sentiment": 0.181,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BOKF",
-   "sector": "Financials",
-   "conviction": 0.6793,
-   "shares": 52,
-   "dollars": 7444.32,
-   "weight_pct": 7.44,
-   "entry": 143.16,
-   "stop": 137.17,
-   "led_by": "sepa",
-   "sentiment": 0.093,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "XLK",
-   "sector": "Other",
-   "conviction": 0.6688,
-   "shares": 39,
-   "dollars": 7266.48,
-   "weight_pct": 7.27,
-   "entry": 186.32,
-   "stop": 178.45,
-   "led_by": "sepa",
-   "sentiment": -0.079,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "GOOGL",
-   "sector": "Information Technology",
-   "conviction": 0.6647,
-   "shares": 15,
-   "dollars": 5362.8,
-   "weight_pct": 5.36,
-   "entry": 357.52,
-   "stop": 337.72,
-   "led_by": "sepa",
-   "sentiment": 0.104,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "GOOG",
-   "sector": "Information Technology",
-   "conviction": 0.6636,
-   "shares": 16,
-   "dollars": 5693.44,
-   "weight_pct": 5.69,
-   "entry": 355.84,
-   "stop": 336.47,
-   "led_by": "sepa",
-   "sentiment": 0.104,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "TGT",
-   "sector": "Consumer Discretionary",
-   "conviction": 0.6623,
-   "shares": 18,
-   "dollars": 2736.36,
-   "weight_pct": 2.74,
-   "entry": 152.02,
-   "stop": 135.36,
-   "led_by": "sepa",
-   "sentiment": 0.004,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "XOP",
-   "sector": "Other",
-   "conviction": 0.6603,
-   "shares": 26,
-   "dollars": 4574.18,
-   "weight_pct": 4.57,
-   "entry": 175.93,
-   "stop": 164.31,
-   "led_by": "sepa",
-   "sentiment": 0.215,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AIQ",
-   "sector": "Other",
-   "conviction": 0.6596,
-   "shares": 117,
-   "dollars": 7430.67,
-   "weight_pct": 7.43,
-   "entry": 63.51,
-   "stop": 60.86,
-   "led_by": "sepa",
-   "sentiment": -0.038,
-   "earnings_risk": false,
-   "outcome_return": null
-  }
- ],
- "bench": [
-  {
-   "ticker": "APA",
-   "sector": "Energy",
-   "composite": 0.771,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "MET",
-   "sector": "Financials",
-   "composite": 0.737,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "AMZN",
-   "sector": "Consumer Discretionary",
-   "composite": 0.725,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "ARWR",
-   "sector": "Health Care",
-   "composite": 0.721,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "LLY",
-   "sector": "Health Care",
-   "composite": 0.712,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "CHRD",
-   "sector": "Energy",
-   "composite": 0.706,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "BMY",
-   "sector": "Health Care",
-   "composite": 0.693,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "EME",
-   "sector": "Industrials",
-   "composite": 0.69,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "EMR",
-   "sector": "Industrials",
-   "composite": 0.683,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "SCHW",
-   "sector": "Financials",
-   "composite": 0.671,
-   "reason": "sector cap \u2014 already 3 in Financials"
-  },
-  {
-   "ticker": "DNLI",
-   "sector": "Health Care",
-   "composite": 0.668,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "AMGN",
-   "sector": "Health Care",
-   "composite": 0.666,
-   "reason": "earnings inside the blackout window"
-  }
- ],
- "agent_trace": [
-  {
-   "agent": "DataAgent",
-   "role": "universe & data",
-   "summary": "495 candidate names (benchmarks removed)"
-  },
-  {
-   "agent": "RegimeAgent",
-   "role": "market regime",
-   "summary": "regime = BULL"
-  },
-  {
-   "agent": "RouterAgent",
-   "role": "strategy mandate weights",
-   "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
-  },
-  {
-   "agent": "MemoryAgent",
-   "role": "experience-weighted tilt",
-   "summary": "boosted weinstein x1.00, sepa x1.00"
-  },
-  {
-   "agent": "ConstructionAgent",
-   "role": "strategy ensemble + sizing",
-   "summary": "12 holdings, 64% invested, 8 strategies"
-  },
-  {
-   "agent": "RiskAgent",
-   "role": "post-construction risk",
-   "summary": "within limits; cash 36%"
-  }
- ],
- "horizon_days": 20,
- "realized_avg_return": null,
- "realized_hit_rate": null,
- "realized_final_count": 0,
- "realized_stop_exits": 0,
- "changes": {
-  "added": [
-   "ATRO",
-   "C",
-   "GOOG",
-   "GOOGL",
-   "XLK",
-   "XOP"
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "conviction": 0.7526,
+      "shares": 26,
+      "dollars": 5656.3,
+      "weight_pct": 5.66,
+      "entry": 217.55,
+      "stop": 205.9,
+      "led_by": "sepa",
+      "sentiment": 0.019,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AVGO",
+      "sector": "Semiconductors",
+      "conviction": 0.7127,
+      "shares": 11,
+      "dollars": 4646.4,
+      "weight_pct": 4.65,
+      "entry": 422.4,
+      "stop": 394.76,
+      "led_by": "sepa",
+      "sentiment": 0.098,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.7044,
+      "shares": 59,
+      "dollars": 3767.74,
+      "weight_pct": 3.77,
+      "entry": 63.86,
+      "stop": 58.62,
+      "led_by": "sepa",
+      "sentiment": 0.144,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ATRO",
+      "sector": "Industrials",
+      "conviction": 0.7005,
+      "shares": 59,
+      "dollars": 4452.14,
+      "weight_pct": 4.45,
+      "entry": 75.46,
+      "stop": 70.21,
+      "led_by": "sepa",
+      "sentiment": 0.25,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "C",
+      "sector": "Financials",
+      "conviction": 0.6812,
+      "shares": 35,
+      "dollars": 4732.7,
+      "weight_pct": 4.73,
+      "entry": 135.22,
+      "stop": 126.49,
+      "led_by": "swing",
+      "sentiment": 0.181,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BOKF",
+      "sector": "Financials",
+      "conviction": 0.6793,
+      "shares": 52,
+      "dollars": 7444.32,
+      "weight_pct": 7.44,
+      "entry": 143.16,
+      "stop": 137.17,
+      "led_by": "sepa",
+      "sentiment": 0.093,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XLK",
+      "sector": "Other",
+      "conviction": 0.6688,
+      "shares": 39,
+      "dollars": 7266.48,
+      "weight_pct": 7.27,
+      "entry": 186.32,
+      "stop": 178.45,
+      "led_by": "sepa",
+      "sentiment": -0.079,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "GOOGL",
+      "sector": "Information Technology",
+      "conviction": 0.6647,
+      "shares": 15,
+      "dollars": 5362.8,
+      "weight_pct": 5.36,
+      "entry": 357.52,
+      "stop": 337.72,
+      "led_by": "sepa",
+      "sentiment": 0.104,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "GOOG",
+      "sector": "Information Technology",
+      "conviction": 0.6636,
+      "shares": 16,
+      "dollars": 5693.44,
+      "weight_pct": 5.69,
+      "entry": 355.84,
+      "stop": 336.47,
+      "led_by": "sepa",
+      "sentiment": 0.104,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "TGT",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.6623,
+      "shares": 18,
+      "dollars": 2736.36,
+      "weight_pct": 2.74,
+      "entry": 152.02,
+      "stop": 135.36,
+      "led_by": "sepa",
+      "sentiment": 0.004,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XOP",
+      "sector": "Other",
+      "conviction": 0.6603,
+      "shares": 26,
+      "dollars": 4574.18,
+      "weight_pct": 4.57,
+      "entry": 175.93,
+      "stop": 164.31,
+      "led_by": "sepa",
+      "sentiment": 0.215,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AIQ",
+      "sector": "Other",
+      "conviction": 0.6596,
+      "shares": 117,
+      "dollars": 7430.67,
+      "weight_pct": 7.43,
+      "entry": 63.51,
+      "stop": 60.86,
+      "led_by": "sepa",
+      "sentiment": -0.038,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
   ],
-  "removed": [
-   "DE",
-   "DLR",
-   "GE",
-   "JETS",
-   "RTX",
-   "SCHW"
+  "bench": [
+    {
+      "ticker": "APA",
+      "sector": "Energy",
+      "composite": 0.771,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "composite": 0.737,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "AMZN",
+      "sector": "Consumer Discretionary",
+      "composite": 0.725,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "ARWR",
+      "sector": "Health Care",
+      "composite": 0.721,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "LLY",
+      "sector": "Health Care",
+      "composite": 0.712,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "CHRD",
+      "sector": "Energy",
+      "composite": 0.706,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "BMY",
+      "sector": "Health Care",
+      "composite": 0.693,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "EME",
+      "sector": "Industrials",
+      "composite": 0.69,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "EMR",
+      "sector": "Industrials",
+      "composite": 0.683,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "SCHW",
+      "sector": "Financials",
+      "composite": 0.671,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "DNLI",
+      "sector": "Health Care",
+      "composite": 0.668,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "AMGN",
+      "sector": "Health Care",
+      "composite": 0.666,
+      "reason": "earnings inside the blackout window"
+    }
   ],
-  "unchanged": [
-   "AIQ",
-   "AVGO",
-   "BAC",
-   "BOKF",
-   "NVDA",
-   "TGT"
-  ]
- }
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "495 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 64% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 36%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0,
+  "changes": {
+    "added": [
+      "ATRO",
+      "C",
+      "GOOG",
+      "GOOGL",
+      "XLK",
+      "XOP"
+    ],
+    "removed": [
+      "DE",
+      "DLR",
+      "GE",
+      "JETS",
+      "RTX",
+      "SCHW"
+    ],
+    "unchanged": [
+      "AIQ",
+      "AVGO",
+      "BAC",
+      "BOKF",
+      "NVDA",
+      "TGT"
+    ]
+  }
 }
