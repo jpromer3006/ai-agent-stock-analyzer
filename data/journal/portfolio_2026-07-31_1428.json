@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0473,
+      "outcome_return": -0.0382,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 9,
       "outcome_final": false
     },
     {
@@ -92,9 +92,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0049,
+      "outcome_return": 0.026,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 9,
       "outcome_final": false
     },
     {
@@ -123,9 +123,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0538,
+      "outcome_return": 0.0759,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 9,
       "outcome_final": false
     },
     {
@@ -140,9 +140,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0123,
+      "outcome_return": 0.0252,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 9,
       "outcome_final": false
     },
     {
@@ -157,9 +157,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.022,
+      "outcome_return": 0.0033,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 9,
       "outcome_final": false
     },
     {
@@ -174,9 +174,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0193,
+      "outcome_return": -0.0146,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 9,
       "outcome_final": false
     },
     {
@@ -205,9 +205,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0502,
+      "outcome_return": -0.0389,
       "outcome_exit": "open",
-      "outcome_days": 8,
+      "outcome_days": 9,
       "outcome_final": false
     }
   ],

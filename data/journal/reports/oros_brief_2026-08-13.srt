@@ -1,0 +1,203 @@
+1
+00:00:00,000 --> 00:00:01,020
+Good morning.
+
+2
+00:00:01,020 --> 00:00:07,060
+From the OROS Market Desk, here is the rundown for Thursday, August 13, 2026.
+
+3
+00:00:07,060 --> 00:00:08,629
+The tape reads bull.
+
+4
+00:00:08,629 --> 00:00:14,904
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:14,904 --> 00:00:26,749
+And at the sports desk, day 29 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:26,749 --> 00:00:34,980
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:34,980 --> 00:00:42,344
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:42,306 --> 00:00:44,364
+First, the market open.
+
+9
+00:00:44,364 --> 00:00:50,808
+The S and P five hundred gained 0.3 percent, while the NASDAQ added 0.7.
+
+10
+00:00:50,808 --> 00:00:58,504
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+11
+00:00:58,504 --> 00:01:01,010
+The fear gauge sits at 14.4.
+
+12
+00:01:01,010 --> 00:01:10,335
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:10,297 --> 00:01:18,997
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+14
+00:01:18,997 --> 00:01:23,106
+Forcing a pick on a weak tape is how systems bleed.
+
+15
+00:01:23,106 --> 00:01:23,750
+We wait.
+
+16
+00:01:23,718 --> 00:01:26,040
+Turning to the model book.
+
+17
+00:01:26,040 --> 00:01:37,381
+The system holds 12 positions with 62% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+18
+00:01:37,381 --> 00:01:54,973
+New to the book: ASML Holding N.V (ASML), Popular (BPOP), Citigroup (C), Cathay General Bancorp (CATY), General Dynamics (GD), RTX Corporation (RTX) — each passed the full entry gauntlet overnight.
+
+19
+00:01:54,973 --> 00:02:22,657
+Rotated out: Broadcom (AVGO), which still advancing, but outranked by stronger names; Bank of America (BAC), which still advancing, but outranked by stronger names; Banner (BANR), which still advancing, but outranked by stronger names; GE Aerospace (GE), which still advancing, but outranked by stronger names.
+
+20
+00:02:22,657 --> 00:02:41,410
+Left on the bench: APA Corporation (APA), earnings inside the blackout window; Arrowhead Pharmaceuticals (ARWR), earnings inside the blackout window; Bank of America (BAC), sector cap — already 3 in Financials.
+
+21
+00:02:41,410 --> 00:02:46,500
+Passing the scan is not enough; the book must afford you.
+
+22
+00:02:46,500 --> 00:02:49,086
+Today's lesson is position management.
+
+23
+00:02:49,086 --> 00:02:50,378
+Cash is a position.
+
+24
+00:02:50,378 --> 00:02:58,067
+The system sizes deployment by rule, and when its own forward record weakens, a throttle automatically cuts size.
+
+25
+00:02:58,067 --> 00:03:02,013
+Rotation is not indecision; it is the portfolio breathing.
+
+26
+00:03:02,013 --> 00:03:06,980
+Names that stop qualifying leave, and names that start qualifying arrive.
+
+27
+00:03:06,933 --> 00:03:14,218
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+28
+00:03:14,218 --> 00:03:21,967
+12 positions, led by Citigroup, ticker C, Cathay General Bancorp, ticker CATY, Popular, ticker BPOP.
+
+29
+00:03:21,967 --> 00:03:32,507
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+30
+00:03:32,475 --> 00:03:34,533
+Over to the sports desk.
+
+31
+00:03:34,533 --> 00:03:43,024
+Day 29 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+32
+00:03:43,024 --> 00:03:48,771
+In first place, the live self-rebuilding book, in blue, at 104,609.
+
+33
+00:03:48,771 --> 00:03:53,831
+Then the index fund, in gray, 1.8 thousand back at 102,823.
+
+34
+00:03:53,831 --> 00:04:00,521
+Then the frozen first portfolio, the green line, 3.6 thousand back at 101,008.
+
+35
+00:04:00,521 --> 00:04:02,923
+The race has no finish line.
+
+36
+00:04:02,923 --> 00:04:06,868
+Same books, same dollars, back at it tomorrow.
+
+37
+00:04:06,868 --> 00:04:11,328
+Every line starts the same day with the same dollar.
+
+38
+00:04:11,328 --> 00:04:13,043
+Nothing is restated.
+
+39
+00:04:13,043 --> 00:04:21,951
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+40
+00:04:21,913 --> 00:04:23,462
+Tonight's takeaway.
+
+41
+00:04:23,462 --> 00:04:25,745
+A portfolio is not a museum.
+
+42
+00:04:25,745 --> 00:04:34,060
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+43
+00:04:34,034 --> 00:04:37,048
+Before we close, the disclosure segment.
+
+44
+00:04:37,048 --> 00:04:47,670
+Everything you heard today concerns one simulated portfolio of 12 positions — the same book, line for line, as this morning's emailed report.
+
+45
+00:04:47,670 --> 00:04:49,629
+One record, every surface.
+
+46
+00:04:49,629 --> 00:04:51,716
+A word on how this desk works.
+
+47
+00:04:51,716 --> 00:05:09,243
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+48
+00:05:09,243 --> 00:05:17,659
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+49
+00:05:17,659 --> 00:05:20,591
+All figures are simulated paper trading.
+
+50
+00:05:20,591 --> 00:05:26,970
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+51
+00:05:26,970 --> 00:05:30,929
+From the OROS Market Desk, have a disciplined session.
