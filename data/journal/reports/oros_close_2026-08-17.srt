@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:03,847
+Good evening from the OROS closing desk.
+
+2
+00:00:03,847 --> 00:00:09,713
+Time to grade this morning's call — the part most shows skip.
+
+3
+00:00:09,713 --> 00:00:11,540
+Daily Journal Corp.
+
+4
+00:00:11,540 --> 00:00:18,657
+(S.C.), ticker DJCO triggered, then faded to -2.1 percent below the entry.
+
+5
+00:00:18,657 --> 00:00:24,235
+If it closes a week below the stop, the exit is automatic.
+
+6
+00:00:24,235 --> 00:00:28,082
+That is not a failure; that is the plan.
+
+7
+00:00:28,082 --> 00:00:33,017
+Why we grade in public: a forecast that is never checked is just content.
+
+8
+00:00:33,017 --> 00:00:38,426
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+9
+00:00:38,391 --> 00:00:41,833
+On the day, the book is down 86 dollars.
+
+10
+00:00:41,833 --> 00:00:46,997
+State Street SPDR S&P Biotech ETF (XBI) leads, +1.3 percent.
+
+11
+00:00:46,997 --> 00:00:50,697
+Mondelez International (MDLZ) lags at -2.2.
+
+12
+00:00:50,697 --> 00:00:55,344
+The checklist is clear: nothing requires action today.
+
+13
+00:00:55,344 --> 00:00:58,871
+On screen, the day's gainers and laggards inside the paper book.
+
+14
+00:00:58,827 --> 00:01:06,412
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+15
+00:01:06,412 --> 00:01:15,046
+12 positions, led by Citigroup, ticker C, Bank of America, ticker BAC, Cathay General Bancorp, ticker CATY.
+
+16
+00:01:15,046 --> 00:01:26,020
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+17
+00:01:25,994 --> 00:01:30,796
+Now the part that makes this system different: the loop.
+
+18
+00:01:30,796 --> 00:01:33,197
+Every morning OROS proposes.
+
+19
+00:01:33,197 --> 00:01:43,744
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+20
+00:01:43,744 --> 00:01:47,689
+Inside the book today: 5 positions up, 7 down.
+
+21
+00:01:47,689 --> 00:01:50,089
+Best, ASML at +2.12 percent.
+
+22
+00:01:50,089 --> 00:01:51,890
+Worst, MDLZ at -2.25.
+
+23
+00:01:51,890 --> 00:01:56,864
+Both go in the journal — wins and losses get the same ink.
+
+24
+00:01:56,864 --> 00:02:03,981
+The honest scoreboard reads: expectancy -8.34% per trade over 181 graded positions.
+
+25
+00:02:03,981 --> 00:02:11,012
+Because that record is soft, the system has throttled itself to 25% position size.
+
+26
+00:02:11,012 --> 00:02:16,157
+Nobody told it to — full size must be earned back with wins.
+
+27
+00:02:16,157 --> 00:02:28,505
+What tonight's read hands to tomorrow's open: 251 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+28
+00:02:28,455 --> 00:02:30,740
+Over to the sports desk.
+
+29
+00:02:30,740 --> 00:02:40,166
+Day 31 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+30
+00:02:40,166 --> 00:02:46,545
+In first place, the live self-rebuilding book, in blue, at 104,001.
+
+31
+00:02:46,545 --> 00:02:52,163
+Then the index fund, in gray, 1.2 thousand back at 102,847.
+
+32
+00:02:52,163 --> 00:02:59,589
+Then the frozen first portfolio, the green line, 3.9 thousand back at 100,136.
+
+33
+00:02:59,589 --> 00:03:02,255
+The race has no finish line.
+
+34
+00:03:02,255 --> 00:03:06,635
+Same books, same dollars, back at it tomorrow.
+
+35
+00:03:06,635 --> 00:03:11,586
+Every line starts the same day with the same dollar.
+
+36
+00:03:11,586 --> 00:03:13,490
+Nothing is restated.
+
+37
+00:03:13,490 --> 00:03:22,398
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+38
+00:03:22,360 --> 00:03:29,695
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+39
+00:03:29,695 --> 00:03:31,937
+Nothing here is financial advice.
+
+40
+00:03:31,937 --> 00:03:34,925
+From the closing desk — see you at the open.
