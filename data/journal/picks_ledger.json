@@ -195,6 +195,19 @@
   {
    "date": "2026-08-14",
    "picks": []
+  },
+  {
+   "date": "2026-08-17",
+   "picks": [
+    {
+     "ticker": "DJCO",
+     "buy_stop": 608.63,
+     "stop_loss": 543.18,
+     "target": 753.72,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }
