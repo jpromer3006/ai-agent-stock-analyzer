@@ -1,0 +1,264 @@
+{
+ "timestamp": "2026-08-18T13:05:07.098263Z",
+ "date": "2026-08-18",
+ "regime": "bull",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 76356.6,
+ "cash": 23643.4,
+ "weights": {
+  "swing": 0.121,
+  "ipo": 0.118,
+  "canslim": 0.175,
+  "sepa": 0.218,
+  "weinstein": 0.166,
+  "growth": 0.067,
+  "technical": 0.111,
+  "value": 0.024
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "XOP",
+   "sector": "Other",
+   "conviction": 0.6916,
+   "shares": 17,
+   "dollars": 3116.95,
+   "weight_pct": 3.12,
+   "entry": 183.35,
+   "stop": 165.54,
+   "led_by": "sepa",
+   "sentiment": 0.162,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "XBI",
+   "sector": "Other",
+   "conviction": 0.6887,
+   "shares": 34,
+   "dollars": 5424.02,
+   "weight_pct": 5.42,
+   "entry": 159.53,
+   "stop": 150.44,
+   "led_by": "sepa",
+   "sentiment": 0.23,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "DBC",
+   "sector": "Financials",
+   "conviction": 0.6886,
+   "shares": 152,
+   "dollars": 4645.12,
+   "weight_pct": 4.65,
+   "entry": 30.56,
+   "stop": 28.51,
+   "led_by": "sepa",
+   "sentiment": -0.034,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "XLE",
+   "sector": "Other",
+   "conviction": 0.6552,
+   "shares": 55,
+   "dollars": 3441.9,
+   "weight_pct": 3.44,
+   "entry": 62.58,
+   "stop": 56.96,
+   "led_by": "sepa",
+   "sentiment": 0.214,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "IBB",
+   "sector": "Other",
+   "conviction": 0.6544,
+   "shares": 20,
+   "dollars": 4038.6,
+   "weight_pct": 4.04,
+   "entry": 201.93,
+   "stop": 186.89,
+   "led_by": "sepa",
+   "sentiment": 0.118,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MDY",
+   "sector": "Other",
+   "conviction": 0.6448,
+   "shares": 14,
+   "dollars": 10014.9,
+   "weight_pct": 10.01,
+   "entry": 715.35,
+   "stop": 693.15,
+   "led_by": "sepa",
+   "sentiment": 0.06,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "EEM",
+   "sector": "Other",
+   "conviction": 0.6371,
+   "shares": 154,
+   "dollars": 10367.28,
+   "weight_pct": 10.37,
+   "entry": 67.32,
+   "stop": 65.3,
+   "led_by": "sepa",
+   "sentiment": 0.132,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "XLK",
+   "sector": "Other",
+   "conviction": 0.6359,
+   "shares": 41,
+   "dollars": 7803.12,
+   "weight_pct": 7.8,
+   "entry": 190.32,
+   "stop": 182.72,
+   "led_by": "sepa",
+   "sentiment": -0.112,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "IYT",
+   "sector": "Other",
+   "conviction": 0.631,
+   "shares": 119,
+   "dollars": 10391.08,
+   "weight_pct": 10.39,
+   "entry": 87.32,
+   "stop": 84.7,
+   "led_by": "sepa",
+   "sentiment": 0.017,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "EWJ",
+   "sector": "Other",
+   "conviction": 0.629,
+   "shares": 65,
+   "dollars": 6381.05,
+   "weight_pct": 6.38,
+   "entry": 98.17,
+   "stop": 93.4,
+   "led_by": "sepa",
+   "sentiment": 0.21,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "XLV",
+   "sector": "Other",
+   "conviction": 0.6258,
+   "shares": 44,
+   "dollars": 7350.2,
+   "weight_pct": 7.35,
+   "entry": 167.05,
+   "stop": 159.99,
+   "led_by": "sepa",
+   "sentiment": 0.023,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ADEA",
+   "sector": "Communication Services",
+   "conviction": 0.6174,
+   "shares": 114,
+   "dollars": 3382.38,
+   "weight_pct": 3.38,
+   "entry": 29.67,
+   "stop": 26.93,
+   "led_by": "sepa",
+   "sentiment": 0.022,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "KRE",
+   "sector": "Other",
+   "composite": 0.608,
+   "reason": "outranked \u2014 book full at 12"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "53 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = BULL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "12 holdings, 76% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "sector concentration Other 68%; cash 24%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "ADEA",
+   "DBC",
+   "EEM",
+   "EWJ",
+   "IYT",
+   "MDY",
+   "XLE",
+   "XLK",
+   "XLV"
+  ],
+  "removed": [
+   "ASML",
+   "BAC",
+   "C",
+   "CATY",
+   "EQIX",
+   "FDX",
+   "MDLZ",
+   "NVDA",
+   "SBUX"
+  ],
+  "unchanged": [
+   "IBB",
+   "XBI",
+   "XOP"
+  ]
+ }
+}

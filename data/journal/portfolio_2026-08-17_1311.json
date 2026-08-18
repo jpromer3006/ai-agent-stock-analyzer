@@ -1,324 +1,324 @@
 {
- "timestamp": "2026-08-17T13:11:30.469069Z",
- "date": "2026-08-17",
- "regime": "bull",
- "mandate": "swing_momentum",
- "account": 100000.0,
- "invested": 69170.31,
- "cash": 30829.69,
- "weights": {
-  "growth": 0.067,
-  "swing": 0.121,
-  "technical": 0.111,
-  "ipo": 0.118,
-  "canslim": 0.175,
-  "sepa": 0.218,
-  "weinstein": 0.166,
-  "value": 0.024
- },
- "note": "nightly run (cloud)",
- "holdings": [
-  {
-   "ticker": "C",
-   "sector": "Financials",
-   "conviction": 0.7642,
-   "shares": 66,
-   "dollars": 9195.78,
-   "weight_pct": 9.2,
-   "entry": 139.33,
-   "stop": 134.61,
-   "led_by": "sepa",
-   "sentiment": 0.127,
-   "earnings_risk": false,
-   "outcome_return": null
+  "timestamp": "2026-08-17T13:11:30.469069Z",
+  "date": "2026-08-17",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 69170.31,
+  "cash": 30829.69,
+  "weights": {
+    "growth": 0.067,
+    "swing": 0.121,
+    "technical": 0.111,
+    "ipo": 0.118,
+    "canslim": 0.175,
+    "sepa": 0.218,
+    "weinstein": 0.166,
+    "value": 0.024
   },
-  {
-   "ticker": "BAC",
-   "sector": "Financials",
-   "conviction": 0.7456,
-   "shares": 64,
-   "dollars": 4127.36,
-   "weight_pct": 4.13,
-   "entry": 64.49,
-   "stop": 59.63,
-   "led_by": "sepa",
-   "sentiment": 0.108,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "CATY",
-   "sector": "Financials",
-   "conviction": 0.7446,
-   "shares": 93,
-   "dollars": 6038.49,
-   "weight_pct": 6.04,
-   "entry": 64.93,
-   "stop": 61.57,
-   "led_by": "sepa",
-   "sentiment": 0.149,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "XBI",
-   "sector": "Other",
-   "conviction": 0.734,
-   "shares": 41,
-   "dollars": 6453.81,
-   "weight_pct": 6.45,
-   "entry": 157.41,
-   "stop": 149.92,
-   "led_by": "sepa",
-   "sentiment": 0.23,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "NVDA",
-   "sector": "Semiconductors",
-   "conviction": 0.7283,
-   "shares": 16,
-   "dollars": 3602.56,
-   "weight_pct": 3.6,
-   "entry": 225.16,
-   "stop": 206.52,
-   "led_by": "sepa",
-   "sentiment": 0.168,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ASML",
-   "sector": "Industrials",
-   "conviction": 0.7137,
-   "shares": 2,
-   "dollars": 3688.16,
-   "weight_pct": 3.69,
-   "entry": 1844.08,
-   "stop": 1735.02,
-   "led_by": "sepa",
-   "sentiment": 0.071,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "IBB",
-   "sector": "Other",
-   "conviction": 0.7,
-   "shares": 23,
-   "dollars": 4559.98,
-   "weight_pct": 4.56,
-   "entry": 198.26,
-   "stop": 185.04,
-   "led_by": "sepa",
-   "sentiment": 0.19,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "MDLZ",
-   "sector": "Consumer Staples",
-   "conviction": 0.6936,
-   "shares": 121,
-   "dollars": 7696.81,
-   "weight_pct": 7.7,
-   "entry": 63.61,
-   "stop": 61.04,
-   "led_by": "sepa",
-   "sentiment": 0.159,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "FDX",
-   "sector": "Industrials",
-   "conviction": 0.6892,
-   "shares": 20,
-   "dollars": 6692.8,
-   "weight_pct": 6.69,
-   "entry": 334.64,
-   "stop": 319.5,
-   "led_by": "sepa",
-   "sentiment": 0.134,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "EQIX",
-   "sector": "Real Estate",
-   "conviction": 0.6884,
-   "shares": 6,
-   "dollars": 6612.6,
-   "weight_pct": 6.61,
-   "entry": 1102.1,
-   "stop": 1052.38,
-   "led_by": "sepa",
-   "sentiment": 0.152,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "XOP",
-   "sector": "Other",
-   "conviction": 0.6877,
-   "shares": 20,
-   "dollars": 3609.8,
-   "weight_pct": 3.61,
-   "entry": 180.49,
-   "stop": 165.27,
-   "led_by": "sepa",
-   "sentiment": 0.162,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "SBUX",
-   "sector": "Consumer Discretionary",
-   "conviction": 0.6858,
-   "shares": 64,
-   "dollars": 6892.16,
-   "weight_pct": 6.89,
-   "entry": 107.69,
-   "stop": 102.88,
-   "led_by": "sepa",
-   "sentiment": -0.083,
-   "earnings_risk": false,
-   "outcome_return": null
-  }
- ],
- "bench": [
-  {
-   "ticker": "APA",
-   "sector": "Energy",
-   "composite": 0.798,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "CHRD",
-   "sector": "Energy",
-   "composite": 0.758,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "DIOD",
-   "sector": "Semiconductors",
-   "composite": 0.738,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "BPOP",
-   "sector": "Financials",
-   "composite": 0.733,
-   "reason": "sector cap \u2014 already 3 in Financials"
-  },
-  {
-   "ticker": "BMRN",
-   "sector": "Health Care",
-   "composite": 0.724,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "MS",
-   "sector": "Financials",
-   "composite": 0.717,
-   "reason": "sector cap \u2014 already 3 in Financials"
-  },
-  {
-   "ticker": "MET",
-   "sector": "Financials",
-   "composite": 0.716,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "BATRK",
-   "sector": "Communication Services",
-   "composite": 0.709,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "FLR",
-   "sector": "Industrials",
-   "composite": 0.704,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "SCHW",
-   "sector": "Financials",
-   "composite": 0.704,
-   "reason": "sector cap \u2014 already 3 in Financials"
-  },
-  {
-   "ticker": "BOKF",
-   "sector": "Financials",
-   "composite": 0.704,
-   "reason": "sector cap \u2014 already 3 in Financials"
-  },
-  {
-   "ticker": "CGON",
-   "sector": "Health Care",
-   "composite": 0.691,
-   "reason": "earnings inside the blackout window"
-  }
- ],
- "agent_trace": [
-  {
-   "agent": "DataAgent",
-   "role": "universe & data",
-   "summary": "495 candidate names (benchmarks removed)"
-  },
-  {
-   "agent": "RegimeAgent",
-   "role": "market regime",
-   "summary": "regime = BULL"
-  },
-  {
-   "agent": "RouterAgent",
-   "role": "strategy mandate weights",
-   "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
-  },
-  {
-   "agent": "MemoryAgent",
-   "role": "experience-weighted tilt",
-   "summary": "boosted weinstein x1.00, sepa x1.00"
-  },
-  {
-   "agent": "ConstructionAgent",
-   "role": "strategy ensemble + sizing",
-   "summary": "12 holdings, 69% invested, 8 strategies"
-  },
-  {
-   "agent": "RiskAgent",
-   "role": "post-construction risk",
-   "summary": "within limits; cash 31%"
-  }
- ],
- "horizon_days": 20,
- "realized_avg_return": null,
- "realized_hit_rate": null,
- "realized_final_count": 0,
- "realized_stop_exits": 0,
- "changes": {
-  "added": [
-   "EQIX",
-   "FDX",
-   "IBB"
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "C",
+      "sector": "Financials",
+      "conviction": 0.7642,
+      "shares": 66,
+      "dollars": 9195.78,
+      "weight_pct": 9.2,
+      "entry": 139.33,
+      "stop": 134.61,
+      "led_by": "sepa",
+      "sentiment": 0.127,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "conviction": 0.7456,
+      "shares": 64,
+      "dollars": 4127.36,
+      "weight_pct": 4.13,
+      "entry": 64.49,
+      "stop": 59.63,
+      "led_by": "sepa",
+      "sentiment": 0.108,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CATY",
+      "sector": "Financials",
+      "conviction": 0.7446,
+      "shares": 93,
+      "dollars": 6038.49,
+      "weight_pct": 6.04,
+      "entry": 64.93,
+      "stop": 61.57,
+      "led_by": "sepa",
+      "sentiment": 0.149,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XBI",
+      "sector": "Other",
+      "conviction": 0.734,
+      "shares": 41,
+      "dollars": 6453.81,
+      "weight_pct": 6.45,
+      "entry": 157.41,
+      "stop": 149.92,
+      "led_by": "sepa",
+      "sentiment": 0.23,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "conviction": 0.7283,
+      "shares": 16,
+      "dollars": 3602.56,
+      "weight_pct": 3.6,
+      "entry": 225.16,
+      "stop": 206.52,
+      "led_by": "sepa",
+      "sentiment": 0.168,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ASML",
+      "sector": "Industrials",
+      "conviction": 0.7137,
+      "shares": 2,
+      "dollars": 3688.16,
+      "weight_pct": 3.69,
+      "entry": 1844.08,
+      "stop": 1735.02,
+      "led_by": "sepa",
+      "sentiment": 0.071,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "IBB",
+      "sector": "Other",
+      "conviction": 0.7,
+      "shares": 23,
+      "dollars": 4559.98,
+      "weight_pct": 4.56,
+      "entry": 198.26,
+      "stop": 185.04,
+      "led_by": "sepa",
+      "sentiment": 0.19,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MDLZ",
+      "sector": "Consumer Staples",
+      "conviction": 0.6936,
+      "shares": 121,
+      "dollars": 7696.81,
+      "weight_pct": 7.7,
+      "entry": 63.61,
+      "stop": 61.04,
+      "led_by": "sepa",
+      "sentiment": 0.159,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "FDX",
+      "sector": "Industrials",
+      "conviction": 0.6892,
+      "shares": 20,
+      "dollars": 6692.8,
+      "weight_pct": 6.69,
+      "entry": 334.64,
+      "stop": 319.5,
+      "led_by": "sepa",
+      "sentiment": 0.134,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "EQIX",
+      "sector": "Real Estate",
+      "conviction": 0.6884,
+      "shares": 6,
+      "dollars": 6612.6,
+      "weight_pct": 6.61,
+      "entry": 1102.1,
+      "stop": 1052.38,
+      "led_by": "sepa",
+      "sentiment": 0.152,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XOP",
+      "sector": "Other",
+      "conviction": 0.6877,
+      "shares": 20,
+      "dollars": 3609.8,
+      "weight_pct": 3.61,
+      "entry": 180.49,
+      "stop": 165.27,
+      "led_by": "sepa",
+      "sentiment": 0.162,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "SBUX",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.6858,
+      "shares": 64,
+      "dollars": 6892.16,
+      "weight_pct": 6.89,
+      "entry": 107.69,
+      "stop": 102.88,
+      "led_by": "sepa",
+      "sentiment": -0.083,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
   ],
-  "removed": [
-   "AIA",
-   "AVGO",
-   "TSM"
+  "bench": [
+    {
+      "ticker": "APA",
+      "sector": "Energy",
+      "composite": 0.798,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "CHRD",
+      "sector": "Energy",
+      "composite": 0.758,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "DIOD",
+      "sector": "Semiconductors",
+      "composite": 0.738,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "BPOP",
+      "sector": "Financials",
+      "composite": 0.733,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "BMRN",
+      "sector": "Health Care",
+      "composite": 0.724,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "MS",
+      "sector": "Financials",
+      "composite": 0.717,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "composite": 0.716,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "BATRK",
+      "sector": "Communication Services",
+      "composite": 0.709,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "FLR",
+      "sector": "Industrials",
+      "composite": 0.704,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "SCHW",
+      "sector": "Financials",
+      "composite": 0.704,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "BOKF",
+      "sector": "Financials",
+      "composite": 0.704,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "CGON",
+      "sector": "Health Care",
+      "composite": 0.691,
+      "reason": "earnings inside the blackout window"
+    }
   ],
-  "unchanged": [
-   "ASML",
-   "BAC",
-   "C",
-   "CATY",
-   "MDLZ",
-   "NVDA",
-   "SBUX",
-   "XBI",
-   "XOP"
-  ]
- }
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "495 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 69% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 31%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0,
+  "changes": {
+    "added": [
+      "EQIX",
+      "FDX",
+      "IBB"
+    ],
+    "removed": [
+      "AIA",
+      "AVGO",
+      "TSM"
+    ],
+    "unchanged": [
+      "ASML",
+      "BAC",
+      "C",
+      "CATY",
+      "MDLZ",
+      "NVDA",
+      "SBUX",
+      "XBI",
+      "XOP"
+    ]
+  }
 }
