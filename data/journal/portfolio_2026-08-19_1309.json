@@ -1,0 +1,325 @@
+{
+ "timestamp": "2026-08-19T13:09:59.751245Z",
+ "date": "2026-08-19",
+ "regime": "bull",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 69802.72,
+ "cash": 30197.28,
+ "weights": {
+  "weinstein": 0.166,
+  "ipo": 0.118,
+  "technical": 0.111,
+  "sepa": 0.218,
+  "canslim": 0.175,
+  "value": 0.024,
+  "growth": 0.067,
+  "swing": 0.121
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "BANR",
+   "sector": "Financials",
+   "conviction": 0.7531,
+   "shares": 69,
+   "dollars": 5018.37,
+   "weight_pct": 5.02,
+   "entry": 72.73,
+   "stop": 68.23,
+   "led_by": "sepa",
+   "sentiment": 0.167,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "C",
+   "sector": "Financials",
+   "conviction": 0.7468,
+   "shares": 68,
+   "dollars": 9360.2,
+   "weight_pct": 9.36,
+   "entry": 137.65,
+   "stop": 133.11,
+   "led_by": "sepa",
+   "sentiment": -0.042,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CATY",
+   "sector": "Financials",
+   "conviction": 0.7393,
+   "shares": 133,
+   "dollars": 8538.6,
+   "weight_pct": 8.54,
+   "entry": 64.2,
+   "stop": 61.86,
+   "led_by": "sepa",
+   "sentiment": 0.216,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "EQIX",
+   "sector": "Real Estate",
+   "conviction": 0.7229,
+   "shares": 6,
+   "dollars": 6510.54,
+   "weight_pct": 6.51,
+   "entry": 1085.09,
+   "stop": 1037.84,
+   "led_by": "sepa",
+   "sentiment": 0.152,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ASML",
+   "sector": "Industrials",
+   "conviction": 0.7107,
+   "shares": 2,
+   "dollars": 3605.96,
+   "weight_pct": 3.61,
+   "entry": 1802.98,
+   "stop": 1693.53,
+   "led_by": "sepa",
+   "sentiment": 0.039,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "FDX",
+   "sector": "Industrials",
+   "conviction": 0.71,
+   "shares": 28,
+   "dollars": 9194.64,
+   "weight_pct": 9.19,
+   "entry": 328.38,
+   "stop": 317.43,
+   "led_by": "sepa",
+   "sentiment": 0.193,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "DLR",
+   "sector": "Real Estate",
+   "conviction": 0.7003,
+   "shares": 32,
+   "dollars": 6248.0,
+   "weight_pct": 6.25,
+   "entry": 195.25,
+   "stop": 185.72,
+   "led_by": "sepa",
+   "sentiment": 0.306,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "XOP",
+   "sector": "Other",
+   "conviction": 0.6962,
+   "shares": 16,
+   "dollars": 2965.6,
+   "weight_pct": 2.97,
+   "entry": 185.35,
+   "stop": 165.94,
+   "led_by": "sepa",
+   "sentiment": 0.162,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "XBI",
+   "sector": "Other",
+   "conviction": 0.6777,
+   "shares": 34,
+   "dollars": 5443.74,
+   "weight_pct": 5.44,
+   "entry": 160.11,
+   "stop": 151.07,
+   "led_by": "sepa",
+   "sentiment": 0.251,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ARWR",
+   "sector": "Health Care",
+   "conviction": 0.6773,
+   "shares": 47,
+   "dollars": 4131.3,
+   "weight_pct": 4.13,
+   "entry": 87.9,
+   "stop": 81.37,
+   "led_by": "sepa",
+   "sentiment": 0.209,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "PWR",
+   "sector": "Industrials",
+   "conviction": 0.6763,
+   "shares": 6,
+   "dollars": 4176.9,
+   "weight_pct": 4.18,
+   "entry": 696.15,
+   "stop": 647.36,
+   "led_by": "sepa",
+   "sentiment": 0.291,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "JNJ",
+   "sector": "Health Care",
+   "conviction": 0.6703,
+   "shares": 17,
+   "dollars": 4608.87,
+   "weight_pct": 4.61,
+   "entry": 271.11,
+   "stop": 252.76,
+   "led_by": "sepa",
+   "sentiment": 0.282,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "TGT",
+   "sector": "Consumer Discretionary",
+   "composite": 0.755,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "BATRK",
+   "sector": "Communication Services",
+   "composite": 0.739,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "BMRN",
+   "sector": "Health Care",
+   "composite": 0.736,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "FLR",
+   "sector": "Industrials",
+   "composite": 0.732,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "CHRD",
+   "sector": "Energy",
+   "composite": 0.726,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "COLB",
+   "sector": "Financials",
+   "composite": 0.7,
+   "reason": "sector cap \u2014 already 3 in Financials"
+  },
+  {
+   "ticker": "SCHW",
+   "sector": "Financials",
+   "composite": 0.7,
+   "reason": "sector cap \u2014 already 3 in Financials"
+  },
+  {
+   "ticker": "CART",
+   "sector": "Consumer Discretionary",
+   "composite": 0.698,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "CGON",
+   "sector": "Health Care",
+   "composite": 0.694,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "LLY",
+   "sector": "Health Care",
+   "composite": 0.693,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "AMGN",
+   "sector": "Health Care",
+   "composite": 0.667,
+   "reason": "outranked \u2014 book full at 12"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "495 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = BULL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "12 holdings, 70% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 30%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "ARWR",
+   "ASML",
+   "BANR",
+   "C",
+   "CATY",
+   "DLR",
+   "EQIX",
+   "FDX",
+   "JNJ",
+   "PWR"
+  ],
+  "removed": [
+   "ADEA",
+   "DBC",
+   "EEM",
+   "EWJ",
+   "IBB",
+   "IYT",
+   "MDY",
+   "XLE",
+   "XLK",
+   "XLV"
+  ],
+  "unchanged": [
+   "XBI",
+   "XOP"
+  ]
+ }
+}

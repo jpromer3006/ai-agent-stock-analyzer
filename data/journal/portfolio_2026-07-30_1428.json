@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0657,
+      "outcome_return": 0.0774,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     },
     {
@@ -75,7 +75,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": NaN,
+      "outcome_return": -0.0324,
       "outcome_exit": "open",
       "outcome_days": 12,
       "outcome_final": false
@@ -92,9 +92,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": NaN,
+      "outcome_return": 0.0369,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     },
     {
@@ -109,7 +109,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": NaN,
+      "outcome_return": 0.0547,
       "outcome_exit": "open",
       "outcome_days": 12,
       "outcome_final": false
@@ -140,7 +140,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": NaN,
+      "outcome_return": -0.014,
       "outcome_exit": "open",
       "outcome_days": 12,
       "outcome_final": false
@@ -157,7 +157,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": NaN,
+      "outcome_return": 0.0195,
       "outcome_exit": "open",
       "outcome_days": 12,
       "outcome_final": false
@@ -174,7 +174,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": NaN,
+      "outcome_return": -0.0364,
       "outcome_exit": "open",
       "outcome_days": 12,
       "outcome_final": false
@@ -208,9 +208,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": NaN,
+      "outcome_return": 0.0376,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     }
   ],
