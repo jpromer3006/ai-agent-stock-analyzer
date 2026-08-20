@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:28,236
+On the day, the book is down 482 dollars.
+
+7
+00:00:28,236 --> 00:00:32,933
+iShares Asia 50 ETF (AIA) leads, +0.7 percent.
+
+8
+00:00:32,933 --> 00:00:37,527
+BioCryst Pharmaceuticals (BCRX) lags at -4.1.
+
+9
+00:00:37,527 --> 00:00:43,041
+The checklist is clear: nothing requires action today.
+
+10
+00:00:43,041 --> 00:00:45,668
+Today's lesson is noise versus signal.
+
+11
+00:00:45,668 --> 00:00:49,332
+Daily moves are weather; the weekly trend is climate.
+
+12
+00:00:49,332 --> 00:00:52,374
+The system never exits on a scary afternoon.
+
+13
+00:00:52,374 --> 00:00:57,905
+It acts only on weekly closes, because that is where the real information lives.
+
+14
+00:00:57,855 --> 00:01:05,448
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+15
+00:01:05,448 --> 00:01:13,202
+12 positions, led by Eli Lilly and, ticker LLY, Equinix, ticker EQIX, Chord Energy, ticker CHRD.
+
+16
+00:01:13,202 --> 00:01:24,186
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+17
+00:01:24,140 --> 00:01:28,867
+Now the part that makes this system different: the loop.
+
+18
+00:01:28,867 --> 00:01:31,231
+Every morning OROS proposes.
+
+19
+00:01:31,231 --> 00:01:41,614
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+20
+00:01:41,614 --> 00:01:45,497
+Inside the book today: 4 positions up, 8 down.
+
+21
+00:01:45,497 --> 00:01:47,860
+Best, CHRD at +0.66 percent.
+
+22
+00:01:47,860 --> 00:01:49,633
+Worst, BCRX at -4.07.
+
+23
+00:01:49,633 --> 00:01:54,529
+Both go in the journal — wins and losses get the same ink.
+
+24
+00:01:54,529 --> 00:02:01,535
+The honest scoreboard reads: expectancy -8.18% per trade over 195 graded positions.
+
+25
+00:02:01,535 --> 00:02:08,457
+Because that record is soft, the system has throttled itself to 25% position size.
+
+26
+00:02:08,457 --> 00:02:13,522
+Nobody told it to — full size must be earned back with wins.
+
+27
+00:02:13,522 --> 00:02:29,054
+What tonight's read hands to tomorrow's open: 240 names close the day in Stage 2; 2 new invalidations queue exit reviews; position size stays cut to 25% until the record earns it back.
+
+28
+00:02:29,016 --> 00:02:31,162
+Over to the sports desk.
+
+29
+00:02:31,162 --> 00:02:40,017
+Day 34 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+30
+00:02:40,017 --> 00:02:46,009
+In first place, the live self-rebuilding book, in blue, at 101,979.
+
+31
+00:02:46,009 --> 00:02:51,286
+Then the index fund, in gray, 0.5 thousand back at 101,507.
+
+32
+00:02:51,286 --> 00:02:58,172
+Then the frozen first portfolio, the green line, 2.5 thousand back at 99,471.
+
+33
+00:02:58,172 --> 00:03:00,676
+The race has no finish line.
+
+34
+00:03:00,676 --> 00:03:04,791
+Same books, same dollars, back at it tomorrow.
+
+35
+00:03:04,791 --> 00:03:09,441
+Every line starts the same day with the same dollar.
+
+36
+00:03:09,441 --> 00:03:11,230
+Nothing is restated.
+
+37
+00:03:11,230 --> 00:03:20,138
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+38
+00:03:20,100 --> 00:03:27,435
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+39
+00:03:27,435 --> 00:03:29,677
+Nothing here is financial advice.
+
+40
+00:03:29,677 --> 00:03:32,665
+From the closing desk — see you at the open.
