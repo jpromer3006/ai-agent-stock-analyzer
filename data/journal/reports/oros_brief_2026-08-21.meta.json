@@ -1,0 +1,85 @@
+{
+ "date": "Friday, August 21, 2026",
+ "regime": "bull",
+ "lesson": "race",
+ "race_day": 35,
+ "home_run": null,
+ "takeaway": "Tonight's takeaway. A portfolio is not a museum. Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.",
+ "breadth": {
+  "date": "2026-08-21",
+  "total": 493,
+  "counts": {
+   "Advancing": 240,
+   "Basing": 165,
+   "Topping": 21,
+   "Declining": 67
+  },
+  "invalidated": 2,
+  "source": "cloud",
+  "prior": {
+   "date": "2026-08-14",
+   "total": 494,
+   "counts": {
+    "Advancing": 252,
+    "Basing": 158,
+    "Topping": 24,
+    "Declining": 60
+   },
+   "invalidated": 6,
+   "source": "cloud"
+  }
+ },
+ "oros500": {
+  "name": "OROS 500",
+  "date": "2026-08-21",
+  "count": 500,
+  "target": 500,
+  "entered": [
+   "BABX",
+   "CONL"
+  ],
+  "left": [
+   "ACT",
+   "ADBG"
+  ]
+ },
+ "chapters": [
+  {
+   "title": "Tonight on the Market Desk",
+   "start_s": 0.0
+  },
+  {
+   "title": "The Market Open",
+   "start_s": 46.72
+  },
+  {
+   "title": "Chart of the Day",
+   "start_s": 73.38
+  },
+  {
+   "title": "OROS Scan \u2014 Top Pick of the Day",
+   "start_s": 160.21
+  },
+  {
+   "title": "Business Desk \u2014 the book",
+   "start_s": 210.62
+  },
+  {
+   "title": "The Portfolio \u2014 Actual Holdings",
+   "start_s": 283.09
+  },
+  {
+   "title": "Sports Desk \u2014 The Race",
+   "start_s": 313.37
+  },
+  {
+   "title": "The Takeaway",
+   "start_s": 379.5
+  },
+  {
+   "title": "Disclosure & Credits",
+   "start_s": 391.62
+  }
+ ],
+ "duration_s": 448.5
+}

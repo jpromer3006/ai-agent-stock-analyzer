@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0147,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "C",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": -0.042,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.058,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "CATY",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.216,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0277,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "EQIX",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.152,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0023,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "ASML",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.039,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0292,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "FDX",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.193,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0071,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "DLR",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.306,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0049,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "XOP",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.162,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0113,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "XBI",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.251,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0204,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "ARWR",
@@ -156,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.209,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0049,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "PWR",
@@ -170,7 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.291,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0484,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "JNJ",
@@ -184,7 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.282,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0138,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     }
   ],
   "bench": [
@@ -288,10 +324,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0,
+  "realized_avg_return": -0.058,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 1,
+  "realized_stop_exits": 1,
   "changes": {
     "added": [
       "ARWR",
