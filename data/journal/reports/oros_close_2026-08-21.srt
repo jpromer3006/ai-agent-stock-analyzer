@@ -1,0 +1,171 @@
+1
+00:00:00,000 --> 00:00:03,453
+Good evening from the OROS closing desk.
+
+2
+00:00:03,453 --> 00:00:08,719
+Time to grade this morning's call — the part most shows skip.
+
+3
+00:00:08,719 --> 00:00:10,360
+Daily Journal Corp.
+
+4
+00:00:10,360 --> 00:00:16,748
+(S.C.), ticker DJCO triggered, then faded to -2.9 percent below the entry.
+
+5
+00:00:16,748 --> 00:00:21,755
+If it closes a week below the stop, the exit is automatic.
+
+6
+00:00:21,755 --> 00:00:25,208
+That is not a failure; that is the plan.
+
+7
+00:00:25,208 --> 00:00:30,144
+Why we grade in public: a forecast that is never checked is just content.
+
+8
+00:00:30,144 --> 00:00:35,553
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+9
+00:00:35,518 --> 00:00:39,763
+On the day, the book is up 193 dollars.
+
+10
+00:00:39,763 --> 00:00:46,294
+Charles Schwab Corporation (The) (SCHW) leads, +2.3 percent.
+
+11
+00:00:46,294 --> 00:00:51,191
+Atlanta Braves Holdings (BATRK) lags at -2.0.
+
+12
+00:00:51,191 --> 00:00:57,069
+The checklist is clear: nothing requires action today.
+
+13
+00:00:57,069 --> 00:01:00,596
+On screen, the day's gainers and laggards inside the paper book.
+
+14
+00:01:00,552 --> 00:01:08,815
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+15
+00:01:08,815 --> 00:01:18,925
+12 positions, led by AbbVie, ticker ABBV, Eli Lilly and, ticker LLY, State Street SPDR S&P Biotech ETF, ticker XBI.
+
+16
+00:01:18,925 --> 00:01:30,880
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+17
+00:01:30,831 --> 00:01:35,514
+Now the part that makes this system different: the loop.
+
+18
+00:01:35,514 --> 00:01:37,856
+Every morning OROS proposes.
+
+19
+00:01:37,856 --> 00:01:48,142
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+20
+00:01:48,142 --> 00:01:51,989
+Inside the book today: 9 positions up, 3 down.
+
+21
+00:01:51,989 --> 00:01:54,330
+Best, SCHW at +2.29 percent.
+
+22
+00:01:54,330 --> 00:01:56,170
+Worst, BATRK at -1.98.
+
+23
+00:01:56,170 --> 00:02:01,021
+Both go in the journal — wins and losses get the same ink.
+
+24
+00:02:01,021 --> 00:02:07,962
+The honest scoreboard reads: expectancy -8.11% per trade over 207 graded positions.
+
+25
+00:02:07,962 --> 00:02:14,819
+Because that record is soft, the system has throttled itself to 25% position size.
+
+26
+00:02:14,819 --> 00:02:19,837
+Nobody told it to — full size must be earned back with wins.
+
+27
+00:02:19,837 --> 00:02:31,879
+What tonight's read hands to tomorrow's open: 240 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+28
+00:02:31,853 --> 00:02:34,112
+Over to the sports desk.
+
+29
+00:02:34,112 --> 00:02:43,432
+Day 35 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+30
+00:02:43,432 --> 00:02:49,740
+In first place, the live self-rebuilding book, in blue, at 102,175.
+
+31
+00:02:49,740 --> 00:02:55,294
+Then the index fund, in gray, 0.3 thousand back at 101,922.
+
+32
+00:02:55,294 --> 00:03:02,543
+Then the frozen first portfolio, the green line, 2.5 thousand back at 99,675.
+
+33
+00:03:02,543 --> 00:03:05,179
+The race has no finish line.
+
+34
+00:03:05,179 --> 00:03:09,509
+Same books, same dollars, back at it tomorrow.
+
+35
+00:03:09,509 --> 00:03:14,404
+Every line starts the same day with the same dollar.
+
+36
+00:03:14,404 --> 00:03:16,287
+Nothing is restated.
+
+37
+00:03:16,287 --> 00:03:18,617
+Today's lesson is benchmarking.
+
+38
+00:03:18,617 --> 00:03:25,078
+Any strategy must beat the boring alternative: the same money parked in an index fund.
+
+39
+00:03:25,078 --> 00:03:28,535
+That is why the S and P line shares the chart.
+
+40
+00:03:28,535 --> 00:03:37,551
+If the system cannot outrun it, the index deserves the money, and publishing the race every day keeps the system honest.
+
+41
+00:03:37,510 --> 00:03:44,845
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+42
+00:03:44,845 --> 00:03:47,086
+Nothing here is financial advice.
+
+43
+00:03:47,086 --> 00:03:50,075
+From the closing desk — see you at the open.
