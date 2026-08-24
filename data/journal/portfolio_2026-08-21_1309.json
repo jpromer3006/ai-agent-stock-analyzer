@@ -1,293 +1,293 @@
 {
- "timestamp": "2026-08-21T13:09:43.187823Z",
- "date": "2026-08-21",
- "regime": "bull",
- "mandate": "swing_momentum",
- "account": 100000.0,
- "invested": 63715.33,
- "cash": 36284.67,
- "weights": {
-  "growth": 0.067,
-  "value": 0.024,
-  "swing": 0.121,
-  "technical": 0.111,
-  "canslim": 0.175,
-  "weinstein": 0.166,
-  "ipo": 0.118,
-  "sepa": 0.218
- },
- "note": "nightly run (cloud)",
- "holdings": [
-  {
-   "ticker": "ABBV",
-   "sector": "Health Care",
-   "conviction": 0.7928,
-   "shares": 20,
-   "dollars": 5236.6,
-   "weight_pct": 5.24,
-   "entry": 261.83,
-   "stop": 246.41,
-   "led_by": "sepa",
-   "sentiment": 0.186,
-   "earnings_risk": false,
-   "outcome_return": null
+  "timestamp": "2026-08-21T13:09:43.187823Z",
+  "date": "2026-08-21",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 63715.33,
+  "cash": 36284.67,
+  "weights": {
+    "growth": 0.067,
+    "value": 0.024,
+    "swing": 0.121,
+    "technical": 0.111,
+    "canslim": 0.175,
+    "weinstein": 0.166,
+    "ipo": 0.118,
+    "sepa": 0.218
   },
-  {
-   "ticker": "LLY",
-   "sector": "Health Care",
-   "conviction": 0.7709,
-   "shares": 4,
-   "dollars": 4977.6,
-   "weight_pct": 4.98,
-   "entry": 1244.4,
-   "stop": 1175.69,
-   "led_by": "sepa",
-   "sentiment": 0.256,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "XBI",
-   "sector": "Other",
-   "conviction": 0.758,
-   "shares": 28,
-   "dollars": 4574.64,
-   "weight_pct": 4.57,
-   "entry": 163.38,
-   "stop": 152.54,
-   "led_by": "sepa",
-   "sentiment": 0.325,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AIA",
-   "sector": "Other",
-   "conviction": 0.7353,
-   "shares": 61,
-   "dollars": 8419.83,
-   "weight_pct": 8.42,
-   "entry": 138.03,
-   "stop": 132.95,
-   "led_by": "sepa",
-   "sentiment": 0.165,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BATRK",
-   "sector": "Communication Services",
-   "conviction": 0.7341,
-   "shares": 164,
-   "dollars": 8688.72,
-   "weight_pct": 8.69,
-   "entry": 52.98,
-   "stop": 51.08,
-   "led_by": "sepa",
-   "sentiment": 0.338,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "CHRD",
-   "sector": "Energy",
-   "conviction": 0.7331,
-   "shares": 15,
-   "dollars": 2232.15,
-   "weight_pct": 2.23,
-   "entry": 148.81,
-   "stop": 128.33,
-   "led_by": "sepa",
-   "sentiment": 0.253,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "MDLZ",
-   "sector": "Consumer Staples",
-   "conviction": 0.7217,
-   "shares": 105,
-   "dollars": 6734.7,
-   "weight_pct": 6.73,
-   "entry": 64.14,
-   "stop": 61.19,
-   "led_by": "sepa",
-   "sentiment": 0.276,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "SCHW",
-   "sector": "Financials",
-   "conviction": 0.717,
-   "shares": 34,
-   "dollars": 3732.86,
-   "weight_pct": 3.73,
-   "entry": 109.79,
-   "stop": 100.69,
-   "led_by": "sepa",
-   "sentiment": 0.239,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BIIB",
-   "sector": "Health Care",
-   "conviction": 0.7137,
-   "shares": 32,
-   "dollars": 6859.2,
-   "weight_pct": 6.86,
-   "entry": 214.35,
-   "stop": 204.82,
-   "led_by": "sepa",
-   "sentiment": 0.222,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "EQIX",
-   "sector": "Real Estate",
-   "conviction": 0.7116,
-   "shares": 6,
-   "dollars": 6495.66,
-   "weight_pct": 6.5,
-   "entry": 1082.61,
-   "stop": 1031.26,
-   "led_by": "sepa",
-   "sentiment": 0.202,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "IBB",
-   "sector": "Other",
-   "conviction": 0.699,
-   "shares": 14,
-   "dollars": 2951.62,
-   "weight_pct": 2.95,
-   "entry": 210.83,
-   "stop": 189.42,
-   "led_by": "sepa",
-   "sentiment": -0.051,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "XOP",
-   "sector": "Other",
-   "conviction": 0.6828,
-   "shares": 15,
-   "dollars": 2811.75,
-   "weight_pct": 2.81,
-   "entry": 187.45,
-   "stop": 166.8,
-   "led_by": "sepa",
-   "sentiment": 0.051,
-   "earnings_risk": false,
-   "outcome_return": null
-  }
- ],
- "bench": [
-  {
-   "ticker": "AMGN",
-   "sector": "Health Care",
-   "composite": 0.713,
-   "reason": "sector cap \u2014 already 3 in Health Care"
-  },
-  {
-   "ticker": "DNLI",
-   "sector": "Health Care",
-   "composite": 0.708,
-   "reason": "sector cap \u2014 already 3 in Health Care"
-  },
-  {
-   "ticker": "CGON",
-   "sector": "Health Care",
-   "composite": 0.695,
-   "reason": "sector cap \u2014 already 3 in Health Care"
-  },
-  {
-   "ticker": "JNJ",
-   "sector": "Health Care",
-   "composite": 0.694,
-   "reason": "sector cap \u2014 already 3 in Health Care"
-  },
-  {
-   "ticker": "ASND",
-   "sector": "Health Care",
-   "composite": 0.687,
-   "reason": "sector cap \u2014 already 3 in Health Care"
-  },
-  {
-   "ticker": "BMY",
-   "sector": "Health Care",
-   "composite": 0.686,
-   "reason": "sector cap \u2014 already 3 in Health Care"
-  },
-  {
-   "ticker": "CVX",
-   "sector": "Energy",
-   "composite": 0.675,
-   "reason": "outranked \u2014 book full at 12"
-  }
- ],
- "agent_trace": [
-  {
-   "agent": "DataAgent",
-   "role": "universe & data",
-   "summary": "495 candidate names (benchmarks removed)"
-  },
-  {
-   "agent": "RegimeAgent",
-   "role": "market regime",
-   "summary": "regime = BULL"
-  },
-  {
-   "agent": "RouterAgent",
-   "role": "strategy mandate weights",
-   "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
-  },
-  {
-   "agent": "MemoryAgent",
-   "role": "experience-weighted tilt",
-   "summary": "boosted weinstein x1.00, sepa x1.00"
-  },
-  {
-   "agent": "ConstructionAgent",
-   "role": "strategy ensemble + sizing",
-   "summary": "12 holdings, 64% invested, 8 strategies"
-  },
-  {
-   "agent": "RiskAgent",
-   "role": "post-construction risk",
-   "summary": "within limits; cash 36%"
-  }
- ],
- "horizon_days": 20,
- "realized_avg_return": null,
- "realized_hit_rate": null,
- "realized_final_count": 0,
- "realized_stop_exits": 0,
- "changes": {
-  "added": [
-   "BIIB",
-   "IBB"
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "ABBV",
+      "sector": "Health Care",
+      "conviction": 0.7928,
+      "shares": 20,
+      "dollars": 5236.6,
+      "weight_pct": 5.24,
+      "entry": 261.83,
+      "stop": 246.41,
+      "led_by": "sepa",
+      "sentiment": 0.186,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "LLY",
+      "sector": "Health Care",
+      "conviction": 0.7709,
+      "shares": 4,
+      "dollars": 4977.6,
+      "weight_pct": 4.98,
+      "entry": 1244.4,
+      "stop": 1175.69,
+      "led_by": "sepa",
+      "sentiment": 0.256,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XBI",
+      "sector": "Other",
+      "conviction": 0.758,
+      "shares": 28,
+      "dollars": 4574.64,
+      "weight_pct": 4.57,
+      "entry": 163.38,
+      "stop": 152.54,
+      "led_by": "sepa",
+      "sentiment": 0.325,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AIA",
+      "sector": "Other",
+      "conviction": 0.7353,
+      "shares": 61,
+      "dollars": 8419.83,
+      "weight_pct": 8.42,
+      "entry": 138.03,
+      "stop": 132.95,
+      "led_by": "sepa",
+      "sentiment": 0.165,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BATRK",
+      "sector": "Communication Services",
+      "conviction": 0.7341,
+      "shares": 164,
+      "dollars": 8688.72,
+      "weight_pct": 8.69,
+      "entry": 52.98,
+      "stop": 51.08,
+      "led_by": "sepa",
+      "sentiment": 0.338,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CHRD",
+      "sector": "Energy",
+      "conviction": 0.7331,
+      "shares": 15,
+      "dollars": 2232.15,
+      "weight_pct": 2.23,
+      "entry": 148.81,
+      "stop": 128.33,
+      "led_by": "sepa",
+      "sentiment": 0.253,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "MDLZ",
+      "sector": "Consumer Staples",
+      "conviction": 0.7217,
+      "shares": 105,
+      "dollars": 6734.7,
+      "weight_pct": 6.73,
+      "entry": 64.14,
+      "stop": 61.19,
+      "led_by": "sepa",
+      "sentiment": 0.276,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "SCHW",
+      "sector": "Financials",
+      "conviction": 0.717,
+      "shares": 34,
+      "dollars": 3732.86,
+      "weight_pct": 3.73,
+      "entry": 109.79,
+      "stop": 100.69,
+      "led_by": "sepa",
+      "sentiment": 0.239,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BIIB",
+      "sector": "Health Care",
+      "conviction": 0.7137,
+      "shares": 32,
+      "dollars": 6859.2,
+      "weight_pct": 6.86,
+      "entry": 214.35,
+      "stop": 204.82,
+      "led_by": "sepa",
+      "sentiment": 0.222,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "EQIX",
+      "sector": "Real Estate",
+      "conviction": 0.7116,
+      "shares": 6,
+      "dollars": 6495.66,
+      "weight_pct": 6.5,
+      "entry": 1082.61,
+      "stop": 1031.26,
+      "led_by": "sepa",
+      "sentiment": 0.202,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "IBB",
+      "sector": "Other",
+      "conviction": 0.699,
+      "shares": 14,
+      "dollars": 2951.62,
+      "weight_pct": 2.95,
+      "entry": 210.83,
+      "stop": 189.42,
+      "led_by": "sepa",
+      "sentiment": -0.051,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XOP",
+      "sector": "Other",
+      "conviction": 0.6828,
+      "shares": 15,
+      "dollars": 2811.75,
+      "weight_pct": 2.81,
+      "entry": 187.45,
+      "stop": 166.8,
+      "led_by": "sepa",
+      "sentiment": 0.051,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
   ],
-  "removed": [
-   "BCRX",
-   "FDX"
+  "bench": [
+    {
+      "ticker": "AMGN",
+      "sector": "Health Care",
+      "composite": 0.713,
+      "reason": "sector cap \u2014 already 3 in Health Care"
+    },
+    {
+      "ticker": "DNLI",
+      "sector": "Health Care",
+      "composite": 0.708,
+      "reason": "sector cap \u2014 already 3 in Health Care"
+    },
+    {
+      "ticker": "CGON",
+      "sector": "Health Care",
+      "composite": 0.695,
+      "reason": "sector cap \u2014 already 3 in Health Care"
+    },
+    {
+      "ticker": "JNJ",
+      "sector": "Health Care",
+      "composite": 0.694,
+      "reason": "sector cap \u2014 already 3 in Health Care"
+    },
+    {
+      "ticker": "ASND",
+      "sector": "Health Care",
+      "composite": 0.687,
+      "reason": "sector cap \u2014 already 3 in Health Care"
+    },
+    {
+      "ticker": "BMY",
+      "sector": "Health Care",
+      "composite": 0.686,
+      "reason": "sector cap \u2014 already 3 in Health Care"
+    },
+    {
+      "ticker": "CVX",
+      "sector": "Energy",
+      "composite": 0.675,
+      "reason": "outranked \u2014 book full at 12"
+    }
   ],
-  "unchanged": [
-   "ABBV",
-   "AIA",
-   "BATRK",
-   "CHRD",
-   "EQIX",
-   "LLY",
-   "MDLZ",
-   "SCHW",
-   "XBI",
-   "XOP"
-  ]
- }
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "495 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 64% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 36%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0,
+  "changes": {
+    "added": [
+      "BIIB",
+      "IBB"
+    ],
+    "removed": [
+      "BCRX",
+      "FDX"
+    ],
+    "unchanged": [
+      "ABBV",
+      "AIA",
+      "BATRK",
+      "CHRD",
+      "EQIX",
+      "LLY",
+      "MDLZ",
+      "SCHW",
+      "XBI",
+      "XOP"
+    ]
+  }
 }
