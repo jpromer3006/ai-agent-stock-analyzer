@@ -319,6 +319,18 @@
    },
    "invalidated": 0,
    "source": "cloud"
+  },
+  {
+   "date": "2026-08-25",
+   "total": 492,
+   "counts": {
+    "Advancing": 241,
+    "Basing": 170,
+    "Topping": 22,
+    "Declining": 59
+   },
+   "invalidated": 0,
+   "source": "cloud"
   }
  ]
 }
