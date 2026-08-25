@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.162,
       "earnings_risk": false,
-      "outcome_return": 0.0338,
+      "outcome_return": 0.0158,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.23,
       "earnings_risk": false,
-      "outcome_return": 0.0389,
+      "outcome_return": 0.0291,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": -0.034,
       "earnings_risk": false,
-      "outcome_return": 0.0229,
+      "outcome_return": 0.0124,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.214,
       "earnings_risk": false,
-      "outcome_return": 0.0169,
+      "outcome_return": 0.0085,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.118,
       "earnings_risk": false,
-      "outcome_return": 0.0576,
+      "outcome_return": 0.0525,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.06,
       "earnings_risk": false,
-      "outcome_return": -0.022,
+      "outcome_return": -0.0292,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.132,
       "earnings_risk": false,
-      "outcome_return": -0.003,
+      "outcome_return": -0.018,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": -0.112,
       "earnings_risk": false,
-      "outcome_return": -0.0368,
-      "outcome_exit": "open",
-      "outcome_days": 3,
-      "outcome_final": false
+      "outcome_return": -0.054,
+      "outcome_exit": "stop",
+      "outcome_days": 4,
+      "outcome_final": true
     },
     {
       "ticker": "IYT",
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.017,
       "earnings_risk": false,
-      "outcome_return": -0.0033,
+      "outcome_return": -0.0056,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.21,
       "earnings_risk": false,
-      "outcome_return": -0.0305,
+      "outcome_return": -0.0339,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -200,9 +200,9 @@
       "led_by": "sepa",
       "sentiment": 0.023,
       "earnings_risk": false,
-      "outcome_return": 0.0453,
+      "outcome_return": 0.0458,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 4,
       "outcome_final": false
     },
     {
@@ -264,10 +264,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0931,
+  "realized_avg_return": -0.0735,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1,
+  "realized_final_count": 2,
+  "realized_stop_exits": 2,
   "changes": {
     "added": [
       "ADEA",

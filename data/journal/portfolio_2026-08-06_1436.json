@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.191,
       "earnings_risk": false,
-      "outcome_return": -0.0329,
+      "outcome_return": -0.0324,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.176,
       "earnings_risk": false,
-      "outcome_return": 0.2425,
+      "outcome_return": 0.2618,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.257,
       "earnings_risk": false,
-      "outcome_return": -0.035,
+      "outcome_return": -0.0351,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.191,
       "earnings_risk": false,
-      "outcome_return": 0.1112,
+      "outcome_return": 0.141,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.259,
       "earnings_risk": false,
-      "outcome_return": -0.0085,
+      "outcome_return": -0.0192,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.206,
       "earnings_risk": false,
-      "outcome_return": -0.0193,
+      "outcome_return": -0.0244,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -200,10 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.135,
       "earnings_risk": false,
-      "outcome_return": -0.0327,
-      "outcome_exit": "open",
-      "outcome_days": 11,
-      "outcome_final": false
+      "outcome_return": -0.0394,
+      "outcome_exit": "stop",
+      "outcome_days": 12,
+      "outcome_final": true
     },
     {
       "ticker": "CORO",
@@ -217,9 +217,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0125,
+      "outcome_return": 0.0061,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     }
   ],
@@ -330,10 +330,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0799,
+  "realized_avg_return": -0.0718,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 4,
-  "realized_stop_exits": 4,
+  "realized_final_count": 5,
+  "realized_stop_exits": 5,
   "changes": {
     "added": [
       "BBIO",

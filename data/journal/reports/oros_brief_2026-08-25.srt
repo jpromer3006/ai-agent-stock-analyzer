@@ -1,0 +1,187 @@
+1
+00:00:00,000 --> 00:00:01,024
+Good morning.
+
+2
+00:00:01,024 --> 00:00:07,009
+From the OROS Market Desk, here is the rundown for Tuesday, August 25, 2026.
+
+3
+00:00:07,009 --> 00:00:08,584
+The tape reads bull.
+
+4
+00:00:08,584 --> 00:00:14,884
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:14,884 --> 00:00:26,776
+And at the sports desk, day 37 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:26,776 --> 00:00:35,006
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:35,006 --> 00:00:42,371
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:42,333 --> 00:00:44,115
+First, the market open.
+
+9
+00:00:44,115 --> 00:00:49,695
+The S and P five hundred slipped 0.3 percent, while the NASDAQ lost 1.0.
+
+10
+00:00:49,695 --> 00:00:56,359
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+11
+00:00:56,359 --> 00:00:58,529
+The fear gauge sits at 15.8.
+
+12
+00:00:58,529 --> 00:01:07,855
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:07,817 --> 00:01:16,517
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+14
+00:01:16,517 --> 00:01:20,626
+Forcing a pick on a weak tape is how systems bleed.
+
+15
+00:01:20,626 --> 00:01:21,270
+We wait.
+
+16
+00:01:21,238 --> 00:01:23,339
+Turning to the model book.
+
+17
+00:01:23,339 --> 00:01:33,600
+The system holds 12 positions with 54% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+18
+00:01:33,600 --> 00:01:49,678
+New to the book: ConocoPhillips (COP), Chevron (CVX), Invesco DB Commodity Index Tracking Fund (DBC), State Street Energy Select Sector SPDR ETF (XLE) — each passed the full entry gauntlet overnight.
+
+19
+00:01:49,678 --> 00:02:16,421
+Rotated out: iShares Asia 50 ETF (AIA), which still advancing, but outranked by stronger names; BGC Group (BGC), which still advancing, but outranked by stronger names; Maplebear (CART), which still advancing, but outranked by stronger names; iShares Biotechnology ETF (IBB), which still advancing, but outranked by stronger names.
+
+20
+00:02:16,421 --> 00:02:21,834
+Left on the bench: CG Oncology (CGON), outranked — book full at 12.
+
+21
+00:02:21,834 --> 00:02:26,440
+Passing the scan is not enough; the book must afford you.
+
+22
+00:02:26,440 --> 00:02:32,474
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+23
+00:02:32,430 --> 00:02:39,849
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+24
+00:02:39,849 --> 00:02:47,741
+12 positions, led by Chord Energy, ticker CHRD, Credit Acceptance, ticker CACC, Chevron, ticker CVX.
+
+25
+00:02:47,741 --> 00:02:58,474
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+26
+00:02:58,436 --> 00:03:00,626
+Over to the sports desk.
+
+27
+00:03:00,626 --> 00:03:09,661
+Day 37 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+28
+00:03:09,661 --> 00:03:15,776
+In first place, the live self-rebuilding book, in blue, at 102,017.
+
+29
+00:03:15,776 --> 00:03:21,160
+Then the index fund, in gray, 0.4 thousand back at 101,623.
+
+30
+00:03:21,160 --> 00:03:28,188
+Then the frozen first portfolio, the green line, 2.1 thousand back at 99,920.
+
+31
+00:03:28,188 --> 00:03:30,743
+The race has no finish line.
+
+32
+00:03:30,743 --> 00:03:34,941
+Same books, same dollars, back at it tomorrow.
+
+33
+00:03:34,941 --> 00:03:39,687
+Every line starts the same day with the same dollar.
+
+34
+00:03:39,687 --> 00:03:41,512
+Nothing is restated.
+
+35
+00:03:41,512 --> 00:03:50,420
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+36
+00:03:50,382 --> 00:03:51,931
+Tonight's takeaway.
+
+37
+00:03:51,931 --> 00:03:54,214
+A portfolio is not a museum.
+
+38
+00:03:54,214 --> 00:04:02,529
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+39
+00:04:02,503 --> 00:04:05,517
+Before we close, the disclosure segment.
+
+40
+00:04:05,517 --> 00:04:16,139
+Everything you heard today concerns one simulated portfolio of 12 positions — the same book, line for line, as this morning's emailed report.
+
+41
+00:04:16,139 --> 00:04:18,098
+One record, every surface.
+
+42
+00:04:18,098 --> 00:04:20,185
+A word on how this desk works.
+
+43
+00:04:20,185 --> 00:04:37,712
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+44
+00:04:37,712 --> 00:04:46,127
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+45
+00:04:46,127 --> 00:04:49,060
+All figures are simulated paper trading.
+
+46
+00:04:49,060 --> 00:04:55,439
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+47
+00:04:55,439 --> 00:04:59,398
+From the OROS Market Desk, have a disciplined session.
