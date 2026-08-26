@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.519,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0053,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "LLY",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.029,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0173,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CHRD",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.253,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.048,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "ABBV",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.161,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0031,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BIIB",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.264,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0184,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "MDLZ",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.272,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0227,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "XBI",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.155,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0203,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "AIA",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.165,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0023,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "SCHW",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.036,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0003,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "IBB",
@@ -156,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": -0.193,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0133,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "CART",
@@ -170,7 +200,10 @@
       "led_by": "technical",
       "sentiment": 0.241,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0337,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     },
     {
       "ticker": "BGC",
@@ -184,7 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.115,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0042,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
     }
   ],
   "bench": [
