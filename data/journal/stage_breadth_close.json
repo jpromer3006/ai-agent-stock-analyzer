@@ -337,11 +337,11 @@
    "total": 493,
    "counts": {
     "Advancing": 240,
-    "Basing": 171,
-    "Topping": 26,
-    "Declining": 56
+    "Basing": 168,
+    "Topping": 23,
+    "Declining": 62
    },
-   "invalidated": 1,
+   "invalidated": 3,
    "source": "cloud"
   }
  ]
