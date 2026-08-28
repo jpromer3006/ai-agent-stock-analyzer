@@ -1,0 +1,207 @@
+1
+00:00:00,000 --> 00:00:01,004
+Good morning.
+
+2
+00:00:01,004 --> 00:00:06,795
+From the OROS Market Desk, here is the rundown for Friday, August 28, 2026.
+
+3
+00:00:06,795 --> 00:00:08,339
+The tape reads bull.
+
+4
+00:00:08,339 --> 00:00:14,516
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:14,516 --> 00:00:26,175
+And at the sports desk, day 40 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:26,175 --> 00:00:34,405
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:34,405 --> 00:00:41,770
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:41,732 --> 00:00:43,693
+First, the market open.
+
+9
+00:00:43,693 --> 00:00:49,830
+The S and P five hundred gained 0.7 percent, while the NASDAQ added 1.4.
+
+10
+00:00:49,830 --> 00:00:57,161
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+11
+00:00:57,161 --> 00:00:59,548
+The fear gauge sits at 14.5.
+
+12
+00:00:59,548 --> 00:01:08,873
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:08,835 --> 00:01:17,535
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+14
+00:01:17,535 --> 00:01:21,644
+Forcing a pick on a weak tape is how systems bleed.
+
+15
+00:01:21,644 --> 00:01:22,288
+We wait.
+
+16
+00:01:22,256 --> 00:01:24,446
+Turning to the model book.
+
+17
+00:01:24,446 --> 00:01:35,143
+The system holds 12 positions with 59% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+18
+00:01:35,143 --> 00:01:46,936
+New to the book: Apple (AAPL), Bristol-Myers Squibb (BMY), Bruker (BRKR), Chord Energy (CHRD), DXP Enterprises (DXPE), Merck & Company, Inc.
+
+19
+00:01:46,936 --> 00:01:53,085
+Common Stock (new) (MRK) — each passed the full entry gauntlet overnight.
+
+20
+00:01:53,085 --> 00:02:20,544
+Rotated out: AbbVie (ABBV), which still advancing, but outranked by stronger names; Atlanta Braves Holdings (BATRK), which still advancing, but outranked by stronger names; CG Oncology (CGON), which still advancing, but outranked by stronger names; ConocoPhillips (COP), which still advancing, but outranked by stronger names.
+
+21
+00:02:20,544 --> 00:02:35,874
+Left on the bench: NVIDIA (NVDA), earnings inside the blackout window; Amgen (AMGN), sector cap — already 3 in Health Care; CG Oncology (CGON), sector cap — already 3 in Health Care.
+
+22
+00:02:35,874 --> 00:02:40,676
+Passing the scan is not enough; the book must afford you.
+
+23
+00:02:40,676 --> 00:02:43,261
+Today's lesson is position management.
+
+24
+00:02:43,261 --> 00:02:44,554
+Cash is a position.
+
+25
+00:02:44,554 --> 00:02:52,242
+The system sizes deployment by rule, and when its own forward record weakens, a throttle automatically cuts size.
+
+26
+00:02:52,242 --> 00:02:56,189
+Rotation is not indecision; it is the portfolio breathing.
+
+27
+00:02:56,189 --> 00:03:01,156
+Names that stop qualifying leave, and names that start qualifying arrive.
+
+28
+00:03:01,109 --> 00:03:08,984
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+29
+00:03:08,984 --> 00:03:18,032
+12 positions, led by APA Corporation, ticker APA, Chord Energy, ticker CHRD, Credit Acceptance, ticker CACC.
+
+30
+00:03:18,032 --> 00:03:29,426
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+31
+00:03:29,391 --> 00:03:31,644
+Over to the sports desk.
+
+32
+00:03:31,644 --> 00:03:40,936
+Day 40 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+33
+00:03:40,936 --> 00:03:45,817
+In first place, the index fund, in gray, at 102,638.
+
+34
+00:03:45,817 --> 00:03:52,763
+Then the live self-rebuilding book, in blue, 0.6 thousand back at 102,008.
+
+35
+00:03:52,763 --> 00:03:59,991
+Then the frozen first portfolio, the green line, 3.5 thousand back at 99,170.
+
+36
+00:03:59,991 --> 00:04:02,619
+The race has no finish line.
+
+37
+00:04:02,619 --> 00:04:06,936
+Same books, same dollars, back at it tomorrow.
+
+38
+00:04:06,936 --> 00:04:11,817
+Every line starts the same day with the same dollar.
+
+39
+00:04:11,817 --> 00:04:13,695
+Nothing is restated.
+
+40
+00:04:13,695 --> 00:04:22,602
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+41
+00:04:22,564 --> 00:04:24,113
+Tonight's takeaway.
+
+42
+00:04:24,113 --> 00:04:26,396
+A portfolio is not a museum.
+
+43
+00:04:26,396 --> 00:04:34,711
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+44
+00:04:34,685 --> 00:04:37,699
+Before we close, the disclosure segment.
+
+45
+00:04:37,699 --> 00:04:48,321
+Everything you heard today concerns one simulated portfolio of 12 positions — the same book, line for line, as this morning's emailed report.
+
+46
+00:04:48,321 --> 00:04:50,280
+One record, every surface.
+
+47
+00:04:50,280 --> 00:04:52,367
+A word on how this desk works.
+
+48
+00:04:52,367 --> 00:05:09,894
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+49
+00:05:09,894 --> 00:05:18,309
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+50
+00:05:18,309 --> 00:05:21,242
+All figures are simulated paper trading.
+
+51
+00:05:21,242 --> 00:05:27,621
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+52
+00:05:27,621 --> 00:05:31,580
+From the OROS Market Desk, have a disciplined session.

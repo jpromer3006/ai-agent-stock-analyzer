@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0373,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.058,
+      "outcome_exit": "stop",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CCEP",
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0144,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0221,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "KO",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0382,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0205,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "HALO",
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0045,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0013,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "LAMR",
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0312,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0303,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "HTO",
@@ -163,10 +163,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.1868,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.1614,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "UNP",
@@ -180,10 +180,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0514,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0549,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "TGT",
@@ -197,10 +197,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.1336,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.1376,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "SPG",
@@ -214,10 +214,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0748,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0828,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -267,10 +267,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0,
+  "realized_avg_return": 0.0203,
+  "realized_hit_rate": 0.556,
+  "realized_final_count": 9,
+  "realized_stop_exits": 1,
   "changes": {
     "added": [
       "DLR",

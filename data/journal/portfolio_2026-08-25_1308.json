@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.253,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0091,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "CACC",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.519,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0043,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "CVX",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.137,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0163,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "XBI",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.182,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0247,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "LLY",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": -0.056,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0568,
+      "outcome_exit": "stop",
+      "outcome_days": 2,
+      "outcome_final": true
     },
     {
       "ticker": "MDLZ",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.343,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0351,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "BIIB",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.264,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0155,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "ABBV",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.072,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0241,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "DBC",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.039,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0026,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "COP",
@@ -156,7 +183,10 @@
       "led_by": "swing",
       "sentiment": 0.17,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0287,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "SCHW",
@@ -170,7 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.021,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0493,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     },
     {
       "ticker": "XLE",
@@ -184,7 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.235,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.013,
+      "outcome_exit": "open",
+      "outcome_days": 2,
+      "outcome_final": false
     }
   ],
   "bench": [
@@ -228,10 +264,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0,
+  "realized_avg_return": -0.0568,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 1,
+  "realized_stop_exits": 1,
   "changes": {
     "added": [
       "COP",

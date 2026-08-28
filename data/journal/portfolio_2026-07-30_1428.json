@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0621,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": 0.0781,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "INCY",
@@ -75,10 +75,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0113,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": -0.034,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MRK",
@@ -92,10 +92,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.2001,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": 0.1471,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CHRD",
@@ -140,10 +140,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0487,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": -0.0692,
+      "outcome_exit": "stop",
+      "outcome_days": 19,
+      "outcome_final": true
     },
     {
       "ticker": "ARWR",
@@ -157,10 +157,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0309,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": 0.0275,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "DE",
@@ -208,10 +208,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.022,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": 0.0208,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -255,10 +255,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0698,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3,
+  "realized_avg_return": -0.0043,
+  "realized_hit_rate": 0.444,
+  "realized_final_count": 9,
+  "realized_stop_exits": 4,
   "changes": {
     "added": [
       "ARWR",

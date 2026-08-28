@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": -0.0145,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0078,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "APA",
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.141,
       "earnings_risk": false,
-      "outcome_return": 0.1528,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.1483,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CASY",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.178,
       "earnings_risk": false,
-      "outcome_return": -0.0574,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0777,
+      "outcome_exit": "stop",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ARWR",
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.335,
       "earnings_risk": false,
-      "outcome_return": 0.0335,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0363,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "DRS",
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.235,
       "earnings_risk": false,
-      "outcome_return": -0.0114,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0192,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BGC",
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.21,
       "earnings_risk": false,
-      "outcome_return": 0.0026,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0006,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CVX",
@@ -200,10 +200,10 @@
       "led_by": "sepa",
       "sentiment": -0.069,
       "earnings_risk": false,
-      "outcome_return": 0.0409,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0425,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "COKE",
@@ -312,10 +312,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0763,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 5,
-  "realized_stop_exits": 5,
+  "realized_avg_return": -0.0217,
+  "realized_hit_rate": 0.25,
+  "realized_final_count": 12,
+  "realized_stop_exits": 6,
   "changes": {
     "added": [
       "APA",

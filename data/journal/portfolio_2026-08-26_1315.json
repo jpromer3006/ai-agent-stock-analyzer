@@ -1,303 +1,339 @@
 {
- "timestamp": "2026-08-26T13:15:38.505491Z",
- "date": "2026-08-26",
- "regime": "bull",
- "mandate": "swing_momentum",
- "account": 100000.0,
- "invested": 65082.79,
- "cash": 34917.21,
- "weights": {
-  "canslim": 0.175,
-  "value": 0.024,
-  "growth": 0.067,
-  "sepa": 0.218,
-  "swing": 0.121,
-  "ipo": 0.118,
-  "technical": 0.111,
-  "weinstein": 0.166
- },
- "note": "nightly run (cloud)",
- "holdings": [
-  {
-   "ticker": "LLY",
-   "sector": "Health Care",
-   "conviction": 0.7749,
-   "shares": 4,
-   "dollars": 4934.64,
-   "weight_pct": 4.93,
-   "entry": 1233.66,
-   "stop": 1168.63,
-   "led_by": "sepa",
-   "sentiment": 0.353,
-   "earnings_risk": false,
-   "outcome_return": null
+  "timestamp": "2026-08-26T13:15:38.505491Z",
+  "date": "2026-08-26",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 65082.79,
+  "cash": 34917.21,
+  "weights": {
+    "canslim": 0.175,
+    "value": 0.024,
+    "growth": 0.067,
+    "sepa": 0.218,
+    "swing": 0.121,
+    "ipo": 0.118,
+    "technical": 0.111,
+    "weinstein": 0.166
   },
-  {
-   "ticker": "CACC",
-   "sector": "Financials",
-   "conviction": 0.7506,
-   "shares": 11,
-   "dollars": 6646.86,
-   "weight_pct": 6.65,
-   "entry": 604.26,
-   "stop": 577.3,
-   "led_by": "sepa",
-   "sentiment": 0.519,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "SCHW",
-   "sector": "Financials",
-   "conviction": 0.7493,
-   "shares": 30,
-   "dollars": 3368.1,
-   "weight_pct": 3.37,
-   "entry": 112.27,
-   "stop": 102.09,
-   "led_by": "sepa",
-   "sentiment": 0.034,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BGC",
-   "sector": "Financials",
-   "conviction": 0.7414,
-   "shares": 520,
-   "dollars": 6136.0,
-   "weight_pct": 6.14,
-   "entry": 11.8,
-   "stop": 11.2,
-   "led_by": "sepa",
-   "sentiment": 0.115,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ABBV",
-   "sector": "Health Care",
-   "conviction": 0.7324,
-   "shares": 18,
-   "dollars": 4784.22,
-   "weight_pct": 4.78,
-   "entry": 265.79,
-   "stop": 248.86,
-   "led_by": "sepa",
-   "sentiment": 0.156,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BATRK",
-   "sector": "Communication Services",
-   "conviction": 0.7297,
-   "shares": 153,
-   "dollars": 8104.41,
-   "weight_pct": 8.1,
-   "entry": 52.97,
-   "stop": 50.94,
-   "led_by": "sepa",
-   "sentiment": 0.338,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "WELL",
-   "sector": "Real Estate",
-   "conviction": 0.7129,
-   "shares": 35,
-   "dollars": 8440.25,
-   "weight_pct": 8.44,
-   "entry": 241.15,
-   "stop": 232.45,
-   "led_by": "sepa",
-   "sentiment": 0.342,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "APA",
-   "sector": "Energy",
-   "conviction": 0.707,
-   "shares": 61,
-   "dollars": 2522.35,
-   "weight_pct": 2.52,
-   "entry": 41.35,
-   "stop": 36.23,
-   "led_by": "sepa",
-   "sentiment": 0.276,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "CGON",
-   "sector": "Health Care",
-   "conviction": 0.6962,
-   "shares": 43,
-   "dollars": 3394.85,
-   "weight_pct": 3.39,
-   "entry": 78.95,
-   "stop": 71.83,
-   "led_by": "sepa",
-   "sentiment": -0.218,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "CSX",
-   "sector": "Industrials",
-   "conviction": 0.6942,
-   "shares": 159,
-   "dollars": 8190.09,
-   "weight_pct": 8.19,
-   "entry": 51.51,
-   "stop": 49.55,
-   "led_by": "sepa",
-   "sentiment": 0.028,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "COP",
-   "sector": "Energy",
-   "conviction": 0.6891,
-   "shares": 38,
-   "dollars": 5009.92,
-   "weight_pct": 5.01,
-   "entry": 131.84,
-   "stop": 123.69,
-   "led_by": "swing",
-   "sentiment": 0.11,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "XBI",
-   "sector": "Other",
-   "conviction": 0.6755,
-   "shares": 21,
-   "dollars": 3551.1,
-   "weight_pct": 3.55,
-   "entry": 169.1,
-   "stop": 154.62,
-   "led_by": "sepa",
-   "sentiment": 0.12,
-   "earnings_risk": false,
-   "outcome_return": null
-  }
- ],
- "bench": [
-  {
-   "ticker": "GS",
-   "sector": "Financials",
-   "composite": 0.715,
-   "reason": "sector cap \u2014 already 3 in Financials"
-  },
-  {
-   "ticker": "BMY",
-   "sector": "Health Care",
-   "composite": 0.694,
-   "reason": "sector cap \u2014 already 3 in Health Care"
-  },
-  {
-   "ticker": "BIIB",
-   "sector": "Health Care",
-   "composite": 0.691,
-   "reason": "sector cap \u2014 already 3 in Health Care"
-  },
-  {
-   "ticker": "AMGN",
-   "sector": "Health Care",
-   "composite": 0.684,
-   "reason": "sector cap \u2014 already 3 in Health Care"
-  },
-  {
-   "ticker": "MS",
-   "sector": "Financials",
-   "composite": 0.682,
-   "reason": "sector cap \u2014 already 3 in Financials"
-  },
-  {
-   "ticker": "DE",
-   "sector": "Industrials",
-   "composite": 0.678,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "ARWR",
-   "sector": "Health Care",
-   "composite": 0.678,
-   "reason": "sector cap \u2014 already 3 in Health Care"
-  },
-  {
-   "ticker": "DJCO",
-   "sector": "Information Technology",
-   "composite": 0.674,
-   "reason": "outranked \u2014 book full at 12"
-  }
- ],
- "agent_trace": [
-  {
-   "agent": "DataAgent",
-   "role": "universe & data",
-   "summary": "495 candidate names (benchmarks removed)"
-  },
-  {
-   "agent": "RegimeAgent",
-   "role": "market regime",
-   "summary": "regime = BULL"
-  },
-  {
-   "agent": "RouterAgent",
-   "role": "strategy mandate weights",
-   "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
-  },
-  {
-   "agent": "MemoryAgent",
-   "role": "experience-weighted tilt",
-   "summary": "boosted weinstein x1.00, sepa x1.00"
-  },
-  {
-   "agent": "ConstructionAgent",
-   "role": "strategy ensemble + sizing",
-   "summary": "12 holdings, 65% invested, 8 strategies"
-  },
-  {
-   "agent": "RiskAgent",
-   "role": "post-construction risk",
-   "summary": "within limits; cash 35%"
-  }
- ],
- "horizon_days": 20,
- "realized_avg_return": null,
- "realized_hit_rate": null,
- "realized_final_count": 0,
- "realized_stop_exits": 0,
- "changes": {
-  "added": [
-   "APA",
-   "BATRK",
-   "BGC",
-   "CGON",
-   "CSX",
-   "WELL"
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "LLY",
+      "sector": "Health Care",
+      "conviction": 0.7749,
+      "shares": 4,
+      "dollars": 4934.64,
+      "weight_pct": 4.93,
+      "entry": 1233.66,
+      "stop": 1168.63,
+      "led_by": "sepa",
+      "sentiment": 0.353,
+      "earnings_risk": false,
+      "outcome_return": -0.0467,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CACC",
+      "sector": "Financials",
+      "conviction": 0.7506,
+      "shares": 11,
+      "dollars": 6646.86,
+      "weight_pct": 6.65,
+      "entry": 604.26,
+      "stop": 577.3,
+      "led_by": "sepa",
+      "sentiment": 0.519,
+      "earnings_risk": false,
+      "outcome_return": -0.0063,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "SCHW",
+      "sector": "Financials",
+      "conviction": 0.7493,
+      "shares": 30,
+      "dollars": 3368.1,
+      "weight_pct": 3.37,
+      "entry": 112.27,
+      "stop": 102.09,
+      "led_by": "sepa",
+      "sentiment": 0.034,
+      "earnings_risk": false,
+      "outcome_return": -0.0376,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "BGC",
+      "sector": "Financials",
+      "conviction": 0.7414,
+      "shares": 520,
+      "dollars": 6136.0,
+      "weight_pct": 6.14,
+      "entry": 11.8,
+      "stop": 11.2,
+      "led_by": "sepa",
+      "sentiment": 0.115,
+      "earnings_risk": false,
+      "outcome_return": 0.0254,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ABBV",
+      "sector": "Health Care",
+      "conviction": 0.7324,
+      "shares": 18,
+      "dollars": 4784.22,
+      "weight_pct": 4.78,
+      "entry": 265.79,
+      "stop": 248.86,
+      "led_by": "sepa",
+      "sentiment": 0.156,
+      "earnings_risk": false,
+      "outcome_return": -0.0287,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "BATRK",
+      "sector": "Communication Services",
+      "conviction": 0.7297,
+      "shares": 153,
+      "dollars": 8104.41,
+      "weight_pct": 8.1,
+      "entry": 52.97,
+      "stop": 50.94,
+      "led_by": "sepa",
+      "sentiment": 0.338,
+      "earnings_risk": false,
+      "outcome_return": -0.0404,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
+    },
+    {
+      "ticker": "WELL",
+      "sector": "Real Estate",
+      "conviction": 0.7129,
+      "shares": 35,
+      "dollars": 8440.25,
+      "weight_pct": 8.44,
+      "entry": 241.15,
+      "stop": 232.45,
+      "led_by": "sepa",
+      "sentiment": 0.342,
+      "earnings_risk": false,
+      "outcome_return": -0.0064,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "APA",
+      "sector": "Energy",
+      "conviction": 0.707,
+      "shares": 61,
+      "dollars": 2522.35,
+      "weight_pct": 2.52,
+      "entry": 41.35,
+      "stop": 36.23,
+      "led_by": "sepa",
+      "sentiment": 0.276,
+      "earnings_risk": false,
+      "outcome_return": 0.0249,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CGON",
+      "sector": "Health Care",
+      "conviction": 0.6962,
+      "shares": 43,
+      "dollars": 3394.85,
+      "weight_pct": 3.39,
+      "entry": 78.95,
+      "stop": 71.83,
+      "led_by": "sepa",
+      "sentiment": -0.218,
+      "earnings_risk": false,
+      "outcome_return": 0.0008,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CSX",
+      "sector": "Industrials",
+      "conviction": 0.6942,
+      "shares": 159,
+      "dollars": 8190.09,
+      "weight_pct": 8.19,
+      "entry": 51.51,
+      "stop": 49.55,
+      "led_by": "sepa",
+      "sentiment": 0.028,
+      "earnings_risk": false,
+      "outcome_return": 0.0006,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "COP",
+      "sector": "Energy",
+      "conviction": 0.6891,
+      "shares": 38,
+      "dollars": 5009.92,
+      "weight_pct": 5.01,
+      "entry": 131.84,
+      "stop": 123.69,
+      "led_by": "swing",
+      "sentiment": 0.11,
+      "earnings_risk": false,
+      "outcome_return": -0.0176,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "XBI",
+      "sector": "Other",
+      "conviction": 0.6755,
+      "shares": 21,
+      "dollars": 3551.1,
+      "weight_pct": 3.55,
+      "entry": 169.1,
+      "stop": 154.62,
+      "led_by": "sepa",
+      "sentiment": 0.12,
+      "earnings_risk": false,
+      "outcome_return": -0.0051,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    }
   ],
-  "removed": [
-   "BIIB",
-   "CHRD",
-   "CVX",
-   "DBC",
-   "MDLZ",
-   "XLE"
+  "bench": [
+    {
+      "ticker": "GS",
+      "sector": "Financials",
+      "composite": 0.715,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "BMY",
+      "sector": "Health Care",
+      "composite": 0.694,
+      "reason": "sector cap \u2014 already 3 in Health Care"
+    },
+    {
+      "ticker": "BIIB",
+      "sector": "Health Care",
+      "composite": 0.691,
+      "reason": "sector cap \u2014 already 3 in Health Care"
+    },
+    {
+      "ticker": "AMGN",
+      "sector": "Health Care",
+      "composite": 0.684,
+      "reason": "sector cap \u2014 already 3 in Health Care"
+    },
+    {
+      "ticker": "MS",
+      "sector": "Financials",
+      "composite": 0.682,
+      "reason": "sector cap \u2014 already 3 in Financials"
+    },
+    {
+      "ticker": "DE",
+      "sector": "Industrials",
+      "composite": 0.678,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "ARWR",
+      "sector": "Health Care",
+      "composite": 0.678,
+      "reason": "sector cap \u2014 already 3 in Health Care"
+    },
+    {
+      "ticker": "DJCO",
+      "sector": "Information Technology",
+      "composite": 0.674,
+      "reason": "outranked \u2014 book full at 12"
+    }
   ],
-  "unchanged": [
-   "ABBV",
-   "CACC",
-   "COP",
-   "LLY",
-   "SCHW",
-   "XBI"
-  ]
- }
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "495 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 65% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 35%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": -0.0404,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 1,
+  "realized_stop_exits": 1,
+  "changes": {
+    "added": [
+      "APA",
+      "BATRK",
+      "BGC",
+      "CGON",
+      "CSX",
+      "WELL"
+    ],
+    "removed": [
+      "BIIB",
+      "CHRD",
+      "CVX",
+      "DBC",
+      "MDLZ",
+      "XLE"
+    ],
+    "unchanged": [
+      "ABBV",
+      "CACC",
+      "COP",
+      "LLY",
+      "SCHW",
+      "XBI"
+    ]
+  }
 }

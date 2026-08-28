@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": 0.0621,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0722,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MET",
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0119,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0052,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CCEP",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0113,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.019,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MTCH",
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0487,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0692,
+      "outcome_exit": "stop",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MO",
@@ -166,10 +166,10 @@
       "led_by": "technical",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0382,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0366,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "XLE",
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.309,
       "earnings_risk": false,
-      "outcome_return": 0.0581,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0645,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "NBIX",
@@ -217,10 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.2001,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.1744,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -270,8 +270,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0984,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2
+  "realized_avg_return": -0.0017,
+  "realized_hit_rate": 0.333,
+  "realized_final_count": 9,
+  "realized_stop_exits": 3
 }
