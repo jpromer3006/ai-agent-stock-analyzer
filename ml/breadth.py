@@ -206,3 +206,47 @@ if __name__ == "__main__":
             print(f"  {k:10} {b['counts'][k]:4}  ({100*b['counts'][k]/tot:.0f}%)")
         print(f"  invalidated {b['invalidated']}  as of {b['date']}"
               + (f"  (prior {b['prior']['date']})" if b.get("prior") else ""))
+
+
+def record_breadth_from_scan(report) -> dict:
+    """Journal breadth straight off the scan artifact (ml.scan_report).
+
+    ONE FLOW (JP, 2026-09-04). The daily run used to build the portfolio and
+    only then walk the same 500 names a second time to tally stages, so the
+    "scan" the broadcast described was actually computed after the book it
+    supposedly produced. This derives the panel from the same graded rows the
+    portfolio ranked, and carries the scan's hash so a journal entry can be
+    traced to the exact scan that wrote it.
+
+    `report` is a ScanReport or its dict form.
+    """
+    from ml.oros_config import OROS_CAP, run_source
+
+    d = report if isinstance(report, dict) else report.to_dict()
+    rows = d.get("rows") or []
+    if len(rows) > OROS_CAP:
+        logger.warning("CONFIG DRIFT: scan carries %d rows but OROS_CAP=%d "
+                       "(source=%s)", len(rows), OROS_CAP, run_source())
+
+    counts = {k: 0 for k in STAGE_ORDER}
+    invalidated = 0
+    for r in rows:
+        name = r.get("stage_name")
+        if name in counts:
+            counts[name] += 1
+            if r.get("invalidated"):
+                invalidated += 1
+
+    entry = {"date": d.get("session_date") or f"{datetime.now():%Y-%m-%d}",
+             "total": sum(counts.values()),
+             "counts": counts,
+             "invalidated": invalidated,
+             "source": d.get("source") or run_source(),
+             # Provenance: which scan produced this panel, and how much of it
+             # was graded on a bar older than the session it claims.
+             "scan_hash": d.get("scan_hash", ""),
+             "stale_rows": d.get("stale_rows", 0)}
+    _journal(entry, _FILE)
+    logger.info("stage breadth journaled from scan %s: %s of %d graded",
+                entry["scan_hash"], entry["counts"], entry["total"])
+    return entry

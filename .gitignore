@@ -54,3 +54,11 @@ Finance Books/
 data/journal/my_portfolio.json
 data/journal/reports/*.pdf
 Emailed Reports/
+
+# Scan artifacts (JP, 2026-09-04). Each scan is ~280 KB and two run every
+# trading day, so committing them would add ~140 MB a year to a repo that
+# already commits its journal twice daily. The audit trail that MATTERS is
+# committed: every breadth entry and every book carries the scan_hash, so a
+# claim can still be tied to the exact scan that produced it.
+data/journal/scans/
+data/journal/scan_latest.json

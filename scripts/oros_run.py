@@ -135,10 +135,50 @@ def main() -> int:
         price_cache.refresh_prices(work)
     ranked = build_liquid_ranking()
     log.info("liquid universe: %d names", len(ranked))
-    symbols = (ranked or [])[: args.cap]
-    if not symbols:
-        log.error("no liquid symbols available; aborting")
+
+    # 2b. THE SCAN (JP, 2026-09-04). Grade the universe ONCE, here, before any
+    # book exists, and let everything downstream read the artifact. The old
+    # order built the portfolio first (stages computed privately inside
+    # scoring) and tallied the "scan" afterward in a second pass, so the
+    # narration — scanner grades every chart, then the book is built from what
+    # it found — described an order the code never ran in.
+    #
+    # build_scan removes benchmarks BEFORE the cap (they used to be stripped
+    # after, which is why the desk said "495 candidate names" every single
+    # day) and substitutes down the ranking until the full cap is CONFIRMED.
+    from ml.scan_report import build_scan, save_scan
+    scan = build_scan(ranked or [], cap=args.cap)
+    if not scan.rows:
+        log.error("scan produced no graded names; aborting")
         return 1
+    scan_path = save_scan(scan)
+    symbols = [r["ticker"] for r in scan.rows]
+    log.info("SCAN: %d confirmed of %d requested | %d substitutions | "
+             "%d skipped | %d graded on a stale bar | hash=%s -> %s",
+             scan.confirmed, args.cap, scan.substitutions, len(scan.skipped),
+             scan.stale_rows, scan.scan_hash, scan_path.name)
+    if scan.confirmed < args.cap:
+        log.warning("SCAN SHORT: only %d confirmed — the broadcast must not "
+                    "claim %d tonight", scan.confirmed, args.cap)
+
+    # 2c. The regime is now a function of the scan, not of SPY alone. SPY's
+    # own stage can only downgrade the breadth read, never promote it.
+    regime_read = None
+    try:
+        from ml.market_context import regime_from_scan
+        from ml.stage_analyzer import analyze_stage
+        _spy_stage = None
+        try:
+            _spy = analyze_stage("SPY", df=price_cache.get_history("SPY"),
+                                 use_cache=True)
+            _spy_stage = int(getattr(_spy, "stage", 0)) or None
+        except Exception:  # noqa: BLE001
+            pass
+        regime_read = regime_from_scan(scan.to_dict(), spy_stage=_spy_stage)
+        log.info("REGIME: %s", regime_read["headline"])
+        log.info("REGIME (spoken): %s", regime_read["spoken"])
+    except Exception as e:  # noqa: BLE001
+        log.warning("regime read failed: %s", e)
 
     # 3. Orchestrate — 'auto' means OROS chooses its own settings from the
     # scoreboard + regime (the go-live, no-human-in-the-loop path).
@@ -190,22 +230,33 @@ def main() -> int:
     # off the stage cache the orchestrator just warmed.
     try:
         from ml.oros500 import record_constituents
-        from ml.breadth import record_breadth
+        from ml.breadth import record_breadth_from_scan
         c500 = record_constituents(symbols)
-        br = record_breadth(symbols)
+        # ONE SCAN, ONE GRADE: the panel is a tally of the same rows the book
+        # ranked, not a second walk over the price cache.
+        br = record_breadth_from_scan(scan)
         log.info("OROS 500 journaled: %d names (+%d/-%d) | breadth %s",
                  c500["count"], len(c500["entered"]), len(c500["left"]),
                  br["counts"])
     except Exception as e:  # noqa: BLE001
         log.warning("OROS 500 / breadth journaling failed: %s", e)
 
-    # 5. Update outcomes on older proposals (forward track record)
-    props = list_proposals()
-    for p in props[-30:]:
-        try:
-            update_outcomes(p)
-        except Exception:
-            pass
+    # 5. Update outcomes on older proposals (forward track record).
+    #
+    # Was `props[-30:]` until 2026-08-31. That window is shorter than every
+    # mandate horizon except fast_momentum, so stop-outs (which finalise in
+    # days) were always re-graded while winners (which need the full 20/60/120
+    # days) fell out of the window before they could ever be marked "horizon".
+    # The scoreboard therefore collected losers only, and the cold-streak
+    # throttle sized the book off it. regrade_open() walks the whole journal
+    # but skips proposals whose holdings are all final, so the cost is bounded
+    # by the number of still-open positions, not by journal length.
+    from ml.portfolio_journal import regrade_open
+    try:
+        _rg = regrade_open()
+        log.info("outcomes re-graded: %s", _rg)
+    except Exception as e:  # noqa: BLE001
+        log.warning("regrade_open failed: %s", e)
 
     # 6. Changes + opportunities + alert (so nothing is left out)
     from ml.notifier import detect_changes, scan_opportunities, build_alert, notify
