@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.359,
       "earnings_risk": false,
-      "outcome_return": -0.0068,
-      "outcome_exit": "open",
-      "outcome_days": 16,
-      "outcome_final": false
+      "outcome_return": -0.0051,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "TGT",
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.161,
       "earnings_risk": false,
-      "outcome_return": 0.1264,
-      "outcome_exit": "open",
-      "outcome_days": 16,
-      "outcome_final": false
+      "outcome_return": 0.109,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BOKF",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.257,
       "earnings_risk": false,
-      "outcome_return": -0.0432,
-      "outcome_exit": "open",
-      "outcome_days": 16,
-      "outcome_final": false
+      "outcome_return": -0.0585,
+      "outcome_exit": "stop",
+      "outcome_days": 18,
+      "outcome_final": true
     },
     {
       "ticker": "SCHW",
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.269,
       "earnings_risk": false,
-      "outcome_return": 0.0071,
-      "outcome_exit": "open",
-      "outcome_days": 16,
-      "outcome_final": false
+      "outcome_return": 0.0089,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ABNB",
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.047,
       "earnings_risk": false,
-      "outcome_return": 0.2053,
-      "outcome_exit": "open",
-      "outcome_days": 16,
-      "outcome_final": false
+      "outcome_return": 0.1979,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "GM",
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.22,
       "earnings_risk": false,
-      "outcome_return": -0.0375,
-      "outcome_exit": "open",
-      "outcome_days": 16,
-      "outcome_final": false
+      "outcome_return": -0.0522,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MDY",
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.06,
       "earnings_risk": false,
-      "outcome_return": -0.0111,
+      "outcome_return": -0.0288,
       "outcome_exit": "open",
-      "outcome_days": 16,
+      "outcome_days": 17,
       "outcome_final": false
     },
     {
@@ -217,10 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.25,
       "earnings_risk": false,
-      "outcome_return": 0.0154,
-      "outcome_exit": "open",
-      "outcome_days": 16,
-      "outcome_final": false
+      "outcome_return": -0.0436,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -330,10 +330,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0657,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 4,
-  "realized_stop_exits": 4,
+  "realized_avg_return": -0.0097,
+  "realized_hit_rate": 0.273,
+  "realized_final_count": 11,
+  "realized_stop_exits": 5,
   "changes": {
     "added": [
       "ATRO",

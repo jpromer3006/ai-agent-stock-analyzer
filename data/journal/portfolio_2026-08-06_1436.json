@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.191,
       "earnings_risk": false,
-      "outcome_return": -0.0357,
-      "outcome_exit": "open",
-      "outcome_days": 15,
-      "outcome_final": false
+      "outcome_return": -0.0573,
+      "outcome_exit": "stop",
+      "outcome_days": 18,
+      "outcome_final": true
     },
     {
       "ticker": "ABNB",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.176,
       "earnings_risk": false,
-      "outcome_return": 0.2233,
-      "outcome_exit": "open",
-      "outcome_days": 15,
-      "outcome_final": false
+      "outcome_return": 0.2289,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BOKF",
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.257,
       "earnings_risk": false,
-      "outcome_return": -0.05,
-      "outcome_exit": "open",
-      "outcome_days": 15,
-      "outcome_final": false
+      "outcome_return": -0.0652,
+      "outcome_exit": "stop",
+      "outcome_days": 17,
+      "outcome_final": true
     },
     {
       "ticker": "TGT",
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.191,
       "earnings_risk": false,
-      "outcome_return": 0.1144,
-      "outcome_exit": "open",
-      "outcome_days": 15,
-      "outcome_final": false
+      "outcome_return": 0.1016,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "GM",
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.259,
       "earnings_risk": false,
-      "outcome_return": -0.0282,
-      "outcome_exit": "open",
-      "outcome_days": 15,
-      "outcome_final": false
+      "outcome_return": -0.0165,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AVGO",
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.206,
       "earnings_risk": false,
-      "outcome_return": -0.0532,
-      "outcome_exit": "open",
-      "outcome_days": 15,
-      "outcome_final": false
+      "outcome_return": -0.0925,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "JETS",
@@ -217,10 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0144,
-      "outcome_exit": "open",
-      "outcome_days": 15,
-      "outcome_final": false
+      "outcome_return": 0.0155,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -330,10 +330,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0718,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 5,
-  "realized_stop_exits": 5,
+  "realized_avg_return": -0.0204,
+  "realized_hit_rate": 0.25,
+  "realized_final_count": 12,
+  "realized_stop_exits": 7,
   "changes": {
     "added": [
       "BBIO",

@@ -1,0 +1,187 @@
+1
+00:00:00,000 --> 00:00:00,956
+Good morning.
+
+2
+00:00:00,956 --> 00:00:06,694
+From the OROS Market Desk, here is the rundown for Friday, September 04, 2026.
+
+3
+00:00:06,694 --> 00:00:08,165
+The tape reads bull.
+
+4
+00:00:08,165 --> 00:00:14,049
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:14,049 --> 00:00:25,156
+And at the sports desk, day 45 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:25,156 --> 00:00:33,387
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:33,387 --> 00:00:40,751
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:40,713 --> 00:00:42,766
+First, the market open.
+
+9
+00:00:42,766 --> 00:00:49,191
+The S and P five hundred slipped 0.7 percent, while the NASDAQ lost 0.9.
+
+10
+00:00:49,191 --> 00:00:56,866
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+11
+00:00:56,866 --> 00:00:59,364
+The fear gauge sits at 14.0.
+
+12
+00:00:59,364 --> 00:01:08,690
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:08,652 --> 00:01:17,352
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+14
+00:01:17,352 --> 00:01:21,461
+Forcing a pick on a weak tape is how systems bleed.
+
+15
+00:01:21,461 --> 00:01:22,105
+We wait.
+
+16
+00:01:22,073 --> 00:01:24,379
+Turning to the model book.
+
+17
+00:01:24,379 --> 00:01:35,644
+The system holds 12 positions with 68% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+18
+00:01:35,644 --> 00:01:52,141
+New to the book: iShares Asia 50 ETF (AIA), argenx (ARGX), Ascendis Pharma A/S (ASND), Biogen (BIIB), Citigroup (C), ConocoPhillips (COP) — each passed the full entry gauntlet overnight.
+
+19
+00:01:52,141 --> 00:02:20,258
+Rotated out: BGC Group (BGC), which still advancing, but outranked by stronger names; Bristol-Myers Squibb (BMY), which still advancing, but outranked by stronger names; Bruker (BRKR), which still advancing, but outranked by stronger names; Chord Energy (CHRD), which still advancing, but outranked by stronger names.
+
+20
+00:02:20,258 --> 00:02:30,813
+Left on the bench: Chord Energy (CHRD), sector cap — already 3 in Energy; BGC Group (BGC), outranked — book full at 12.
+
+21
+00:02:30,813 --> 00:02:35,869
+Passing the scan is not enough; the book must afford you.
+
+22
+00:02:35,869 --> 00:02:41,903
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+23
+00:02:41,859 --> 00:02:49,697
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+24
+00:02:49,697 --> 00:02:57,869
+12 positions, led by APA Corporation, ticker APA, Chevron, ticker CVX, ConocoPhillips, ticker COP.
+
+25
+00:02:57,869 --> 00:03:09,209
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+26
+00:03:09,165 --> 00:03:11,353
+Over to the sports desk.
+
+27
+00:03:11,353 --> 00:03:20,380
+Day 45 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+28
+00:03:20,380 --> 00:03:25,121
+In first place, the index fund, in gray, at 101,942.
+
+29
+00:03:25,121 --> 00:03:31,777
+Then the live self-rebuilding book, in blue, 2.1 thousand back at 99,883.
+
+30
+00:03:31,777 --> 00:03:38,798
+Then the frozen first portfolio, the green line, 3.6 thousand back at 98,389.
+
+31
+00:03:38,798 --> 00:03:41,351
+The race has no finish line.
+
+32
+00:03:41,351 --> 00:03:45,545
+Same books, same dollars, back at it tomorrow.
+
+33
+00:03:45,545 --> 00:03:50,287
+Every line starts the same day with the same dollar.
+
+34
+00:03:50,287 --> 00:03:52,110
+Nothing is restated.
+
+35
+00:03:52,110 --> 00:04:01,018
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+36
+00:04:00,980 --> 00:04:02,529
+Tonight's takeaway.
+
+37
+00:04:02,529 --> 00:04:04,812
+A portfolio is not a museum.
+
+38
+00:04:04,812 --> 00:04:13,127
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+39
+00:04:13,101 --> 00:04:16,115
+Before we close, the disclosure segment.
+
+40
+00:04:16,115 --> 00:04:26,737
+Everything you heard today concerns one simulated portfolio of 12 positions — the same book, line for line, as this morning's emailed report.
+
+41
+00:04:26,737 --> 00:04:28,696
+One record, every surface.
+
+42
+00:04:28,696 --> 00:04:30,783
+A word on how this desk works.
+
+43
+00:04:30,783 --> 00:04:48,310
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+44
+00:04:48,310 --> 00:04:56,726
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+45
+00:04:56,726 --> 00:04:59,658
+All figures are simulated paper trading.
+
+46
+00:04:59,658 --> 00:05:06,037
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+47
+00:05:06,037 --> 00:05:09,996
+From the OROS Market Desk, have a disciplined session.

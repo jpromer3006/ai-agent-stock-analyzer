@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": 0.0642,
+      "outcome_return": 0.0747,
       "outcome_exit": "open",
-      "outcome_days": 17,
+      "outcome_days": 18,
       "outcome_final": false
     },
     {
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.151,
       "earnings_risk": false,
-      "outcome_return": 0.1258,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": 0.111,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ABNB",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.107,
       "earnings_risk": false,
-      "outcome_return": 0.2292,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": 0.2168,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BAC",
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.046,
       "earnings_risk": false,
-      "outcome_return": -0.0256,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.0126,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "C",
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.141,
       "earnings_risk": false,
-      "outcome_return": -0.0178,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.0189,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ARWR",
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.335,
       "earnings_risk": false,
-      "outcome_return": 0.0175,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.0497,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "GE",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.257,
       "earnings_risk": false,
-      "outcome_return": -0.0352,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.068,
+      "outcome_exit": "stop",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CHRD",
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.394,
       "earnings_risk": false,
-      "outcome_return": 0.0749,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": 0.1074,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "EMR",
@@ -200,10 +200,10 @@
       "led_by": "swing",
       "sentiment": 0.132,
       "earnings_risk": false,
-      "outcome_return": 0.0322,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.0338,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "APA",
@@ -217,10 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.138,
       "earnings_risk": false,
-      "outcome_return": 0.1958,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": 0.25,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -330,10 +330,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0705,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2,
+  "realized_avg_return": 0.0329,
+  "realized_hit_rate": 0.364,
+  "realized_final_count": 11,
+  "realized_stop_exits": 3,
   "changes": {
     "added": [
       "ARWR",
