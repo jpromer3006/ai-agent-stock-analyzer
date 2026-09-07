@@ -379,6 +379,20 @@
    },
    "invalidated": 0,
    "source": "cloud"
+  },
+  {
+   "date": "2026-09-07",
+   "total": 500,
+   "counts": {
+    "Advancing": 227,
+    "Basing": 177,
+    "Topping": 22,
+    "Declining": 74
+   },
+   "invalidated": 2,
+   "source": "cloud",
+   "scan_hash": "924413003fa2e668",
+   "stale_rows": 500
   }
  ]
 }
