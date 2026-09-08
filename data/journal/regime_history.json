@@ -9,6 +9,16 @@
    "total": 500,
    "streak": 1,
    "scan_hash": "924413003fa2e668"
+  },
+  {
+   "date": "2026-09-08",
+   "label": "NARROW BULL",
+   "pct_advancing": 46.4,
+   "advancing": 232,
+   "declining": 77,
+   "total": 500,
+   "streak": 2,
+   "scan_hash": "861d968963e0efa8"
   }
  ]
 }

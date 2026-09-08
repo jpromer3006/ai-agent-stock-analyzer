@@ -1,0 +1,242 @@
+{
+  "timestamp": "2026-09-08T16:39:03.341464Z",
+  "date": "2026-09-08",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 56074.75,
+  "cash": 43925.25,
+  "weights": {
+    "technical": 0.111,
+    "weinstein": 0.166,
+    "value": 0.024,
+    "canslim": 0.175,
+    "swing": 0.121,
+    "growth": 0.067,
+    "ipo": 0.118,
+    "sepa": 0.218
+  },
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "APA",
+      "sector": "Energy",
+      "conviction": 0.7837,
+      "shares": 58,
+      "dollars": 2511.98,
+      "weight_pct": 2.51,
+      "entry": 43.31,
+      "stop": 37.96,
+      "led_by": "sepa",
+      "sentiment": 0.202,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "FLR",
+      "sector": "Industrials",
+      "conviction": 0.7601,
+      "shares": 67,
+      "dollars": 3794.88,
+      "weight_pct": 3.79,
+      "entry": 56.64,
+      "stop": 51.98,
+      "led_by": "sepa",
+      "sentiment": 0.219,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "BGC",
+      "sector": "Financials",
+      "conviction": 0.7502,
+      "shares": 405,
+      "dollars": 4880.25,
+      "weight_pct": 4.88,
+      "entry": 12.05,
+      "stop": 11.28,
+      "led_by": "sepa",
+      "sentiment": 0.115,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CHRD",
+      "sector": "Energy",
+      "conviction": 0.7344,
+      "shares": 23,
+      "dollars": 3376.4,
+      "weight_pct": 3.38,
+      "entry": 146.8,
+      "stop": 133.34,
+      "led_by": "sepa",
+      "sentiment": 0.289,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "COP",
+      "sector": "Energy",
+      "conviction": 0.7193,
+      "shares": 21,
+      "dollars": 2832.27,
+      "weight_pct": 2.83,
+      "entry": 134.87,
+      "stop": 120.23,
+      "led_by": "sepa",
+      "sentiment": -0.008,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XLE",
+      "sector": "Other",
+      "conviction": 0.7193,
+      "shares": 64,
+      "dollars": 4099.84,
+      "weight_pct": 4.1,
+      "entry": 64.06,
+      "stop": 59.2,
+      "led_by": "sepa",
+      "sentiment": 0.217,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "XOP",
+      "sector": "Other",
+      "conviction": 0.7147,
+      "shares": 18,
+      "dollars": 3432.78,
+      "weight_pct": 3.43,
+      "entry": 190.71,
+      "stop": 173.57,
+      "led_by": "sepa",
+      "sentiment": 0.089,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ASND",
+      "sector": "Health Care",
+      "conviction": 0.7116,
+      "shares": 25,
+      "dollars": 6707.25,
+      "weight_pct": 6.71,
+      "entry": 268.29,
+      "stop": 255.89,
+      "led_by": "sepa",
+      "sentiment": 0.342,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "DE",
+      "sector": "Industrials",
+      "conviction": 0.7098,
+      "shares": 4,
+      "dollars": 2740.84,
+      "weight_pct": 2.74,
+      "entry": 685.21,
+      "stop": 620.22,
+      "led_by": "sepa",
+      "sentiment": 0.284,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "C",
+      "sector": "Financials",
+      "conviction": 0.697,
+      "shares": 75,
+      "dollars": 10317.0,
+      "weight_pct": 10.32,
+      "entry": 137.56,
+      "stop": 133.43,
+      "led_by": "sepa",
+      "sentiment": 0.019,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "TSM",
+      "sector": "Semiconductors",
+      "conviction": 0.6827,
+      "shares": 17,
+      "dollars": 7457.56,
+      "weight_pct": 7.46,
+      "entry": 438.68,
+      "stop": 420.53,
+      "led_by": "sepa",
+      "sentiment": 0.081,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "DBC",
+      "sector": "Financials",
+      "conviction": 0.6798,
+      "shares": 123,
+      "dollars": 3923.7,
+      "weight_pct": 3.92,
+      "entry": 31.9,
+      "stop": 29.36,
+      "led_by": "sepa",
+      "sentiment": 0.039,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "composite": 0.771,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "CVX",
+      "sector": "Energy",
+      "composite": 0.716,
+      "reason": "sector cap \u2014 already 3 in Energy"
+    },
+    {
+      "ticker": "BAC",
+      "sector": "Financials",
+      "composite": 0.677,
+      "reason": "outranked \u2014 book full at 12"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "500 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 56% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 44%"
+    }
+  ]
+}
