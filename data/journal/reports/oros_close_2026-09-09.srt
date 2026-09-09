@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:27,838
+On the day, the book is down 37 dollars.
+
+7
+00:00:27,838 --> 00:00:31,057
+Citigroup (C) leads, +0.8 percent.
+
+8
+00:00:31,057 --> 00:00:34,845
+Ascendis Pharma A/S (ASND) lags at -3.4.
+
+9
+00:00:34,845 --> 00:00:39,959
+The checklist is clear: nothing requires action today.
+
+10
+00:00:39,959 --> 00:00:42,586
+Today's lesson is noise versus signal.
+
+11
+00:00:42,586 --> 00:00:46,250
+Daily moves are weather; the weekly trend is climate.
+
+12
+00:00:46,250 --> 00:00:49,292
+The system never exits on a scary afternoon.
+
+13
+00:00:49,292 --> 00:00:54,822
+It acts only on weekly closes, because that is where the real information lives.
+
+14
+00:00:54,773 --> 00:01:02,609
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+15
+00:01:02,609 --> 00:01:13,529
+12 positions, led by APA Corporation, ticker APA, Taiwan Semiconductor Manufacturing, ticker TSM, Ascendis Pharma A/S, ticker ASND.
+
+16
+00:01:13,529 --> 00:01:24,866
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+17
+00:01:24,819 --> 00:01:29,658
+Now the part that makes this system different: the loop.
+
+18
+00:01:29,658 --> 00:01:32,077
+Every morning OROS proposes.
+
+19
+00:01:32,077 --> 00:01:42,705
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+20
+00:01:42,705 --> 00:01:46,679
+Inside the book today: 7 positions up, 5 down.
+
+21
+00:01:46,679 --> 00:01:49,012
+Best, APA at +2.96 percent.
+
+22
+00:01:49,012 --> 00:01:50,827
+Worst, ASND at -3.44.
+
+23
+00:01:50,827 --> 00:01:55,838
+Both go in the journal — wins and losses get the same ink.
+
+24
+00:01:55,838 --> 00:02:03,010
+The honest scoreboard reads: expectancy -4.95% per trade over 340 graded positions.
+
+25
+00:02:03,010 --> 00:02:10,095
+Because that record is soft, the system has throttled itself to 25% position size.
+
+26
+00:02:10,095 --> 00:02:15,280
+Nobody told it to — full size must be earned back with wins.
+
+27
+00:02:15,280 --> 00:02:31,092
+What tonight's read hands to tomorrow's open: 212 names close the day in Stage 2; 1 new invalidation queue exit reviews; position size stays cut to 25% until the record earns it back.
+
+28
+00:02:31,042 --> 00:02:33,270
+Over to the sports desk.
+
+29
+00:02:33,270 --> 00:02:42,462
+Day 48 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+30
+00:02:42,462 --> 00:02:47,289
+In first place, the index fund, in gray, at 101,480.
+
+31
+00:02:47,289 --> 00:02:54,067
+Then the live self-rebuilding book, in blue, 2.1 thousand back at 99,407.
+
+32
+00:02:54,067 --> 00:03:01,216
+Then the frozen first portfolio, the green line, 4.6 thousand back at 96,869.
+
+33
+00:03:01,216 --> 00:03:03,816
+The race has no finish line.
+
+34
+00:03:03,816 --> 00:03:08,086
+Same books, same dollars, back at it tomorrow.
+
+35
+00:03:08,086 --> 00:03:12,914
+Every line starts the same day with the same dollar.
+
+36
+00:03:12,914 --> 00:03:14,771
+Nothing is restated.
+
+37
+00:03:14,771 --> 00:03:23,679
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+38
+00:03:23,641 --> 00:03:30,976
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+39
+00:03:30,976 --> 00:03:33,217
+Nothing here is financial advice.
+
+40
+00:03:33,217 --> 00:03:36,206
+From the closing desk — see you at the open.
