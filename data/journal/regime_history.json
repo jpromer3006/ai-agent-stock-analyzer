@@ -39,6 +39,16 @@
    "total": 500,
    "streak": 2,
    "scan_hash": "4ffec1265255b72b"
+  },
+  {
+   "date": "2026-09-11",
+   "label": "MIXED",
+   "pct_advancing": 43.6,
+   "advancing": 218,
+   "declining": 87,
+   "total": 500,
+   "streak": 3,
+   "scan_hash": "21f94665ac54e80b"
   }
  ]
 }
