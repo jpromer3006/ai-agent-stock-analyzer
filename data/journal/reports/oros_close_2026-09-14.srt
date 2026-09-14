@@ -19,141 +19,141 @@ Why we grade in public: a forecast that is never checked is just content.
 Every morning call gets an evening verdict, and both go in the permanent record.
 
 6
-00:00:24,050 --> 00:00:27,945
-On the day, the book is down 921 dollars.
+00:00:24,050 --> 00:00:27,902
+On the day, the book is down 1,012 dollars.
 
 7
-00:00:27,945 --> 00:00:31,365
-BGC Group (BGC) leads, +0.9 percent.
+00:00:27,902 --> 00:00:30,858
+Deere & (DE) leads, +0.8 percent.
 
 8
-00:00:31,365 --> 00:00:33,931
-Citigroup (C) lags at -3.7.
+00:00:30,858 --> 00:00:35,696
+Taiwan Semiconductor Manufacturing (TSM) lags at -3.5.
 
 9
-00:00:33,931 --> 00:00:40,011
-The checklist carries 1 item; details are in the written report.
+00:00:35,696 --> 00:00:40,533
+The checklist is clear: nothing requires action today.
 
 10
-00:00:40,011 --> 00:00:42,638
+00:00:40,533 --> 00:00:43,160
 Today's lesson is noise versus signal.
 
 11
-00:00:42,638 --> 00:00:46,302
+00:00:43,160 --> 00:00:46,824
 Daily moves are weather; the weekly trend is climate.
 
 12
-00:00:46,302 --> 00:00:49,344
+00:00:46,824 --> 00:00:49,866
 The system never exits on a scary afternoon.
 
 13
-00:00:49,344 --> 00:00:54,874
+00:00:49,866 --> 00:00:55,397
 It acts only on weekly closes, because that is where the real information lives.
 
 14
-00:00:54,825 --> 00:01:02,597
+00:00:55,347 --> 00:01:03,119
 And here is the book itself — the actual holdings, identical to this morning's emailed report.
 
 15
-00:01:02,597 --> 00:01:12,602
+00:01:03,119 --> 00:01:13,124
 12 positions, led by Taiwan Semiconductor Manufacturing, ticker TSM, Credit Acceptance, ticker CACC, Citigroup, ticker C.
 
 16
-00:01:12,602 --> 00:01:23,847
+00:01:13,124 --> 00:01:24,369
 Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
 
 17
-00:01:23,803 --> 00:01:28,864
+00:01:24,325 --> 00:01:29,193
 Now the part that makes this system different: the loop.
 
 18
-00:01:28,864 --> 00:01:31,394
+00:01:29,193 --> 00:01:31,627
 Every morning OROS proposes.
 
 19
-00:01:31,394 --> 00:01:42,509
+00:01:31,627 --> 00:01:42,320
 Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
 
 20
-00:01:42,509 --> 00:01:46,666
-Inside the book today: 5 positions up, 7 down.
+00:01:42,320 --> 00:01:46,319
+Inside the book today: 4 positions up, 8 down.
 
 21
-00:01:46,666 --> 00:01:49,106
-Best, APA at +1.70 percent.
+00:01:46,319 --> 00:01:48,579
+Best, DE at +0.85 percent.
 
 22
-00:01:49,106 --> 00:01:50,914
-Worst, AVT at -6.17.
+00:01:48,579 --> 00:01:50,317
+Worst, AVT at -7.32.
 
 23
-00:01:50,914 --> 00:01:56,155
+00:01:50,317 --> 00:01:55,359
 Both go in the journal — wins and losses get the same ink.
 
 24
-00:01:56,155 --> 00:02:03,656
+00:01:55,359 --> 00:02:02,575
 The honest scoreboard reads: expectancy -4.95% per trade over 340 graded positions.
 
 25
-00:02:03,656 --> 00:02:11,066
+00:02:02,575 --> 00:02:09,703
 Because that record is soft, the system has throttled itself to 25% position size.
 
 26
-00:02:11,066 --> 00:02:16,488
+00:02:09,703 --> 00:02:14,919
 Nobody told it to — full size must be earned back with wins.
 
 27
-00:02:16,488 --> 00:02:29,501
-What tonight's read hands to tomorrow's open: 219 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+00:02:14,919 --> 00:02:27,437
+What tonight's read hands to tomorrow's open: 220 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
 
 28
-00:02:29,469 --> 00:02:31,717
+00:02:27,390 --> 00:02:29,645
 Over to the sports desk.
 
 29
-00:02:31,717 --> 00:02:40,991
+00:02:29,645 --> 00:02:38,946
 Day 51 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
 
 30
-00:02:40,991 --> 00:02:45,862
-In first place, the index fund, in gray, at 101,461.
+00:02:38,946 --> 00:02:43,832
+In first place, the index fund, in gray, at 101,278.
 
 31
-00:02:45,862 --> 00:02:52,700
-Then the live self-rebuilding book, in blue, 2.3 thousand back at 99,135.
+00:02:43,832 --> 00:02:50,690
+Then the live self-rebuilding book, in blue, 2.2 thousand back at 99,044.
 
 32
-00:02:52,700 --> 00:02:59,913
-Then the frozen first portfolio, the green line, 4.2 thousand back at 97,286.
+00:02:50,690 --> 00:02:57,924
+Then the frozen first portfolio, the green line, 4.0 thousand back at 97,234.
 
 33
-00:02:59,913 --> 00:03:02,536
+00:02:57,924 --> 00:03:00,555
 The race has no finish line.
 
 34
-00:03:02,536 --> 00:03:06,845
+00:03:00,555 --> 00:03:04,877
 Same books, same dollars, back at it tomorrow.
 
 35
-00:03:06,845 --> 00:03:11,716
+00:03:04,877 --> 00:03:09,762
 Every line starts the same day with the same dollar.
 
 36
-00:03:11,716 --> 00:03:13,590
+00:03:09,762 --> 00:03:11,641
 Nothing is restated.
 
 37
-00:03:13,590 --> 00:03:22,498
+00:03:11,641 --> 00:03:20,549
 On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
 
 38
-00:03:22,460 --> 00:03:29,795
+00:03:20,511 --> 00:03:27,846
 All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
 
 39
-00:03:29,795 --> 00:03:32,037
+00:03:27,846 --> 00:03:30,088
 Nothing here is financial advice.
 
 40
-00:03:32,037 --> 00:03:35,025
+00:03:30,088 --> 00:03:33,076
 From the closing desk — see you at the open.
