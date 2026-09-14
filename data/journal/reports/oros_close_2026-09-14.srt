@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:27,945
+On the day, the book is down 921 dollars.
+
+7
+00:00:27,945 --> 00:00:31,365
+BGC Group (BGC) leads, +0.9 percent.
+
+8
+00:00:31,365 --> 00:00:33,931
+Citigroup (C) lags at -3.7.
+
+9
+00:00:33,931 --> 00:00:40,011
+The checklist carries 1 item; details are in the written report.
+
+10
+00:00:40,011 --> 00:00:42,638
+Today's lesson is noise versus signal.
+
+11
+00:00:42,638 --> 00:00:46,302
+Daily moves are weather; the weekly trend is climate.
+
+12
+00:00:46,302 --> 00:00:49,344
+The system never exits on a scary afternoon.
+
+13
+00:00:49,344 --> 00:00:54,874
+It acts only on weekly closes, because that is where the real information lives.
+
+14
+00:00:54,825 --> 00:01:02,597
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+15
+00:01:02,597 --> 00:01:12,602
+12 positions, led by Taiwan Semiconductor Manufacturing, ticker TSM, Credit Acceptance, ticker CACC, Citigroup, ticker C.
+
+16
+00:01:12,602 --> 00:01:23,847
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+17
+00:01:23,803 --> 00:01:28,864
+Now the part that makes this system different: the loop.
+
+18
+00:01:28,864 --> 00:01:31,394
+Every morning OROS proposes.
+
+19
+00:01:31,394 --> 00:01:42,509
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+20
+00:01:42,509 --> 00:01:46,666
+Inside the book today: 5 positions up, 7 down.
+
+21
+00:01:46,666 --> 00:01:49,106
+Best, APA at +1.70 percent.
+
+22
+00:01:49,106 --> 00:01:50,914
+Worst, AVT at -6.17.
+
+23
+00:01:50,914 --> 00:01:56,155
+Both go in the journal — wins and losses get the same ink.
+
+24
+00:01:56,155 --> 00:02:03,656
+The honest scoreboard reads: expectancy -4.95% per trade over 340 graded positions.
+
+25
+00:02:03,656 --> 00:02:11,066
+Because that record is soft, the system has throttled itself to 25% position size.
+
+26
+00:02:11,066 --> 00:02:16,488
+Nobody told it to — full size must be earned back with wins.
+
+27
+00:02:16,488 --> 00:02:29,501
+What tonight's read hands to tomorrow's open: 219 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+28
+00:02:29,469 --> 00:02:31,717
+Over to the sports desk.
+
+29
+00:02:31,717 --> 00:02:40,991
+Day 51 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+30
+00:02:40,991 --> 00:02:45,862
+In first place, the index fund, in gray, at 101,461.
+
+31
+00:02:45,862 --> 00:02:52,700
+Then the live self-rebuilding book, in blue, 2.3 thousand back at 99,135.
+
+32
+00:02:52,700 --> 00:02:59,913
+Then the frozen first portfolio, the green line, 4.2 thousand back at 97,286.
+
+33
+00:02:59,913 --> 00:03:02,536
+The race has no finish line.
+
+34
+00:03:02,536 --> 00:03:06,845
+Same books, same dollars, back at it tomorrow.
+
+35
+00:03:06,845 --> 00:03:11,716
+Every line starts the same day with the same dollar.
+
+36
+00:03:11,716 --> 00:03:13,590
+Nothing is restated.
+
+37
+00:03:13,590 --> 00:03:22,498
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+38
+00:03:22,460 --> 00:03:29,795
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+39
+00:03:29,795 --> 00:03:32,037
+Nothing here is financial advice.
+
+40
+00:03:32,037 --> 00:03:35,025
+From the closing desk — see you at the open.
