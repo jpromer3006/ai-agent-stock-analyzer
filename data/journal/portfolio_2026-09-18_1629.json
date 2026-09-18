@@ -1,0 +1,230 @@
+{
+  "timestamp": "2026-09-18T16:29:02.177187Z",
+  "date": "2026-09-18",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 71084.24,
+  "cash": 28915.76,
+  "weights": {
+    "swing": 0.121,
+    "sepa": 0.218,
+    "technical": 0.111,
+    "value": 0.024,
+    "canslim": 0.175,
+    "weinstein": 0.166,
+    "growth": 0.067,
+    "ipo": 0.118
+  },
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "TSM",
+      "sector": "Semiconductors",
+      "conviction": 0.7723,
+      "shares": 20,
+      "dollars": 8605.8,
+      "weight_pct": 8.61,
+      "entry": 430.29,
+      "stop": 415.29,
+      "led_by": "sepa",
+      "sentiment": 0.293,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "APA",
+      "sector": "Energy",
+      "conviction": 0.7627,
+      "shares": 59,
+      "dollars": 2666.21,
+      "weight_pct": 2.67,
+      "entry": 45.19,
+      "stop": 39.95,
+      "led_by": "sepa",
+      "sentiment": 0.219,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ANET",
+      "sector": "Information Technology",
+      "conviction": 0.7511,
+      "shares": 27,
+      "dollars": 5340.6,
+      "weight_pct": 5.34,
+      "entry": 197.8,
+      "stop": 186.51,
+      "led_by": "sepa",
+      "sentiment": 0.182,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "CIBR",
+      "sector": "Other",
+      "conviction": 0.7506,
+      "shares": 71,
+      "dollars": 7059.53,
+      "weight_pct": 7.06,
+      "entry": 99.43,
+      "stop": 95.06,
+      "led_by": "sepa",
+      "sentiment": 0.23,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "conviction": 0.7386,
+      "shares": 30,
+      "dollars": 6582.9,
+      "weight_pct": 6.58,
+      "entry": 219.43,
+      "stop": 209.13,
+      "led_by": "sepa",
+      "sentiment": 0.194,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPU",
+      "sector": "Other",
+      "conviction": 0.7265,
+      "shares": 99,
+      "dollars": 4454.01,
+      "weight_pct": 4.45,
+      "entry": 44.99,
+      "stop": 41.86,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "EBAY",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.721,
+      "shares": 62,
+      "dollars": 6960.12,
+      "weight_pct": 6.96,
+      "entry": 112.26,
+      "stop": 107.28,
+      "led_by": "sepa",
+      "sentiment": 0.126,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.7166,
+      "shares": 21,
+      "dollars": 7029.33,
+      "weight_pct": 7.03,
+      "entry": 334.73,
+      "stop": 320.0,
+      "led_by": "sepa",
+      "sentiment": 0.101,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "SMCI",
+      "sector": "Information Technology",
+      "conviction": 0.7017,
+      "shares": 90,
+      "dollars": 3475.8,
+      "weight_pct": 3.48,
+      "entry": 38.62,
+      "stop": 35.18,
+      "led_by": "swing",
+      "sentiment": 0.35,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ECPG",
+      "sector": "Financials",
+      "conviction": 0.6987,
+      "shares": 61,
+      "dollars": 6095.73,
+      "weight_pct": 6.1,
+      "entry": 99.93,
+      "stop": 94.82,
+      "led_by": "sepa",
+      "sentiment": 0.199,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "ABBV",
+      "sector": "Health Care",
+      "conviction": 0.6955,
+      "shares": 36,
+      "dollars": 9497.52,
+      "weight_pct": 9.5,
+      "entry": 263.82,
+      "stop": 255.24,
+      "led_by": "sepa",
+      "sentiment": 0.014,
+      "earnings_risk": false,
+      "outcome_return": null
+    },
+    {
+      "ticker": "INTC",
+      "sector": "Semiconductors",
+      "conviction": 0.6772,
+      "shares": 31,
+      "dollars": 3316.69,
+      "weight_pct": 3.32,
+      "entry": 106.99,
+      "stop": 97.06,
+      "led_by": "sepa",
+      "sentiment": 0.017,
+      "earnings_risk": false,
+      "outcome_return": null
+    }
+  ],
+  "bench": [
+    {
+      "ticker": "DBC",
+      "sector": "Financials",
+      "composite": 0.669,
+      "reason": "outranked \u2014 book full at 12"
+    }
+  ],
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "500 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "12 holdings, 71% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 29%"
+    }
+  ]
+}
