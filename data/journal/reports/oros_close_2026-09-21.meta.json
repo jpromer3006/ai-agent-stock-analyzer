@@ -11,19 +11,19 @@
   },
   {
    "title": "The Portfolio \u2014 Actual Holdings",
-   "start_s": 42.66
+   "start_s": 41.87
   },
   {
    "title": "The Loop",
-   "start_s": 71.17
+   "start_s": 70.39
   },
   {
    "title": "The Portfolio \u2014 the Race at the Close",
-   "start_s": 131.78
+   "start_s": 132.48
   },
   {
    "title": "Sign-off",
-   "start_s": 184.24
+   "start_s": 185.08
   }
  ],
  "home_run_confirmed": null,
@@ -41,22 +41,22 @@
   },
   "today": {
    "date": "2026-09-21",
-   "live_pct": 1.1555336303710937,
-   "frozen_pct": 0.06747266578674316,
-   "spy_pct": 1.5222689894786923
+   "live_pct": 1.227890895843506,
+   "frozen_pct": 0.052375456809997556,
+   "spy_pct": 1.5504992215651825
   }
  },
  "breadth": {
   "date": "2026-09-21",
   "total": 491,
   "counts": {
-   "Advancing": 214,
-   "Basing": 145,
+   "Advancing": 210,
+   "Basing": 149,
    "Topping": 30,
    "Declining": 102
   },
-  "invalidated": 1,
+  "invalidated": 0,
   "source": "cloud"
  },
- "duration_s": 196.8
+ "duration_s": 197.6
 }
