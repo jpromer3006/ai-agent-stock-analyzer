@@ -272,11 +272,13 @@ def main() -> int:
     # the broadcast all read that one record — no second computation may ever
     # disagree with the emailed report again.
     try:
-        rec_j = json.loads(props[-1].read_text())
+        # was props[-1]: `props` was never defined, so this NameError'd
+        # silently every run and the changes never reached the journal.
+        rec_j = json.loads(path.read_text())
         rec_j["changes"] = changes
-        props[-1].write_text(json.dumps(rec_j, indent=1))
-    except Exception:
-        pass
+        path.write_text(json.dumps(rec_j, indent=1))
+    except Exception as e:  # noqa: BLE001
+        log.error("could not write changes into %s: %s", path.name, e)
     opps = scan_opportunities(symbols)
     alert = build_alert(changes, opps)
     if alert:

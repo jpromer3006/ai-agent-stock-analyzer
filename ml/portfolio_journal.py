@@ -144,6 +144,41 @@ def update_outcomes(path: Path, horizon_days: Optional[int] = None) -> Optional[
     return rec
 
 
+def regrade_open(limit: Optional[int] = None) -> dict:
+    """Re-grade every proposal that still holds a non-final position.
+
+    THE BUG THIS REPLACES (found 2026-08-31): scripts/oros_run.py re-graded
+    only `list_proposals()[-30:]`. A position that stops out finalises within
+    days, while it is still inside that 30-file window, and is counted
+    forever. A position that WORKS needs its full 20/60/120-day horizon, by
+    which time its file has long fallen out of the window, so it is never
+    re-graded and stays `outcome_exit: "open"` -- excluded from the
+    scoreboard permanently. Result: 1,142 positions stuck at "open" against
+    290 stops and 97 horizon exits, and every mandate reading negative
+    because its winners were structurally invisible.
+
+    Work is bounded: a proposal whose holdings are ALL final is skipped."""
+    done = graded = 0
+    for path in list_proposals():
+        try:
+            rec = load_proposal(path)
+        except Exception:
+            continue
+        hs = rec.get("holdings") or []
+        if hs and all(h.get("outcome_final") for h in hs):
+            done += 1
+            continue
+        try:
+            update_outcomes(path)
+            graded += 1
+        except Exception as e:  # noqa: BLE001
+            logger.warning("regrade failed for %s: %s", path.name, e)
+        if limit and graded >= limit:
+            break
+    logger.info("regrade_open: %d re-graded, %d already complete", graded, done)
+    return {"regraded": graded, "already_final": done}
+
+
 def compare_by_mandate() -> dict:
     """Group journaled proposals by mandate and report realized performance so far.
     This is the paper-trade scoreboard — FINAL outcomes only (stop hit or

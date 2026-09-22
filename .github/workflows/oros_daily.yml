@@ -32,9 +32,17 @@ on:
     #   close wrap:    20:50 UTC = 16:50 ET (EDT) -> lands ~17:15-17:45 ET
     # In winter (EST) both fire an hour earlier; adjust each November if
     # that matters.
-    - cron: "0 12 * * 1-5"
+    # 2026-09-21: the top-of-hour 12:00 UTC slot was landing 4 to 6 hours
+    # late (runs started 12:15 to 14:00 ET). Off the hour and earlier.
+    - cron: "17 10 * * 1-5"
     - cron: "50 20 * * 1-5"
-  workflow_dispatch: {}        # manual "Run workflow" button for testing
+  workflow_dispatch:          # manual "Run workflow" button for testing
+    inputs:
+      edition:
+        description: "morning (scan + Market Desk) or evening (Closing Bell)"
+        type: choice
+        options: [morning, evening, auto]
+        default: morning
 
 permissions:
   contents: write              # to commit the journal back
@@ -113,7 +121,15 @@ jobs:
       - name: OROS run (scan + auto portfolio + report email)
         run: |
           # scan cap comes from ml/oros_config.py — never restated here
-          OROS_RUN_SOURCE=cloud PYTHONPATH=. python scripts/oros_run.py --mandate auto
+          # The EDITION comes from the cron slot that fired, never the wall clock.
+          # 2026-09-21: the morning slot fired after 14:00 ET, "auto" read the
+          # clock, and the morning scan ran as a second Closing Bell.
+          EDITION="${{ github.event.inputs.edition || 'auto' }}"
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            if [ "${{ github.event.schedule }}" = "50 20 * * 1-5" ]; then EDITION=evening; else EDITION=morning; fi
+          fi
+          echo "edition=$EDITION (event=${{ github.event_name }} schedule='${{ github.event.schedule }}')"
+          OROS_RUN_SOURCE=cloud PYTHONPATH=. python scripts/oros_run.py --mandate auto --edition $EDITION
 
       - name: Alert on failure (email)
         # failure() alone misses timeout kills (GitHub marks those "cancelled");
