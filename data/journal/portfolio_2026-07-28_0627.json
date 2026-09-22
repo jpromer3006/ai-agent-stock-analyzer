@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": 0.024,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0071,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CASY",
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.149,
       "earnings_risk": false,
-      "outcome_return": 0.0005,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.0333,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "HST",
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.219,
       "earnings_risk": false,
-      "outcome_return": 0.0405,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0521,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "XLE",
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.295,
       "earnings_risk": false,
-      "outcome_return": 0.0463,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0634,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CCEP",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.279,
       "earnings_risk": false,
-      "outcome_return": -0.0112,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0106,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "SPG",
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.134,
       "earnings_risk": false,
-      "outcome_return": -0.044,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.0648,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "XOM",
@@ -200,10 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.227,
       "earnings_risk": false,
-      "outcome_return": 0.0248,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0379,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AVT",
@@ -217,7 +217,7 @@
       "led_by": "sepa",
       "sentiment": 0.055,
       "earnings_risk": false,
-      "outcome_return": -0.0542,
+      "outcome_return": -0.058,
       "outcome_exit": "stop",
       "outcome_days": 1,
       "outcome_final": true
@@ -251,10 +251,10 @@
       "led_by": "sepa",
       "sentiment": 0.156,
       "earnings_risk": false,
-      "outcome_return": 0.1081,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.1648,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ARWR",
@@ -268,10 +268,10 @@
       "led_by": "sepa",
       "sentiment": 0.335,
       "earnings_risk": false,
-      "outcome_return": 0.0007,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0392,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -369,8 +369,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0829,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
+  "realized_avg_return": 0.0021,
+  "realized_hit_rate": 0.583,
+  "realized_final_count": 12,
   "realized_stop_exits": 3
 }

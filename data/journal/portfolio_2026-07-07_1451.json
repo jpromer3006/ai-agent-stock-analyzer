@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.227,
       "earnings_risk": false,
-      "outcome_return": -0.0006,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0276,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BPOP",
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.318,
       "earnings_risk": false,
-      "outcome_return": 0.02,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0358,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MET",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": 0.0032,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0461,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ARWR",
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.296,
       "earnings_risk": false,
-      "outcome_return": -0.0474,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.0729,
+      "outcome_exit": "stop",
+      "outcome_days": 10,
+      "outcome_final": true
     },
     {
       "ticker": "COKE",
@@ -115,7 +115,7 @@
       "led_by": "sepa",
       "sentiment": 0.298,
       "earnings_risk": false,
-      "outcome_return": -0.1072,
+      "outcome_return": -0.1085,
       "outcome_exit": "stop",
       "outcome_days": 1,
       "outcome_final": true
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.131,
       "earnings_risk": false,
-      "outcome_return": -0.051,
+      "outcome_return": -0.0469,
       "outcome_exit": "stop",
-      "outcome_days": 5,
+      "outcome_days": 2,
       "outcome_final": true
     },
     {
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.156,
       "earnings_risk": false,
-      "outcome_return": -0.0228,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.0069,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CSX",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.143,
       "earnings_risk": false,
-      "outcome_return": 0.0794,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0422,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BEAM",
@@ -217,7 +217,7 @@
       "led_by": "sepa",
       "sentiment": 0.236,
       "earnings_risk": false,
-      "outcome_return": -0.0499,
+      "outcome_return": -0.0502,
       "outcome_exit": "stop",
       "outcome_days": 12,
       "outcome_final": true
@@ -256,8 +256,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0826,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 6,
-  "realized_stop_exits": 6
+  "realized_avg_return": -0.0351,
+  "realized_hit_rate": 0.333,
+  "realized_final_count": 12,
+  "realized_stop_exits": 7
 }

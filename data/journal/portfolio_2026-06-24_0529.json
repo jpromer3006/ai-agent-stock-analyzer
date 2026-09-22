@@ -97,7 +97,7 @@
       "led_by": "weinstein",
       "sentiment": 0.119,
       "earnings_risk": false,
-      "outcome_return": -0.0123,
+      "outcome_return": -0.0134,
       "outcome_exit": "horizon",
       "outcome_days": 5,
       "outcome_final": true
@@ -152,7 +152,7 @@
       "summary": "within limits; cash 45%"
     }
   ],
-  "realized_avg_return": 0.0443,
+  "realized_avg_return": 0.044,
   "realized_hit_rate": 0.5,
   "horizon_days": 5,
   "realized_final_count": 4,

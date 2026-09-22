@@ -30,10 +30,10 @@
       "led_by": "weinstein",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.026,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.0512,
+      "outcome_exit": "stop",
+      "outcome_days": 24,
+      "outcome_final": true
     },
     {
       "ticker": "KLAC",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.0006,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.1628,
+      "outcome_exit": "stop",
+      "outcome_days": 16,
+      "outcome_final": true
     },
     {
       "ticker": "MKSI",
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.14,
       "earnings_risk": false,
-      "outcome_return": -0.0416,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.1006,
+      "outcome_exit": "stop",
+      "outcome_days": 8,
+      "outcome_final": true
     },
     {
       "ticker": "ENTG",
@@ -149,7 +149,7 @@
       "led_by": "sepa",
       "sentiment": 0.336,
       "earnings_risk": false,
-      "outcome_return": -0.0659,
+      "outcome_return": -0.0703,
       "outcome_exit": "stop",
       "outcome_days": 4,
       "outcome_final": true
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": -0.039,
       "earnings_risk": false,
-      "outcome_return": -0.021,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.1104,
+      "outcome_exit": "stop",
+      "outcome_days": 15,
+      "outcome_final": true
     },
     {
       "ticker": "ALNT",
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.312,
       "earnings_risk": false,
-      "outcome_return": -0.0952,
+      "outcome_return": 0.1356,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 62,
       "outcome_final": false
     },
     {
@@ -200,10 +200,10 @@
       "led_by": "sepa",
       "sentiment": -0.02,
       "earnings_risk": false,
-      "outcome_return": -0.0051,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.0896,
+      "outcome_exit": "stop",
+      "outcome_days": 16,
+      "outcome_final": true
     },
     {
       "ticker": "FTXL",
@@ -234,7 +234,7 @@
       "led_by": "sepa",
       "sentiment": 0.158,
       "earnings_risk": false,
-      "outcome_return": -0.0891,
+      "outcome_return": -0.0893,
       "outcome_exit": "stop",
       "outcome_days": 6,
       "outcome_final": true
@@ -251,10 +251,10 @@
       "led_by": "sepa",
       "sentiment": 0.349,
       "earnings_risk": false,
-      "outcome_return": 0.0225,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.0543,
+      "outcome_exit": "stop",
+      "outcome_days": 30,
+      "outcome_final": true
     },
     {
       "ticker": "BJRI",
@@ -268,9 +268,9 @@
       "led_by": "sepa",
       "sentiment": 0.02,
       "earnings_risk": false,
-      "outcome_return": 0.1052,
+      "outcome_return": 0.1748,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 62,
       "outcome_final": false
     }
   ],
@@ -306,9 +306,9 @@
       "summary": "within limits; cash 3%"
     }
   ],
-  "realized_avg_return": -0.0775,
+  "realized_avg_return": -0.0911,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2
+  "realized_final_count": 8,
+  "realized_stop_exits": 8
 }

@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0062,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.0805,
+      "outcome_exit": "stop",
+      "outcome_days": 19,
+      "outcome_final": true
     },
     {
       "ticker": "MTZ",
@@ -92,10 +92,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.0499,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.186,
+      "outcome_exit": "stop",
+      "outcome_days": 12,
+      "outcome_final": true
     },
     {
       "ticker": "ALNT",
@@ -109,10 +109,10 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": -0.0939,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.1475,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BTSG",
@@ -126,10 +126,10 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0374,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": 0.0504,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "EWTX",
@@ -157,7 +157,7 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.1342,
+      "outcome_return": -0.1345,
       "outcome_exit": "stop",
       "outcome_days": 3,
       "outcome_final": true
@@ -188,10 +188,10 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": -0.0235,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": 0.1353,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MO",
@@ -205,10 +205,10 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.0308,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.0641,
+      "outcome_exit": "stop",
+      "outcome_days": 10,
+      "outcome_final": true
     },
     {
       "ticker": "KLIC",
@@ -236,7 +236,7 @@
       "led_by": "sepa",
       "sentiment": 0.326,
       "earnings_risk": false,
-      "outcome_return": -0.0448,
+      "outcome_return": -0.0494,
       "outcome_exit": "stop",
       "outcome_days": 1,
       "outcome_final": true
@@ -267,10 +267,10 @@
       "led_by": "sepa",
       "sentiment": 0.293,
       "earnings_risk": false,
-      "outcome_return": -0.0881,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.1202,
+      "outcome_exit": "stop",
+      "outcome_days": 14,
+      "outcome_final": true
     },
     {
       "ticker": "DLR",
@@ -284,7 +284,7 @@
       "led_by": "sepa",
       "sentiment": 0.252,
       "earnings_risk": false,
-      "outcome_return": -0.0695,
+      "outcome_return": -0.0759,
       "outcome_exit": "stop",
       "outcome_days": 1,
       "outcome_final": true
@@ -301,10 +301,10 @@
       "led_by": "sepa",
       "sentiment": 0.152,
       "earnings_risk": false,
-      "outcome_return": -0.0875,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.1115,
+      "outcome_exit": "stop",
+      "outcome_days": 10,
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -339,9 +339,9 @@
       "summary": "within limits; cash 34%"
     }
   ],
-  "realized_avg_return": -0.0765,
-  "realized_hit_rate": 0.0,
+  "realized_avg_return": -0.0701,
+  "realized_hit_rate": 0.167,
   "horizon_days": 20,
-  "realized_final_count": 4,
-  "realized_stop_exits": 4
+  "realized_final_count": 12,
+  "realized_stop_exits": 9
 }

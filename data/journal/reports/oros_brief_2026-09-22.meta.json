@@ -1,0 +1,97 @@
+{
+ "date": "Tuesday, September 22, 2026",
+ "regime": "bull",
+ "lesson": "book",
+ "race_day": 57,
+ "home_run": null,
+ "takeaway": "Tonight's takeaway. A portfolio is not a museum. Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.",
+ "breadth": {
+  "date": "2026-09-22",
+  "total": 500,
+  "counts": {
+   "Advancing": 204,
+   "Basing": 155,
+   "Topping": 31,
+   "Declining": 110
+  },
+  "invalidated": 1,
+  "source": "cloud",
+  "scan_hash": "d08980d85f330c69",
+  "stale_rows": 44,
+  "prior": {
+   "date": "2026-09-11",
+   "total": 500,
+   "counts": {
+    "Advancing": 218,
+    "Basing": 174,
+    "Topping": 21,
+    "Declining": 87
+   },
+   "invalidated": 1,
+   "source": "cloud",
+   "scan_hash": "21f94665ac54e80b",
+   "stale_rows": 47
+  }
+ },
+ "oros500": {
+  "name": "OROS 500",
+  "date": "2026-09-22",
+  "count": 500,
+  "target": 500,
+  "entered": [
+   "ARMG",
+   "ASTH",
+   "AVBP",
+   "DCOY",
+   "DMRA",
+   "EFSC"
+  ],
+  "left": [
+   "ATAI",
+   "BABX",
+   "BSCS",
+   "BSCT",
+   "BSCU",
+   "CRSR"
+  ]
+ },
+ "chapters": [
+  {
+   "title": "Tonight on the Market Desk",
+   "start_s": 0.0
+  },
+  {
+   "title": "The Market Open",
+   "start_s": 42.15
+  },
+  {
+   "title": "Chart of the Day",
+   "start_s": 69.49
+  },
+  {
+   "title": "OROS Scan \u2014 Top Pick of the Day",
+   "start_s": 153.13
+  },
+  {
+   "title": "Business Desk \u2014 the book",
+   "start_s": 202.11
+  },
+  {
+   "title": "The Portfolio \u2014 Actual Holdings",
+   "start_s": 295.39
+  },
+  {
+   "title": "Sports Desk \u2014 The Race",
+   "start_s": 323.77
+  },
+  {
+   "title": "The Takeaway",
+   "start_s": 376.34
+  },
+  {
+   "title": "Disclosure & Credits",
+   "start_s": 388.46
+  }
+ ],
+ "duration_s": 445.3
+}

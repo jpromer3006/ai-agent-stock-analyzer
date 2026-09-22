@@ -1,0 +1,260 @@
+{
+ "timestamp": "2026-09-22T15:01:40.823862Z",
+ "date": "2026-09-22",
+ "regime": "bull",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 69764.61,
+ "cash": 30235.39,
+ "weights": {
+  "growth": 0.067,
+  "weinstein": 0.166,
+  "ipo": 0.118,
+  "technical": 0.111,
+  "swing": 0.121,
+  "canslim": 0.175,
+  "sepa": 0.218,
+  "value": 0.024
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "ABBV",
+   "sector": "Health Care",
+   "conviction": 0.7599,
+   "shares": 32,
+   "dollars": 8497.28,
+   "weight_pct": 8.5,
+   "entry": 265.54,
+   "stop": 256.0,
+   "led_by": "sepa",
+   "sentiment": 0.069,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "TSM",
+   "sector": "Semiconductors",
+   "conviction": 0.7499,
+   "shares": 10,
+   "dollars": 4463.6,
+   "weight_pct": 4.46,
+   "entry": 446.36,
+   "stop": 417.09,
+   "led_by": "sepa",
+   "sentiment": 0.09,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ANET",
+   "sector": "Information Technology",
+   "conviction": 0.7394,
+   "shares": 19,
+   "dollars": 3879.61,
+   "weight_pct": 3.88,
+   "entry": 204.19,
+   "stop": 188.36,
+   "led_by": "sepa",
+   "sentiment": 0.071,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ECPG",
+   "sector": "Financials",
+   "conviction": 0.7382,
+   "shares": 60,
+   "dollars": 5970.0,
+   "weight_pct": 5.97,
+   "entry": 99.5,
+   "stop": 94.37,
+   "led_by": "sepa",
+   "sentiment": 0.237,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "EBAY",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.738,
+   "shares": 61,
+   "dollars": 6629.48,
+   "weight_pct": 6.63,
+   "entry": 108.68,
+   "stop": 103.63,
+   "led_by": "sepa",
+   "sentiment": 0.055,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AVT",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.7291,
+   "shares": 51,
+   "dollars": 4949.55,
+   "weight_pct": 4.95,
+   "entry": 97.05,
+   "stop": 90.98,
+   "led_by": "sepa",
+   "sentiment": 0.182,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AAPL",
+   "sector": "Information Technology",
+   "conviction": 0.729,
+   "shares": 14,
+   "dollars": 4793.6,
+   "weight_pct": 4.79,
+   "entry": 342.4,
+   "stop": 321.01,
+   "led_by": "sepa",
+   "sentiment": 0.22,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "NVDA",
+   "sector": "Semiconductors",
+   "conviction": 0.7122,
+   "shares": 23,
+   "dollars": 5249.52,
+   "weight_pct": 5.25,
+   "entry": 228.24,
+   "stop": 214.9,
+   "led_by": "sepa",
+   "sentiment": 0.205,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "BGC",
+   "sector": "Financials",
+   "conviction": 0.7067,
+   "shares": 480,
+   "dollars": 5856.0,
+   "weight_pct": 5.86,
+   "entry": 12.2,
+   "stop": 11.55,
+   "led_by": "sepa",
+   "sentiment": 0.197,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AIA",
+   "sector": "Other",
+   "conviction": 0.6968,
+   "shares": 34,
+   "dollars": 4968.42,
+   "weight_pct": 4.97,
+   "entry": 146.13,
+   "stop": 136.99,
+   "led_by": "sepa",
+   "sentiment": 0.207,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "XLK",
+   "sector": "Other",
+   "conviction": 0.6903,
+   "shares": 27,
+   "dollars": 5260.95,
+   "weight_pct": 5.26,
+   "entry": 194.85,
+   "stop": 183.3,
+   "led_by": "sepa",
+   "sentiment": 0.118,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AMZN",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.6667,
+   "shares": 36,
+   "dollars": 9246.6,
+   "weight_pct": 9.25,
+   "entry": 256.85,
+   "stop": 248.33,
+   "led_by": "sepa",
+   "sentiment": 0.322,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "DE",
+   "sector": "Industrials",
+   "composite": 0.664,
+   "reason": "outranked \u2014 book full at 12"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = BULL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "12 holdings, 70% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 30%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "AIA",
+   "AMZN",
+   "AVT",
+   "BGC",
+   "XLK"
+  ],
+  "removed": [
+   "AAPU",
+   "APA",
+   "CIBR",
+   "INTC",
+   "SMCI"
+  ],
+  "unchanged": [
+   "AAPL",
+   "ABBV",
+   "ANET",
+   "EBAY",
+   "ECPG",
+   "NVDA",
+   "TSM"
+  ]
+ }
+}

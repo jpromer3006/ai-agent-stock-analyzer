@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.093,
       "earnings_risk": false,
-      "outcome_return": 0.0654,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": 0.004,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "XLK",
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.05,
       "earnings_risk": false,
-      "outcome_return": -0.0016,
-      "outcome_exit": "open",
-      "outcome_days": 13,
-      "outcome_final": false
+      "outcome_return": -0.0047,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "GE",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.136,
       "earnings_risk": false,
-      "outcome_return": -0.0867,
+      "outcome_return": -0.0586,
       "outcome_exit": "stop",
-      "outcome_days": 4,
+      "outcome_days": 3,
       "outcome_final": true
     },
     {
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.103,
       "earnings_risk": false,
-      "outcome_return": -0.0201,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.0225,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "GM",
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.069,
       "earnings_risk": false,
-      "outcome_return": -0.0241,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.0361,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "XOP",
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": 0.0501,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0959,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "XBI",
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.23,
       "earnings_risk": false,
-      "outcome_return": 0.0192,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.0079,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "SCHW",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.247,
       "earnings_risk": false,
-      "outcome_return": 0.0146,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.0034,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BANR",
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.105,
       "earnings_risk": false,
-      "outcome_return": -0.015,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.0267,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "XLE",
@@ -200,10 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.231,
       "earnings_risk": false,
-      "outcome_return": 0.0434,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0656,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "TGT",
@@ -217,10 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.091,
       "earnings_risk": false,
-      "outcome_return": 0.0767,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": 0.0226,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -330,9 +330,9 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0752,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 2,
+  "realized_avg_return": -0.003,
+  "realized_hit_rate": 0.333,
+  "realized_final_count": 12,
   "realized_stop_exits": 2,
   "changes": {
     "added": [

@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": 0.0142,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": 0.0069,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BGC",
@@ -47,7 +47,7 @@
       "led_by": "sepa",
       "sentiment": 0.413,
       "earnings_risk": false,
-      "outcome_return": -0.064,
+      "outcome_return": -0.0657,
       "outcome_exit": "stop",
       "outcome_days": 6,
       "outcome_final": true
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.364,
       "earnings_risk": false,
-      "outcome_return": -0.072,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.0441,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "HST",
@@ -98,7 +98,7 @@
       "led_by": "sepa",
       "sentiment": 0.394,
       "earnings_risk": false,
-      "outcome_return": -0.0487,
+      "outcome_return": -0.057,
       "outcome_exit": "stop",
       "outcome_days": 1,
       "outcome_final": true
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": -0.0121,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": 0.07,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "HTO",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.096,
       "earnings_risk": false,
-      "outcome_return": -0.0032,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": 0.2081,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "SPG",
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.232,
       "earnings_risk": false,
-      "outcome_return": -0.0335,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.0534,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "DRS",
@@ -200,7 +200,7 @@
       "led_by": "sepa",
       "sentiment": 0.09,
       "earnings_risk": false,
-      "outcome_return": -0.0687,
+      "outcome_return": -0.0706,
       "outcome_exit": "stop",
       "outcome_days": 6,
       "outcome_final": true
@@ -217,7 +217,7 @@
       "led_by": "sepa",
       "sentiment": 0.049,
       "earnings_risk": false,
-      "outcome_return": -0.0952,
+      "outcome_return": -0.096,
       "outcome_exit": "stop",
       "outcome_days": 5,
       "outcome_final": true
@@ -318,8 +318,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0681,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 5,
+  "realized_avg_return": -0.0166,
+  "realized_hit_rate": 0.3,
+  "realized_final_count": 10,
   "realized_stop_exits": 5
 }

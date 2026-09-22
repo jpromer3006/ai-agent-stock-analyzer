@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.103,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0378,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
+      "outcome_final": true
     },
     {
       "ticker": "CACC",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.543,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0473,
+      "outcome_exit": "stop",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "C",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.231,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0406,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     },
     {
       "ticker": "APA",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.257,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0331,
+      "outcome_exit": "open",
+      "outcome_days": 7,
+      "outcome_final": false
     },
     {
       "ticker": "AIA",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.207,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0313,
+      "outcome_exit": "open",
+      "outcome_days": 7,
+      "outcome_final": false
     },
     {
       "ticker": "CHRD",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.316,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0896,
+      "outcome_exit": "open",
+      "outcome_days": 7,
+      "outcome_final": false
     },
     {
       "ticker": "DE",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.096,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0227,
+      "outcome_exit": "open",
+      "outcome_days": 7,
+      "outcome_final": false
     },
     {
       "ticker": "BGC",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.179,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0004,
+      "outcome_exit": "open",
+      "outcome_days": 7,
+      "outcome_final": false
     },
     {
       "ticker": "XOP",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0548,
+      "outcome_exit": "open",
+      "outcome_days": 6,
+      "outcome_final": false
     },
     {
       "ticker": "AVT",
@@ -156,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.192,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.012,
+      "outcome_exit": "open",
+      "outcome_days": 7,
+      "outcome_final": false
     },
     {
       "ticker": "CVX",
@@ -170,7 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.041,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0485,
+      "outcome_exit": "open",
+      "outcome_days": 7,
+      "outcome_final": false
     },
     {
       "ticker": "BIIB",
@@ -184,7 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.208,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.029,
+      "outcome_exit": "open",
+      "outcome_days": 7,
+      "outcome_final": false
     }
   ],
   "bench": [
@@ -232,5 +268,10 @@
       "role": "post-construction risk",
       "summary": "within limits; cash 34%"
     }
-  ]
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": -0.0419,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 3,
+  "realized_stop_exits": 3
 }

@@ -77,10 +77,10 @@
       "led_by": "weinstein",
       "sentiment": 0.185,
       "earnings_risk": false,
-      "outcome_return": -0.2272,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.1727,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "ENPH",
@@ -94,10 +94,10 @@
       "led_by": "weinstein",
       "sentiment": 0.265,
       "earnings_risk": false,
-      "outcome_return": -0.0948,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.0637,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "DASH",
@@ -111,10 +111,10 @@
       "led_by": "technical",
       "sentiment": 0.221,
       "earnings_risk": false,
-      "outcome_return": 0.0487,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": 0.0293,
+      "outcome_exit": "horizon",
+      "outcome_days": 5,
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -149,9 +149,9 @@
       "summary": "within limits; cash 43%"
     }
   ],
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
+  "realized_avg_return": -0.069,
+  "realized_hit_rate": 0.333,
   "horizon_days": 5,
-  "realized_final_count": 0,
+  "realized_final_count": 3,
   "realized_stop_exits": 0
 }

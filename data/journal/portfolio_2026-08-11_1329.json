@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.019,
       "earnings_risk": false,
-      "outcome_return": 0.0652,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": 0.027,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AVGO",
@@ -47,7 +47,7 @@
       "led_by": "sepa",
       "sentiment": 0.098,
       "earnings_risk": false,
-      "outcome_return": -0.0696,
+      "outcome_return": -0.0713,
       "outcome_exit": "stop",
       "outcome_days": 3,
       "outcome_final": true
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.144,
       "earnings_risk": false,
-      "outcome_return": -0.0179,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": -0.0186,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ATRO",
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.25,
       "earnings_risk": false,
-      "outcome_return": 0.0123,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": 0.0019,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "C",
@@ -98,10 +98,10 @@
       "led_by": "swing",
       "sentiment": 0.181,
       "earnings_risk": false,
-      "outcome_return": 0.016,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": 0.0191,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BOKF",
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": -0.079,
       "earnings_risk": false,
-      "outcome_return": -0.0028,
-      "outcome_exit": "open",
-      "outcome_days": 14,
-      "outcome_final": false
+      "outcome_return": 0.0083,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "GOOGL",
@@ -149,7 +149,7 @@
       "led_by": "sepa",
       "sentiment": 0.104,
       "earnings_risk": false,
-      "outcome_return": -0.0629,
+      "outcome_return": -0.0635,
       "outcome_exit": "stop",
       "outcome_days": 15,
       "outcome_final": true
@@ -166,7 +166,7 @@
       "led_by": "sepa",
       "sentiment": 0.104,
       "earnings_risk": false,
-      "outcome_return": -0.0574,
+      "outcome_return": -0.058,
       "outcome_exit": "stop",
       "outcome_days": 14,
       "outcome_final": true
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.004,
       "earnings_risk": false,
-      "outcome_return": 0.0786,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": 0.0362,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "XOP",
@@ -200,10 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": 0.0647,
-      "outcome_exit": "open",
-      "outcome_days": 13,
-      "outcome_final": false
+      "outcome_return": 0.1085,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AIQ",
@@ -217,10 +217,10 @@
       "led_by": "sepa",
       "sentiment": -0.038,
       "earnings_risk": false,
-      "outcome_return": 0.013,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": 0.0094,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -330,9 +330,9 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0599,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 4,
+  "realized_avg_return": -0.0042,
+  "realized_hit_rate": 0.583,
+  "realized_final_count": 12,
   "realized_stop_exits": 4,
   "changes": {
     "added": [

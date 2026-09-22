@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.306,
       "earnings_risk": false,
-      "outcome_return": -0.0657,
+      "outcome_return": -0.0653,
       "outcome_exit": "stop",
-      "outcome_days": 13,
+      "outcome_days": 5,
       "outcome_final": true
     },
     {
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.12,
       "earnings_risk": false,
-      "outcome_return": 0.0309,
-      "outcome_exit": "open",
-      "outcome_days": 16,
-      "outcome_final": false
+      "outcome_return": -0.0289,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ASML",
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": -0.042,
       "earnings_risk": false,
-      "outcome_return": -0.007,
-      "outcome_exit": "open",
-      "outcome_days": 16,
-      "outcome_final": false
+      "outcome_return": 0.0043,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "RTX",
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.26,
       "earnings_risk": false,
-      "outcome_return": -0.0944,
-      "outcome_exit": "open",
-      "outcome_days": 16,
-      "outcome_final": false
+      "outcome_return": -0.1085,
+      "outcome_exit": "stop",
+      "outcome_days": 18,
+      "outcome_final": true
     },
     {
       "ticker": "SBUX",
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.072,
       "earnings_risk": false,
-      "outcome_return": -0.0341,
-      "outcome_exit": "open",
-      "outcome_days": 16,
-      "outcome_final": false
+      "outcome_return": -0.0645,
+      "outcome_exit": "stop",
+      "outcome_days": 17,
+      "outcome_final": true
     },
     {
       "ticker": "XBI",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.23,
       "earnings_risk": false,
-      "outcome_return": 0.0108,
-      "outcome_exit": "open",
-      "outcome_days": 11,
-      "outcome_final": false
+      "outcome_return": -0.02,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "XLK",
@@ -200,10 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": 0.0489,
-      "outcome_exit": "open",
-      "outcome_days": 11,
-      "outcome_final": false
+      "outcome_return": 0.096,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "GD",
@@ -330,10 +330,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0595,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 6,
-  "realized_stop_exits": 6,
+  "realized_avg_return": -0.0398,
+  "realized_hit_rate": 0.167,
+  "realized_final_count": 12,
+  "realized_stop_exits": 8,
   "changes": {
     "added": [
       "ASML",

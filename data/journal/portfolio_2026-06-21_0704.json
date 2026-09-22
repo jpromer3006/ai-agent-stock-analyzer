@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0228,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": -0.149,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AMD",
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0364,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": -0.0629,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ANET",
@@ -81,7 +81,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0097,
+      "outcome_return": -0.0108,
       "outcome_exit": "stop",
       "outcome_days": 1,
       "outcome_final": true
@@ -98,7 +98,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0767,
+      "outcome_return": -0.0775,
       "outcome_exit": "stop",
       "outcome_days": 4,
       "outcome_final": true
@@ -153,9 +153,9 @@
       "summary": "within limits; cash 43%"
     }
   ],
-  "realized_avg_return": -0.0445,
+  "realized_avg_return": -0.0653,
   "realized_hit_rate": 0.0,
   "horizon_days": 20,
-  "realized_final_count": 4,
+  "realized_final_count": 6,
   "realized_stop_exits": 4
 }

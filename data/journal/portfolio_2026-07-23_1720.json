@@ -30,9 +30,9 @@
       "led_by": "weinstein",
       "sentiment": 0.211,
       "earnings_risk": true,
-      "outcome_return": 0.0059,
+      "outcome_return": -0.0039,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 42,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0245,
+      "outcome_return": -0.077,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 42,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0193,
+      "outcome_return": -0.0612,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 42,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0417,
+      "outcome_return": 0.0398,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 42,
       "outcome_final": false
     },
     {
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": -0.027,
       "earnings_risk": false,
-      "outcome_return": -0.0579,
-      "outcome_exit": "open",
+      "outcome_return": -0.0641,
+      "outcome_exit": "stop",
       "outcome_days": 3,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "XOM",
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0277,
+      "outcome_return": 0.0106,
       "outcome_exit": "open",
-      "outcome_days": 3,
+      "outcome_days": 42,
       "outcome_final": false
     },
     {
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": -0.04,
       "earnings_risk": false,
-      "outcome_return": 0.0417,
-      "outcome_exit": "open",
-      "outcome_days": 3,
-      "outcome_final": false
+      "outcome_return": -0.0547,
+      "outcome_exit": "stop",
+      "outcome_days": 19,
+      "outcome_final": true
     },
     {
       "ticker": "UNP",
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0343,
-      "outcome_exit": "open",
-      "outcome_days": 3,
-      "outcome_final": false
+      "outcome_return": -0.1157,
+      "outcome_exit": "stop",
+      "outcome_days": 41,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -220,8 +220,8 @@
     }
   ],
   "horizon_days": 120,
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_avg_return": -0.0782,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 3,
+  "realized_stop_exits": 3
 }

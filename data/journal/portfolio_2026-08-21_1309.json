@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.186,
       "earnings_risk": false,
-      "outcome_return": -0.017,
-      "outcome_exit": "open",
-      "outcome_days": 10,
-      "outcome_final": false
+      "outcome_return": 0.0101,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "LLY",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.325,
       "earnings_risk": false,
-      "outcome_return": -0.0139,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": -0.0315,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AIA",
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.165,
       "earnings_risk": false,
-      "outcome_return": 0.0343,
-      "outcome_exit": "open",
-      "outcome_days": 10,
-      "outcome_final": false
+      "outcome_return": 0.0576,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BATRK",
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.253,
       "earnings_risk": false,
-      "outcome_return": -0.0118,
-      "outcome_exit": "open",
-      "outcome_days": 10,
-      "outcome_final": false
+      "outcome_return": -0.063,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MDLZ",
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.276,
       "earnings_risk": false,
-      "outcome_return": -0.0391,
-      "outcome_exit": "open",
-      "outcome_days": 10,
-      "outcome_final": false
+      "outcome_return": -0.0513,
+      "outcome_exit": "stop",
+      "outcome_days": 19,
+      "outcome_final": true
     },
     {
       "ticker": "SCHW",
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.239,
       "earnings_risk": false,
-      "outcome_return": -0.0047,
-      "outcome_exit": "open",
-      "outcome_days": 10,
-      "outcome_final": false
+      "outcome_return": -0.0265,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BIIB",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": 0.0295,
-      "outcome_exit": "open",
-      "outcome_days": 10,
-      "outcome_final": false
+      "outcome_return": 0.022,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "EQIX",
@@ -200,10 +200,10 @@
       "led_by": "sepa",
       "sentiment": -0.051,
       "earnings_risk": false,
-      "outcome_return": -0.0134,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.0174,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "XOP",
@@ -217,10 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.051,
       "earnings_risk": false,
-      "outcome_return": -0.0008,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": -0.0144,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -300,10 +300,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0492,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3,
+  "realized_avg_return": -0.0218,
+  "realized_hit_rate": 0.25,
+  "realized_final_count": 12,
+  "realized_stop_exits": 4,
   "changes": {
     "added": [
       "BIIB",

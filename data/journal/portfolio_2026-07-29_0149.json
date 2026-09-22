@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.178,
       "earnings_risk": false,
-      "outcome_return": -0.0246,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.058,
+      "outcome_exit": "stop",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CCEP",
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.235,
       "earnings_risk": false,
-      "outcome_return": -0.031,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.0221,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MET",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": -0.0323,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.0099,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ACGL",
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.064,
       "earnings_risk": false,
-      "outcome_return": -0.0666,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.0541,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MTCH",
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.23,
       "earnings_risk": false,
-      "outcome_return": 0.1473,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": 0.1376,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ARWR",
@@ -200,10 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.335,
       "earnings_risk": false,
-      "outcome_return": 0.0155,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": 0.0389,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "SPG",
@@ -217,10 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.134,
       "earnings_risk": false,
-      "outcome_return": -0.0778,
-      "outcome_exit": "open",
-      "outcome_days": 17,
-      "outcome_final": false
+      "outcome_return": -0.0925,
+      "outcome_exit": "stop",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -294,8 +294,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0908,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2
+  "realized_avg_return": -0.0269,
+  "realized_hit_rate": 0.222,
+  "realized_final_count": 9,
+  "realized_stop_exits": 4
 }

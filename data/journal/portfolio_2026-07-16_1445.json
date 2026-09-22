@@ -47,10 +47,10 @@
       "led_by": "technical",
       "sentiment": 0.131,
       "earnings_risk": false,
-      "outcome_return": -0.0939,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": 0.1761,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MPWR",
@@ -81,10 +81,10 @@
       "led_by": "technical",
       "sentiment": 0.204,
       "earnings_risk": false,
-      "outcome_return": -0.1069,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": -0.1237,
+      "outcome_exit": "stop",
+      "outcome_days": 6,
+      "outcome_final": true
     },
     {
       "ticker": "SHOP",
@@ -98,10 +98,10 @@
       "led_by": "technical",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.1086,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": 0.2617,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MELI",
@@ -154,8 +154,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_avg_return": 0.1047,
+  "realized_hit_rate": 0.667,
+  "realized_final_count": 3,
+  "realized_stop_exits": 1
 }

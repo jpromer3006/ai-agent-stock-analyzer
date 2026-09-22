@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.0006,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.1628,
+      "outcome_exit": "stop",
+      "outcome_days": 16,
+      "outcome_final": true
     },
     {
       "ticker": "AEIS",
@@ -81,7 +81,7 @@
       "led_by": "sepa",
       "sentiment": 0.286,
       "earnings_risk": false,
-      "outcome_return": -0.0462,
+      "outcome_return": -0.0465,
       "outcome_exit": "stop",
       "outcome_days": 2,
       "outcome_final": true
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": -0.02,
       "earnings_risk": false,
-      "outcome_return": -0.0051,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.0896,
+      "outcome_exit": "stop",
+      "outcome_days": 16,
+      "outcome_final": true
     },
     {
       "ticker": "ALNT",
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.312,
       "earnings_risk": false,
-      "outcome_return": -0.0952,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.0775,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "IBKR",
@@ -204,9 +204,9 @@
       "summary": "within limits; cash 43%"
     }
   ],
-  "realized_avg_return": -0.0462,
+  "realized_avg_return": -0.0941,
   "realized_hit_rate": 0.0,
   "horizon_days": 20,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1
+  "realized_final_count": 4,
+  "realized_stop_exits": 3
 }

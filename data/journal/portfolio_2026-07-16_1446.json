@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.118,
       "earnings_risk": true,
-      "outcome_return": 0.0142,
+      "outcome_return": -0.086,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 47,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "technical",
       "sentiment": 0.142,
       "earnings_risk": true,
-      "outcome_return": -0.0079,
+      "outcome_return": -0.0537,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 47,
       "outcome_final": false
     },
     {
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.127,
       "earnings_risk": true,
-      "outcome_return": -0.0332,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.127,
+      "outcome_exit": "stop",
+      "outcome_days": 9,
+      "outcome_final": true
     },
     {
       "ticker": "DE",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.088,
       "earnings_risk": false,
-      "outcome_return": 0.0519,
+      "outcome_return": 0.1727,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 47,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.379,
       "earnings_risk": false,
-      "outcome_return": -0.005,
+      "outcome_return": 0.1365,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 47,
       "outcome_final": false
     },
     {
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.305,
       "earnings_risk": false,
-      "outcome_return": -0.0143,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.0406,
+      "outcome_exit": "stop",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "CVX",
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.199,
       "earnings_risk": false,
-      "outcome_return": 0.0465,
+      "outcome_return": 0.1117,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 47,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.214,
       "earnings_risk": true,
-      "outcome_return": 0.0536,
+      "outcome_return": 0.0699,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 47,
       "outcome_final": false
     },
     {
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.216,
       "earnings_risk": true,
-      "outcome_return": 0.0412,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.0471,
+      "outcome_exit": "stop",
+      "outcome_days": 33,
+      "outcome_final": true
     },
     {
       "ticker": "RTX",
@@ -183,9 +183,9 @@
       "led_by": "weinstein",
       "sentiment": 0.293,
       "earnings_risk": false,
-      "outcome_return": 0.1233,
+      "outcome_return": -0.03,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 47,
       "outcome_final": false
     },
     {
@@ -200,9 +200,9 @@
       "led_by": "technical",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.0438,
+      "outcome_return": -0.0467,
       "outcome_exit": "stop",
-      "outcome_days": 3,
+      "outcome_days": 2,
       "outcome_final": true
     }
   ],
@@ -239,8 +239,8 @@
     }
   ],
   "horizon_days": 120,
-  "realized_avg_return": -0.0438,
+  "realized_avg_return": -0.0653,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1
+  "realized_final_count": 4,
+  "realized_stop_exits": 4
 }

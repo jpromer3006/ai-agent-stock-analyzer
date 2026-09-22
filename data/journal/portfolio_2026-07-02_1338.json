@@ -72,10 +72,10 @@
       "led_by": "sepa",
       "sentiment": 0.305,
       "earnings_risk": false,
-      "outcome_return": -0.0323,
-      "outcome_exit": "open",
-      "outcome_days": 11,
-      "outcome_final": false
+      "outcome_return": 0.0002,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MYRG",
@@ -148,10 +148,10 @@
       "led_by": "sepa",
       "sentiment": 0.254,
       "earnings_risk": false,
-      "outcome_return": -0.0851,
-      "outcome_exit": "open",
+      "outcome_return": -0.1061,
+      "outcome_exit": "stop",
       "outcome_days": 11,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "EWTX",
@@ -228,9 +228,9 @@
       "summary": "within limits; cash 1%"
     }
   ],
-  "realized_avg_return": -0.1136,
-  "realized_hit_rate": 0.0,
+  "realized_avg_return": -0.0732,
+  "realized_hit_rate": 0.333,
   "horizon_days": 20,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1
+  "realized_final_count": 3,
+  "realized_stop_exits": 2
 }

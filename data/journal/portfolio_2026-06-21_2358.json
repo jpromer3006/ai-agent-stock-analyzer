@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.328,
       "earnings_risk": false,
-      "outcome_return": 0.0476,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": 0.0525,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ECPG",
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.285,
       "earnings_risk": false,
-      "outcome_return": 0.091,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": 0.0677,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MU",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.298,
       "earnings_risk": false,
-      "outcome_return": 0.042,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": 0.0642,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "LRCX",
@@ -217,10 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.24,
       "earnings_risk": false,
-      "outcome_return": -0.1208,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": -0.1652,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -255,9 +255,9 @@
       "summary": "sector concentration Financials 36%; cash 1%"
     }
   ],
-  "realized_avg_return": -0.1504,
-  "realized_hit_rate": 0.0,
+  "realized_avg_return": 0.0048,
+  "realized_hit_rate": 0.75,
   "horizon_days": 20,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3
+  "realized_final_count": 4,
+  "realized_stop_exits": 0
 }

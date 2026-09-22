@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0581,
+      "outcome_return": -0.0253,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 58,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.06,
       "earnings_risk": false,
-      "outcome_return": 0.0508,
+      "outcome_return": -0.0317,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 58,
       "outcome_final": false
     },
     {
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.172,
       "earnings_risk": false,
-      "outcome_return": -0.0668,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.0772,
+      "outcome_exit": "stop",
+      "outcome_days": 46,
+      "outcome_final": true
     },
     {
       "ticker": "ABBV",
@@ -98,9 +98,9 @@
       "led_by": "technical",
       "sentiment": 0.175,
       "earnings_risk": false,
-      "outcome_return": 0.0136,
+      "outcome_return": 0.0442,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 58,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": -0.0146,
+      "outcome_return": 0.0406,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 58,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.147,
       "earnings_risk": false,
-      "outcome_return": 0.0202,
+      "outcome_return": 0.0683,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 58,
       "outcome_final": false
     },
     {
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.269,
       "earnings_risk": false,
-      "outcome_return": -0.0602,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.1784,
+      "outcome_exit": "stop",
+      "outcome_days": 53,
+      "outcome_final": true
     },
     {
       "ticker": "MRK",
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.325,
       "earnings_risk": false,
-      "outcome_return": 0.0036,
+      "outcome_return": 0.1726,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 58,
       "outcome_final": false
     }
   ],
@@ -204,9 +204,9 @@
       "summary": "within limits; cash 8%"
     }
   ],
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
+  "realized_avg_return": -0.1278,
+  "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_final_count": 2,
+  "realized_stop_exits": 2
 }

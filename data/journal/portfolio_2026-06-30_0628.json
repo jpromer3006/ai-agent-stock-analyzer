@@ -89,10 +89,10 @@
       "led_by": "sepa",
       "sentiment": 0.228,
       "earnings_risk": false,
-      "outcome_return": 0.038,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0226,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "DRH",
@@ -106,10 +106,10 @@
       "led_by": "sepa",
       "sentiment": 0.186,
       "earnings_risk": false,
-      "outcome_return": 0.0016,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0718,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MYRG",
@@ -137,9 +137,9 @@
       "led_by": "sepa",
       "sentiment": 0.269,
       "earnings_risk": false,
-      "outcome_return": -0.1544,
-      "outcome_exit": "stop",
-      "outcome_days": 12,
+      "outcome_return": -0.1051,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
       "outcome_final": true
     },
     {
@@ -168,10 +168,10 @@
       "led_by": "sepa",
       "sentiment": 0.306,
       "earnings_risk": false,
-      "outcome_return": 0.0491,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.039,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ALNT",
@@ -185,10 +185,10 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": -0.1659,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.2089,
+      "outcome_exit": "stop",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "NESR",
@@ -237,9 +237,9 @@
       "summary": "within limits; cash 1%"
     }
   ],
-  "realized_avg_return": -0.1544,
-  "realized_hit_rate": 0.0,
+  "realized_avg_return": -0.0361,
+  "realized_hit_rate": 0.6,
   "horizon_days": 20,
-  "realized_final_count": 1,
+  "realized_final_count": 5,
   "realized_stop_exits": 1
 }

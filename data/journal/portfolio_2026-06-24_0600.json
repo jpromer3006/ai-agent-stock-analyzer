@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.106,
       "earnings_risk": false,
-      "outcome_return": 0.0142,
+      "outcome_return": -0.0258,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 62,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "technical",
       "sentiment": 0.313,
       "earnings_risk": false,
-      "outcome_return": 0.0164,
+      "outcome_return": -0.0071,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 62,
       "outcome_final": false
     },
     {
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": -0.039,
       "earnings_risk": false,
-      "outcome_return": -0.021,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.1104,
+      "outcome_exit": "stop",
+      "outcome_days": 15,
+      "outcome_final": true
     },
     {
       "ticker": "CSCO",
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.245,
       "earnings_risk": false,
-      "outcome_return": -0.0698,
+      "outcome_return": -0.1144,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 62,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.112,
       "earnings_risk": false,
-      "outcome_return": 0.1002,
+      "outcome_return": 0.1252,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 62,
       "outcome_final": false
     },
     {
@@ -132,7 +132,7 @@
       "led_by": "sepa",
       "sentiment": 0.344,
       "earnings_risk": false,
-      "outcome_return": -0.0557,
+      "outcome_return": -0.0587,
       "outcome_exit": "stop",
       "outcome_days": 1,
       "outcome_final": true
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": -0.051,
       "earnings_risk": false,
-      "outcome_return": 0.0833,
+      "outcome_return": 0.2685,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 62,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": -0.08,
       "earnings_risk": false,
-      "outcome_return": 0.0477,
+      "outcome_return": 0.0994,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 62,
       "outcome_final": false
     },
     {
@@ -200,10 +200,10 @@
       "led_by": "technical",
       "sentiment": 0.248,
       "earnings_risk": false,
-      "outcome_return": 0.0538,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.0243,
+      "outcome_exit": "stop",
+      "outcome_days": 13,
+      "outcome_final": true
     },
     {
       "ticker": "PG",
@@ -217,10 +217,10 @@
       "led_by": "technical",
       "sentiment": 0.2,
       "earnings_risk": false,
-      "outcome_return": 0.0036,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.0389,
+      "outcome_exit": "stop",
+      "outcome_days": 13,
+      "outcome_final": true
     },
     {
       "ticker": "HD",
@@ -234,10 +234,10 @@
       "led_by": "technical",
       "sentiment": 0.288,
       "earnings_risk": false,
-      "outcome_return": 0.1031,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.0216,
+      "outcome_exit": "stop",
+      "outcome_days": 48,
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -272,9 +272,9 @@
       "summary": "within limits; cash 8%"
     }
   ],
-  "realized_avg_return": -0.0579,
+  "realized_avg_return": -0.0523,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2
+  "realized_final_count": 6,
+  "realized_stop_exits": 6
 }

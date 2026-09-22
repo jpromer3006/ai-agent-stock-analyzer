@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.109,
       "earnings_risk": false,
-      "outcome_return": -0.0605,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.1403,
+      "outcome_exit": "stop",
+      "outcome_days": 18,
+      "outcome_final": true
     },
     {
       "ticker": "ARM",
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.172,
       "earnings_risk": false,
-      "outcome_return": -0.2826,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.4038,
+      "outcome_exit": "stop",
+      "outcome_days": 17,
+      "outcome_final": true
     },
     {
       "ticker": "NBIS",
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0831,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.0676,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MUU",
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0573,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.0616,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -221,9 +221,9 @@
       "summary": "within limits; cash 46%"
     }
   ],
-  "realized_avg_return": -0.2338,
+  "realized_avg_return": -0.1814,
   "realized_hit_rate": 0.0,
   "horizon_days": 20,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1
+  "realized_final_count": 5,
+  "realized_stop_exits": 3
 }

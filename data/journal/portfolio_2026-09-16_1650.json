@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.246,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0497,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "MET",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.256,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0195,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "AVT",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.128,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0324,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "CACC",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.543,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0431,
+      "outcome_exit": "stop",
+      "outcome_days": 2,
+      "outcome_final": true
     },
     {
       "ticker": "XOM",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.271,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0343,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "CVX",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": -0.043,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0446,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "AAPL",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.171,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0287,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "ANET",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.09,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0222,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "ABBV",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.107,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0088,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "C",
@@ -156,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.323,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0289,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "CDW",
@@ -170,7 +200,10 @@
       "led_by": "technical",
       "sentiment": 0.162,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0312,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     },
     {
       "ticker": "EBAY",
@@ -184,7 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.082,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0016,
+      "outcome_exit": "open",
+      "outcome_days": 4,
+      "outcome_final": false
     }
   ],
   "bench": [
@@ -232,5 +268,10 @@
       "role": "post-construction risk",
       "summary": "within limits; cash 21%"
     }
-  ]
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": -0.0431,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 1,
+  "realized_stop_exits": 1
 }

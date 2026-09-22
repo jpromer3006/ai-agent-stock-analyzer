@@ -44,9 +44,9 @@
       "led_by": "sepa",
       "sentiment": 0.54,
       "earnings_risk": false,
-      "outcome_return": -0.0203,
+      "outcome_return": -0.0799,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 59,
       "outcome_final": false
     },
     {
@@ -61,7 +61,7 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.1791,
+      "outcome_return": -0.186,
       "outcome_exit": "stop",
       "outcome_days": 12,
       "outcome_final": true
@@ -78,9 +78,9 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": -0.0943,
+      "outcome_return": 0.117,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 59,
       "outcome_final": false
     },
     {
@@ -123,9 +123,9 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0729,
+      "outcome_return": -0.0805,
       "outcome_exit": "stop",
-      "outcome_days": 12,
+      "outcome_days": 19,
       "outcome_final": true
     },
     {
@@ -188,9 +188,9 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": 0.0792,
+      "outcome_return": -0.065,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 59,
       "outcome_final": false
     },
     {
@@ -205,10 +205,10 @@
       "led_by": "sepa",
       "sentiment": 0.456,
       "earnings_risk": false,
-      "outcome_return": -0.0537,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.1401,
+      "outcome_exit": "stop",
+      "outcome_days": 30,
+      "outcome_final": true
     },
     {
       "ticker": "KLIC",
@@ -236,10 +236,10 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0009,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.1795,
+      "outcome_exit": "stop",
+      "outcome_days": 56,
+      "outcome_final": true
     },
     {
       "ticker": "ICHR",
@@ -305,9 +305,9 @@
       "summary": "within limits; cash 59%"
     }
   ],
-  "realized_avg_return": -0.1441,
+  "realized_avg_return": -0.1507,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 5,
-  "realized_stop_exits": 5
+  "realized_final_count": 7,
+  "realized_stop_exits": 7
 }

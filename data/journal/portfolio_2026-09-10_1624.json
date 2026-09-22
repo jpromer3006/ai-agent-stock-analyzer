@@ -30,7 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.202,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0387,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     },
     {
       "ticker": "C",
@@ -44,7 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.034,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0326,
+      "outcome_exit": "stop",
+      "outcome_days": 4,
+      "outcome_final": true
     },
     {
       "ticker": "CVX",
@@ -58,7 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0478,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     },
     {
       "ticker": "CACC",
@@ -72,7 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.543,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0603,
+      "outcome_exit": "stop",
+      "outcome_days": 7,
+      "outcome_final": true
     },
     {
       "ticker": "TSM",
@@ -86,7 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.162,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0399,
+      "outcome_exit": "stop",
+      "outcome_days": 3,
+      "outcome_final": true
     },
     {
       "ticker": "AAPL",
@@ -100,7 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.129,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0685,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     },
     {
       "ticker": "DE",
@@ -114,7 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.141,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.028,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     },
     {
       "ticker": "CHRD",
@@ -128,7 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.316,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0911,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     },
     {
       "ticker": "XLE",
@@ -142,7 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.302,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0436,
+      "outcome_exit": "open",
+      "outcome_days": 7,
+      "outcome_final": false
     },
     {
       "ticker": "BE",
@@ -156,7 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.07,
+      "outcome_exit": "open",
+      "outcome_days": 8,
+      "outcome_final": false
     },
     {
       "ticker": "XOP",
@@ -170,7 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.14,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": -0.0526,
+      "outcome_exit": "open",
+      "outcome_days": 7,
+      "outcome_final": false
     },
     {
       "ticker": "XLK",
@@ -184,7 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.055,
       "earnings_risk": false,
-      "outcome_return": null
+      "outcome_return": 0.0372,
+      "outcome_exit": "open",
+      "outcome_days": 7,
+      "outcome_final": false
     }
   ],
   "bench": [
@@ -226,5 +262,10 @@
       "role": "post-construction risk",
       "summary": "within limits; cash 33%"
     }
-  ]
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": -0.0443,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 3,
+  "realized_stop_exits": 3
 }

@@ -44,10 +44,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.0163,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.186,
+      "outcome_exit": "stop",
+      "outcome_days": 12,
+      "outcome_final": true
     },
     {
       "ticker": "CGNX",
@@ -61,10 +61,10 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0068,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.0805,
+      "outcome_exit": "stop",
+      "outcome_days": 19,
+      "outcome_final": true
     },
     {
       "ticker": "MTZ",
@@ -123,10 +123,10 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.0141,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.0641,
+      "outcome_exit": "stop",
+      "outcome_days": 10,
+      "outcome_final": true
     },
     {
       "ticker": "BPOP",
@@ -140,9 +140,9 @@
       "led_by": "sepa",
       "sentiment": 0.306,
       "earnings_risk": false,
-      "outcome_return": 0.0151,
+      "outcome_return": -0.0343,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 59,
       "outcome_final": false
     },
     {
@@ -157,7 +157,7 @@
       "led_by": "sepa",
       "sentiment": 0.064,
       "earnings_risk": false,
-      "outcome_return": -0.1407,
+      "outcome_return": -0.1409,
       "outcome_exit": "stop",
       "outcome_days": 3,
       "outcome_final": true
@@ -191,10 +191,10 @@
       "led_by": "sepa",
       "sentiment": 0.078,
       "earnings_risk": false,
-      "outcome_return": -0.0256,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.1305,
+      "outcome_exit": "stop",
+      "outcome_days": 50,
+      "outcome_final": true
     },
     {
       "ticker": "DLR",
@@ -208,7 +208,7 @@
       "led_by": "sepa",
       "sentiment": 0.252,
       "earnings_risk": false,
-      "outcome_return": -0.0695,
+      "outcome_return": -0.0759,
       "outcome_exit": "stop",
       "outcome_days": 1,
       "outcome_final": true
@@ -225,9 +225,9 @@
       "led_by": "sepa",
       "sentiment": 0.128,
       "earnings_risk": false,
-      "outcome_return": -0.0302,
+      "outcome_return": 0.2733,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 59,
       "outcome_final": false
     }
   ],
@@ -263,9 +263,9 @@
       "summary": "within limits; cash 22%"
     }
   ],
-  "realized_avg_return": -0.0893,
+  "realized_avg_return": -0.1051,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3
+  "realized_final_count": 7,
+  "realized_stop_exits": 7
 }

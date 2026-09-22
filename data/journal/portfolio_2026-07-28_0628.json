@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.17,
       "earnings_risk": false,
-      "outcome_return": 0.2533,
-      "outcome_exit": "open",
-      "outcome_days": 13,
-      "outcome_final": false
+      "outcome_return": 0.2972,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MNST",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.159,
       "earnings_risk": false,
-      "outcome_return": 0.1643,
-      "outcome_exit": "open",
-      "outcome_days": 13,
-      "outcome_final": false
+      "outcome_return": 0.1182,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "TSM",
@@ -81,10 +81,10 @@
       "led_by": "weinstein",
       "sentiment": -0.01,
       "earnings_risk": false,
-      "outcome_return": 0.0683,
-      "outcome_exit": "open",
-      "outcome_days": 13,
-      "outcome_final": false
+      "outcome_return": 0.0431,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "PWR",
@@ -115,10 +115,10 @@
       "led_by": "weinstein",
       "sentiment": -0.108,
       "earnings_risk": false,
-      "outcome_return": 0.1141,
-      "outcome_exit": "open",
-      "outcome_days": 13,
-      "outcome_final": false
+      "outcome_return": 0.0537,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "LRCX",
@@ -183,10 +183,10 @@
       "led_by": "technical",
       "sentiment": 0.339,
       "earnings_risk": false,
-      "outcome_return": 0.2163,
-      "outcome_exit": "open",
-      "outcome_days": 13,
-      "outcome_final": false
+      "outcome_return": 0.2128,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MSTR",
@@ -217,10 +217,10 @@
       "led_by": "swing",
       "sentiment": 0.122,
       "earnings_risk": false,
-      "outcome_return": 0.3232,
-      "outcome_exit": "open",
-      "outcome_days": 13,
-      "outcome_final": false
+      "outcome_return": 0.3132,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [],
@@ -257,8 +257,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.111,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 2,
+  "realized_avg_return": 0.102,
+  "realized_hit_rate": 0.75,
+  "realized_final_count": 8,
   "realized_stop_exits": 2
 }

@@ -44,9 +44,9 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": -0.0729,
+      "outcome_return": -0.0805,
       "outcome_exit": "stop",
-      "outcome_days": 12,
+      "outcome_days": 19,
       "outcome_final": true
     },
     {
@@ -61,7 +61,7 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.1791,
+      "outcome_return": -0.186,
       "outcome_exit": "stop",
       "outcome_days": 12,
       "outcome_final": true
@@ -78,10 +78,10 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0009,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0504,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MO",
@@ -95,10 +95,10 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.0205,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.0641,
+      "outcome_exit": "stop",
+      "outcome_days": 10,
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -133,9 +133,9 @@
       "summary": "within limits; cash 71%"
     }
   ],
-  "realized_avg_return": -0.126,
-  "realized_hit_rate": 0.0,
+  "realized_avg_return": -0.0701,
+  "realized_hit_rate": 0.25,
   "horizon_days": 20,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2
+  "realized_final_count": 4,
+  "realized_stop_exits": 3
 }

@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.341,
       "earnings_risk": false,
-      "outcome_return": -0.0566,
-      "outcome_exit": "open",
-      "outcome_days": 14,
-      "outcome_final": false
+      "outcome_return": 0.0383,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "EZPW",
@@ -75,7 +75,7 @@
       "led_by": "sepa",
       "sentiment": 0.33,
       "earnings_risk": false,
-      "outcome_return": -0.0696,
+      "outcome_return": -0.0709,
       "outcome_exit": "stop",
       "outcome_days": 11,
       "outcome_final": true
@@ -123,10 +123,10 @@
       "led_by": "sepa",
       "sentiment": 0.227,
       "earnings_risk": false,
-      "outcome_return": -0.0018,
-      "outcome_exit": "open",
-      "outcome_days": 14,
-      "outcome_final": false
+      "outcome_return": 0.0079,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "NESR",
@@ -168,10 +168,10 @@
       "led_by": "sepa",
       "sentiment": 0.255,
       "earnings_risk": false,
-      "outcome_return": -0.0198,
-      "outcome_exit": "open",
-      "outcome_days": 14,
-      "outcome_final": false
+      "outcome_return": -0.1153,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "FFBC",
@@ -234,9 +234,9 @@
       "summary": "within limits; cash 1%"
     }
   ],
-  "realized_avg_return": -0.0913,
-  "realized_hit_rate": 0.0,
+  "realized_avg_return": -0.0506,
+  "realized_hit_rate": 0.4,
   "horizon_days": 20,
-  "realized_final_count": 2,
+  "realized_final_count": 5,
   "realized_stop_exits": 2
 }

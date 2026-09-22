@@ -30,10 +30,10 @@
       "led_by": "technical",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0584,
-      "outcome_exit": "open",
-      "outcome_days": 27,
-      "outcome_final": false
+      "outcome_return": -0.0846,
+      "outcome_exit": "stop",
+      "outcome_days": 28,
+      "outcome_final": true
     },
     {
       "ticker": "FCNCA",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0024,
-      "outcome_exit": "open",
-      "outcome_days": 27,
-      "outcome_final": false
+      "outcome_return": -0.0654,
+      "outcome_exit": "stop",
+      "outcome_days": 34,
+      "outcome_final": true
     },
     {
       "ticker": "XOP",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": 0.0887,
+      "outcome_return": 0.0739,
       "outcome_exit": "open",
-      "outcome_days": 22,
+      "outcome_days": 37,
       "outcome_final": false
     },
     {
@@ -157,8 +157,8 @@
     }
   ],
   "horizon_days": 120,
-  "realized_avg_return": -0.0642,
+  "realized_avg_return": -0.0714,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1
+  "realized_final_count": 3,
+  "realized_stop_exits": 3
 }

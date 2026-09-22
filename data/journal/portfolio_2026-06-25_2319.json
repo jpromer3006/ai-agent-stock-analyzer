@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.254,
       "earnings_risk": false,
-      "outcome_return": 0.0765,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": 0.033,
+      "outcome_exit": "horizon",
+      "outcome_days": 60,
+      "outcome_final": true
     },
     {
       "ticker": "ABNB",
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.065,
       "earnings_risk": false,
-      "outcome_return": 0.0497,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": 0.1759,
+      "outcome_exit": "horizon",
+      "outcome_days": 60,
+      "outcome_final": true
     },
     {
       "ticker": "UNH",
@@ -64,10 +64,10 @@
       "led_by": "weinstein",
       "sentiment": 0.219,
       "earnings_risk": false,
-      "outcome_return": 0.0237,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": -0.0914,
+      "outcome_exit": "horizon",
+      "outcome_days": 60,
+      "outcome_final": true
     },
     {
       "ticker": "DDOG",
@@ -81,10 +81,10 @@
       "led_by": "weinstein",
       "sentiment": 0.105,
       "earnings_risk": false,
-      "outcome_return": 0.1784,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": 0.1091,
+      "outcome_exit": "horizon",
+      "outcome_days": 60,
+      "outcome_final": true
     },
     {
       "ticker": "NVDA",
@@ -98,10 +98,10 @@
       "led_by": "weinstein",
       "sentiment": 0.128,
       "earnings_risk": false,
-      "outcome_return": -0.0046,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": -0.0304,
+      "outcome_exit": "stop",
+      "outcome_days": 23,
+      "outcome_final": true
     },
     {
       "ticker": "GOOGL",
@@ -115,10 +115,10 @@
       "led_by": "weinstein",
       "sentiment": 0.093,
       "earnings_risk": false,
-      "outcome_return": 0.0471,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": -0.0763,
+      "outcome_exit": "stop",
+      "outcome_days": 19,
+      "outcome_final": true
     },
     {
       "ticker": "VRTX",
@@ -132,10 +132,10 @@
       "led_by": "technical",
       "sentiment": 0.321,
       "earnings_risk": false,
-      "outcome_return": 0.0997,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": 0.0636,
+      "outcome_exit": "horizon",
+      "outcome_days": 60,
+      "outcome_final": true
     },
     {
       "ticker": "CRWD",
@@ -166,10 +166,10 @@
       "led_by": "technical",
       "sentiment": 0.105,
       "earnings_risk": false,
-      "outcome_return": 0.0956,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": 0.1193,
+      "outcome_exit": "horizon",
+      "outcome_days": 60,
+      "outcome_final": true
     },
     {
       "ticker": "DHR",
@@ -183,10 +183,10 @@
       "led_by": "technical",
       "sentiment": 0.083,
       "earnings_risk": false,
-      "outcome_return": 0.0244,
-      "outcome_exit": "open",
-      "outcome_days": 5,
-      "outcome_final": false
+      "outcome_return": 0.1171,
+      "outcome_exit": "horizon",
+      "outcome_days": 60,
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -221,9 +221,9 @@
       "summary": "within limits; cash 12%"
     }
   ],
-  "realized_avg_return": -0.7417,
-  "realized_hit_rate": 0.0,
+  "realized_avg_return": -0.0322,
+  "realized_hit_rate": 0.6,
   "horizon_days": 60,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1
+  "realized_final_count": 10,
+  "realized_stop_exits": 3
 }

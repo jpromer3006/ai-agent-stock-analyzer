@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0805,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.2268,
+      "outcome_exit": "stop",
+      "outcome_days": 12,
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -85,9 +85,9 @@
       "summary": "within limits; cash 93%"
     }
   ],
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
+  "realized_avg_return": -0.2268,
+  "realized_hit_rate": 0.0,
   "horizon_days": 20,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0
+  "realized_final_count": 1,
+  "realized_stop_exits": 1
 }

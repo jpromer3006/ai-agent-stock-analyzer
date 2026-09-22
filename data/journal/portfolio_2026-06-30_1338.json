@@ -58,10 +58,10 @@
       "led_by": "sepa",
       "sentiment": 0.228,
       "earnings_risk": false,
-      "outcome_return": 0.0433,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0278,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MKSI",
@@ -117,10 +117,10 @@
       "led_by": "sepa",
       "sentiment": 0.306,
       "earnings_risk": false,
-      "outcome_return": 0.0517,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": 0.0415,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ALNT",
@@ -134,10 +134,10 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": -0.1755,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.2179,
+      "outcome_exit": "stop",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "NESR",
@@ -231,9 +231,9 @@
       "summary": "within limits; cash 1%"
     }
   ],
-  "realized_avg_return": -0.1096,
-  "realized_hit_rate": 0.0,
+  "realized_avg_return": -0.0646,
+  "realized_hit_rate": 0.5,
   "horizon_days": 20,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1
+  "realized_final_count": 4,
+  "realized_stop_exits": 2
 }

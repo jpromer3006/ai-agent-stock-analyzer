@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.178,
       "earnings_risk": false,
-      "outcome_return": -0.0031,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": -0.058,
+      "outcome_exit": "stop",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "WELL",
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.275,
       "earnings_risk": true,
-      "outcome_return": -0.0146,
+      "outcome_return": -0.0509,
       "outcome_exit": "open",
-      "outcome_days": 18,
+      "outcome_days": 38,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.235,
       "earnings_risk": false,
-      "outcome_return": -0.0119,
+      "outcome_return": -0.0794,
       "outcome_exit": "open",
-      "outcome_days": 18,
+      "outcome_days": 38,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": -0.0131,
+      "outcome_return": -0.0169,
       "outcome_exit": "open",
-      "outcome_days": 18,
+      "outcome_days": 38,
       "outcome_final": false
     },
     {
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": -0.003,
       "earnings_risk": true,
-      "outcome_return": 0.0118,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": -0.0736,
+      "outcome_exit": "stop",
+      "outcome_days": 36,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -179,8 +179,8 @@
     }
   ],
   "horizon_days": 60,
-  "realized_avg_return": -0.1086,
+  "realized_avg_return": -0.0801,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1
+  "realized_final_count": 3,
+  "realized_stop_exits": 3
 }

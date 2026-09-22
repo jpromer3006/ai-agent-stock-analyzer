@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.424,
       "earnings_risk": false,
-      "outcome_return": 0.033,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.0082,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "DXPE",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.262,
       "earnings_risk": false,
-      "outcome_return": 0.0231,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": 0.0106,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CSX",
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.19,
       "earnings_risk": false,
-      "outcome_return": 0.0021,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": 0.01,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AAPL",
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.184,
       "earnings_risk": false,
-      "outcome_return": -0.0664,
-      "outcome_exit": "open",
+      "outcome_return": -0.0749,
+      "outcome_exit": "stop",
       "outcome_days": 8,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "WELL",
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.399,
       "earnings_risk": false,
-      "outcome_return": -0.0493,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.0444,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CASY",
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.147,
       "earnings_risk": false,
-      "outcome_return": -0.0083,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.0334,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BUSE",
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.356,
       "earnings_risk": false,
-      "outcome_return": 0.0601,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": 0.0209,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "UNP",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.157,
       "earnings_risk": false,
-      "outcome_return": -0.0114,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": 0.0215,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CHRD",
@@ -183,7 +183,7 @@
       "led_by": "sepa",
       "sentiment": 0.46,
       "earnings_risk": false,
-      "outcome_return": -0.0591,
+      "outcome_return": -0.0674,
       "outcome_exit": "stop",
       "outcome_days": 4,
       "outcome_final": true
@@ -200,10 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.2,
       "earnings_risk": false,
-      "outcome_return": 0.0669,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": 0.143,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "IYT",
@@ -217,10 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.017,
       "earnings_risk": false,
-      "outcome_return": -0.0413,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.0436,
+      "outcome_exit": "stop",
+      "outcome_days": 6,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -300,8 +300,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.1078,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2
+  "realized_avg_return": -0.0185,
+  "realized_hit_rate": 0.417,
+  "realized_final_count": 12,
+  "realized_stop_exits": 4
 }

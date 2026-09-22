@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.0006,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.1628,
+      "outcome_exit": "stop",
+      "outcome_days": 16,
+      "outcome_final": true
     },
     {
       "ticker": "ENTG",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.312,
       "earnings_risk": false,
-      "outcome_return": -0.0952,
+      "outcome_return": 0.1356,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 62,
       "outcome_final": false
     },
     {
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": -0.02,
       "earnings_risk": false,
-      "outcome_return": -0.0051,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.0896,
+      "outcome_exit": "stop",
+      "outcome_days": 16,
+      "outcome_final": true
     },
     {
       "ticker": "FTXL",
@@ -132,7 +132,7 @@
       "led_by": "sepa",
       "sentiment": 0.158,
       "earnings_risk": false,
-      "outcome_return": -0.0891,
+      "outcome_return": -0.0893,
       "outcome_exit": "stop",
       "outcome_days": 6,
       "outcome_final": true
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.349,
       "earnings_risk": false,
-      "outcome_return": 0.0225,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.0543,
+      "outcome_exit": "stop",
+      "outcome_days": 30,
+      "outcome_final": true
     },
     {
       "ticker": "BJRI",
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.02,
       "earnings_risk": false,
-      "outcome_return": 0.1052,
+      "outcome_return": 0.1748,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 62,
       "outcome_final": false
     }
   ],
@@ -204,9 +204,9 @@
       "summary": "within limits; cash 45%"
     }
   ],
-  "realized_avg_return": -0.0891,
+  "realized_avg_return": -0.099,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1
+  "realized_final_count": 4,
+  "realized_stop_exits": 4
 }

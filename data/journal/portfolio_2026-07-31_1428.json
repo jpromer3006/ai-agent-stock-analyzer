@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0578,
+      "outcome_return": -0.0628,
       "outcome_exit": "stop",
-      "outcome_days": 18,
+      "outcome_days": 15,
       "outcome_final": true
     },
     {
@@ -92,7 +92,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.143,
+      "outcome_return": 0.1363,
       "outcome_exit": "horizon",
       "outcome_days": 20,
       "outcome_final": true
@@ -140,8 +140,8 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.04,
-      "outcome_exit": "horizon",
+      "outcome_return": -0.0465,
+      "outcome_exit": "stop",
       "outcome_days": 20,
       "outcome_final": true
     },
@@ -258,10 +258,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": 0.0074,
+  "realized_avg_return": 0.0051,
   "realized_hit_rate": 0.375,
   "realized_final_count": 8,
-  "realized_stop_exits": 2,
+  "realized_stop_exits": 3,
   "changes": {
     "added": [
       "BMY",

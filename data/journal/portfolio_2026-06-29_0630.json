@@ -58,10 +58,10 @@
       "led_by": "sepa",
       "sentiment": 0.222,
       "earnings_risk": false,
-      "outcome_return": -0.0522,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.186,
+      "outcome_exit": "stop",
+      "outcome_days": 12,
+      "outcome_final": true
     },
     {
       "ticker": "ALNT",
@@ -75,9 +75,9 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": -0.0731,
+      "outcome_return": 0.117,
       "outcome_exit": "open",
-      "outcome_days": 8,
+      "outcome_days": 59,
       "outcome_final": false
     },
     {
@@ -106,10 +106,10 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": 0.0036,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.0805,
+      "outcome_exit": "stop",
+      "outcome_days": 19,
+      "outcome_final": true
     },
     {
       "ticker": "MTZ",
@@ -140,7 +140,7 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.1342,
+      "outcome_return": -0.1345,
       "outcome_exit": "stop",
       "outcome_days": 3,
       "outcome_final": true
@@ -171,9 +171,9 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": -0.0237,
+      "outcome_return": -0.065,
       "outcome_exit": "open",
-      "outcome_days": 8,
+      "outcome_days": 59,
       "outcome_final": false
     },
     {
@@ -202,10 +202,10 @@
       "led_by": "sepa",
       "sentiment": 0.213,
       "earnings_risk": false,
-      "outcome_return": 0.0355,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.1795,
+      "outcome_exit": "stop",
+      "outcome_days": 56,
+      "outcome_final": true
     },
     {
       "ticker": "ICHR",
@@ -233,10 +233,10 @@
       "led_by": "sepa",
       "sentiment": 0.456,
       "earnings_risk": false,
-      "outcome_return": -0.0769,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.1401,
+      "outcome_exit": "stop",
+      "outcome_days": 30,
+      "outcome_final": true
     },
     {
       "ticker": "KNSA",
@@ -264,10 +264,10 @@
       "led_by": "sepa",
       "sentiment": 0.194,
       "earnings_risk": false,
-      "outcome_return": 0.0244,
-      "outcome_exit": "open",
-      "outcome_days": 8,
-      "outcome_final": false
+      "outcome_return": -0.6195,
+      "outcome_exit": "stop",
+      "outcome_days": 23,
+      "outcome_final": true
     }
   ],
   "agent_trace": [
@@ -302,9 +302,9 @@
       "summary": "within limits; cash 60%"
     }
   ],
-  "realized_avg_return": -0.0959,
+  "realized_avg_return": -0.1997,
   "realized_hit_rate": 0.0,
   "horizon_days": 60,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2
+  "realized_final_count": 7,
+  "realized_stop_exits": 7
 }
