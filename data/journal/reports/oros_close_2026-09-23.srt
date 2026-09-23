@@ -1,0 +1,155 @@
+1
+00:00:00,000 --> 00:00:03,553
+Good evening from the OROS closing desk.
+
+2
+00:00:03,553 --> 00:00:08,970
+Time to grade this morning's call — the part most shows skip.
+
+3
+00:00:08,970 --> 00:00:15,720
+QUALCOMM, ticker QCOM triggered, then faded to -0.1 percent below the entry.
+
+4
+00:00:15,720 --> 00:00:20,872
+If it closes a week below the stop, the exit is automatic.
+
+5
+00:00:20,872 --> 00:00:24,424
+That is not a failure; that is the plan.
+
+6
+00:00:24,424 --> 00:00:29,360
+Why we grade in public: a forecast that is never checked is just content.
+
+7
+00:00:29,360 --> 00:00:34,769
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+8
+00:00:34,734 --> 00:00:38,393
+On the day, the book is down 637 dollars.
+
+9
+00:00:38,393 --> 00:00:41,249
+Avnet (AVT) leads, +5.9 percent.
+
+10
+00:00:41,249 --> 00:00:43,838
+BGC Group (BGC) lags at -2.8.
+
+11
+00:00:43,838 --> 00:00:48,657
+The checklist is clear: nothing requires action today.
+
+12
+00:00:48,657 --> 00:00:52,184
+On screen, the day's gainers and laggards inside the paper book.
+
+13
+00:00:52,140 --> 00:00:59,689
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+14
+00:00:59,689 --> 00:01:09,247
+11 positions, led by AbbVie, ticker ABBV, Arista Networks, ticker ANET, Taiwan Semiconductor Manufacturing, ticker TSM.
+
+15
+00:01:09,247 --> 00:01:20,169
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+16
+00:01:20,143 --> 00:01:25,071
+Now the part that makes this system different: the loop.
+
+17
+00:01:25,071 --> 00:01:27,535
+Every morning OROS proposes.
+
+18
+00:01:27,535 --> 00:01:38,358
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+19
+00:01:38,358 --> 00:01:42,406
+Inside the book today: 3 positions up, 8 down.
+
+20
+00:01:42,406 --> 00:01:44,782
+Best, AVT at +5.94 percent.
+
+21
+00:01:44,782 --> 00:01:46,542
+Worst, BGC at -2.81.
+
+22
+00:01:46,542 --> 00:01:51,646
+Both go in the journal — wins and losses get the same ink.
+
+23
+00:01:51,646 --> 00:01:58,950
+The honest scoreboard reads: expectancy -2.98% per trade over 984 graded positions.
+
+24
+00:01:58,950 --> 00:02:06,165
+Because that record is soft, the system has throttled itself to 50% position size.
+
+25
+00:02:06,165 --> 00:02:11,445
+Nobody told it to — full size must be earned back with wins.
+
+26
+00:02:11,445 --> 00:02:24,117
+What tonight's read hands to tomorrow's open: 196 names close the day in Stage 2; position size stays cut to 50% until the record earns it back.
+
+27
+00:02:24,090 --> 00:02:26,392
+Over to the sports desk.
+
+28
+00:02:26,392 --> 00:02:35,887
+Day 58 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+29
+00:02:35,887 --> 00:02:40,875
+In first place, the index fund, in gray, at 102,454.
+
+30
+00:02:40,875 --> 00:02:47,972
+Then the live self-rebuilding book, in blue, 2.3 thousand back at 100,201.
+
+31
+00:02:47,972 --> 00:02:55,357
+Then the frozen first portfolio, the green line, 4.9 thousand back at 97,522.
+
+32
+00:02:55,357 --> 00:02:58,043
+The race has no finish line.
+
+33
+00:02:58,043 --> 00:03:02,455
+Same books, same dollars, back at it tomorrow.
+
+34
+00:03:02,455 --> 00:03:07,442
+Every line starts the same day with the same dollar.
+
+35
+00:03:07,442 --> 00:03:09,360
+Nothing is restated.
+
+36
+00:03:09,360 --> 00:03:18,268
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+37
+00:03:18,230 --> 00:03:25,565
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+38
+00:03:25,565 --> 00:03:27,806
+Nothing here is financial advice.
+
+39
+00:03:27,806 --> 00:03:30,795
+From the closing desk — see you at the open.
