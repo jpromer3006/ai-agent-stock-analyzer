@@ -44,10 +44,10 @@
       "led_by": "sepa",
       "sentiment": 0.54,
       "earnings_risk": false,
-      "outcome_return": -0.0799,
-      "outcome_exit": "open",
-      "outcome_days": 59,
-      "outcome_final": false
+      "outcome_return": -0.1068,
+      "outcome_exit": "stop",
+      "outcome_days": 16,
+      "outcome_final": true
     },
     {
       "ticker": "EZPW",
@@ -92,7 +92,7 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": 0.117,
+      "outcome_return": 0.1225,
       "outcome_exit": "open",
       "outcome_days": 59,
       "outcome_final": false
@@ -188,7 +188,7 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": -0.065,
+      "outcome_return": -0.1113,
       "outcome_exit": "open",
       "outcome_days": 59,
       "outcome_final": false
@@ -302,9 +302,9 @@
       "summary": "within limits; cash 58%"
     }
   ],
-  "realized_avg_return": -0.1297,
+  "realized_avg_return": -0.1264,
   "realized_hit_rate": 0.0,
   "horizon_days": 60,
-  "realized_final_count": 6,
-  "realized_stop_exits": 6
+  "realized_final_count": 7,
+  "realized_stop_exits": 7
 }

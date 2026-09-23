@@ -30,7 +30,7 @@
       "led_by": "weinstein",
       "sentiment": 0.109,
       "earnings_risk": true,
-      "outcome_return": -0.0077,
+      "outcome_return": 0.0016,
       "outcome_exit": "open",
       "outcome_days": 41,
       "outcome_final": false
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": -0.012,
       "earnings_risk": true,
-      "outcome_return": -0.0908,
-      "outcome_exit": "open",
+      "outcome_return": -0.0977,
+      "outcome_exit": "stop",
       "outcome_days": 41,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "VZ",
@@ -81,7 +81,7 @@
       "led_by": "sepa",
       "sentiment": -0.079,
       "earnings_risk": true,
-      "outcome_return": 0.0212,
+      "outcome_return": 0.0118,
       "outcome_exit": "open",
       "outcome_days": 41,
       "outcome_final": false
@@ -98,7 +98,7 @@
       "led_by": "value",
       "sentiment": -0.039,
       "earnings_risk": true,
-      "outcome_return": 0.0526,
+      "outcome_return": 0.0533,
       "outcome_exit": "open",
       "outcome_days": 41,
       "outcome_final": false
@@ -115,7 +115,7 @@
       "led_by": "sepa",
       "sentiment": -0.094,
       "earnings_risk": false,
-      "outcome_return": 0.045,
+      "outcome_return": 0.0557,
       "outcome_exit": "open",
       "outcome_days": 41,
       "outcome_final": false
@@ -166,7 +166,7 @@
       "led_by": "sepa",
       "sentiment": 0.046,
       "earnings_risk": true,
-      "outcome_return": 0.0129,
+      "outcome_return": 0.0103,
       "outcome_exit": "open",
       "outcome_days": 41,
       "outcome_final": false
@@ -300,8 +300,8 @@
     }
   ],
   "horizon_days": 120,
-  "realized_avg_return": -0.0573,
+  "realized_avg_return": -0.0631,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 6,
-  "realized_stop_exits": 6
+  "realized_final_count": 7,
+  "realized_stop_exits": 7
 }

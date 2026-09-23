@@ -132,7 +132,7 @@
       "led_by": "sepa",
       "sentiment": 0.295,
       "earnings_risk": false,
-      "outcome_return": 0.0634,
+      "outcome_return": 0.0571,
       "outcome_exit": "horizon",
       "outcome_days": 20,
       "outcome_final": true
@@ -312,7 +312,7 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0162,
+  "realized_avg_return": -0.0169,
   "realized_hit_rate": 0.556,
   "realized_final_count": 9,
   "realized_stop_exits": 3

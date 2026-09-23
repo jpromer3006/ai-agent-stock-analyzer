@@ -64,7 +64,7 @@
       "led_by": "sepa",
       "sentiment": 0.253,
       "earnings_risk": false,
-      "outcome_return": -0.0679,
+      "outcome_return": -0.0649,
       "outcome_exit": "horizon",
       "outcome_days": 20,
       "outcome_final": true
@@ -81,7 +81,7 @@
       "led_by": "sepa",
       "sentiment": 0.161,
       "earnings_risk": false,
-      "outcome_return": 0.0022,
+      "outcome_return": 0.0046,
       "outcome_exit": "horizon",
       "outcome_days": 20,
       "outcome_final": true
@@ -98,7 +98,7 @@
       "led_by": "sepa",
       "sentiment": 0.264,
       "earnings_risk": false,
-      "outcome_return": 0.0345,
+      "outcome_return": 0.0368,
       "outcome_exit": "horizon",
       "outcome_days": 20,
       "outcome_final": true
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.155,
       "earnings_risk": false,
-      "outcome_return": -0.0453,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0233,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AIA",
@@ -149,7 +149,7 @@
       "led_by": "sepa",
       "sentiment": 0.165,
       "earnings_risk": false,
-      "outcome_return": 0.053,
+      "outcome_return": 0.0402,
       "outcome_exit": "horizon",
       "outcome_days": 20,
       "outcome_final": true
@@ -166,7 +166,7 @@
       "led_by": "sepa",
       "sentiment": 0.036,
       "earnings_risk": false,
-      "outcome_return": -0.1102,
+      "outcome_return": -0.1031,
       "outcome_exit": "stop",
       "outcome_days": 20,
       "outcome_final": true
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": -0.193,
       "earnings_risk": false,
-      "outcome_return": -0.03,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0129,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CART",
@@ -217,7 +217,7 @@
       "led_by": "sepa",
       "sentiment": 0.115,
       "earnings_risk": false,
-      "outcome_return": 0.03,
+      "outcome_return": 0.0308,
       "outcome_exit": "horizon",
       "outcome_days": 20,
       "outcome_final": true
@@ -306,9 +306,9 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0327,
-  "realized_hit_rate": 0.4,
-  "realized_final_count": 10,
+  "realized_avg_return": -0.03,
+  "realized_hit_rate": 0.333,
+  "realized_final_count": 12,
   "realized_stop_exits": 5,
   "changes": {
     "added": [

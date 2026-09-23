@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.231,
       "earnings_risk": true,
-      "outcome_return": -0.092,
-      "outcome_exit": "open",
+      "outcome_return": -0.0989,
+      "outcome_exit": "stop",
       "outcome_days": 39,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "XLU",
@@ -47,9 +47,9 @@
       "led_by": "technical",
       "sentiment": 0.261,
       "earnings_risk": false,
-      "outcome_return": -0.0344,
+      "outcome_return": -0.0362,
       "outcome_exit": "stop",
-      "outcome_days": 5,
+      "outcome_days": 3,
       "outcome_final": true
     },
     {
@@ -64,7 +64,7 @@
       "led_by": "sepa",
       "sentiment": 0.237,
       "earnings_risk": true,
-      "outcome_return": -0.0654,
+      "outcome_return": -0.0709,
       "outcome_exit": "open",
       "outcome_days": 39,
       "outcome_final": false
@@ -81,7 +81,7 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": 0.0068,
+      "outcome_return": 0.0181,
       "outcome_exit": "open",
       "outcome_days": 39,
       "outcome_final": false
@@ -98,9 +98,9 @@
       "led_by": "technical",
       "sentiment": 0.045,
       "earnings_risk": false,
-      "outcome_return": -0.0327,
+      "outcome_return": -0.0317,
       "outcome_exit": "stop",
-      "outcome_days": 38,
+      "outcome_days": 37,
       "outcome_final": true
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": 0.0927,
+      "outcome_return": 0.0741,
       "outcome_exit": "open",
-      "outcome_days": 38,
+      "outcome_days": 39,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.295,
       "earnings_risk": false,
-      "outcome_return": 0.0703,
+      "outcome_return": 0.0586,
       "outcome_exit": "open",
-      "outcome_days": 38,
+      "outcome_days": 39,
       "outcome_final": false
     },
     {
@@ -149,7 +149,7 @@
       "led_by": "weinstein",
       "sentiment": 0.218,
       "earnings_risk": false,
-      "outcome_return": 0.0336,
+      "outcome_return": 0.0361,
       "outcome_exit": "open",
       "outcome_days": 39,
       "outcome_final": false
@@ -166,7 +166,7 @@
       "led_by": "sepa",
       "sentiment": 0.219,
       "earnings_risk": false,
-      "outcome_return": 0.0713,
+      "outcome_return": 0.0823,
       "outcome_exit": "open",
       "outcome_days": 39,
       "outcome_final": false
@@ -183,7 +183,7 @@
       "led_by": "sepa",
       "sentiment": 0.227,
       "earnings_risk": false,
-      "outcome_return": 0.0278,
+      "outcome_return": 0.0414,
       "outcome_exit": "open",
       "outcome_days": 39,
       "outcome_final": false
@@ -200,10 +200,10 @@
       "led_by": "technical",
       "sentiment": 0.109,
       "earnings_risk": false,
-      "outcome_return": -0.0723,
-      "outcome_exit": "open",
+      "outcome_return": -0.0967,
+      "outcome_exit": "stop",
       "outcome_days": 39,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "CSX",
@@ -234,7 +234,7 @@
       "led_by": "sepa",
       "sentiment": 0.305,
       "earnings_risk": true,
-      "outcome_return": -0.0691,
+      "outcome_return": -0.0735,
       "outcome_exit": "open",
       "outcome_days": 39,
       "outcome_final": false
@@ -285,7 +285,7 @@
       "led_by": "sepa",
       "sentiment": 0.17,
       "earnings_risk": false,
-      "outcome_return": 0.1186,
+      "outcome_return": 0.0506,
       "outcome_exit": "open",
       "outcome_days": 39,
       "outcome_final": false
@@ -372,8 +372,8 @@
     }
   ],
   "horizon_days": 120,
-  "realized_avg_return": -0.0542,
+  "realized_avg_return": -0.0652,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 6,
-  "realized_stop_exits": 6
+  "realized_final_count": 8,
+  "realized_stop_exits": 8
 }

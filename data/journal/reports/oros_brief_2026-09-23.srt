@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:00,918
+Good morning.
+
+2
+00:00:00,918 --> 00:00:06,640
+From the OROS Market Desk, here is the rundown for Wednesday, September 23, 2026.
+
+3
+00:00:06,640 --> 00:00:08,053
+The tape reads bull.
+
+4
+00:00:08,053 --> 00:00:11,373
+Our top pick of the day: QUALCOMM, ticker QCOM.
+
+5
+00:00:11,373 --> 00:00:16,318
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:16,318 --> 00:00:26,984
+And at the sports desk, day 58 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:26,984 --> 00:00:35,215
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:35,215 --> 00:00:42,580
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:42,542 --> 00:00:44,422
+First, the market open.
+
+10
+00:00:44,422 --> 00:00:50,388
+The S and P five hundred slipped 0.0 percent, while the NASDAQ added 0.8.
+
+11
+00:00:50,388 --> 00:00:57,416
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+12
+00:00:57,416 --> 00:00:59,704
+The fear gauge sits at 14.5.
+
+13
+00:00:59,704 --> 00:01:02,208
+Today's lesson is this market screen.
+
+14
+00:01:02,208 --> 00:01:09,177
+The gold line is the thirty week moving average, the single most useful trend filter in stage analysis.
+
+15
+00:01:09,177 --> 00:01:16,687
+When price holds above a rising gold line, the tide is coming in, and long trades get the benefit of the doubt.
+
+16
+00:01:16,687 --> 00:01:25,618
+When price sinks below a falling gold line, the tide is going out, and the first job becomes protecting capital, not finding heroes.
+
+17
+00:01:25,571 --> 00:01:34,276
+Now the chart of the day: QUALCOMM, ticker QCOM, the top stock to clear every quality gate.
+
+18
+00:01:34,276 --> 00:01:47,095
+The entry trigger sits at 197.42, the exit at 169.31, and the objective at 260.32 — 2.2 dollars of potential reward per dollar risked.
+
+19
+00:01:47,095 --> 00:01:53,600
+At 35 shares, a failed trade costs about one percent of the account.
+
+20
+00:01:53,600 --> 00:02:04,825
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+21
+00:02:04,825 --> 00:02:13,980
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+22
+00:02:13,980 --> 00:02:19,633
+You buy only if the market pushes up through that line, proving demand.
+
+23
+00:02:19,633 --> 00:02:25,603
+If it never gets there, you never buy, and that is the plan protecting you.
+
+24
+00:02:25,603 --> 00:02:33,007
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+25
+00:02:33,007 --> 00:02:45,506
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+26
+00:02:45,506 --> 00:02:46,541
+Buy on proof.
+
+27
+00:02:46,541 --> 00:02:47,576
+Exit by rule.
+
+28
+00:02:47,576 --> 00:02:48,849
+Size to survive.
+
+29
+00:02:48,817 --> 00:02:54,381
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+30
+00:02:54,381 --> 00:03:02,453
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+31
+00:03:02,453 --> 00:03:06,663
+On the stock track: QUALCOMM, ticker QCOM.
+
+32
+00:03:06,663 --> 00:03:12,677
+The plan in plain English: it last closed at 196.44 dollars.
+
+33
+00:03:12,677 --> 00:03:23,503
+The system would only buy strength — a buy-stop at 197.42, nothing happens unless price proves itself first.
+
+34
+00:03:23,503 --> 00:03:32,624
+If it triggers, the exit is a weekly close below 169.31, and the measured target is 260.32.
+
+35
+00:03:32,624 --> 00:03:37,801
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+36
+00:03:37,801 --> 00:03:38,920
+That's the deal.
+
+37
+00:03:38,893 --> 00:03:41,142
+Turning to the model book.
+
+38
+00:03:41,142 --> 00:03:52,127
+The system holds 11 positions with 98% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+39
+00:03:52,127 --> 00:04:10,119
+New to the book: Deere & (DE), iShares MSCI Emerging Markets ex China ETF (EMXC), iShares MSCI Japan Index Fund (EWJ), First Trust DJ Internet Index Fund (FDN) — each passed the full entry gauntlet overnight.
+
+40
+00:04:10,119 --> 00:04:37,453
+Rotated out: Amazon.com (AMZN), which still advancing, but outranked by stronger names; eBay Inc (EBAY), which still advancing, but outranked by stronger names; Encore Capital Group (ECPG), which still advancing, but outranked by stronger names; NVIDIA (NVDA), which still advancing, but outranked by stronger names.
+
+41
+00:04:37,453 --> 00:04:44,545
+Left on the bench: NVIDIA (NVDA), risk wallet spent — worst-case loss cap reached.
+
+42
+00:04:44,545 --> 00:04:49,476
+Passing the scan is not enough; the book must afford you.
+
+43
+00:04:49,476 --> 00:04:55,510
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+44
+00:04:55,466 --> 00:05:03,015
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+45
+00:05:03,015 --> 00:05:12,573
+11 positions, led by AbbVie, ticker ABBV, Arista Networks, ticker ANET, Taiwan Semiconductor Manufacturing, ticker TSM.
+
+46
+00:05:12,573 --> 00:05:23,495
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+47
+00:05:23,469 --> 00:05:25,707
+Over to the sports desk.
+
+48
+00:05:25,707 --> 00:05:34,939
+Day 58 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+49
+00:05:34,939 --> 00:05:39,789
+In first place, the index fund, in gray, at 103,197.
+
+50
+00:05:39,789 --> 00:05:46,689
+Then the live self-rebuilding book, in blue, 2.2 thousand back at 100,965.
+
+51
+00:05:46,689 --> 00:05:53,870
+Then the frozen first portfolio, the green line, 5.7 thousand back at 97,478.
+
+52
+00:05:53,870 --> 00:05:56,481
+The race has no finish line.
+
+53
+00:05:56,481 --> 00:06:00,771
+Same books, same dollars, back at it tomorrow.
+
+54
+00:06:00,771 --> 00:06:05,620
+Every line starts the same day with the same dollar.
+
+55
+00:06:05,620 --> 00:06:07,485
+Nothing is restated.
+
+56
+00:06:07,485 --> 00:06:16,393
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+57
+00:06:16,355 --> 00:06:17,904
+Tonight's takeaway.
+
+58
+00:06:17,904 --> 00:06:20,187
+A portfolio is not a museum.
+
+59
+00:06:20,187 --> 00:06:28,502
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+60
+00:06:28,476 --> 00:06:31,328
+Before we close, the disclosure segment.
+
+61
+00:06:31,328 --> 00:06:41,381
+Everything you heard today concerns one simulated portfolio of 11 positions — the same book, line for line, as this morning's emailed report.
+
+62
+00:06:41,381 --> 00:06:43,235
+One record, every surface.
+
+63
+00:06:43,235 --> 00:06:45,322
+A word on how this desk works.
+
+64
+00:06:45,322 --> 00:07:02,849
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+65
+00:07:02,849 --> 00:07:11,265
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+66
+00:07:11,265 --> 00:07:14,197
+All figures are simulated paper trading.
+
+67
+00:07:14,197 --> 00:07:20,576
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+68
+00:07:20,576 --> 00:07:24,535
+From the OROS Market Desk, have a disciplined session.

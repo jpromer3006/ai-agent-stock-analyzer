@@ -30,7 +30,7 @@
       "led_by": "sepa",
       "sentiment": 0.176,
       "earnings_risk": true,
-      "outcome_return": -0.0792,
+      "outcome_return": -0.0863,
       "outcome_exit": "open",
       "outcome_days": 45,
       "outcome_final": false
@@ -64,7 +64,7 @@
       "led_by": "technical",
       "sentiment": 0.32,
       "earnings_risk": false,
-      "outcome_return": -0.0161,
+      "outcome_return": -0.0083,
       "outcome_exit": "open",
       "outcome_days": 45,
       "outcome_final": false
@@ -81,7 +81,7 @@
       "led_by": "sepa",
       "sentiment": 0.115,
       "earnings_risk": false,
-      "outcome_return": 0.0863,
+      "outcome_return": 0.0974,
       "outcome_exit": "open",
       "outcome_days": 45,
       "outcome_final": false
@@ -98,7 +98,7 @@
       "led_by": "sepa",
       "sentiment": 0.323,
       "earnings_risk": false,
-      "outcome_return": 0.1899,
+      "outcome_return": 0.1599,
       "outcome_exit": "open",
       "outcome_days": 45,
       "outcome_final": false
@@ -115,7 +115,7 @@
       "led_by": "sepa",
       "sentiment": 0.154,
       "earnings_risk": true,
-      "outcome_return": 0.0631,
+      "outcome_return": 0.0671,
       "outcome_exit": "open",
       "outcome_days": 45,
       "outcome_final": false
@@ -132,7 +132,7 @@
       "led_by": "sepa",
       "sentiment": 0.08,
       "earnings_risk": false,
-      "outcome_return": 0.1021,
+      "outcome_return": 0.1169,
       "outcome_exit": "open",
       "outcome_days": 45,
       "outcome_final": false
@@ -149,7 +149,7 @@
       "led_by": "sepa",
       "sentiment": 0.028,
       "earnings_risk": false,
-      "outcome_return": 0.0826,
+      "outcome_return": 0.0856,
       "outcome_exit": "open",
       "outcome_days": 45,
       "outcome_final": false
@@ -166,7 +166,7 @@
       "led_by": "sepa",
       "sentiment": 0.272,
       "earnings_risk": false,
-      "outcome_return": 0.0795,
+      "outcome_return": 0.0938,
       "outcome_exit": "open",
       "outcome_days": 45,
       "outcome_final": false
@@ -183,7 +183,7 @@
       "led_by": "technical",
       "sentiment": 0.106,
       "earnings_risk": true,
-      "outcome_return": 0.0346,
+      "outcome_return": 0.0353,
       "outcome_exit": "open",
       "outcome_days": 45,
       "outcome_final": false
