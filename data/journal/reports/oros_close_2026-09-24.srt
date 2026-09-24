@@ -1,0 +1,171 @@
+1
+00:00:00,000 --> 00:00:03,104
+Good evening from the OROS closing desk.
+
+2
+00:00:03,104 --> 00:00:07,836
+Time to grade this morning's call — the part most shows skip.
+
+3
+00:00:07,836 --> 00:00:13,578
+QUALCOMM, ticker QCOM never reached the trigger, so no position was taken.
+
+4
+00:00:13,578 --> 00:00:16,992
+The entry did its quiet job: it kept us out.
+
+5
+00:00:16,992 --> 00:00:22,578
+Chevron, ticker CVX never reached the trigger, so no position was taken.
+
+6
+00:00:22,578 --> 00:00:25,992
+The entry did its quiet job: it kept us out.
+
+7
+00:00:25,992 --> 00:00:30,927
+Why we grade in public: a forecast that is never checked is just content.
+
+8
+00:00:30,927 --> 00:00:36,336
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+9
+00:00:36,301 --> 00:00:40,076
+On the day, the book is up 492 dollars.
+
+10
+00:00:40,076 --> 00:00:43,368
+Bruker (BRKR) leads, +7.3 percent.
+
+11
+00:00:43,368 --> 00:00:45,885
+Deere & (DE) lags at -2.0.
+
+12
+00:00:45,885 --> 00:00:51,112
+The checklist is clear: nothing requires action today.
+
+13
+00:00:51,112 --> 00:00:53,739
+Today's lesson is noise versus signal.
+
+14
+00:00:53,739 --> 00:00:57,404
+Daily moves are weather; the weekly trend is climate.
+
+15
+00:00:57,404 --> 00:01:00,445
+The system never exits on a scary afternoon.
+
+16
+00:01:00,445 --> 00:01:05,976
+It acts only on weekly closes, because that is where the real information lives.
+
+17
+00:01:05,926 --> 00:01:13,133
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+18
+00:01:13,133 --> 00:01:21,413
+12 positions, led by Taiwan Semiconductor Manufacturing, ticker TSM, Avnet, ticker AVT, AbbVie, ticker ABBV.
+
+19
+00:01:21,413 --> 00:01:31,839
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+20
+00:01:31,793 --> 00:01:36,675
+Now the part that makes this system different: the loop.
+
+21
+00:01:36,675 --> 00:01:39,115
+Every morning OROS proposes.
+
+22
+00:01:39,115 --> 00:01:49,837
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+23
+00:01:49,837 --> 00:01:53,847
+Inside the book today: 5 positions up, 7 down.
+
+24
+00:01:53,847 --> 00:01:56,288
+Best, BRKR at +7.26 percent.
+
+25
+00:01:56,288 --> 00:01:57,944
+Worst, DE at -2.05.
+
+26
+00:01:57,944 --> 00:02:03,000
+Both go in the journal — wins and losses get the same ink.
+
+27
+00:02:03,000 --> 00:02:10,235
+The honest scoreboard reads: expectancy -3.00% per trade over 998 graded positions.
+
+28
+00:02:10,235 --> 00:02:17,383
+Because that record is soft, the system has throttled itself to 50% position size.
+
+29
+00:02:17,383 --> 00:02:22,614
+Nobody told it to — full size must be earned back with wins.
+
+30
+00:02:22,614 --> 00:02:35,166
+What tonight's read hands to tomorrow's open: 183 names close the day in Stage 2; position size stays cut to 50% until the record earns it back.
+
+31
+00:02:35,137 --> 00:02:37,359
+Over to the sports desk.
+
+32
+00:02:37,359 --> 00:02:46,526
+Day 59 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+33
+00:02:46,526 --> 00:02:51,340
+In first place, the index fund, in gray, at 102,370.
+
+34
+00:02:51,340 --> 00:02:58,192
+Then the live self-rebuilding book, in blue, 1.7 thousand back at 100,694.
+
+35
+00:02:58,192 --> 00:03:05,322
+Then the frozen first portfolio, the green line, 4.8 thousand back at 97,598.
+
+36
+00:03:05,322 --> 00:03:07,914
+The race has no finish line.
+
+37
+00:03:07,914 --> 00:03:12,173
+Same books, same dollars, back at it tomorrow.
+
+38
+00:03:12,173 --> 00:03:16,988
+Every line starts the same day with the same dollar.
+
+39
+00:03:16,988 --> 00:03:18,840
+Nothing is restated.
+
+40
+00:03:18,840 --> 00:03:27,748
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+41
+00:03:27,710 --> 00:03:35,045
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+42
+00:03:35,045 --> 00:03:37,286
+Nothing here is financial advice.
+
+43
+00:03:37,286 --> 00:03:40,275
+From the closing desk — see you at the open.
