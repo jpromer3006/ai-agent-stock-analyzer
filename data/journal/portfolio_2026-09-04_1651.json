@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.252,
       "earnings_risk": false,
-      "outcome_return": -0.0009,
+      "outcome_return": 0.0216,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.174,
       "earnings_risk": false,
-      "outcome_return": -0.017,
+      "outcome_return": -0.0056,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.106,
       "earnings_risk": false,
-      "outcome_return": -0.0499,
+      "outcome_return": -0.0307,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.219,
       "earnings_risk": false,
-      "outcome_return": -0.0416,
-      "outcome_exit": "open",
-      "outcome_days": 11,
-      "outcome_final": false
+      "outcome_return": -0.0806,
+      "outcome_exit": "stop",
+      "outcome_days": 12,
+      "outcome_final": true
     },
     {
       "ticker": "CACC",
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.166,
       "earnings_risk": false,
-      "outcome_return": -0.0183,
+      "outcome_return": -0.0118,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.208,
       "earnings_risk": false,
-      "outcome_return": 0.0184,
+      "outcome_return": 0.0255,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "technical",
       "sentiment": 0.182,
       "earnings_risk": false,
-      "outcome_return": -0.0826,
+      "outcome_return": -0.077,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.207,
       "earnings_risk": false,
-      "outcome_return": 0.0111,
+      "outcome_return": -0.001,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": -0.055,
       "earnings_risk": false,
-      "outcome_return": 0.0546,
+      "outcome_return": 0.0479,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 13,
       "outcome_final": false
     },
     {
@@ -270,10 +270,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0629,
+  "realized_avg_return": -0.0673,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3,
+  "realized_final_count": 4,
+  "realized_stop_exits": 4,
   "changes": {
     "added": [
       "AIA",

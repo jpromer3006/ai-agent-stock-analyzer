@@ -279,6 +279,27 @@
      "home_run_flag": false
     }
    ]
+  },
+  {
+   "date": "2026-09-24",
+   "picks": [
+    {
+     "ticker": "QCOM",
+     "buy_stop": 199.26,
+     "stop_loss": 170.05,
+     "target": 262.16,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "CVX",
+     "buy_stop": 218.86,
+     "stop_loss": 189.74,
+     "target": 256.36,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }

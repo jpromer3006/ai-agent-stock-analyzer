@@ -1,0 +1,259 @@
+1
+00:00:00,000 --> 00:00:01,036
+Good morning.
+
+2
+00:00:01,036 --> 00:00:07,409
+From the OROS Market Desk, here is the rundown for Thursday, September 24, 2026.
+
+3
+00:00:07,409 --> 00:00:09,003
+The tape reads bull.
+
+4
+00:00:09,003 --> 00:00:12,747
+Our top pick of the day: QUALCOMM, ticker QCOM.
+
+5
+00:00:12,747 --> 00:00:18,324
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:18,324 --> 00:00:30,354
+And at the sports desk, day 59 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:30,354 --> 00:00:38,585
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:38,585 --> 00:00:45,949
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:45,911 --> 00:00:47,817
+First, the market open.
+
+10
+00:00:47,817 --> 00:00:53,783
+The S and P five hundred slipped 0.7 percent, while the NASDAQ lost 0.8.
+
+11
+00:00:53,783 --> 00:01:00,910
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+12
+00:01:00,910 --> 00:01:03,230
+The fear gauge sits at 16.0.
+
+13
+00:01:03,230 --> 00:01:12,556
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+14
+00:01:12,518 --> 00:01:21,223
+Now the chart of the day: QUALCOMM, ticker QCOM, the top stock to clear every quality gate.
+
+15
+00:01:21,223 --> 00:01:34,042
+The entry trigger sits at 199.26, the exit at 170.05, and the objective at 262.16 — 2.1 dollars of potential reward per dollar risked.
+
+16
+00:01:34,042 --> 00:01:40,547
+At 34 shares, a failed trade costs about one percent of the account.
+
+17
+00:01:40,547 --> 00:01:51,772
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+18
+00:01:51,772 --> 00:02:00,927
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+19
+00:02:00,927 --> 00:02:06,580
+You buy only if the market pushes up through that line, proving demand.
+
+20
+00:02:06,580 --> 00:02:12,550
+If it never gets there, you never buy, and that is the plan protecting you.
+
+21
+00:02:12,550 --> 00:02:19,954
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+22
+00:02:19,954 --> 00:02:32,453
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+23
+00:02:32,453 --> 00:02:33,488
+Buy on proof.
+
+24
+00:02:33,488 --> 00:02:34,523
+Exit by rule.
+
+25
+00:02:34,523 --> 00:02:35,796
+Size to survive.
+
+26
+00:02:35,764 --> 00:02:41,328
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+27
+00:02:41,328 --> 00:02:49,400
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+28
+00:02:49,400 --> 00:02:53,369
+On the stock track: QUALCOMM, ticker QCOM.
+
+29
+00:02:53,369 --> 00:02:59,040
+The plan in plain English: it last closed at 192.33 dollars.
+
+30
+00:02:59,040 --> 00:03:09,247
+The system would only buy strength — a buy-stop at 199.26, nothing happens unless price proves itself first.
+
+31
+00:03:09,247 --> 00:03:17,847
+If it triggers, the exit is a weekly close below 170.05, and the measured target is 262.16.
+
+32
+00:03:17,847 --> 00:03:23,024
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+33
+00:03:23,024 --> 00:03:24,143
+That's the deal.
+
+34
+00:03:24,116 --> 00:03:26,437
+Turning to the model book.
+
+35
+00:03:26,437 --> 00:03:37,774
+The system holds 12 positions with 98% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+36
+00:03:37,774 --> 00:03:54,825
+New to the book: Direxion Daily AAPL Bull 2X ETF (AAPU), Global X Artificial Intelligence & Technology ETF (AIQ), Bruker (BRKR), MetLife (MET) — each passed the full entry gauntlet overnight.
+
+37
+00:03:54,825 --> 00:04:19,463
+Rotated out: BGC Group (BGC), which still advancing, but outranked by stronger names; iShares MSCI Japan Index Fund (EWJ), which still advancing, but outranked by stronger names; First Trust DJ Internet Index Fund (FDN), which still advancing, but outranked by stronger names.
+
+38
+00:04:19,463 --> 00:04:25,980
+Left on the bench: Aehr Test Systems (AEHR), outranked — book full at 12.
+
+39
+00:04:25,980 --> 00:04:31,068
+Passing the scan is not enough; the book must afford you.
+
+40
+00:04:31,068 --> 00:04:37,102
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+41
+00:04:37,058 --> 00:04:44,265
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+42
+00:04:44,265 --> 00:04:52,545
+12 positions, led by Taiwan Semiconductor Manufacturing, ticker TSM, Avnet, ticker AVT, AbbVie, ticker ABBV.
+
+43
+00:04:52,545 --> 00:05:02,971
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+44
+00:05:02,925 --> 00:05:05,205
+Over to the sports desk.
+
+45
+00:05:05,205 --> 00:05:14,611
+Day 59 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+46
+00:05:14,611 --> 00:05:19,551
+In first place, the index fund, in gray, at 102,454.
+
+47
+00:05:19,551 --> 00:05:26,486
+Then the live self-rebuilding book, in blue, 2.6 thousand back at 99,825.
+
+48
+00:05:26,486 --> 00:05:33,802
+Then the frozen first portfolio, the green line, 5.1 thousand back at 97,389.
+
+49
+00:05:33,802 --> 00:05:36,462
+The race has no finish line.
+
+50
+00:05:36,462 --> 00:05:40,832
+Same books, same dollars, back at it tomorrow.
+
+51
+00:05:40,832 --> 00:05:45,773
+Every line starts the same day with the same dollar.
+
+52
+00:05:45,773 --> 00:05:47,673
+Nothing is restated.
+
+53
+00:05:47,673 --> 00:05:56,581
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+54
+00:05:56,542 --> 00:05:58,091
+Tonight's takeaway.
+
+55
+00:05:58,091 --> 00:06:00,374
+A portfolio is not a museum.
+
+56
+00:06:00,374 --> 00:06:08,689
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+57
+00:06:08,663 --> 00:06:11,677
+Before we close, the disclosure segment.
+
+58
+00:06:11,677 --> 00:06:22,299
+Everything you heard today concerns one simulated portfolio of 12 positions — the same book, line for line, as this morning's emailed report.
+
+59
+00:06:22,299 --> 00:06:24,258
+One record, every surface.
+
+60
+00:06:24,258 --> 00:06:26,345
+A word on how this desk works.
+
+61
+00:06:26,345 --> 00:06:43,872
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+62
+00:06:43,872 --> 00:06:52,288
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+63
+00:06:52,288 --> 00:06:55,220
+All figures are simulated paper trading.
+
+64
+00:06:55,220 --> 00:07:01,599
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+65
+00:07:01,599 --> 00:07:05,558
+From the OROS Market Desk, have a disciplined session.
