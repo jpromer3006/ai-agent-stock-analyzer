@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:27,922
+On the day, the book is up 373 dollars.
+
+7
+00:00:27,922 --> 00:00:32,490
+Digi International (DGII) leads, +2.0 percent.
+
+8
+00:00:32,490 --> 00:00:38,149
+First Trust NASDAQ Cybersecurity ETF (CIBR) lags at -2.2.
+
+9
+00:00:38,149 --> 00:00:43,511
+The checklist is clear: nothing requires action today.
+
+10
+00:00:43,511 --> 00:00:47,038
+On screen, the day's gainers and laggards inside the paper book.
+
+11
+00:00:46,994 --> 00:00:55,144
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+12
+00:00:55,144 --> 00:01:07,281
+11 positions, led by Taiwan Semiconductor Manufacturing, ticker TSM, First Trust NASDAQ Cybersecurity ETF, ticker CIBR, AbbVie, ticker ABBV.
+
+13
+00:01:07,281 --> 00:01:19,072
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+14
+00:01:19,037 --> 00:01:23,544
+Now the part that makes this system different: the loop.
+
+15
+00:01:23,544 --> 00:01:25,797
+Every morning OROS proposes.
+
+16
+00:01:25,797 --> 00:01:35,696
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+17
+00:01:35,696 --> 00:01:39,398
+Inside the book today: 7 positions up, 4 down.
+
+18
+00:01:39,398 --> 00:01:41,651
+Best, DGII at +2.02 percent.
+
+19
+00:01:41,651 --> 00:01:43,342
+Worst, CIBR at -2.17.
+
+20
+00:01:43,342 --> 00:01:48,009
+Both go in the journal — wins and losses get the same ink.
+
+21
+00:01:48,009 --> 00:01:54,769
+The honest scoreboard reads: expectancy -3.00% per trade over 1003 graded positions.
+
+22
+00:01:54,769 --> 00:02:01,369
+Because that record is soft, the system has throttled itself to 50% position size.
+
+23
+00:02:01,369 --> 00:02:06,197
+Nobody told it to — full size must be earned back with wins.
+
+24
+00:02:06,197 --> 00:02:17,786
+What tonight's read hands to tomorrow's open: 189 names close the day in Stage 2; position size stays cut to 50% until the record earns it back.
+
+25
+00:02:17,737 --> 00:02:19,871
+Over to the sports desk.
+
+26
+00:02:19,871 --> 00:02:28,676
+Day 60 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+27
+00:02:28,676 --> 00:02:33,301
+In first place, the index fund, in gray, at 102,926.
+
+28
+00:02:33,301 --> 00:02:39,883
+Then the live self-rebuilding book, in blue, 1.9 thousand back at 101,070.
+
+29
+00:02:39,883 --> 00:02:46,731
+Then the frozen first portfolio, the green line, 5.2 thousand back at 97,705.
+
+30
+00:02:46,731 --> 00:02:49,221
+The race has no finish line.
+
+31
+00:02:49,221 --> 00:02:53,312
+Same books, same dollars, back at it tomorrow.
+
+32
+00:02:53,312 --> 00:02:57,937
+Every line starts the same day with the same dollar.
+
+33
+00:02:57,937 --> 00:02:59,716
+Nothing is restated.
+
+34
+00:02:59,716 --> 00:03:02,045
+Today's lesson is benchmarking.
+
+35
+00:03:02,045 --> 00:03:08,507
+Any strategy must beat the boring alternative: the same money parked in an index fund.
+
+36
+00:03:08,507 --> 00:03:11,963
+That is why the S and P line shares the chart.
+
+37
+00:03:11,963 --> 00:03:20,979
+If the system cannot outrun it, the index deserves the money, and publishing the race every day keeps the system honest.
+
+38
+00:03:20,939 --> 00:03:28,274
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+39
+00:03:28,274 --> 00:03:30,515
+Nothing here is financial advice.
+
+40
+00:03:30,515 --> 00:03:33,504
+From the closing desk — see you at the open.
