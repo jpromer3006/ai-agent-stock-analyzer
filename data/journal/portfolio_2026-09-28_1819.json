@@ -1,0 +1,244 @@
+{
+ "timestamp": "2026-09-28T18:19:15.020143Z",
+ "date": "2026-09-28",
+ "regime": "bull",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 98210.71,
+ "cash": 1789.29,
+ "weights": {
+  "value": 0.024,
+  "weinstein": 0.166,
+  "canslim": 0.175,
+  "technical": 0.111,
+  "sepa": 0.218,
+  "growth": 0.067,
+  "ipo": 0.118,
+  "swing": 0.121
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "AVT",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.7795,
+   "shares": 61,
+   "dollars": 6162.83,
+   "weight_pct": 6.16,
+   "entry": 101.03,
+   "stop": 92.3,
+   "led_by": "sepa",
+   "sentiment": 0.253,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "NVDA",
+   "sector": "Semiconductors",
+   "conviction": 0.7579,
+   "shares": 39,
+   "dollars": 8974.68,
+   "weight_pct": 8.97,
+   "entry": 230.12,
+   "stop": 216.35,
+   "led_by": "sepa",
+   "sentiment": 0.041,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CIBR",
+   "sector": "Other",
+   "conviction": 0.756,
+   "shares": 97,
+   "dollars": 9882.36,
+   "weight_pct": 9.88,
+   "entry": 101.88,
+   "stop": 96.33,
+   "led_by": "sepa",
+   "sentiment": 0.284,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "TSM",
+   "sector": "Semiconductors",
+   "conviction": 0.7544,
+   "shares": 16,
+   "dollars": 7251.68,
+   "weight_pct": 7.25,
+   "entry": 453.23,
+   "stop": 420.36,
+   "led_by": "sepa",
+   "sentiment": 0.119,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "LLY",
+   "sector": "Health Care",
+   "conviction": 0.7353,
+   "shares": 8,
+   "dollars": 9496.8,
+   "weight_pct": 9.5,
+   "entry": 1187.1,
+   "stop": 1143.96,
+   "led_by": "sepa",
+   "sentiment": 0.311,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AIA",
+   "sector": "Other",
+   "conviction": 0.7327,
+   "shares": 72,
+   "dollars": 10325.52,
+   "weight_pct": 10.33,
+   "entry": 143.41,
+   "stop": 137.8,
+   "led_by": "sepa",
+   "sentiment": 0.207,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "DGII",
+   "sector": "Information Technology",
+   "conviction": 0.7324,
+   "shares": 117,
+   "dollars": 9142.38,
+   "weight_pct": 9.14,
+   "entry": 78.14,
+   "stop": 73.52,
+   "led_by": "sepa",
+   "sentiment": 0.071,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ANET",
+   "sector": "Information Technology",
+   "conviction": 0.7319,
+   "shares": 35,
+   "dollars": 7206.15,
+   "weight_pct": 7.21,
+   "entry": 205.89,
+   "stop": 190.98,
+   "led_by": "sepa",
+   "sentiment": 0.012,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ABBV",
+   "sector": "Health Care",
+   "conviction": 0.7286,
+   "shares": 38,
+   "dollars": 10135.74,
+   "weight_pct": 10.14,
+   "entry": 266.73,
+   "stop": 257.29,
+   "led_by": "sepa",
+   "sentiment": 0.255,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "DRH",
+   "sector": "Real Estate",
+   "conviction": 0.7183,
+   "shares": 826,
+   "dollars": 10457.16,
+   "weight_pct": 10.46,
+   "entry": 12.66,
+   "stop": 12.23,
+   "led_by": "sepa",
+   "sentiment": 0.326,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AAPL",
+   "sector": "Information Technology",
+   "conviction": 0.7162,
+   "shares": 27,
+   "dollars": 9175.41,
+   "weight_pct": 9.18,
+   "entry": 339.83,
+   "stop": 321.87,
+   "led_by": "sepa",
+   "sentiment": 0.322,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "AEHR",
+   "sector": "Health Care",
+   "composite": 0.689,
+   "reason": "risk wallet spent \u2014 worst-case loss cap reached"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = BULL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "11 holdings, 98% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 2%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "ANET",
+   "AVT",
+   "DRH",
+   "LLY"
+  ],
+  "removed": [
+   "AIQ",
+   "BIIB",
+   "ECPG",
+   "MET"
+  ],
+  "unchanged": [
+   "AAPL",
+   "ABBV",
+   "AIA",
+   "CIBR",
+   "DGII",
+   "NVDA",
+   "TSM"
+  ]
+ }
+}

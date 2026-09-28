@@ -1,246 +1,279 @@
 {
- "timestamp": "2026-09-25T15:27:34.919968Z",
- "date": "2026-09-25",
- "regime": "bull",
- "mandate": "swing_momentum",
- "account": 100000.0,
- "invested": 99126.17,
- "cash": 873.83,
- "weights": {
-  "swing": 0.121,
-  "growth": 0.067,
-  "technical": 0.111,
-  "sepa": 0.218,
-  "weinstein": 0.166,
-  "ipo": 0.118,
-  "canslim": 0.175,
-  "value": 0.024
- },
- "note": "nightly run (cloud)",
- "holdings": [
-  {
-   "ticker": "TSM",
-   "sector": "Semiconductors",
-   "conviction": 0.7783,
-   "shares": 15,
-   "dollars": 6769.8,
-   "weight_pct": 6.77,
-   "entry": 451.32,
-   "stop": 419.26,
-   "led_by": "sepa",
-   "sentiment": 0.335,
-   "earnings_risk": false,
-   "outcome_return": null
+  "timestamp": "2026-09-25T15:27:34.919968Z",
+  "date": "2026-09-25",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 99126.17,
+  "cash": 873.83,
+  "weights": {
+    "swing": 0.121,
+    "growth": 0.067,
+    "technical": 0.111,
+    "sepa": 0.218,
+    "weinstein": 0.166,
+    "ipo": 0.118,
+    "canslim": 0.175,
+    "value": 0.024
   },
-  {
-   "ticker": "CIBR",
-   "sector": "Other",
-   "conviction": 0.7563,
-   "shares": 85,
-   "dollars": 8673.4,
-   "weight_pct": 8.67,
-   "entry": 102.04,
-   "stop": 96.16,
-   "led_by": "sepa",
-   "sentiment": 0.284,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ABBV",
-   "sector": "Health Care",
-   "conviction": 0.749,
-   "shares": 36,
-   "dollars": 9512.64,
-   "weight_pct": 9.51,
-   "entry": 264.24,
-   "stop": 256.32,
-   "led_by": "sepa",
-   "sentiment": 0.226,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AIA",
-   "sector": "Other",
-   "conviction": 0.7332,
-   "shares": 67,
-   "dollars": 9662.74,
-   "weight_pct": 9.66,
-   "entry": 144.22,
-   "stop": 137.52,
-   "led_by": "sepa",
-   "sentiment": 0.207,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "DGII",
-   "sector": "Information Technology",
-   "conviction": 0.7319,
-   "shares": 110,
-   "dollars": 8555.8,
-   "weight_pct": 8.56,
-   "entry": 77.78,
-   "stop": 73.23,
-   "led_by": "sepa",
-   "sentiment": 0.071,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AIQ",
-   "sector": "Other",
-   "conviction": 0.7134,
-   "shares": 146,
-   "dollars": 9634.54,
-   "weight_pct": 9.63,
-   "entry": 65.99,
-   "stop": 62.65,
-   "led_by": "sepa",
-   "sentiment": 0.012,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BIIB",
-   "sector": "Health Care",
-   "conviction": 0.7131,
-   "shares": 41,
-   "dollars": 9229.1,
-   "weight_pct": 9.23,
-   "entry": 225.1,
-   "stop": 212.91,
-   "led_by": "sepa",
-   "sentiment": 0.139,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "NVDA",
-   "sector": "Semiconductors",
-   "conviction": 0.7012,
-   "shares": 42,
-   "dollars": 9430.68,
-   "weight_pct": 9.43,
-   "entry": 224.54,
-   "stop": 215.63,
-   "led_by": "sepa",
-   "sentiment": 0.224,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ECPG",
-   "sector": "Financials",
-   "conviction": 0.6985,
-   "shares": 94,
-   "dollars": 9227.98,
-   "weight_pct": 9.23,
-   "entry": 98.17,
-   "stop": 92.83,
-   "led_by": "sepa",
-   "sentiment": 0.25,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "MET",
-   "sector": "Financials",
-   "conviction": 0.6969,
-   "shares": 99,
-   "dollars": 9633.69,
-   "weight_pct": 9.63,
-   "entry": 97.31,
-   "stop": 94.39,
-   "led_by": "sepa",
-   "sentiment": 0.193,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AAPL",
-   "sector": "Information Technology",
-   "conviction": 0.6923,
-   "shares": 26,
-   "dollars": 8795.8,
-   "weight_pct": 8.8,
-   "entry": 338.3,
-   "stop": 321.69,
-   "led_by": "sepa",
-   "sentiment": 0.096,
-   "earnings_risk": false,
-   "outcome_return": null
-  }
- ],
- "bench": [
-  {
-   "ticker": "AEHR",
-   "sector": "Health Care",
-   "composite": 0.692,
-   "reason": "risk wallet spent \u2014 worst-case loss cap reached"
-  }
- ],
- "agent_trace": [
-  {
-   "agent": "DataAgent",
-   "role": "universe & data",
-   "summary": "500 candidate names (benchmarks removed)"
-  },
-  {
-   "agent": "RegimeAgent",
-   "role": "market regime",
-   "summary": "regime = BULL"
-  },
-  {
-   "agent": "RouterAgent",
-   "role": "strategy mandate weights",
-   "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
-  },
-  {
-   "agent": "MemoryAgent",
-   "role": "experience-weighted tilt",
-   "summary": "boosted weinstein x1.00, sepa x1.00"
-  },
-  {
-   "agent": "ConstructionAgent",
-   "role": "strategy ensemble + sizing",
-   "summary": "11 holdings, 99% invested, 8 strategies"
-  },
-  {
-   "agent": "RiskAgent",
-   "role": "post-construction risk",
-   "summary": "within limits; cash 1%"
-  }
- ],
- "horizon_days": 20,
- "realized_avg_return": null,
- "realized_hit_rate": null,
- "realized_final_count": 0,
- "realized_stop_exits": 0,
- "changes": {
-  "added": [
-   "BIIB",
-   "CIBR",
-   "DGII",
-   "ECPG",
-   "NVDA"
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "TSM",
+      "sector": "Semiconductors",
+      "conviction": 0.7783,
+      "shares": 15,
+      "dollars": 6769.8,
+      "weight_pct": 6.77,
+      "entry": 451.32,
+      "stop": 419.26,
+      "led_by": "sepa",
+      "sentiment": 0.335,
+      "earnings_risk": false,
+      "outcome_return": 0.0042,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CIBR",
+      "sector": "Other",
+      "conviction": 0.7563,
+      "shares": 85,
+      "dollars": 8673.4,
+      "weight_pct": 8.67,
+      "entry": 102.04,
+      "stop": 96.16,
+      "led_by": "sepa",
+      "sentiment": 0.284,
+      "earnings_risk": false,
+      "outcome_return": -0.0016,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ABBV",
+      "sector": "Health Care",
+      "conviction": 0.749,
+      "shares": 36,
+      "dollars": 9512.64,
+      "weight_pct": 9.51,
+      "entry": 264.24,
+      "stop": 256.32,
+      "led_by": "sepa",
+      "sentiment": 0.226,
+      "earnings_risk": false,
+      "outcome_return": 0.0094,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AIA",
+      "sector": "Other",
+      "conviction": 0.7332,
+      "shares": 67,
+      "dollars": 9662.74,
+      "weight_pct": 9.66,
+      "entry": 144.22,
+      "stop": 137.52,
+      "led_by": "sepa",
+      "sentiment": 0.207,
+      "earnings_risk": false,
+      "outcome_return": -0.0056,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "DGII",
+      "sector": "Information Technology",
+      "conviction": 0.7319,
+      "shares": 110,
+      "dollars": 8555.8,
+      "weight_pct": 8.56,
+      "entry": 77.78,
+      "stop": 73.23,
+      "led_by": "sepa",
+      "sentiment": 0.071,
+      "earnings_risk": false,
+      "outcome_return": 0.0047,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AIQ",
+      "sector": "Other",
+      "conviction": 0.7134,
+      "shares": 146,
+      "dollars": 9634.54,
+      "weight_pct": 9.63,
+      "entry": 65.99,
+      "stop": 62.65,
+      "led_by": "sepa",
+      "sentiment": 0.012,
+      "earnings_risk": false,
+      "outcome_return": -0.0172,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "BIIB",
+      "sector": "Health Care",
+      "conviction": 0.7131,
+      "shares": 41,
+      "dollars": 9229.1,
+      "weight_pct": 9.23,
+      "entry": 225.1,
+      "stop": 212.91,
+      "led_by": "sepa",
+      "sentiment": 0.139,
+      "earnings_risk": false,
+      "outcome_return": 0.0152,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "conviction": 0.7012,
+      "shares": 42,
+      "dollars": 9430.68,
+      "weight_pct": 9.43,
+      "entry": 224.54,
+      "stop": 215.63,
+      "led_by": "sepa",
+      "sentiment": 0.224,
+      "earnings_risk": false,
+      "outcome_return": 0.0248,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ECPG",
+      "sector": "Financials",
+      "conviction": 0.6985,
+      "shares": 94,
+      "dollars": 9227.98,
+      "weight_pct": 9.23,
+      "entry": 98.17,
+      "stop": 92.83,
+      "led_by": "sepa",
+      "sentiment": 0.25,
+      "earnings_risk": false,
+      "outcome_return": -0.0197,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.6969,
+      "shares": 99,
+      "dollars": 9633.69,
+      "weight_pct": 9.63,
+      "entry": 97.31,
+      "stop": 94.39,
+      "led_by": "sepa",
+      "sentiment": 0.193,
+      "earnings_risk": false,
+      "outcome_return": -0.0144,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.6923,
+      "shares": 26,
+      "dollars": 8795.8,
+      "weight_pct": 8.8,
+      "entry": 338.3,
+      "stop": 321.69,
+      "led_by": "sepa",
+      "sentiment": 0.096,
+      "earnings_risk": false,
+      "outcome_return": 0.0045,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    }
   ],
-  "removed": [
-   "AAPU",
-   "ANET",
-   "AVT",
-   "BRKR",
-   "DE",
-   "EMXC"
+  "bench": [
+    {
+      "ticker": "AEHR",
+      "sector": "Health Care",
+      "composite": 0.692,
+      "reason": "risk wallet spent \u2014 worst-case loss cap reached"
+    }
   ],
-  "unchanged": [
-   "AAPL",
-   "ABBV",
-   "AIA",
-   "AIQ",
-   "MET",
-   "TSM"
-  ]
- }
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "500 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "11 holdings, 99% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 1%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0,
+  "changes": {
+    "added": [
+      "BIIB",
+      "CIBR",
+      "DGII",
+      "ECPG",
+      "NVDA"
+    ],
+    "removed": [
+      "AAPU",
+      "ANET",
+      "AVT",
+      "BRKR",
+      "DE",
+      "EMXC"
+    ],
+    "unchanged": [
+      "AAPL",
+      "ABBV",
+      "AIA",
+      "AIQ",
+      "MET",
+      "TSM"
+    ]
+  }
 }
