@@ -1,0 +1,169 @@
+{
+ "date": "Tuesday, September 29, 2026",
+ "regime": "neutral",
+ "lesson": "movers",
+ "race_day": 62,
+ "home_run": null,
+ "takeaway": "Tonight's takeaway. A portfolio is not a museum. Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.",
+ "breadth": {
+  "date": "2026-09-29",
+  "total": 500,
+  "counts": {
+   "Advancing": 180,
+   "Basing": 165,
+   "Topping": 32,
+   "Declining": 123
+  },
+  "invalidated": 1,
+  "source": "cloud",
+  "scan_hash": "5541b93e0f509d2f",
+  "stale_rows": 0,
+  "prior": {
+   "date": "2026-09-22",
+   "total": 500,
+   "counts": {
+    "Advancing": 204,
+    "Basing": 155,
+    "Topping": 31,
+    "Declining": 110
+   },
+   "invalidated": 1,
+   "source": "cloud",
+   "scan_hash": "d08980d85f330c69",
+   "stale_rows": 44
+  }
+ },
+ "oros500": {
+  "name": "OROS 500",
+  "date": "2026-09-29",
+  "count": 500,
+  "target": 500,
+  "entered": [
+   "ACHV",
+   "ADAM",
+   "ADTN",
+   "AKTS",
+   "AMAL",
+   "AMDD",
+   "AMPH",
+   "AMRC",
+   "AMUU",
+   "AOSL",
+   "APEI",
+   "ARCT",
+   "ARHS",
+   "ASMB",
+   "ATLC",
+   "AUPH",
+   "AVGG",
+   "AVO",
+   "BABX",
+   "BCAX",
+   "BDYN",
+   "BFC",
+   "BNDW",
+   "BSCR",
+   "BSCS",
+   "BSCT",
+   "BWMN",
+   "BYND",
+   "CADL",
+   "CENTA",
+   "CNOB",
+   "CNXN",
+   "COMT",
+   "CONI",
+   "CRBP",
+   "CRMG",
+   "CRSR",
+   "CSTL",
+   "CTRN",
+   "CUE",
+   "DFGX",
+   "DSGN",
+   "EDRY",
+   "EEMA"
+  ],
+  "left": [
+   "DBC",
+   "EEM",
+   "EFA",
+   "EMXC",
+   "EWJ",
+   "FDN",
+   "FXI",
+   "GDX",
+   "GLD",
+   "HACK",
+   "HOOD",
+   "IBB",
+   "IGV",
+   "IHI",
+   "INDA",
+   "ITA",
+   "IYT",
+   "JETS",
+   "KRE",
+   "MDY",
+   "OIH",
+   "SLV",
+   "SMH",
+   "SOXX",
+   "TAN",
+   "TLT",
+   "TSEM",
+   "URA",
+   "VNQ",
+   "XBI",
+   "XHB",
+   "XLB",
+   "XLC",
+   "XLE",
+   "XLF",
+   "XLI",
+   "XLK",
+   "XLP",
+   "XLRE",
+   "XLU",
+   "XLV",
+   "XLY",
+   "XME",
+   "XOP"
+  ]
+ },
+ "chapters": [
+  {
+   "title": "Tonight on the Market Desk",
+   "start_s": 0.0
+  },
+  {
+   "title": "The Market Open",
+   "start_s": 41.5
+  },
+  {
+   "title": "Top Story \u2014 no setup today",
+   "start_s": 68.89
+  },
+  {
+   "title": "Business Desk \u2014 the book",
+   "start_s": 82.31
+  },
+  {
+   "title": "The Portfolio \u2014 Actual Holdings",
+   "start_s": 162.54
+  },
+  {
+   "title": "Sports Desk \u2014 The Race",
+   "start_s": 190.82
+  },
+  {
+   "title": "The Takeaway",
+   "start_s": 245.27
+  },
+  {
+   "title": "Disclosure & Credits",
+   "start_s": 257.39
+  }
+ ],
+ "duration_s": 312.8
+}

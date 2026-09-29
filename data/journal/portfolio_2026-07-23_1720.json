@@ -30,9 +30,9 @@
       "led_by": "weinstein",
       "sentiment": 0.211,
       "earnings_risk": true,
-      "outcome_return": 0.0036,
+      "outcome_return": -0.0082,
       "outcome_exit": "open",
-      "outcome_days": 46,
+      "outcome_days": 47,
       "outcome_final": false
     },
     {
@@ -47,7 +47,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0897,
+      "outcome_return": -0.0924,
       "outcome_exit": "stop",
       "outcome_days": 46,
       "outcome_final": true
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0675,
-      "outcome_exit": "open",
-      "outcome_days": 46,
-      "outcome_final": false
+      "outcome_return": -0.0838,
+      "outcome_exit": "stop",
+      "outcome_days": 47,
+      "outcome_final": true
     },
     {
       "ticker": "CVX",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0541,
+      "outcome_return": 0.0482,
       "outcome_exit": "open",
-      "outcome_days": 46,
+      "outcome_days": 47,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0309,
+      "outcome_return": 0.0267,
       "outcome_exit": "open",
-      "outcome_days": 46,
+      "outcome_days": 47,
       "outcome_final": false
     },
     {
@@ -220,8 +220,8 @@
     }
   ],
   "horizon_days": 120,
-  "realized_avg_return": -0.0811,
+  "realized_avg_return": -0.0822,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 4,
-  "realized_stop_exits": 4
+  "realized_final_count": 5,
+  "realized_stop_exits": 5
 }

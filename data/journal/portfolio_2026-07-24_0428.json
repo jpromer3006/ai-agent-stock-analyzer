@@ -30,7 +30,7 @@
       "led_by": "sepa",
       "sentiment": 0.164,
       "earnings_risk": true,
-      "outcome_return": -0.0921,
+      "outcome_return": -0.0948,
       "outcome_exit": "stop",
       "outcome_days": 45,
       "outcome_final": true
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.195,
       "earnings_risk": true,
-      "outcome_return": -0.0692,
-      "outcome_exit": "open",
-      "outcome_days": 45,
-      "outcome_final": false
+      "outcome_return": -0.0855,
+      "outcome_exit": "stop",
+      "outcome_days": 46,
+      "outcome_final": true
     },
     {
       "ticker": "XOP",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.22,
       "earnings_risk": false,
-      "outcome_return": 0.0332,
+      "outcome_return": NaN,
       "outcome_exit": "open",
-      "outcome_days": 44,
+      "outcome_days": 45,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "weinstein",
       "sentiment": 0.152,
       "earnings_risk": false,
-      "outcome_return": 0.0382,
+      "outcome_return": 0.0247,
       "outcome_exit": "open",
-      "outcome_days": 45,
+      "outcome_days": 46,
       "outcome_final": false
     }
   ],
@@ -151,8 +151,8 @@
     }
   ],
   "horizon_days": 120,
-  "realized_avg_return": -0.0635,
+  "realized_avg_return": -0.0717,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2
+  "realized_final_count": 3,
+  "realized_stop_exits": 3
 }
