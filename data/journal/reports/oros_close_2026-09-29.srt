@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:28,260
+On the day, the book is up 427 dollars.
+
+7
+00:00:28,260 --> 00:00:33,226
+Digi International (DGII) leads, +2.0 percent.
+
+8
+00:00:33,226 --> 00:00:39,380
+First Trust NASDAQ Cybersecurity ETF (CIBR) lags at -2.2.
+
+9
+00:00:39,380 --> 00:00:45,209
+The checklist is clear: nothing requires action today.
+
+10
+00:00:45,209 --> 00:00:47,836
+Today's lesson is noise versus signal.
+
+11
+00:00:47,836 --> 00:00:51,500
+Daily moves are weather; the weekly trend is climate.
+
+12
+00:00:51,500 --> 00:00:54,542
+The system never exits on a scary afternoon.
+
+13
+00:00:54,542 --> 00:01:00,073
+It acts only on weekly closes, because that is where the real information lives.
+
+14
+00:01:00,023 --> 00:01:08,419
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+15
+00:01:08,419 --> 00:01:18,334
+11 positions, led by Avnet, ticker AVT, NVIDIA, ticker NVDA, First Trust NASDAQ Cybersecurity ETF, ticker CIBR.
+
+16
+00:01:18,334 --> 00:01:30,482
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+17
+00:01:30,441 --> 00:01:35,091
+Now the part that makes this system different: the loop.
+
+18
+00:01:35,091 --> 00:01:37,416
+Every morning OROS proposes.
+
+19
+00:01:37,416 --> 00:01:47,630
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+20
+00:01:47,630 --> 00:01:51,450
+Inside the book today: 8 positions up, 3 down.
+
+21
+00:01:51,450 --> 00:01:53,692
+Best, AVT at +2.15 percent.
+
+22
+00:01:53,692 --> 00:01:55,436
+Worst, CIBR at -2.17.
+
+23
+00:01:55,436 --> 00:02:00,252
+Both go in the journal — wins and losses get the same ink.
+
+24
+00:02:00,252 --> 00:02:07,227
+The honest scoreboard reads: expectancy -2.98% per trade over 1010 graded positions.
+
+25
+00:02:07,227 --> 00:02:14,036
+Because that record is soft, the system has throttled itself to 50% position size.
+
+26
+00:02:14,036 --> 00:02:19,019
+Nobody told it to — full size must be earned back with wins.
+
+27
+00:02:19,019 --> 00:02:30,810
+What tonight's read hands to tomorrow's open: 0 names close the day in Stage 2; position size stays cut to 50% until the record earns it back.
+
+28
+00:02:30,766 --> 00:02:32,910
+Over to the sports desk.
+
+29
+00:02:32,910 --> 00:02:41,753
+Day 62 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+30
+00:02:41,753 --> 00:02:46,398
+In first place, the index fund, in gray, at 102,926.
+
+31
+00:02:46,398 --> 00:02:53,008
+Then the live self-rebuilding book, in blue, 1.1 thousand back at 101,810.
+
+32
+00:02:53,008 --> 00:02:59,886
+Then the frozen first portfolio, the green line, 5.2 thousand back at 97,705.
+
+33
+00:02:59,886 --> 00:03:02,387
+The race has no finish line.
+
+34
+00:03:02,387 --> 00:03:06,496
+Same books, same dollars, back at it tomorrow.
+
+35
+00:03:06,496 --> 00:03:11,141
+Every line starts the same day with the same dollar.
+
+36
+00:03:11,141 --> 00:03:12,928
+Nothing is restated.
+
+37
+00:03:12,928 --> 00:03:21,835
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+38
+00:03:21,797 --> 00:03:29,132
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+39
+00:03:29,132 --> 00:03:31,373
+Nothing here is financial advice.
+
+40
+00:03:31,373 --> 00:03:34,362
+From the closing desk — see you at the open.

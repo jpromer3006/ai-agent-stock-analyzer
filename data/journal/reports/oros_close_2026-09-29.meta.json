@@ -1,0 +1,62 @@
+{
+ "edition": "evening",
+ "chapters": [
+  {
+   "title": "The Verdict",
+   "start_s": 0.0
+  },
+  {
+   "title": "Movers in the Book",
+   "start_s": 24.05
+  },
+  {
+   "title": "The Portfolio \u2014 Actual Holdings",
+   "start_s": 60.02
+  },
+  {
+   "title": "The Loop",
+   "start_s": 90.44
+  },
+  {
+   "title": "The Portfolio \u2014 the Race at the Close",
+   "start_s": 150.77
+  },
+  {
+   "title": "Sign-off",
+   "start_s": 201.8
+  }
+ ],
+ "home_run_confirmed": null,
+ "tally": {
+  "days": 50,
+  "vs_frozen": {
+   "wins": 26,
+   "losses": 24,
+   "ties": 0
+  },
+  "vs_spy": {
+   "wins": 20,
+   "losses": 30,
+   "ties": 0
+  },
+  "today": {
+   "date": "2026-09-29",
+   "live_pct": 0.42732872009277345,
+   "frozen_pct": 0.10727947759628297,
+   "spy_pct": 0.5435468794763754
+  }
+ },
+ "breadth": {
+  "date": "2026-09-29",
+  "total": 1,
+  "counts": {
+   "Advancing": 0,
+   "Basing": 1,
+   "Topping": 0,
+   "Declining": 0
+  },
+  "invalidated": 0,
+  "source": "cloud"
+ },
+ "duration_s": 214.3
+}
