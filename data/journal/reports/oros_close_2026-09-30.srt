@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:27,879
+On the day, the book is down 186 dollars.
+
+7
+00:00:27,879 --> 00:00:31,054
+NVIDIA (NVDA) leads, +1.7 percent.
+
+8
+00:00:31,054 --> 00:00:34,602
+Aehr Test Systems (AEHR) lags at -5.7.
+
+9
+00:00:34,602 --> 00:00:39,645
+The checklist is clear: nothing requires action today.
+
+10
+00:00:39,645 --> 00:00:43,172
+On screen, the day's gainers and laggards inside the paper book.
+
+11
+00:00:43,128 --> 00:00:51,003
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+12
+00:00:51,003 --> 00:01:00,051
+10 positions, led by NVIDIA, ticker NVDA, Taiwan Semiconductor Manufacturing, ticker TSM, Avnet, ticker AVT.
+
+13
+00:01:00,051 --> 00:01:11,445
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+14
+00:01:11,410 --> 00:01:16,343
+Now the part that makes this system different: the loop.
+
+15
+00:01:16,343 --> 00:01:18,810
+Every morning OROS proposes.
+
+16
+00:01:18,810 --> 00:01:29,645
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+17
+00:01:29,645 --> 00:01:33,697
+Inside the book today: 6 positions up, 4 down.
+
+18
+00:01:33,697 --> 00:01:36,164
+Best, NVDA at +1.68 percent.
+
+19
+00:01:36,164 --> 00:01:38,014
+Worst, AEHR at -5.65.
+
+20
+00:01:38,014 --> 00:01:43,123
+Both go in the journal — wins and losses get the same ink.
+
+21
+00:01:43,123 --> 00:01:50,523
+The honest scoreboard reads: expectancy -3.02% per trade over 1022 graded positions.
+
+22
+00:01:50,523 --> 00:01:57,746
+Because that record is soft, the system has throttled itself to 25% position size.
+
+23
+00:01:57,746 --> 00:02:03,032
+Nobody told it to — full size must be earned back with wins.
+
+24
+00:02:03,032 --> 00:02:15,541
+What tonight's read hands to tomorrow's open: 0 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+25
+00:02:15,497 --> 00:02:17,726
+Over to the sports desk.
+
+26
+00:02:17,726 --> 00:02:26,920
+Day 63 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+27
+00:02:26,920 --> 00:02:31,749
+In first place, the index fund, in gray, at 102,160.
+
+28
+00:02:31,749 --> 00:02:38,621
+Then the live self-rebuilding book, in blue, 0.8 thousand back at 101,325.
+
+29
+00:02:38,621 --> 00:02:45,772
+Then the frozen first portfolio, the green line, 4.7 thousand back at 97,456.
+
+30
+00:02:45,772 --> 00:02:48,372
+The race has no finish line.
+
+31
+00:02:48,372 --> 00:02:52,644
+Same books, same dollars, back at it tomorrow.
+
+32
+00:02:52,644 --> 00:02:57,473
+Every line starts the same day with the same dollar.
+
+33
+00:02:57,473 --> 00:02:59,330
+Nothing is restated.
+
+34
+00:02:59,330 --> 00:03:01,660
+Today's lesson is benchmarking.
+
+35
+00:03:01,660 --> 00:03:08,121
+Any strategy must beat the boring alternative: the same money parked in an index fund.
+
+36
+00:03:08,121 --> 00:03:11,578
+That is why the S and P line shares the chart.
+
+37
+00:03:11,578 --> 00:03:20,594
+If the system cannot outrun it, the index deserves the money, and publishing the race every day keeps the system honest.
+
+38
+00:03:20,553 --> 00:03:27,888
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+39
+00:03:27,888 --> 00:03:30,130
+Nothing here is financial advice.
+
+40
+00:03:30,130 --> 00:03:33,118
+From the closing desk — see you at the open.
