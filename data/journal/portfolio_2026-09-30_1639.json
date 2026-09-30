@@ -1,0 +1,227 @@
+{
+ "timestamp": "2026-09-30T16:39:32.325300Z",
+ "date": "2026-09-30",
+ "regime": "neutral",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 43211.83,
+ "cash": 56788.17,
+ "weights": {
+  "swing": 0.111,
+  "sepa": 0.206,
+  "ipo": 0.082,
+  "technical": 0.123,
+  "growth": 0.082,
+  "value": 0.045,
+  "weinstein": 0.185,
+  "canslim": 0.165
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "ANET",
+   "sector": "Information Technology",
+   "conviction": 0.7968,
+   "shares": 20,
+   "dollars": 4085.4,
+   "weight_pct": 4.09,
+   "entry": 204.27,
+   "stop": 192.22,
+   "led_by": "sepa",
+   "sentiment": 0.237,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AVT",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.782,
+   "shares": 32,
+   "dollars": 3216.64,
+   "weight_pct": 3.22,
+   "entry": 100.52,
+   "stop": 92.89,
+   "led_by": "sepa",
+   "sentiment": 0.291,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ASML",
+   "sector": "Industrials",
+   "conviction": 0.7755,
+   "shares": 2,
+   "dollars": 3619.78,
+   "weight_pct": 3.62,
+   "entry": 1809.89,
+   "stop": 1719.94,
+   "led_by": "sepa",
+   "sentiment": 0.029,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "NVDA",
+   "sector": "Semiconductors",
+   "conviction": 0.77,
+   "shares": 19,
+   "dollars": 4375.13,
+   "weight_pct": 4.38,
+   "entry": 230.27,
+   "stop": 217.27,
+   "led_by": "sepa",
+   "sentiment": 0.035,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "TSM",
+   "sector": "Semiconductors",
+   "conviction": 0.7677,
+   "shares": 6,
+   "dollars": 2753.4,
+   "weight_pct": 2.75,
+   "entry": 458.9,
+   "stop": 422.18,
+   "led_by": "sepa",
+   "sentiment": 0.137,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AEHR",
+   "sector": "Health Care",
+   "conviction": 0.7055,
+   "shares": 20,
+   "dollars": 1996.8,
+   "weight_pct": 2.0,
+   "entry": 99.84,
+   "stop": 87.71,
+   "led_by": "technical",
+   "sentiment": 0.308,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "LLY",
+   "sector": "Health Care",
+   "conviction": 0.7035,
+   "shares": 5,
+   "dollars": 5897.25,
+   "weight_pct": 5.9,
+   "entry": 1179.45,
+   "stop": 1135.77,
+   "led_by": "sepa",
+   "sentiment": 0.071,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AMGN",
+   "sector": "Health Care",
+   "conviction": 0.7014,
+   "shares": 15,
+   "dollars": 6334.2,
+   "weight_pct": 6.33,
+   "entry": 422.28,
+   "stop": 405.94,
+   "led_by": "sepa",
+   "sentiment": 0.384,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "PM",
+   "sector": "Consumer Staples",
+   "conviction": 0.6766,
+   "shares": 38,
+   "dollars": 7312.34,
+   "weight_pct": 7.31,
+   "entry": 192.43,
+   "stop": 185.92,
+   "led_by": "sepa",
+   "sentiment": 0.215,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MSFT",
+   "sector": "Information Technology",
+   "conviction": 0.6765,
+   "shares": 7,
+   "dollars": 3620.89,
+   "weight_pct": 3.62,
+   "entry": 517.27,
+   "stop": 482.28,
+   "led_by": "technical",
+   "sentiment": -0.007,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "TXN",
+   "sector": "Semiconductors",
+   "composite": 0.672,
+   "reason": "outranked \u2014 book full at 10"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = NEUTRAL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "10 holdings, 43% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 57%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "AMGN",
+   "PM"
+  ],
+  "removed": [
+   "BIIB",
+   "TXN"
+  ],
+  "unchanged": [
+   "AEHR",
+   "ANET",
+   "ASML",
+   "AVT",
+   "LLY",
+   "MSFT",
+   "NVDA",
+   "TSM"
+  ]
+ }
+}

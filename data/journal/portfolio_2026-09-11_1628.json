@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.257,
       "earnings_risk": false,
-      "outcome_return": -0.0519,
+      "outcome_return": -0.0453,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.207,
       "earnings_risk": false,
-      "outcome_return": 0.0129,
+      "outcome_return": 0.0042,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.096,
       "earnings_risk": false,
-      "outcome_return": 0.0026,
+      "outcome_return": -0.013,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     },
     {
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.179,
       "earnings_risk": false,
-      "outcome_return": -0.0693,
-      "outcome_exit": "stop",
-      "outcome_days": 12,
-      "outcome_final": true
+      "outcome_return": -0.0422,
+      "outcome_exit": "open",
+      "outcome_days": 13,
+      "outcome_final": false
     },
     {
       "ticker": "XOP",
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.192,
       "earnings_risk": false,
-      "outcome_return": 0.0248,
+      "outcome_return": 0.0233,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     },
     {
@@ -200,9 +200,9 @@
       "led_by": "sepa",
       "sentiment": 0.041,
       "earnings_risk": false,
-      "outcome_return": -0.0409,
+      "outcome_return": -0.0364,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     },
     {
@@ -217,9 +217,9 @@
       "led_by": "sepa",
       "sentiment": 0.208,
       "earnings_risk": false,
-      "outcome_return": 0.0376,
+      "outcome_return": 0.0451,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     }
   ],
@@ -270,8 +270,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0604,
+  "realized_avg_return": -0.0582,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 5,
-  "realized_stop_exits": 5
+  "realized_final_count": 4,
+  "realized_stop_exits": 4
 }
