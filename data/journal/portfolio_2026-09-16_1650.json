@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.246,
       "earnings_risk": false,
-      "outcome_return": -0.0617,
+      "outcome_return": -0.0542,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.256,
       "earnings_risk": false,
-      "outcome_return": -0.0285,
-      "outcome_exit": "open",
+      "outcome_return": -0.0367,
+      "outcome_exit": "stop",
       "outcome_days": 10,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "AVT",
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.128,
       "earnings_risk": false,
-      "outcome_return": 0.0694,
+      "outcome_return": 0.0896,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.271,
       "earnings_risk": false,
-      "outcome_return": -0.0059,
+      "outcome_return": -0.0083,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": -0.043,
       "earnings_risk": false,
-      "outcome_return": -0.0325,
+      "outcome_return": -0.0322,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.171,
       "earnings_risk": false,
-      "outcome_return": 0.0114,
+      "outcome_return": -0.0144,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.09,
       "earnings_risk": false,
-      "outcome_return": 0.0226,
+      "outcome_return": 0.0218,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.107,
       "earnings_risk": false,
-      "outcome_return": 0.0012,
+      "outcome_return": -0.0133,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.323,
       "earnings_risk": false,
-      "outcome_return": -0.0352,
-      "outcome_exit": "open",
+      "outcome_return": -0.0414,
+      "outcome_exit": "stop",
       "outcome_days": 10,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "CDW",
@@ -217,9 +217,9 @@
       "led_by": "sepa",
       "sentiment": 0.082,
       "earnings_risk": false,
-      "outcome_return": -0.0112,
+      "outcome_return": -0.0154,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     }
   ],
@@ -270,8 +270,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0593,
+  "realized_avg_return": -0.0492,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2
+  "realized_final_count": 4,
+  "realized_stop_exits": 4
 }

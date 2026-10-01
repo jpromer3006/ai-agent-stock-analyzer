@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": -0.007,
       "earnings_risk": false,
-      "outcome_return": 0.1195,
+      "outcome_return": 0.103,
       "outcome_exit": "open",
-      "outcome_days": 68,
+      "outcome_days": 69,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "technical",
       "sentiment": 0.145,
       "earnings_risk": false,
-      "outcome_return": 0.122,
+      "outcome_return": 0.1058,
       "outcome_exit": "open",
-      "outcome_days": 68,
+      "outcome_days": 69,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.221,
       "earnings_risk": false,
-      "outcome_return": 0.108,
+      "outcome_return": 0.0769,
       "outcome_exit": "open",
-      "outcome_days": 68,
+      "outcome_days": 69,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.175,
       "earnings_risk": false,
-      "outcome_return": 0.2134,
+      "outcome_return": 0.1949,
       "outcome_exit": "open",
-      "outcome_days": 68,
+      "outcome_days": 69,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.196,
       "earnings_risk": false,
-      "outcome_return": 0.0777,
+      "outcome_return": 0.0685,
       "outcome_exit": "open",
-      "outcome_days": 68,
+      "outcome_days": 69,
       "outcome_final": false
     },
     {
@@ -217,9 +217,9 @@
       "led_by": "technical",
       "sentiment": 0.097,
       "earnings_risk": false,
-      "outcome_return": 0.0881,
+      "outcome_return": 0.0803,
       "outcome_exit": "open",
-      "outcome_days": 68,
+      "outcome_days": 69,
       "outcome_final": false
     },
     {
@@ -234,9 +234,9 @@
       "led_by": "sepa",
       "sentiment": -0.157,
       "earnings_risk": false,
-      "outcome_return": -0.001,
+      "outcome_return": -0.0041,
       "outcome_exit": "open",
-      "outcome_days": 68,
+      "outcome_days": 69,
       "outcome_final": false
     },
     {
