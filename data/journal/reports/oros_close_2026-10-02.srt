@@ -1,0 +1,147 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:28,638
+On the day, the book is down 186 dollars.
+
+7
+00:00:28,638 --> 00:00:35,801
+First Trust NASDAQ Cybersecurity ETF (CIBR) leads, +1.1 percent.
+
+8
+00:00:35,801 --> 00:00:39,270
+Bloom Energy (BE) lags at -4.9.
+
+9
+00:00:39,270 --> 00:00:45,314
+The checklist is clear: nothing requires action today.
+
+10
+00:00:45,314 --> 00:00:48,840
+On screen, the day's gainers and laggards inside the paper book.
+
+11
+00:00:48,796 --> 00:00:56,450
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+12
+00:00:56,450 --> 00:01:06,221
+10 positions, led by ASML Holding N.V, ticker ASML, NVIDIA, ticker NVDA, Taiwan Semiconductor Manufacturing, ticker TSM.
+
+13
+00:01:06,221 --> 00:01:17,296
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+14
+00:01:17,263 --> 00:01:21,958
+Now the part that makes this system different: the loop.
+
+15
+00:01:21,958 --> 00:01:24,305
+Every morning OROS proposes.
+
+16
+00:01:24,305 --> 00:01:34,617
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+17
+00:01:34,617 --> 00:01:38,474
+Inside the book today: 4 positions up, 6 down.
+
+18
+00:01:38,474 --> 00:01:40,821
+Best, CIBR at +1.10 percent.
+
+19
+00:01:40,821 --> 00:01:42,414
+Worst, BE at -4.90.
+
+20
+00:01:42,414 --> 00:01:47,276
+Both go in the journal — wins and losses get the same ink.
+
+21
+00:01:47,276 --> 00:01:54,319
+The honest scoreboard reads: expectancy -3.03% per trade over 1027 graded positions.
+
+22
+00:01:54,319 --> 00:02:01,193
+Because that record is soft, the system has throttled itself to 25% position size.
+
+23
+00:02:01,193 --> 00:02:06,224
+Nobody told it to — full size must be earned back with wins.
+
+24
+00:02:06,224 --> 00:02:18,128
+What tonight's read hands to tomorrow's open: 0 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+25
+00:02:18,099 --> 00:02:20,353
+Over to the sports desk.
+
+26
+00:02:20,353 --> 00:02:29,651
+Day 65 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+27
+00:02:29,651 --> 00:02:34,535
+In first place, the index fund, in gray, at 101,763.
+
+28
+00:02:34,535 --> 00:02:41,485
+Then the live self-rebuilding book, in blue, 0.7 thousand back at 101,106.
+
+29
+00:02:41,485 --> 00:02:48,717
+Then the frozen first portfolio, the green line, 5.3 thousand back at 96,498.
+
+30
+00:02:48,717 --> 00:02:51,346
+The race has no finish line.
+
+31
+00:02:51,346 --> 00:02:55,667
+Same books, same dollars, back at it tomorrow.
+
+32
+00:02:55,667 --> 00:03:00,550
+Every line starts the same day with the same dollar.
+
+33
+00:03:00,550 --> 00:03:02,429
+Nothing is restated.
+
+34
+00:03:02,429 --> 00:03:11,337
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+35
+00:03:11,299 --> 00:03:18,634
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+36
+00:03:18,634 --> 00:03:20,876
+Nothing here is financial advice.
+
+37
+00:03:20,876 --> 00:03:23,864
+From the closing desk — see you at the open.
