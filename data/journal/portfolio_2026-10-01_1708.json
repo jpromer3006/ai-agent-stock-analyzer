@@ -1,228 +1,258 @@
 {
- "timestamp": "2026-10-01T17:08:53.183013Z",
- "date": "2026-10-01",
- "regime": "neutral",
- "mandate": "swing_momentum",
- "account": 100000.0,
- "invested": 37425.94,
- "cash": 62574.06,
- "weights": {
-  "sepa": 0.206,
-  "growth": 0.082,
-  "technical": 0.123,
-  "ipo": 0.082,
-  "value": 0.045,
-  "swing": 0.111,
-  "canslim": 0.165,
-  "weinstein": 0.185
- },
- "note": "nightly run (cloud)",
- "holdings": [
-  {
-   "ticker": "ASML",
-   "sector": "Industrials",
-   "conviction": 0.7761,
-   "shares": 3,
-   "dollars": 5403.12,
-   "weight_pct": 5.4,
-   "entry": 1801.04,
-   "stop": 1720.01,
-   "led_by": "sepa",
-   "sentiment": 0.029,
-   "earnings_risk": false,
-   "outcome_return": null
+  "timestamp": "2026-10-01T17:08:53.183013Z",
+  "date": "2026-10-01",
+  "regime": "neutral",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 37425.94,
+  "cash": 62574.06,
+  "weights": {
+    "sepa": 0.206,
+    "growth": 0.082,
+    "technical": 0.123,
+    "ipo": 0.082,
+    "value": 0.045,
+    "swing": 0.111,
+    "canslim": 0.165,
+    "weinstein": 0.185
   },
-  {
-   "ticker": "NVDA",
-   "sector": "Semiconductors",
-   "conviction": 0.7729,
-   "shares": 19,
-   "dollars": 4381.78,
-   "weight_pct": 4.38,
-   "entry": 230.62,
-   "stop": 217.61,
-   "led_by": "sepa",
-   "sentiment": 0.052,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "TSM",
-   "sector": "Semiconductors",
-   "conviction": 0.7696,
-   "shares": 7,
-   "dollars": 3192.49,
-   "weight_pct": 3.19,
-   "entry": 456.07,
-   "stop": 422.84,
-   "led_by": "sepa",
-   "sentiment": 0.152,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AVT",
-   "sector": "Consumer Discretionary",
-   "conviction": 0.7509,
-   "shares": 26,
-   "dollars": 2662.92,
-   "weight_pct": 2.66,
-   "entry": 102.42,
-   "stop": 93.13,
-   "led_by": "sepa",
-   "sentiment": 0.291,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BRKR",
-   "sector": "Health Care",
-   "conviction": 0.7447,
-   "shares": 56,
-   "dollars": 3515.12,
-   "weight_pct": 3.52,
-   "entry": 62.77,
-   "stop": 58.38,
-   "led_by": "sepa",
-   "sentiment": -0.036,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AMGN",
-   "sector": "Health Care",
-   "conviction": 0.7316,
-   "shares": 15,
-   "dollars": 6167.85,
-   "weight_pct": 6.17,
-   "entry": 411.19,
-   "stop": 394.59,
-   "led_by": "sepa",
-   "sentiment": 0.388,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AEHR",
-   "sector": "Health Care",
-   "conviction": 0.7086,
-   "shares": 20,
-   "dollars": 2025.0,
-   "weight_pct": 2.02,
-   "entry": 101.25,
-   "stop": 89.18,
-   "led_by": "technical",
-   "sentiment": 0.308,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ANET",
-   "sector": "Information Technology",
-   "conviction": 0.7024,
-   "shares": 22,
-   "dollars": 4490.2,
-   "weight_pct": 4.49,
-   "entry": 204.1,
-   "stop": 192.79,
-   "led_by": "sepa",
-   "sentiment": 0.206,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BE",
-   "sector": "Industrials",
-   "conviction": 0.7015,
-   "shares": 6,
-   "dollars": 1652.94,
-   "weight_pct": 1.65,
-   "entry": 275.49,
-   "stop": 234.68,
-   "led_by": "sepa",
-   "sentiment": 0.21,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "CIBR",
-   "sector": "Other",
-   "conviction": 0.6967,
-   "shares": 38,
-   "dollars": 3934.52,
-   "weight_pct": 3.93,
-   "entry": 103.54,
-   "stop": 97.06,
-   "led_by": "sepa",
-   "sentiment": 0.258,
-   "earnings_risk": false,
-   "outcome_return": null
-  }
- ],
- "bench": [
-  {
-   "ticker": "MSFT",
-   "sector": "Information Technology",
-   "composite": 0.688,
-   "reason": "outranked \u2014 book full at 10"
-  }
- ],
- "agent_trace": [
-  {
-   "agent": "DataAgent",
-   "role": "universe & data",
-   "summary": "500 candidate names (benchmarks removed)"
-  },
-  {
-   "agent": "RegimeAgent",
-   "role": "market regime",
-   "summary": "regime = NEUTRAL"
-  },
-  {
-   "agent": "RouterAgent",
-   "role": "strategy mandate weights",
-   "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
-  },
-  {
-   "agent": "MemoryAgent",
-   "role": "experience-weighted tilt",
-   "summary": "boosted weinstein x1.00, sepa x1.00"
-  },
-  {
-   "agent": "ConstructionAgent",
-   "role": "strategy ensemble + sizing",
-   "summary": "10 holdings, 37% invested, 8 strategies"
-  },
-  {
-   "agent": "RiskAgent",
-   "role": "post-construction risk",
-   "summary": "within limits; cash 63%"
-  }
- ],
- "horizon_days": 20,
- "realized_avg_return": null,
- "realized_hit_rate": null,
- "realized_final_count": 0,
- "realized_stop_exits": 0,
- "changes": {
-  "added": [
-   "BE",
-   "BRKR",
-   "CIBR"
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "ASML",
+      "sector": "Industrials",
+      "conviction": 0.7761,
+      "shares": 3,
+      "dollars": 5403.12,
+      "weight_pct": 5.4,
+      "entry": 1801.04,
+      "stop": 1720.01,
+      "led_by": "sepa",
+      "sentiment": 0.029,
+      "earnings_risk": false,
+      "outcome_return": 0.0386,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "conviction": 0.7729,
+      "shares": 19,
+      "dollars": 4381.78,
+      "weight_pct": 4.38,
+      "entry": 230.62,
+      "stop": 217.61,
+      "led_by": "sepa",
+      "sentiment": 0.052,
+      "earnings_risk": false,
+      "outcome_return": 0.0257,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "TSM",
+      "sector": "Semiconductors",
+      "conviction": 0.7696,
+      "shares": 7,
+      "dollars": 3192.49,
+      "weight_pct": 3.19,
+      "entry": 456.07,
+      "stop": 422.84,
+      "led_by": "sepa",
+      "sentiment": 0.152,
+      "earnings_risk": false,
+      "outcome_return": 0.0382,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AVT",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7509,
+      "shares": 26,
+      "dollars": 2662.92,
+      "weight_pct": 2.66,
+      "entry": 102.42,
+      "stop": 93.13,
+      "led_by": "sepa",
+      "sentiment": 0.291,
+      "earnings_risk": false,
+      "outcome_return": 0.0487,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "BRKR",
+      "sector": "Health Care",
+      "conviction": 0.7447,
+      "shares": 56,
+      "dollars": 3515.12,
+      "weight_pct": 3.52,
+      "entry": 62.77,
+      "stop": 58.38,
+      "led_by": "sepa",
+      "sentiment": -0.036,
+      "earnings_risk": false,
+      "outcome_return": 0.0134,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AMGN",
+      "sector": "Health Care",
+      "conviction": 0.7316,
+      "shares": 15,
+      "dollars": 6167.85,
+      "weight_pct": 6.17,
+      "entry": 411.19,
+      "stop": 394.59,
+      "led_by": "sepa",
+      "sentiment": 0.388,
+      "earnings_risk": false,
+      "outcome_return": -0.0211,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AEHR",
+      "sector": "Health Care",
+      "conviction": 0.7086,
+      "shares": 20,
+      "dollars": 2025.0,
+      "weight_pct": 2.02,
+      "entry": 101.25,
+      "stop": 89.18,
+      "led_by": "technical",
+      "sentiment": 0.308,
+      "earnings_risk": false,
+      "outcome_return": 0.0656,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ANET",
+      "sector": "Information Technology",
+      "conviction": 0.7024,
+      "shares": 22,
+      "dollars": 4490.2,
+      "weight_pct": 4.49,
+      "entry": 204.1,
+      "stop": 192.79,
+      "led_by": "sepa",
+      "sentiment": 0.206,
+      "earnings_risk": false,
+      "outcome_return": 0.0102,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "BE",
+      "sector": "Industrials",
+      "conviction": 0.7015,
+      "shares": 6,
+      "dollars": 1652.94,
+      "weight_pct": 1.65,
+      "entry": 275.49,
+      "stop": 234.68,
+      "led_by": "sepa",
+      "sentiment": 0.21,
+      "earnings_risk": false,
+      "outcome_return": 0.0621,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CIBR",
+      "sector": "Other",
+      "conviction": 0.6967,
+      "shares": 38,
+      "dollars": 3934.52,
+      "weight_pct": 3.93,
+      "entry": 103.54,
+      "stop": 97.06,
+      "led_by": "sepa",
+      "sentiment": 0.258,
+      "earnings_risk": false,
+      "outcome_return": 0.0148,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    }
   ],
-  "removed": [
-   "LLY",
-   "MSFT",
-   "PM"
+  "bench": [
+    {
+      "ticker": "MSFT",
+      "sector": "Information Technology",
+      "composite": 0.688,
+      "reason": "outranked \u2014 book full at 10"
+    }
   ],
-  "unchanged": [
-   "AEHR",
-   "AMGN",
-   "ANET",
-   "ASML",
-   "AVT",
-   "NVDA",
-   "TSM"
-  ]
- }
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "500 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = NEUTRAL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "10 holdings, 37% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 63%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0,
+  "changes": {
+    "added": [
+      "BE",
+      "BRKR",
+      "CIBR"
+    ],
+    "removed": [
+      "LLY",
+      "MSFT",
+      "PM"
+    ],
+    "unchanged": [
+      "AEHR",
+      "AMGN",
+      "ANET",
+      "ASML",
+      "AVT",
+      "NVDA",
+      "TSM"
+    ]
+  }
 }

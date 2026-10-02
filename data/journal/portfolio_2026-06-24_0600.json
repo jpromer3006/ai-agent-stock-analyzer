@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.106,
       "earnings_risk": false,
-      "outcome_return": -0.0732,
+      "outcome_return": -0.0743,
       "outcome_exit": "open",
-      "outcome_days": 69,
+      "outcome_days": 70,
       "outcome_final": false
     },
     {
@@ -64,10 +64,10 @@
       "led_by": "technical",
       "sentiment": 0.313,
       "earnings_risk": false,
-      "outcome_return": -0.0558,
-      "outcome_exit": "stop",
-      "outcome_days": 69,
-      "outcome_final": true
+      "outcome_return": -0.0464,
+      "outcome_exit": "open",
+      "outcome_days": 70,
+      "outcome_final": false
     },
     {
       "ticker": "CAT",
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.112,
       "earnings_risk": false,
-      "outcome_return": 0.0855,
+      "outcome_return": 0.071,
       "outcome_exit": "open",
-      "outcome_days": 69,
+      "outcome_days": 70,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": -0.051,
       "earnings_risk": false,
-      "outcome_return": 0.2049,
+      "outcome_return": 0.1982,
       "outcome_exit": "open",
-      "outcome_days": 69,
+      "outcome_days": 70,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": -0.08,
       "earnings_risk": false,
-      "outcome_return": 0.0723,
+      "outcome_return": 0.0647,
       "outcome_exit": "open",
-      "outcome_days": 69,
+      "outcome_days": 70,
       "outcome_final": false
     },
     {
@@ -272,9 +272,9 @@
       "summary": "within limits; cash 8%"
     }
   ],
-  "realized_avg_return": -0.0614,
+  "realized_avg_return": -0.0622,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 8,
-  "realized_stop_exits": 8
+  "realized_final_count": 7,
+  "realized_stop_exits": 7
 }

@@ -1,0 +1,203 @@
+1
+00:00:00,000 --> 00:00:00,938
+Good morning.
+
+2
+00:00:00,938 --> 00:00:06,419
+From the OROS Market Desk, here is the rundown for Friday, October 02, 2026.
+
+3
+00:00:06,419 --> 00:00:08,078
+The tape reads neutral.
+
+4
+00:00:08,078 --> 00:00:13,847
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:13,847 --> 00:00:24,738
+And at the sports desk, day 65 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:24,738 --> 00:00:32,969
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:32,969 --> 00:00:40,333
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:40,295 --> 00:00:42,101
+First, the market open.
+
+9
+00:00:42,101 --> 00:00:47,831
+The S and P five hundred slipped 0.2 percent, while the NASDAQ added 0.2.
+
+10
+00:00:47,831 --> 00:00:53,562
+The primary trend reads neutral; capital preservation leads the playbook.
+
+11
+00:00:53,562 --> 00:00:55,760
+The fear gauge sits at 15.6.
+
+12
+00:00:55,760 --> 00:01:05,085
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:05,047 --> 00:01:13,747
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+14
+00:01:13,747 --> 00:01:17,856
+Forcing a pick on a weak tape is how systems bleed.
+
+15
+00:01:17,856 --> 00:01:18,500
+We wait.
+
+16
+00:01:18,468 --> 00:01:20,972
+Turning to the model book.
+
+17
+00:01:20,972 --> 00:01:33,204
+The system holds 10 positions with 48% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+18
+00:01:33,204 --> 00:01:59,113
+New to the book: iShares MSCI All Country Asia ex Japan ETF (AAXJ), AbbVie (ABBV), Analog Devices (ADI), Global X Artificial Intelligence & Technology ETF (AIQ), iShares Large Cap Core Active ETF (BLCR), Microsoft (MSFT) — each passed the full entry gauntlet overnight.
+
+19
+00:01:59,113 --> 00:02:28,778
+Rotated out: Aehr Test Systems (AEHR), which still advancing, but outranked by stronger names; Amgen (AMGN), which still advancing, but outranked by stronger names; Avnet (AVT), which still advancing, but outranked by stronger names; Bloom Energy (BE), which still advancing, but outranked by stronger names.
+
+20
+00:02:28,778 --> 00:02:49,004
+Left on the bench: Texas Instruments (TXN), sector cap — already 3 in Semiconductors; Diodes (DIOD), sector cap — already 3 in Semiconductors; Applied Materials (AMAT), sector cap — already 3 in Semiconductors.
+
+21
+00:02:49,004 --> 00:02:54,494
+Passing the scan is not enough; the book must afford you.
+
+22
+00:02:54,494 --> 00:02:57,080
+Today's lesson is position management.
+
+23
+00:02:57,080 --> 00:02:58,372
+Cash is a position.
+
+24
+00:02:58,372 --> 00:03:06,061
+The system sizes deployment by rule, and when its own forward record weakens, a throttle automatically cuts size.
+
+25
+00:03:06,061 --> 00:03:10,007
+Rotation is not indecision; it is the portfolio breathing.
+
+26
+00:03:10,007 --> 00:03:14,974
+Names that stop qualifying leave, and names that start qualifying arrive.
+
+27
+00:03:14,927 --> 00:03:22,357
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+28
+00:03:22,357 --> 00:03:31,841
+10 positions, led by NVIDIA, ticker NVDA, Taiwan Semiconductor Manufacturing, ticker TSM, ASML Holding N.V, ticker ASML.
+
+29
+00:03:31,841 --> 00:03:42,591
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+30
+00:03:42,558 --> 00:03:44,845
+Over to the sports desk.
+
+31
+00:03:44,845 --> 00:03:54,280
+Day 65 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+32
+00:03:54,280 --> 00:04:00,666
+In first place, the live self-rebuilding book, in blue, at 101,823.
+
+33
+00:04:00,666 --> 00:04:06,288
+Then the index fund, in gray, 0.1 thousand back at 101,763.
+
+34
+00:04:06,288 --> 00:04:13,627
+Then the frozen first portfolio, the green line, 5.3 thousand back at 96,474.
+
+35
+00:04:13,627 --> 00:04:16,295
+The race has no finish line.
+
+36
+00:04:16,295 --> 00:04:20,679
+Same books, same dollars, back at it tomorrow.
+
+37
+00:04:20,679 --> 00:04:25,635
+Every line starts the same day with the same dollar.
+
+38
+00:04:25,635 --> 00:04:27,541
+Nothing is restated.
+
+39
+00:04:27,541 --> 00:04:36,449
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+40
+00:04:36,411 --> 00:04:37,960
+Tonight's takeaway.
+
+41
+00:04:37,960 --> 00:04:40,243
+A portfolio is not a museum.
+
+42
+00:04:40,243 --> 00:04:48,558
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+43
+00:04:48,532 --> 00:04:51,258
+Before we close, the disclosure segment.
+
+44
+00:04:51,258 --> 00:05:00,866
+Everything you heard today concerns one simulated portfolio of 10 positions — the same book, line for line, as this morning's emailed report.
+
+45
+00:05:00,866 --> 00:05:02,638
+One record, every surface.
+
+46
+00:05:02,638 --> 00:05:04,725
+A word on how this desk works.
+
+47
+00:05:04,725 --> 00:05:22,252
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+48
+00:05:22,252 --> 00:05:30,668
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+49
+00:05:30,668 --> 00:05:33,600
+All figures are simulated paper trading.
+
+50
+00:05:33,600 --> 00:05:39,979
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+51
+00:05:39,979 --> 00:05:43,938
+From the OROS Market Desk, have a disciplined session.
