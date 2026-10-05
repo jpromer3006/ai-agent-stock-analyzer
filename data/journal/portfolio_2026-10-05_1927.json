@@ -1,0 +1,227 @@
+{
+ "timestamp": "2026-10-05T19:27:15.786065Z",
+ "date": "2026-10-05",
+ "regime": "neutral",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 45552.62,
+ "cash": 54447.38,
+ "weights": {
+  "value": 0.045,
+  "growth": 0.082,
+  "technical": 0.123,
+  "weinstein": 0.185,
+  "swing": 0.111,
+  "sepa": 0.206,
+  "ipo": 0.082,
+  "canslim": 0.165
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "NVDA",
+   "sector": "Semiconductors",
+   "conviction": 0.7527,
+   "shares": 12,
+   "dollars": 2875.2,
+   "weight_pct": 2.88,
+   "entry": 239.6,
+   "stop": 218.78,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ABBV",
+   "sector": "Health Care",
+   "conviction": 0.7333,
+   "shares": 28,
+   "dollars": 7471.52,
+   "weight_pct": 7.47,
+   "entry": 266.84,
+   "stop": 257.99,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "TSM",
+   "sector": "Semiconductors",
+   "conviction": 0.7325,
+   "shares": 4,
+   "dollars": 1946.08,
+   "weight_pct": 1.95,
+   "entry": 486.52,
+   "stop": 425.75,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ADI",
+   "sector": "Semiconductors",
+   "conviction": 0.7267,
+   "shares": 6,
+   "dollars": 2502.6,
+   "weight_pct": 2.5,
+   "entry": 417.1,
+   "stop": 375.79,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ASML",
+   "sector": "Industrials",
+   "conviction": 0.7155,
+   "shares": 1,
+   "dollars": 1864.03,
+   "weight_pct": 1.86,
+   "entry": 1864.03,
+   "stop": 1723.67,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ANET",
+   "sector": "Information Technology",
+   "conviction": 0.7102,
+   "shares": 18,
+   "dollars": 3739.68,
+   "weight_pct": 3.74,
+   "entry": 207.76,
+   "stop": 194.09,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "DXCM",
+   "sector": "Health Care",
+   "conviction": 0.6839,
+   "shares": 75,
+   "dollars": 6527.25,
+   "weight_pct": 6.53,
+   "entry": 87.03,
+   "stop": 83.72,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MSFT",
+   "sector": "Information Technology",
+   "conviction": 0.677,
+   "shares": 6,
+   "dollars": 3171.66,
+   "weight_pct": 3.17,
+   "entry": 528.61,
+   "stop": 490.34,
+   "led_by": "technical",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AAXJ",
+   "sector": "Other",
+   "conviction": 0.6573,
+   "shares": 60,
+   "dollars": 7179.0,
+   "weight_pct": 7.18,
+   "entry": 119.65,
+   "stop": 115.52,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MET",
+   "sector": "Financials",
+   "conviction": 0.6555,
+   "shares": 85,
+   "dollars": 8275.6,
+   "weight_pct": 8.28,
+   "entry": 97.36,
+   "stop": 94.44,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "AIQ",
+   "sector": "Other",
+   "composite": 0.654,
+   "reason": "outranked \u2014 book full at 10"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = NEUTRAL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "10 holdings, 46% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 54%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "DXCM",
+   "MET"
+  ],
+  "removed": [
+   "AIQ",
+   "BLCR"
+  ],
+  "unchanged": [
+   "AAXJ",
+   "ABBV",
+   "ADI",
+   "ANET",
+   "ASML",
+   "MSFT",
+   "NVDA",
+   "TSM"
+  ]
+ }
+}

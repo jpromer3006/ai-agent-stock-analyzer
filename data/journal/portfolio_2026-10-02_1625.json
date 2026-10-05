@@ -1,249 +1,279 @@
 {
- "timestamp": "2026-10-02T16:25:10.523337Z",
- "date": "2026-10-02",
- "regime": "neutral",
- "mandate": "swing_momentum",
- "account": 100000.0,
- "invested": 48218.45,
- "cash": 51781.55,
- "weights": {
-  "growth": 0.082,
-  "swing": 0.111,
-  "value": 0.045,
-  "weinstein": 0.185,
-  "sepa": 0.206,
-  "canslim": 0.165,
-  "ipo": 0.082,
-  "technical": 0.123
- },
- "note": "nightly run (cloud)",
- "holdings": [
-  {
-   "ticker": "NVDA",
-   "sector": "Semiconductors",
-   "conviction": 0.7525,
-   "shares": 13,
-   "dollars": 3075.02,
-   "weight_pct": 3.08,
-   "entry": 236.54,
-   "stop": 218.17,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
+  "timestamp": "2026-10-02T16:25:10.523337Z",
+  "date": "2026-10-02",
+  "regime": "neutral",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 48218.45,
+  "cash": 51781.55,
+  "weights": {
+    "growth": 0.082,
+    "swing": 0.111,
+    "value": 0.045,
+    "weinstein": 0.185,
+    "sepa": 0.206,
+    "canslim": 0.165,
+    "ipo": 0.082,
+    "technical": 0.123
   },
-  {
-   "ticker": "TSM",
-   "sector": "Semiconductors",
-   "conviction": 0.7315,
-   "shares": 5,
-   "dollars": 2367.4,
-   "weight_pct": 2.37,
-   "entry": 473.48,
-   "stop": 424.08,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ASML",
-   "sector": "Industrials",
-   "conviction": 0.7188,
-   "shares": 1,
-   "dollars": 1870.47,
-   "weight_pct": 1.87,
-   "entry": 1870.47,
-   "stop": 1721.55,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ANET",
-   "sector": "Information Technology",
-   "conviction": 0.6892,
-   "shares": 19,
-   "dollars": 3917.42,
-   "weight_pct": 3.92,
-   "entry": 206.18,
-   "stop": 193.39,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AIQ",
-   "sector": "Other",
-   "conviction": 0.6783,
-   "shares": 81,
-   "dollars": 5369.49,
-   "weight_pct": 5.37,
-   "entry": 66.29,
-   "stop": 63.23,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ADI",
-   "sector": "Semiconductors",
-   "conviction": 0.6778,
-   "shares": 5,
-   "dollars": 2089.75,
-   "weight_pct": 2.09,
-   "entry": 417.95,
-   "stop": 374.88,
-   "led_by": "canslim",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "MSFT",
-   "sector": "Information Technology",
-   "conviction": 0.675,
-   "shares": 9,
-   "dollars": 4632.84,
-   "weight_pct": 4.63,
-   "entry": 514.76,
-   "stop": 487.34,
-   "led_by": "technical",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BLCR",
-   "sector": "Other",
-   "conviction": 0.6244,
-   "shares": 167,
-   "dollars": 8303.24,
-   "weight_pct": 8.3,
-   "entry": 49.72,
-   "stop": 48.23,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ABBV",
-   "sector": "Health Care",
-   "conviction": 0.613,
-   "shares": 32,
-   "dollars": 8325.12,
-   "weight_pct": 8.33,
-   "entry": 260.16,
-   "stop": 252.36,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AAXJ",
-   "sector": "Other",
-   "conviction": 0.6022,
-   "shares": 70,
-   "dollars": 8267.7,
-   "weight_pct": 8.27,
-   "entry": 118.11,
-   "stop": 114.57,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  }
- ],
- "bench": [
-  {
-   "ticker": "TXN",
-   "sector": "Semiconductors",
-   "composite": 0.654,
-   "reason": "sector cap \u2014 already 3 in Semiconductors"
-  },
-  {
-   "ticker": "DIOD",
-   "sector": "Semiconductors",
-   "composite": 0.633,
-   "reason": "sector cap \u2014 already 3 in Semiconductors"
-  },
-  {
-   "ticker": "AMAT",
-   "sector": "Semiconductors",
-   "composite": 0.631,
-   "reason": "sector cap \u2014 already 3 in Semiconductors"
-  },
-  {
-   "ticker": "APA",
-   "sector": "Energy",
-   "composite": 0.597,
-   "reason": "outranked \u2014 book full at 10"
-  }
- ],
- "agent_trace": [
-  {
-   "agent": "DataAgent",
-   "role": "universe & data",
-   "summary": "500 candidate names (benchmarks removed)"
-  },
-  {
-   "agent": "RegimeAgent",
-   "role": "market regime",
-   "summary": "regime = NEUTRAL"
-  },
-  {
-   "agent": "RouterAgent",
-   "role": "strategy mandate weights",
-   "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
-  },
-  {
-   "agent": "MemoryAgent",
-   "role": "experience-weighted tilt",
-   "summary": "boosted weinstein x1.00, sepa x1.00"
-  },
-  {
-   "agent": "ConstructionAgent",
-   "role": "strategy ensemble + sizing",
-   "summary": "10 holdings, 48% invested, 8 strategies"
-  },
-  {
-   "agent": "RiskAgent",
-   "role": "post-construction risk",
-   "summary": "within limits; cash 52%"
-  }
- ],
- "horizon_days": 20,
- "realized_avg_return": null,
- "realized_hit_rate": null,
- "realized_final_count": 0,
- "realized_stop_exits": 0,
- "changes": {
-  "added": [
-   "AAXJ",
-   "ABBV",
-   "ADI",
-   "AIQ",
-   "BLCR",
-   "MSFT"
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "NVDA",
+      "sector": "Semiconductors",
+      "conviction": 0.7525,
+      "shares": 13,
+      "dollars": 3075.02,
+      "weight_pct": 3.08,
+      "entry": 236.54,
+      "stop": 218.17,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0129,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "TSM",
+      "sector": "Semiconductors",
+      "conviction": 0.7315,
+      "shares": 5,
+      "dollars": 2367.4,
+      "weight_pct": 2.37,
+      "entry": 473.48,
+      "stop": 424.08,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0275,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ASML",
+      "sector": "Industrials",
+      "conviction": 0.7188,
+      "shares": 1,
+      "dollars": 1870.47,
+      "weight_pct": 1.87,
+      "entry": 1870.47,
+      "stop": 1721.55,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0034,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ANET",
+      "sector": "Information Technology",
+      "conviction": 0.6892,
+      "shares": 19,
+      "dollars": 3917.42,
+      "weight_pct": 3.92,
+      "entry": 206.18,
+      "stop": 193.39,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0077,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AIQ",
+      "sector": "Other",
+      "conviction": 0.6783,
+      "shares": 81,
+      "dollars": 5369.49,
+      "weight_pct": 5.37,
+      "entry": 66.29,
+      "stop": 63.23,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0102,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ADI",
+      "sector": "Semiconductors",
+      "conviction": 0.6778,
+      "shares": 5,
+      "dollars": 2089.75,
+      "weight_pct": 2.09,
+      "entry": 417.95,
+      "stop": 374.88,
+      "led_by": "canslim",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.002,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "MSFT",
+      "sector": "Information Technology",
+      "conviction": 0.675,
+      "shares": 9,
+      "dollars": 4632.84,
+      "weight_pct": 4.63,
+      "entry": 514.76,
+      "stop": 487.34,
+      "led_by": "technical",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0269,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "BLCR",
+      "sector": "Other",
+      "conviction": 0.6244,
+      "shares": 167,
+      "dollars": 8303.24,
+      "weight_pct": 8.3,
+      "entry": 49.72,
+      "stop": 48.23,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0102,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ABBV",
+      "sector": "Health Care",
+      "conviction": 0.613,
+      "shares": 32,
+      "dollars": 8325.12,
+      "weight_pct": 8.33,
+      "entry": 260.16,
+      "stop": 252.36,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0257,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AAXJ",
+      "sector": "Other",
+      "conviction": 0.6022,
+      "shares": 70,
+      "dollars": 8267.7,
+      "weight_pct": 8.27,
+      "entry": 118.11,
+      "stop": 114.57,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.013,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    }
   ],
-  "removed": [
-   "AEHR",
-   "AMGN",
-   "AVT",
-   "BE",
-   "BRKR",
-   "CIBR"
+  "bench": [
+    {
+      "ticker": "TXN",
+      "sector": "Semiconductors",
+      "composite": 0.654,
+      "reason": "sector cap \u2014 already 3 in Semiconductors"
+    },
+    {
+      "ticker": "DIOD",
+      "sector": "Semiconductors",
+      "composite": 0.633,
+      "reason": "sector cap \u2014 already 3 in Semiconductors"
+    },
+    {
+      "ticker": "AMAT",
+      "sector": "Semiconductors",
+      "composite": 0.631,
+      "reason": "sector cap \u2014 already 3 in Semiconductors"
+    },
+    {
+      "ticker": "APA",
+      "sector": "Energy",
+      "composite": 0.597,
+      "reason": "outranked \u2014 book full at 10"
+    }
   ],
-  "unchanged": [
-   "ANET",
-   "ASML",
-   "NVDA",
-   "TSM"
-  ]
- }
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "500 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = NEUTRAL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "10 holdings, 48% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 52%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0,
+  "changes": {
+    "added": [
+      "AAXJ",
+      "ABBV",
+      "ADI",
+      "AIQ",
+      "BLCR",
+      "MSFT"
+    ],
+    "removed": [
+      "AEHR",
+      "AMGN",
+      "AVT",
+      "BE",
+      "BRKR",
+      "CIBR"
+    ],
+    "unchanged": [
+      "ANET",
+      "ASML",
+      "NVDA",
+      "TSM"
+    ]
+  }
 }

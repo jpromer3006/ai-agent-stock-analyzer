@@ -61,9 +61,9 @@
       "led_by": "sepa",
       "sentiment": 0.233,
       "earnings_risk": false,
-      "outcome_return": 0.2216,
+      "outcome_return": 0.2171,
       "outcome_exit": "open",
-      "outcome_days": 67,
+      "outcome_days": 68,
       "outcome_final": false
     },
     {
@@ -171,10 +171,10 @@
       "led_by": "sepa",
       "sentiment": 0.226,
       "earnings_risk": false,
-      "outcome_return": -0.1739,
-      "outcome_exit": "open",
+      "outcome_return": -0.1896,
+      "outcome_exit": "stop",
       "outcome_days": 67,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "DHC",
@@ -305,9 +305,9 @@
       "summary": "within limits; cash 58%"
     }
   ],
-  "realized_avg_return": -0.1439,
+  "realized_avg_return": -0.149,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 8,
-  "realized_stop_exits": 8
+  "realized_final_count": 9,
+  "realized_stop_exits": 9
 }

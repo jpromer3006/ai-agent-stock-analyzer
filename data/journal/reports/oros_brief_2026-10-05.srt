@@ -1,0 +1,199 @@
+1
+00:00:00,000 --> 00:00:00,947
+Good morning.
+
+2
+00:00:00,947 --> 00:00:06,480
+From the OROS Market Desk, here is the rundown for Monday, October 05, 2026.
+
+3
+00:00:06,480 --> 00:00:08,154
+The tape reads neutral.
+
+4
+00:00:08,154 --> 00:00:13,979
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:13,979 --> 00:00:24,973
+And at the sports desk, day 66 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:24,973 --> 00:00:33,204
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:33,204 --> 00:00:40,568
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:40,530 --> 00:00:42,240
+First, the market open.
+
+9
+00:00:42,240 --> 00:00:47,595
+The S and P five hundred gained 0.2 percent, while the NASDAQ added 0.3.
+
+10
+00:00:47,595 --> 00:00:53,024
+The primary trend reads neutral; capital preservation leads the playbook.
+
+11
+00:00:53,024 --> 00:00:55,106
+The fear gauge sits at 15.6.
+
+12
+00:00:55,106 --> 00:01:04,432
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:04,394 --> 00:01:13,094
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+14
+00:01:13,094 --> 00:01:17,203
+Forcing a pick on a weak tape is how systems bleed.
+
+15
+00:01:17,203 --> 00:01:17,847
+We wait.
+
+16
+00:01:17,815 --> 00:01:19,971
+Turning to the model book.
+
+17
+00:01:19,971 --> 00:01:30,502
+The system holds 10 positions with 46% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+18
+00:01:30,502 --> 00:01:38,297
+New to the book: DexCom (DXCM), MetLife (MET) — each passed the full entry gauntlet overnight.
+
+19
+00:01:38,297 --> 00:01:56,788
+Rotated out: Global X Artificial Intelligence & Technology ETF (AIQ), which still advancing, but outranked by stronger names; iShares Large Cap Core Active ETF (BLCR), which still advancing, but outranked by stronger names.
+
+20
+00:01:56,788 --> 00:02:05,412
+Left on the bench: Global X Artificial Intelligence & Technology ETF (AIQ), outranked — book full at 10.
+
+21
+00:02:05,412 --> 00:02:10,138
+Passing the scan is not enough; the book must afford you.
+
+22
+00:02:10,138 --> 00:02:16,173
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+23
+00:02:16,129 --> 00:02:23,481
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+24
+00:02:23,481 --> 00:02:32,085
+10 positions, led by NVIDIA, ticker NVDA, AbbVie, ticker ABBV, Taiwan Semiconductor Manufacturing, ticker TSM.
+
+25
+00:02:32,085 --> 00:02:42,722
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+26
+00:02:42,692 --> 00:02:44,854
+Over to the sports desk.
+
+27
+00:02:44,854 --> 00:02:53,774
+Day 66 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+28
+00:02:53,774 --> 00:02:59,811
+In first place, the live self-rebuilding book, in blue, at 102,801.
+
+29
+00:02:59,811 --> 00:03:05,127
+Then the index fund, in gray, 0.9 thousand back at 101,944.
+
+30
+00:03:05,127 --> 00:03:12,065
+Then the frozen first portfolio, the green line, 5.8 thousand back at 96,970.
+
+31
+00:03:12,065 --> 00:03:14,587
+The race has no finish line.
+
+32
+00:03:14,587 --> 00:03:18,732
+Same books, same dollars, back at it tomorrow.
+
+33
+00:03:18,732 --> 00:03:23,417
+Every line starts the same day with the same dollar.
+
+34
+00:03:23,417 --> 00:03:25,219
+Nothing is restated.
+
+35
+00:03:25,219 --> 00:03:27,549
+Today's lesson is benchmarking.
+
+36
+00:03:27,549 --> 00:03:34,010
+Any strategy must beat the boring alternative: the same money parked in an index fund.
+
+37
+00:03:34,010 --> 00:03:37,467
+That is why the S and P line shares the chart.
+
+38
+00:03:37,467 --> 00:03:46,483
+If the system cannot outrun it, the index deserves the money, and publishing the race every day keeps the system honest.
+
+39
+00:03:46,442 --> 00:03:47,991
+Tonight's takeaway.
+
+40
+00:03:47,991 --> 00:03:50,274
+A portfolio is not a museum.
+
+41
+00:03:50,274 --> 00:03:58,589
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+42
+00:03:58,563 --> 00:04:01,289
+Before we close, the disclosure segment.
+
+43
+00:04:01,289 --> 00:04:10,897
+Everything you heard today concerns one simulated portfolio of 10 positions — the same book, line for line, as this morning's emailed report.
+
+44
+00:04:10,897 --> 00:04:12,669
+One record, every surface.
+
+45
+00:04:12,669 --> 00:04:14,756
+A word on how this desk works.
+
+46
+00:04:14,756 --> 00:04:32,283
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+47
+00:04:32,283 --> 00:04:40,698
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+48
+00:04:40,698 --> 00:04:43,631
+All figures are simulated paper trading.
+
+49
+00:04:43,631 --> 00:04:50,010
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+50
+00:04:50,010 --> 00:04:53,969
+From the OROS Market Desk, have a disciplined session.
