@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.202,
       "earnings_risk": false,
-      "outcome_return": 0.0135,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0217,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "FLR",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.115,
       "earnings_risk": false,
-      "outcome_return": 0.0207,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0004,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CHRD",
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.289,
       "earnings_risk": false,
-      "outcome_return": -0.0483,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0556,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "COP",
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": -0.008,
       "earnings_risk": false,
-      "outcome_return": -0.0493,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0373,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "XLE",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.284,
       "earnings_risk": false,
-      "outcome_return": 0.0027,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0064,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "C",
@@ -276,8 +276,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0739,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 4,
+  "realized_avg_return": -0.0414,
+  "realized_hit_rate": 0.222,
+  "realized_final_count": 9,
   "realized_stop_exits": 4
 }
