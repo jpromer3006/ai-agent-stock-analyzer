@@ -1,0 +1,147 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:27,313
+On the day, the book is up 636 dollars.
+
+7
+00:00:27,313 --> 00:00:30,157
+MetLife (MET) leads, +2.6 percent.
+
+8
+00:00:30,157 --> 00:00:33,168
+Arista Networks (ANET) lags at -0.2.
+
+9
+00:00:33,168 --> 00:00:37,686
+The checklist is clear: nothing requires action today.
+
+10
+00:00:37,686 --> 00:00:41,212
+On screen, the day's gainers and laggards inside the paper book.
+
+11
+00:00:41,169 --> 00:00:48,521
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+12
+00:00:48,521 --> 00:00:57,125
+10 positions, led by NVIDIA, ticker NVDA, AbbVie, ticker ABBV, Taiwan Semiconductor Manufacturing, ticker TSM.
+
+13
+00:00:57,125 --> 00:01:07,762
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+14
+00:01:07,732 --> 00:01:12,943
+Now the part that makes this system different: the loop.
+
+15
+00:01:12,943 --> 00:01:15,549
+Every morning OROS proposes.
+
+16
+00:01:15,549 --> 00:01:26,995
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+17
+00:01:26,995 --> 00:01:31,276
+Inside the book today: 8 positions up, 2 down.
+
+18
+00:01:31,276 --> 00:01:33,789
+Best, TSM at +2.75 percent.
+
+19
+00:01:33,789 --> 00:01:35,743
+Worst, ASML at -0.40.
+
+20
+00:01:35,743 --> 00:01:41,140
+Both go in the journal — wins and losses get the same ink.
+
+21
+00:01:41,140 --> 00:01:48,957
+The honest scoreboard reads: expectancy -3.00% per trade over 1042 graded positions.
+
+22
+00:01:48,957 --> 00:01:56,588
+Because that record is soft, the system has throttled itself to 50% position size.
+
+23
+00:01:56,588 --> 00:02:02,172
+Nobody told it to — full size must be earned back with wins.
+
+24
+00:02:02,172 --> 00:02:15,572
+What tonight's read hands to tomorrow's open: 177 names close the day in Stage 2; position size stays cut to 50% until the record earns it back.
+
+25
+00:02:15,534 --> 00:02:17,857
+Over to the sports desk.
+
+26
+00:02:17,857 --> 00:02:27,440
+Day 67 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+27
+00:02:27,440 --> 00:02:33,925
+In first place, the live self-rebuilding book, in blue, at 103,455.
+
+28
+00:02:33,925 --> 00:02:39,636
+Then the index fund, in gray, 0.1 thousand back at 103,391.
+
+29
+00:02:39,636 --> 00:02:47,090
+Then the frozen first portfolio, the green line, 6.7 thousand back at 96,745.
+
+30
+00:02:47,090 --> 00:02:49,800
+The race has no finish line.
+
+31
+00:02:49,800 --> 00:02:54,253
+Same books, same dollars, back at it tomorrow.
+
+32
+00:02:54,253 --> 00:02:59,286
+Every line starts the same day with the same dollar.
+
+33
+00:02:59,286 --> 00:03:01,222
+Nothing is restated.
+
+34
+00:03:01,222 --> 00:03:10,130
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+35
+00:03:10,092 --> 00:03:17,427
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+36
+00:03:17,427 --> 00:03:19,668
+Nothing here is financial advice.
+
+37
+00:03:19,668 --> 00:03:22,657
+From the closing desk — see you at the open.
