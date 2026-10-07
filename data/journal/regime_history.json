@@ -199,6 +199,16 @@
    "total": 500,
    "streak": 3,
    "scan_hash": "295c076f235335be"
+  },
+  {
+   "date": "2026-10-07",
+   "label": "DEFENSIVE",
+   "pct_advancing": 33.2,
+   "advancing": 166,
+   "declining": 135,
+   "total": 500,
+   "streak": 1,
+   "scan_hash": "421f6558ded8865e"
   }
  ]
 }

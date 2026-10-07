@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.237,
       "earnings_risk": false,
-      "outcome_return": 0.0415,
+      "outcome_return": 0.0605,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.291,
       "earnings_risk": false,
-      "outcome_return": 0.0564,
+      "outcome_return": 0.0286,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.029,
       "earnings_risk": false,
-      "outcome_return": 0.0194,
+      "outcome_return": -0.0016,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.035,
       "earnings_risk": false,
-      "outcome_return": 0.0452,
+      "outcome_return": 0.0303,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.137,
       "earnings_risk": false,
-      "outcome_return": 0.0546,
+      "outcome_return": 0.032,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -115,10 +115,10 @@
       "led_by": "technical",
       "sentiment": 0.308,
       "earnings_risk": false,
-      "outcome_return": -0.0014,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.1221,
+      "outcome_exit": "stop",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "LLY",
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.071,
       "earnings_risk": false,
-      "outcome_return": -0.0148,
+      "outcome_return": 0.0146,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": -0.0063,
+      "outcome_return": -0.0038,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "technical",
       "sentiment": -0.007,
       "earnings_risk": false,
-      "outcome_return": 0.0292,
+      "outcome_return": 0.0229,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     }
   ],
@@ -230,10 +230,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0456,
+  "realized_avg_return": -0.0838,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1,
+  "realized_final_count": 2,
+  "realized_stop_exits": 2,
   "changes": {
     "added": [
       "AMGN",

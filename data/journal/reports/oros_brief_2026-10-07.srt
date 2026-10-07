@@ -1,0 +1,203 @@
+1
+00:00:00,000 --> 00:00:00,965
+Good morning.
+
+2
+00:00:00,965 --> 00:00:06,828
+From the OROS Market Desk, here is the rundown for Wednesday, October 07, 2026.
+
+3
+00:00:06,828 --> 00:00:08,535
+The tape reads neutral.
+
+4
+00:00:08,535 --> 00:00:14,472
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:14,472 --> 00:00:25,678
+And at the sports desk, day 68 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:25,678 --> 00:00:33,909
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:33,909 --> 00:00:41,273
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:41,235 --> 00:00:42,918
+First, the market open.
+
+9
+00:00:42,918 --> 00:00:48,186
+The S and P five hundred gained 0.7 percent, while the NASDAQ added 0.9.
+
+10
+00:00:48,186 --> 00:00:53,527
+The primary trend reads neutral; capital preservation leads the playbook.
+
+11
+00:00:53,527 --> 00:00:55,576
+The fear gauge sits at 15.2.
+
+12
+00:00:55,576 --> 00:01:04,902
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:04,864 --> 00:01:13,564
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+14
+00:01:13,564 --> 00:01:17,673
+Forcing a pick on a weak tape is how systems bleed.
+
+15
+00:01:17,673 --> 00:01:18,317
+We wait.
+
+16
+00:01:18,285 --> 00:01:20,604
+Turning to the model book.
+
+17
+00:01:20,604 --> 00:01:31,932
+The system holds 10 positions with 67% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+18
+00:01:31,932 --> 00:01:45,846
+New to the book: Analog Devices (ADI), Amgen (AMGN), Avnet (AVT), Cisco Systems (CSCO), Eli Lilly and (LLY) — each passed the full entry gauntlet overnight.
+
+19
+00:01:45,846 --> 00:02:17,243
+Rotated out: iShares MSCI All Country Asia ex Japan ETF (AAXJ), which still advancing, but outranked by stronger names; iShares Asia 50 ETF (AIA), which still advancing, but outranked by stronger names; APA Corporation (APA), which still advancing, but outranked by stronger names; Bruker (BRKR), which still advancing, but outranked by stronger names.
+
+20
+00:02:17,243 --> 00:02:34,546
+Left on the bench: AbbVie (ABBV), earnings inside the blackout window; Texas Instruments (TXN), sector cap — already 3 in Semiconductors; Diodes (DIOD), sector cap — already 3 in Semiconductors.
+
+21
+00:02:34,546 --> 00:02:39,630
+Passing the scan is not enough; the book must afford you.
+
+22
+00:02:39,630 --> 00:02:42,216
+Today's lesson is position management.
+
+23
+00:02:42,216 --> 00:02:43,509
+Cash is a position.
+
+24
+00:02:43,509 --> 00:02:51,197
+The system sizes deployment by rule, and when its own forward record weakens, a throttle automatically cuts size.
+
+25
+00:02:51,197 --> 00:02:55,143
+Rotation is not indecision; it is the portfolio breathing.
+
+26
+00:02:55,143 --> 00:03:00,110
+Names that stop qualifying leave, and names that start qualifying arrive.
+
+27
+00:03:00,064 --> 00:03:08,004
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+28
+00:03:08,004 --> 00:03:17,128
+10 positions, led by Taiwan Semiconductor Manufacturing, ticker TSM, NVIDIA, ticker NVDA, Avnet, ticker AVT.
+
+29
+00:03:17,128 --> 00:03:28,616
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+30
+00:03:28,578 --> 00:03:30,828
+Over to the sports desk.
+
+31
+00:03:30,828 --> 00:03:40,110
+Day 68 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+32
+00:03:40,110 --> 00:03:44,985
+In first place, the index fund, in gray, at 103,391.
+
+33
+00:03:44,985 --> 00:03:51,923
+Then the live self-rebuilding book, in blue, 0.6 thousand back at 102,744.
+
+34
+00:03:51,923 --> 00:03:59,141
+Then the frozen first portfolio, the green line, 6.7 thousand back at 96,691.
+
+35
+00:03:59,141 --> 00:04:01,767
+The race has no finish line.
+
+36
+00:04:01,767 --> 00:04:06,079
+Same books, same dollars, back at it tomorrow.
+
+37
+00:04:06,079 --> 00:04:10,954
+Every line starts the same day with the same dollar.
+
+38
+00:04:10,954 --> 00:04:12,829
+Nothing is restated.
+
+39
+00:04:12,829 --> 00:04:21,737
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+40
+00:04:21,699 --> 00:04:23,248
+Tonight's takeaway.
+
+41
+00:04:23,248 --> 00:04:25,531
+A portfolio is not a museum.
+
+42
+00:04:25,531 --> 00:04:33,846
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+43
+00:04:33,820 --> 00:04:36,546
+Before we close, the disclosure segment.
+
+44
+00:04:36,546 --> 00:04:46,154
+Everything you heard today concerns one simulated portfolio of 10 positions — the same book, line for line, as this morning's emailed report.
+
+45
+00:04:46,154 --> 00:04:47,926
+One record, every surface.
+
+46
+00:04:47,926 --> 00:04:50,013
+A word on how this desk works.
+
+47
+00:04:50,013 --> 00:05:07,540
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+48
+00:05:07,540 --> 00:05:15,956
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+49
+00:05:15,956 --> 00:05:18,888
+All figures are simulated paper trading.
+
+50
+00:05:18,888 --> 00:05:25,267
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+51
+00:05:25,267 --> 00:05:29,226
+From the OROS Market Desk, have a disciplined session.
