@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.275,
       "earnings_risk": true,
-      "outcome_return": -0.0838,
-      "outcome_exit": "open",
+      "outcome_return": -0.0922,
+      "outcome_exit": "stop",
       "outcome_days": 49,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "CCEP",
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.235,
       "earnings_risk": false,
-      "outcome_return": -0.093,
+      "outcome_return": -0.0733,
       "outcome_exit": "open",
-      "outcome_days": 49,
+      "outcome_days": 50,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": -0.0161,
+      "outcome_return": 0.0047,
       "outcome_exit": "open",
-      "outcome_days": 49,
+      "outcome_days": 50,
       "outcome_final": false
     },
     {
@@ -179,8 +179,8 @@
     }
   ],
   "horizon_days": 60,
-  "realized_avg_return": -0.0801,
+  "realized_avg_return": -0.0831,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3
+  "realized_final_count": 4,
+  "realized_stop_exits": 4
 }

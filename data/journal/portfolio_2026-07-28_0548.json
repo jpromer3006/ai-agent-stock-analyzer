@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": 0.0077,
+      "outcome_return": 0.029,
       "outcome_exit": "open",
-      "outcome_days": 50,
+      "outcome_days": 51,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "weinstein",
       "sentiment": 0.218,
       "earnings_risk": false,
-      "outcome_return": 0.0645,
+      "outcome_return": 0.0501,
       "outcome_exit": "open",
-      "outcome_days": 50,
+      "outcome_days": 51,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.219,
       "earnings_risk": false,
-      "outcome_return": 0.0802,
+      "outcome_return": 0.1126,
       "outcome_exit": "open",
-      "outcome_days": 50,
+      "outcome_days": 51,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.227,
       "earnings_risk": false,
-      "outcome_return": 0.0581,
+      "outcome_return": 0.0901,
       "outcome_exit": "open",
-      "outcome_days": 50,
+      "outcome_days": 51,
       "outcome_final": false
     },
     {
@@ -234,10 +234,10 @@
       "led_by": "sepa",
       "sentiment": 0.305,
       "earnings_risk": true,
-      "outcome_return": -0.1014,
-      "outcome_exit": "open",
+      "outcome_return": -0.1096,
+      "outcome_exit": "stop",
       "outcome_days": 50,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "DE",
@@ -285,9 +285,9 @@
       "led_by": "sepa",
       "sentiment": 0.17,
       "earnings_risk": false,
-      "outcome_return": 0.0917,
+      "outcome_return": 0.1146,
       "outcome_exit": "open",
-      "outcome_days": 50,
+      "outcome_days": 51,
       "outcome_final": false
     },
     {
@@ -372,8 +372,8 @@
     }
   ],
   "horizon_days": 120,
-  "realized_avg_return": -0.0662,
+  "realized_avg_return": -0.0706,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 9,
-  "realized_stop_exits": 9
+  "realized_final_count": 10,
+  "realized_stop_exits": 10
 }

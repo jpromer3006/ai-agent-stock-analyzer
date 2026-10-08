@@ -1,0 +1,243 @@
+{
+ "timestamp": "2026-10-08T17:34:58.780735Z",
+ "date": "2026-10-08",
+ "regime": "neutral",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 61208.97,
+ "cash": 38791.03,
+ "weights": {
+  "value": 0.045,
+  "growth": 0.082,
+  "weinstein": 0.185,
+  "technical": 0.123,
+  "sepa": 0.206,
+  "ipo": 0.082,
+  "canslim": 0.165,
+  "swing": 0.111
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "ANET",
+   "sector": "Information Technology",
+   "conviction": 0.7678,
+   "shares": 17,
+   "dollars": 3584.79,
+   "weight_pct": 3.58,
+   "entry": 210.87,
+   "stop": 196.95,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CSCO",
+   "sector": "Information Technology",
+   "conviction": 0.7066,
+   "shares": 59,
+   "dollars": 6815.09,
+   "weight_pct": 6.82,
+   "entry": 115.51,
+   "stop": 111.28,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "NVDA",
+   "sector": "Semiconductors",
+   "conviction": 0.7044,
+   "shares": 27,
+   "dollars": 6215.94,
+   "weight_pct": 6.22,
+   "entry": 230.22,
+   "stop": 221.25,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "XOM",
+   "sector": "Energy",
+   "conviction": 0.689,
+   "shares": 32,
+   "dollars": 5399.04,
+   "weight_pct": 5.4,
+   "entry": 168.72,
+   "stop": 161.09,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MET",
+   "sector": "Financials",
+   "conviction": 0.6872,
+   "shares": 85,
+   "dollars": 8325.75,
+   "weight_pct": 8.33,
+   "entry": 97.95,
+   "stop": 95.01,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MSFT",
+   "sector": "Information Technology",
+   "conviction": 0.683,
+   "shares": 14,
+   "dollars": 7323.4,
+   "weight_pct": 7.32,
+   "entry": 523.1,
+   "stop": 505.75,
+   "led_by": "swing",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "TSM",
+   "sector": "Semiconductors",
+   "conviction": 0.6584,
+   "shares": 10,
+   "dollars": 4541.2,
+   "weight_pct": 4.54,
+   "entry": 454.12,
+   "stop": 430.65,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "COP",
+   "sector": "Energy",
+   "conviction": 0.6503,
+   "shares": 47,
+   "dollars": 6304.58,
+   "weight_pct": 6.3,
+   "entry": 134.14,
+   "stop": 128.88,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "BLCR",
+   "sector": "Other",
+   "conviction": 0.6486,
+   "shares": 167,
+   "dollars": 8294.89,
+   "weight_pct": 8.29,
+   "entry": 49.67,
+   "stop": 48.18,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ADI",
+   "sector": "Semiconductors",
+   "conviction": 0.6475,
+   "shares": 11,
+   "dollars": 4404.29,
+   "weight_pct": 4.4,
+   "entry": 400.39,
+   "stop": 378.7,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "ABBV",
+   "sector": "Health Care",
+   "composite": 0.766,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "APA",
+   "sector": "Energy",
+   "composite": 0.695,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "PM",
+   "sector": "Consumer Staples",
+   "composite": 0.646,
+   "reason": "outranked \u2014 book full at 10"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = NEUTRAL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "10 holdings, 61% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 39%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "ANET",
+   "BLCR",
+   "COP",
+   "MET",
+   "MSFT",
+   "XOM"
+  ],
+  "removed": [
+   "AIQ",
+   "AMGN",
+   "ASML",
+   "AVT",
+   "LLY",
+   "PM"
+  ],
+  "unchanged": [
+   "ADI",
+   "CSCO",
+   "NVDA",
+   "TSM"
+  ]
+ }
+}

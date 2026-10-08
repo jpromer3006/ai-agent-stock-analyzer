@@ -1,0 +1,91 @@
+{
+ "date": "Thursday, October 08, 2026",
+ "regime": "neutral",
+ "lesson": "market",
+ "race_day": 69,
+ "home_run": null,
+ "takeaway": "Tonight's takeaway. A portfolio is not a museum. Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.",
+ "breadth": {
+  "date": "2026-10-08",
+  "total": 500,
+  "counts": {
+   "Advancing": 166,
+   "Basing": 169,
+   "Topping": 29,
+   "Declining": 136
+  },
+  "invalidated": 3,
+  "source": "cloud",
+  "scan_hash": "e1b8c142e0ff7dcd",
+  "stale_rows": 0,
+  "prior": {
+   "date": "2026-10-01",
+   "total": 500,
+   "counts": {
+    "Advancing": 172,
+    "Basing": 165,
+    "Topping": 31,
+    "Declining": 132
+   },
+   "invalidated": 4,
+   "source": "cloud",
+   "scan_hash": "96277a7edc80a5ac",
+   "stale_rows": 0
+  }
+ },
+ "oros500": {
+  "name": "OROS 500",
+  "date": "2026-10-08",
+  "count": 500,
+  "target": 500,
+  "entered": [
+   "ANGO",
+   "ATLC",
+   "BKMI",
+   "BMOP",
+   "CTBI"
+  ],
+  "left": [
+   "BMNG",
+   "BNC",
+   "CONL",
+   "CRMG",
+   "ELE"
+  ]
+ },
+ "chapters": [
+  {
+   "title": "Tonight on the Market Desk",
+   "start_s": 0.0
+  },
+  {
+   "title": "The Market Open",
+   "start_s": 41.47
+  },
+  {
+   "title": "Top Story \u2014 no setup today",
+   "start_s": 83.82
+  },
+  {
+   "title": "Business Desk \u2014 the book",
+   "start_s": 97.24
+  },
+  {
+   "title": "The Portfolio \u2014 Actual Holdings",
+   "start_s": 183.98
+  },
+  {
+   "title": "Sports Desk \u2014 The Race",
+   "start_s": 211.42
+  },
+  {
+   "title": "The Takeaway",
+   "start_s": 264.18
+  },
+  {
+   "title": "Disclosure & Credits",
+   "start_s": 276.3
+  }
+ ],
+ "duration_s": 331.7
+}
