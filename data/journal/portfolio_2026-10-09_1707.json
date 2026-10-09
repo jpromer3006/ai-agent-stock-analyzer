@@ -1,0 +1,243 @@
+{
+ "timestamp": "2026-10-09T17:07:10.650833Z",
+ "date": "2026-10-09",
+ "regime": "neutral",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 62193.33,
+ "cash": 37806.67,
+ "weights": {
+  "growth": 0.082,
+  "ipo": 0.082,
+  "swing": 0.111,
+  "sepa": 0.206,
+  "value": 0.045,
+  "technical": 0.123,
+  "weinstein": 0.185,
+  "canslim": 0.165
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "LLY",
+   "sector": "Health Care",
+   "conviction": 0.7596,
+   "shares": 4,
+   "dollars": 4703.6,
+   "weight_pct": 4.7,
+   "entry": 1175.9,
+   "stop": 1125.5,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CSCO",
+   "sector": "Information Technology",
+   "conviction": 0.7402,
+   "shares": 43,
+   "dollars": 5060.67,
+   "weight_pct": 5.06,
+   "entry": 117.69,
+   "stop": 111.92,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AFRM",
+   "sector": "Financials",
+   "conviction": 0.7103,
+   "shares": 38,
+   "dollars": 3049.88,
+   "weight_pct": 3.05,
+   "entry": 80.26,
+   "stop": 73.77,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MET",
+   "sector": "Financials",
+   "conviction": 0.6859,
+   "shares": 84,
+   "dollars": 8235.36,
+   "weight_pct": 8.24,
+   "entry": 98.04,
+   "stop": 95.07,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AMGN",
+   "sector": "Health Care",
+   "conviction": 0.6824,
+   "shares": 16,
+   "dollars": 6653.6,
+   "weight_pct": 6.65,
+   "entry": 415.85,
+   "stop": 401.07,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "NVDA",
+   "sector": "Semiconductors",
+   "conviction": 0.6792,
+   "shares": 31,
+   "dollars": 7113.88,
+   "weight_pct": 7.11,
+   "entry": 229.48,
+   "stop": 221.43,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AMZN",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.6783,
+   "shares": 29,
+   "dollars": 7564.07,
+   "weight_pct": 7.56,
+   "entry": 260.83,
+   "stop": 252.44,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CBC",
+   "sector": "Financials",
+   "conviction": 0.6775,
+   "shares": 233,
+   "dollars": 7556.19,
+   "weight_pct": 7.56,
+   "entry": 32.43,
+   "stop": 31.36,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AIQ",
+   "sector": "Other",
+   "conviction": 0.6764,
+   "shares": 108,
+   "dollars": 7172.28,
+   "weight_pct": 7.17,
+   "entry": 66.41,
+   "stop": 64.11,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "XOM",
+   "sector": "Energy",
+   "conviction": 0.6645,
+   "shares": 30,
+   "dollars": 5083.8,
+   "weight_pct": 5.08,
+   "entry": 169.46,
+   "stop": 161.36,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "ABBV",
+   "sector": "Health Care",
+   "composite": 0.744,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "APA",
+   "sector": "Energy",
+   "composite": 0.692,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "CVX",
+   "sector": "Energy",
+   "composite": 0.659,
+   "reason": "outranked \u2014 book full at 10"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = NEUTRAL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "10 holdings, 62% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 38%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "AFRM",
+   "AIQ",
+   "AMGN",
+   "AMZN",
+   "CBC",
+   "LLY"
+  ],
+  "removed": [
+   "ADI",
+   "ANET",
+   "BLCR",
+   "COP",
+   "MSFT",
+   "TSM"
+  ],
+  "unchanged": [
+   "CSCO",
+   "MET",
+   "NVDA",
+   "XOM"
+  ]
+ }
+}
