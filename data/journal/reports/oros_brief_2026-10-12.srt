@@ -1,0 +1,203 @@
+1
+00:00:00,000 --> 00:00:01,030
+Good morning.
+
+2
+00:00:01,030 --> 00:00:07,049
+From the OROS Market Desk, here is the rundown for Monday, October 12, 2026.
+
+3
+00:00:07,049 --> 00:00:08,871
+The tape reads neutral.
+
+4
+00:00:08,871 --> 00:00:15,207
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:15,207 --> 00:00:27,167
+And at the sports desk, day 71 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:27,167 --> 00:00:35,398
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:35,398 --> 00:00:42,762
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:42,724 --> 00:00:44,588
+First, the market open.
+
+9
+00:00:44,588 --> 00:00:50,422
+The S and P five hundred slipped 0.4 percent, while the NASDAQ lost 1.3.
+
+10
+00:00:50,422 --> 00:00:56,338
+The primary trend reads neutral; capital preservation leads the playbook.
+
+11
+00:00:56,338 --> 00:00:58,606
+The fear gauge sits at 15.2.
+
+12
+00:00:58,606 --> 00:01:07,932
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:07,894 --> 00:01:16,594
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+14
+00:01:16,594 --> 00:01:20,703
+Forcing a pick on a weak tape is how systems bleed.
+
+15
+00:01:20,703 --> 00:01:21,347
+We wait.
+
+16
+00:01:21,315 --> 00:01:23,550
+Turning to the model book.
+
+17
+00:01:23,550 --> 00:01:34,469
+The system holds 10 positions with 59% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+18
+00:01:34,469 --> 00:01:45,216
+New to the book: Analog Devices (ADI), Arista Networks (ANET), Chevron (CVX) — each passed the full entry gauntlet overnight.
+
+19
+00:01:45,216 --> 00:02:09,203
+Rotated out: Global X Artificial Intelligence & Technology ETF (AIQ), which still advancing, but outranked by stronger names; NVIDIA (NVDA), which still advancing, but outranked by stronger names; ExxonMobil Holdings (XOM), which still advancing, but outranked by stronger names.
+
+20
+00:02:09,203 --> 00:02:25,195
+Left on the bench: AbbVie (ABBV), earnings inside the blackout window; APA Corporation (APA), earnings inside the blackout window; ExxonMobil Holdings (XOM), outranked — book full at 10.
+
+21
+00:02:25,195 --> 00:02:30,095
+Passing the scan is not enough; the book must afford you.
+
+22
+00:02:30,095 --> 00:02:32,681
+Today's lesson is position management.
+
+23
+00:02:32,681 --> 00:02:33,974
+Cash is a position.
+
+24
+00:02:33,974 --> 00:02:41,662
+The system sizes deployment by rule, and when its own forward record weakens, a throttle automatically cuts size.
+
+25
+00:02:41,662 --> 00:02:45,608
+Rotation is not indecision; it is the portfolio breathing.
+
+26
+00:02:45,608 --> 00:02:50,575
+Names that stop qualifying leave, and names that start qualifying arrive.
+
+27
+00:02:50,529 --> 00:02:58,573
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+28
+00:02:58,573 --> 00:03:07,730
+10 positions, led by Arista Networks, ticker ANET, Affirm Holdings, ticker AFRM, Eli Lilly and, ticker LLY.
+
+29
+00:03:07,730 --> 00:03:19,368
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+30
+00:03:19,321 --> 00:03:21,587
+Over to the sports desk.
+
+31
+00:03:21,587 --> 00:03:30,934
+Day 71 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+32
+00:03:30,934 --> 00:03:35,844
+In first place, the index fund, in gray, at 103,271.
+
+33
+00:03:35,844 --> 00:03:42,831
+Then the live self-rebuilding book, in blue, 0.6 thousand back at 102,650.
+
+34
+00:03:42,831 --> 00:03:50,101
+Then the frozen first portfolio, the green line, 6.3 thousand back at 97,020.
+
+35
+00:03:50,101 --> 00:03:52,745
+The race has no finish line.
+
+36
+00:03:52,745 --> 00:03:57,088
+Same books, same dollars, back at it tomorrow.
+
+37
+00:03:57,088 --> 00:04:01,998
+Every line starts the same day with the same dollar.
+
+38
+00:04:01,998 --> 00:04:03,886
+Nothing is restated.
+
+39
+00:04:03,886 --> 00:04:12,794
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+40
+00:04:12,756 --> 00:04:14,305
+Tonight's takeaway.
+
+41
+00:04:14,305 --> 00:04:16,588
+A portfolio is not a museum.
+
+42
+00:04:16,588 --> 00:04:24,903
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+43
+00:04:24,877 --> 00:04:27,603
+Before we close, the disclosure segment.
+
+44
+00:04:27,603 --> 00:04:37,211
+Everything you heard today concerns one simulated portfolio of 10 positions — the same book, line for line, as this morning's emailed report.
+
+45
+00:04:37,211 --> 00:04:38,983
+One record, every surface.
+
+46
+00:04:38,983 --> 00:04:41,070
+A word on how this desk works.
+
+47
+00:04:41,070 --> 00:04:58,597
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+48
+00:04:58,597 --> 00:05:07,012
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+49
+00:05:07,012 --> 00:05:09,945
+All figures are simulated paper trading.
+
+50
+00:05:09,945 --> 00:05:16,324
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+51
+00:05:16,324 --> 00:05:20,283
+From the OROS Market Desk, have a disciplined session.
