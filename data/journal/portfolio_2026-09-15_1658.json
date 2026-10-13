@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.128,
       "earnings_risk": false,
-      "outcome_return": 0.0493,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0621,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AAPU",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0522,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0701,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "DBC",
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": -0.0031,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0075,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BGC",
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.041,
       "earnings_risk": false,
-      "outcome_return": 0.0323,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0399,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "CDW",
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.1,
       "earnings_risk": false,
-      "outcome_return": -0.0056,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0062,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "XOP",
@@ -217,10 +217,10 @@
       "led_by": "sepa",
       "sentiment": -0.027,
       "earnings_risk": false,
-      "outcome_return": 0.0189,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0318,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -264,8 +264,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0807,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 4,
+  "realized_avg_return": -0.012,
+  "realized_hit_rate": 0.5,
+  "realized_final_count": 10,
   "realized_stop_exits": 4
 }

@@ -30,9 +30,9 @@
       "led_by": "weinstein",
       "sentiment": 0.109,
       "earnings_risk": true,
-      "outcome_return": -0.0066,
+      "outcome_return": -0.0378,
       "outcome_exit": "open",
-      "outcome_days": 55,
+      "outcome_days": 56,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": -0.094,
       "earnings_risk": false,
-      "outcome_return": 0.1038,
+      "outcome_return": 0.1169,
       "outcome_exit": "open",
-      "outcome_days": 55,
+      "outcome_days": 56,
       "outcome_final": false
     },
     {
