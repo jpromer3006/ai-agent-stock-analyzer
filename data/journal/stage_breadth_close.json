@@ -706,14 +706,14 @@
   },
   {
    "date": "2026-10-14",
-   "total": 5,
+   "total": 491,
    "counts": {
-    "Advancing": 0,
-    "Basing": 5,
-    "Topping": 0,
-    "Declining": 0
+    "Advancing": 153,
+    "Basing": 174,
+    "Topping": 31,
+    "Declining": 133
    },
-   "invalidated": 0,
+   "invalidated": 1,
    "source": "cloud"
   }
  ]
