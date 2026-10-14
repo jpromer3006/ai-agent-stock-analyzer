@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.106,
       "earnings_risk": false,
-      "outcome_return": -0.0665,
-      "outcome_exit": "open",
-      "outcome_days": 77,
-      "outcome_final": false
+      "outcome_return": -0.1387,
+      "outcome_exit": "stop",
+      "outcome_days": 78,
+      "outcome_final": true
     },
     {
       "ticker": "USB",
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.252,
       "earnings_risk": false,
-      "outcome_return": -0.0534,
+      "outcome_return": -0.0671,
       "outcome_exit": "open",
-      "outcome_days": 77,
+      "outcome_days": 78,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "technical",
       "sentiment": 0.15,
       "earnings_risk": false,
-      "outcome_return": 0.175,
+      "outcome_return": 0.2079,
       "outcome_exit": "open",
-      "outcome_days": 77,
+      "outcome_days": 78,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.112,
       "earnings_risk": false,
-      "outcome_return": 0.0347,
+      "outcome_return": 0.0547,
       "outcome_exit": "open",
-      "outcome_days": 77,
+      "outcome_days": 78,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "weinstein",
       "sentiment": 0.021,
       "earnings_risk": false,
-      "outcome_return": 0.0565,
+      "outcome_return": 0.0943,
       "outcome_exit": "open",
-      "outcome_days": 77,
+      "outcome_days": 78,
       "outcome_final": false
     }
   ],
@@ -153,9 +153,9 @@
       "summary": "sector concentration Financials 36%; cash 29%"
     }
   ],
-  "realized_avg_return": -0.1122,
+  "realized_avg_return": -0.1255,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1
+  "realized_final_count": 2,
+  "realized_stop_exits": 2
 }

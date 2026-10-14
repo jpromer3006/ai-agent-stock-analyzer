@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.168,
       "earnings_risk": false,
-      "outcome_return": -0.0795,
-      "outcome_exit": "open",
-      "outcome_days": 71,
-      "outcome_final": false
+      "outcome_return": -0.1508,
+      "outcome_exit": "stop",
+      "outcome_days": 72,
+      "outcome_final": true
     },
     {
       "ticker": "BRK-B",
@@ -61,10 +61,10 @@
       "led_by": "technical",
       "sentiment": 0.32,
       "earnings_risk": false,
-      "outcome_return": -0.0407,
-      "outcome_exit": "open",
-      "outcome_days": 71,
-      "outcome_final": false
+      "outcome_return": -0.0727,
+      "outcome_exit": "stop",
+      "outcome_days": 72,
+      "outcome_final": true
     },
     {
       "ticker": "KO",
@@ -78,9 +78,9 @@
       "led_by": "sepa",
       "sentiment": 0.296,
       "earnings_risk": false,
-      "outcome_return": 0.0713,
+      "outcome_return": 0.0833,
       "outcome_exit": "open",
-      "outcome_days": 71,
+      "outcome_days": 72,
       "outcome_final": false
     },
     {
@@ -95,9 +95,9 @@
       "led_by": "sepa",
       "sentiment": 0.242,
       "earnings_risk": false,
-      "outcome_return": -0.0595,
+      "outcome_return": -0.0414,
       "outcome_exit": "open",
-      "outcome_days": 71,
+      "outcome_days": 72,
       "outcome_final": false
     },
     {
@@ -201,9 +201,9 @@
       "summary": "within limits; cash 18%"
     }
   ],
-  "realized_avg_return": -0.0529,
+  "realized_avg_return": -0.0725,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 4,
-  "realized_stop_exits": 4
+  "realized_final_count": 6,
+  "realized_stop_exits": 6
 }

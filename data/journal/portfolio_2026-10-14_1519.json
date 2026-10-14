@@ -1,0 +1,251 @@
+{
+ "timestamp": "2026-10-14T15:19:46.611280Z",
+ "date": "2026-10-14",
+ "regime": "neutral",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 50134.92,
+ "cash": 49865.08,
+ "weights": {
+  "sepa": 0.206,
+  "swing": 0.111,
+  "growth": 0.082,
+  "ipo": 0.082,
+  "weinstein": 0.185,
+  "canslim": 0.165,
+  "value": 0.045,
+  "technical": 0.123
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "MET",
+   "sector": "Financials",
+   "conviction": 0.7764,
+   "shares": 83,
+   "dollars": 8251.03,
+   "weight_pct": 8.25,
+   "entry": 99.41,
+   "stop": 96.43,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "LLY",
+   "sector": "Health Care",
+   "conviction": 0.7362,
+   "shares": 4,
+   "dollars": 4846.08,
+   "weight_pct": 4.85,
+   "entry": 1211.52,
+   "stop": 1160.07,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AAPL",
+   "sector": "Information Technology",
+   "conviction": 0.7073,
+   "shares": 11,
+   "dollars": 3803.47,
+   "weight_pct": 3.8,
+   "entry": 345.77,
+   "stop": 324.5,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CVX",
+   "sector": "Energy",
+   "conviction": 0.7049,
+   "shares": 16,
+   "dollars": 3533.12,
+   "weight_pct": 3.53,
+   "entry": 220.82,
+   "stop": 205.4,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MSFT",
+   "sector": "Information Technology",
+   "conviction": 0.7008,
+   "shares": 7,
+   "dollars": 3767.26,
+   "weight_pct": 3.77,
+   "entry": 538.18,
+   "stop": 503.79,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "COP",
+   "sector": "Energy",
+   "conviction": 0.6994,
+   "shares": 22,
+   "dollars": 3116.96,
+   "weight_pct": 3.12,
+   "entry": 141.68,
+   "stop": 130.5,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AMGN",
+   "sector": "Health Care",
+   "conviction": 0.6927,
+   "shares": 16,
+   "dollars": 6819.52,
+   "weight_pct": 6.82,
+   "entry": 426.22,
+   "stop": 410.63,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "DBX",
+   "sector": "Information Technology",
+   "conviction": 0.6894,
+   "shares": 140,
+   "dollars": 4940.6,
+   "weight_pct": 4.94,
+   "entry": 35.29,
+   "stop": 33.51,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CHRD",
+   "sector": "Energy",
+   "conviction": 0.6882,
+   "shares": 44,
+   "dollars": 6440.28,
+   "weight_pct": 6.44,
+   "entry": 146.37,
+   "stop": 140.71,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "BIIB",
+   "sector": "Health Care",
+   "conviction": 0.6805,
+   "shares": 20,
+   "dollars": 4616.6,
+   "weight_pct": 4.62,
+   "entry": 230.83,
+   "stop": 218.57,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "ABBV",
+   "sector": "Health Care",
+   "composite": 0.772,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "APA",
+   "sector": "Energy",
+   "composite": 0.729,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "CSCO",
+   "sector": "Information Technology",
+   "composite": 0.682,
+   "reason": "sector cap \u2014 already 3 in Information Technology"
+  },
+  {
+   "ticker": "CBC",
+   "sector": "Financials",
+   "composite": 0.678,
+   "reason": "outranked \u2014 book full at 10"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = NEUTRAL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "10 holdings, 50% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 50%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "AAPL",
+   "BIIB",
+   "CHRD",
+   "DBX",
+   "LLY",
+   "MSFT"
+  ],
+  "removed": [
+   "ADI",
+   "AFRM",
+   "AMZN",
+   "CSCO",
+   "DRH",
+   "EBAY",
+   "ECPG",
+   "XOM"
+  ],
+  "unchanged": [
+   "AMGN",
+   "COP",
+   "CVX",
+   "MET"
+  ]
+ }
+}

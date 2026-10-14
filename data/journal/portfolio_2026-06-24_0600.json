@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.106,
       "earnings_risk": false,
-      "outcome_return": -0.0665,
-      "outcome_exit": "open",
-      "outcome_days": 77,
-      "outcome_final": false
+      "outcome_return": -0.1387,
+      "outcome_exit": "stop",
+      "outcome_days": 78,
+      "outcome_final": true
     },
     {
       "ticker": "BRK-B",
@@ -64,10 +64,10 @@
       "led_by": "technical",
       "sentiment": 0.313,
       "earnings_risk": false,
-      "outcome_return": -0.025,
-      "outcome_exit": "open",
-      "outcome_days": 77,
-      "outcome_final": false
+      "outcome_return": -0.0575,
+      "outcome_exit": "stop",
+      "outcome_days": 78,
+      "outcome_final": true
     },
     {
       "ticker": "CAT",
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.112,
       "earnings_risk": false,
-      "outcome_return": 0.0347,
+      "outcome_return": 0.0547,
       "outcome_exit": "open",
-      "outcome_days": 77,
+      "outcome_days": 78,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": -0.051,
       "earnings_risk": false,
-      "outcome_return": 0.1964,
+      "outcome_return": 0.2168,
       "outcome_exit": "open",
-      "outcome_days": 77,
+      "outcome_days": 78,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": -0.08,
       "earnings_risk": false,
-      "outcome_return": 0.1224,
+      "outcome_return": 0.1349,
       "outcome_exit": "open",
-      "outcome_days": 77,
+      "outcome_days": 78,
       "outcome_final": false
     },
     {
@@ -272,9 +272,9 @@
       "summary": "within limits; cash 8%"
     }
   ],
-  "realized_avg_return": -0.0627,
+  "realized_avg_return": -0.0706,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 7,
-  "realized_stop_exits": 7
+  "realized_final_count": 9,
+  "realized_stop_exits": 9
 }

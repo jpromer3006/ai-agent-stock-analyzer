@@ -1,0 +1,187 @@
+1
+00:00:00,000 --> 00:00:00,940
+Good morning.
+
+2
+00:00:00,940 --> 00:00:06,654
+From the OROS Market Desk, here is the rundown for Wednesday, October 14, 2026.
+
+3
+00:00:06,654 --> 00:00:08,318
+The tape reads neutral.
+
+4
+00:00:08,318 --> 00:00:14,104
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:14,104 --> 00:00:25,025
+And at the sports desk, day 73 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:25,025 --> 00:00:33,256
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:33,256 --> 00:00:40,620
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:40,582 --> 00:00:42,424
+First, the market open.
+
+9
+00:00:42,424 --> 00:00:48,191
+The S and P five hundred slipped 0.1 percent, while the NASDAQ lost 0.7.
+
+10
+00:00:48,191 --> 00:00:54,039
+The primary trend reads neutral; capital preservation leads the playbook.
+
+11
+00:00:54,039 --> 00:00:56,282
+The fear gauge sits at 15.9.
+
+12
+00:00:56,282 --> 00:01:05,607
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:05,569 --> 00:01:14,269
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+14
+00:01:14,269 --> 00:01:18,378
+Forcing a pick on a weak tape is how systems bleed.
+
+15
+00:01:18,378 --> 00:01:19,022
+We wait.
+
+16
+00:01:18,990 --> 00:01:21,358
+Turning to the model book.
+
+17
+00:01:21,358 --> 00:01:32,923
+The system holds 10 positions with 50% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+18
+00:01:32,923 --> 00:01:48,222
+New to the book: Apple (AAPL), Biogen (BIIB), Chord Energy (CHRD), Dropbox (DBX), Eli Lilly and (LLY), Microsoft (MSFT) — each passed the full entry gauntlet overnight.
+
+19
+00:01:48,222 --> 00:02:17,637
+Rotated out: Analog Devices (ADI), which still advancing, but outranked by stronger names; Affirm Holdings (AFRM), which still advancing, but outranked by stronger names; Amazon.com (AMZN), which still advancing, but outranked by stronger names; Cisco Systems (CSCO), which still advancing, but outranked by stronger names.
+
+20
+00:02:17,637 --> 00:02:36,033
+Left on the bench: AbbVie (ABBV), earnings inside the blackout window; APA Corporation (APA), earnings inside the blackout window; Cisco Systems (CSCO), sector cap — already 3 in Information Technology.
+
+21
+00:02:36,033 --> 00:02:41,223
+Passing the scan is not enough; the book must afford you.
+
+22
+00:02:41,223 --> 00:02:47,258
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+23
+00:02:47,214 --> 00:02:55,368
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+24
+00:02:55,368 --> 00:03:03,002
+10 positions, led by MetLife, ticker MET, Eli Lilly and, ticker LLY, Apple, ticker AAPL.
+
+25
+00:03:03,002 --> 00:03:14,799
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+26
+00:03:14,753 --> 00:03:17,060
+Over to the sports desk.
+
+27
+00:03:17,060 --> 00:03:26,577
+Day 73 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+28
+00:03:26,577 --> 00:03:31,576
+In first place, the index fund, in gray, at 103,827.
+
+29
+00:03:31,576 --> 00:03:38,690
+Then the live self-rebuilding book, in blue, 0.4 thousand back at 103,463.
+
+30
+00:03:38,690 --> 00:03:46,092
+Then the frozen first portfolio, the green line, 7.2 thousand back at 96,641.
+
+31
+00:03:46,092 --> 00:03:48,784
+The race has no finish line.
+
+32
+00:03:48,784 --> 00:03:53,206
+Same books, same dollars, back at it tomorrow.
+
+33
+00:03:53,206 --> 00:03:58,205
+Every line starts the same day with the same dollar.
+
+34
+00:03:58,205 --> 00:04:00,128
+Nothing is restated.
+
+35
+00:04:00,128 --> 00:04:09,035
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+36
+00:04:08,997 --> 00:04:10,546
+Tonight's takeaway.
+
+37
+00:04:10,546 --> 00:04:12,829
+A portfolio is not a museum.
+
+38
+00:04:12,829 --> 00:04:21,144
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+39
+00:04:21,118 --> 00:04:23,844
+Before we close, the disclosure segment.
+
+40
+00:04:23,844 --> 00:04:33,452
+Everything you heard today concerns one simulated portfolio of 10 positions — the same book, line for line, as this morning's emailed report.
+
+41
+00:04:33,452 --> 00:04:35,224
+One record, every surface.
+
+42
+00:04:35,224 --> 00:04:37,311
+A word on how this desk works.
+
+43
+00:04:37,311 --> 00:04:54,838
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+44
+00:04:54,838 --> 00:05:03,253
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+45
+00:05:03,253 --> 00:05:06,186
+All figures are simulated paper trading.
+
+46
+00:05:06,186 --> 00:05:12,565
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+47
+00:05:12,565 --> 00:05:16,524
+From the OROS Market Desk, have a disciplined session.
