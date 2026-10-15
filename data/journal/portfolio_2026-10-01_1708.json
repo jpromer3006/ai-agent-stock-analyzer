@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.052,
       "earnings_risk": false,
-      "outcome_return": -0.0312,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": -0.0596,
+      "outcome_exit": "stop",
+      "outcome_days": 10,
+      "outcome_final": true
     },
     {
       "ticker": "TSM",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.152,
       "earnings_risk": false,
-      "outcome_return": -0.0463,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": -0.0843,
+      "outcome_exit": "stop",
+      "outcome_days": 10,
+      "outcome_final": true
     },
     {
       "ticker": "AVT",
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.291,
       "earnings_risk": false,
-      "outcome_return": -0.0498,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": -0.1106,
+      "outcome_exit": "stop",
+      "outcome_days": 10,
+      "outcome_final": true
     },
     {
       "ticker": "BRKR",
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.388,
       "earnings_risk": false,
-      "outcome_return": 0.0366,
+      "outcome_return": 0.0672,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 10,
       "outcome_final": false
     },
     {
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.206,
       "earnings_risk": false,
-      "outcome_return": -0.0229,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": -0.1105,
+      "outcome_exit": "stop",
+      "outcome_days": 10,
+      "outcome_final": true
     },
     {
       "ticker": "BE",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.21,
       "earnings_risk": false,
-      "outcome_return": -0.1036,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": -0.157,
+      "outcome_exit": "stop",
+      "outcome_days": 10,
+      "outcome_final": true
     },
     {
       "ticker": "CIBR",
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.258,
       "earnings_risk": false,
-      "outcome_return": 0.0146,
+      "outcome_return": -0.0108,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 10,
       "outcome_final": false
     }
   ],
@@ -230,10 +230,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0874,
+  "realized_avg_return": -0.098,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3,
+  "realized_final_count": 8,
+  "realized_stop_exits": 8,
   "changes": {
     "added": [
       "BE",

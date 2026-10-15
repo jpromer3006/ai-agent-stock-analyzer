@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0718,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.099,
+      "outcome_exit": "stop",
+      "outcome_days": 7,
+      "outcome_final": true
     },
     {
       "ticker": "TSM",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.1012,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.1371,
+      "outcome_exit": "stop",
+      "outcome_days": 7,
+      "outcome_final": true
     },
     {
       "ticker": "TXN",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0543,
+      "outcome_return": -0.0651,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0387,
+      "outcome_return": 0.0579,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.04,
-      "outcome_exit": "open",
-      "outcome_days": 6,
-      "outcome_final": false
+      "outcome_return": -0.0556,
+      "outcome_exit": "stop",
+      "outcome_days": 7,
+      "outcome_final": true
     },
     {
       "ticker": "PM",
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0593,
+      "outcome_return": 0.062,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -200,9 +200,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0163,
+      "outcome_return": 0.0166,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     },
     {
@@ -217,9 +217,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0805,
+      "outcome_return": 0.0645,
       "outcome_exit": "open",
-      "outcome_days": 6,
+      "outcome_days": 7,
       "outcome_final": false
     }
   ],
@@ -288,10 +288,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0582,
+  "realized_avg_return": -0.0749,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 4,
-  "realized_stop_exits": 4,
+  "realized_final_count": 7,
+  "realized_stop_exits": 7,
   "changes": {
     "added": [
       "AIA",

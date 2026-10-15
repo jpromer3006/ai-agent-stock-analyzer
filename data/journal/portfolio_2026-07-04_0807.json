@@ -30,7 +30,7 @@
       "led_by": "sepa",
       "sentiment": 0.168,
       "earnings_risk": false,
-      "outcome_return": -0.1508,
+      "outcome_return": -0.125,
       "outcome_exit": "stop",
       "outcome_days": 72,
       "outcome_final": true
@@ -61,10 +61,10 @@
       "led_by": "technical",
       "sentiment": 0.32,
       "earnings_risk": false,
-      "outcome_return": -0.0727,
-      "outcome_exit": "stop",
-      "outcome_days": 72,
-      "outcome_final": true
+      "outcome_return": -0.0412,
+      "outcome_exit": "open",
+      "outcome_days": 73,
+      "outcome_final": false
     },
     {
       "ticker": "KO",
@@ -78,9 +78,9 @@
       "led_by": "sepa",
       "sentiment": 0.296,
       "earnings_risk": false,
-      "outcome_return": 0.0833,
+      "outcome_return": 0.1044,
       "outcome_exit": "open",
-      "outcome_days": 72,
+      "outcome_days": 73,
       "outcome_final": false
     },
     {
@@ -95,9 +95,9 @@
       "led_by": "sepa",
       "sentiment": 0.242,
       "earnings_risk": false,
-      "outcome_return": -0.0414,
+      "outcome_return": -0.0167,
       "outcome_exit": "open",
-      "outcome_days": 72,
+      "outcome_days": 73,
       "outcome_final": false
     },
     {
@@ -201,9 +201,9 @@
       "summary": "within limits; cash 18%"
     }
   ],
-  "realized_avg_return": -0.0725,
+  "realized_avg_return": -0.0673,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
-  "realized_final_count": 6,
-  "realized_stop_exits": 6
+  "realized_final_count": 5,
+  "realized_stop_exits": 5
 }

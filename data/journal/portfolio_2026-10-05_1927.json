@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0676,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.0949,
+      "outcome_exit": "stop",
+      "outcome_days": 8,
+      "outcome_final": true
     },
     {
       "ticker": "ABBV",
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0627,
+      "outcome_return": 0.0778,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     },
     {
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.106,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.1416,
+      "outcome_exit": "stop",
+      "outcome_days": 8,
+      "outcome_final": true
     },
     {
       "ticker": "ADI",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0238,
+      "outcome_return": -0.033,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     },
     {
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0401,
-      "outcome_exit": "open",
-      "outcome_days": 7,
-      "outcome_final": false
+      "outcome_return": -0.1262,
+      "outcome_exit": "stop",
+      "outcome_days": 8,
+      "outcome_final": true
     },
     {
       "ticker": "DXCM",
@@ -149,9 +149,9 @@
       "led_by": "technical",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0181,
+      "outcome_return": 0.0157,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0211,
+      "outcome_return": 0.0214,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     }
   ],
@@ -230,10 +230,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0545,
+  "realized_avg_return": -0.0877,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3,
+  "realized_final_count": 6,
+  "realized_stop_exits": 6,
   "changes": {
     "added": [
       "DXCM",

@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.293,
       "earnings_risk": false,
-      "outcome_return": 0.0109,
+      "outcome_return": -0.0294,
       "outcome_exit": "open",
-      "outcome_days": 18,
+      "outcome_days": 19,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.219,
       "earnings_risk": false,
-      "outcome_return": 0.058,
+      "outcome_return": 0.0424,
       "outcome_exit": "open",
-      "outcome_days": 18,
+      "outcome_days": 19,
       "outcome_final": false
     },
     {
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.182,
       "earnings_risk": false,
-      "outcome_return": 0.0082,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": -0.0822,
+      "outcome_exit": "stop",
+      "outcome_days": 19,
+      "outcome_final": true
     },
     {
       "ticker": "CIBR",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.23,
       "earnings_risk": false,
-      "outcome_return": 0.0565,
+      "outcome_return": 0.0301,
       "outcome_exit": "open",
-      "outcome_days": 18,
+      "outcome_days": 19,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.194,
       "earnings_risk": false,
-      "outcome_return": 0.0182,
+      "outcome_return": -0.0117,
       "outcome_exit": "open",
-      "outcome_days": 18,
+      "outcome_days": 19,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.054,
+      "outcome_return": 0.0462,
       "outcome_exit": "open",
-      "outcome_days": 18,
+      "outcome_days": 19,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.101,
       "earnings_risk": false,
-      "outcome_return": 0.033,
+      "outcome_return": 0.0292,
       "outcome_exit": "open",
-      "outcome_days": 18,
+      "outcome_days": 19,
       "outcome_final": false
     },
     {
@@ -166,10 +166,10 @@
       "led_by": "swing",
       "sentiment": 0.35,
       "earnings_risk": false,
-      "outcome_return": -0.0382,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": -0.122,
+      "outcome_exit": "stop",
+      "outcome_days": 19,
+      "outcome_final": true
     },
     {
       "ticker": "ECPG",
@@ -200,9 +200,9 @@
       "led_by": "sepa",
       "sentiment": 0.014,
       "earnings_risk": false,
-      "outcome_return": 0.0749,
+      "outcome_return": 0.0901,
       "outcome_exit": "open",
-      "outcome_days": 18,
+      "outcome_days": 19,
       "outcome_final": false
     },
     {
@@ -217,10 +217,10 @@
       "led_by": "sepa",
       "sentiment": 0.017,
       "earnings_risk": false,
-      "outcome_return": -0.0679,
-      "outcome_exit": "open",
-      "outcome_days": 18,
-      "outcome_final": false
+      "outcome_return": -0.1274,
+      "outcome_exit": "stop",
+      "outcome_days": 19,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -264,8 +264,8 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0587,
+  "realized_avg_return": -0.0898,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 2,
-  "realized_stop_exits": 2
+  "realized_final_count": 5,
+  "realized_stop_exits": 5
 }

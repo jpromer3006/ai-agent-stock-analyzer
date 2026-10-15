@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.328,
       "earnings_risk": false,
-      "outcome_return": 0.0653,
+      "outcome_return": 0.0805,
       "outcome_exit": "open",
-      "outcome_days": 15,
+      "outcome_days": 16,
       "outcome_final": false
     },
     {
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.149,
       "earnings_risk": false,
-      "outcome_return": -0.0129,
-      "outcome_exit": "open",
-      "outcome_days": 15,
-      "outcome_final": false
+      "outcome_return": -0.1013,
+      "outcome_exit": "stop",
+      "outcome_days": 16,
+      "outcome_final": true
     },
     {
       "ticker": "TSM",
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.171,
       "earnings_risk": false,
-      "outcome_return": -0.0298,
+      "outcome_return": -0.0685,
       "outcome_exit": "open",
-      "outcome_days": 15,
+      "outcome_days": 16,
       "outcome_final": false
     },
     {
@@ -81,7 +81,7 @@
       "led_by": "sepa",
       "sentiment": 0.207,
       "earnings_risk": false,
-      "outcome_return": -0.0679,
+      "outcome_return": -0.0729,
       "outcome_exit": "stop",
       "outcome_days": 15,
       "outcome_final": true
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.231,
       "earnings_risk": false,
-      "outcome_return": -0.0319,
+      "outcome_return": -0.0939,
       "outcome_exit": "open",
-      "outcome_days": 15,
+      "outcome_days": 16,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": -0.006,
       "earnings_risk": false,
-      "outcome_return": 0.0216,
+      "outcome_return": 0.0179,
       "outcome_exit": "open",
-      "outcome_days": 15,
+      "outcome_days": 16,
       "outcome_final": false
     },
     {
@@ -247,10 +247,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0861,
+  "realized_avg_return": -0.0912,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3,
+  "realized_final_count": 4,
+  "realized_stop_exits": 4,
   "changes": {
     "added": [
       "DE",

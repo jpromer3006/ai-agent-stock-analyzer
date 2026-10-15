@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:01,064
+Good morning.
+
+2
+00:00:01,064 --> 00:00:07,449
+From the OROS Market Desk, here is the rundown for Thursday, October 15, 2026.
+
+3
+00:00:07,449 --> 00:00:09,086
+The tape reads bull.
+
+4
+00:00:09,086 --> 00:00:16,208
+Our top pick of the day: UnitedHealth Group Incorporated Common Stock (DE), ticker UNH.
+
+5
+00:00:16,208 --> 00:00:21,938
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:21,938 --> 00:00:34,299
+And at the sports desk, day 74 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:34,299 --> 00:00:42,530
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:42,530 --> 00:00:49,894
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:49,856 --> 00:00:51,756
+First, the market open.
+
+10
+00:00:51,756 --> 00:00:57,705
+The S and P five hundred slipped 1.1 percent, while the NASDAQ lost 2.0.
+
+11
+00:00:57,705 --> 00:01:04,810
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+12
+00:01:04,810 --> 00:01:07,123
+The fear gauge sits at 17.1.
+
+13
+00:01:07,123 --> 00:01:16,449
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+14
+00:01:16,411 --> 00:01:28,702
+Now the chart of the day: UnitedHealth Group Incorporated Common Stock (DE), ticker UNH, the top stock to clear every quality gate.
+
+15
+00:01:28,702 --> 00:01:41,274
+The entry trigger sits at 412.62, the exit at 373.86, and the objective at 501.47 — 2.3 dollars of potential reward per dollar risked.
+
+16
+00:01:41,274 --> 00:01:47,653
+At 25 shares, a failed trade costs about one percent of the account.
+
+17
+00:01:47,653 --> 00:01:58,878
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+18
+00:01:58,878 --> 00:02:08,033
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+19
+00:02:08,033 --> 00:02:13,686
+You buy only if the market pushes up through that line, proving demand.
+
+20
+00:02:13,686 --> 00:02:19,656
+If it never gets there, you never buy, and that is the plan protecting you.
+
+21
+00:02:19,656 --> 00:02:27,060
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+22
+00:02:27,060 --> 00:02:39,559
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+23
+00:02:39,559 --> 00:02:40,594
+Buy on proof.
+
+24
+00:02:40,594 --> 00:02:41,629
+Exit by rule.
+
+25
+00:02:41,629 --> 00:02:42,902
+Size to survive.
+
+26
+00:02:42,870 --> 00:02:48,434
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+27
+00:02:48,434 --> 00:02:56,506
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+28
+00:02:56,506 --> 00:03:04,220
+On the stock track: UnitedHealth Group Incorporated Common Stock (DE), ticker UNH.
+
+29
+00:03:04,220 --> 00:03:09,864
+The plan in plain English: it last closed at 410.57 dollars.
+
+30
+00:03:09,864 --> 00:03:20,024
+The system would only buy strength — a buy-stop at 412.62, nothing happens unless price proves itself first.
+
+31
+00:03:20,024 --> 00:03:28,584
+If it triggers, the exit is a weekly close below 373.86, and the measured target is 501.47.
+
+32
+00:03:28,584 --> 00:03:33,761
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+33
+00:03:33,761 --> 00:03:34,880
+That's the deal.
+
+34
+00:03:34,853 --> 00:03:37,109
+Turning to the model book.
+
+35
+00:03:37,109 --> 00:03:48,216
+The system holds 11 positions with 100% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+36
+00:03:48,216 --> 00:04:03,228
+New to the book: AvePoint (AVPT), Diamondrock Hospitality (DRH), Philip Morris International (PM), ExxonMobil Holdings (XOM) — each passed the full entry gauntlet overnight.
+
+37
+00:04:03,228 --> 00:04:23,273
+Rotated out: Biogen (BIIB), which still advancing, but outranked by stronger names; Chord Energy (CHRD), which still advancing, but outranked by stronger names; Dropbox (DBX), which still advancing, but outranked by stronger names.
+
+38
+00:04:23,273 --> 00:04:42,710
+Left on the bench: APA Corporation (APA), earnings inside the blackout window; AbbVie (ABBV), earnings inside the blackout window; UnitedHealth Group Incorporated Common Stock (DE) (UNH), earnings inside the blackout window.
+
+39
+00:04:42,710 --> 00:04:47,656
+Passing the scan is not enough; the book must afford you.
+
+40
+00:04:47,656 --> 00:04:53,691
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+41
+00:04:53,647 --> 00:05:01,425
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+42
+00:05:01,425 --> 00:05:09,038
+11 positions, led by MetLife, ticker MET, Microsoft, ticker MSFT, Eli Lilly and, ticker LLY.
+
+43
+00:05:09,038 --> 00:05:20,292
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+44
+00:05:20,257 --> 00:05:22,469
+Over to the sports desk.
+
+45
+00:05:22,469 --> 00:05:31,591
+Day 74 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+46
+00:05:31,591 --> 00:05:37,765
+In first place, the live self-rebuilding book, in blue, at 104,319.
+
+47
+00:05:37,765 --> 00:05:43,202
+Then the index fund, in gray, 1.6 thousand back at 102,693.
+
+48
+00:05:43,202 --> 00:05:50,297
+Then the frozen first portfolio, the green line, 7.3 thousand back at 97,030.
+
+49
+00:05:50,297 --> 00:05:52,877
+The race has no finish line.
+
+50
+00:05:52,877 --> 00:05:57,116
+Same books, same dollars, back at it tomorrow.
+
+51
+00:05:57,116 --> 00:06:01,908
+Every line starts the same day with the same dollar.
+
+52
+00:06:01,908 --> 00:06:03,751
+Nothing is restated.
+
+53
+00:06:03,751 --> 00:06:06,080
+Today's lesson is benchmarking.
+
+54
+00:06:06,080 --> 00:06:12,542
+Any strategy must beat the boring alternative: the same money parked in an index fund.
+
+55
+00:06:12,542 --> 00:06:15,998
+That is why the S and P line shares the chart.
+
+56
+00:06:15,998 --> 00:06:25,015
+If the system cannot outrun it, the index deserves the money, and publishing the race every day keeps the system honest.
+
+57
+00:06:24,974 --> 00:06:26,523
+Tonight's takeaway.
+
+58
+00:06:26,523 --> 00:06:28,806
+A portfolio is not a museum.
+
+59
+00:06:28,806 --> 00:06:37,121
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+60
+00:06:37,095 --> 00:06:39,947
+Before we close, the disclosure segment.
+
+61
+00:06:39,947 --> 00:06:50,000
+Everything you heard today concerns one simulated portfolio of 11 positions — the same book, line for line, as this morning's emailed report.
+
+62
+00:06:50,000 --> 00:06:51,854
+One record, every surface.
+
+63
+00:06:51,854 --> 00:06:53,941
+A word on how this desk works.
+
+64
+00:06:53,941 --> 00:07:11,468
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+65
+00:07:11,468 --> 00:07:19,884
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+66
+00:07:19,884 --> 00:07:22,816
+All figures are simulated paper trading.
+
+67
+00:07:22,816 --> 00:07:29,195
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+68
+00:07:29,195 --> 00:07:33,154
+From the OROS Market Desk, have a disciplined session.

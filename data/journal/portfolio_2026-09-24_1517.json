@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.128,
       "earnings_risk": false,
-      "outcome_return": -0.0179,
-      "outcome_exit": "open",
-      "outcome_days": 14,
-      "outcome_final": false
+      "outcome_return": -0.0571,
+      "outcome_exit": "stop",
+      "outcome_days": 15,
+      "outcome_final": true
     },
     {
       "ticker": "AVT",
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.355,
       "earnings_risk": false,
-      "outcome_return": -0.0181,
-      "outcome_exit": "open",
-      "outcome_days": 14,
-      "outcome_final": false
+      "outcome_return": -0.0809,
+      "outcome_exit": "stop",
+      "outcome_days": 15,
+      "outcome_final": true
     },
     {
       "ticker": "ABBV",
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.323,
       "earnings_risk": false,
-      "outcome_return": 0.0701,
+      "outcome_return": 0.0853,
       "outcome_exit": "open",
-      "outcome_days": 14,
+      "outcome_days": 15,
       "outcome_final": false
     },
     {
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.095,
       "earnings_risk": false,
-      "outcome_return": -0.0136,
-      "outcome_exit": "open",
-      "outcome_days": 14,
-      "outcome_final": false
+      "outcome_return": -0.102,
+      "outcome_exit": "stop",
+      "outcome_days": 15,
+      "outcome_final": true
     },
     {
       "ticker": "BRKR",
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0507,
+      "outcome_return": 0.043,
       "outcome_exit": "open",
-      "outcome_days": 14,
+      "outcome_days": 15,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.045,
       "earnings_risk": false,
-      "outcome_return": 0.0282,
+      "outcome_return": 0.0244,
       "outcome_exit": "open",
-      "outcome_days": 14,
+      "outcome_days": 15,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.012,
       "earnings_risk": false,
-      "outcome_return": -0.0136,
+      "outcome_return": -0.0297,
       "outcome_exit": "open",
-      "outcome_days": 14,
+      "outcome_days": 15,
       "outcome_final": false
     },
     {
@@ -264,10 +264,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0664,
+  "realized_avg_return": -0.0722,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 4,
-  "realized_stop_exits": 4,
+  "realized_final_count": 7,
+  "realized_stop_exits": 7,
   "changes": {
     "added": [
       "AAPU",

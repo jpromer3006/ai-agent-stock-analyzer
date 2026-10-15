@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.253,
       "earnings_risk": false,
-      "outcome_return": -0.0367,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.0984,
+      "outcome_exit": "stop",
+      "outcome_days": 13,
+      "outcome_final": true
     },
     {
       "ticker": "NVDA",
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.041,
       "earnings_risk": false,
-      "outcome_return": -0.0291,
+      "outcome_return": -0.0576,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.284,
       "earnings_risk": false,
-      "outcome_return": 0.0311,
+      "outcome_return": 0.0053,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     },
     {
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.119,
       "earnings_risk": false,
-      "outcome_return": -0.0403,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.0785,
+      "outcome_exit": "stop",
+      "outcome_days": 13,
+      "outcome_final": true
     },
     {
       "ticker": "LLY",
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.012,
       "earnings_risk": false,
-      "outcome_return": -0.0314,
-      "outcome_exit": "open",
-      "outcome_days": 12,
-      "outcome_final": false
+      "outcome_return": -0.1182,
+      "outcome_exit": "stop",
+      "outcome_days": 13,
+      "outcome_final": true
     },
     {
       "ticker": "ABBV",
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.255,
       "earnings_risk": false,
-      "outcome_return": 0.0631,
+      "outcome_return": 0.0782,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.326,
       "earnings_risk": false,
-      "outcome_return": 0.0273,
+      "outcome_return": 0.0462,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     },
     {
@@ -200,9 +200,9 @@
       "led_by": "sepa",
       "sentiment": 0.322,
       "earnings_risk": false,
-      "outcome_return": 0.0175,
+      "outcome_return": 0.0138,
       "outcome_exit": "open",
-      "outcome_days": 12,
+      "outcome_days": 13,
       "outcome_final": false
     }
   ],
@@ -247,10 +247,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0476,
+  "realized_avg_return": -0.073,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3,
+  "realized_final_count": 6,
+  "realized_stop_exits": 6,
   "changes": {
     "added": [
       "ANET",

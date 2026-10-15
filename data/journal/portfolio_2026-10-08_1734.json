@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0543,
-      "outcome_exit": "open",
+      "outcome_return": -0.0733,
+      "outcome_exit": "stop",
       "outcome_days": 4,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "CSCO",
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0006,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.0583,
+      "outcome_exit": "stop",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "NVDA",
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0296,
-      "outcome_exit": "open",
-      "outcome_days": 4,
-      "outcome_final": false
+      "outcome_return": -0.058,
+      "outcome_exit": "stop",
+      "outcome_days": 5,
+      "outcome_final": true
     },
     {
       "ticker": "XOM",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.043,
+      "outcome_return": 0.0362,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0149,
+      "outcome_return": 0.0152,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "swing",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0288,
+      "outcome_return": 0.0264,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0422,
-      "outcome_exit": "open",
+      "outcome_return": -0.0531,
+      "outcome_exit": "stop",
       "outcome_days": 4,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "COP",
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0562,
+      "outcome_return": 0.053,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0016,
+      "outcome_return": -0.01,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0169,
+      "outcome_return": 0.0074,
       "outcome_exit": "open",
-      "outcome_days": 4,
+      "outcome_days": 5,
       "outcome_final": false
     }
   ],
@@ -242,10 +242,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0,
+  "realized_avg_return": -0.0607,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 4,
+  "realized_stop_exits": 4,
   "changes": {
     "added": [
       "ANET",

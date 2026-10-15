@@ -30,10 +30,10 @@
       "led_by": "weinstein",
       "sentiment": 0.211,
       "earnings_risk": true,
-      "outcome_return": -0.0661,
-      "outcome_exit": "open",
+      "outcome_return": -0.0715,
+      "outcome_exit": "stop",
       "outcome_days": 58,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "BAC",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.1281,
+      "outcome_return": 0.1297,
       "outcome_exit": "open",
-      "outcome_days": 58,
+      "outcome_days": 59,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.118,
+      "outcome_return": 0.1107,
       "outcome_exit": "open",
-      "outcome_days": 58,
+      "outcome_days": 59,
       "outcome_final": false
     },
     {
@@ -220,8 +220,8 @@
     }
   ],
   "horizon_days": 120,
-  "realized_avg_return": -0.0825,
+  "realized_avg_return": -0.0807,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 5,
-  "realized_stop_exits": 5
+  "realized_final_count": 6,
+  "realized_stop_exits": 6
 }
