@@ -1,0 +1,167 @@
+1
+00:00:00,000 --> 00:00:03,383
+Good evening from the OROS closing desk.
+
+2
+00:00:03,383 --> 00:00:08,543
+Time to grade this morning's call — the part most shows skip.
+
+3
+00:00:08,543 --> 00:00:18,355
+UnitedHealth Group Incorporated Common Stock (DE), ticker UNH triggered, then faded to -1.4 percent below the entry.
+
+4
+00:00:18,355 --> 00:00:23,261
+If it closes a week below the stop, the exit is automatic.
+
+5
+00:00:23,261 --> 00:00:26,645
+That is not a failure; that is the plan.
+
+6
+00:00:26,645 --> 00:00:31,581
+Why we grade in public: a forecast that is never checked is just content.
+
+7
+00:00:31,581 --> 00:00:36,989
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+8
+00:00:36,954 --> 00:00:41,094
+On the day, the book is up 483 dollars.
+
+9
+00:00:41,094 --> 00:00:46,401
+Diamondrock Hospitality (DRH) leads, +3.1 percent.
+
+10
+00:00:46,401 --> 00:00:51,284
+Philip Morris International (PM) lags at -2.8.
+
+11
+00:00:51,284 --> 00:00:57,016
+The checklist is clear: nothing requires action today.
+
+12
+00:00:57,016 --> 00:01:00,543
+On screen, the day's gainers and laggards inside the paper book.
+
+13
+00:01:00,499 --> 00:01:08,277
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+14
+00:01:08,277 --> 00:01:15,890
+11 positions, led by MetLife, ticker MET, Microsoft, ticker MSFT, Eli Lilly and, ticker LLY.
+
+15
+00:01:15,890 --> 00:01:27,144
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+16
+00:01:27,109 --> 00:01:31,978
+Now the part that makes this system different: the loop.
+
+17
+00:01:31,978 --> 00:01:34,412
+Every morning OROS proposes.
+
+18
+00:01:34,412 --> 00:01:45,106
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+19
+00:01:45,106 --> 00:01:49,106
+Inside the book today: 6 positions up, 5 down.
+
+20
+00:01:49,106 --> 00:01:51,540
+Best, AVPT at +6.21 percent.
+
+21
+00:01:51,540 --> 00:01:53,192
+Worst, PM at -2.76.
+
+22
+00:01:53,192 --> 00:01:58,235
+Both go in the journal — wins and losses get the same ink.
+
+23
+00:01:58,235 --> 00:02:05,538
+The honest scoreboard reads: expectancy -3.23% per trade over 1166 graded positions.
+
+24
+00:02:05,538 --> 00:02:12,667
+Because that record is soft, the system has throttled itself to 25% position size.
+
+25
+00:02:12,667 --> 00:02:17,884
+Nobody told it to — full size must be earned back with wins.
+
+26
+00:02:17,884 --> 00:02:30,404
+What tonight's read hands to tomorrow's open: 165 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+27
+00:02:30,360 --> 00:02:32,613
+Over to the sports desk.
+
+28
+00:02:32,613 --> 00:02:41,905
+Day 74 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+29
+00:02:41,905 --> 00:02:48,194
+In first place, the live self-rebuilding book, in blue, at 104,028.
+
+30
+00:02:48,194 --> 00:02:53,732
+Then the index fund, in gray, 1.0 thousand back at 102,985.
+
+31
+00:02:53,732 --> 00:03:00,960
+Then the frozen first portfolio, the green line, 7.1 thousand back at 96,915.
+
+32
+00:03:00,960 --> 00:03:03,588
+The race has no finish line.
+
+33
+00:03:03,588 --> 00:03:07,905
+Same books, same dollars, back at it tomorrow.
+
+34
+00:03:07,905 --> 00:03:12,786
+Every line starts the same day with the same dollar.
+
+35
+00:03:12,786 --> 00:03:14,664
+Nothing is restated.
+
+36
+00:03:14,664 --> 00:03:16,993
+Today's lesson is benchmarking.
+
+37
+00:03:16,993 --> 00:03:23,455
+Any strategy must beat the boring alternative: the same money parked in an index fund.
+
+38
+00:03:23,455 --> 00:03:26,911
+That is why the S and P line shares the chart.
+
+39
+00:03:26,911 --> 00:03:35,927
+If the system cannot outrun it, the index deserves the money, and publishing the race every day keeps the system honest.
+
+40
+00:03:35,886 --> 00:03:43,221
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+41
+00:03:43,221 --> 00:03:45,462
+Nothing here is financial advice.
+
+42
+00:03:45,462 --> 00:03:48,451
+From the closing desk — see you at the open.
