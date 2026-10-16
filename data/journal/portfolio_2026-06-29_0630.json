@@ -140,7 +140,7 @@
       "led_by": "sepa",
       "sentiment": 0.108,
       "earnings_risk": false,
-      "outcome_return": -0.1345,
+      "outcome_return": -0.1348,
       "outcome_exit": "stop",
       "outcome_days": 3,
       "outcome_final": true

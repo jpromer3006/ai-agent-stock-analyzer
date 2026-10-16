@@ -47,7 +47,7 @@
       "led_by": "sepa",
       "sentiment": 0.052,
       "earnings_risk": false,
-      "outcome_return": -0.0596,
+      "outcome_return": -0.0581,
       "outcome_exit": "stop",
       "outcome_days": 10,
       "outcome_final": true
@@ -64,7 +64,7 @@
       "led_by": "sepa",
       "sentiment": 0.152,
       "earnings_risk": false,
-      "outcome_return": -0.0843,
+      "outcome_return": -0.0742,
       "outcome_exit": "stop",
       "outcome_days": 10,
       "outcome_final": true
@@ -81,7 +81,7 @@
       "led_by": "sepa",
       "sentiment": 0.291,
       "earnings_risk": false,
-      "outcome_return": -0.1106,
+      "outcome_return": -0.0926,
       "outcome_exit": "stop",
       "outcome_days": 10,
       "outcome_final": true
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.388,
       "earnings_risk": false,
-      "outcome_return": 0.0672,
+      "outcome_return": 0.0623,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -149,7 +149,7 @@
       "led_by": "sepa",
       "sentiment": 0.206,
       "earnings_risk": false,
-      "outcome_return": -0.1105,
+      "outcome_return": -0.0907,
       "outcome_exit": "stop",
       "outcome_days": 10,
       "outcome_final": true
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.21,
       "earnings_risk": false,
-      "outcome_return": -0.157,
+      "outcome_return": -0.1644,
       "outcome_exit": "stop",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": true
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.258,
       "earnings_risk": false,
-      "outcome_return": -0.0108,
+      "outcome_return": -0.0303,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     }
   ],
@@ -230,7 +230,7 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.098,
+  "realized_avg_return": -0.0928,
   "realized_hit_rate": 0.0,
   "realized_final_count": 8,
   "realized_stop_exits": 8,

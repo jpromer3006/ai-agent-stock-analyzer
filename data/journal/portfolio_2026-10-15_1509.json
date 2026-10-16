@@ -1,261 +1,294 @@
 {
- "timestamp": "2026-10-15T15:09:02.048179Z",
- "date": "2026-10-15",
- "regime": "bull",
- "mandate": "swing_momentum",
- "account": 100000.0,
- "invested": 99659.19,
- "cash": 340.81,
- "weights": {
-  "value": 0.024,
-  "canslim": 0.175,
-  "sepa": 0.218,
-  "weinstein": 0.166,
-  "swing": 0.121,
-  "growth": 0.067,
-  "technical": 0.111,
-  "ipo": 0.118
- },
- "note": "nightly run (cloud)",
- "holdings": [
-  {
-   "ticker": "MET",
-   "sector": "Financials",
-   "conviction": 0.7638,
-   "shares": 120,
-   "dollars": 11932.8,
-   "weight_pct": 11.93,
-   "entry": 99.44,
-   "stop": 96.46,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
+  "timestamp": "2026-10-15T15:09:02.048179Z",
+  "date": "2026-10-15",
+  "regime": "bull",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 99659.19,
+  "cash": 340.81,
+  "weights": {
+    "value": 0.024,
+    "canslim": 0.175,
+    "sepa": 0.218,
+    "weinstein": 0.166,
+    "swing": 0.121,
+    "growth": 0.067,
+    "technical": 0.111,
+    "ipo": 0.118
   },
-  {
-   "ticker": "MSFT",
-   "sector": "Information Technology",
-   "conviction": 0.756,
-   "shares": 19,
-   "dollars": 10201.67,
-   "weight_pct": 10.2,
-   "entry": 536.93,
-   "stop": 504.71,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "LLY",
-   "sector": "Health Care",
-   "conviction": 0.7335,
-   "shares": 6,
-   "dollars": 7614.84,
-   "weight_pct": 7.61,
-   "entry": 1269.14,
-   "stop": 1179.19,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "XOM",
-   "sector": "Energy",
-   "conviction": 0.7147,
-   "shares": 53,
-   "dollars": 9265.99,
-   "weight_pct": 9.27,
-   "entry": 174.83,
-   "stop": 163.07,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "PM",
-   "sector": "Consumer Staples",
-   "conviction": 0.7103,
-   "shares": 46,
-   "dollars": 9341.22,
-   "weight_pct": 9.34,
-   "entry": 203.07,
-   "stop": 189.71,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "DRH",
-   "sector": "Real Estate",
-   "conviction": 0.7039,
-   "shares": 710,
-   "dollars": 9400.4,
-   "weight_pct": 9.4,
-   "entry": 13.24,
-   "stop": 12.36,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "CVX",
-   "sector": "Energy",
-   "conviction": 0.7022,
-   "shares": 41,
-   "dollars": 9066.33,
-   "weight_pct": 9.07,
-   "entry": 221.13,
-   "stop": 206.15,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AAPL",
-   "sector": "Information Technology",
-   "conviction": 0.7014,
-   "shares": 32,
-   "dollars": 11024.32,
-   "weight_pct": 11.02,
-   "entry": 344.51,
-   "stop": 325.12,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "COP",
-   "sector": "Energy",
-   "conviction": 0.7009,
-   "shares": 61,
-   "dollars": 8616.25,
-   "weight_pct": 8.62,
-   "entry": 141.25,
-   "stop": 131.05,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AMGN",
-   "sector": "Health Care",
-   "conviction": 0.6978,
-   "shares": 25,
-   "dollars": 10970.75,
-   "weight_pct": 10.97,
-   "entry": 438.83,
-   "stop": 414.02,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AVPT",
-   "sector": "Information Technology",
-   "conviction": 0.6933,
-   "shares": 153,
-   "dollars": 2224.62,
-   "weight_pct": 2.22,
-   "entry": 14.54,
-   "stop": 13.56,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  }
- ],
- "bench": [
-  {
-   "ticker": "APA",
-   "sector": "Energy",
-   "composite": 0.755,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "ABBV",
-   "sector": "Health Care",
-   "composite": 0.739,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "UNH",
-   "sector": "Financials",
-   "composite": 0.709,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "AAPU",
-   "sector": "Other",
-   "composite": 0.69,
-   "reason": "risk wallet spent \u2014 worst-case loss cap reached"
-  }
- ],
- "agent_trace": [
-  {
-   "agent": "DataAgent",
-   "role": "universe & data",
-   "summary": "500 candidate names (benchmarks removed)"
-  },
-  {
-   "agent": "RegimeAgent",
-   "role": "market regime",
-   "summary": "regime = BULL"
-  },
-  {
-   "agent": "RouterAgent",
-   "role": "strategy mandate weights",
-   "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
-  },
-  {
-   "agent": "MemoryAgent",
-   "role": "experience-weighted tilt",
-   "summary": "boosted weinstein x1.00, sepa x1.00"
-  },
-  {
-   "agent": "ConstructionAgent",
-   "role": "strategy ensemble + sizing",
-   "summary": "11 holdings, 100% invested, 8 strategies"
-  },
-  {
-   "agent": "RiskAgent",
-   "role": "post-construction risk",
-   "summary": "within limits; cash 0%"
-  }
- ],
- "horizon_days": 20,
- "realized_avg_return": null,
- "realized_hit_rate": null,
- "realized_final_count": 0,
- "realized_stop_exits": 0,
- "changes": {
-  "added": [
-   "AVPT",
-   "DRH",
-   "PM",
-   "XOM"
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.7638,
+      "shares": 120,
+      "dollars": 11932.8,
+      "weight_pct": 11.93,
+      "entry": 99.44,
+      "stop": 96.46,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0228,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "MSFT",
+      "sector": "Information Technology",
+      "conviction": 0.756,
+      "shares": 19,
+      "dollars": 10201.67,
+      "weight_pct": 10.2,
+      "entry": 536.93,
+      "stop": 504.71,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0022,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "LLY",
+      "sector": "Health Care",
+      "conviction": 0.7335,
+      "shares": 6,
+      "dollars": 7614.84,
+      "weight_pct": 7.61,
+      "entry": 1269.14,
+      "stop": 1179.19,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0001,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "XOM",
+      "sector": "Energy",
+      "conviction": 0.7147,
+      "shares": 53,
+      "dollars": 9265.99,
+      "weight_pct": 9.27,
+      "entry": 174.83,
+      "stop": 163.07,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0066,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "PM",
+      "sector": "Consumer Staples",
+      "conviction": 0.7103,
+      "shares": 46,
+      "dollars": 9341.22,
+      "weight_pct": 9.34,
+      "entry": 203.07,
+      "stop": 189.71,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0075,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "DRH",
+      "sector": "Real Estate",
+      "conviction": 0.7039,
+      "shares": 710,
+      "dollars": 9400.4,
+      "weight_pct": 9.4,
+      "entry": 13.24,
+      "stop": 12.36,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0276,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CVX",
+      "sector": "Energy",
+      "conviction": 0.7022,
+      "shares": 41,
+      "dollars": 9066.33,
+      "weight_pct": 9.07,
+      "entry": 221.13,
+      "stop": 206.15,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0021,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AAPL",
+      "sector": "Information Technology",
+      "conviction": 0.7014,
+      "shares": 32,
+      "dollars": 11024.32,
+      "weight_pct": 11.02,
+      "entry": 344.51,
+      "stop": 325.12,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0013,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "COP",
+      "sector": "Energy",
+      "conviction": 0.7009,
+      "shares": 61,
+      "dollars": 8616.25,
+      "weight_pct": 8.62,
+      "entry": 141.25,
+      "stop": 131.05,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.02,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AMGN",
+      "sector": "Health Care",
+      "conviction": 0.6978,
+      "shares": 25,
+      "dollars": 10970.75,
+      "weight_pct": 10.97,
+      "entry": 438.83,
+      "stop": 414.02,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0046,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AVPT",
+      "sector": "Information Technology",
+      "conviction": 0.6933,
+      "shares": 153,
+      "dollars": 2224.62,
+      "weight_pct": 2.22,
+      "entry": 14.54,
+      "stop": 13.56,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0058,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    }
   ],
-  "removed": [
-   "BIIB",
-   "CHRD",
-   "DBX"
+  "bench": [
+    {
+      "ticker": "APA",
+      "sector": "Energy",
+      "composite": 0.755,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "ABBV",
+      "sector": "Health Care",
+      "composite": 0.739,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "UNH",
+      "sector": "Financials",
+      "composite": 0.709,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "AAPU",
+      "sector": "Other",
+      "composite": 0.69,
+      "reason": "risk wallet spent \u2014 worst-case loss cap reached"
+    }
   ],
-  "unchanged": [
-   "AAPL",
-   "AMGN",
-   "COP",
-   "CVX",
-   "LLY",
-   "MET",
-   "MSFT"
-  ]
- }
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "500 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BULL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "11 holdings, 100% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 0%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0,
+  "changes": {
+    "added": [
+      "AVPT",
+      "DRH",
+      "PM",
+      "XOM"
+    ],
+    "removed": [
+      "BIIB",
+      "CHRD",
+      "DBX"
+    ],
+    "unchanged": [
+      "AAPL",
+      "AMGN",
+      "COP",
+      "CVX",
+      "LLY",
+      "MET",
+      "MSFT"
+    ]
+  }
 }

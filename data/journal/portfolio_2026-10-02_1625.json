@@ -30,7 +30,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0832,
+      "outcome_return": -0.0816,
       "outcome_exit": "stop",
       "outcome_days": 9,
       "outcome_final": true
@@ -47,7 +47,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.118,
+      "outcome_return": -0.1082,
       "outcome_exit": "stop",
       "outcome_days": 9,
       "outcome_final": true
@@ -81,7 +81,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.1195,
+      "outcome_return": -0.0999,
       "outcome_exit": "stop",
       "outcome_days": 9,
       "outcome_final": true
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0424,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": -0.0475,
+      "outcome_exit": "stop",
+      "outcome_days": 10,
+      "outcome_final": true
     },
     {
       "ticker": "ADI",
@@ -115,9 +115,9 @@
       "led_by": "canslim",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.035,
+      "outcome_return": -0.0221,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 10,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "technical",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0431,
+      "outcome_return": 0.0407,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 10,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.011,
+      "outcome_return": -0.0056,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 10,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.1055,
+      "outcome_return": 0.096,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 10,
       "outcome_final": false
     },
     {
@@ -248,10 +248,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0866,
+  "realized_avg_return": -0.075,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 5,
-  "realized_stop_exits": 5,
+  "realized_final_count": 6,
+  "realized_stop_exits": 6,
   "changes": {
     "added": [
       "AAXJ",

@@ -757,6 +757,20 @@
    "source": "cloud",
    "scan_hash": "216de82d15b61d88",
    "stale_rows": 1
+  },
+  {
+   "date": "2026-10-16",
+   "total": 500,
+   "counts": {
+    "Advancing": 168,
+    "Basing": 168,
+    "Topping": 40,
+    "Declining": 124
+   },
+   "invalidated": 3,
+   "source": "cloud",
+   "scan_hash": "84466f255ba64b04",
+   "stale_rows": 2
   }
  ]
 }
