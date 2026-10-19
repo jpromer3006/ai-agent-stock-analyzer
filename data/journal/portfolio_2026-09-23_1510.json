@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.328,
       "earnings_risk": false,
-      "outcome_return": 0.0712,
+      "outcome_return": 0.0663,
       "outcome_exit": "open",
-      "outcome_days": 17,
+      "outcome_days": 18,
       "outcome_final": false
     },
     {
@@ -64,7 +64,7 @@
       "led_by": "sepa",
       "sentiment": 0.171,
       "earnings_risk": false,
-      "outcome_return": -0.0741,
+      "outcome_return": -0.0797,
       "outcome_exit": "stop",
       "outcome_days": 17,
       "outcome_final": true
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.231,
       "earnings_risk": false,
-      "outcome_return": -0.0863,
-      "outcome_exit": "open",
+      "outcome_return": -0.1044,
+      "outcome_exit": "stop",
       "outcome_days": 17,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "FDN",
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": -0.006,
       "earnings_risk": false,
-      "outcome_return": 0.0192,
+      "outcome_return": 0.0098,
       "outcome_exit": "open",
-      "outcome_days": 17,
+      "outcome_days": 18,
       "outcome_final": false
     },
     {
@@ -247,10 +247,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0838,
+  "realized_avg_return": -0.0882,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 5,
-  "realized_stop_exits": 5,
+  "realized_final_count": 6,
+  "realized_stop_exits": 6,
   "changes": {
     "added": [
       "DE",

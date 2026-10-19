@@ -30,7 +30,7 @@
       "led_by": "sepa",
       "sentiment": 0.253,
       "earnings_risk": false,
-      "outcome_return": -0.0909,
+      "outcome_return": -0.1089,
       "outcome_exit": "stop",
       "outcome_days": 14,
       "outcome_final": true
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.041,
       "earnings_risk": false,
-      "outcome_return": -0.0545,
-      "outcome_exit": "open",
+      "outcome_return": -0.0695,
+      "outcome_exit": "stop",
       "outcome_days": 14,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "CIBR",
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.284,
       "earnings_risk": false,
-      "outcome_return": -0.0145,
+      "outcome_return": -0.0151,
       "outcome_exit": "open",
-      "outcome_days": 14,
+      "outcome_days": 15,
       "outcome_final": false
     },
     {
@@ -81,7 +81,7 @@
       "led_by": "sepa",
       "sentiment": 0.119,
       "earnings_risk": false,
-      "outcome_return": -0.0841,
+      "outcome_return": -0.0896,
       "outcome_exit": "stop",
       "outcome_days": 14,
       "outcome_final": true
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.255,
       "earnings_risk": false,
-      "outcome_return": 0.069,
+      "outcome_return": 0.0641,
       "outcome_exit": "open",
-      "outcome_days": 14,
+      "outcome_days": 15,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.326,
       "earnings_risk": false,
-      "outcome_return": 0.0746,
+      "outcome_return": 0.0636,
       "outcome_exit": "open",
-      "outcome_days": 14,
+      "outcome_days": 15,
       "outcome_final": false
     },
     {
@@ -200,9 +200,9 @@
       "led_by": "sepa",
       "sentiment": 0.322,
       "earnings_risk": false,
-      "outcome_return": 0.0151,
+      "outcome_return": 0.0057,
       "outcome_exit": "open",
-      "outcome_days": 14,
+      "outcome_days": 15,
       "outcome_final": false
     }
   ],
@@ -247,10 +247,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0694,
+  "realized_avg_return": -0.0728,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 6,
-  "realized_stop_exits": 6,
+  "realized_final_count": 7,
+  "realized_stop_exits": 7,
   "changes": {
     "added": [
       "ANET",

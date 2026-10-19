@@ -30,7 +30,7 @@
       "led_by": "sepa",
       "sentiment": 0.128,
       "earnings_risk": false,
-      "outcome_return": -0.0628,
+      "outcome_return": -0.0684,
       "outcome_exit": "stop",
       "outcome_days": 16,
       "outcome_final": true
@@ -47,10 +47,10 @@
       "led_by": "sepa",
       "sentiment": 0.355,
       "earnings_risk": false,
-      "outcome_return": -0.0733,
-      "outcome_exit": "open",
+      "outcome_return": -0.0916,
+      "outcome_exit": "stop",
       "outcome_days": 16,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "ABBV",
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.323,
       "earnings_risk": false,
-      "outcome_return": 0.076,
+      "outcome_return": 0.0711,
       "outcome_exit": "open",
-      "outcome_days": 16,
+      "outcome_days": 17,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0456,
+      "outcome_return": 0.0256,
       "outcome_exit": "open",
-      "outcome_days": 16,
+      "outcome_days": 17,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.045,
       "earnings_risk": false,
-      "outcome_return": 0.0258,
+      "outcome_return": 0.0163,
       "outcome_exit": "open",
-      "outcome_days": 16,
+      "outcome_days": 17,
       "outcome_final": false
     },
     {
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.012,
       "earnings_risk": false,
-      "outcome_return": -0.0349,
-      "outcome_exit": "open",
+      "outcome_return": -0.052,
+      "outcome_exit": "stop",
       "outcome_days": 16,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "MET",
@@ -264,10 +264,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0684,
+  "realized_avg_return": -0.07,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 6,
-  "realized_stop_exits": 6,
+  "realized_final_count": 8,
+  "realized_stop_exits": 8,
   "changes": {
     "added": [
       "AAPU",

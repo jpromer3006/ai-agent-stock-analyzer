@@ -30,10 +30,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0552,
-      "outcome_exit": "open",
+      "outcome_return": -0.0702,
+      "outcome_exit": "stop",
       "outcome_days": 13,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "TSM",
@@ -47,7 +47,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0921,
+      "outcome_return": -0.0976,
       "outcome_exit": "stop",
       "outcome_days": 13,
       "outcome_final": true
@@ -64,7 +64,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0876,
+      "outcome_return": -0.1057,
       "outcome_exit": "stop",
       "outcome_days": 13,
       "outcome_final": true
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0773,
+      "outcome_return": 0.0589,
       "outcome_exit": "open",
-      "outcome_days": 13,
+      "outcome_days": 14,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "swing",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0537,
+      "outcome_return": 0.0484,
       "outcome_exit": "open",
-      "outcome_days": 13,
+      "outcome_days": 14,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0416,
+      "outcome_return": 0.0313,
       "outcome_exit": "open",
-      "outcome_days": 13,
+      "outcome_days": 14,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0075,
+      "outcome_return": -0.0141,
       "outcome_exit": "open",
-      "outcome_days": 13,
+      "outcome_days": 14,
       "outcome_final": false
     }
   ],
@@ -230,10 +230,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0909,
+  "realized_avg_return": -0.0913,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 5,
-  "realized_stop_exits": 5,
+  "realized_final_count": 6,
+  "realized_stop_exits": 6,
   "changes": {
     "added": [
       "AEHR",

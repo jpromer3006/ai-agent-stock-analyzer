@@ -98,9 +98,9 @@
       "led_by": "weinstein",
       "sentiment": 0.005,
       "earnings_risk": false,
-      "outcome_return": -0.025,
+      "outcome_return": -0.0157,
       "outcome_exit": "open",
-      "outcome_days": 80,
+      "outcome_days": 81,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.112,
       "earnings_risk": false,
-      "outcome_return": 0.0728,
+      "outcome_return": 0.0604,
       "outcome_exit": "open",
-      "outcome_days": 80,
+      "outcome_days": 81,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "weinstein",
       "sentiment": 0.021,
       "earnings_risk": false,
-      "outcome_return": 0.1465,
+      "outcome_return": 0.1269,
       "outcome_exit": "open",
-      "outcome_days": 80,
+      "outcome_days": 81,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": -0.08,
       "earnings_risk": false,
-      "outcome_return": 0.1609,
+      "outcome_return": 0.1641,
       "outcome_exit": "open",
-      "outcome_days": 80,
+      "outcome_days": 81,
       "outcome_final": false
     },
     {
@@ -200,9 +200,9 @@
       "led_by": "technical",
       "sentiment": 0.145,
       "earnings_risk": false,
-      "outcome_return": 0.2588,
+      "outcome_return": 0.2342,
       "outcome_exit": "open",
-      "outcome_days": 80,
+      "outcome_days": 81,
       "outcome_final": false
     },
     {
