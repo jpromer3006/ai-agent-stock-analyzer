@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:01,017
+Good morning.
+
+2
+00:00:01,017 --> 00:00:07,041
+From the OROS Market Desk, here is the rundown for Tuesday, October 20, 2026.
+
+3
+00:00:07,041 --> 00:00:08,840
+The tape reads neutral.
+
+4
+00:00:08,840 --> 00:00:12,517
+Our top pick of the day: BlackRock, ticker BLK.
+
+5
+00:00:12,517 --> 00:00:17,993
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:17,993 --> 00:00:29,806
+And at the sports desk, day 77 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:29,806 --> 00:00:38,036
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:38,036 --> 00:00:45,401
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:45,363 --> 00:00:47,319
+First, the market open.
+
+10
+00:00:47,319 --> 00:00:53,441
+The S and P five hundred slipped 1.1 percent, while the NASDAQ lost 2.5.
+
+11
+00:00:53,441 --> 00:00:59,648
+The primary trend reads neutral; capital preservation leads the playbook.
+
+12
+00:00:59,648 --> 00:01:02,029
+The fear gauge sits at 17.6.
+
+13
+00:01:02,029 --> 00:01:11,355
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+14
+00:01:11,317 --> 00:01:20,076
+Now the chart of the day: BlackRock, ticker BLK, the top stock to clear every quality gate.
+
+15
+00:01:20,076 --> 00:01:33,551
+The entry trigger sits at 1,182.68, the exit at 1,052.82, and the objective at 1,314.56 — 1.0 dollars of potential reward per dollar risked.
+
+16
+00:01:33,551 --> 00:01:39,999
+At 7 shares, a failed trade costs about one percent of the account.
+
+17
+00:01:39,999 --> 00:01:51,224
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+18
+00:01:51,224 --> 00:02:00,379
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+19
+00:02:00,379 --> 00:02:06,032
+You buy only if the market pushes up through that line, proving demand.
+
+20
+00:02:06,032 --> 00:02:12,002
+If it never gets there, you never buy, and that is the plan protecting you.
+
+21
+00:02:12,002 --> 00:02:19,406
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+22
+00:02:19,406 --> 00:02:31,905
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+23
+00:02:31,905 --> 00:02:32,940
+Buy on proof.
+
+24
+00:02:32,940 --> 00:02:33,975
+Exit by rule.
+
+25
+00:02:33,975 --> 00:02:35,248
+Size to survive.
+
+26
+00:02:35,216 --> 00:02:40,780
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+27
+00:02:40,780 --> 00:02:48,852
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+28
+00:02:48,852 --> 00:02:52,766
+On the stock track: BlackRock, ticker BLK.
+
+29
+00:02:52,766 --> 00:02:58,450
+The plan in plain English: it last closed at 1143.56 dollars.
+
+30
+00:02:58,450 --> 00:03:08,607
+The system would only buy strength — a buy-stop at 1182.68, nothing happens unless price proves itself first.
+
+31
+00:03:08,607 --> 00:03:17,273
+If it triggers, the exit is a weekly close below 1052.82, and the measured target is 1314.56.
+
+32
+00:03:17,273 --> 00:03:22,449
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+33
+00:03:22,449 --> 00:03:23,569
+That's the deal.
+
+34
+00:03:23,542 --> 00:03:25,618
+Turning to the model book.
+
+35
+00:03:25,618 --> 00:03:35,760
+The system holds 10 positions with 40% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+36
+00:03:35,760 --> 00:03:44,225
+New to the book: AbbVie (ABBV), ExxonMobil Holdings (XOM) — each passed the full entry gauntlet overnight.
+
+37
+00:03:44,225 --> 00:04:10,338
+Rotated out: Airbnb (ABNB), which still advancing, but outranked by stronger names; AvePoint (AVPT), which still advancing, but outranked by stronger names; Chefs' Warehouse (CHEF), which still advancing, but outranked by stronger names; Philip Morris International (PM), which still advancing, but outranked by stronger names.
+
+38
+00:04:10,338 --> 00:04:26,229
+Left on the bench: APA Corporation (APA), earnings inside the blackout window; Chord Energy (CHRD), earnings inside the blackout window; Philip Morris International (PM), outranked — book full at 10.
+
+39
+00:04:26,229 --> 00:04:30,781
+Passing the scan is not enough; the book must afford you.
+
+40
+00:04:30,781 --> 00:04:36,815
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+41
+00:04:36,772 --> 00:04:44,054
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+42
+00:04:44,054 --> 00:04:51,026
+10 positions, led by AbbVie, ticker ABBV, Chevron, ticker CVX, ConocoPhillips, ticker COP.
+
+43
+00:04:51,026 --> 00:05:01,562
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+44
+00:05:01,524 --> 00:05:03,795
+Over to the sports desk.
+
+45
+00:05:03,795 --> 00:05:13,165
+Day 77 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+46
+00:05:13,165 --> 00:05:19,505
+In first place, the live self-rebuilding book, in blue, at 104,174.
+
+47
+00:05:19,505 --> 00:05:25,089
+Then the index fund, in gray, 2.3 thousand back at 101,846.
+
+48
+00:05:25,089 --> 00:05:32,376
+Then the frozen first portfolio, the green line, 7.2 thousand back at 96,967.
+
+49
+00:05:32,376 --> 00:05:35,026
+The race has no finish line.
+
+50
+00:05:35,026 --> 00:05:39,379
+Same books, same dollars, back at it tomorrow.
+
+51
+00:05:39,379 --> 00:05:44,301
+Every line starts the same day with the same dollar.
+
+52
+00:05:44,301 --> 00:05:46,193
+Nothing is restated.
+
+53
+00:05:46,193 --> 00:05:48,523
+Today's lesson is benchmarking.
+
+54
+00:05:48,523 --> 00:05:54,984
+Any strategy must beat the boring alternative: the same money parked in an index fund.
+
+55
+00:05:54,984 --> 00:05:58,441
+That is why the S and P line shares the chart.
+
+56
+00:05:58,441 --> 00:06:07,457
+If the system cannot outrun it, the index deserves the money, and publishing the race every day keeps the system honest.
+
+57
+00:06:07,416 --> 00:06:08,965
+Tonight's takeaway.
+
+58
+00:06:08,965 --> 00:06:11,248
+A portfolio is not a museum.
+
+59
+00:06:11,248 --> 00:06:19,563
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+60
+00:06:19,537 --> 00:06:22,263
+Before we close, the disclosure segment.
+
+61
+00:06:22,263 --> 00:06:31,871
+Everything you heard today concerns one simulated portfolio of 10 positions — the same book, line for line, as this morning's emailed report.
+
+62
+00:06:31,871 --> 00:06:33,643
+One record, every surface.
+
+63
+00:06:33,643 --> 00:06:35,730
+A word on how this desk works.
+
+64
+00:06:35,730 --> 00:06:53,257
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+65
+00:06:53,257 --> 00:07:01,672
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+66
+00:07:01,672 --> 00:07:04,605
+All figures are simulated paper trading.
+
+67
+00:07:04,605 --> 00:07:10,984
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+68
+00:07:10,984 --> 00:07:14,943
+From the OROS Market Desk, have a disciplined session.
