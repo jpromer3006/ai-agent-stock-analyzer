@@ -7,31 +7,31 @@
   },
   {
    "title": "Movers in the Book",
-   "start_s": 24.05
+   "start_s": 27.26
   },
   {
    "title": "The Portfolio \u2014 Actual Holdings",
-   "start_s": 43.78
+   "start_s": 46.29
   },
   {
    "title": "The Loop",
-   "start_s": 69.6
+   "start_s": 71.04
   },
   {
    "title": "The Portfolio \u2014 the Race at the Close",
-   "start_s": 132.94
+   "start_s": 132.39
   },
   {
    "title": "Sign-off",
-   "start_s": 200.56
+   "start_s": 200.24
   }
  ],
  "home_run_confirmed": null,
  "tally": {
   "days": 64,
   "vs_frozen": {
-   "wins": 36,
-   "losses": 28,
+   "wins": 35,
+   "losses": 29,
    "ties": 0
   },
   "vs_spy": {
@@ -41,22 +41,22 @@
   },
   "today": {
    "date": "2026-10-20",
-   "live_pct": -0.2095799026489258,
-   "frozen_pct": -0.5244603323936462,
-   "spy_pct": -1.1065157971047346
+   "live_pct": 0.5172202644348145,
+   "frozen_pct": 0.6414406504631043,
+   "spy_pct": 0.33529999343844263
   }
  },
  "breadth": {
   "date": "2026-10-20",
-  "total": 5,
+  "total": 491,
   "counts": {
-   "Advancing": 0,
-   "Basing": 5,
-   "Topping": 0,
-   "Declining": 0
+   "Advancing": 165,
+   "Basing": 166,
+   "Topping": 35,
+   "Declining": 125
   },
-  "invalidated": 0,
+  "invalidated": 2,
   "source": "cloud"
  },
- "duration_s": 213.1
+ "duration_s": 212.8
 }

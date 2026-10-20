@@ -742,14 +742,14 @@
   },
   {
    "date": "2026-10-20",
-   "total": 5,
+   "total": 491,
    "counts": {
-    "Advancing": 0,
-    "Basing": 5,
-    "Topping": 0,
-    "Declining": 0
+    "Advancing": 165,
+    "Basing": 166,
+    "Topping": 35,
+    "Declining": 125
    },
-   "invalidated": 0,
+   "invalidated": 2,
    "source": "cloud"
   }
  ]
