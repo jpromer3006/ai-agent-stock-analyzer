@@ -1,0 +1,89 @@
+{
+ "date": "Wednesday, October 21, 2026",
+ "regime": "bull",
+ "lesson": "signoff",
+ "race_day": 78,
+ "home_run": null,
+ "takeaway": "Tonight's takeaway. A portfolio is not a museum. Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.",
+ "breadth": {
+  "date": "2026-10-21",
+  "total": 500,
+  "counts": {
+   "Advancing": 171,
+   "Basing": 168,
+   "Topping": 35,
+   "Declining": 126
+  },
+  "invalidated": 6,
+  "source": "cloud",
+  "scan_hash": "5525a546c1a128cb",
+  "stale_rows": 1,
+  "prior": {
+   "date": "2026-10-14",
+   "total": 500,
+   "counts": {
+    "Advancing": 166,
+    "Basing": 167,
+    "Topping": 33,
+    "Declining": 134
+   },
+   "invalidated": 1,
+   "source": "cloud",
+   "scan_hash": "878d505b4188aa9d",
+   "stale_rows": 0
+  }
+ },
+ "oros500": {
+  "name": "OROS 500",
+  "date": "2026-10-21",
+  "count": 500,
+  "target": 500,
+  "entered": [
+   "CONL",
+   "ELVN"
+  ],
+  "left": [
+   "BYND",
+   "CLPT"
+  ]
+ },
+ "chapters": [
+  {
+   "title": "Tonight on the Market Desk",
+   "start_s": 0.0
+  },
+  {
+   "title": "The Market Open",
+   "start_s": 44.21
+  },
+  {
+   "title": "Chart of the Day",
+   "start_s": 71.55
+  },
+  {
+   "title": "OROS Scan \u2014 Top Pick of the Day",
+   "start_s": 155.5
+  },
+  {
+   "title": "Business Desk \u2014 the book",
+   "start_s": 203.83
+  },
+  {
+   "title": "The Portfolio \u2014 Actual Holdings",
+   "start_s": 271.21
+  },
+  {
+   "title": "Sports Desk \u2014 The Race",
+   "start_s": 300.09
+  },
+  {
+   "title": "The Takeaway",
+   "start_s": 352.66
+  },
+  {
+   "title": "Disclosure & Credits",
+   "start_s": 364.79
+  }
+ ],
+ "duration_s": 439.7
+}

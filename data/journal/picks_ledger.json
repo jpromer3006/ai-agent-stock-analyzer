@@ -416,6 +416,19 @@
      "home_run_flag": false
     }
    ]
+  },
+  {
+   "date": "2026-10-21",
+   "picks": [
+    {
+     "ticker": "BLK",
+     "buy_stop": 1182.68,
+     "stop_loss": 1053.92,
+     "target": 1314.56,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }
