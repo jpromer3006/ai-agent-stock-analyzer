@@ -64,9 +64,9 @@
       "led_by": "technical",
       "sentiment": 0.373,
       "earnings_risk": false,
-      "outcome_return": -0.0194,
+      "outcome_return": -0.0137,
       "outcome_exit": "open",
-      "outcome_days": 81,
+      "outcome_days": 82,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.24,
       "earnings_risk": false,
-      "outcome_return": 0.023,
+      "outcome_return": 0.0262,
       "outcome_exit": "open",
-      "outcome_days": 81,
+      "outcome_days": 82,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.224,
       "earnings_risk": false,
-      "outcome_return": 0.1592,
+      "outcome_return": 0.1816,
       "outcome_exit": "open",
-      "outcome_days": 81,
+      "outcome_days": 82,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.139,
       "earnings_risk": false,
-      "outcome_return": 0.1231,
+      "outcome_return": 0.1439,
       "outcome_exit": "open",
-      "outcome_days": 81,
+      "outcome_days": 82,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.175,
       "earnings_risk": false,
-      "outcome_return": 0.0021,
+      "outcome_return": 0.0437,
       "outcome_exit": "open",
-      "outcome_days": 81,
+      "outcome_days": 82,
       "outcome_final": false
     },
     {
@@ -200,9 +200,9 @@
       "led_by": "technical",
       "sentiment": 0.174,
       "earnings_risk": false,
-      "outcome_return": 0.0426,
+      "outcome_return": 0.0639,
       "outcome_exit": "open",
-      "outcome_days": 81,
+      "outcome_days": 82,
       "outcome_final": false
     },
     {
@@ -217,7 +217,7 @@
       "led_by": "swing",
       "sentiment": 0.25,
       "earnings_risk": false,
-      "outcome_return": -0.0492,
+      "outcome_return": -0.0551,
       "outcome_exit": "stop",
       "outcome_days": 7,
       "outcome_final": true
@@ -255,7 +255,7 @@
       "summary": "within limits; cash 3%"
     }
   ],
-  "realized_avg_return": -0.1713,
+  "realized_avg_return": -0.1725,
   "realized_hit_rate": 0.0,
   "horizon_days": 120,
   "realized_final_count": 5,

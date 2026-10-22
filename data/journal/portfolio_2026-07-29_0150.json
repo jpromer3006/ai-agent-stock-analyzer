@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.235,
       "earnings_risk": false,
-      "outcome_return": -0.0023,
-      "outcome_exit": "open",
-      "outcome_days": 59,
-      "outcome_final": false
+      "outcome_return": 0.0166,
+      "outcome_exit": "horizon",
+      "outcome_days": 60,
+      "outcome_final": true
     },
     {
       "ticker": "MET",
@@ -81,10 +81,10 @@
       "led_by": "sepa",
       "sentiment": 0.133,
       "earnings_risk": false,
-      "outcome_return": 0.0474,
-      "outcome_exit": "open",
-      "outcome_days": 59,
-      "outcome_final": false
+      "outcome_return": 0.0453,
+      "outcome_exit": "horizon",
+      "outcome_days": 60,
+      "outcome_final": true
     },
     {
       "ticker": "LAMR",
@@ -179,8 +179,8 @@
     }
   ],
   "horizon_days": 60,
-  "realized_avg_return": -0.0831,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 4,
+  "realized_avg_return": -0.0451,
+  "realized_hit_rate": 0.333,
+  "realized_final_count": 6,
   "realized_stop_exits": 4
 }

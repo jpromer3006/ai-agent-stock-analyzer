@@ -1,0 +1,279 @@
+1
+00:00:00,000 --> 00:00:01,105
+Good morning.
+
+2
+00:00:01,105 --> 00:00:07,732
+From the OROS Market Desk, here is the rundown for Thursday, October 22, 2026.
+
+3
+00:00:07,732 --> 00:00:09,431
+The tape reads bull.
+
+4
+00:00:09,431 --> 00:00:12,830
+Our top pick of the day: 3M, ticker MMM.
+
+5
+00:00:12,830 --> 00:00:18,778
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:18,778 --> 00:00:31,608
+And at the sports desk, day 79 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:31,608 --> 00:00:39,839
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:39,839 --> 00:00:47,203
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:47,165 --> 00:00:49,126
+First, the market open.
+
+10
+00:00:49,126 --> 00:00:55,263
+The S and P five hundred gained 0.5 percent, while the NASDAQ added 1.1.
+
+11
+00:00:55,263 --> 00:01:02,594
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+12
+00:01:02,594 --> 00:01:04,981
+The fear gauge sits at 18.6.
+
+13
+00:01:04,981 --> 00:01:14,306
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+14
+00:01:14,268 --> 00:01:21,956
+Now the chart of the day: 3M, ticker MMM, the top stock to clear every quality gate.
+
+15
+00:01:21,956 --> 00:01:34,219
+The entry trigger sits at 182.76, the exit at 160.01, and the objective at 204.32 — 0.9 dollars of potential reward per dollar risked.
+
+16
+00:01:34,219 --> 00:01:40,443
+At 43 shares, a failed trade costs about one percent of the account.
+
+17
+00:01:40,443 --> 00:01:51,668
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+18
+00:01:51,668 --> 00:02:00,823
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+19
+00:02:00,823 --> 00:02:06,475
+You buy only if the market pushes up through that line, proving demand.
+
+20
+00:02:06,475 --> 00:02:12,446
+If it never gets there, you never buy, and that is the plan protecting you.
+
+21
+00:02:12,446 --> 00:02:19,849
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+22
+00:02:19,849 --> 00:02:32,348
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+23
+00:02:32,348 --> 00:02:33,383
+Buy on proof.
+
+24
+00:02:33,383 --> 00:02:34,418
+Exit by rule.
+
+25
+00:02:34,418 --> 00:02:35,692
+Size to survive.
+
+26
+00:02:35,659 --> 00:02:41,223
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+27
+00:02:41,223 --> 00:02:49,295
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+28
+00:02:49,295 --> 00:02:52,678
+On the stock track: 3M, ticker MMM.
+
+29
+00:02:52,678 --> 00:02:58,479
+The plan in plain English: it last closed at 174.49 dollars.
+
+30
+00:02:58,479 --> 00:03:08,919
+The system would only buy strength — a buy-stop at 182.76, nothing happens unless price proves itself first.
+
+31
+00:03:08,919 --> 00:03:17,716
+If it triggers, the exit is a weekly close below 160.01, and the measured target is 204.32.
+
+32
+00:03:17,716 --> 00:03:22,892
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+33
+00:03:22,892 --> 00:03:24,012
+That's the deal.
+
+34
+00:03:23,985 --> 00:03:26,199
+Turning to the model book.
+
+35
+00:03:26,199 --> 00:03:37,012
+The system holds 12 positions with 59% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+36
+00:03:37,012 --> 00:03:49,954
+New to the book: Direxion Daily AAPL Bull 2X ETF (AAPU), ACI Worldwide (ACIW), Central Bancompany (CBC) — each passed the full entry gauntlet overnight.
+
+37
+00:03:49,954 --> 00:04:09,368
+Rotated out: Salesforce (CRM), which still advancing, but outranked by stronger names; Dropbox (DBX), which still advancing, but outranked by stronger names; MetLife (MET), which still advancing, but outranked by stronger names.
+
+38
+00:04:09,368 --> 00:04:18,649
+Left on the bench: Thermo Fisher Scientific (TMO), earnings inside the blackout window; Merck & Company, Inc.
+
+39
+00:04:18,649 --> 00:04:28,696
+Common Stock (new) (MRK), sector cap — already 3 in Health Care; eBay Inc (EBAY), earnings inside the blackout window.
+
+40
+00:04:28,696 --> 00:04:33,549
+Passing the scan is not enough; the book must afford you.
+
+41
+00:04:33,549 --> 00:04:36,135
+Today's lesson is position management.
+
+42
+00:04:36,135 --> 00:04:37,427
+Cash is a position.
+
+43
+00:04:37,427 --> 00:04:45,116
+The system sizes deployment by rule, and when its own forward record weakens, a throttle automatically cuts size.
+
+44
+00:04:45,116 --> 00:04:49,062
+Rotation is not indecision; it is the portfolio breathing.
+
+45
+00:04:49,062 --> 00:04:54,029
+Names that stop qualifying leave, and names that start qualifying arrive.
+
+46
+00:04:53,982 --> 00:05:02,446
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+47
+00:05:02,446 --> 00:05:11,360
+12 positions, led by AbbVie, ticker ABBV, Diamondrock Hospitality, ticker DRH, Chevron, ticker CVX.
+
+48
+00:05:11,360 --> 00:05:23,605
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+49
+00:05:23,564 --> 00:05:25,784
+Over to the sports desk.
+
+50
+00:05:25,784 --> 00:05:34,939
+Day 79 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+51
+00:05:34,939 --> 00:05:41,135
+In first place, the live self-rebuilding book, in blue, at 104,608.
+
+52
+00:05:41,135 --> 00:05:46,592
+Then the index fund, in gray, 1.4 thousand back at 103,159.
+
+53
+00:05:46,592 --> 00:05:53,713
+Then the frozen first portfolio, the green line, 7.2 thousand back at 97,451.
+
+54
+00:05:53,713 --> 00:05:56,302
+The race has no finish line.
+
+55
+00:05:56,302 --> 00:06:00,556
+Same books, same dollars, back at it tomorrow.
+
+56
+00:06:00,556 --> 00:06:05,365
+Every line starts the same day with the same dollar.
+
+57
+00:06:05,365 --> 00:06:07,215
+Nothing is restated.
+
+58
+00:06:07,215 --> 00:06:16,122
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+59
+00:06:16,084 --> 00:06:17,633
+Tonight's takeaway.
+
+60
+00:06:17,633 --> 00:06:19,916
+A portfolio is not a museum.
+
+61
+00:06:19,916 --> 00:06:28,231
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+62
+00:06:28,205 --> 00:06:31,219
+Before we close, the disclosure segment.
+
+63
+00:06:31,219 --> 00:06:41,841
+Everything you heard today concerns one simulated portfolio of 12 positions — the same book, line for line, as this morning's emailed report.
+
+64
+00:06:41,841 --> 00:06:43,800
+One record, every surface.
+
+65
+00:06:43,800 --> 00:06:45,887
+A word on how this desk works.
+
+66
+00:06:45,887 --> 00:07:03,414
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+67
+00:07:03,414 --> 00:07:11,830
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+68
+00:07:11,830 --> 00:07:14,762
+All figures are simulated paper trading.
+
+69
+00:07:14,762 --> 00:07:21,141
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+70
+00:07:21,141 --> 00:07:25,100
+From the OROS Market Desk, have a disciplined session.

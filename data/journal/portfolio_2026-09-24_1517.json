@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.323,
       "earnings_risk": false,
-      "outcome_return": 0.0733,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0732,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "ANET",
@@ -149,10 +149,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0377,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0436,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AAPL",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.045,
       "earnings_risk": false,
-      "outcome_return": 0.0228,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0251,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AIQ",
@@ -264,9 +264,9 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.07,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 8,
+  "realized_avg_return": -0.038,
+  "realized_hit_rate": 0.273,
+  "realized_final_count": 11,
   "realized_stop_exits": 8,
   "changes": {
     "added": [
