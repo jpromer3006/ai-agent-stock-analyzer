@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:03,125
+Good evening from the OROS closing desk.
+
+2
+00:00:03,125 --> 00:00:07,892
+Time to grade this morning's call — the part most shows skip.
+
+3
+00:00:07,892 --> 00:00:14,299
+Texas Instruments, ticker TXN never reached the trigger, so no position was taken.
+
+4
+00:00:14,299 --> 00:00:17,737
+The entry did its quiet job: it kept us out.
+
+5
+00:00:17,737 --> 00:00:22,972
+3M, ticker MMM never reached the trigger, so no position was taken.
+
+6
+00:00:22,972 --> 00:00:26,410
+The entry did its quiet job: it kept us out.
+
+7
+00:00:26,410 --> 00:00:31,345
+Why we grade in public: a forecast that is never checked is just content.
+
+8
+00:00:31,345 --> 00:00:36,754
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+9
+00:00:36,719 --> 00:00:40,330
+On the day, the book is down 535 dollars.
+
+10
+00:00:40,330 --> 00:00:43,325
+Chevron (CVX) leads, +2.9 percent.
+
+11
+00:00:43,325 --> 00:00:45,703
+Airbnb (ABNB) lags at -2.1.
+
+12
+00:00:45,703 --> 00:00:50,459
+The checklist is clear: nothing requires action today.
+
+13
+00:00:50,459 --> 00:00:53,986
+On screen, the day's gainers and laggards inside the paper book.
+
+14
+00:00:53,942 --> 00:01:01,509
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+15
+00:01:01,509 --> 00:01:08,673
+12 positions, led by AbbVie, ticker ABBV, Airbnb, ticker ABNB, Eli Lilly and, ticker LLY.
+
+16
+00:01:08,673 --> 00:01:19,620
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+17
+00:01:19,577 --> 00:01:24,578
+Now the part that makes this system different: the loop.
+
+18
+00:01:24,578 --> 00:01:27,079
+Every morning OROS proposes.
+
+19
+00:01:27,079 --> 00:01:38,064
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+20
+00:01:38,064 --> 00:01:42,173
+Inside the book today: 4 positions up, 8 down.
+
+21
+00:01:42,173 --> 00:01:44,584
+Best, COP at +3.55 percent.
+
+22
+00:01:44,584 --> 00:01:46,370
+Worst, LLY at -2.54.
+
+23
+00:01:46,370 --> 00:01:51,551
+Both go in the journal — wins and losses get the same ink.
+
+24
+00:01:51,551 --> 00:01:59,053
+The honest scoreboard reads: expectancy -3.13% per trade over 1201 graded positions.
+
+25
+00:01:59,053 --> 00:02:06,376
+Because that record is soft, the system has throttled itself to 25% position size.
+
+26
+00:02:06,376 --> 00:02:11,735
+Nobody told it to — full size must be earned back with wins.
+
+27
+00:02:11,735 --> 00:02:24,596
+What tonight's read hands to tomorrow's open: 158 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+28
+00:02:24,546 --> 00:02:26,872
+Over to the sports desk.
+
+29
+00:02:26,872 --> 00:02:36,466
+Day 80 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+30
+00:02:36,466 --> 00:02:42,958
+In first place, the live self-rebuilding book, in blue, at 104,528.
+
+31
+00:02:42,958 --> 00:02:48,676
+Then the index fund, in gray, 3.1 thousand back at 101,408.
+
+32
+00:02:48,676 --> 00:02:56,138
+Then the frozen first portfolio, the green line, 7.1 thousand back at 97,394.
+
+33
+00:02:56,138 --> 00:02:58,851
+The race has no finish line.
+
+34
+00:02:58,851 --> 00:03:03,309
+Same books, same dollars, back at it tomorrow.
+
+35
+00:03:03,309 --> 00:03:08,348
+Every line starts the same day with the same dollar.
+
+36
+00:03:08,348 --> 00:03:10,286
+Nothing is restated.
+
+37
+00:03:10,286 --> 00:03:19,194
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+38
+00:03:19,156 --> 00:03:26,491
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+39
+00:03:26,491 --> 00:03:28,732
+Nothing here is financial advice.
+
+40
+00:03:28,732 --> 00:03:31,721
+From the closing desk — see you at the open.
