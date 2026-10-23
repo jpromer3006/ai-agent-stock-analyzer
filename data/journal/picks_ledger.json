@@ -442,6 +442,27 @@
      "home_run_flag": false
     }
    ]
+  },
+  {
+   "date": "2026-10-23",
+   "picks": [
+    {
+     "ticker": "TXN",
+     "buy_stop": 298.72,
+     "stop_loss": 272.78,
+     "target": 388.62,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "MMM",
+     "buy_stop": 182.76,
+     "stop_loss": 160.24,
+     "target": 204.32,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }

@@ -1,0 +1,264 @@
+{
+ "timestamp": "2026-10-23T15:11:16.351020Z",
+ "date": "2026-10-23",
+ "regime": "bull",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 54677.55,
+ "cash": 45322.45,
+ "weights": {
+  "technical": 0.111,
+  "ipo": 0.118,
+  "sepa": 0.218,
+  "growth": 0.067,
+  "canslim": 0.175,
+  "value": 0.024,
+  "swing": 0.121,
+  "weinstein": 0.166
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "ABBV",
+   "sector": "Health Care",
+   "conviction": 0.797,
+   "shares": 16,
+   "dollars": 4541.92,
+   "weight_pct": 4.54,
+   "entry": 283.87,
+   "stop": 264.71,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ABNB",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.7502,
+   "shares": 47,
+   "dollars": 8163.43,
+   "weight_pct": 8.16,
+   "entry": 173.69,
+   "stop": 167.1,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "LLY",
+   "sector": "Health Care",
+   "conviction": 0.7493,
+   "shares": 3,
+   "dollars": 3842.25,
+   "weight_pct": 3.84,
+   "entry": 1280.75,
+   "stop": 1186.75,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "DRH",
+   "sector": "Real Estate",
+   "conviction": 0.7263,
+   "shares": 256,
+   "dollars": 3525.12,
+   "weight_pct": 3.53,
+   "entry": 13.77,
+   "stop": 12.55,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ACIW",
+   "sector": "Information Technology",
+   "conviction": 0.7243,
+   "shares": 84,
+   "dollars": 4653.6,
+   "weight_pct": 4.65,
+   "entry": 55.4,
+   "stop": 51.71,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AMGN",
+   "sector": "Health Care",
+   "conviction": 0.7238,
+   "shares": 12,
+   "dollars": 5305.92,
+   "weight_pct": 5.31,
+   "entry": 442.16,
+   "stop": 417.07,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MA",
+   "sector": "Financials",
+   "conviction": 0.723,
+   "shares": 7,
+   "dollars": 4362.96,
+   "weight_pct": 4.36,
+   "entry": 623.28,
+   "stop": 580.97,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CVX",
+   "sector": "Energy",
+   "conviction": 0.7191,
+   "shares": 14,
+   "dollars": 3251.5,
+   "weight_pct": 3.25,
+   "entry": 232.25,
+   "stop": 210.29,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "COP",
+   "sector": "Energy",
+   "conviction": 0.7172,
+   "shares": 17,
+   "dollars": 2584.17,
+   "weight_pct": 2.58,
+   "entry": 152.01,
+   "stop": 134.08,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MDLZ",
+   "sector": "Consumer Staples",
+   "conviction": 0.7147,
+   "shares": 125,
+   "dollars": 7998.75,
+   "weight_pct": 8.0,
+   "entry": 63.99,
+   "stop": 61.49,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CDW",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.7141,
+   "shares": 17,
+   "dollars": 2765.22,
+   "weight_pct": 2.77,
+   "entry": 162.66,
+   "stop": 144.43,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "V",
+   "sector": "Financials",
+   "conviction": 0.7044,
+   "shares": 9,
+   "dollars": 3682.71,
+   "weight_pct": 3.68,
+   "entry": 409.19,
+   "stop": 377.09,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "EBAY",
+   "sector": "Consumer Discretionary",
+   "composite": 0.714,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "BIIB",
+   "sector": "Health Care",
+   "composite": 0.703,
+   "reason": "outranked \u2014 book full at 12"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = BULL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 22%, canslim 18%, weinstein 17%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "12 holdings, 55% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 45%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "CDW",
+   "MDLZ",
+   "V"
+  ],
+  "removed": [
+   "AAPU",
+   "CBC",
+   "WELL"
+  ],
+  "unchanged": [
+   "ABBV",
+   "ABNB",
+   "ACIW",
+   "AMGN",
+   "COP",
+   "CVX",
+   "DRH",
+   "LLY",
+   "MA"
+  ]
+ }
+}

@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:00,975
+Good morning.
+
+2
+00:00:00,975 --> 00:00:06,673
+From the OROS Market Desk, here is the rundown for Friday, October 23, 2026.
+
+3
+00:00:06,673 --> 00:00:08,172
+The tape reads bull.
+
+4
+00:00:08,172 --> 00:00:12,296
+Our top pick of the day: Texas Instruments, ticker TXN.
+
+5
+00:00:12,296 --> 00:00:17,544
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:17,544 --> 00:00:28,865
+And at the sports desk, day 80 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:28,865 --> 00:00:37,096
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:37,096 --> 00:00:44,460
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:44,422 --> 00:00:46,204
+First, the market open.
+
+10
+00:00:46,204 --> 00:00:51,784
+The S and P five hundred slipped 1.2 percent, while the NASDAQ lost 2.9.
+
+11
+00:00:51,784 --> 00:00:58,448
+The primary trend reads healthy: the index holds above its rising thirty week average.
+
+12
+00:00:58,448 --> 00:01:00,618
+The fear gauge sits at 18.9.
+
+13
+00:01:00,618 --> 00:01:03,121
+Today's lesson is this market screen.
+
+14
+00:01:03,121 --> 00:01:10,090
+The gold line is the thirty week moving average, the single most useful trend filter in stage analysis.
+
+15
+00:01:10,090 --> 00:01:17,600
+When price holds above a rising gold line, the tide is coming in, and long trades get the benefit of the doubt.
+
+16
+00:01:17,600 --> 00:01:26,531
+When price sinks below a falling gold line, the tide is going out, and the first job becomes protecting capital, not finding heroes.
+
+17
+00:01:26,485 --> 00:01:35,558
+Now the chart of the day: Texas Instruments, ticker TXN, the top stock to clear every quality gate.
+
+18
+00:01:35,558 --> 00:01:47,838
+The entry trigger sits at 298.72, the exit at 272.78, and the objective at 388.62 — 3.5 dollars of potential reward per dollar risked.
+
+19
+00:01:47,838 --> 00:01:54,070
+At 38 shares, a failed trade costs about one percent of the account.
+
+20
+00:01:54,070 --> 00:02:05,295
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+21
+00:02:05,295 --> 00:02:14,450
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+22
+00:02:14,450 --> 00:02:20,103
+You buy only if the market pushes up through that line, proving demand.
+
+23
+00:02:20,103 --> 00:02:26,073
+If it never gets there, you never buy, and that is the plan protecting you.
+
+24
+00:02:26,073 --> 00:02:33,477
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+25
+00:02:33,477 --> 00:02:45,976
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+26
+00:02:45,976 --> 00:02:47,011
+Buy on proof.
+
+27
+00:02:47,011 --> 00:02:48,046
+Exit by rule.
+
+28
+00:02:48,046 --> 00:02:49,319
+Size to survive.
+
+29
+00:02:49,287 --> 00:02:54,851
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+30
+00:02:54,851 --> 00:03:02,923
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+31
+00:03:02,923 --> 00:03:07,632
+On the stock track: Texas Instruments, ticker TXN.
+
+32
+00:03:07,632 --> 00:03:13,282
+The plan in plain English: it last closed at 283.82 dollars.
+
+33
+00:03:13,282 --> 00:03:23,453
+The system would only buy strength — a buy-stop at 298.72, nothing happens unless price proves itself first.
+
+34
+00:03:23,453 --> 00:03:32,023
+If it triggers, the exit is a weekly close below 272.78, and the measured target is 388.62.
+
+35
+00:03:32,023 --> 00:03:37,200
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+36
+00:03:37,200 --> 00:03:38,319
+That's the deal.
+
+37
+00:03:38,292 --> 00:03:40,422
+Turning to the model book.
+
+38
+00:03:40,422 --> 00:03:50,828
+The system holds 12 positions with 55% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+39
+00:03:50,828 --> 00:04:01,315
+New to the book: CDW Corporation (CDW), Mondelez International (MDLZ), Visa (V) — each passed the full entry gauntlet overnight.
+
+40
+00:04:01,315 --> 00:04:22,945
+Rotated out: Direxion Daily AAPL Bull 2X ETF (AAPU), which still advancing, but outranked by stronger names; Central Bancompany (CBC), which still advancing, but outranked by stronger names; Welltower (WELL), which still advancing, but outranked by stronger names.
+
+41
+00:04:22,945 --> 00:04:32,450
+Left on the bench: eBay Inc (EBAY), earnings inside the blackout window; Biogen (BIIB), outranked — book full at 12.
+
+42
+00:04:32,450 --> 00:04:37,120
+Passing the scan is not enough; the book must afford you.
+
+43
+00:04:37,120 --> 00:04:43,154
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+44
+00:04:43,110 --> 00:04:50,677
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+45
+00:04:50,677 --> 00:04:57,841
+12 positions, led by AbbVie, ticker ABBV, Airbnb, ticker ABNB, Eli Lilly and, ticker LLY.
+
+46
+00:04:57,841 --> 00:05:08,788
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+47
+00:05:08,745 --> 00:05:10,978
+Over to the sports desk.
+
+48
+00:05:10,978 --> 00:05:20,188
+Day 80 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+49
+00:05:20,188 --> 00:05:26,421
+In first place, the live self-rebuilding book, in blue, at 104,600.
+
+50
+00:05:26,421 --> 00:05:31,910
+Then the index fund, in gray, 2.7 thousand back at 101,940.
+
+51
+00:05:31,910 --> 00:05:39,074
+Then the frozen first portfolio, the green line, 7.2 thousand back at 97,388.
+
+52
+00:05:39,074 --> 00:05:41,679
+The race has no finish line.
+
+53
+00:05:41,679 --> 00:05:45,958
+Same books, same dollars, back at it tomorrow.
+
+54
+00:05:45,958 --> 00:05:50,796
+Every line starts the same day with the same dollar.
+
+55
+00:05:50,796 --> 00:05:52,657
+Nothing is restated.
+
+56
+00:05:52,657 --> 00:06:01,565
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+57
+00:06:01,527 --> 00:06:03,076
+Tonight's takeaway.
+
+58
+00:06:03,076 --> 00:06:05,359
+A portfolio is not a museum.
+
+59
+00:06:05,359 --> 00:06:13,674
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+60
+00:06:13,648 --> 00:06:16,662
+Before we close, the disclosure segment.
+
+61
+00:06:16,662 --> 00:06:27,284
+Everything you heard today concerns one simulated portfolio of 12 positions — the same book, line for line, as this morning's emailed report.
+
+62
+00:06:27,284 --> 00:06:29,243
+One record, every surface.
+
+63
+00:06:29,243 --> 00:06:31,330
+A word on how this desk works.
+
+64
+00:06:31,330 --> 00:06:48,857
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+65
+00:06:48,857 --> 00:06:57,272
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+66
+00:06:57,272 --> 00:07:00,205
+All figures are simulated paper trading.
+
+67
+00:07:00,205 --> 00:07:06,584
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+68
+00:07:06,584 --> 00:07:10,543
+From the OROS Market Desk, have a disciplined session.
