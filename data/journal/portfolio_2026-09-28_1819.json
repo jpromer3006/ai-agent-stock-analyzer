@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.284,
       "earnings_risk": false,
-      "outcome_return": 0.0319,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0663,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "TSM",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.255,
       "earnings_risk": false,
-      "outcome_return": 0.0643,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.073,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "DRH",
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.326,
       "earnings_risk": false,
-      "outcome_return": 0.0877,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.1058,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AAPL",
@@ -200,10 +200,10 @@
       "led_by": "sepa",
       "sentiment": 0.322,
       "earnings_risk": false,
-      "outcome_return": 0.024,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0103,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -247,9 +247,9 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0728,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 7,
+  "realized_avg_return": -0.0231,
+  "realized_hit_rate": 0.364,
+  "realized_final_count": 11,
   "realized_stop_exits": 7,
   "changes": {
     "added": [

@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.083,
+      "outcome_return": 0.0912,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0285,
+      "outcome_return": 0.0197,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "swing",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0042,
+      "outcome_return": 0.0142,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.1332,
+      "outcome_return": 0.1281,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0276,
-      "outcome_exit": "open",
+      "outcome_return": -0.0314,
+      "outcome_exit": "stop",
       "outcome_days": 11,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "ADI",
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0253,
+      "outcome_return": 0.0209,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     }
   ],
@@ -242,10 +242,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.058,
+  "realized_avg_return": -0.0526,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 4,
-  "realized_stop_exits": 4,
+  "realized_final_count": 5,
+  "realized_stop_exits": 5,
   "changes": {
     "added": [
       "ANET",
