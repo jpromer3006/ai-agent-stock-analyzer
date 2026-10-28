@@ -64,7 +64,7 @@
       "led_by": "sepa",
       "sentiment": 0.029,
       "earnings_risk": false,
-      "outcome_return": -0.0509,
+      "outcome_return": -0.0522,
       "outcome_exit": "stop",
       "outcome_days": 9,
       "outcome_final": true
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.071,
       "earnings_risk": false,
-      "outcome_return": 0.0916,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0923,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AMGN",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.215,
       "earnings_risk": false,
-      "outcome_return": 0.057,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0554,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MSFT",
@@ -183,10 +183,10 @@
       "led_by": "technical",
       "sentiment": -0.007,
       "earnings_risk": false,
-      "outcome_return": 0.0319,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0195,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -230,9 +230,9 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0823,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 7,
+  "realized_avg_return": -0.041,
+  "realized_hit_rate": 0.3,
+  "realized_final_count": 10,
   "realized_stop_exits": 7,
   "changes": {
     "added": [
