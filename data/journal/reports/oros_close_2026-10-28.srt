@@ -1,0 +1,147 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:27,472
+On the day, the book is up 8 dollars.
+
+7
+00:00:27,472 --> 00:00:30,523
+Amgen (AMGN) leads, +1.2 percent.
+
+8
+00:00:30,523 --> 00:00:32,927
+Apple (AAPL) lags at -1.1.
+
+9
+00:00:32,927 --> 00:00:37,921
+The checklist is clear: nothing requires action today.
+
+10
+00:00:37,921 --> 00:00:41,448
+On screen, the day's gainers and laggards inside the paper book.
+
+11
+00:00:41,404 --> 00:00:48,339
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+12
+00:00:48,339 --> 00:00:54,906
+10 positions, led by Eli Lilly and, ticker LLY, AbbVie, ticker ABBV, Chevron, ticker CVX.
+
+13
+00:00:54,906 --> 00:01:04,940
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+14
+00:01:04,902 --> 00:01:09,608
+Now the part that makes this system different: the loop.
+
+15
+00:01:09,608 --> 00:01:11,962
+Every morning OROS proposes.
+
+16
+00:01:11,962 --> 00:01:22,299
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+17
+00:01:22,299 --> 00:01:26,165
+Inside the book today: 6 positions up, 4 down.
+
+18
+00:01:26,165 --> 00:01:28,519
+Best, AMGN at +1.22 percent.
+
+19
+00:01:28,519 --> 00:01:30,199
+Worst, CDW at -1.14.
+
+20
+00:01:30,199 --> 00:01:35,074
+Both go in the journal — wins and losses get the same ink.
+
+21
+00:01:35,074 --> 00:01:42,134
+The honest scoreboard reads: expectancy -3.06% per trade over 1214 graded positions.
+
+22
+00:01:42,134 --> 00:01:49,025
+Because that record is soft, the system has throttled itself to 25% position size.
+
+23
+00:01:49,025 --> 00:01:54,068
+Nobody told it to — full size must be earned back with wins.
+
+24
+00:01:54,068 --> 00:02:06,002
+What tonight's read hands to tomorrow's open: 0 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+25
+00:02:05,970 --> 00:02:08,308
+Over to the sports desk.
+
+26
+00:02:08,308 --> 00:02:17,951
+Day 83 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+27
+00:02:17,951 --> 00:02:24,477
+In first place, the live self-rebuilding book, in blue, at 103,941.
+
+28
+00:02:24,477 --> 00:02:30,224
+Then the index fund, in gray, 1.8 thousand back at 102,128.
+
+29
+00:02:30,224 --> 00:02:37,724
+Then the frozen first portfolio, the green line, 6.6 thousand back at 97,375.
+
+30
+00:02:37,724 --> 00:02:40,452
+The race has no finish line.
+
+31
+00:02:40,452 --> 00:02:44,932
+Same books, same dollars, back at it tomorrow.
+
+32
+00:02:44,932 --> 00:02:49,997
+Every line starts the same day with the same dollar.
+
+33
+00:02:49,997 --> 00:02:51,946
+Nothing is restated.
+
+34
+00:02:51,946 --> 00:03:00,853
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+35
+00:03:00,815 --> 00:03:08,150
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+36
+00:03:08,150 --> 00:03:10,392
+Nothing here is financial advice.
+
+37
+00:03:10,392 --> 00:03:13,380
+From the closing desk — see you at the open.
