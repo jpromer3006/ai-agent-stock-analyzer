@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:28,099
+On the day, the book is down 143 dollars.
+
+7
+00:00:28,099 --> 00:00:32,345
+Emerson Electric (EMR) leads, +2.8 percent.
+
+8
+00:00:32,345 --> 00:00:36,690
+Descartes Systems Group (DSGX) lags at -2.7.
+
+9
+00:00:36,690 --> 00:00:42,022
+The checklist is clear: nothing requires action today.
+
+10
+00:00:42,022 --> 00:00:44,649
+Today's lesson is noise versus signal.
+
+11
+00:00:44,649 --> 00:00:48,313
+Daily moves are weather; the weekly trend is climate.
+
+12
+00:00:48,313 --> 00:00:51,355
+The system never exits on a scary afternoon.
+
+13
+00:00:51,355 --> 00:00:56,886
+It acts only on weekly closes, because that is where the real information lives.
+
+14
+00:00:56,836 --> 00:01:04,602
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+15
+00:01:04,602 --> 00:01:12,533
+10 positions, led by AbbVie, ticker ABBV, Eli Lilly and, ticker LLY, ConocoPhillips, ticker COP.
+
+16
+00:01:12,533 --> 00:01:23,768
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+17
+00:01:23,724 --> 00:01:28,893
+Now the part that makes this system different: the loop.
+
+18
+00:01:28,893 --> 00:01:31,478
+Every morning OROS proposes.
+
+19
+00:01:31,478 --> 00:01:42,832
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+20
+00:01:42,832 --> 00:01:47,078
+Inside the book today: 4 positions up, 6 down.
+
+21
+00:01:47,078 --> 00:01:49,571
+Best, EMR at +2.83 percent.
+
+22
+00:01:49,571 --> 00:01:51,509
+Worst, DSGX at -2.73.
+
+23
+00:01:51,509 --> 00:01:56,863
+Both go in the journal — wins and losses get the same ink.
+
+24
+00:01:56,863 --> 00:02:04,617
+The honest scoreboard reads: expectancy -3.05% per trade over 1222 graded positions.
+
+25
+00:02:04,617 --> 00:02:12,186
+Because that record is soft, the system has throttled itself to 25% position size.
+
+26
+00:02:12,186 --> 00:02:17,725
+Nobody told it to — full size must be earned back with wins.
+
+27
+00:02:17,725 --> 00:02:30,833
+What tonight's read hands to tomorrow's open: 0 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+28
+00:02:30,783 --> 00:02:33,016
+Over to the sports desk.
+
+29
+00:02:33,016 --> 00:02:42,226
+Day 84 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+30
+00:02:42,226 --> 00:02:48,459
+In first place, the live self-rebuilding book, in blue, at 104,047.
+
+31
+00:02:48,459 --> 00:02:53,948
+Then the index fund, in gray, 1.3 thousand back at 102,701.
+
+32
+00:02:53,948 --> 00:03:01,112
+Then the frozen first portfolio, the green line, 6.2 thousand back at 97,807.
+
+33
+00:03:01,112 --> 00:03:03,717
+The race has no finish line.
+
+34
+00:03:03,717 --> 00:03:07,996
+Same books, same dollars, back at it tomorrow.
+
+35
+00:03:07,996 --> 00:03:12,834
+Every line starts the same day with the same dollar.
+
+36
+00:03:12,834 --> 00:03:14,695
+Nothing is restated.
+
+37
+00:03:14,695 --> 00:03:23,603
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+38
+00:03:23,565 --> 00:03:30,900
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+39
+00:03:30,900 --> 00:03:33,142
+Nothing here is financial advice.
+
+40
+00:03:33,142 --> 00:03:36,130
+From the closing desk — see you at the open.
