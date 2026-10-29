@@ -484,6 +484,19 @@
   {
    "date": "2026-10-28",
    "picks": []
+  },
+  {
+   "date": "2026-10-29",
+   "picks": [
+    {
+     "ticker": "DORM",
+     "buy_stop": 133.15,
+     "stop_loss": 124.85,
+     "target": 156.8,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }

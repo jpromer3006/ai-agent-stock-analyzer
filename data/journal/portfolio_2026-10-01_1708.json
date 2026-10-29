@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.388,
       "earnings_risk": false,
-      "outcome_return": 0.0943,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.1162,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AEHR",
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.258,
       "earnings_risk": false,
-      "outcome_return": 0.0419,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0059,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -230,9 +230,9 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.097,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 8,
+  "realized_avg_return": -0.0654,
+  "realized_hit_rate": 0.2,
+  "realized_final_count": 10,
   "realized_stop_exits": 8,
   "changes": {
     "added": [
