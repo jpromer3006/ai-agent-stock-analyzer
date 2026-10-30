@@ -1,0 +1,296 @@
+{
+ "timestamp": "2026-10-30T16:50:47.903660Z",
+ "date": "2026-10-30",
+ "regime": "neutral",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 43093.4,
+ "cash": 56906.6,
+ "weights": {
+  "swing": 0.111,
+  "growth": 0.082,
+  "canslim": 0.165,
+  "weinstein": 0.185,
+  "technical": 0.123,
+  "ipo": 0.082,
+  "value": 0.045,
+  "sepa": 0.206
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "BLK",
+   "sector": "Financials",
+   "conviction": 0.744,
+   "shares": 5,
+   "dollars": 5748.2,
+   "weight_pct": 5.75,
+   "entry": 1149.64,
+   "stop": 1102.55,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "EMR",
+   "sector": "Industrials",
+   "conviction": 0.7321,
+   "shares": 28,
+   "dollars": 4643.24,
+   "weight_pct": 4.64,
+   "entry": 165.83,
+   "stop": 157.08,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "DRH",
+   "sector": "Real Estate",
+   "conviction": 0.7273,
+   "shares": 173,
+   "dollars": 2449.68,
+   "weight_pct": 2.45,
+   "entry": 14.16,
+   "stop": 12.72,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "COP",
+   "sector": "Energy",
+   "conviction": 0.7248,
+   "shares": 14,
+   "dollars": 2146.48,
+   "weight_pct": 2.15,
+   "entry": 153.32,
+   "stop": 136.11,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "USB",
+   "sector": "Financials",
+   "conviction": 0.7086,
+   "shares": 139,
+   "dollars": 8309.42,
+   "weight_pct": 8.31,
+   "entry": 59.78,
+   "stop": 57.99,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "VRTX",
+   "sector": "Health Care",
+   "conviction": 0.6842,
+   "shares": 6,
+   "dollars": 3363.24,
+   "weight_pct": 3.36,
+   "entry": 560.54,
+   "stop": 523.25,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CCEP",
+   "sector": "Consumer Staples",
+   "conviction": 0.6729,
+   "shares": 29,
+   "dollars": 3317.89,
+   "weight_pct": 3.32,
+   "entry": 114.41,
+   "stop": 106.07,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AAPL",
+   "sector": "Information Technology",
+   "conviction": 0.6709,
+   "shares": 17,
+   "dollars": 5902.57,
+   "weight_pct": 5.9,
+   "entry": 347.21,
+   "stop": 333.09,
+   "led_by": "sepa",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AIG",
+   "sector": "Financials",
+   "conviction": 0.67,
+   "shares": 53,
+   "dollars": 4321.09,
+   "weight_pct": 4.32,
+   "entry": 81.53,
+   "stop": 76.89,
+   "led_by": "technical",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CTAS",
+   "sector": "Industrials",
+   "conviction": 0.6689,
+   "shares": 13,
+   "dollars": 2891.59,
+   "weight_pct": 2.89,
+   "entry": 222.43,
+   "stop": 204.51,
+   "led_by": "technical",
+   "sentiment": 0.0,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "ABBV",
+   "sector": "Health Care",
+   "composite": 0.78,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "CART",
+   "sector": "Consumer Discretionary",
+   "composite": 0.737,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "ADP",
+   "sector": "Information Technology",
+   "composite": 0.729,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "CVX",
+   "sector": "Energy",
+   "composite": 0.724,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "MMM",
+   "sector": "Health Care",
+   "composite": 0.719,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "MDLZ",
+   "sector": "Consumer Staples",
+   "composite": 0.706,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "MA",
+   "sector": "Financials",
+   "composite": 0.699,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "XOM",
+   "sector": "Energy",
+   "composite": 0.699,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "WELL",
+   "sector": "Real Estate",
+   "composite": 0.699,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "DHR",
+   "sector": "Health Care",
+   "composite": 0.697,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "V",
+   "sector": "Financials",
+   "composite": 0.693,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "TXN",
+   "sector": "Semiconductors",
+   "composite": 0.692,
+   "reason": "earnings inside the blackout window"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = NEUTRAL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "10 holdings, 43% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 57%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "AIG",
+   "CCEP",
+   "CTAS",
+   "USB",
+   "VRTX"
+  ],
+  "removed": [
+   "ABBV",
+   "AMGN",
+   "CVX",
+   "MET",
+   "XOM"
+  ],
+  "unchanged": [
+   "AAPL",
+   "BLK",
+   "COP",
+   "DRH",
+   "EMR"
+  ]
+ }
+}

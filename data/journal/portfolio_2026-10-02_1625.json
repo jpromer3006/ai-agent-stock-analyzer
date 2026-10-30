@@ -115,10 +115,10 @@
       "led_by": "canslim",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0259,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": -0.0138,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "MSFT",
@@ -132,10 +132,10 @@
       "led_by": "technical",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0195,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.0136,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "BLCR",
@@ -166,10 +166,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.1108,
-      "outcome_exit": "open",
-      "outcome_days": 19,
-      "outcome_final": false
+      "outcome_return": 0.1403,
+      "outcome_exit": "horizon",
+      "outcome_days": 20,
+      "outcome_final": true
     },
     {
       "ticker": "AAXJ",
@@ -248,9 +248,9 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0715,
-  "realized_hit_rate": 0.0,
-  "realized_final_count": 7,
+  "realized_avg_return": -0.036,
+  "realized_hit_rate": 0.2,
+  "realized_final_count": 10,
   "realized_stop_exits": 7,
   "changes": {
     "added": [
