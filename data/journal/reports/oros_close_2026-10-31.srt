@@ -1,0 +1,151 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:27,828
+On the day, the book is up 663 dollars.
+
+7
+00:00:27,828 --> 00:00:28,216
+U.S.
+
+8
+00:00:28,216 --> 00:00:31,510
+Bancorp (USB) leads, +1.7 percent.
+
+9
+00:00:31,510 --> 00:00:36,451
+Coca-Cola Europacific Partners (CCEP) lags at -0.2.
+
+10
+00:00:36,451 --> 00:00:41,683
+The checklist is clear: nothing requires action today.
+
+11
+00:00:41,683 --> 00:00:45,209
+On screen, the day's gainers and laggards inside the paper book.
+
+12
+00:00:45,165 --> 00:00:52,365
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+13
+00:00:52,365 --> 00:01:00,791
+10 positions, led by BlackRock, ticker BLK, Emerson Electric, ticker EMR, Diamondrock Hospitality, ticker DRH.
+
+14
+00:01:00,791 --> 00:01:11,209
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+15
+00:01:11,171 --> 00:01:15,765
+Now the part that makes this system different: the loop.
+
+16
+00:01:15,765 --> 00:01:18,061
+Every morning OROS proposes.
+
+17
+00:01:18,061 --> 00:01:28,151
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+18
+00:01:28,151 --> 00:01:31,924
+Inside the book today: 9 positions up, 1 down.
+
+19
+00:01:31,924 --> 00:01:34,221
+Best, CTAS at +2.47 percent.
+
+20
+00:01:34,221 --> 00:01:35,943
+Worst, CCEP at -0.16.
+
+21
+00:01:35,943 --> 00:01:40,701
+Both go in the journal — wins and losses get the same ink.
+
+22
+00:01:40,701 --> 00:01:47,591
+The honest scoreboard reads: expectancy -3.02% per trade over 1228 graded positions.
+
+23
+00:01:47,591 --> 00:01:54,317
+Because that record is soft, the system has throttled itself to 25% position size.
+
+24
+00:01:54,317 --> 00:01:59,239
+Nobody told it to — full size must be earned back with wins.
+
+25
+00:01:59,239 --> 00:02:10,887
+What tonight's read hands to tomorrow's open: 0 names close the day in Stage 2; position size stays cut to 25% until the record earns it back.
+
+26
+00:02:10,846 --> 00:02:12,954
+Over to the sports desk.
+
+27
+00:02:12,954 --> 00:02:21,649
+Day 86 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+28
+00:02:21,649 --> 00:02:27,534
+In first place, the live self-rebuilding book, in blue, at 105,150.
+
+29
+00:02:27,534 --> 00:02:32,716
+Then the index fund, in gray, 2.5 thousand back at 102,661.
+
+30
+00:02:32,716 --> 00:02:39,479
+Then the frozen first portfolio, the green line, 6.4 thousand back at 98,733.
+
+31
+00:02:39,479 --> 00:02:41,938
+The race has no finish line.
+
+32
+00:02:41,938 --> 00:02:45,979
+Same books, same dollars, back at it tomorrow.
+
+33
+00:02:45,979 --> 00:02:50,546
+Every line starts the same day with the same dollar.
+
+34
+00:02:50,546 --> 00:02:52,302
+Nothing is restated.
+
+35
+00:02:52,302 --> 00:03:01,210
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+36
+00:03:01,172 --> 00:03:08,507
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+37
+00:03:08,507 --> 00:03:10,749
+Nothing here is financial advice.
+
+38
+00:03:10,749 --> 00:03:13,737
+From the closing desk — see you at the open.
