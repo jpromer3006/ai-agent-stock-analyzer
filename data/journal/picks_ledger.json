@@ -510,6 +510,43 @@
      "home_run_flag": false
     }
    ]
+  },
+  {
+   "date": "2026-11-02",
+   "picks": [
+    {
+     "ticker": "DORM",
+     "buy_stop": 140.49,
+     "stop_loss": 125.31,
+     "target": 164.14,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "VRTX",
+     "buy_stop": 561.67,
+     "stop_loss": 483.65,
+     "target": 636.38,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "WELL",
+     "buy_stop": 242.77,
+     "stop_loss": 224.4,
+     "target": 279.12,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "CINF",
+     "buy_stop": 184.39,
+     "stop_loss": 168.97,
+     "target": 204.72,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }

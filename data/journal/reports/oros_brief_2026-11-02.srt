@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:00,935
+Good morning.
+
+2
+00:00:00,935 --> 00:00:06,471
+From the OROS Market Desk, here is the rundown for Monday, November 02, 2026.
+
+3
+00:00:06,471 --> 00:00:08,125
+The tape reads neutral.
+
+4
+00:00:08,125 --> 00:00:12,008
+Our top pick of the day: Dorman Products, ticker DORM.
+
+5
+00:00:12,008 --> 00:00:17,041
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:17,041 --> 00:00:27,899
+And at the sports desk, day 86 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:27,899 --> 00:00:36,130
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:36,130 --> 00:00:43,494
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:43,456 --> 00:00:45,231
+First, the market open.
+
+10
+00:00:45,231 --> 00:00:50,787
+The S and P five hundred slipped 0.4 percent, while the NASDAQ lost 1.4.
+
+11
+00:00:50,787 --> 00:00:56,420
+The primary trend reads neutral; capital preservation leads the playbook.
+
+12
+00:00:56,420 --> 00:00:58,581
+The fear gauge sits at 20.9.
+
+13
+00:00:58,581 --> 00:01:01,084
+Today's lesson is this market screen.
+
+14
+00:01:01,084 --> 00:01:08,053
+The gold line is the thirty week moving average, the single most useful trend filter in stage analysis.
+
+15
+00:01:08,053 --> 00:01:15,563
+When price holds above a rising gold line, the tide is coming in, and long trades get the benefit of the doubt.
+
+16
+00:01:15,563 --> 00:01:24,494
+When price sinks below a falling gold line, the tide is going out, and the first job becomes protecting capital, not finding heroes.
+
+17
+00:01:24,448 --> 00:01:33,604
+Now the chart of the day: Dorman Products, ticker DORM, the top stock to clear every quality gate.
+
+18
+00:01:33,604 --> 00:01:46,124
+The entry trigger sits at 140.49, the exit at 125.31, and the objective at 164.14 — 1.6 dollars of potential reward per dollar risked.
+
+19
+00:01:46,124 --> 00:01:52,477
+At 65 shares, a failed trade costs about one percent of the account.
+
+20
+00:01:52,477 --> 00:02:03,702
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+21
+00:02:03,702 --> 00:02:12,857
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+22
+00:02:12,857 --> 00:02:18,510
+You buy only if the market pushes up through that line, proving demand.
+
+23
+00:02:18,510 --> 00:02:24,480
+If it never gets there, you never buy, and that is the plan protecting you.
+
+24
+00:02:24,480 --> 00:02:31,884
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+25
+00:02:31,884 --> 00:02:44,383
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+26
+00:02:44,383 --> 00:02:45,418
+Buy on proof.
+
+27
+00:02:45,418 --> 00:02:46,453
+Exit by rule.
+
+28
+00:02:46,453 --> 00:02:47,726
+Size to survive.
+
+29
+00:02:47,694 --> 00:02:53,258
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+30
+00:02:53,258 --> 00:03:01,330
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+31
+00:03:01,330 --> 00:03:05,968
+On the stock track: Dorman Products, ticker DORM.
+
+32
+00:03:05,968 --> 00:03:11,647
+The plan in plain English: it last closed at 139.79 dollars.
+
+33
+00:03:11,647 --> 00:03:21,869
+The system would only buy strength — a buy-stop at 140.49, nothing happens unless price proves itself first.
+
+34
+00:03:21,869 --> 00:03:30,483
+If it triggers, the exit is a weekly close below 125.31, and the measured target is 164.14.
+
+35
+00:03:30,483 --> 00:03:35,659
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+36
+00:03:35,659 --> 00:03:36,778
+That's the deal.
+
+37
+00:03:36,752 --> 00:03:39,125
+Turning to the model book.
+
+38
+00:03:39,125 --> 00:03:50,716
+The system holds 10 positions with 48% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+39
+00:03:50,716 --> 00:04:03,858
+New to the book: Airbnb (ABNB), Analog Devices (ADI), Amgen (AMGN), Deere & (DE), MetLife (MET) — each passed the full entry gauntlet overnight.
+
+40
+00:04:03,858 --> 00:04:35,528
+Rotated out: Apple (AAPL), which still advancing, but outranked by stronger names; American International Group (AIG), which still advancing, but outranked by stronger names; Coca-Cola Europacific Partners (CCEP), which still advancing, but outranked by stronger names; ConocoPhillips (COP), which still advancing, but outranked by stronger names.
+
+41
+00:04:35,528 --> 00:04:52,869
+Left on the bench: AbbVie (ABBV), earnings inside the blackout window; Biogen (BIIB), earnings inside the blackout window; Mondelez International (MDLZ), earnings inside the blackout window.
+
+42
+00:04:52,869 --> 00:04:58,071
+Passing the scan is not enough; the book must afford you.
+
+43
+00:04:58,071 --> 00:05:04,105
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+44
+00:05:04,062 --> 00:05:12,041
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+45
+00:05:12,041 --> 00:05:21,802
+10 positions, led by Analog Devices, ticker ADI, Emerson Electric, ticker EMR, Vertex Pharmaceuticals, ticker VRTX.
+
+46
+00:05:21,802 --> 00:05:33,345
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+47
+00:05:33,319 --> 00:05:35,621
+Over to the sports desk.
+
+48
+00:05:35,621 --> 00:05:45,116
+Day 86 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+49
+00:05:45,116 --> 00:05:51,542
+In first place, the live self-rebuilding book, in blue, at 105,687.
+
+50
+00:05:51,542 --> 00:05:57,201
+Then the index fund, in gray, 3.0 thousand back at 102,661.
+
+51
+00:05:57,201 --> 00:06:04,586
+Then the frozen first portfolio, the green line, 7.1 thousand back at 98,575.
+
+52
+00:06:04,586 --> 00:06:07,272
+The race has no finish line.
+
+53
+00:06:07,272 --> 00:06:11,684
+Same books, same dollars, back at it tomorrow.
+
+54
+00:06:11,684 --> 00:06:16,671
+Every line starts the same day with the same dollar.
+
+55
+00:06:16,671 --> 00:06:18,589
+Nothing is restated.
+
+56
+00:06:18,589 --> 00:06:27,497
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+57
+00:06:27,459 --> 00:06:29,008
+Tonight's takeaway.
+
+58
+00:06:29,008 --> 00:06:31,291
+A portfolio is not a museum.
+
+59
+00:06:31,291 --> 00:06:39,606
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+60
+00:06:39,580 --> 00:06:42,306
+Before we close, the disclosure segment.
+
+61
+00:06:42,306 --> 00:06:51,914
+Everything you heard today concerns one simulated portfolio of 10 positions — the same book, line for line, as this morning's emailed report.
+
+62
+00:06:51,914 --> 00:06:53,686
+One record, every surface.
+
+63
+00:06:53,686 --> 00:06:55,773
+A word on how this desk works.
+
+64
+00:06:55,773 --> 00:07:13,300
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+65
+00:07:13,300 --> 00:07:21,716
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+66
+00:07:21,716 --> 00:07:24,648
+All figures are simulated paper trading.
+
+67
+00:07:24,648 --> 00:07:31,027
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+68
+00:07:31,027 --> 00:07:34,986
+From the OROS Market Desk, have a disciplined session.
