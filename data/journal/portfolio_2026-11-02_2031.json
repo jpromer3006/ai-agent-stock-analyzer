@@ -1,290 +1,320 @@
 {
- "timestamp": "2026-11-02T20:31:01.750639Z",
- "date": "2026-11-02",
- "regime": "neutral",
- "mandate": "swing_momentum",
- "account": 100000.0,
- "invested": 48153.77,
- "cash": 51846.23,
- "weights": {
-  "value": 0.045,
-  "technical": 0.123,
-  "canslim": 0.165,
-  "sepa": 0.206,
-  "growth": 0.082,
-  "swing": 0.111,
-  "ipo": 0.082,
-  "weinstein": 0.185
- },
- "note": "nightly run (cloud)",
- "holdings": [
-  {
-   "ticker": "ADI",
-   "sector": "Semiconductors",
-   "conviction": 0.7505,
-   "shares": 8,
-   "dollars": 3347.28,
-   "weight_pct": 3.35,
-   "entry": 418.41,
-   "stop": 389.31,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
+  "timestamp": "2026-11-02T20:31:01.750639Z",
+  "date": "2026-11-02",
+  "regime": "neutral",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 48153.77,
+  "cash": 51846.23,
+  "weights": {
+    "value": 0.045,
+    "technical": 0.123,
+    "canslim": 0.165,
+    "sepa": 0.206,
+    "growth": 0.082,
+    "swing": 0.111,
+    "ipo": 0.082,
+    "weinstein": 0.185
   },
-  {
-   "ticker": "EMR",
-   "sector": "Industrials",
-   "conviction": 0.7327,
-   "shares": 26,
-   "dollars": 4337.58,
-   "weight_pct": 4.34,
-   "entry": 166.83,
-   "stop": 157.26,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "VRTX",
-   "sector": "Health Care",
-   "conviction": 0.7174,
-   "shares": 9,
-   "dollars": 4948.74,
-   "weight_pct": 4.95,
-   "entry": 549.86,
-   "stop": 523.25,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "MET",
-   "sector": "Financials",
-   "conviction": 0.7122,
-   "shares": 75,
-   "dollars": 7582.5,
-   "weight_pct": 7.58,
-   "entry": 101.1,
-   "stop": 97.81,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "DE",
-   "sector": "Industrials",
-   "conviction": 0.7032,
-   "shares": 8,
-   "dollars": 5310.32,
-   "weight_pct": 5.31,
-   "entry": 663.79,
-   "stop": 634.55,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "AMGN",
-   "sector": "Health Care",
-   "conviction": 0.6984,
-   "shares": 5,
-   "dollars": 2337.45,
-   "weight_pct": 2.34,
-   "entry": 467.49,
-   "stop": 420.53,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "DRH",
-   "sector": "Real Estate",
-   "conviction": 0.6977,
-   "shares": 142,
-   "dollars": 2061.84,
-   "weight_pct": 2.06,
-   "entry": 14.52,
-   "stop": 12.76,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BLK",
-   "sector": "Financials",
-   "conviction": 0.6935,
-   "shares": 3,
-   "dollars": 3503.76,
-   "weight_pct": 3.5,
-   "entry": 1167.92,
-   "stop": 1102.85,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ABNB",
-   "sector": "Consumer Discretionary",
-   "conviction": 0.6923,
-   "shares": 37,
-   "dollars": 6378.06,
-   "weight_pct": 6.38,
-   "entry": 172.38,
-   "stop": 165.75,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "USB",
-   "sector": "Financials",
-   "conviction": 0.6923,
-   "shares": 138,
-   "dollars": 8346.24,
-   "weight_pct": 8.35,
-   "entry": 60.48,
-   "stop": 58.67,
-   "led_by": "sepa",
-   "sentiment": 0.0,
-   "earnings_risk": false,
-   "outcome_return": null
-  }
- ],
- "bench": [
-  {
-   "ticker": "ABBV",
-   "sector": "Health Care",
-   "composite": 0.812,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "BIIB",
-   "sector": "Health Care",
-   "composite": 0.728,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "MDLZ",
-   "sector": "Consumer Staples",
-   "composite": 0.711,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "MA",
-   "sector": "Financials",
-   "composite": 0.71,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "ACGL",
-   "sector": "Financials",
-   "composite": 0.709,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "TXN",
-   "sector": "Semiconductors",
-   "composite": 0.702,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "V",
-   "sector": "Financials",
-   "composite": 0.701,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "ADP",
-   "sector": "Information Technology",
-   "composite": 0.697,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "CSX",
-   "sector": "Industrials",
-   "composite": 0.695,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "MMM",
-   "sector": "Health Care",
-   "composite": 0.693,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "MRK",
-   "sector": "Health Care",
-   "composite": 0.688,
-   "reason": "outranked \u2014 book full at 10"
-  }
- ],
- "agent_trace": [
-  {
-   "agent": "DataAgent",
-   "role": "universe & data",
-   "summary": "500 candidate names (benchmarks removed)"
-  },
-  {
-   "agent": "RegimeAgent",
-   "role": "market regime",
-   "summary": "regime = NEUTRAL"
-  },
-  {
-   "agent": "RouterAgent",
-   "role": "strategy mandate weights",
-   "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
-  },
-  {
-   "agent": "MemoryAgent",
-   "role": "experience-weighted tilt",
-   "summary": "boosted weinstein x1.00, sepa x1.00"
-  },
-  {
-   "agent": "ConstructionAgent",
-   "role": "strategy ensemble + sizing",
-   "summary": "10 holdings, 48% invested, 8 strategies"
-  },
-  {
-   "agent": "RiskAgent",
-   "role": "post-construction risk",
-   "summary": "within limits; cash 52%"
-  }
- ],
- "horizon_days": 20,
- "realized_avg_return": null,
- "realized_hit_rate": null,
- "realized_final_count": 0,
- "realized_stop_exits": 0,
- "changes": {
-  "added": [
-   "ABNB",
-   "ADI",
-   "AMGN",
-   "DE",
-   "MET"
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "ADI",
+      "sector": "Semiconductors",
+      "conviction": 0.7505,
+      "shares": 8,
+      "dollars": 3347.28,
+      "weight_pct": 3.35,
+      "entry": 418.41,
+      "stop": 389.31,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0158,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "EMR",
+      "sector": "Industrials",
+      "conviction": 0.7327,
+      "shares": 26,
+      "dollars": 4337.58,
+      "weight_pct": 4.34,
+      "entry": 166.83,
+      "stop": 157.26,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0074,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "VRTX",
+      "sector": "Health Care",
+      "conviction": 0.7174,
+      "shares": 9,
+      "dollars": 4948.74,
+      "weight_pct": 4.95,
+      "entry": 549.86,
+      "stop": 523.25,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0303,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "conviction": 0.7122,
+      "shares": 75,
+      "dollars": 7582.5,
+      "weight_pct": 7.58,
+      "entry": 101.1,
+      "stop": 97.81,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0041,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "DE",
+      "sector": "Industrials",
+      "conviction": 0.7032,
+      "shares": 8,
+      "dollars": 5310.32,
+      "weight_pct": 5.31,
+      "entry": 663.79,
+      "stop": 634.55,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0102,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "AMGN",
+      "sector": "Health Care",
+      "conviction": 0.6984,
+      "shares": 5,
+      "dollars": 2337.45,
+      "weight_pct": 2.34,
+      "entry": 467.49,
+      "stop": 420.53,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.01,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "DRH",
+      "sector": "Real Estate",
+      "conviction": 0.6977,
+      "shares": 142,
+      "dollars": 2061.84,
+      "weight_pct": 2.06,
+      "entry": 14.52,
+      "stop": 12.76,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": 0.0028,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "BLK",
+      "sector": "Financials",
+      "conviction": 0.6935,
+      "shares": 3,
+      "dollars": 3503.76,
+      "weight_pct": 3.5,
+      "entry": 1167.92,
+      "stop": 1102.85,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0037,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ABNB",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.6923,
+      "shares": 37,
+      "dollars": 6378.06,
+      "weight_pct": 6.38,
+      "entry": 172.38,
+      "stop": 165.75,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0286,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "USB",
+      "sector": "Financials",
+      "conviction": 0.6923,
+      "shares": 138,
+      "dollars": 8346.24,
+      "weight_pct": 8.35,
+      "entry": 60.48,
+      "stop": 58.67,
+      "led_by": "sepa",
+      "sentiment": 0.0,
+      "earnings_risk": false,
+      "outcome_return": -0.0093,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    }
   ],
-  "removed": [
-   "AAPL",
-   "AIG",
-   "CCEP",
-   "COP",
-   "CTAS"
+  "bench": [
+    {
+      "ticker": "ABBV",
+      "sector": "Health Care",
+      "composite": 0.812,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "BIIB",
+      "sector": "Health Care",
+      "composite": 0.728,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "MDLZ",
+      "sector": "Consumer Staples",
+      "composite": 0.711,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "MA",
+      "sector": "Financials",
+      "composite": 0.71,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "ACGL",
+      "sector": "Financials",
+      "composite": 0.709,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "TXN",
+      "sector": "Semiconductors",
+      "composite": 0.702,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "V",
+      "sector": "Financials",
+      "composite": 0.701,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "ADP",
+      "sector": "Information Technology",
+      "composite": 0.697,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "CSX",
+      "sector": "Industrials",
+      "composite": 0.695,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "MMM",
+      "sector": "Health Care",
+      "composite": 0.693,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "MRK",
+      "sector": "Health Care",
+      "composite": 0.688,
+      "reason": "outranked \u2014 book full at 10"
+    }
   ],
-  "unchanged": [
-   "BLK",
-   "DRH",
-   "EMR",
-   "USB",
-   "VRTX"
-  ]
- }
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "500 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = NEUTRAL"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "10 holdings, 48% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 52%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0,
+  "changes": {
+    "added": [
+      "ABNB",
+      "ADI",
+      "AMGN",
+      "DE",
+      "MET"
+    ],
+    "removed": [
+      "AAPL",
+      "AIG",
+      "CCEP",
+      "COP",
+      "CTAS"
+    ],
+    "unchanged": [
+      "BLK",
+      "DRH",
+      "EMR",
+      "USB",
+      "VRTX"
+    ]
+  }
 }

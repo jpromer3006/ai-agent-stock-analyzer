@@ -547,6 +547,19 @@
      "home_run_flag": false
     }
    ]
+  },
+  {
+   "date": "2026-11-03",
+   "picks": [
+    {
+     "ticker": "VRTX",
+     "buy_stop": 561.67,
+     "stop_loss": 484.25,
+     "target": 636.38,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }
