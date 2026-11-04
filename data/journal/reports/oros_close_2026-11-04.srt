@@ -1,0 +1,163 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:27,487
+On the day, the book is up 405 dollars.
+
+7
+00:00:27,487 --> 00:00:27,839
+U.S.
+
+8
+00:00:27,839 --> 00:00:30,835
+Bancorp (USB) leads, +1.7 percent.
+
+9
+00:00:30,835 --> 00:00:33,215
+Bruker (BRKR) lags at -2.4.
+
+10
+00:00:33,215 --> 00:00:37,973
+The checklist is clear: nothing requires action today.
+
+11
+00:00:37,973 --> 00:00:41,500
+On screen, the day's gainers and laggards inside the paper book.
+
+12
+00:00:41,456 --> 00:00:48,601
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+13
+00:00:48,601 --> 00:00:55,595
+10 positions, led by Analog Devices, ticker ADI, BlackRock, ticker BLK, Bruker, ticker BRKR.
+
+14
+00:00:55,595 --> 00:01:05,933
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+15
+00:01:05,883 --> 00:01:10,708
+Now the part that makes this system different: the loop.
+
+16
+00:01:10,708 --> 00:01:13,120
+Every morning OROS proposes.
+
+17
+00:01:13,120 --> 00:01:23,717
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+18
+00:01:23,717 --> 00:01:27,680
+Inside the book today: 7 positions up, 3 down.
+
+19
+00:01:27,680 --> 00:01:30,092
+Best, DLTR at +3.53 percent.
+
+20
+00:01:30,092 --> 00:01:31,901
+Worst, BRKR at -2.42.
+
+21
+00:01:31,901 --> 00:01:36,898
+Both go in the journal — wins and losses get the same ink.
+
+22
+00:01:36,898 --> 00:01:44,135
+The honest scoreboard reads: expectancy -2.97% per trade over 1242 graded positions.
+
+23
+00:01:44,135 --> 00:01:51,200
+Because that record is soft, the system has throttled itself to 50% position size.
+
+24
+00:01:51,200 --> 00:01:56,369
+Nobody told it to — full size must be earned back with wins.
+
+25
+00:01:56,369 --> 00:02:08,603
+What tonight's read hands to tomorrow's open: 0 names close the day in Stage 2; position size stays cut to 50% until the record earns it back.
+
+26
+00:02:08,577 --> 00:02:10,654
+Over to the sports desk.
+
+27
+00:02:10,654 --> 00:02:19,224
+Day 88 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+28
+00:02:19,224 --> 00:02:25,023
+In first place, the live self-rebuilding book, in blue, at 105,992.
+
+29
+00:02:25,023 --> 00:02:30,130
+Then the index fund, in gray, 5.6 thousand back at 100,358.
+
+30
+00:02:30,130 --> 00:02:36,795
+Then the frozen first portfolio, the green line, 7.5 thousand back at 98,442.
+
+31
+00:02:36,795 --> 00:02:39,219
+The race has no finish line.
+
+32
+00:02:39,219 --> 00:02:43,200
+Same books, same dollars, back at it tomorrow.
+
+33
+00:02:43,200 --> 00:02:47,701
+Every line starts the same day with the same dollar.
+
+34
+00:02:47,701 --> 00:02:49,433
+Nothing is restated.
+
+35
+00:02:49,433 --> 00:02:51,762
+Today's lesson is benchmarking.
+
+36
+00:02:51,762 --> 00:02:58,224
+Any strategy must beat the boring alternative: the same money parked in an index fund.
+
+37
+00:02:58,224 --> 00:03:01,680
+That is why the S and P line shares the chart.
+
+38
+00:03:01,680 --> 00:03:10,696
+If the system cannot outrun it, the index deserves the money, and publishing the race every day keeps the system honest.
+
+39
+00:03:10,655 --> 00:03:17,990
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+40
+00:03:17,990 --> 00:03:20,232
+Nothing here is financial advice.
+
+41
+00:03:20,232 --> 00:03:23,220
+From the closing desk — see you at the open.
