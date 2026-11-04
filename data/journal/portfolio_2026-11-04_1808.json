@@ -1,0 +1,298 @@
+{
+ "timestamp": "2026-11-04T18:08:58.905989Z",
+ "date": "2026-11-04",
+ "regime": "neutral",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 69393.95,
+ "cash": 30606.05,
+ "weights": {
+  "weinstein": 0.185,
+  "growth": 0.082,
+  "sepa": 0.206,
+  "canslim": 0.165,
+  "ipo": 0.082,
+  "technical": 0.123,
+  "swing": 0.111,
+  "value": 0.045
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "MET",
+   "sector": "Financials",
+   "conviction": 0.7641,
+   "shares": 107,
+   "dollars": 10924.7,
+   "weight_pct": 10.92,
+   "entry": 102.1,
+   "stop": 97.47,
+   "led_by": "sepa",
+   "sentiment": 0.172,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ABNB",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.7507,
+   "shares": 48,
+   "dollars": 8621.76,
+   "weight_pct": 8.62,
+   "entry": 179.62,
+   "stop": 169.38,
+   "led_by": "sepa",
+   "sentiment": 0.167,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ACIW",
+   "sector": "Information Technology",
+   "conviction": 0.7386,
+   "shares": 74,
+   "dollars": 4373.4,
+   "weight_pct": 4.37,
+   "entry": 59.1,
+   "stop": 52.43,
+   "led_by": "sepa",
+   "sentiment": 0.428,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "DSGX",
+   "sector": "Information Technology",
+   "conviction": 0.7359,
+   "shares": 44,
+   "dollars": 4157.12,
+   "weight_pct": 4.16,
+   "entry": 94.48,
+   "stop": 83.17,
+   "led_by": "sepa",
+   "sentiment": 0.259,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MMM",
+   "sector": "Health Care",
+   "conviction": 0.7249,
+   "shares": 19,
+   "dollars": 3686.38,
+   "weight_pct": 3.69,
+   "entry": 194.02,
+   "stop": 168.71,
+   "led_by": "sepa",
+   "sentiment": -0.063,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "USB",
+   "sector": "Financials",
+   "conviction": 0.7069,
+   "shares": 197,
+   "dollars": 11981.54,
+   "weight_pct": 11.98,
+   "entry": 60.82,
+   "stop": 58.93,
+   "led_by": "sepa",
+   "sentiment": 0.142,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "BLK",
+   "sector": "Financials",
+   "conviction": 0.7013,
+   "shares": 3,
+   "dollars": 3690.63,
+   "weight_pct": 3.69,
+   "entry": 1230.21,
+   "stop": 1103.92,
+   "led_by": "sepa",
+   "sentiment": -0.034,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ACHC",
+   "sector": "Health Care",
+   "conviction": 0.6959,
+   "shares": 138,
+   "dollars": 4527.78,
+   "weight_pct": 4.53,
+   "entry": 32.81,
+   "stop": 29.2,
+   "led_by": "sepa",
+   "sentiment": 0.143,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CCEP",
+   "sector": "Consumer Staples",
+   "conviction": 0.6893,
+   "shares": 50,
+   "dollars": 5812.0,
+   "weight_pct": 5.81,
+   "entry": 116.24,
+   "stop": 106.36,
+   "led_by": "sepa",
+   "sentiment": 0.142,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "TGT",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.6811,
+   "shares": 72,
+   "dollars": 11618.64,
+   "weight_pct": 11.62,
+   "entry": 161.37,
+   "stop": 154.43,
+   "led_by": "sepa",
+   "sentiment": 0.274,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "ABBV",
+   "sector": "Health Care",
+   "composite": 0.764,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "MA",
+   "sector": "Financials",
+   "composite": 0.737,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "MDLZ",
+   "sector": "Consumer Staples",
+   "composite": 0.733,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "BTSG",
+   "sector": "Health Care",
+   "composite": 0.732,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "V",
+   "sector": "Financials",
+   "composite": 0.73,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "BRKR",
+   "sector": "Health Care",
+   "composite": 0.724,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "PYPL",
+   "sector": "Financials",
+   "composite": 0.718,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "DRH",
+   "sector": "Real Estate",
+   "composite": 0.71,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "ADP",
+   "sector": "Information Technology",
+   "composite": 0.71,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "EMR",
+   "sector": "Industrials",
+   "composite": 0.71,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "VRTX",
+   "sector": "Health Care",
+   "composite": 0.709,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "WELL",
+   "sector": "Real Estate",
+   "composite": 0.709,
+   "reason": "earnings inside the blackout window"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = NEUTRAL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "10 holdings, 69% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 31%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "ABNB",
+   "ACHC",
+   "ACIW",
+   "DSGX",
+   "MET",
+   "MMM",
+   "TGT"
+  ],
+  "removed": [
+   "ADI",
+   "AIG",
+   "AMGN",
+   "BRKR",
+   "DLTR",
+   "DRH",
+   "EMR"
+  ],
+  "unchanged": [
+   "BLK",
+   "CCEP",
+   "USB"
+  ]
+ }
+}

@@ -560,6 +560,27 @@
      "home_run_flag": false
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "picks": [
+    {
+     "ticker": "BTSG",
+     "buy_stop": 70.27,
+     "stop_loss": 59.96,
+     "target": 91.05,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "VRTX",
+     "buy_stop": 561.67,
+     "stop_loss": 484.9,
+     "target": 636.38,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }
