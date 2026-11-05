@@ -90,6 +90,19 @@ def _load_env_fallback() -> None:
         pass
 
 
+# Recipients that must never receive OROS mail (added 2026-11-05 at JP's
+# request). Extend at runtime with OROS_EMAIL_BLOCK="a@x.com,b@y.com".
+BLOCKED_RECIPIENTS = {"jpr20@fordham.edu"}
+
+
+def _drop_blocked(to: str) -> str:
+    """Remove blocked addresses from a comma separated recipient string."""
+    extra = {a.strip().lower() for a in os.environ.get("OROS_EMAIL_BLOCK", "").split(",") if a.strip()}
+    blocked = BLOCKED_RECIPIENTS | extra
+    kept = [a.strip() for a in to.split(",") if a.strip() and a.strip().lower() not in blocked]
+    return ", ".join(kept)
+
+
 def send_email(subject: str, body: str, to: str | None = None,
                attachments: list | None = None) -> bool:
     """Send an email via Gmail SMTP, optionally with file attachments.
@@ -104,6 +117,10 @@ def send_email(subject: str, body: str, to: str | None = None,
     user = os.environ.get("GMAIL_ADDRESS", "").strip()
     pw = os.environ.get("GMAIL_APP_PASSWORD", "").strip()
     to = (to or "").strip() or os.environ.get("NOTIFY_EMAIL_TO", "").strip() or user
+    to = _drop_blocked(to)
+    if not to:
+        logger.info("email NOT sent (recipient blocked): %s", subject)
+        return False
     if not (user and pw and to):
         logger.warning("email NOT sent (GMAIL_ADDRESS / GMAIL_APP_PASSWORD missing): %s",
                        subject)

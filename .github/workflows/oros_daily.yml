@@ -147,6 +147,11 @@ jobs:
           user = os.environ.get("GMAIL_ADDRESS", "")
           pw = os.environ.get("GMAIL_APP_PASSWORD", "")
           to = os.environ.get("OROS_REPORT_TO", "") or user
+          # never mail the blocked Fordham address (2026-11-05)
+          to = ", ".join(a.strip() for a in to.split(",")
+                         if a.strip() and a.strip().lower() != "jpr20@fordham.edu")
+          if not to:
+              print("failure alert skipped: recipient blocked"); raise SystemExit(0)
           if not (user and pw and to):
               raise SystemExit("alert email unconfigured")
           msg = EmailMessage()
