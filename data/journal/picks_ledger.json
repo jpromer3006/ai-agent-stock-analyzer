@@ -626,6 +626,35 @@
      "home_run_flag": false
     }
    ]
+  },
+  {
+   "date": "2026-11-06",
+   "picks": [
+    {
+     "ticker": "VRTX",
+     "buy_stop": 561.67,
+     "stop_loss": 486.35,
+     "target": 636.38,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "AAPL",
+     "buy_stop": 351.26,
+     "stop_loss": 311.38,
+     "target": 403.0,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "PSA",
+     "buy_stop": 344.47,
+     "stop_loss": 305.98,
+     "target": 390.4,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }

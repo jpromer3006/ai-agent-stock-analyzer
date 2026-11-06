@@ -1,0 +1,275 @@
+1
+00:00:00,000 --> 00:00:00,962
+Good morning.
+
+2
+00:00:00,962 --> 00:00:06,663
+From the OROS Market Desk, here is the rundown for Friday, November 06, 2026.
+
+3
+00:00:06,663 --> 00:00:08,144
+The tape reads bear.
+
+4
+00:00:08,144 --> 00:00:12,660
+Our top pick of the day: Vertex Pharmaceuticals, ticker VRTX.
+
+5
+00:00:12,660 --> 00:00:17,843
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:17,843 --> 00:00:29,022
+And at the sports desk, day 90 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:29,022 --> 00:00:37,253
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:37,253 --> 00:00:44,617
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:44,579 --> 00:00:46,403
+First, the market open.
+
+10
+00:00:46,403 --> 00:00:52,114
+The S and P five hundred gained 1.7 percent, while the NASDAQ added 1.0.
+
+11
+00:00:52,114 --> 00:00:57,666
+The primary trend reads bear; capital preservation leads the playbook.
+
+12
+00:00:57,666 --> 00:00:59,887
+The fear gauge sits at 26.5.
+
+13
+00:00:59,887 --> 00:01:09,212
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+14
+00:01:09,174 --> 00:01:18,752
+Now the chart of the day: Vertex Pharmaceuticals, ticker VRTX, the top stock to clear every quality gate.
+
+15
+00:01:18,752 --> 00:01:30,975
+The entry trigger sits at 561.67, the exit at 486.35, and the objective at 636.38 — 1.0 dollars of potential reward per dollar risked.
+
+16
+00:01:30,975 --> 00:01:37,177
+At 13 shares, a failed trade costs about one percent of the account.
+
+17
+00:01:37,177 --> 00:01:48,402
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+18
+00:01:48,402 --> 00:01:57,557
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+19
+00:01:57,557 --> 00:02:03,210
+You buy only if the market pushes up through that line, proving demand.
+
+20
+00:02:03,210 --> 00:02:09,180
+If it never gets there, you never buy, and that is the plan protecting you.
+
+21
+00:02:09,180 --> 00:02:16,584
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+22
+00:02:16,584 --> 00:02:29,083
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+23
+00:02:29,083 --> 00:02:30,118
+Buy on proof.
+
+24
+00:02:30,118 --> 00:02:31,153
+Exit by rule.
+
+25
+00:02:31,153 --> 00:02:32,426
+Size to survive.
+
+26
+00:02:32,394 --> 00:02:37,958
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+27
+00:02:37,958 --> 00:02:46,030
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+28
+00:02:46,030 --> 00:02:51,138
+On the stock track: Vertex Pharmaceuticals, ticker VRTX.
+
+29
+00:02:51,138 --> 00:02:56,612
+The plan in plain English: it last closed at 546.70 dollars.
+
+30
+00:02:56,612 --> 00:03:06,463
+The system would only buy strength — a buy-stop at 561.67, nothing happens unless price proves itself first.
+
+31
+00:03:06,463 --> 00:03:14,765
+If it triggers, the exit is a weekly close below 486.35, and the measured target is 636.38.
+
+32
+00:03:14,765 --> 00:03:19,941
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+33
+00:03:19,941 --> 00:03:21,060
+That's the deal.
+
+34
+00:03:21,034 --> 00:03:23,315
+Turning to the model book.
+
+35
+00:03:23,315 --> 00:03:34,367
+The system holds 6 positions with 30% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+36
+00:03:34,367 --> 00:03:42,701
+New to the book: AppFolio (APPF), Target (TGT) — each passed the full entry gauntlet overnight.
+
+37
+00:03:42,701 --> 00:03:58,490
+Rotated out: Coca-Cola Europacific Partners (CCEP), which still advancing, but outranked by stronger names; Medtronic (MDT), which still advancing, but outranked by stronger names.
+
+38
+00:03:58,490 --> 00:04:15,332
+Left on the bench: AbbVie (ABBV), earnings inside the blackout window; Arch Capital Group (ACGL), earnings inside the blackout window; Eli Lilly and (LLY), earnings inside the blackout window.
+
+39
+00:04:15,332 --> 00:04:20,332
+Passing the scan is not enough; the book must afford you.
+
+40
+00:04:20,332 --> 00:04:22,917
+Today's lesson is position management.
+
+41
+00:04:22,917 --> 00:04:24,210
+Cash is a position.
+
+42
+00:04:24,210 --> 00:04:31,899
+The system sizes deployment by rule, and when its own forward record weakens, a throttle automatically cuts size.
+
+43
+00:04:31,899 --> 00:04:35,845
+Rotation is not indecision; it is the portfolio breathing.
+
+44
+00:04:35,845 --> 00:04:40,812
+Names that stop qualifying leave, and names that start qualifying arrive.
+
+45
+00:04:40,765 --> 00:04:48,701
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+46
+00:04:48,701 --> 00:04:55,876
+6 positions, led by BlackRock, ticker BLK, Target, ticker TGT, AppFolio, ticker APPF.
+
+47
+00:04:55,876 --> 00:05:07,358
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+48
+00:05:07,328 --> 00:05:09,646
+Over to the sports desk.
+
+49
+00:05:09,646 --> 00:05:19,207
+Day 90 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+50
+00:05:19,207 --> 00:05:25,677
+In first place, the live self-rebuilding book, in blue, at 107,737.
+
+51
+00:05:25,677 --> 00:05:31,375
+Then the index fund, in gray, 5.4 thousand back at 102,321.
+
+52
+00:05:31,375 --> 00:05:38,812
+Then the frozen first portfolio, the green line, 9.9 thousand back at 97,824.
+
+53
+00:05:38,812 --> 00:05:41,516
+The race has no finish line.
+
+54
+00:05:41,516 --> 00:05:45,958
+Same books, same dollars, back at it tomorrow.
+
+55
+00:05:45,958 --> 00:05:50,980
+Every line starts the same day with the same dollar.
+
+56
+00:05:50,980 --> 00:05:52,912
+Nothing is restated.
+
+57
+00:05:52,912 --> 00:06:01,819
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+58
+00:06:01,781 --> 00:06:03,330
+Tonight's takeaway.
+
+59
+00:06:03,330 --> 00:06:05,613
+A portfolio is not a museum.
+
+60
+00:06:05,613 --> 00:06:13,928
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+61
+00:06:13,902 --> 00:06:16,788
+Before we close, the disclosure segment.
+
+62
+00:06:16,788 --> 00:06:26,890
+Everything you heard today concerns one simulated portfolio of 6 positions — the same book, line for line, as this morning's emailed report.
+
+63
+00:06:26,890 --> 00:06:28,766
+One record, every surface.
+
+64
+00:06:28,766 --> 00:06:30,852
+A word on how this desk works.
+
+65
+00:06:30,852 --> 00:06:48,379
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+66
+00:06:48,379 --> 00:06:56,795
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+67
+00:06:56,795 --> 00:06:59,728
+All figures are simulated paper trading.
+
+68
+00:06:59,728 --> 00:07:06,106
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+69
+00:07:06,106 --> 00:07:10,065
+From the OROS Market Desk, have a disciplined session.
