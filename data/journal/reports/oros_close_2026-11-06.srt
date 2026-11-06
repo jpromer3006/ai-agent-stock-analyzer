@@ -1,0 +1,143 @@
+1
+00:00:00,000 --> 00:00:03,105
+Good evening from the OROS closing desk.
+
+2
+00:00:03,105 --> 00:00:09,005
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:09,005 --> 00:00:13,740
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,740 --> 00:00:18,676
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,676 --> 00:00:24,085
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:24,050 --> 00:00:28,048
+On the day, the book is up 1,389 dollars.
+
+7
+00:00:28,048 --> 00:00:31,558
+BlackRock (BLK) leads, +5.4 percent.
+
+8
+00:00:31,558 --> 00:00:36,824
+The checklist is clear: nothing requires action today.
+
+9
+00:00:36,824 --> 00:00:40,350
+On screen, the day's gainers and laggards inside the paper book.
+
+10
+00:00:40,307 --> 00:00:47,517
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+11
+00:00:47,517 --> 00:00:53,960
+6 positions, led by BlackRock, ticker BLK, 3M, ticker MMM, Dollar Tree, ticker DLTR.
+
+12
+00:00:53,960 --> 00:01:04,392
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+13
+00:01:04,363 --> 00:01:09,164
+Now the part that makes this system different: the loop.
+
+14
+00:01:09,164 --> 00:01:11,564
+Every morning OROS proposes.
+
+15
+00:01:11,564 --> 00:01:22,108
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+16
+00:01:22,108 --> 00:01:26,051
+Inside the book today: 6 positions up, 0 down.
+
+17
+00:01:26,051 --> 00:01:28,451
+Best, DLTR at +9.64 percent.
+
+18
+00:01:28,451 --> 00:01:30,251
+Worst, CTAS at +2.36.
+
+19
+00:01:30,251 --> 00:01:35,223
+Both go in the journal — wins and losses get the same ink.
+
+20
+00:01:35,223 --> 00:01:42,424
+The honest scoreboard reads: expectancy -2.95% per trade over 1258 graded positions.
+
+21
+00:01:42,424 --> 00:01:49,453
+Because that record is soft, the system has throttled itself to 50% position size.
+
+22
+00:01:49,453 --> 00:01:54,597
+Nobody told it to — full size must be earned back with wins.
+
+23
+00:01:54,597 --> 00:02:06,770
+What tonight's read hands to tomorrow's open: 0 names close the day in Stage 2; position size stays cut to 50% until the record earns it back.
+
+24
+00:02:06,732 --> 00:02:08,902
+Over to the sports desk.
+
+25
+00:02:08,902 --> 00:02:17,852
+Day 90 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+26
+00:02:17,852 --> 00:02:23,909
+In first place, the live self-rebuilding book, in blue, at 109,353.
+
+27
+00:02:23,909 --> 00:02:29,243
+Then the index fund, in gray, 7.0 thousand back at 102,321.
+
+28
+00:02:29,243 --> 00:02:36,295
+Then the frozen first portfolio, the green line, 10.1 thousand back at 99,285.
+
+29
+00:02:36,295 --> 00:02:38,826
+The race has no finish line.
+
+30
+00:02:38,826 --> 00:02:42,985
+Same books, same dollars, back at it tomorrow.
+
+31
+00:02:42,985 --> 00:02:47,686
+Every line starts the same day with the same dollar.
+
+32
+00:02:47,686 --> 00:02:49,494
+Nothing is restated.
+
+33
+00:02:49,494 --> 00:02:58,402
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+34
+00:02:58,364 --> 00:03:05,699
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+35
+00:03:05,699 --> 00:03:07,941
+Nothing here is financial advice.
+
+36
+00:03:07,941 --> 00:03:10,929
+From the closing desk — see you at the open.
