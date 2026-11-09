@@ -1,0 +1,290 @@
+{
+ "timestamp": "2026-11-09T20:48:24.645671Z",
+ "date": "2026-11-09",
+ "regime": "neutral",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 67812.29,
+ "cash": 32187.71,
+ "weights": {
+  "canslim": 0.165,
+  "value": 0.045,
+  "swing": 0.111,
+  "ipo": 0.082,
+  "weinstein": 0.185,
+  "growth": 0.082,
+  "technical": 0.123,
+  "sepa": 0.206
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "MMM",
+   "sector": "Health Care",
+   "conviction": 0.7784,
+   "shares": 24,
+   "dollars": 4547.76,
+   "weight_pct": 4.55,
+   "entry": 189.49,
+   "stop": 169.29,
+   "led_by": "sepa",
+   "sentiment": 0.137,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "APPF",
+   "sector": "Information Technology",
+   "conviction": 0.7482,
+   "shares": 28,
+   "dollars": 6443.64,
+   "weight_pct": 6.44,
+   "entry": 230.13,
+   "stop": 212.49,
+   "led_by": "technical",
+   "sentiment": 0.157,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "BLK",
+   "sector": "Financials",
+   "conviction": 0.7312,
+   "shares": 4,
+   "dollars": 4887.24,
+   "weight_pct": 4.89,
+   "entry": 1221.81,
+   "stop": 1105.49,
+   "led_by": "sepa",
+   "sentiment": 0.055,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "TGT",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.7278,
+   "shares": 50,
+   "dollars": 8322.5,
+   "weight_pct": 8.32,
+   "entry": 166.45,
+   "stop": 156.48,
+   "led_by": "sepa",
+   "sentiment": 0.108,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "DSGX",
+   "sector": "Information Technology",
+   "conviction": 0.7224,
+   "shares": 46,
+   "dollars": 4360.8,
+   "weight_pct": 4.36,
+   "entry": 94.8,
+   "stop": 84.05,
+   "led_by": "sepa",
+   "sentiment": 0.106,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "WFC",
+   "sector": "Financials",
+   "conviction": 0.7179,
+   "shares": 139,
+   "dollars": 11919.25,
+   "weight_pct": 11.92,
+   "entry": 85.75,
+   "stop": 82.49,
+   "led_by": "technical",
+   "sentiment": 0.337,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MDT",
+   "sector": "Health Care",
+   "conviction": 0.7168,
+   "shares": 47,
+   "dollars": 4846.64,
+   "weight_pct": 4.85,
+   "entry": 103.12,
+   "stop": 92.68,
+   "led_by": "technical",
+   "sentiment": 0.101,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "DLTR",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.7137,
+   "shares": 33,
+   "dollars": 4541.46,
+   "weight_pct": 4.54,
+   "entry": 137.62,
+   "stop": 122.52,
+   "led_by": "technical",
+   "sentiment": 0.133,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "COLB",
+   "sector": "Financials",
+   "conviction": 0.7075,
+   "shares": 362,
+   "dollars": 11240.1,
+   "weight_pct": 11.24,
+   "entry": 31.05,
+   "stop": 29.67,
+   "led_by": "technical",
+   "sentiment": 0.216,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CTAS",
+   "sector": "Industrials",
+   "conviction": 0.6998,
+   "shares": 30,
+   "dollars": 6702.9,
+   "weight_pct": 6.7,
+   "entry": 223.43,
+   "stop": 206.85,
+   "led_by": "sepa",
+   "sentiment": 0.064,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "MA",
+   "sector": "Financials",
+   "composite": 0.795,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "V",
+   "sector": "Financials",
+   "composite": 0.793,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "ABNB",
+   "sector": "Consumer Discretionary",
+   "composite": 0.783,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "ADP",
+   "sector": "Information Technology",
+   "composite": 0.761,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "ABBV",
+   "sector": "Health Care",
+   "composite": 0.76,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "BTSG",
+   "sector": "Health Care",
+   "composite": 0.759,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "MDLZ",
+   "sector": "Consumer Staples",
+   "composite": 0.758,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "MET",
+   "sector": "Financials",
+   "composite": 0.746,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "PYPL",
+   "sector": "Financials",
+   "composite": 0.745,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "LLY",
+   "sector": "Health Care",
+   "composite": 0.74,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "BRKR",
+   "sector": "Health Care",
+   "composite": 0.737,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "DRH",
+   "sector": "Real Estate",
+   "composite": 0.736,
+   "reason": "earnings inside the blackout window"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = NEUTRAL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "10 holdings, 68% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 32%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "COLB",
+   "DSGX",
+   "MDT",
+   "WFC"
+  ],
+  "removed": [],
+  "unchanged": [
+   "APPF",
+   "BLK",
+   "CTAS",
+   "DLTR",
+   "MMM",
+   "TGT"
+  ]
+ }
+}
