@@ -668,6 +668,19 @@
      "home_run_flag": false
     }
    ]
+  },
+  {
+   "date": "2026-11-10",
+   "picks": [
+    {
+     "ticker": "PSA",
+     "buy_stop": 344.47,
+     "stop_loss": 306.74,
+     "target": 390.4,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }

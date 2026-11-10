@@ -1,0 +1,275 @@
+1
+00:00:00,000 --> 00:00:00,980
+Good morning.
+
+2
+00:00:00,980 --> 00:00:06,858
+From the OROS Market Desk, here is the rundown for Tuesday, November 10, 2026.
+
+3
+00:00:06,858 --> 00:00:08,591
+The tape reads neutral.
+
+4
+00:00:08,591 --> 00:00:12,510
+Our top pick of the day: Public Storage, ticker PSA.
+
+5
+00:00:12,510 --> 00:00:17,785
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:17,785 --> 00:00:29,164
+And at the sports desk, day 92 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:29,164 --> 00:00:37,375
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:37,375 --> 00:00:44,722
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:46,680 --> 00:00:48,636
+First, the market open.
+
+10
+00:00:48,636 --> 00:00:54,761
+The S and P five hundred gained 2.4 percent, while the NASDAQ added 3.5.
+
+11
+00:00:54,761 --> 00:01:00,970
+The primary trend reads neutral; capital preservation leads the playbook.
+
+12
+00:01:00,970 --> 00:01:03,352
+The fear gauge sits at 21.2.
+
+13
+00:01:03,352 --> 00:01:12,640
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+14
+00:01:14,280 --> 00:01:23,301
+Now the chart of the day: Public Storage, ticker PSA, the top stock to clear every quality gate.
+
+15
+00:01:23,301 --> 00:01:35,893
+The entry trigger sits at 344.47, the exit at 306.74, and the objective at 390.40 — 1.2 dollars of potential reward per dollar risked.
+
+16
+00:01:35,893 --> 00:01:42,283
+At 26 shares, a failed trade costs about one percent of the account.
+
+17
+00:01:42,283 --> 00:01:53,502
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+18
+00:01:53,502 --> 00:02:02,652
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+19
+00:02:02,652 --> 00:02:08,301
+You buy only if the market pushes up through that line, proving demand.
+
+20
+00:02:08,301 --> 00:02:14,268
+If it never gets there, you never buy, and that is the plan protecting you.
+
+21
+00:02:14,268 --> 00:02:21,667
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+22
+00:02:21,667 --> 00:02:34,159
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+23
+00:02:34,159 --> 00:02:35,193
+Buy on proof.
+
+24
+00:02:35,193 --> 00:02:36,227
+Exit by rule.
+
+25
+00:02:36,227 --> 00:02:37,500
+Size to survive.
+
+26
+00:02:39,320 --> 00:02:44,872
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+27
+00:02:44,872 --> 00:02:52,927
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+28
+00:02:52,927 --> 00:02:57,421
+On the stock track: Public Storage, ticker PSA.
+
+29
+00:02:57,421 --> 00:03:03,157
+The plan in plain English: it last closed at 335.41 dollars.
+
+30
+00:03:03,157 --> 00:03:13,483
+The system would only buy strength — a buy-stop at 344.47, nothing happens unless price proves itself first.
+
+31
+00:03:13,483 --> 00:03:22,184
+If it triggers, the exit is a weekly close below 306.74, and the measured target is 390.40.
+
+32
+00:03:22,184 --> 00:03:27,339
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+33
+00:03:27,339 --> 00:03:28,453
+That's the deal.
+
+34
+00:03:30,120 --> 00:03:32,464
+Turning to the model book.
+
+35
+00:03:32,464 --> 00:03:43,914
+The system holds 10 positions with 67% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+36
+00:03:43,914 --> 00:03:53,020
+New to the book: argenx (ARGX), Coca-Cola Europacific Partners (CCEP), Eastern Bankshares (EBC), U.S.
+
+37
+00:03:53,020 --> 00:03:58,610
+Bancorp (USB) — each passed the full entry gauntlet overnight.
+
+38
+00:03:58,610 --> 00:04:27,550
+Rotated out: AppFolio (APPF), which still advancing, but outranked by stronger names; Columbia Banking System (COLB), which still advancing, but outranked by stronger names; Cintas (CTAS), which still advancing, but outranked by stronger names; Wells Fargo & (WFC), which still advancing, but outranked by stronger names.
+
+39
+00:04:27,550 --> 00:04:43,418
+Left on the bench: Airbnb (ABNB), earnings inside the blackout window; Mastercard (MA), earnings inside the blackout window; MetLife (MET), earnings inside the blackout window.
+
+40
+00:04:43,418 --> 00:04:48,557
+Passing the scan is not enough; the book must afford you.
+
+41
+00:04:48,557 --> 00:04:54,548
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+42
+00:04:56,600 --> 00:05:04,233
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+43
+00:05:04,233 --> 00:05:11,378
+10 positions, led by 3M, ticker MMM, Target, ticker TGT, Eastern Bankshares, ticker EBC.
+
+44
+00:05:11,378 --> 00:05:22,421
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+45
+00:05:24,040 --> 00:05:26,326
+Over to the sports desk.
+
+46
+00:05:26,326 --> 00:05:35,755
+Day 92 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+47
+00:05:35,755 --> 00:05:42,136
+In first place, the live self-rebuilding book, in blue, at 108,525.
+
+48
+00:05:42,136 --> 00:05:47,755
+Then the index fund, in gray, 8.1 thousand back at 100,436.
+
+49
+00:05:47,755 --> 00:05:55,089
+Then the frozen first portfolio, the green line, 9.4 thousand back at 99,158.
+
+50
+00:05:55,089 --> 00:05:57,755
+The race has no finish line.
+
+51
+00:05:57,755 --> 00:06:02,136
+Same books, same dollars, back at it tomorrow.
+
+52
+00:06:02,136 --> 00:06:07,089
+Every line starts the same day with the same dollar.
+
+53
+00:06:07,089 --> 00:06:08,994
+Nothing is restated.
+
+54
+00:06:08,994 --> 00:06:17,864
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+55
+00:06:19,720 --> 00:06:21,266
+Tonight's takeaway.
+
+56
+00:06:21,266 --> 00:06:23,543
+A portfolio is not a museum.
+
+57
+00:06:23,543 --> 00:06:31,841
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+58
+00:06:33,560 --> 00:06:36,279
+Before we close, the disclosure segment.
+
+59
+00:06:36,279 --> 00:06:45,864
+Everything you heard today concerns one simulated portfolio of 10 positions — the same book, line for line, as this morning's emailed report.
+
+60
+00:06:45,864 --> 00:06:47,631
+One record, every surface.
+
+61
+00:06:47,631 --> 00:06:49,545
+Today's lesson is provenance.
+
+62
+00:06:49,545 --> 00:06:57,664
+Every number in this episode was read from one journaled record, the same record that was emailed as this morning's report.
+
+63
+00:06:57,664 --> 00:07:05,650
+When the video, the email, and the app cannot disagree, trust stops being a promise and becomes a property of the system.
+
+64
+00:07:05,650 --> 00:07:07,735
+A word on how this desk works.
+
+65
+00:07:07,735 --> 00:07:25,245
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+66
+00:07:25,245 --> 00:07:33,653
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+67
+00:07:33,653 --> 00:07:36,578
+All figures are simulated paper trading.
+
+68
+00:07:36,578 --> 00:07:42,940
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+69
+00:07:42,940 --> 00:07:46,889
+From the OROS Market Desk, have a disciplined session.
