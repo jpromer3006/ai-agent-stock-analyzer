@@ -98,9 +98,9 @@
       "led_by": "weinstein",
       "sentiment": 0.152,
       "earnings_risk": false,
-      "outcome_return": 0.144,
+      "outcome_return": 0.1365,
       "outcome_exit": "open",
-      "outcome_days": 76,
+      "outcome_days": 77,
       "outcome_final": false
     }
   ],
