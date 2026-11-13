@@ -1,0 +1,283 @@
+{
+ "timestamp": "2026-11-13T17:50:04.751098Z",
+ "date": "2026-11-13",
+ "regime": "neutral",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 66359.08,
+ "cash": 33640.92,
+ "weights": {
+  "technical": 0.123,
+  "swing": 0.111,
+  "weinstein": 0.185,
+  "growth": 0.082,
+  "sepa": 0.206,
+  "canslim": 0.165,
+  "ipo": 0.082,
+  "value": 0.045
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "DLTR",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.7834,
+   "shares": 31,
+   "dollars": 4318.61,
+   "weight_pct": 4.32,
+   "entry": 139.31,
+   "stop": 123.37,
+   "led_by": "sepa",
+   "sentiment": 0.081,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "PYPL",
+   "sector": "Financials",
+   "conviction": 0.7595,
+   "shares": 134,
+   "dollars": 7950.22,
+   "weight_pct": 7.95,
+   "entry": 59.33,
+   "stop": 55.61,
+   "led_by": "sepa",
+   "sentiment": 0.064,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "TGT",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.7569,
+   "shares": 63,
+   "dollars": 10134.81,
+   "weight_pct": 10.13,
+   "entry": 160.87,
+   "stop": 153.05,
+   "led_by": "sepa",
+   "sentiment": 0.104,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ACGL",
+   "sector": "Financials",
+   "conviction": 0.743,
+   "shares": 47,
+   "dollars": 5186.92,
+   "weight_pct": 5.19,
+   "entry": 110.36,
+   "stop": 99.89,
+   "led_by": "sepa",
+   "sentiment": 0.075,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MDLZ",
+   "sector": "Consumer Staples",
+   "conviction": 0.7423,
+   "shares": 99,
+   "dollars": 6672.6,
+   "weight_pct": 6.67,
+   "entry": 67.4,
+   "stop": 62.37,
+   "led_by": "sepa",
+   "sentiment": 0.24,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "BLK",
+   "sector": "Financials",
+   "conviction": 0.7355,
+   "shares": 4,
+   "dollars": 4872.92,
+   "weight_pct": 4.87,
+   "entry": 1218.23,
+   "stop": 1113.13,
+   "led_by": "sepa",
+   "sentiment": 0.106,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ADP",
+   "sector": "Information Technology",
+   "conviction": 0.7183,
+   "shares": 17,
+   "dollars": 5260.82,
+   "weight_pct": 5.26,
+   "entry": 309.46,
+   "stop": 281.23,
+   "led_by": "sepa",
+   "sentiment": 0.188,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ARGX",
+   "sector": "Health Care",
+   "conviction": 0.7149,
+   "shares": 10,
+   "dollars": 9725.8,
+   "weight_pct": 9.73,
+   "entry": 972.58,
+   "stop": 924.13,
+   "led_by": "sepa",
+   "sentiment": 0.118,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "BIIB",
+   "sector": "Health Care",
+   "conviction": 0.7004,
+   "shares": 27,
+   "dollars": 6793.2,
+   "weight_pct": 6.79,
+   "entry": 251.6,
+   "stop": 233.31,
+   "led_by": "sepa",
+   "sentiment": 0.038,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CCEP",
+   "sector": "Consumer Staples",
+   "conviction": 0.6957,
+   "shares": 46,
+   "dollars": 5443.18,
+   "weight_pct": 5.44,
+   "entry": 118.33,
+   "stop": 107.62,
+   "led_by": "sepa",
+   "sentiment": 0.099,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "ABNB",
+   "sector": "Consumer Discretionary",
+   "composite": 0.798,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "MET",
+   "sector": "Financials",
+   "composite": 0.775,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "ABBV",
+   "sector": "Health Care",
+   "composite": 0.758,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "AIG",
+   "sector": "Financials",
+   "composite": 0.74,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "CDW",
+   "sector": "Consumer Discretionary",
+   "composite": 0.738,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "DRH",
+   "sector": "Real Estate",
+   "composite": 0.736,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "BTSG",
+   "sector": "Health Care",
+   "composite": 0.727,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "MA",
+   "sector": "Financials",
+   "composite": 0.723,
+   "reason": "sector cap \u2014 already 3 in Financials"
+  },
+  {
+   "ticker": "USB",
+   "sector": "Financials",
+   "composite": 0.718,
+   "reason": "sector cap \u2014 already 3 in Financials"
+  },
+  {
+   "ticker": "ACIW",
+   "sector": "Information Technology",
+   "composite": 0.688,
+   "reason": "outranked \u2014 book full at 10"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = NEUTRAL"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: sepa 21%, weinstein 18%, canslim 16%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "10 holdings, 66% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 34%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "BIIB",
+   "CCEP",
+   "MDLZ",
+   "PYPL"
+  ],
+  "removed": [
+   "DSGX",
+   "MMM",
+   "TMO",
+   "WELL"
+  ],
+  "unchanged": [
+   "ACGL",
+   "ADP",
+   "ARGX",
+   "BLK",
+   "DLTR",
+   "TGT"
+  ]
+ }
+}
