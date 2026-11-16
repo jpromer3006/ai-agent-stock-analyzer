@@ -1,0 +1,203 @@
+1
+00:00:00,000 --> 00:00:01,101
+Good morning.
+
+2
+00:00:01,101 --> 00:00:07,624
+From the OROS Market Desk, here is the rundown for Monday, November 16, 2026.
+
+3
+00:00:07,624 --> 00:00:09,318
+The tape reads bear.
+
+4
+00:00:09,318 --> 00:00:16,095
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:16,095 --> 00:00:28,886
+And at the sports desk, day 96 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:28,886 --> 00:00:37,096
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:37,096 --> 00:00:44,443
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:46,240 --> 00:00:48,166
+First, the market open.
+
+9
+00:00:48,166 --> 00:00:54,195
+The S and P five hundred slipped 0.4 percent, while the NASDAQ lost 0.3.
+
+10
+00:00:54,195 --> 00:01:00,056
+The primary trend reads bear; capital preservation leads the playbook.
+
+11
+00:01:00,056 --> 00:01:02,401
+The fear gauge sits at 23.8.
+
+12
+00:01:02,401 --> 00:01:11,689
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+13
+00:01:13,120 --> 00:01:21,800
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+14
+00:01:21,800 --> 00:01:25,898
+Forcing a pick on a weak tape is how systems bleed.
+
+15
+00:01:25,898 --> 00:01:26,541
+We wait.
+
+16
+00:01:28,480 --> 00:01:30,607
+Turning to the model book.
+
+17
+00:01:30,607 --> 00:01:40,915
+The system holds 6 positions with 30% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+18
+00:01:40,915 --> 00:01:49,751
+New to the book: AbbVie (ABBV), Cincinnati Financial (CINF) — each passed the full entry gauntlet overnight.
+
+19
+00:01:49,751 --> 00:02:17,566
+Rotated out: Automatic Data Processing (ADP), which still advancing, but outranked by stronger names; Biogen (BIIB), which still advancing, but outranked by stronger names; BlackRock (BLK), which still advancing, but outranked by stronger names; Coca-Cola Europacific Partners (CCEP), which still advancing, but outranked by stronger names.
+
+20
+00:02:17,566 --> 00:02:34,173
+Left on the bench: American International Group (AIG), earnings inside the blackout window; CDW Corporation (CDW), earnings inside the blackout window; Airbnb (ABNB), earnings inside the blackout window.
+
+21
+00:02:34,173 --> 00:02:38,836
+Passing the scan is not enough; the book must afford you.
+
+22
+00:02:38,836 --> 00:02:41,416
+Today's lesson is position management.
+
+23
+00:02:41,416 --> 00:02:42,706
+Cash is a position.
+
+24
+00:02:42,706 --> 00:02:50,377
+The system sizes deployment by rule, and when its own forward record weakens, a throttle automatically cuts size.
+
+25
+00:02:50,377 --> 00:02:54,314
+Rotation is not indecision; it is the portfolio breathing.
+
+26
+00:02:54,314 --> 00:02:59,270
+Names that stop qualifying leave, and names that start qualifying arrive.
+
+27
+00:03:00,880 --> 00:03:08,398
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+28
+00:03:08,398 --> 00:03:15,916
+6 positions, led by Arch Capital Group, ticker ACGL, AbbVie, ticker ABBV, argenx, ticker ARGX.
+
+29
+00:03:15,916 --> 00:03:26,793
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+30
+00:03:28,560 --> 00:03:30,900
+Over to the sports desk.
+
+31
+00:03:30,900 --> 00:03:40,553
+Day 96 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+32
+00:03:40,553 --> 00:03:47,086
+In first place, the live self-rebuilding book, in blue, at 107,952.
+
+33
+00:03:47,086 --> 00:03:52,839
+Then the index fund, in gray, 6.9 thousand back at 101,028.
+
+34
+00:03:52,839 --> 00:04:00,346
+Then the frozen first portfolio, the green line, 9.5 thousand back at 98,494.
+
+35
+00:04:00,346 --> 00:04:03,076
+The race has no finish line.
+
+36
+00:04:03,076 --> 00:04:07,562
+Same books, same dollars, back at it tomorrow.
+
+37
+00:04:07,562 --> 00:04:12,632
+Every line starts the same day with the same dollar.
+
+38
+00:04:12,632 --> 00:04:14,582
+Nothing is restated.
+
+39
+00:04:14,582 --> 00:04:23,452
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+40
+00:04:24,960 --> 00:04:26,506
+Tonight's takeaway.
+
+41
+00:04:26,506 --> 00:04:28,783
+A portfolio is not a museum.
+
+42
+00:04:28,783 --> 00:04:37,081
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+43
+00:04:39,200 --> 00:04:42,077
+Before we close, the disclosure segment.
+
+44
+00:04:42,077 --> 00:04:52,145
+Everything you heard today concerns one simulated portfolio of 6 positions — the same book, line for line, as this morning's emailed report.
+
+45
+00:04:52,145 --> 00:04:54,014
+One record, every surface.
+
+46
+00:04:54,014 --> 00:04:56,099
+A word on how this desk works.
+
+47
+00:04:56,099 --> 00:05:13,610
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+48
+00:05:13,610 --> 00:05:22,018
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+49
+00:05:22,018 --> 00:05:24,943
+All figures are simulated paper trading.
+
+50
+00:05:24,943 --> 00:05:31,304
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+51
+00:05:31,304 --> 00:05:35,253
+From the OROS Market Desk, have a disciplined session.

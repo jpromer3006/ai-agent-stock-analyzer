@@ -197,9 +197,9 @@
       "led_by": "sepa",
       "sentiment": 0.171,
       "earnings_risk": false,
-      "outcome_return": -0.02,
-      "outcome_exit": "horizon",
-      "outcome_days": 20,
+      "outcome_return": -0.0343,
+      "outcome_exit": "stop",
+      "outcome_days": 1,
       "outcome_final": true
     },
     {
@@ -286,9 +286,9 @@
       "summary": "within limits; cash 34%"
     }
   ],
-  "realized_avg_return": -0.0386,
+  "realized_avg_return": -0.0399,
   "realized_hit_rate": 0.364,
   "horizon_days": 20,
   "realized_final_count": 11,
-  "realized_stop_exits": 6
+  "realized_stop_exits": 7
 }
