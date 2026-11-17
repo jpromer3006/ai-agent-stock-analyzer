@@ -1,0 +1,147 @@
+1
+00:00:00,000 --> 00:00:03,096
+Good evening from the OROS closing desk.
+
+2
+00:00:03,096 --> 00:00:08,978
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:08,978 --> 00:00:13,700
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,700 --> 00:00:18,619
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,619 --> 00:00:24,009
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:25,280 --> 00:00:28,739
+On the day, the book is down 49 dollars.
+
+7
+00:00:28,739 --> 00:00:32,718
+Arch Capital Group (ACGL) leads, +1.2 percent.
+
+8
+00:00:32,718 --> 00:00:35,053
+argenx (ARGX) lags at -0.9.
+
+9
+00:00:35,053 --> 00:00:39,723
+The checklist is clear: nothing requires action today.
+
+10
+00:00:39,723 --> 00:00:43,206
+On screen, the day's gainers and laggards inside the paper book.
+
+11
+00:00:45,040 --> 00:00:52,558
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+12
+00:00:52,558 --> 00:01:00,076
+6 positions, led by Arch Capital Group, ticker ACGL, AbbVie, ticker ABBV, argenx, ticker ARGX.
+
+13
+00:01:00,076 --> 00:01:10,953
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+14
+00:01:12,720 --> 00:01:17,658
+Now the part that makes this system different: the loop.
+
+15
+00:01:17,658 --> 00:01:20,126
+Every morning OROS proposes.
+
+16
+00:01:20,126 --> 00:01:30,972
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+17
+00:01:30,972 --> 00:01:35,028
+Inside the book today: 2 positions up, 3 down.
+
+18
+00:01:35,028 --> 00:01:37,496
+Best, ACGL at +1.17 percent.
+
+19
+00:01:37,496 --> 00:01:39,348
+Worst, ARGX at -0.95.
+
+20
+00:01:39,348 --> 00:01:44,462
+Both go in the journal — wins and losses get the same ink.
+
+21
+00:01:44,462 --> 00:01:51,868
+The honest scoreboard reads: expectancy -2.76% per trade over 1328 graded positions.
+
+22
+00:01:51,868 --> 00:01:59,099
+Because that record is soft, the system has throttled itself to 50% position size.
+
+23
+00:01:59,099 --> 00:02:04,389
+Nobody told it to — full size must be earned back with wins.
+
+24
+00:02:04,389 --> 00:02:17,086
+What tonight's read hands to tomorrow's open: 170 names close the day in Stage 2; position size stays cut to 50% until the record earns it back.
+
+25
+00:02:18,720 --> 00:02:20,963
+Over to the sports desk.
+
+26
+00:02:20,963 --> 00:02:30,217
+Day 97 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+27
+00:02:30,217 --> 00:02:36,480
+In first place, the live self-rebuilding book, in blue, at 107,899.
+
+28
+00:02:36,480 --> 00:02:41,901
+Then the index fund, in gray, 9.2 thousand back at 98,736.
+
+29
+00:02:41,901 --> 00:02:49,098
+Then the frozen first portfolio, the green line, 9.3 thousand back at 98,594.
+
+30
+00:02:49,098 --> 00:02:51,715
+The race has no finish line.
+
+31
+00:02:51,715 --> 00:02:56,015
+Same books, same dollars, back at it tomorrow.
+
+32
+00:02:56,015 --> 00:03:00,876
+Every line starts the same day with the same dollar.
+
+33
+00:03:00,876 --> 00:03:02,745
+Nothing is restated.
+
+34
+00:03:02,745 --> 00:03:11,615
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+35
+00:03:13,440 --> 00:03:20,760
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+36
+00:03:20,760 --> 00:03:22,997
+Nothing here is financial advice.
+
+37
+00:03:22,997 --> 00:03:25,979
+From the closing desk — see you at the open.
