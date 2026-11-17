@@ -1,195 +1,213 @@
 {
- "timestamp": "2026-11-16T20:34:09.757850Z",
- "date": "2026-11-16",
- "regime": "bear",
- "mandate": "swing_momentum",
- "account": 100000.0,
- "invested": 29619.84,
- "cash": 70380.16,
- "weights": {
-  "value": 0.099,
-  "growth": 0.118,
-  "ipo": 0.033,
-  "sepa": 0.164,
-  "technical": 0.138,
-  "weinstein": 0.237,
-  "swing": 0.079,
-  "canslim": 0.132
- },
- "note": "nightly run (cloud)",
- "holdings": [
-  {
-   "ticker": "ACGL",
-   "sector": "Financials",
-   "conviction": 0.758,
-   "shares": 31,
-   "dollars": 3431.08,
-   "weight_pct": 3.43,
-   "entry": 110.68,
-   "stop": 100.13,
-   "led_by": "sepa",
-   "sentiment": 0.075,
-   "earnings_risk": false,
-   "outcome_return": null
+  "timestamp": "2026-11-16T20:34:09.757850Z",
+  "date": "2026-11-16",
+  "regime": "bear",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 29619.84,
+  "cash": 70380.16,
+  "weights": {
+    "value": 0.099,
+    "growth": 0.118,
+    "ipo": 0.033,
+    "sepa": 0.164,
+    "technical": 0.138,
+    "weinstein": 0.237,
+    "swing": 0.079,
+    "canslim": 0.132
   },
-  {
-   "ticker": "ABBV",
-   "sector": "Health Care",
-   "conviction": 0.7567,
-   "shares": 17,
-   "dollars": 5004.63,
-   "weight_pct": 5.0,
-   "entry": 294.39,
-   "stop": 275.39,
-   "led_by": "sepa",
-   "sentiment": 0.138,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ARGX",
-   "sector": "Health Care",
-   "conviction": 0.7402,
-   "shares": 7,
-   "dollars": 6677.51,
-   "weight_pct": 6.68,
-   "entry": 953.93,
-   "stop": 910.81,
-   "led_by": "sepa",
-   "sentiment": 0.15,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "CINF",
-   "sector": "Financials",
-   "conviction": 0.7189,
-   "shares": 18,
-   "dollars": 3444.84,
-   "weight_pct": 3.44,
-   "entry": 191.38,
-   "stop": 172.8,
-   "led_by": "sepa",
-   "sentiment": 0.203,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "TGT",
-   "sector": "Consumer Discretionary",
-   "conviction": 0.7123,
-   "shares": 42,
-   "dollars": 6732.18,
-   "weight_pct": 6.73,
-   "entry": 160.29,
-   "stop": 152.45,
-   "led_by": "sepa",
-   "sentiment": 0.089,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "MDLZ",
-   "sector": "Consumer Staples",
-   "conviction": 0.6987,
-   "shares": 64,
-   "dollars": 4329.6,
-   "weight_pct": 4.33,
-   "entry": 67.65,
-   "stop": 62.51,
-   "led_by": "sepa",
-   "sentiment": 0.142,
-   "earnings_risk": false,
-   "outcome_return": null
-  }
- ],
- "bench": [
-  {
-   "ticker": "AIG",
-   "sector": "Financials",
-   "composite": 0.759,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "CDW",
-   "sector": "Consumer Discretionary",
-   "composite": 0.75,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "ABNB",
-   "sector": "Consumer Discretionary",
-   "composite": 0.749,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "MET",
-   "sector": "Financials",
-   "composite": 0.739,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "DLTR",
-   "sector": "Consumer Discretionary",
-   "composite": 0.694,
-   "reason": "outranked \u2014 book full at 6"
-  }
- ],
- "agent_trace": [
-  {
-   "agent": "DataAgent",
-   "role": "universe & data",
-   "summary": "500 candidate names (benchmarks removed)"
-  },
-  {
-   "agent": "RegimeAgent",
-   "role": "market regime",
-   "summary": "regime = BEAR"
-  },
-  {
-   "agent": "RouterAgent",
-   "role": "strategy mandate weights",
-   "summary": "base weights: weinstein 24%, sepa 16%, technical 14%"
-  },
-  {
-   "agent": "MemoryAgent",
-   "role": "experience-weighted tilt",
-   "summary": "boosted weinstein x1.00, sepa x1.00"
-  },
-  {
-   "agent": "ConstructionAgent",
-   "role": "strategy ensemble + sizing",
-   "summary": "6 holdings, 30% invested, 8 strategies"
-  },
-  {
-   "agent": "RiskAgent",
-   "role": "post-construction risk",
-   "summary": "within limits; cash 70%"
-  }
- ],
- "horizon_days": 20,
- "realized_avg_return": null,
- "realized_hit_rate": null,
- "realized_final_count": 0,
- "realized_stop_exits": 0,
- "changes": {
-  "added": [
-   "ABBV",
-   "CINF"
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "ACGL",
+      "sector": "Financials",
+      "conviction": 0.758,
+      "shares": 31,
+      "dollars": 3431.08,
+      "weight_pct": 3.43,
+      "entry": 110.68,
+      "stop": 100.13,
+      "led_by": "sepa",
+      "sentiment": 0.075,
+      "earnings_risk": false,
+      "outcome_return": -0.0076,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ABBV",
+      "sector": "Health Care",
+      "conviction": 0.7567,
+      "shares": 17,
+      "dollars": 5004.63,
+      "weight_pct": 5.0,
+      "entry": 294.39,
+      "stop": 275.39,
+      "led_by": "sepa",
+      "sentiment": 0.138,
+      "earnings_risk": false,
+      "outcome_return": -0.0063,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ARGX",
+      "sector": "Health Care",
+      "conviction": 0.7402,
+      "shares": 7,
+      "dollars": 6677.51,
+      "weight_pct": 6.68,
+      "entry": 953.93,
+      "stop": 910.81,
+      "led_by": "sepa",
+      "sentiment": 0.15,
+      "earnings_risk": false,
+      "outcome_return": -0.0103,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CINF",
+      "sector": "Financials",
+      "conviction": 0.7189,
+      "shares": 18,
+      "dollars": 3444.84,
+      "weight_pct": 3.44,
+      "entry": 191.38,
+      "stop": 172.8,
+      "led_by": "sepa",
+      "sentiment": 0.203,
+      "earnings_risk": false,
+      "outcome_return": -0.0088,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "TGT",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.7123,
+      "shares": 42,
+      "dollars": 6732.18,
+      "weight_pct": 6.73,
+      "entry": 160.29,
+      "stop": 152.45,
+      "led_by": "sepa",
+      "sentiment": 0.089,
+      "earnings_risk": false,
+      "outcome_return": -0.0229,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "MDLZ",
+      "sector": "Consumer Staples",
+      "conviction": 0.6987,
+      "shares": 64,
+      "dollars": 4329.6,
+      "weight_pct": 4.33,
+      "entry": 67.65,
+      "stop": 62.51,
+      "led_by": "sepa",
+      "sentiment": 0.142,
+      "earnings_risk": false,
+      "outcome_return": -0.0066,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    }
   ],
-  "removed": [
-   "ADP",
-   "BIIB",
-   "BLK",
-   "CCEP",
-   "DLTR",
-   "PYPL"
+  "bench": [
+    {
+      "ticker": "AIG",
+      "sector": "Financials",
+      "composite": 0.759,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "CDW",
+      "sector": "Consumer Discretionary",
+      "composite": 0.75,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "ABNB",
+      "sector": "Consumer Discretionary",
+      "composite": 0.749,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "MET",
+      "sector": "Financials",
+      "composite": 0.739,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "DLTR",
+      "sector": "Consumer Discretionary",
+      "composite": 0.694,
+      "reason": "outranked \u2014 book full at 6"
+    }
   ],
-  "unchanged": [
-   "ACGL",
-   "ARGX",
-   "MDLZ",
-   "TGT"
-  ]
- }
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "500 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BEAR"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: weinstein 24%, sepa 16%, technical 14%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "6 holdings, 30% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 70%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0,
+  "changes": {
+    "added": [
+      "ABBV",
+      "CINF"
+    ],
+    "removed": [
+      "ADP",
+      "BIIB",
+      "BLK",
+      "CCEP",
+      "DLTR",
+      "PYPL"
+    ],
+    "unchanged": [
+      "ACGL",
+      "ARGX",
+      "MDLZ",
+      "TGT"
+    ]
+  }
 }

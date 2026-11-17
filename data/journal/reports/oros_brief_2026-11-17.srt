@@ -1,0 +1,199 @@
+1
+00:00:00,000 --> 00:00:01,096
+Good morning.
+
+2
+00:00:01,096 --> 00:00:07,674
+From the OROS Market Desk, here is the rundown for Tuesday, November 17, 2026.
+
+3
+00:00:07,674 --> 00:00:09,360
+The tape reads bear.
+
+4
+00:00:09,360 --> 00:00:16,106
+No setup cleared our bar today, and you will hear why that is a story in itself.
+
+5
+00:00:16,106 --> 00:00:28,839
+And at the sports desk, day 97 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+6
+00:00:28,839 --> 00:00:37,050
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+7
+00:00:37,050 --> 00:00:44,397
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+8
+00:00:46,360 --> 00:00:48,297
+First, the market open.
+
+9
+00:00:48,297 --> 00:00:54,361
+The S and P five hundred slipped 1.9 percent, while the NASDAQ lost 2.7.
+
+10
+00:00:54,361 --> 00:01:00,256
+The primary trend reads bear; capital preservation leads the playbook.
+
+11
+00:01:00,256 --> 00:01:02,614
+The fear gauge sits at 26.1.
+
+12
+00:01:02,614 --> 00:01:05,113
+Today's lesson is this market screen.
+
+13
+00:01:05,113 --> 00:01:12,069
+The gold line is the thirty week moving average, the single most useful trend filter in stage analysis.
+
+14
+00:01:12,069 --> 00:01:19,566
+When price holds above a rising gold line, the tide is coming in, and long trades get the benefit of the doubt.
+
+15
+00:01:19,566 --> 00:01:28,481
+When price sinks below a falling gold line, the tide is going out, and the first job becomes protecting capital, not finding heroes.
+
+16
+00:01:30,200 --> 00:01:38,880
+No pick of the day: nothing in the scan cleared every gate, and in this discipline, no setup means no trade.
+
+17
+00:01:38,880 --> 00:01:42,978
+Forcing a pick on a weak tape is how systems bleed.
+
+18
+00:01:42,978 --> 00:01:43,621
+We wait.
+
+19
+00:01:45,160 --> 00:01:47,534
+Turning to the model book.
+
+20
+00:01:47,534 --> 00:01:59,038
+The system holds 6 positions with 29% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+21
+00:01:59,038 --> 00:02:17,117
+New to the book: Apple (AAPL), Automatic Data Processing (ADP), Maplebear (CART), Coca-Cola Europacific Partners (CCEP), Coca-Cola Company (The) (KO) — each passed the full entry gauntlet overnight.
+
+22
+00:02:17,117 --> 00:02:46,882
+Rotated out: AbbVie (ABBV), which still advancing, but outranked by stronger names; argenx (ARGX), which still advancing, but outranked by stronger names; Cincinnati Financial (CINF), which still advancing, but outranked by stronger names; Mondelez International (MDLZ), which still advancing, but outranked by stronger names.
+
+23
+00:02:46,882 --> 00:03:03,408
+Left on the bench: Amneal Pharmaceuticals (AMRX), earnings inside the blackout window; Airbnb (ABNB), earnings inside the blackout window; Bruker (BRKR), outranked — book full at 6.
+
+24
+00:03:03,408 --> 00:03:08,613
+Passing the scan is not enough; the book must afford you.
+
+25
+00:03:08,613 --> 00:03:14,603
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+26
+00:03:16,440 --> 00:03:23,996
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+27
+00:03:23,996 --> 00:03:33,883
+6 positions, led by Apple, ticker AAPL, Automatic Data Processing, ticker ADP, Coca-Cola Europacific Partners, ticker CCEP.
+
+28
+00:03:33,883 --> 00:03:44,815
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+29
+00:03:46,760 --> 00:03:48,911
+Over to the sports desk.
+
+30
+00:03:48,911 --> 00:03:57,784
+Day 97 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+31
+00:03:57,784 --> 00:04:03,789
+In first place, the live self-rebuilding book, in blue, at 107,771.
+
+32
+00:04:03,789 --> 00:04:08,987
+Then the index fund, in gray, 9.0 thousand back at 98,736.
+
+33
+00:04:08,987 --> 00:04:15,888
+Then the frozen first portfolio, the green line, 9.8 thousand back at 97,962.
+
+34
+00:04:15,888 --> 00:04:18,398
+The race has no finish line.
+
+35
+00:04:18,398 --> 00:04:22,521
+Same books, same dollars, back at it tomorrow.
+
+36
+00:04:22,521 --> 00:04:27,181
+Every line starts the same day with the same dollar.
+
+37
+00:04:27,181 --> 00:04:28,974
+Nothing is restated.
+
+38
+00:04:28,974 --> 00:04:37,844
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+39
+00:04:39,800 --> 00:04:41,346
+Tonight's takeaway.
+
+40
+00:04:41,346 --> 00:04:43,623
+A portfolio is not a museum.
+
+41
+00:04:43,623 --> 00:04:51,921
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+42
+00:04:53,480 --> 00:04:56,357
+Before we close, the disclosure segment.
+
+43
+00:04:56,357 --> 00:05:06,425
+Everything you heard today concerns one simulated portfolio of 6 positions — the same book, line for line, as this morning's emailed report.
+
+44
+00:05:06,425 --> 00:05:08,294
+One record, every surface.
+
+45
+00:05:08,294 --> 00:05:10,379
+A word on how this desk works.
+
+46
+00:05:10,379 --> 00:05:27,890
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+47
+00:05:27,890 --> 00:05:36,298
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+48
+00:05:36,298 --> 00:05:39,223
+All figures are simulated paper trading.
+
+49
+00:05:39,223 --> 00:05:45,584
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+50
+00:05:45,584 --> 00:05:49,533
+From the OROS Market Desk, have a disciplined session.
