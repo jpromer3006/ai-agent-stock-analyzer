@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.115,
       "earnings_risk": false,
-      "outcome_return": 0.1522,
+      "outcome_return": 0.1,
       "outcome_exit": "open",
-      "outcome_days": 85,
+      "outcome_days": 86,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.323,
       "earnings_risk": false,
-      "outcome_return": 0.1243,
+      "outcome_return": 0.0809,
       "outcome_exit": "open",
-      "outcome_days": 85,
+      "outcome_days": 86,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.154,
       "earnings_risk": true,
-      "outcome_return": 0.1018,
+      "outcome_return": 0.0836,
       "outcome_exit": "open",
-      "outcome_days": 85,
+      "outcome_days": 86,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.08,
       "earnings_risk": false,
-      "outcome_return": 0.2269,
+      "outcome_return": 0.1746,
       "outcome_exit": "open",
-      "outcome_days": 85,
+      "outcome_days": 86,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.028,
       "earnings_risk": false,
-      "outcome_return": 0.2143,
+      "outcome_return": 0.2008,
       "outcome_exit": "open",
-      "outcome_days": 85,
+      "outcome_days": 86,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.272,
       "earnings_risk": false,
-      "outcome_return": 0.1337,
+      "outcome_return": 0.0914,
       "outcome_exit": "open",
-      "outcome_days": 85,
+      "outcome_days": 86,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "technical",
       "sentiment": 0.106,
       "earnings_risk": true,
-      "outcome_return": 0.0454,
+      "outcome_return": 0.038,
       "outcome_exit": "open",
-      "outcome_days": 85,
+      "outcome_days": 86,
       "outcome_final": false
     },
     {

@@ -1,0 +1,205 @@
+{
+ "timestamp": "2026-11-18T19:13:49.905085Z",
+ "date": "2026-11-18",
+ "regime": "bear",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 29643.86,
+ "cash": 70356.14,
+ "weights": {
+  "sepa": 0.164,
+  "value": 0.099,
+  "weinstein": 0.237,
+  "technical": 0.138,
+  "canslim": 0.132,
+  "ipo": 0.033,
+  "growth": 0.118,
+  "swing": 0.079
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "DLTR",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.7361,
+   "shares": 14,
+   "dollars": 1999.34,
+   "weight_pct": 2.0,
+   "entry": 142.81,
+   "stop": 124.29,
+   "led_by": "sepa",
+   "sentiment": 0.066,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AIG",
+   "sector": "Financials",
+   "conviction": 0.6937,
+   "shares": 100,
+   "dollars": 8075.0,
+   "weight_pct": 8.07,
+   "entry": 80.75,
+   "stop": 77.97,
+   "led_by": "sepa",
+   "sentiment": 0.221,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CINF",
+   "sector": "Financials",
+   "conviction": 0.6879,
+   "shares": 47,
+   "dollars": 8893.34,
+   "weight_pct": 8.89,
+   "entry": 189.22,
+   "stop": 183.39,
+   "led_by": "swing",
+   "sentiment": 0.218,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CCEP",
+   "sector": "Consumer Staples",
+   "conviction": 0.6689,
+   "shares": 26,
+   "dollars": 3091.4,
+   "weight_pct": 3.09,
+   "entry": 118.9,
+   "stop": 108.44,
+   "led_by": "sepa",
+   "sentiment": 0.06,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "KO",
+   "sector": "Consumer Staples",
+   "conviction": 0.6668,
+   "shares": 42,
+   "dollars": 4113.48,
+   "weight_pct": 4.11,
+   "entry": 97.94,
+   "stop": 91.43,
+   "led_by": "sepa",
+   "sentiment": 0.138,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CL",
+   "sector": "Materials",
+   "conviction": 0.6665,
+   "shares": 35,
+   "dollars": 3471.3,
+   "weight_pct": 3.47,
+   "entry": 99.18,
+   "stop": 91.37,
+   "led_by": "sepa",
+   "sentiment": -0.002,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "TGT",
+   "sector": "Consumer Discretionary",
+   "composite": 0.735,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "CDW",
+   "sector": "Consumer Discretionary",
+   "composite": 0.713,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "BRKR",
+   "sector": "Health Care",
+   "composite": 0.712,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "ABNB",
+   "sector": "Consumer Discretionary",
+   "composite": 0.695,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "ACGL",
+   "sector": "Financials",
+   "composite": 0.674,
+   "reason": "sector cap \u2014 already 2 in Financials"
+  },
+  {
+   "ticker": "PYPL",
+   "sector": "Financials",
+   "composite": 0.667,
+   "reason": "sector cap \u2014 already 2 in Financials"
+  },
+  {
+   "ticker": "ABBV",
+   "sector": "Health Care",
+   "composite": 0.665,
+   "reason": "outranked \u2014 book full at 6"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = BEAR"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: weinstein 24%, sepa 16%, technical 14%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "6 holdings, 30% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 70%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "AIG",
+   "CINF",
+   "CL",
+   "DLTR"
+  ],
+  "removed": [
+   "AAPL",
+   "ACGL",
+   "ADP",
+   "CART"
+  ],
+  "unchanged": [
+   "CCEP",
+   "KO"
+  ]
+ }
+}

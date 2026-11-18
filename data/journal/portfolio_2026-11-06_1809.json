@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.106,
       "earnings_risk": false,
-      "outcome_return": -0.0001,
+      "outcome_return": -0.0082,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.2,
       "earnings_risk": false,
-      "outcome_return": -0.0174,
+      "outcome_return": 0.065,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     },
     {
@@ -64,10 +64,10 @@
       "led_by": "technical",
       "sentiment": 0.157,
       "earnings_risk": false,
-      "outcome_return": -0.0769,
-      "outcome_exit": "open",
+      "outcome_return": -0.0839,
+      "outcome_exit": "stop",
       "outcome_days": 7,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "MMM",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.126,
       "earnings_risk": false,
-      "outcome_return": -0.0312,
+      "outcome_return": -0.0315,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.125,
       "earnings_risk": false,
-      "outcome_return": -0.0019,
+      "outcome_return": 0.0005,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "technical",
       "sentiment": 0.077,
       "earnings_risk": false,
-      "outcome_return": 0.0332,
+      "outcome_return": 0.0651,
       "outcome_exit": "open",
-      "outcome_days": 7,
+      "outcome_days": 8,
       "outcome_final": false
     }
   ],
@@ -228,10 +228,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": null,
-  "realized_hit_rate": null,
-  "realized_final_count": 0,
-  "realized_stop_exits": 0,
+  "realized_avg_return": -0.0839,
+  "realized_hit_rate": 0.0,
+  "realized_final_count": 1,
+  "realized_stop_exits": 1,
   "changes": {
     "added": [
       "APPF",
