@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:03,096
+Good evening from the OROS closing desk.
+
+2
+00:00:03,096 --> 00:00:08,978
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:08,978 --> 00:00:13,700
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,700 --> 00:00:18,619
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,619 --> 00:00:24,009
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:25,640 --> 00:00:29,381
+On the day, the book is down 189 dollars.
+
+7
+00:00:29,381 --> 00:00:32,758
+Maplebear (CART) leads, +0.7 percent.
+
+8
+00:00:32,758 --> 00:00:36,316
+Arch Capital Group (ACGL) lags at -1.5.
+
+9
+00:00:36,316 --> 00:00:41,244
+The checklist is clear: nothing requires action today.
+
+10
+00:00:41,244 --> 00:00:43,862
+Today's lesson is noise versus signal.
+
+11
+00:00:43,862 --> 00:00:47,514
+Daily moves are weather; the weekly trend is climate.
+
+12
+00:00:47,514 --> 00:00:50,546
+The system never exits on a scary afternoon.
+
+13
+00:00:50,546 --> 00:00:56,058
+It acts only on weekly closes, because that is where the real information lives.
+
+14
+00:00:57,760 --> 00:01:05,316
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+15
+00:01:05,316 --> 00:01:15,203
+6 positions, led by Apple, ticker AAPL, Automatic Data Processing, ticker ADP, Coca-Cola Europacific Partners, ticker CCEP.
+
+16
+00:01:15,203 --> 00:01:26,135
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+17
+00:01:27,840 --> 00:01:32,642
+Now the part that makes this system different: the loop.
+
+18
+00:01:32,642 --> 00:01:35,043
+Every morning OROS proposes.
+
+19
+00:01:35,043 --> 00:01:45,589
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+20
+00:01:45,589 --> 00:01:49,533
+Inside the book today: 1 positions up, 5 down.
+
+21
+00:01:49,533 --> 00:01:51,934
+Best, CART at +0.67 percent.
+
+22
+00:01:51,934 --> 00:01:53,649
+Worst, ADP at -1.64.
+
+23
+00:01:53,649 --> 00:01:58,622
+Both go in the journal — wins and losses get the same ink.
+
+24
+00:01:58,622 --> 00:02:05,825
+The honest scoreboard reads: expectancy -2.75% per trade over 1337 graded positions.
+
+25
+00:02:05,825 --> 00:02:12,856
+Because that record is soft, the system has throttled itself to 50% position size.
+
+26
+00:02:12,856 --> 00:02:18,001
+Nobody told it to — full size must be earned back with wins.
+
+27
+00:02:18,001 --> 00:02:30,348
+What tonight's read hands to tomorrow's open: 156 names close the day in Stage 2; position size stays cut to 50% until the record earns it back.
+
+28
+00:02:31,920 --> 00:02:34,241
+Over to the sports desk.
+
+29
+00:02:34,241 --> 00:02:43,817
+Day 98 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+30
+00:02:43,817 --> 00:02:50,298
+In first place, the live self-rebuilding book, in blue, at 107,567.
+
+31
+00:02:50,298 --> 00:02:57,746
+Then the frozen first portfolio, the green line, 9.6 thousand back at 97,996.
+
+32
+00:02:57,746 --> 00:03:03,356
+Then the index fund, in gray, 9.8 thousand back at 97,734.
+
+33
+00:03:03,356 --> 00:03:06,064
+The race has no finish line.
+
+34
+00:03:06,064 --> 00:03:10,513
+Same books, same dollars, back at it tomorrow.
+
+35
+00:03:10,513 --> 00:03:15,543
+Every line starts the same day with the same dollar.
+
+36
+00:03:15,543 --> 00:03:17,478
+Nothing is restated.
+
+37
+00:03:17,478 --> 00:03:26,348
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+38
+00:03:27,720 --> 00:03:35,040
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+39
+00:03:35,040 --> 00:03:37,277
+Nothing here is financial advice.
+
+40
+00:03:37,277 --> 00:03:40,259
+From the closing desk — see you at the open.
