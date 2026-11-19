@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0792,
+      "outcome_return": 0.0513,
       "outcome_exit": "open",
-      "outcome_days": 16,
+      "outcome_days": 17,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0014,
+      "outcome_return": -0.0113,
       "outcome_exit": "open",
-      "outcome_days": 16,
+      "outcome_days": 17,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0788,
+      "outcome_return": -0.0771,
       "outcome_exit": "stop",
-      "outcome_days": 9,
+      "outcome_days": 7,
       "outcome_final": true
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "swing",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0141,
+      "outcome_return": -0.0276,
       "outcome_exit": "open",
-      "outcome_days": 16,
+      "outcome_days": 17,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0081,
+      "outcome_return": -0.0155,
       "outcome_exit": "open",
-      "outcome_days": 16,
+      "outcome_days": 17,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0496,
+      "outcome_return": 0.0475,
       "outcome_exit": "open",
-      "outcome_days": 16,
+      "outcome_days": 17,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0185,
+      "outcome_return": 0.0071,
       "outcome_exit": "open",
-      "outcome_days": 16,
+      "outcome_days": 17,
       "outcome_final": false
     },
     {
@@ -248,7 +248,7 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0812,
+  "realized_avg_return": -0.0808,
   "realized_hit_rate": 0.0,
   "realized_final_count": 4,
   "realized_stop_exits": 4,

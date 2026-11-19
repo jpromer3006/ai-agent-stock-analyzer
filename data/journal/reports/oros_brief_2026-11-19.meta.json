@@ -1,0 +1,91 @@
+{
+ "date": "Thursday, November 19, 2026",
+ "regime": "bear",
+ "lesson": "race",
+ "race_day": 99,
+ "home_run": null,
+ "takeaway": "Tonight's takeaway. A portfolio is not a museum. Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.",
+ "breadth": {
+  "date": "2026-11-19",
+  "total": 500,
+  "counts": {
+   "Advancing": 150,
+   "Basing": 206,
+   "Topping": 22,
+   "Declining": 122
+  },
+  "invalidated": 2,
+  "source": "cloud",
+  "scan_hash": "a493b60163263dfe",
+  "stale_rows": 0,
+  "prior": {
+   "date": "2026-11-12",
+   "total": 500,
+   "counts": {
+    "Advancing": 177,
+    "Basing": 178,
+    "Topping": 32,
+    "Declining": 113
+   },
+   "invalidated": 3,
+   "source": "cloud",
+   "scan_hash": "3b500f2b403581b8",
+   "stale_rows": 1
+  }
+ },
+ "oros500": {
+  "name": "OROS 500",
+  "date": "2026-11-19",
+  "count": 500,
+  "target": 500,
+  "entered": [
+   "AGIX",
+   "CRMD",
+   "CTKB"
+  ],
+  "left": [
+   "CAIQ",
+   "DRUG",
+   "ELVN"
+  ]
+ },
+ "chapters": [
+  {
+   "title": "Tonight on the Market Desk",
+   "start_s": 0.0
+  },
+  {
+   "title": "The Market Open",
+   "start_s": 48.64
+  },
+  {
+   "title": "Chart of the Day",
+   "start_s": 75.72
+  },
+  {
+   "title": "OROS Scan \u2014 Top Pick of the Day",
+   "start_s": 159.4
+  },
+  {
+   "title": "Business Desk \u2014 the book",
+   "start_s": 210.36
+  },
+  {
+   "title": "The Portfolio \u2014 Actual Holdings",
+   "start_s": 298.4
+  },
+  {
+   "title": "Sports Desk \u2014 The Race",
+   "start_s": 324.96
+  },
+  {
+   "title": "The Takeaway",
+   "start_s": 389.04
+  },
+  {
+   "title": "Disclosure & Credits",
+   "start_s": 403.04
+  }
+ ],
+ "duration_s": 460.6
+}

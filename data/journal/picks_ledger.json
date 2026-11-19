@@ -705,6 +705,27 @@
   {
    "date": "2026-11-18",
    "picks": []
+  },
+  {
+   "date": "2026-11-19",
+   "picks": [
+    {
+     "ticker": "TGT",
+     "buy_stop": 167.82,
+     "stop_loss": 142.84,
+     "target": 211.74,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "DIS",
+     "buy_stop": 122.97,
+     "stop_loss": 104.55,
+     "target": 138.29,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }

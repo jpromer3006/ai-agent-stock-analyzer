@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.172,
       "earnings_risk": false,
-      "outcome_return": -0.0239,
+      "outcome_return": -0.0419,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.167,
       "earnings_risk": false,
-      "outcome_return": 0.0139,
+      "outcome_return": -0.0281,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -64,10 +64,10 @@
       "led_by": "sepa",
       "sentiment": 0.428,
       "earnings_risk": false,
-      "outcome_return": -0.082,
-      "outcome_exit": "open",
-      "outcome_days": 10,
-      "outcome_final": false
+      "outcome_return": -0.1513,
+      "outcome_exit": "stop",
+      "outcome_days": 11,
+      "outcome_final": true
     },
     {
       "ticker": "DSGX",
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.259,
       "earnings_risk": false,
-      "outcome_return": -0.0292,
+      "outcome_return": -0.0425,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": -0.063,
       "earnings_risk": false,
-      "outcome_return": -0.0671,
+      "outcome_return": -0.076,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -115,7 +115,7 @@
       "led_by": "sepa",
       "sentiment": 0.142,
       "earnings_risk": false,
-      "outcome_return": -0.0386,
+      "outcome_return": -0.0418,
       "outcome_exit": "stop",
       "outcome_days": 10,
       "outcome_final": true
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": -0.034,
       "earnings_risk": false,
-      "outcome_return": -0.0453,
+      "outcome_return": -0.069,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.143,
       "earnings_risk": false,
-      "outcome_return": 0.1414,
+      "outcome_return": 0.0599,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.142,
       "earnings_risk": false,
-      "outcome_return": 0.0229,
+      "outcome_return": 0.0022,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.274,
       "earnings_risk": false,
-      "outcome_return": 0.052,
+      "outcome_return": 0.0348,
       "outcome_exit": "open",
-      "outcome_days": 10,
+      "outcome_days": 11,
       "outcome_final": false
     }
   ],
@@ -296,10 +296,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0386,
+  "realized_avg_return": -0.0965,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1,
+  "realized_final_count": 2,
+  "realized_stop_exits": 2,
   "changes": {
     "added": [
       "ABNB",

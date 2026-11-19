@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0093,
+      "outcome_return": -0.0157,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0809,
+      "outcome_return": 0.0575,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0201,
+      "outcome_return": -0.0452,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -98,10 +98,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0241,
-      "outcome_exit": "open",
-      "outcome_days": 11,
-      "outcome_final": false
+      "outcome_return": -0.0428,
+      "outcome_exit": "stop",
+      "outcome_days": 12,
+      "outcome_final": true
     },
     {
       "ticker": "DRH",
@@ -115,9 +115,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0065,
+      "outcome_return": -0.0258,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0423,
+      "outcome_return": -0.0493,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "technical",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0112,
+      "outcome_return": -0.0217,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0565,
+      "outcome_return": 0.0351,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "technical",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": 0.0738,
+      "outcome_return": 0.0576,
       "outcome_exit": "open",
-      "outcome_days": 11,
+      "outcome_days": 12,
       "outcome_final": false
     }
   ],
@@ -284,10 +284,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.1506,
+  "realized_avg_return": -0.0967,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1,
+  "realized_final_count": 2,
+  "realized_stop_exits": 2,
   "changes": {
     "added": [
       "AIG",
