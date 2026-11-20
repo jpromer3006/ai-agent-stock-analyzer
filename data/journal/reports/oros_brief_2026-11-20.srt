@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:01,047
+Good morning.
+
+2
+00:00:01,047 --> 00:00:07,248
+From the OROS Market Desk, here is the rundown for Friday, November 20, 2026.
+
+3
+00:00:07,248 --> 00:00:08,858
+The tape reads bear.
+
+4
+00:00:08,858 --> 00:00:12,401
+Our top pick of the day: Target, ticker TGT.
+
+5
+00:00:12,401 --> 00:00:18,038
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:18,038 --> 00:00:30,279
+And at the sports desk, day 100 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:30,279 --> 00:00:38,490
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:38,490 --> 00:00:45,836
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:47,680 --> 00:00:49,563
+First, the market open.
+
+10
+00:00:49,563 --> 00:00:55,539
+The S and P five hundred slipped 0.3 percent, while the NASDAQ added 0.4.
+
+11
+00:00:55,539 --> 00:01:01,270
+The primary trend reads bear; capital preservation leads the playbook.
+
+12
+00:01:01,270 --> 00:01:03,562
+The fear gauge sits at 32.3.
+
+13
+00:01:03,562 --> 00:01:12,850
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+14
+00:01:14,680 --> 00:01:23,135
+Now the chart of the day: Target, ticker TGT, the top stock to clear every quality gate.
+
+15
+00:01:23,135 --> 00:01:36,010
+The entry trigger sits at 168.30, the exit at 143.10, and the objective at 212.22 — 1.7 dollars of potential reward per dollar risked.
+
+16
+00:01:36,010 --> 00:01:42,544
+At 39 shares, a failed trade costs about one percent of the account.
+
+17
+00:01:42,544 --> 00:01:53,762
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+18
+00:01:53,762 --> 00:02:02,912
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+19
+00:02:02,912 --> 00:02:08,561
+You buy only if the market pushes up through that line, proving demand.
+
+20
+00:02:08,561 --> 00:02:14,528
+If it never gets there, you never buy, and that is the plan protecting you.
+
+21
+00:02:14,528 --> 00:02:21,928
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+22
+00:02:21,928 --> 00:02:34,419
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+23
+00:02:34,419 --> 00:02:35,454
+Buy on proof.
+
+24
+00:02:35,454 --> 00:02:36,488
+Exit by rule.
+
+25
+00:02:36,488 --> 00:02:37,761
+Size to survive.
+
+26
+00:02:39,720 --> 00:02:45,272
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+27
+00:02:45,272 --> 00:02:53,327
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+28
+00:02:53,327 --> 00:02:57,125
+On the stock track: Target, ticker TGT.
+
+29
+00:02:57,125 --> 00:03:02,969
+The plan in plain English: it last closed at 166.64 dollars.
+
+30
+00:03:02,969 --> 00:03:13,489
+The system would only buy strength — a buy-stop at 168.30, nothing happens unless price proves itself first.
+
+31
+00:03:13,489 --> 00:03:22,352
+If it triggers, the exit is a weekly close below 143.10, and the measured target is 212.22.
+
+32
+00:03:22,352 --> 00:03:27,507
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+33
+00:03:27,507 --> 00:03:28,621
+That's the deal.
+
+34
+00:03:30,440 --> 00:03:32,605
+Turning to the model book.
+
+35
+00:03:32,605 --> 00:03:43,098
+The system holds 6 positions with 30% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+36
+00:03:43,098 --> 00:03:54,506
+New to the book: AbbVie (ABBV), Cheesecake Factory (CAKE), Mondelez International (MDLZ) — each passed the full entry gauntlet overnight.
+
+37
+00:03:54,506 --> 00:04:15,241
+Rotated out: Amneal Pharmaceuticals (AMRX), which still advancing, but outranked by stronger names; Bruker (BRKR), which still advancing, but outranked by stronger names; CDW Corporation (CDW), which still advancing, but outranked by stronger names.
+
+38
+00:04:15,241 --> 00:04:31,313
+Left on the bench: Target (TGT), earnings inside the blackout window; Cincinnati Financial (CINF), sector cap — already 2 in Financials; CG Oncology (CGON), earnings inside the blackout window.
+
+39
+00:04:31,313 --> 00:04:36,060
+Passing the scan is not enough; the book must afford you.
+
+40
+00:04:36,060 --> 00:04:42,050
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+41
+00:04:43,880 --> 00:04:50,966
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+42
+00:04:50,966 --> 00:05:00,842
+6 positions, led by Arch Capital Group, ticker ACGL, Mondelez International, ticker MDLZ, American International Group, ticker AIG.
+
+43
+00:05:00,842 --> 00:05:11,094
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+44
+00:05:12,840 --> 00:05:15,086
+Over to the sports desk.
+
+45
+00:05:15,086 --> 00:05:24,442
+Day 100 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+46
+00:05:24,442 --> 00:05:30,711
+In first place, the live self-rebuilding book, in blue, at 107,667.
+
+47
+00:05:30,711 --> 00:05:36,231
+Then the index fund, in gray, 10.2 thousand back at 97,435.
+
+48
+00:05:36,231 --> 00:05:43,530
+Then the frozen first portfolio, the green line, 11.1 thousand back at 96,532.
+
+49
+00:05:43,530 --> 00:05:46,149
+The race has no finish line.
+
+50
+00:05:46,149 --> 00:05:50,453
+Same books, same dollars, back at it tomorrow.
+
+51
+00:05:50,453 --> 00:05:55,319
+Every line starts the same day with the same dollar.
+
+52
+00:05:55,319 --> 00:05:57,190
+Nothing is restated.
+
+53
+00:05:57,190 --> 00:06:06,060
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+54
+00:06:07,680 --> 00:06:09,226
+Tonight's takeaway.
+
+55
+00:06:09,226 --> 00:06:11,503
+A portfolio is not a museum.
+
+56
+00:06:11,503 --> 00:06:19,801
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+57
+00:06:21,600 --> 00:06:24,477
+Before we close, the disclosure segment.
+
+58
+00:06:24,477 --> 00:06:34,545
+Everything you heard today concerns one simulated portfolio of 6 positions — the same book, line for line, as this morning's emailed report.
+
+59
+00:06:34,545 --> 00:06:36,414
+One record, every surface.
+
+60
+00:06:36,414 --> 00:06:38,328
+Today's lesson is provenance.
+
+61
+00:06:38,328 --> 00:06:46,447
+Every number in this episode was read from one journaled record, the same record that was emailed as this morning's report.
+
+62
+00:06:46,447 --> 00:06:54,433
+When the video, the email, and the app cannot disagree, trust stops being a promise and becomes a property of the system.
+
+63
+00:06:54,433 --> 00:06:56,518
+A word on how this desk works.
+
+64
+00:06:56,518 --> 00:07:14,028
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+65
+00:07:14,028 --> 00:07:22,436
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+66
+00:07:22,436 --> 00:07:25,361
+All figures are simulated paper trading.
+
+67
+00:07:25,361 --> 00:07:31,723
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+68
+00:07:31,723 --> 00:07:35,672
+From the OROS Market Desk, have a disciplined session.
