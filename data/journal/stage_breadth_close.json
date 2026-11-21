@@ -1015,6 +1015,18 @@
    },
    "invalidated": 0,
    "source": "cloud"
+  },
+  {
+   "date": "2026-11-21",
+   "total": 2,
+   "counts": {
+    "Advancing": 0,
+    "Basing": 2,
+    "Topping": 0,
+    "Declining": 0
+   },
+   "invalidated": 0,
+   "source": "cloud"
   }
  ]
 }

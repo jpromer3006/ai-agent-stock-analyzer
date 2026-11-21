@@ -1,0 +1,143 @@
+1
+00:00:00,000 --> 00:00:03,096
+Good evening from the OROS closing desk.
+
+2
+00:00:03,096 --> 00:00:08,978
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:08,978 --> 00:00:13,700
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,700 --> 00:00:18,619
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,619 --> 00:00:24,009
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:25,920 --> 00:00:29,714
+On the day, the book is down 541 dollars.
+
+7
+00:00:29,714 --> 00:00:33,323
+Cheesecake Factory (CAKE) lags at -6.5.
+
+8
+00:00:33,323 --> 00:00:38,319
+The checklist is clear: nothing requires action today.
+
+9
+00:00:38,319 --> 00:00:41,802
+On screen, the day's gainers and laggards inside the paper book.
+
+10
+00:00:43,600 --> 00:00:50,686
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+11
+00:00:50,686 --> 00:01:00,562
+6 positions, led by Arch Capital Group, ticker ACGL, Mondelez International, ticker MDLZ, American International Group, ticker AIG.
+
+12
+00:01:00,562 --> 00:01:10,814
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+13
+00:01:12,400 --> 00:01:17,076
+Now the part that makes this system different: the loop.
+
+14
+00:01:17,076 --> 00:01:19,414
+Every morning OROS proposes.
+
+15
+00:01:19,414 --> 00:01:29,685
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+16
+00:01:29,685 --> 00:01:33,526
+Inside the book today: 0 positions up, 6 down.
+
+17
+00:01:33,526 --> 00:01:35,864
+Best, ACGL at -0.42 percent.
+
+18
+00:01:35,864 --> 00:01:37,618
+Worst, CAKE at -6.50.
+
+19
+00:01:37,618 --> 00:01:42,461
+Both go in the journal — wins and losses get the same ink.
+
+20
+00:01:42,461 --> 00:01:49,475
+The honest scoreboard reads: expectancy -2.76% per trade over 1391 graded positions.
+
+21
+00:01:49,475 --> 00:01:56,322
+Because that record is soft, the system has throttled itself to 50% position size.
+
+22
+00:01:56,322 --> 00:02:01,332
+Nobody told it to — full size must be earned back with wins.
+
+23
+00:02:01,332 --> 00:02:13,190
+What tonight's read hands to tomorrow's open: 0 names close the day in Stage 2; position size stays cut to 50% until the record earns it back.
+
+24
+00:02:14,800 --> 00:02:16,991
+Over to the sports desk.
+
+25
+00:02:16,991 --> 00:02:26,123
+Day 101 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+26
+00:02:26,123 --> 00:02:32,241
+In first place, the live self-rebuilding book, in blue, at 107,084.
+
+27
+00:02:32,241 --> 00:02:39,363
+Then the frozen first portfolio, the green line, 10.0 thousand back at 97,058.
+
+28
+00:02:39,363 --> 00:02:44,750
+Then the index fund, in gray, 11.6 thousand back at 95,523.
+
+29
+00:02:44,750 --> 00:02:47,307
+The race has no finish line.
+
+30
+00:02:47,307 --> 00:02:51,508
+Same books, same dollars, back at it tomorrow.
+
+31
+00:02:51,508 --> 00:02:56,256
+Every line starts the same day with the same dollar.
+
+32
+00:02:56,256 --> 00:02:58,082
+Nothing is restated.
+
+33
+00:02:58,082 --> 00:03:06,952
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+34
+00:03:08,640 --> 00:03:15,960
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+35
+00:03:15,960 --> 00:03:18,197
+Nothing here is financial advice.
+
+36
+00:03:18,197 --> 00:03:21,179
+From the closing desk — see you at the open.
