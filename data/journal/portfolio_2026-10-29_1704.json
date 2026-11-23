@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0016,
+      "outcome_return": -0.0018,
       "outcome_exit": "open",
-      "outcome_days": 16,
+      "outcome_days": 17,
       "outcome_final": false
     },
     {
@@ -98,7 +98,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0361,
+      "outcome_return": -0.0528,
       "outcome_exit": "stop",
       "outcome_days": 16,
       "outcome_final": true
@@ -115,7 +115,7 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.1032,
+      "outcome_return": -0.1157,
       "outcome_exit": "stop",
       "outcome_days": 16,
       "outcome_final": true
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0132,
+      "outcome_return": -0.0021,
       "outcome_exit": "open",
-      "outcome_days": 16,
+      "outcome_days": 17,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0437,
+      "outcome_return": -0.0216,
       "outcome_exit": "open",
-      "outcome_days": 16,
+      "outcome_days": 17,
       "outcome_final": false
     },
     {
@@ -183,10 +183,10 @@
       "led_by": "sepa",
       "sentiment": 0.0,
       "earnings_risk": false,
-      "outcome_return": -0.0471,
-      "outcome_exit": "open",
+      "outcome_return": -0.0592,
+      "outcome_exit": "stop",
       "outcome_days": 16,
-      "outcome_final": false
+      "outcome_final": true
     }
   ],
   "bench": [
@@ -254,10 +254,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0784,
+  "realized_avg_return": -0.0798,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 6,
-  "realized_stop_exits": 6,
+  "realized_final_count": 7,
+  "realized_stop_exits": 7,
   "changes": {
     "added": [
       "AAPL",

@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.081,
       "earnings_risk": false,
-      "outcome_return": -0.001,
+      "outcome_return": -0.0015,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -47,7 +47,7 @@
       "led_by": "sepa",
       "sentiment": 0.064,
       "earnings_risk": false,
-      "outcome_return": -0.0823,
+      "outcome_return": -0.1018,
       "outcome_exit": "stop",
       "outcome_days": 5,
       "outcome_final": true
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.104,
       "earnings_risk": false,
-      "outcome_return": 0.0359,
+      "outcome_return": 0.0455,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -81,9 +81,9 @@
       "led_by": "sepa",
       "sentiment": 0.075,
       "earnings_risk": false,
-      "outcome_return": -0.0026,
+      "outcome_return": -0.0157,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -98,9 +98,9 @@
       "led_by": "sepa",
       "sentiment": 0.24,
       "earnings_risk": false,
-      "outcome_return": -0.0056,
+      "outcome_return": -0.0171,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -115,10 +115,10 @@
       "led_by": "sepa",
       "sentiment": 0.106,
       "earnings_risk": false,
-      "outcome_return": -0.084,
-      "outcome_exit": "open",
+      "outcome_return": -0.0956,
+      "outcome_exit": "stop",
       "outcome_days": 5,
-      "outcome_final": false
+      "outcome_final": true
     },
     {
       "ticker": "ADP",
@@ -132,9 +132,9 @@
       "led_by": "sepa",
       "sentiment": 0.188,
       "earnings_risk": false,
-      "outcome_return": -0.0142,
+      "outcome_return": -0.0238,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.118,
       "earnings_risk": false,
-      "outcome_return": -0.0323,
+      "outcome_return": -0.0299,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -166,9 +166,9 @@
       "led_by": "sepa",
       "sentiment": 0.038,
       "earnings_risk": false,
-      "outcome_return": -0.0073,
+      "outcome_return": 0.0203,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.099,
       "earnings_risk": false,
-      "outcome_return": -0.0202,
+      "outcome_return": -0.0232,
       "outcome_exit": "open",
-      "outcome_days": 5,
+      "outcome_days": 6,
       "outcome_final": false
     }
   ],
@@ -284,10 +284,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0823,
+  "realized_avg_return": -0.0987,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 1,
-  "realized_stop_exits": 1,
+  "realized_final_count": 2,
+  "realized_stop_exits": 2,
   "changes": {
     "added": [
       "BIIB",

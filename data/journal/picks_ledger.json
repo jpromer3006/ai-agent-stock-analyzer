@@ -747,6 +747,35 @@
      "home_run_flag": false
     }
    ]
+  },
+  {
+   "date": "2026-11-23",
+   "picks": [
+    {
+     "ticker": "DIS",
+     "buy_stop": 122.97,
+     "stop_loss": 104.74,
+     "target": 138.29,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "CENTA",
+     "buy_stop": 41.76,
+     "stop_loss": 36.79,
+     "target": 48.24,
+     "is_etf": false,
+     "home_run_flag": false
+    },
+    {
+     "ticker": "BANF",
+     "buy_stop": 121.56,
+     "stop_loss": 111.66,
+     "target": 131.07,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }
