@@ -1,0 +1,192 @@
+{
+ "timestamp": "2026-11-24T20:45:24.063950Z",
+ "date": "2026-11-24",
+ "regime": "bear",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 29597.96,
+ "cash": 70402.04,
+ "weights": {
+  "growth": 0.118,
+  "canslim": 0.132,
+  "swing": 0.079,
+  "weinstein": 0.237,
+  "sepa": 0.164,
+  "value": 0.099,
+  "technical": 0.138,
+  "ipo": 0.033
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "ABBV",
+   "sector": "Health Care",
+   "conviction": 0.7751,
+   "shares": 13,
+   "dollars": 3907.41,
+   "weight_pct": 3.91,
+   "entry": 300.57,
+   "stop": 279.6,
+   "led_by": "sepa",
+   "sentiment": 0.28,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ACGL",
+   "sector": "Financials",
+   "conviction": 0.7594,
+   "shares": 35,
+   "dollars": 3839.85,
+   "weight_pct": 3.84,
+   "entry": 109.71,
+   "stop": 101.61,
+   "led_by": "sepa",
+   "sentiment": 0.173,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ARGX",
+   "sector": "Health Care",
+   "conviction": 0.7268,
+   "shares": 3,
+   "dollars": 2984.19,
+   "weight_pct": 2.98,
+   "entry": 994.73,
+   "stop": 917.17,
+   "led_by": "sepa",
+   "sentiment": 0.146,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AIG",
+   "sector": "Financials",
+   "conviction": 0.7019,
+   "shares": 104,
+   "dollars": 8435.44,
+   "weight_pct": 8.44,
+   "entry": 81.11,
+   "stop": 78.34,
+   "led_by": "sepa",
+   "sentiment": 0.181,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "DBX",
+   "sector": "Information Technology",
+   "conviction": 0.6715,
+   "shares": 143,
+   "dollars": 5223.79,
+   "weight_pct": 5.22,
+   "entry": 36.53,
+   "stop": 34.51,
+   "led_by": "sepa",
+   "sentiment": 0.182,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "MDLZ",
+   "sector": "Consumer Staples",
+   "conviction": 0.6587,
+   "shares": 78,
+   "dollars": 5207.28,
+   "weight_pct": 5.21,
+   "entry": 66.76,
+   "stop": 63.07,
+   "led_by": "sepa",
+   "sentiment": 0.116,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "TGT",
+   "sector": "Consumer Discretionary",
+   "composite": 0.713,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "MMM",
+   "sector": "Health Care",
+   "composite": 0.688,
+   "reason": "sector cap \u2014 already 2 in Health Care"
+  },
+  {
+   "ticker": "LLY",
+   "sector": "Health Care",
+   "composite": 0.687,
+   "reason": "sector cap \u2014 already 2 in Health Care"
+  },
+  {
+   "ticker": "DIS",
+   "sector": "Communication Services",
+   "composite": 0.67,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "MET",
+   "sector": "Financials",
+   "composite": 0.658,
+   "reason": "outranked \u2014 book full at 6"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = BEAR"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: weinstein 24%, sepa 16%, technical 14%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "6 holdings, 30% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 70%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "ARGX",
+   "DBX",
+   "MDLZ"
+  ],
+  "removed": [
+   "CDW",
+   "DLTR",
+   "MMM"
+  ],
+  "unchanged": [
+   "ABBV",
+   "ACGL",
+   "AIG"
+  ]
+ }
+}
