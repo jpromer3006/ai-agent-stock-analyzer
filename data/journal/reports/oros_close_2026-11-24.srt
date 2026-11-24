@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:03,096
+Good evening from the OROS closing desk.
+
+2
+00:00:03,096 --> 00:00:08,978
+This morning the system named no pick, so tonight there is nothing to grade.
+
+3
+00:00:08,978 --> 00:00:13,700
+No setup, no trade, no loss — that is the discipline working.
+
+4
+00:00:13,700 --> 00:00:18,619
+Why we grade in public: a forecast that is never checked is just content.
+
+5
+00:00:18,619 --> 00:00:24,009
+Every morning call gets an evening verdict, and both go in the permanent record.
+
+6
+00:00:25,840 --> 00:00:28,866
+On the day, the book is up 457 dollars.
+
+7
+00:00:28,866 --> 00:00:31,116
+3M (MMM) leads, +3.6 percent.
+
+8
+00:00:31,116 --> 00:00:34,142
+Arch Capital Group (ACGL) lags at -0.2.
+
+9
+00:00:34,142 --> 00:00:38,332
+The checklist is clear: nothing requires action today.
+
+10
+00:00:38,332 --> 00:00:41,815
+On screen, the day's gainers and laggards inside the paper book.
+
+11
+00:00:43,200 --> 00:00:51,317
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+12
+00:00:51,317 --> 00:00:59,692
+6 positions, led by 3M, ticker MMM, Arch Capital Group, ticker ACGL, CDW Corporation, ticker CDW.
+
+13
+00:00:59,692 --> 00:01:11,435
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+14
+00:01:13,240 --> 00:01:17,803
+Now the part that makes this system different: the loop.
+
+15
+00:01:17,803 --> 00:01:20,084
+Every morning OROS proposes.
+
+16
+00:01:20,084 --> 00:01:30,106
+Every evening it grades its own call, journals the verdict, and adjusts its own risk before it is allowed to propose again.
+
+17
+00:01:30,106 --> 00:01:33,854
+Inside the book today: 5 positions up, 1 down.
+
+18
+00:01:33,854 --> 00:01:36,054
+Best, CDW at +5.12 percent.
+
+19
+00:01:36,054 --> 00:01:37,765
+Worst, ACGL at -0.17.
+
+20
+00:01:37,765 --> 00:01:42,490
+Both go in the journal — wins and losses get the same ink.
+
+21
+00:01:42,490 --> 00:01:49,334
+The honest scoreboard reads: expectancy -2.80% per trade over 1412 graded positions.
+
+22
+00:01:49,334 --> 00:01:56,015
+Because that record is soft, the system has throttled itself to 50% position size.
+
+23
+00:01:56,015 --> 00:02:00,904
+Nobody told it to — full size must be earned back with wins.
+
+24
+00:02:00,904 --> 00:02:12,637
+What tonight's read hands to tomorrow's open: 153 names close the day in Stage 2; position size stays cut to 50% until the record earns it back.
+
+25
+00:02:14,280 --> 00:02:16,495
+Over to the sports desk.
+
+26
+00:02:16,495 --> 00:02:25,724
+Day 102 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+27
+00:02:25,724 --> 00:02:31,908
+In first place, the live self-rebuilding book, in blue, at 108,065.
+
+28
+00:02:31,908 --> 00:02:39,107
+Then the frozen first portfolio, the green line, 10.9 thousand back at 97,131.
+
+29
+00:02:39,107 --> 00:02:44,552
+Then the index fund, in gray, 11.7 thousand back at 96,380.
+
+30
+00:02:44,552 --> 00:02:47,136
+The race has no finish line.
+
+31
+00:02:47,136 --> 00:02:51,381
+Same books, same dollars, back at it tomorrow.
+
+32
+00:02:51,381 --> 00:02:56,181
+Every line starts the same day with the same dollar.
+
+33
+00:02:56,181 --> 00:02:58,026
+Nothing is restated.
+
+34
+00:02:58,026 --> 00:03:00,351
+Today's lesson is benchmarking.
+
+35
+00:03:00,351 --> 00:03:06,801
+Any strategy must beat the boring alternative: the same money parked in an index fund.
+
+36
+00:03:06,801 --> 00:03:10,250
+That is why the S and P line shares the chart.
+
+37
+00:03:10,250 --> 00:03:19,249
+If the system cannot outrun it, the index deserves the money, and publishing the race every day keeps the system honest.
+
+38
+00:03:20,720 --> 00:03:28,040
+All figures are simulated paper trading, graded and journaled by the OROS agents with no human intervention.
+
+39
+00:03:28,040 --> 00:03:30,277
+Nothing here is financial advice.
+
+40
+00:03:30,277 --> 00:03:33,259
+From the closing desk — see you at the open.
