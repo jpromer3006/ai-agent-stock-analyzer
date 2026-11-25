@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:01,073
+Good morning.
+
+2
+00:00:01,073 --> 00:00:07,679
+From the OROS Market Desk, here is the rundown for Wednesday, November 25, 2026.
+
+3
+00:00:07,679 --> 00:00:09,331
+The tape reads bear.
+
+4
+00:00:09,331 --> 00:00:13,294
+Our top pick of the day: BancFirst, ticker BANF.
+
+5
+00:00:13,294 --> 00:00:19,074
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:19,074 --> 00:00:31,626
+And at the sports desk, day 103 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:31,626 --> 00:00:39,836
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:39,836 --> 00:00:47,183
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:48,600 --> 00:00:50,520
+First, the market open.
+
+10
+00:00:50,520 --> 00:00:56,532
+The S and P five hundred slipped 0.5 percent, while the NASDAQ lost 2.0.
+
+11
+00:00:56,532 --> 00:01:02,377
+The primary trend reads bear; capital preservation leads the playbook.
+
+12
+00:01:02,377 --> 00:01:04,715
+The fear gauge sits at 28.4.
+
+13
+00:01:04,715 --> 00:01:14,003
+On screen, each index panel shows the weekly closing price in blue against its thirty week average in gold — the health of the tape at a glance.
+
+14
+00:01:16,120 --> 00:01:24,941
+Now the chart of the day: BancFirst, ticker BANF, the top stock to clear every quality gate.
+
+15
+00:01:24,941 --> 00:01:37,789
+The entry trigger sits at 123.36, the exit at 111.78, and the objective at 133.76 — 0.9 dollars of potential reward per dollar risked.
+
+16
+00:01:37,789 --> 00:01:44,309
+At 86 shares, a failed trade costs about one percent of the account.
+
+17
+00:01:44,309 --> 00:01:55,527
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+18
+00:01:55,527 --> 00:02:04,677
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+19
+00:02:04,677 --> 00:02:10,326
+You buy only if the market pushes up through that line, proving demand.
+
+20
+00:02:10,326 --> 00:02:16,294
+If it never gets there, you never buy, and that is the plan protecting you.
+
+21
+00:02:16,294 --> 00:02:23,693
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+22
+00:02:23,693 --> 00:02:36,184
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+23
+00:02:36,184 --> 00:02:37,219
+Buy on proof.
+
+24
+00:02:37,219 --> 00:02:38,253
+Exit by rule.
+
+25
+00:02:38,253 --> 00:02:39,526
+Size to survive.
+
+26
+00:02:41,360 --> 00:02:46,912
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+27
+00:02:46,912 --> 00:02:54,967
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+28
+00:02:54,967 --> 00:02:59,113
+On the stock track: BancFirst, ticker BANF.
+
+29
+00:02:59,113 --> 00:03:04,898
+The plan in plain English: it last closed at 122.23 dollars.
+
+30
+00:03:04,898 --> 00:03:15,311
+The system would only buy strength — a buy-stop at 123.36, nothing happens unless price proves itself first.
+
+31
+00:03:15,311 --> 00:03:24,085
+If it triggers, the exit is a weekly close below 111.78, and the measured target is 133.76.
+
+32
+00:03:24,085 --> 00:03:29,240
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+33
+00:03:29,240 --> 00:03:30,354
+That's the deal.
+
+34
+00:03:32,160 --> 00:03:34,292
+Turning to the model book.
+
+35
+00:03:34,292 --> 00:03:44,626
+The system holds 6 positions with 29% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+36
+00:03:44,626 --> 00:03:57,831
+New to the book: Amneal Pharmaceuticals (AMRX), Cheesecake Factory (CAKE), Coca-Cola Europacific Partners (CCEP) — each passed the full entry gauntlet overnight.
+
+37
+00:03:57,831 --> 00:04:19,319
+Rotated out: AbbVie (ABBV), which still advancing, but outranked by stronger names; American International Group (AIG), which still advancing, but outranked by stronger names; Mondelez International (MDLZ), which still advancing, but outranked by stronger names.
+
+38
+00:04:19,319 --> 00:04:35,148
+Left on the bench: Walt Disney Company (The) (DIS), earnings inside the blackout window; Target (TGT), earnings inside the blackout window; Biogen (BIIB), sector cap — already 2 in Health Care.
+
+39
+00:04:35,148 --> 00:04:39,823
+Passing the scan is not enough; the book must afford you.
+
+40
+00:04:39,823 --> 00:04:45,814
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+41
+00:04:47,200 --> 00:04:54,762
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+42
+00:04:54,762 --> 00:05:03,612
+6 positions, led by Arch Capital Group, ticker ACGL, Dropbox, ticker DBX, Amneal Pharmaceuticals, ticker AMRX.
+
+43
+00:05:03,612 --> 00:05:14,553
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+44
+00:05:16,000 --> 00:05:18,278
+Over to the sports desk.
+
+45
+00:05:18,278 --> 00:05:27,772
+Day 103 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+46
+00:05:27,772 --> 00:05:34,133
+In first place, the live self-rebuilding book, in blue, at 108,362.
+
+47
+00:05:34,133 --> 00:05:41,538
+Then the frozen first portfolio, the green line, 10.8 thousand back at 97,523.
+
+48
+00:05:41,538 --> 00:05:47,139
+Then the index fund, in gray, 12.5 thousand back at 95,912.
+
+49
+00:05:47,139 --> 00:05:49,798
+The race has no finish line.
+
+50
+00:05:49,798 --> 00:05:54,165
+Same books, same dollars, back at it tomorrow.
+
+51
+00:05:54,165 --> 00:05:59,102
+Every line starts the same day with the same dollar.
+
+52
+00:05:59,102 --> 00:06:01,000
+Nothing is restated.
+
+53
+00:06:01,000 --> 00:06:09,870
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+54
+00:06:11,520 --> 00:06:13,066
+Tonight's takeaway.
+
+55
+00:06:13,066 --> 00:06:15,343
+A portfolio is not a museum.
+
+56
+00:06:15,343 --> 00:06:23,641
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+57
+00:06:25,440 --> 00:06:28,317
+Before we close, the disclosure segment.
+
+58
+00:06:28,317 --> 00:06:38,385
+Everything you heard today concerns one simulated portfolio of 6 positions — the same book, line for line, as this morning's emailed report.
+
+59
+00:06:38,385 --> 00:06:40,254
+One record, every surface.
+
+60
+00:06:40,254 --> 00:06:42,168
+Today's lesson is provenance.
+
+61
+00:06:42,168 --> 00:06:50,287
+Every number in this episode was read from one journaled record, the same record that was emailed as this morning's report.
+
+62
+00:06:50,287 --> 00:06:58,273
+When the video, the email, and the app cannot disagree, trust stops being a promise and becomes a property of the system.
+
+63
+00:06:58,273 --> 00:07:00,358
+A word on how this desk works.
+
+64
+00:07:00,358 --> 00:07:17,868
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+65
+00:07:17,868 --> 00:07:26,276
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+66
+00:07:26,276 --> 00:07:29,201
+All figures are simulated paper trading.
+
+67
+00:07:29,201 --> 00:07:35,563
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+68
+00:07:35,563 --> 00:07:39,512
+From the OROS Market Desk, have a disciplined session.

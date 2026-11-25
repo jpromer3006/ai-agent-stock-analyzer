@@ -30,9 +30,9 @@
       "led_by": "sepa",
       "sentiment": 0.162,
       "earnings_risk": false,
-      "outcome_return": 0.0783,
+      "outcome_return": 0.0544,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 10,
       "outcome_final": false
     },
     {
@@ -47,9 +47,9 @@
       "led_by": "sepa",
       "sentiment": 0.148,
       "earnings_risk": false,
-      "outcome_return": 0.0964,
+      "outcome_return": 0.0664,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 10,
       "outcome_final": false
     },
     {
@@ -64,9 +64,9 @@
       "led_by": "sepa",
       "sentiment": 0.204,
       "earnings_risk": false,
-      "outcome_return": -0.0179,
+      "outcome_return": 0.0017,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 10,
       "outcome_final": false
     },
     {
@@ -115,9 +115,9 @@
       "led_by": "technical",
       "sentiment": 0.235,
       "earnings_risk": false,
-      "outcome_return": -0.0482,
+      "outcome_return": -0.0473,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 10,
       "outcome_final": false
     },
     {
@@ -132,10 +132,10 @@
       "led_by": "sepa",
       "sentiment": 0.22,
       "earnings_risk": false,
-      "outcome_return": -0.0049,
-      "outcome_exit": "open",
-      "outcome_days": 9,
-      "outcome_final": false
+      "outcome_return": -0.0432,
+      "outcome_exit": "stop",
+      "outcome_days": 6,
+      "outcome_final": true
     },
     {
       "ticker": "DSGX",
@@ -149,9 +149,9 @@
       "led_by": "sepa",
       "sentiment": 0.106,
       "earnings_risk": false,
-      "outcome_return": -0.0381,
+      "outcome_return": -0.0343,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 10,
       "outcome_final": false
     },
     {
@@ -183,9 +183,9 @@
       "led_by": "sepa",
       "sentiment": 0.183,
       "earnings_risk": false,
-      "outcome_return": -0.0007,
+      "outcome_return": 0.009,
       "outcome_exit": "open",
-      "outcome_days": 9,
+      "outcome_days": 10,
       "outcome_final": false
     }
   ],
@@ -296,10 +296,10 @@
     }
   ],
   "horizon_days": 20,
-  "realized_avg_return": -0.0689,
+  "realized_avg_return": -0.0625,
   "realized_hit_rate": 0.0,
-  "realized_final_count": 3,
-  "realized_stop_exits": 3,
+  "realized_final_count": 4,
+  "realized_stop_exits": 4,
   "changes": {
     "added": [
       "JNJ"

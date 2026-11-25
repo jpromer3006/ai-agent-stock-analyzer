@@ -225,9 +225,9 @@
       "led_by": "sepa",
       "sentiment": 0.128,
       "earnings_risk": false,
-      "outcome_return": 0.3525,
+      "outcome_return": 0.3597,
       "outcome_exit": "open",
-      "outcome_days": 104,
+      "outcome_days": 105,
       "outcome_final": false
     }
   ],
