@@ -81,7 +81,7 @@
       "led_by": "technical",
       "sentiment": 0.145,
       "earnings_risk": false,
-      "outcome_return": 0.2099,
+      "outcome_return": 0.2112,
       "outcome_exit": "open",
       "outcome_days": 107,
       "outcome_final": false
@@ -115,7 +115,7 @@
       "led_by": "sepa",
       "sentiment": 0.243,
       "earnings_risk": false,
-      "outcome_return": 0.1177,
+      "outcome_return": 0.1183,
       "outcome_exit": "open",
       "outcome_days": 107,
       "outcome_final": false
@@ -132,7 +132,7 @@
       "led_by": "sepa",
       "sentiment": 0.113,
       "earnings_risk": false,
-      "outcome_return": 0.1245,
+      "outcome_return": 0.1187,
       "outcome_exit": "open",
       "outcome_days": 107,
       "outcome_final": false
@@ -149,7 +149,7 @@
       "led_by": "sepa",
       "sentiment": 0.11,
       "earnings_risk": false,
-      "outcome_return": 0.2213,
+      "outcome_return": 0.2135,
       "outcome_exit": "open",
       "outcome_days": 107,
       "outcome_final": false
