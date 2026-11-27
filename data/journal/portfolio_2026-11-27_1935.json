@@ -1,0 +1,178 @@
+{
+ "timestamp": "2026-11-27T19:35:43.435204Z",
+ "date": "2026-11-27",
+ "regime": "bear",
+ "mandate": "swing_momentum",
+ "account": 100000.0,
+ "invested": 28983.98,
+ "cash": 71016.02,
+ "weights": {
+  "swing": 0.079,
+  "technical": 0.138,
+  "sepa": 0.164,
+  "ipo": 0.033,
+  "weinstein": 0.237,
+  "canslim": 0.132,
+  "growth": 0.118,
+  "value": 0.099
+ },
+ "note": "nightly run (cloud)",
+ "holdings": [
+  {
+   "ticker": "ACGL",
+   "sector": "Financials",
+   "conviction": 0.8108,
+   "shares": 42,
+   "dollars": 4633.86,
+   "weight_pct": 4.63,
+   "entry": 110.33,
+   "stop": 102.15,
+   "led_by": "sepa",
+   "sentiment": 0.153,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "DBX",
+   "sector": "Information Technology",
+   "conviction": 0.7892,
+   "shares": 162,
+   "dollars": 6016.68,
+   "weight_pct": 6.02,
+   "entry": 37.14,
+   "stop": 34.95,
+   "led_by": "sepa",
+   "sentiment": 0.182,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CAKE",
+   "sector": "Consumer Discretionary",
+   "conviction": 0.7582,
+   "shares": 47,
+   "dollars": 5226.4,
+   "weight_pct": 5.23,
+   "entry": 111.2,
+   "stop": 103.76,
+   "led_by": "sepa",
+   "sentiment": -0.051,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "ARGX",
+   "sector": "Health Care",
+   "conviction": 0.7229,
+   "shares": 3,
+   "dollars": 2983.62,
+   "weight_pct": 2.98,
+   "entry": 994.54,
+   "stop": 916.91,
+   "led_by": "sepa",
+   "sentiment": 0.201,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "CCEP",
+   "sector": "Consumer Staples",
+   "conviction": 0.7211,
+   "shares": 37,
+   "dollars": 4368.22,
+   "weight_pct": 4.37,
+   "entry": 118.06,
+   "stop": 108.77,
+   "led_by": "sepa",
+   "sentiment": 0.169,
+   "earnings_risk": false,
+   "outcome_return": null
+  },
+  {
+   "ticker": "AMRX",
+   "sector": "Health Care",
+   "conviction": 0.7073,
+   "shares": 264,
+   "dollars": 5755.2,
+   "weight_pct": 5.76,
+   "entry": 21.8,
+   "stop": 20.46,
+   "led_by": "sepa",
+   "sentiment": 0.423,
+   "earnings_risk": false,
+   "outcome_return": null
+  }
+ ],
+ "bench": [
+  {
+   "ticker": "DIS",
+   "sector": "Communication Services",
+   "composite": 0.758,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "TGT",
+   "sector": "Consumer Discretionary",
+   "composite": 0.725,
+   "reason": "earnings inside the blackout window"
+  },
+  {
+   "ticker": "DLTR",
+   "sector": "Consumer Discretionary",
+   "composite": 0.707,
+   "reason": "outranked \u2014 book full at 6"
+  }
+ ],
+ "agent_trace": [
+  {
+   "agent": "DataAgent",
+   "role": "universe & data",
+   "summary": "500 candidate names (benchmarks removed)"
+  },
+  {
+   "agent": "RegimeAgent",
+   "role": "market regime",
+   "summary": "regime = BEAR"
+  },
+  {
+   "agent": "RouterAgent",
+   "role": "strategy mandate weights",
+   "summary": "base weights: weinstein 24%, sepa 16%, technical 14%"
+  },
+  {
+   "agent": "MemoryAgent",
+   "role": "experience-weighted tilt",
+   "summary": "boosted weinstein x1.00, sepa x1.00"
+  },
+  {
+   "agent": "ConstructionAgent",
+   "role": "strategy ensemble + sizing",
+   "summary": "6 holdings, 29% invested, 8 strategies"
+  },
+  {
+   "agent": "RiskAgent",
+   "role": "post-construction risk",
+   "summary": "within limits; cash 71%"
+  }
+ ],
+ "horizon_days": 20,
+ "realized_avg_return": null,
+ "realized_hit_rate": null,
+ "realized_final_count": 0,
+ "realized_stop_exits": 0,
+ "changes": {
+  "added": [
+   "AMRX"
+  ],
+  "removed": [
+   "BIIB"
+  ],
+  "unchanged": [
+   "ACGL",
+   "ARGX",
+   "CAKE",
+   "CCEP",
+   "DBX"
+  ]
+ }
+}

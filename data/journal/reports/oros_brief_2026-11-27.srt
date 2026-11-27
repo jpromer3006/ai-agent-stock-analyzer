@@ -1,0 +1,271 @@
+1
+00:00:00,000 --> 00:00:01,020
+Good morning.
+
+2
+00:00:01,020 --> 00:00:07,065
+From the OROS Market Desk, here is the rundown for Friday, November 27, 2026.
+
+3
+00:00:07,065 --> 00:00:08,635
+The tape reads bear.
+
+4
+00:00:08,635 --> 00:00:13,502
+Our top pick of the day: BioMarin Pharmaceutical, ticker BMRN.
+
+5
+00:00:13,502 --> 00:00:18,997
+The chart, the strategy behind it, and the exact trade plan are ahead.
+
+6
+00:00:18,997 --> 00:00:30,929
+And at the sports desk, day 105 of the race: the live book, the frozen book, and the index, all running the same one hundred thousand simulated dollars.
+
+7
+00:00:30,929 --> 00:00:39,140
+Every position, every chart, and every word of this broadcast was produced by software with no human intervention.
+
+8
+00:00:39,140 --> 00:00:46,486
+The question this channel exists to answer: can a system that reflects on its own record hold its own?
+
+9
+00:00:48,360 --> 00:00:50,231
+First, the market open.
+
+10
+00:00:50,231 --> 00:00:56,086
+The S and P five hundred slipped 0.3 percent, while the NASDAQ lost 0.7.
+
+11
+00:00:56,086 --> 00:01:01,779
+The primary trend reads bear; capital preservation leads the playbook.
+
+12
+00:01:01,779 --> 00:01:04,057
+The fear gauge sits at 23.8.
+
+13
+00:01:04,057 --> 00:01:06,556
+Today's lesson is this market screen.
+
+14
+00:01:06,556 --> 00:01:13,512
+The gold line is the thirty week moving average, the single most useful trend filter in stage analysis.
+
+15
+00:01:13,512 --> 00:01:21,009
+When price holds above a rising gold line, the tide is coming in, and long trades get the benefit of the doubt.
+
+16
+00:01:21,009 --> 00:01:29,924
+When price sinks below a falling gold line, the tide is going out, and the first job becomes protecting capital, not finding heroes.
+
+17
+00:01:31,400 --> 00:01:40,680
+Now the chart of the day: BioMarin Pharmaceutical, ticker BMRN, the top stock to clear every quality gate.
+
+18
+00:01:40,680 --> 00:01:52,150
+The entry trigger sits at 69.20, the exit at 59.03, and the objective at 79.48 — 1.0 dollars of potential reward per dollar risked.
+
+19
+00:01:52,150 --> 00:01:58,103
+At 98 shares, a failed trade costs about one percent of the account.
+
+20
+00:01:58,103 --> 00:02:09,321
+How to read the chart: the blue line is the weekly price; the gold line is the thirty week average, rising, the signature of a healthy trend.
+
+21
+00:02:09,321 --> 00:02:18,471
+The green dashed line is the entry trigger, and this is the part most people get backwards: you do not buy it here.
+
+22
+00:02:18,471 --> 00:02:24,120
+You buy only if the market pushes up through that line, proving demand.
+
+23
+00:02:24,120 --> 00:02:30,087
+If it never gets there, you never buy, and that is the plan protecting you.
+
+24
+00:02:30,087 --> 00:02:37,487
+The red line is the exit once owned, taken on a weekly close below, never an afternoon scare.
+
+25
+00:02:37,487 --> 00:02:49,978
+The purple line is the objective that justified the trade; as price approaches it, professionals take partial profits and let the rising stop guard the rest.
+
+26
+00:02:49,978 --> 00:02:51,013
+Buy on proof.
+
+27
+00:02:51,013 --> 00:02:52,047
+Exit by rule.
+
+28
+00:02:52,047 --> 00:02:53,320
+Size to survive.
+
+29
+00:02:55,040 --> 00:03:00,592
+Now the moment the desk waits for — the OROS Scan, top pick of the day.
+
+30
+00:03:00,592 --> 00:03:08,647
+Overnight the agents graded 500 of the most liquid names on the tape, and this is what rose to the top.
+
+31
+00:03:08,647 --> 00:03:13,542
+On the stock track: BioMarin Pharmaceutical, ticker BMRN.
+
+32
+00:03:13,542 --> 00:03:18,609
+The plan in plain English: it last closed at 67.94 dollars.
+
+33
+00:03:18,609 --> 00:03:27,799
+The system would only buy strength — a buy-stop at 69.20, nothing happens unless price proves itself first.
+
+34
+00:03:27,799 --> 00:03:35,443
+If it triggers, the exit is a weekly close below 59.03, and the measured target is 79.48.
+
+35
+00:03:35,443 --> 00:03:40,598
+Tomorrow evening the Closing Bell grades this call in public, win or lose.
+
+36
+00:03:40,598 --> 00:03:41,712
+That's the deal.
+
+37
+00:03:43,440 --> 00:03:45,596
+Turning to the model book.
+
+38
+00:03:45,596 --> 00:03:56,045
+The system holds 6 positions with 29% of capital deployed and the rest in cash, a split the risk rules choose, not a leftover.
+
+39
+00:03:56,045 --> 00:04:03,923
+New to the book: Amneal Pharmaceuticals (AMRX) — each passed the full entry gauntlet overnight.
+
+40
+00:04:03,923 --> 00:04:10,806
+Rotated out: Biogen (BIIB), which still advancing, but outranked by stronger names.
+
+41
+00:04:10,806 --> 00:04:26,314
+Left on the bench: Walt Disney Company (The) (DIS), earnings inside the blackout window; Target (TGT), earnings inside the blackout window; Dollar Tree (DLTR), outranked — book full at 6.
+
+42
+00:04:26,314 --> 00:04:31,041
+Passing the scan is not enough; the book must afford you.
+
+43
+00:04:31,041 --> 00:04:37,032
+On screen, the book's positions, how much capital is deployed, and today's rotation in and out.
+
+44
+00:04:38,400 --> 00:04:46,234
+And here is the book itself — the actual holdings, identical to this morning's emailed report.
+
+45
+00:04:46,234 --> 00:04:55,069
+6 positions, led by Arch Capital Group, ticker ACGL, Dropbox, ticker DBX, Cheesecake Factory, ticker CAKE.
+
+46
+00:04:55,069 --> 00:05:06,403
+Every line carries its share count, its entry, and its exit — because a position without a defined exit is not a position, it is a hope.
+
+47
+00:05:08,320 --> 00:05:10,497
+Over to the sports desk.
+
+48
+00:05:10,497 --> 00:05:19,570
+Day 105 of the race: three books, the same one hundred thousand simulated dollars, since July sixth.
+
+49
+00:05:19,570 --> 00:05:25,648
+In first place, the live self-rebuilding book, in blue, at 108,572.
+
+50
+00:05:25,648 --> 00:05:32,725
+Then the frozen first portfolio, the green line, 10.8 thousand back at 97,820.
+
+51
+00:05:32,725 --> 00:05:38,078
+Then the index fund, in gray, 12.9 thousand back at 95,634.
+
+52
+00:05:38,078 --> 00:05:40,618
+The race has no finish line.
+
+53
+00:05:40,618 --> 00:05:44,791
+Same books, same dollars, back at it tomorrow.
+
+54
+00:05:44,791 --> 00:05:49,509
+Every line starts the same day with the same dollar.
+
+55
+00:05:49,509 --> 00:05:51,323
+Nothing is restated.
+
+56
+00:05:51,323 --> 00:06:00,193
+On screen, three equity lines grown from the same starting dollar: the frozen first book, the live book, and the index fund.
+
+57
+00:06:01,760 --> 00:06:03,306
+Tonight's takeaway.
+
+58
+00:06:03,306 --> 00:06:05,583
+A portfolio is not a museum.
+
+59
+00:06:05,583 --> 00:06:13,881
+Names that stop qualifying leave, names that start qualifying arrive, and no position is owed loyalty.
+
+60
+00:06:15,480 --> 00:06:18,357
+Before we close, the disclosure segment.
+
+61
+00:06:18,357 --> 00:06:28,425
+Everything you heard today concerns one simulated portfolio of 6 positions — the same book, line for line, as this morning's emailed report.
+
+62
+00:06:28,425 --> 00:06:30,294
+One record, every surface.
+
+63
+00:06:30,294 --> 00:06:32,379
+A word on how this desk works.
+
+64
+00:06:32,379 --> 00:06:49,890
+Every segment you just watched was researched and assembled end to end by the OROS specialist agents: a scanner that grades every chart, a classifier that routes each name to a sector specialist, a portfolio builder, and a risk manager with veto power.
+
+65
+00:06:49,890 --> 00:06:58,298
+The numbers come from primary sources: SEC EDGAR company filings, Federal Reserve economic data, and daily market prices.
+
+66
+00:06:58,298 --> 00:07:01,223
+All figures are simulated paper trading.
+
+67
+00:07:01,223 --> 00:07:07,584
+OROS proposes and journals only; it never trades, and nothing here is financial advice.
+
+68
+00:07:07,584 --> 00:07:11,533
+From the OROS Market Desk, have a disciplined session.

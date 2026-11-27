@@ -823,6 +823,19 @@
      "home_run_flag": false
     }
    ]
+  },
+  {
+   "date": "2026-11-27",
+   "picks": [
+    {
+     "ticker": "BMRN",
+     "buy_stop": 69.2,
+     "stop_loss": 59.03,
+     "target": 79.48,
+     "is_etf": false,
+     "home_run_flag": false
+    }
+   ]
   }
  ]
 }

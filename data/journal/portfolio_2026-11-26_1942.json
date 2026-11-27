@@ -1,178 +1,196 @@
 {
- "timestamp": "2026-11-26T19:42:08.696602Z",
- "date": "2026-11-26",
- "regime": "bear",
- "mandate": "swing_momentum",
- "account": 100000.0,
- "invested": 29681.85,
- "cash": 70318.15,
- "weights": {
-  "weinstein": 0.237,
-  "sepa": 0.164,
-  "technical": 0.138,
-  "canslim": 0.132,
-  "value": 0.099,
-  "swing": 0.079,
-  "ipo": 0.033,
-  "growth": 0.118
- },
- "note": "nightly run (cloud)",
- "holdings": [
-  {
-   "ticker": "ACGL",
-   "sector": "Financials",
-   "conviction": 0.7967,
-   "shares": 44,
-   "dollars": 4852.76,
-   "weight_pct": 4.85,
-   "entry": 110.29,
-   "stop": 101.88,
-   "led_by": "sepa",
-   "sentiment": 0.153,
-   "earnings_risk": false,
-   "outcome_return": null
+  "timestamp": "2026-11-26T19:42:08.696602Z",
+  "date": "2026-11-26",
+  "regime": "bear",
+  "mandate": "swing_momentum",
+  "account": 100000.0,
+  "invested": 29681.85,
+  "cash": 70318.15,
+  "weights": {
+    "weinstein": 0.237,
+    "sepa": 0.164,
+    "technical": 0.138,
+    "canslim": 0.132,
+    "value": 0.099,
+    "swing": 0.079,
+    "ipo": 0.033,
+    "growth": 0.118
   },
-  {
-   "ticker": "DBX",
-   "sector": "Information Technology",
-   "conviction": 0.7533,
-   "shares": 153,
-   "dollars": 5723.73,
-   "weight_pct": 5.72,
-   "entry": 37.41,
-   "stop": 34.96,
-   "led_by": "sepa",
-   "sentiment": 0.182,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "CCEP",
-   "sector": "Consumer Staples",
-   "conviction": 0.7243,
-   "shares": 39,
-   "dollars": 4601.61,
-   "weight_pct": 4.6,
-   "entry": 117.99,
-   "stop": 108.39,
-   "led_by": "sepa",
-   "sentiment": 0.169,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "BIIB",
-   "sector": "Health Care",
-   "conviction": 0.7117,
-   "shares": 17,
-   "dollars": 4444.48,
-   "weight_pct": 4.44,
-   "entry": 261.44,
-   "stop": 239.58,
-   "led_by": "sepa",
-   "sentiment": 0.125,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "CAKE",
-   "sector": "Consumer Discretionary",
-   "conviction": 0.699,
-   "shares": 47,
-   "dollars": 5154.02,
-   "weight_pct": 5.15,
-   "entry": 109.66,
-   "stop": 101.72,
-   "led_by": "sepa",
-   "sentiment": 0.02,
-   "earnings_risk": false,
-   "outcome_return": null
-  },
-  {
-   "ticker": "ARGX",
-   "sector": "Health Care",
-   "conviction": 0.6967,
-   "shares": 5,
-   "dollars": 4905.25,
-   "weight_pct": 4.91,
-   "entry": 981.05,
-   "stop": 916.93,
-   "led_by": "sepa",
-   "sentiment": 0.241,
-   "earnings_risk": false,
-   "outcome_return": null
-  }
- ],
- "bench": [
-  {
-   "ticker": "DIS",
-   "sector": "Communication Services",
-   "composite": 0.802,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "TGT",
-   "sector": "Consumer Discretionary",
-   "composite": 0.742,
-   "reason": "earnings inside the blackout window"
-  },
-  {
-   "ticker": "GILD",
-   "sector": "Health Care",
-   "composite": 0.693,
-   "reason": "outranked \u2014 book full at 6"
-  }
- ],
- "agent_trace": [
-  {
-   "agent": "DataAgent",
-   "role": "universe & data",
-   "summary": "500 candidate names (benchmarks removed)"
-  },
-  {
-   "agent": "RegimeAgent",
-   "role": "market regime",
-   "summary": "regime = BEAR"
-  },
-  {
-   "agent": "RouterAgent",
-   "role": "strategy mandate weights",
-   "summary": "base weights: weinstein 24%, sepa 16%, technical 14%"
-  },
-  {
-   "agent": "MemoryAgent",
-   "role": "experience-weighted tilt",
-   "summary": "boosted weinstein x1.00, sepa x1.00"
-  },
-  {
-   "agent": "ConstructionAgent",
-   "role": "strategy ensemble + sizing",
-   "summary": "6 holdings, 30% invested, 8 strategies"
-  },
-  {
-   "agent": "RiskAgent",
-   "role": "post-construction risk",
-   "summary": "within limits; cash 70%"
-  }
- ],
- "horizon_days": 20,
- "realized_avg_return": null,
- "realized_hit_rate": null,
- "realized_final_count": 0,
- "realized_stop_exits": 0,
- "changes": {
-  "added": [
-   "BIIB"
+  "note": "nightly run (cloud)",
+  "holdings": [
+    {
+      "ticker": "ACGL",
+      "sector": "Financials",
+      "conviction": 0.7967,
+      "shares": 44,
+      "dollars": 4852.76,
+      "weight_pct": 4.85,
+      "entry": 110.29,
+      "stop": 101.88,
+      "led_by": "sepa",
+      "sentiment": 0.153,
+      "earnings_risk": false,
+      "outcome_return": 0.0004,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "DBX",
+      "sector": "Information Technology",
+      "conviction": 0.7533,
+      "shares": 153,
+      "dollars": 5723.73,
+      "weight_pct": 5.72,
+      "entry": 37.41,
+      "stop": 34.96,
+      "led_by": "sepa",
+      "sentiment": 0.182,
+      "earnings_risk": false,
+      "outcome_return": -0.0072,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CCEP",
+      "sector": "Consumer Staples",
+      "conviction": 0.7243,
+      "shares": 39,
+      "dollars": 4601.61,
+      "weight_pct": 4.6,
+      "entry": 117.99,
+      "stop": 108.39,
+      "led_by": "sepa",
+      "sentiment": 0.169,
+      "earnings_risk": false,
+      "outcome_return": 0.0006,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "BIIB",
+      "sector": "Health Care",
+      "conviction": 0.7117,
+      "shares": 17,
+      "dollars": 4444.48,
+      "weight_pct": 4.44,
+      "entry": 261.44,
+      "stop": 239.58,
+      "led_by": "sepa",
+      "sentiment": 0.125,
+      "earnings_risk": false,
+      "outcome_return": 0.0106,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "CAKE",
+      "sector": "Consumer Discretionary",
+      "conviction": 0.699,
+      "shares": 47,
+      "dollars": 5154.02,
+      "weight_pct": 5.15,
+      "entry": 109.66,
+      "stop": 101.72,
+      "led_by": "sepa",
+      "sentiment": 0.02,
+      "earnings_risk": false,
+      "outcome_return": 0.014,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    },
+    {
+      "ticker": "ARGX",
+      "sector": "Health Care",
+      "conviction": 0.6967,
+      "shares": 5,
+      "dollars": 4905.25,
+      "weight_pct": 4.91,
+      "entry": 981.05,
+      "stop": 916.93,
+      "led_by": "sepa",
+      "sentiment": 0.241,
+      "earnings_risk": false,
+      "outcome_return": 0.0138,
+      "outcome_exit": "open",
+      "outcome_days": 1,
+      "outcome_final": false
+    }
   ],
-  "removed": [
-   "AMRX"
+  "bench": [
+    {
+      "ticker": "DIS",
+      "sector": "Communication Services",
+      "composite": 0.802,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "TGT",
+      "sector": "Consumer Discretionary",
+      "composite": 0.742,
+      "reason": "earnings inside the blackout window"
+    },
+    {
+      "ticker": "GILD",
+      "sector": "Health Care",
+      "composite": 0.693,
+      "reason": "outranked \u2014 book full at 6"
+    }
   ],
-  "unchanged": [
-   "ACGL",
-   "ARGX",
-   "CAKE",
-   "CCEP",
-   "DBX"
-  ]
- }
+  "agent_trace": [
+    {
+      "agent": "DataAgent",
+      "role": "universe & data",
+      "summary": "500 candidate names (benchmarks removed)"
+    },
+    {
+      "agent": "RegimeAgent",
+      "role": "market regime",
+      "summary": "regime = BEAR"
+    },
+    {
+      "agent": "RouterAgent",
+      "role": "strategy mandate weights",
+      "summary": "base weights: weinstein 24%, sepa 16%, technical 14%"
+    },
+    {
+      "agent": "MemoryAgent",
+      "role": "experience-weighted tilt",
+      "summary": "boosted weinstein x1.00, sepa x1.00"
+    },
+    {
+      "agent": "ConstructionAgent",
+      "role": "strategy ensemble + sizing",
+      "summary": "6 holdings, 30% invested, 8 strategies"
+    },
+    {
+      "agent": "RiskAgent",
+      "role": "post-construction risk",
+      "summary": "within limits; cash 70%"
+    }
+  ],
+  "horizon_days": 20,
+  "realized_avg_return": null,
+  "realized_hit_rate": null,
+  "realized_final_count": 0,
+  "realized_stop_exits": 0,
+  "changes": {
+    "added": [
+      "BIIB"
+    ],
+    "removed": [
+      "AMRX"
+    ],
+    "unchanged": [
+      "ACGL",
+      "ARGX",
+      "CAKE",
+      "CCEP",
+      "DBX"
+    ]
+  }
 }
